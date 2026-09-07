@@ -7,7 +7,7 @@ closed perception→thought→action loop.
 
 > Chinese README: [README.md](README.md) · Chinese architecture notes: [架构说明.md](架构说明.md)
 > · English architecture notes: [ARCHITECTURE.md](ARCHITECTURE.md) · Closed-loop simulation:
-> [闭环仿真/README.md](闭环仿真/README.md)
+> [闭环仿真_closed_loop_sim/README.md](闭环仿真_closed_loop_sim/README.md)
 
 **License:** [MIT](LICENSE) · **Status:** active research prototype · **Runtime:** Python 3 +
 NumPy on CPU (64-bit Windows tested) · **No external ML framework required.**
@@ -35,7 +35,20 @@ this table:
 | `整体测试.py` | `整体测试_integration_test.py` |
 | `混合实验.py` | `混合实验_mixing_experiment.py` |
 
-Historical files inside experiment subfolders (`原架构闭环/`, `认知实验/`, ...) keep their old
+**Top-level folders (old → new):**
+
+| Old folder | New folder |
+| --- | --- |
+| `闭环仿真` | `闭环仿真_closed_loop_sim` |
+| `架构整合` | `架构整合_architecture_integration` |
+| `认知实验` | `认知实验_cognition_experiments` |
+| `色标导航` | `色标导航_color_beacon_navigation` |
+| `原架构闭环` | `原架构闭环_legacy_closed_loop` |
+| `虚拟身体` | `虚拟身体_virtual_body` |
+| `运动实验` | `运动实验_motor_experiments` |
+| `实验记录` | `实验记录_experiment_logs` |
+
+Historical files inside experiment subfolders (`原架构闭环_legacy_closed_loop/`, `认知实验_cognition_experiments/`, ...) keep their old
 names; identifiers inside the code remain Chinese.
 
 
@@ -88,8 +101,8 @@ World ──▶ Auditory preprocess ─┤──▶ Prefrontal hub ──▶ Mot
 | `前额叶区_prefrontal.py` | PFC: network, association, dynamic inhibition, focus gate, reciprocal lines |
 | `权重连接管理_weight_manager.py` | generic growth + periodic decay for plastic connections |
 | `闭环流程_closed_loop.py` | integration harness running the whole chain as one closed loop |
-| `闭环仿真/` | runnable 2D physics-body closed loop (its own README, evaluation suite) |
-| `认知实验/` `色标导航/` `原架构闭环/` `虚拟身体/` `运动实验/` | earlier-phase experiments |
+| `闭环仿真_closed_loop_sim/` | runnable 2D physics-body closed loop (its own README, evaluation suite) |
+| `认知实验_cognition_experiments/` `色标导航_color_beacon_navigation/` `原架构闭环_legacy_closed_loop/` `虚拟身体_virtual_body/` `运动实验_motor_experiments/` | earlier-phase experiments |
 | `架构说明.md` / `ARCHITECTURE.md` | full architecture notes (Chinese / English) |
 
 ## Get started
@@ -107,7 +120,7 @@ The **closed-loop simulation** is the most convincing demo: a small body in a 2D
 hears, feels pain, acts and learns online, in one window.
 
 ```powershell
-Set-Location -LiteralPath '闭环仿真'
+Set-Location -LiteralPath '闭环仿真_closed_loop_sim'
 & '..\.venv\Scripts\python.exe' -X utf8 viewer.py                 # interactive window
 & '..\.venv\Scripts\python.exe' -X utf8 viewer.py --smoke-test    # headless smoke test
 & '..\.venv\Scripts\python.exe' -X utf8 evaluate.py --soak-frames 10000
@@ -163,7 +176,7 @@ Anyone is welcome. The fastest ways to help:
   biology or engineering.
 - **Run the soak tests** on your hardware and report frame-time numbers and memory growth.
 - **Pick an open problem above**, design a small ablation, and add it under a new experiment
-  folder (see `认知实验/` for the house style: state your changes vs. the original rules,
+  folder (see `认知实验_cognition_experiments/` for the house style: state your changes vs. the original rules,
   measure causal effects, never overclaim).
 - **Port or polish docs** — English docs exist but Chinese-first identifiers still need
   friendly glossaries and diagrams.
@@ -176,7 +189,7 @@ House rules observed so far (please keep them):
 3. Prefer pure neuron/connection mechanisms over lookup tables or code shortcuts — that is the
    whole point of the architecture.
 4. Keep dependencies minimal (NumPy only for the core; Tkinter for the sim window).
-5. Add or extend a self-check in the file you touch and in `闭环仿真/evaluate.py` when the
+5. Add or extend a self-check in the file you touch and in `闭环仿真_closed_loop_sim/evaluate.py` when the
    closed loop is affected.
 
 ## License

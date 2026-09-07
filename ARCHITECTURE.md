@@ -181,10 +181,10 @@ edits the other files. Run `python 闭环流程_closed_loop.py [frames]`.
 .\.venv\Scripts\python.exe -X utf8 闭环流程_closed_loop.py
 ```
 
-The visual closed-loop simulation (2D physics body) is documented in `闭环仿真/README.md`:
+The visual closed-loop simulation (2D physics body) is documented in `闭环仿真_closed_loop_sim/README.md`:
 
 ```powershell
-Set-Location -LiteralPath '闭环仿真'
+Set-Location -LiteralPath '闭环仿真_closed_loop_sim'
 & '..\.venv\Scripts\python.exe' -X utf8 viewer.py
 & '..\.venv\Scripts\python.exe' -X utf8 evaluate.py --soak-frames 10000
 ```

@@ -25,7 +25,20 @@
 | `整体测试.py` | `整体测试_integration_test.py` |
 | `混合实验.py` | `混合实验_mixing_experiment.py` |
 
-实验子文件夹（`原架构闭环/`、`认知实验/` 等）里的历史文件名暂未改名；代码内的中文类名与函数名也保持不变。
+**一级文件夹对照（旧 → 新）：**
+
+| 旧文件夹 | 新文件夹 |
+| --- | --- |
+| `闭环仿真` | `闭环仿真_closed_loop_sim` |
+| `架构整合` | `架构整合_architecture_integration` |
+| `认知实验` | `认知实验_cognition_experiments` |
+| `色标导航` | `色标导航_color_beacon_navigation` |
+| `原架构闭环` | `原架构闭环_legacy_closed_loop` |
+| `虚拟身体` | `虚拟身体_virtual_body` |
+| `运动实验` | `运动实验_motor_experiments` |
+| `实验记录` | `实验记录_experiment_logs` |
+
+实验子文件夹（`原架构闭环_legacy_closed_loop/`、`认知实验_cognition_experiments/` 等）里的历史文件名暂未改名；代码内的中文类名与函数名也保持不变。
 
 
 ## 这个项目想验证什么
@@ -57,9 +70,9 @@
 | `前额叶区_prefrontal.py` | 联想区：汇总各脑区输入、动态抑制收敛、时序联想链与镜像返回 |
 | `权重连接管理_weight_manager.py` | 连接衰减与维持的通用规则 |
 | `闭环流程_closed_loop.py` | 把全部脑区串成一条完整处理链 |
-| `闭环仿真/` | 可运行的 2D 物理身体闭环：感知-思考-运动-反馈在线学习（见其 `README.md`） |
-| `认知实验/` `色标导航/` `原架构闭环/` `虚拟身体/` `运动实验/` | 各阶段实验与候选机制对照 |
-| `实验记录/` | 过程记录与审计结果 |
+| `闭环仿真_closed_loop_sim/` | 可运行的 2D 物理身体闭环：感知-思考-运动-反馈在线学习（见其 `README.md`） |
+| `认知实验_cognition_experiments/` `色标导航_color_beacon_navigation/` `原架构闭环_legacy_closed_loop/` `虚拟身体_virtual_body/` `运动实验_motor_experiments/` | 各阶段实验与候选机制对照 |
+| `实验记录_experiment_logs/` | 过程记录与审计结果 |
 
 ## 运行环境
 
@@ -73,7 +86,7 @@
 .\.venv\Scripts\python.exe -X utf8 运动输出区_motor_output.py
 
 # 可视化闭环仿真（会弹出窗口，身体自动活动并学习）
-Set-Location -LiteralPath '闭环仿真'
+Set-Location -LiteralPath '闭环仿真_closed_loop_sim'
 & '..\.venv\Scripts\python.exe' -X utf8 viewer.py
 
 # 无窗口冒烟/完整评估（16 项检查 + 10000 帧压测）
@@ -105,7 +118,7 @@ Set-Location -LiteralPath '闭环仿真'
 
 - **阅读并批评**：任何看起来不对的地方（命名、数学、生物学或工程）都欢迎开 Issue。
 - **跑压测**：在你自己的机器上运行压测，报告每帧耗时和记忆增长数据。
-- **挑一个上面的开放问题**：设计一个小消融实验，放进新的实验文件夹（参考 `认知实验/` 的规范：写清楚相对原始规则的改动、测量因果效应、不夸大结论）。
+- **挑一个上面的开放问题**：设计一个小消融实验，放进新的实验文件夹（参考 `认知实验_cognition_experiments/` 的规范：写清楚相对原始规则的改动、测量因果效应、不夸大结论）。
 - **翻译或完善文档**：中文为主、英文并存；中文命名还需要友好的术语对照表和示意图。
 
 请保留至今形成的协作习惯：
@@ -114,7 +127,7 @@ Set-Location -LiteralPath '闭环仿真'
 2. 固定信号处理网络必须保持固定；赫布学习只动 `权重连接管理_weight_manager.py` 列出的可塑连接。
 3. 优先用纯神经元/连接机制，不要用查表或代码捷径——这正是本架构的意义。
 4. 依赖保持最少（核心只用 NumPy；仿真窗口用 Tkinter）。
-5. 改哪个文件就补哪个文件的自检；动了闭环就在 `闭环仿真/evaluate.py` 里加或扩展对应检查。
+5. 改哪个文件就补哪个文件的自检；动了闭环就在 `闭环仿真_closed_loop_sim/evaluate.py` 里加或扩展对应检查。
 
 ## 开源许可
 
