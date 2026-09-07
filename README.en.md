@@ -14,6 +14,31 @@ NumPy on CPU (64-bit Windows tested) · **No external ML framework required.**
 
 ---
 
+## Renamed module files (old → new)
+
+The 12 core modules at the repository root now use bilingual "Chinese_English" file names.
+Old names are no longer used — if older code, docs or chat threads reference them, please use
+this table:
+
+| Old name | New name |
+| --- | --- |
+| `视觉前处理.py` | `视觉前处理_visual_preprocess.py` |
+| `听觉前处理.py` | `听觉前处理_auditory_preprocess.py` |
+| `视觉记忆区.py` | `视觉记忆区_visual_memory.py` |
+| `听觉记忆区.py` | `听觉记忆区_auditory_memory.py` |
+| `运动记忆区.py` | `运动记忆区_motor_memory.py` |
+| `海马体时间区.py` | `海马体时间区_hippocampal_time.py` |
+| `前额叶区.py` | `前额叶区_prefrontal.py` |
+| `权重连接管理.py` | `权重连接管理_weight_manager.py` |
+| `运动输出区.py` | `运动输出区_motor_output.py` |
+| `闭环流程.py` | `闭环流程_closed_loop.py` |
+| `整体测试.py` | `整体测试_integration_test.py` |
+| `混合实验.py` | `混合实验_mixing_experiment.py` |
+
+Historical files inside experiment subfolders (`原架构闭环/`, `认知实验/`, ...) keep their old
+names; identifiers inside the code remain Chinese.
+
+
 ## Why this project exists
 
 Most neural-network research treats learning as an offline training phase on a frozen dataset.
