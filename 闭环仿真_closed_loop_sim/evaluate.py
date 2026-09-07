@@ -6,6 +6,7 @@ import time
 from pathlib import Path
 import numpy as np
 from brain import Brain, tone, DT, FREQUENCIES, SAMPLE_RATE
+from 本能区_instinct import 本能区
 from world import World
 from checkpoint import merge_checkpoints, load_checkpoint
 
@@ -69,6 +70,37 @@ def encounter(brain, wall=(4., 1.4, 4.2, 4.6), *, frames=80, learning=True, colo
             'danger_weights': brain.danger_weights.tolist()}
 
 
+def probe_cry_instinct():
+    """全新脑(零可塑连接)撞墙即本能哭喊：哭不是学来的。"""
+    brain = Brain()
+    world = World()
+    world.reset(position=(1.2, 3), walls=[{'bounds': (4., 1.4, 4.2, 4.6)}])
+    cries = []
+    for i in range(150):
+        muscles, emitted, info = brain.step(world.observe(), stimulation=np.eye(5)[1], plasticity=False)
+        world.step(muscles, DT)
+        if info['cried']:
+            cries.append(i)
+    return {'cry_frames': cries, 'echo_zero': bool(not brain.echo_weights.any()),
+            'audio_zero': bool(not brain.audio_weights.any()),
+            'pfc_edges_zero': brain.pfc.连接数() == 0,
+            'danger_zero': bool(not brain.danger_weights.any())}
+
+
+def probe_pfc_takeover():
+    """未学时本能前进占优；教学音调到静息后，本能衰减、动作由前额叶学习接管。"""
+    fresh = Brain()
+    world = World()
+    muscles, _, info = fresh.step(world.observe(), tone(0))
+    naive_action, naive_gain = info['action'], info['instinct_gain']
+    teach(fresh, {0: 0})
+    fresh.reset_activity()
+    muscles, _, info = fresh.step(World().observe(), tone(0))
+    return {'naive_action': naive_action, 'naive_gain': naive_gain,
+            'taught_action': info['action'], 'taught_gain': info['instinct_gain'],
+            'audio_weight': float(fresh.audio_weights[0, 0])}
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--soak-frames', type=int, default=3000)
@@ -122,6 +154,32 @@ def main():
     report['checks']['original_time_memory_has_causal_action_path'] = all(x['correct'] for x in report['audio_memory_only'])
     report['checks']['autonomous_sound_response'] = all(x['tone'] in x['emitted'] for x in report['audio_after'])
     print('audio:', [(x['actual_action'],x['correct']) for x in report['audio_after']], flush=True)
+
+    # ---- 出生本能区：固定直接投射(不经过前额叶) + 学习后的本能衰减 ----
+    report['instinct_cry'] = probe_cry_instinct()
+    cry_report = report['instinct_cry']
+    report['checks']['instinct_pain_cry_without_learning'] = bool(
+        cry_report['cry_frames'] and cry_report['echo_zero'] and cry_report['audio_zero']
+        and cry_report['pfc_edges_zero'] and cry_report['danger_zero'])
+    report['instinct_pfc_takeover'] = probe_pfc_takeover()
+    takeover = report['instinct_pfc_takeover']
+    report['checks']['learned_pfc_suppresses_instinct'] = bool(
+        takeover['naive_gain'] > 0.9 and takeover['naive_action'] != 0
+        and takeover['taught_action'] == 0 and takeover['taught_gain'] < 0.5)
+    s = 本能区()
+    mid = np.full(5, 3.0)
+    out, _ = s.驱动(np.array([1., 0, 0, 0]), mid, 0., 0); ok_front = int(np.argmax(out)) == 2
+    out, _ = s.驱动(np.array([0., 0, 1, 0]), mid, 0., 0); ok_left = int(np.argmax(out)) == 4
+    out, _ = s.驱动(np.array([0., 0, 0, 1]), mid, 0., 0); ok_right = int(np.argmax(out)) == 3
+    out, _ = s.驱动(np.array([1., 0, 0, 0]), np.array([4.9, 4.9, 2., 2., 2.]), 0., 0)
+    ok_select = bool(out[4] > out[3])
+    _, cry_on = s.驱动(np.zeros(4), mid, .8, 0)
+    _, cry_off = s.驱动(np.zeros(4), mid, .1, 0)
+    report['checks']['instinct_contact_escape_directions'] = bool(
+        ok_front and ok_left and ok_right and ok_select and cry_on and not cry_off)
+    print('instinct cry frames:', cry_report['cry_frames'][:3],
+          '| takeover:', {k: v for k, v in takeover.items()}, flush=True)
+
 
     a, b = Brain(), Brain()
     teach(a, {0: 1, 1: 3}); teach(b, {2: 4, 3: 0})

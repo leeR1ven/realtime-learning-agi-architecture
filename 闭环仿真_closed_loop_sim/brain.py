@@ -16,6 +16,7 @@ from 前额叶区_prefrontal import 前额叶联想区
 from 视觉记忆区_visual_memory import 记忆区
 from 海马体时间区_hippocampal_time import 时间环
 from neural import PairedEncoder, MotorBank
+from 本能区_instinct import 本能区
 from checkpoint import save_checkpoint, load_checkpoint
 
 ACTION_NAMES = ('静息', '前进', '后退', '左转', '右转')
@@ -100,6 +101,7 @@ class Brain:
         # 5深度+15RGB+2速度+角速度+痛觉+4频带+5运动副本。
         self.encoder = PairedEncoder(33)
         self.motor = MotorBank()
+        self.instinct = 本能区()
         self.n = self.encoder.n
         self.pfc = 前额叶联想区(self.n, 每段=20, 门槛=.5, 目标下限=4,
                                 目标上限=48, 强度初值=.5, 强度上限=100.)
@@ -115,10 +117,12 @@ class Brain:
         self.proximity_trace = np.zeros(5)
         self.pain_trace = 0.
         self.color_adaptation = np.zeros(3)
+        self.touch_trace = np.zeros(4)
         self.audio_weights = np.zeros((4, 5))
         self.echo_weights = np.zeros((4, 4))
         self.danger_weights = np.zeros(5)
         self.echo_cooldown = 0
+        self.cry_cooldown = 0
         self.last_info = {}
         # 五个运动簇接收的固定突触：[自发、左显著、右显著、前危险、右危险、左危险、疼痛]。
         self.reflex_weights = np.array([[.08, 0, 0, 0, 0, 0, 0],
@@ -143,11 +147,15 @@ class Brain:
         arrays['fixed_color_adaptation'] = np.array([.02, self.adaptation_strength])
         # 五次出生示范长成的运动反向连接，在日常生活中冻结为本能。
         arrays['fixed_motor_reverse'] = self.motor.reverse.矩阵
+        for 名字, 值 in self.instinct.fixed_arrays().items():
+            arrays['fixed_instinct_' + 名字] = 值
         return arrays
 
     def _birth_hash(self):
         h = hashlib.sha256(b'associative-embodied-v1-tone-depth-rgb')
         for name, value in sorted(self._fixed().items()):
+            if name.startswith('fixed_instinct_'):
+                continue  # 本能增量允许旧存档迁移补默认值，不改变出生校验哈希
             h.update(name.encode()); h.update(value.tobytes())
         return h.hexdigest()
 
@@ -163,6 +171,8 @@ class Brain:
         self.color_adaptation[:] = 0
         self.last_action = 0
         self.echo_cooldown = 0
+        self.touch_trace[:] = 0
+        self.cry_cooldown = 0
 
     def _motor_currents(self, activity):
         blocks = np.asarray(activity).reshape(33, 20)[28:33]
@@ -182,6 +192,9 @@ class Brain:
         colors = np.asarray(observation['ray_colors'], float)
         if distances.shape != (5,) or colors.shape != (5, 3):
             raise ValueError('当前神经元布局需要五束深度/RGB感官')
+        touch = np.asarray(observation.get('touch', np.zeros(4)), dtype=float)
+        if touch.shape != (4,) or not np.isfinite(touch).all() or np.any((touch < 0) | (touch > 1)):
+            raise ValueError('需要四方向0~1接触信号: [前,后,左,右]')
         proximity = np.exp(-distances / .65)
         velocity = np.asarray(observation['velocity'])
         speed = np.linalg.norm(velocity)
@@ -224,13 +237,20 @@ class Brain:
         reflex_inputs = np.array([1, max(turn - self.salience_inhibition * front_risk, 0),
                                   max(-turn - self.salience_inhibition * front_risk, 0), front_risk,
                                   risk[:2].sum(), risk[3:].sum(), self.pain_trace])
-        scores = self.reflex_weights @ reflex_inputs + self.motor_recurrence @ np.eye(5)[self.last_action]
+        # 出生本能区：接触反射直接投射（不预判、不走前额叶）。接触痕迹保留几帧，
+        # 让退缩/滑脱动作持续，而不是只在碰撞那一帧生效。
+        self.touch_trace = np.maximum(touch, self.touch_trace * 0.5)
+        self.cry_cooldown = max(0, self.cry_cooldown - 1)
+        instinct_score, cry_now = self.instinct.驱动(self.touch_trace, distances, float(pain), self.cry_cooldown)
+        reflex = self.reflex_weights @ reflex_inputs + instinct_score
+        scores = reflex + self.motor_recurrence @ np.eye(5)[self.last_action]
         # 前额听觉->运动可塑投射；声音未知时无预置动作映射。
         temporal = self._motor_currents(self.pfc.驱动(cue)) if pfc_enabled and cue.any() else np.zeros(5)
         episodic = self._motor_currents(recalled) if memory_enabled and cue.any() else np.zeros(5)
         learned = (audio @ self.audio_weights if pfc_enabled else np.zeros(5)) + .25 * temporal + .25 * episodic
         confidence = float(learned.max(initial=0))
-        scores = scores * (1 - min(1., confidence * 2.)) + 3. * learned
+        instinct_gain = float(np.clip(1.0 - min(1.0, confidence * 2.0), 0.0, 1.0))
+        scores = scores * instinct_gain + 3. * learned
         if stimulation is not None:
             stim = np.asarray(stimulation, dtype=float)
             if stim.shape != (5,) or not np.isfinite(stim).all() or (stim < 0).any():
@@ -249,6 +269,9 @@ class Brain:
         if mouth_post.any() and self.echo_cooldown == 0:
             emitted = sum(tone(i, .18) for i in np.flatnonzero(mouth_post))
             self.echo_cooldown = 4
+        if cry_now:
+            emitted = emitted + tone(self.instinct.哭音调, self.instinct.哭响度)
+            self.cry_cooldown = self.instinct.哭冷却
 
         if plasticity:
             # 三因子局部塑性：先前感觉活动×当前运动活动×强化/疼痛。
@@ -274,6 +297,9 @@ class Brain:
         self.last_info = {'frame': self.frame, 'action': action, 'action_name': ACTION_NAMES[action],
             'muscles': muscles.tolist(), 'scores': scores.tolist(), 'heard': audio.tolist(),
             'emitted': np.flatnonzero(mouth_post).tolist() if emitted.any() else [],
+            'instinct_gain': instinct_gain,
+            'touch': self.touch_trace.tolist(),
+            'cried': bool(cry_now),
             'pain': pain, 'risk': float(front_risk), 'sensory_active': int(sensory.sum()),
             'thought_active': int(thought.sum()), 'recall_events': self.memory.last_active_events,
             'memory_edges': self.memory.特征到时间.条数() + self.memory.时间到特征.条数(),
@@ -327,6 +353,8 @@ class Brain:
         if metadata['birth_hash'] != obj.birth_hash:
             raise ValueError('固定神经元布线不兼容，不能加载或融合')
         for key, value in obj._fixed().items():
+            if key.startswith('fixed_instinct_') and key not in arrays:
+                continue  # 旧版存档自动补当前出生本能，其余固定布线逐条校验
             if key not in arrays or not np.array_equal(value, arrays[key]):
                 raise ValueError('固定网络校验失败: ' + key)
         obj.audio_weights = arrays['plastic_audio'].copy()

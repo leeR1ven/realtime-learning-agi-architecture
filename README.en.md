@@ -108,11 +108,11 @@ Set-Location -LiteralPath '闭环仿真_closed_loop_sim'
 & '..\.venv\Scripts\python.exe' -X utf8 evaluate.py --soak-frames 10000
 ```
 
-The evaluation suite runs **16 independent checks**: collision learning transfers to unseen
+The evaluation suite runs **19 independent checks**: collision learning transfers to unseen
 walls, arbitrary sound→action mappings are learned and causally depend on the PFC and the
 temporal memory, two independently-trained branches can be **fused** into one brain without
-losing either skill, checkpoints resume deterministically, and lesioning the motor reverse
-connections stops all movement. A 10,000-frame soak (~1,000 simulated seconds) runs at roughly
+losing either skill, checkpoints resume deterministically, an innate reflex area verifiably withdraws on touch and cries on pain with zero learned
+connections, and lesioning the motor reverse connections stops all movement. A 10,000-frame soak (~1,000 simulated seconds) runs at roughly
 16 ms/frame average and never exceeds 100 ms/frame on the development machine.
 
 ## Where numbers live (edit once, everything follows)

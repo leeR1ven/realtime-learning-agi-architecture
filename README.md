@@ -63,14 +63,14 @@
 Set-Location -LiteralPath '闭环仿真_closed_loop_sim'
 & '..\.venv\Scripts\python.exe' -X utf8 viewer.py
 
-# 无窗口冒烟/完整评估（16 项检查 + 10000 帧压测）
+# 无窗口冒烟/完整评估（19 项检查 + 10000 帧压测）
 & '..\.venv\Scripts\python.exe' -X utf8 viewer.py --smoke-test
 & '..\.venv\Scripts\python.exe' -X utf8 evaluate.py --soak-frames 10000
 ```
 
 ## 当前验证结果（节选）
 
-- 闭环仿真 `evaluate.py` 16/16 项检查通过：碰撞学习迁移、任意声音-动作配对、分支记忆融合、存档恢复一致性、运动反向连接可致动。
+- 闭环仿真 `evaluate.py` 19/19 项检查通过：碰撞学习迁移、任意声音-动作配对、出生本能（接触退缩/疼痛哭喊）、分支记忆融合、存档恢复一致性、运动反向连接可致动。
 - 10000 帧（模拟 1000 秒）压测：平均约 16 ms/帧、95% 分位约 22 ms、最慢 54 ms，无超 100 ms 帧，可维持实时运行。
 - 前额叶：真实经历回放 100% 覆盖下一个念头；动态抑制把活动容量稳定在“典型念头”大小附近。
 

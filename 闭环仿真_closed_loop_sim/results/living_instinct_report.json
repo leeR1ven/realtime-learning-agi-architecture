@@ -1,0 +1,25 @@
+{
+  "frames": 20000,
+  "start_edges": 0,
+  "end_edges": 373296,
+  "start_pfc_edges": 18171,
+  "end_pfc_edges": 19541,
+  "compute_seconds": 365.9805557999971,
+  "p95_ms_last2000": 21.32958999791299,
+  "over_100ms": 0,
+  "total_distance_m": 401.1997167521272,
+  "last5000_distance_m": 221.06721207547463,
+  "cries": 5,
+  "contact_frames": 13,
+  "pain_frames": 13,
+  "action_counts": {
+    "0": 24,
+    "1": 3055,
+    "2": 42,
+    "3": 9192,
+    "4": 7687
+  },
+  "instinct_gain_mean": 0.9919047288487302,
+  "instinct_gain_min": 0.0,
+  "pfc_active_mean": null
+}
