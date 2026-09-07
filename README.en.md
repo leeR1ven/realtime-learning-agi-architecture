@@ -1,4 +1,4 @@
-# An AGI Architecture — Relational Neuron Brain
+# An AGI Architecture That Learns in Real Time — Relational Neuron Brain
 
 A pure-connectionist, brain-inspired model for continuous cognition.
 The goal is a "digital brain" that perceives, remembers, associates, controls a body and learns
