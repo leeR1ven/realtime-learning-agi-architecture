@@ -18,7 +18,20 @@
 | 月之暗面 Moonshot AI | globalpr@moonshot.ai | 对外/研究 | https://www.moonshot.cn/ |
 | MiniMax | api@minimaxi.com | 商务/开发者 | https://www.minimaxi.com/ |
 
-## 二、待复核（公开报道里的标准媒体邮箱，官网反爬未能当场验证）
+## 二、第二批已核实（2026-09-07 新增，官网页面直接可见）
+
+| 机构 | 邮箱 | 类型 | 来源页面 |
+|---|---|---|---|
+| DeepSeek 深度求索 | service@deepseek.com | 公司/研究 | https://www.deepseek.com（首页页脚“Email”） |
+| 上海人工智能实验室（浦江实验室） | comm@pjlab.org.cn | 研究/联系 | https://www.shlab.org.cn（页脚“联系我们”） |
+| Hugging Face | press@huggingface.co | 开源平台/媒体 | https://huggingface.co（页脚媒体邮箱） |
+| Mila | info@mila.quebec | 研究 | https://mila.quebec/en/contact/ |
+| INI（苏黎世大学/ETH 神经信息学研究所） | info@ini.uzh.ch | 研究 | https://www.ini.uzh.ch |
+| Applied Brain Research（Nengo） | info@appliedbrainresearch.com | 神经工程/研究 | https://appliedbrainresearch.com |
+
+本轮另查但跳过的机构（官网仅有联系表单或纯 JS 页面，无公开邮箱，避免编造）：xAI、Mistral AI、BAAI 智源、阶跃星辰、之江实验室、中科院自动化所、Blue Brain、UCL Gatsby、Redwood Center 等。
+
+## 三、待复核（公开报道里的标准媒体邮箱，官网反爬未能当场验证）
 
 | 机构 | 邮箱 | 类型 | 备注 |
 |---|---|---|---|
@@ -27,13 +40,13 @@
 | Google DeepMind | press@deepmind.com | 媒体 | 发前到 https://deepmind.google 确认 |
 | Meta AI | press@meta.com | 媒体 | 发前到 https://about.meta.com 确认 |
 
-## 三、建议补充方向（每批发送前按需现查，避免编造）
+## 四、建议补充方向（每批发送前按需现查，避免编造）
 
 1. **学术实验室主页邮箱**：搜索“预测编码 / 联想记忆 / 认知架构 / 神经形态 / 持续学习”方向的论文作者，进其实验室主页复制公开邮箱，逐封个性化（一封只谈一个机制点）。
 2. **中国区高校与研究院**：如清华类脑、北大类脑、中科院自动化所、之江实验室、上海期智研究院等，用官网“联系我们”页的公开邮箱。
 3. **开放论坛优先于邮箱**：arXiv、Show HN、Reddit、X/知乎 的公开曝光往往比公司邮箱更早带来回复。
 
-## 四、发送纪律（降低进垃圾箱与账号风险）
+## 五、发送纪律（降低进垃圾箱与账号风险）
 
 - 分批：每批 ≤ 30 封、间隔 30–60 秒；同一天总量 ≤ 150（远低于 Gmail 上限）。
 - 主题不夸大、正文不抄送一堆人；每封可加一行个性化开头。
@@ -41,6 +54,6 @@
 - 落款：李秩文 · rivenlee94@gmail.com · 仓库链接。
 - 若对方回复或退信，记录到本文件“回复情况”区，便于跟进。
 
-## 五、回复情况记录
+## 六、回复情况记录
 
 （发送后在此追加：日期 | 机构 | 回复内容摘要）
