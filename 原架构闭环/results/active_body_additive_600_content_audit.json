@@ -1,0 +1,136 @@
+{
+  "status": "complete",
+  "source_report": "F:\\一种AGI架构\\原架构闭环\\results\\active_body_additive_600.json",
+  "unchanged_input_sha256": {
+    "F:\\一种AGI架构\\原架构闭环\\results\\active_body_additive_600.json": "43275e8e82df6b4c0ce8e173508501ced99b07153ce9e7ab9ebecb389aaffefb",
+    "原架构闭环\\results\\continuous_balanced_extended_3600.json": "87136bb959367ece1efb1a6e636606708894c5782045f63b2c0c9032da67bdd5",
+    "原架构闭环\\results\\active_body_additive_600.npz": "30ed4050c59349fcb8a9d3f2551437839d3665ffc19db068f740a441d3ae64d7",
+    "原架构闭环\\results\\continuous_balanced_extended_3600.npz": "2ce7dbff6147c4ab4b123e7e6af7085dda3f0ef1744b6383efe7602b6c64fc8a"
+  },
+  "baseline_reference_count": 4851,
+  "reference_origin": "Previous complete report catalog; raw earlier entries retained without relabelling.",
+  "old_content_retention_from_actual_CSR": {
+    "visual": {
+      "correct": 4851,
+      "total": 4851,
+      "empty_references": 0,
+      "empty_preserved": 0,
+      "minimum_expected_weight": 0.9772568626563747
+    },
+    "audio": {
+      "correct": 3250,
+      "total": 3250,
+      "empty_references": 1601,
+      "empty_preserved": 1601,
+      "minimum_expected_weight": 0.9910381481909833
+    },
+    "motor": {
+      "correct": 4851,
+      "total": 4851,
+      "empty_references": 0,
+      "empty_preserved": 0,
+      "minimum_expected_weight": 0.9743287543394147
+    }
+  },
+  "old_content_mismatches": [],
+  "same_event_content_recount": [
+    {
+      "stage": 300,
+      "known_cue_count": 18,
+      "reported_first_initial": 18,
+      "reported_first_final": 17,
+      "corrected_first": {
+        "initial": {
+          "correct": 18
+        },
+        "final": {
+          "correct": 17,
+          "wrong_color": 1
+        }
+      },
+      "all_probe_frames": {
+        "initial": {
+          "correct": 142,
+          "wrong_color": 2
+        },
+        "final": {
+          "correct": 136,
+          "wrong_color": 8
+        }
+      },
+      "changed_scores": []
+    },
+    {
+      "stage": 600,
+      "known_cue_count": 18,
+      "reported_first_initial": 18,
+      "reported_first_final": 16,
+      "corrected_first": {
+        "initial": {
+          "correct": 18
+        },
+        "final": {
+          "correct": 16,
+          "wrong_color": 2
+        }
+      },
+      "all_probe_frames": {
+        "initial": {
+          "correct": 142,
+          "wrong_color": 2
+        },
+        "final": {
+          "correct": 135,
+          "wrong_color": 9
+        }
+      },
+      "changed_scores": []
+    }
+  ],
+  "cue_state_distinctness": [
+    {
+      "stage": 300,
+      "cue_count": 18,
+      "distinct_first_thought_sets": 18,
+      "distinct_first_final_visual_sets": 18,
+      "distinct_first_muscle_vectors": 10,
+      "first_final_content_nonmatches": [
+        {
+          "frequency": 3331.0,
+          "expected_color": "blue",
+          "time": 9794,
+          "recalled_colors": [
+            "red"
+          ]
+        }
+      ]
+    },
+    {
+      "stage": 600,
+      "cue_count": 18,
+      "distinct_first_thought_sets": 18,
+      "distinct_first_final_visual_sets": 16,
+      "distinct_first_muscle_vectors": 6,
+      "first_final_content_nonmatches": [
+        {
+          "frequency": 2047.0,
+          "expected_color": "blue",
+          "time": 10010,
+          "recalled_colors": [
+            "green"
+          ]
+        },
+        {
+          "frequency": 3331.0,
+          "expected_color": "blue",
+          "time": 10010,
+          "recalled_colors": [
+            "green"
+          ]
+        }
+      ]
+    }
+  ],
+  "no_model_execution_or_learning": true,
+  "limit": "Neuron-set/content identity and action diversity only; none establishes correct goal-directed navigation or a failure of learned shortcuts."
+}

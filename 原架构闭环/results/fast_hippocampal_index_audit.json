@@ -1,0 +1,2647 @@
+{
+  "passed": true,
+  "exact_comparisons": 3590,
+  "cue_cases": 423,
+  "distinct_cue_bit_patterns": 236,
+  "thresholds": [
+    -0.1,
+    0.0,
+    0.7,
+    0.8,
+    0.9,
+    1.0,
+    1.01
+  ],
+  "learning_update_calls": 160,
+  "existing_time_update_calls": 106,
+  "new_time_update_calls": 54,
+  "actual_added_time_rows": 52,
+  "original_time_rows": 1250,
+  "original_index_edges": 275730,
+  "original_mapping_shared_not_copied": true,
+  "categories": {
+    "actual_recorded_audio": {
+      "count": 120,
+      "nonempty": 80,
+      "mean_cue_size": 20.483333333333334
+    },
+    "actual_recorded_multimodal": {
+      "count": 120,
+      "nonempty": 120,
+      "mean_cue_size": 228.54166666666666
+    },
+    "dense": {
+      "count": 1,
+      "nonempty": 1,
+      "mean_cue_size": 5584.0
+    },
+    "empty": {
+      "count": 1,
+      "nonempty": 0,
+      "mean_cue_size": 0.0
+    },
+    "partial_stored_plus_noise": {
+      "count": 90,
+      "nonempty": 90,
+      "mean_cue_size": 127.15555555555555
+    },
+    "random": {
+      "count": 90,
+      "nonempty": 90,
+      "mean_cue_size": 331.76666666666665
+    },
+    "unknown": {
+      "count": 1,
+      "nonempty": 1,
+      "mean_cue_size": 1.0
+    }
+  },
+  "query_results": [
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 30,
+      "time_at_threshold_08": 686,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 217,
+      "time_at_threshold_08": 248,
+      "ratio": 0.9539170506912442
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 0,
+      "time_at_threshold_08": null,
+      "ratio": 0.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 188,
+      "time_at_threshold_08": 402,
+      "ratio": 0.9468085106382979
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 0,
+      "time_at_threshold_08": null,
+      "ratio": 0.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 236,
+      "time_at_threshold_08": 140,
+      "ratio": 0.8898305084745762
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 32,
+      "time_at_threshold_08": 44,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 256,
+      "time_at_threshold_08": 148,
+      "ratio": 0.94140625
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 30,
+      "time_at_threshold_08": 686,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 235,
+      "time_at_threshold_08": 174,
+      "ratio": 0.8893617021276595
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 26,
+      "time_at_threshold_08": 698,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 231,
+      "time_at_threshold_08": 50,
+      "ratio": 0.9264069264069265
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 32,
+      "time_at_threshold_08": 44,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 246,
+      "time_at_threshold_08": 226,
+      "ratio": 0.9146341463414634
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 0,
+      "time_at_threshold_08": null,
+      "ratio": 0.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 187,
+      "time_at_threshold_08": 402,
+      "ratio": 0.946524064171123
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 0,
+      "time_at_threshold_08": null,
+      "ratio": 0.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 218,
+      "time_at_threshold_08": 378,
+      "ratio": 0.926605504587156
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 26,
+      "time_at_threshold_08": 698,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 243,
+      "time_at_threshold_08": 50,
+      "ratio": 0.9012345679012346
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 32,
+      "time_at_threshold_08": 44,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 238,
+      "time_at_threshold_08": 298,
+      "ratio": 0.957983193277311
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 30,
+      "time_at_threshold_08": 686,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 226,
+      "time_at_threshold_08": 532,
+      "ratio": 0.9557522123893806
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 26,
+      "time_at_threshold_08": 698,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 231,
+      "time_at_threshold_08": 28,
+      "ratio": 0.922077922077922
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 0,
+      "time_at_threshold_08": null,
+      "ratio": 0.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 227,
+      "time_at_threshold_08": 378,
+      "ratio": 0.8942731277533039
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 0,
+      "time_at_threshold_08": null,
+      "ratio": 0.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 236,
+      "time_at_threshold_08": 380,
+      "ratio": 0.940677966101695
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 30,
+      "time_at_threshold_08": 686,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 228,
+      "time_at_threshold_08": 390,
+      "ratio": 0.956140350877193
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 26,
+      "time_at_threshold_08": 698,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 244,
+      "time_at_threshold_08": 424,
+      "ratio": 0.8934426229508197
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 32,
+      "time_at_threshold_08": 44,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 255,
+      "time_at_threshold_08": 440,
+      "ratio": 0.9450980392156862
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 30,
+      "time_at_threshold_08": 686,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 233,
+      "time_at_threshold_08": 0,
+      "ratio": 0.9055793991416309
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 0,
+      "time_at_threshold_08": null,
+      "ratio": 0.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 219,
+      "time_at_threshold_08": 148,
+      "ratio": 0.908675799086758
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 0,
+      "time_at_threshold_08": null,
+      "ratio": 0.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 227,
+      "time_at_threshold_08": 512,
+      "ratio": 0.8942731277533039
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 32,
+      "time_at_threshold_08": 44,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 237,
+      "time_at_threshold_08": 520,
+      "ratio": 0.9578059071729957
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 30,
+      "time_at_threshold_08": 686,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 245,
+      "time_at_threshold_08": 538,
+      "ratio": 0.8938775510204081
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 26,
+      "time_at_threshold_08": 698,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 251,
+      "time_at_threshold_08": 556,
+      "ratio": 0.896414342629482
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 32,
+      "time_at_threshold_08": 44,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 242,
+      "time_at_threshold_08": 512,
+      "ratio": 0.9628099173553719
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 0,
+      "time_at_threshold_08": null,
+      "ratio": 0.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 221,
+      "time_at_threshold_08": 600,
+      "ratio": 0.9276018099547512
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 0,
+      "time_at_threshold_08": null,
+      "ratio": 0.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 189,
+      "time_at_threshold_08": 858,
+      "ratio": 0.9365079365079365
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 0,
+      "time_at_threshold_08": null,
+      "ratio": 0.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 210,
+      "time_at_threshold_08": 642,
+      "ratio": 0.9523809523809523
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 35,
+      "time_at_threshold_08": 664,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 228,
+      "time_at_threshold_08": 662,
+      "ratio": 0.956140350877193
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 30,
+      "time_at_threshold_08": 686,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 234,
+      "time_at_threshold_08": 674,
+      "ratio": 0.905982905982906
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 26,
+      "time_at_threshold_08": 698,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 232,
+      "time_at_threshold_08": 706,
+      "ratio": 0.9568965517241379
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 32,
+      "time_at_threshold_08": 44,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 243,
+      "time_at_threshold_08": 724,
+      "ratio": 0.8930041152263375
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 0,
+      "time_at_threshold_08": null,
+      "ratio": 0.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 218,
+      "time_at_threshold_08": 714,
+      "ratio": 0.9220183486238532
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 0,
+      "time_at_threshold_08": null,
+      "ratio": 0.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 193,
+      "time_at_threshold_08": 762,
+      "ratio": 0.9481865284974094
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 33,
+      "time_at_threshold_08": 770,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 244,
+      "time_at_threshold_08": 770,
+      "ratio": 0.8934426229508197
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 35,
+      "time_at_threshold_08": 664,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 255,
+      "time_at_threshold_08": 794,
+      "ratio": 0.8980392156862745
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 30,
+      "time_at_threshold_08": 686,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 223,
+      "time_at_threshold_08": 818,
+      "ratio": 0.9551569506726457
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 26,
+      "time_at_threshold_08": 698,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 237,
+      "time_at_threshold_08": 708,
+      "ratio": 0.9240506329113924
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 0,
+      "time_at_threshold_08": null,
+      "ratio": 0.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 211,
+      "time_at_threshold_08": 714,
+      "ratio": 0.9146919431279621
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 0,
+      "time_at_threshold_08": null,
+      "ratio": 0.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 212,
+      "time_at_threshold_08": 714,
+      "ratio": 0.910377358490566
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 30,
+      "time_at_threshold_08": 890,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 222,
+      "time_at_threshold_08": 890,
+      "ratio": 0.954954954954955
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 33,
+      "time_at_threshold_08": 770,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 244,
+      "time_at_threshold_08": 770,
+      "ratio": 0.8934426229508197
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 35,
+      "time_at_threshold_08": 664,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 255,
+      "time_at_threshold_08": 794,
+      "ratio": 0.8980392156862745
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 30,
+      "time_at_threshold_08": 686,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 222,
+      "time_at_threshold_08": 962,
+      "ratio": 0.954954954954955
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 0,
+      "time_at_threshold_08": null,
+      "ratio": 0.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 192,
+      "time_at_threshold_08": 906,
+      "ratio": 0.9479166666666666
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 0,
+      "time_at_threshold_08": null,
+      "ratio": 0.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 211,
+      "time_at_threshold_08": 714,
+      "ratio": 0.9146919431279621
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 32,
+      "time_at_threshold_08": 44,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 250,
+      "time_at_threshold_08": 724,
+      "ratio": 0.896
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 30,
+      "time_at_threshold_08": 890,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 223,
+      "time_at_threshold_08": 746,
+      "ratio": 0.9551569506726457
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 33,
+      "time_at_threshold_08": 770,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 244,
+      "time_at_threshold_08": 770,
+      "ratio": 0.8934426229508197
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 35,
+      "time_at_threshold_08": 664,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 255,
+      "time_at_threshold_08": 794,
+      "ratio": 0.8980392156862745
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 0,
+      "time_at_threshold_08": null,
+      "ratio": 0.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 220,
+      "time_at_threshold_08": 810,
+      "ratio": 0.8818181818181818
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 0,
+      "time_at_threshold_08": null,
+      "ratio": 0.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 193,
+      "time_at_threshold_08": 762,
+      "ratio": 0.9481865284974094
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 26,
+      "time_at_threshold_08": 698,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 237,
+      "time_at_threshold_08": 708,
+      "ratio": 0.9240506329113924
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 32,
+      "time_at_threshold_08": 44,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 244,
+      "time_at_threshold_08": 866,
+      "ratio": 0.8934426229508197
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 30,
+      "time_at_threshold_08": 890,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 222,
+      "time_at_threshold_08": 890,
+      "ratio": 0.954954954954955
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 33,
+      "time_at_threshold_08": 770,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 244,
+      "time_at_threshold_08": 770,
+      "ratio": 0.8934426229508197
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 35,
+      "time_at_threshold_08": 664,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 255,
+      "time_at_threshold_08": 794,
+      "ratio": 0.8980392156862745
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 0,
+      "time_at_threshold_08": null,
+      "ratio": 0.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 220,
+      "time_at_threshold_08": 810,
+      "ratio": 0.8818181818181818
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 0,
+      "time_at_threshold_08": null,
+      "ratio": 0.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 192,
+      "time_at_threshold_08": 906,
+      "ratio": 0.9479166666666666
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 26,
+      "time_at_threshold_08": 698,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 237,
+      "time_at_threshold_08": 708,
+      "ratio": 0.9240506329113924
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 32,
+      "time_at_threshold_08": 44,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 250,
+      "time_at_threshold_08": 724,
+      "ratio": 0.896
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 30,
+      "time_at_threshold_08": 890,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 223,
+      "time_at_threshold_08": 746,
+      "ratio": 0.9551569506726457
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 33,
+      "time_at_threshold_08": 770,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 244,
+      "time_at_threshold_08": 770,
+      "ratio": 0.8934426229508197
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 0,
+      "time_at_threshold_08": null,
+      "ratio": 0.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 211,
+      "time_at_threshold_08": 714,
+      "ratio": 0.9146919431279621
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 0,
+      "time_at_threshold_08": null,
+      "ratio": 0.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 220,
+      "time_at_threshold_08": 810,
+      "ratio": 0.8818181818181818
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 30,
+      "time_at_threshold_08": 686,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 223,
+      "time_at_threshold_08": 818,
+      "ratio": 0.9551569506726457
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 26,
+      "time_at_threshold_08": 698,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 237,
+      "time_at_threshold_08": 708,
+      "ratio": 0.9240506329113924
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 32,
+      "time_at_threshold_08": 44,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 244,
+      "time_at_threshold_08": 866,
+      "ratio": 0.8934426229508197
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 30,
+      "time_at_threshold_08": 890,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 222,
+      "time_at_threshold_08": 890,
+      "ratio": 0.954954954954955
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 0,
+      "time_at_threshold_08": null,
+      "ratio": 0.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 192,
+      "time_at_threshold_08": 906,
+      "ratio": 0.9479166666666666
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 0,
+      "time_at_threshold_08": null,
+      "ratio": 0.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 211,
+      "time_at_threshold_08": 714,
+      "ratio": 0.9146919431279621
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 35,
+      "time_at_threshold_08": 664,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 255,
+      "time_at_threshold_08": 794,
+      "ratio": 0.8980392156862745
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 30,
+      "time_at_threshold_08": 686,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 222,
+      "time_at_threshold_08": 962,
+      "ratio": 0.954954954954955
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 26,
+      "time_at_threshold_08": 698,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 237,
+      "time_at_threshold_08": 708,
+      "ratio": 0.9240506329113924
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 32,
+      "time_at_threshold_08": 44,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 250,
+      "time_at_threshold_08": 724,
+      "ratio": 0.896
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 0,
+      "time_at_threshold_08": null,
+      "ratio": 0.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 218,
+      "time_at_threshold_08": 714,
+      "ratio": 0.9220183486238532
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 0,
+      "time_at_threshold_08": null,
+      "ratio": 0.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 193,
+      "time_at_threshold_08": 762,
+      "ratio": 0.9481865284974094
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 33,
+      "time_at_threshold_08": 770,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 244,
+      "time_at_threshold_08": 770,
+      "ratio": 0.8934426229508197
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 35,
+      "time_at_threshold_08": 664,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 255,
+      "time_at_threshold_08": 794,
+      "ratio": 0.8980392156862745
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 30,
+      "time_at_threshold_08": 686,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 223,
+      "time_at_threshold_08": 818,
+      "ratio": 0.9551569506726457
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 26,
+      "time_at_threshold_08": 698,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 237,
+      "time_at_threshold_08": 708,
+      "ratio": 0.9240506329113924
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 32,
+      "time_at_threshold_08": 44,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 244,
+      "time_at_threshold_08": 866,
+      "ratio": 0.8934426229508197
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 0,
+      "time_at_threshold_08": null,
+      "ratio": 0.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 212,
+      "time_at_threshold_08": 714,
+      "ratio": 0.910377358490566
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 0,
+      "time_at_threshold_08": null,
+      "ratio": 0.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 192,
+      "time_at_threshold_08": 906,
+      "ratio": 0.9479166666666666
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 33,
+      "time_at_threshold_08": 770,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 244,
+      "time_at_threshold_08": 770,
+      "ratio": 0.8934426229508197
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 35,
+      "time_at_threshold_08": 664,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 255,
+      "time_at_threshold_08": 794,
+      "ratio": 0.8980392156862745
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 30,
+      "time_at_threshold_08": 686,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 222,
+      "time_at_threshold_08": 962,
+      "ratio": 0.954954954954955
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 26,
+      "time_at_threshold_08": 698,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 237,
+      "time_at_threshold_08": 708,
+      "ratio": 0.9240506329113924
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 0,
+      "time_at_threshold_08": null,
+      "ratio": 0.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 211,
+      "time_at_threshold_08": 714,
+      "ratio": 0.9146919431279621
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 0,
+      "time_at_threshold_08": null,
+      "ratio": 0.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 218,
+      "time_at_threshold_08": 714,
+      "ratio": 0.9220183486238532
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 30,
+      "time_at_threshold_08": 890,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 223,
+      "time_at_threshold_08": 746,
+      "ratio": 0.9551569506726457
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 33,
+      "time_at_threshold_08": 770,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 244,
+      "time_at_threshold_08": 770,
+      "ratio": 0.8934426229508197
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 35,
+      "time_at_threshold_08": 664,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 255,
+      "time_at_threshold_08": 794,
+      "ratio": 0.8980392156862745
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 30,
+      "time_at_threshold_08": 686,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 223,
+      "time_at_threshold_08": 818,
+      "ratio": 0.9551569506726457
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 0,
+      "time_at_threshold_08": null,
+      "ratio": 0.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 193,
+      "time_at_threshold_08": 762,
+      "ratio": 0.9481865284974094
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 0,
+      "time_at_threshold_08": null,
+      "ratio": 0.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 211,
+      "time_at_threshold_08": 714,
+      "ratio": 0.9146919431279621
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 32,
+      "time_at_threshold_08": 44,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 244,
+      "time_at_threshold_08": 866,
+      "ratio": 0.8934426229508197
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 30,
+      "time_at_threshold_08": 890,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 222,
+      "time_at_threshold_08": 890,
+      "ratio": 0.954954954954955
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 33,
+      "time_at_threshold_08": 770,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 244,
+      "time_at_threshold_08": 770,
+      "ratio": 0.8934426229508197
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 35,
+      "time_at_threshold_08": 664,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 255,
+      "time_at_threshold_08": 794,
+      "ratio": 0.8980392156862745
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 0,
+      "time_at_threshold_08": null,
+      "ratio": 0.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 220,
+      "time_at_threshold_08": 810,
+      "ratio": 0.8818181818181818
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 0,
+      "time_at_threshold_08": null,
+      "ratio": 0.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 192,
+      "time_at_threshold_08": 906,
+      "ratio": 0.9479166666666666
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 26,
+      "time_at_threshold_08": 698,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 237,
+      "time_at_threshold_08": 708,
+      "ratio": 0.9240506329113924
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 32,
+      "time_at_threshold_08": 44,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 250,
+      "time_at_threshold_08": 724,
+      "ratio": 0.896
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 30,
+      "time_at_threshold_08": 890,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 223,
+      "time_at_threshold_08": 746,
+      "ratio": 0.9551569506726457
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 33,
+      "time_at_threshold_08": 770,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 244,
+      "time_at_threshold_08": 770,
+      "ratio": 0.8934426229508197
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 35,
+      "time_at_threshold_08": 664,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 255,
+      "time_at_threshold_08": 794,
+      "ratio": 0.8980392156862745
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 0,
+      "time_at_threshold_08": null,
+      "ratio": 0.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 220,
+      "time_at_threshold_08": 810,
+      "ratio": 0.8818181818181818
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 0,
+      "time_at_threshold_08": null,
+      "ratio": 0.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 193,
+      "time_at_threshold_08": 762,
+      "ratio": 0.9481865284974094
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 26,
+      "time_at_threshold_08": 698,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 237,
+      "time_at_threshold_08": 708,
+      "ratio": 0.9240506329113924
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 32,
+      "time_at_threshold_08": 44,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 244,
+      "time_at_threshold_08": 866,
+      "ratio": 0.8934426229508197
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 30,
+      "time_at_threshold_08": 890,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 222,
+      "time_at_threshold_08": 890,
+      "ratio": 0.954954954954955
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 33,
+      "time_at_threshold_08": 770,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 244,
+      "time_at_threshold_08": 770,
+      "ratio": 0.8934426229508197
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 0,
+      "time_at_threshold_08": null,
+      "ratio": 0.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 211,
+      "time_at_threshold_08": 714,
+      "ratio": 0.9146919431279621
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 0,
+      "time_at_threshold_08": null,
+      "ratio": 0.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 220,
+      "time_at_threshold_08": 810,
+      "ratio": 0.8818181818181818
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 30,
+      "time_at_threshold_08": 686,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 222,
+      "time_at_threshold_08": 962,
+      "ratio": 0.954954954954955
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 26,
+      "time_at_threshold_08": 698,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 237,
+      "time_at_threshold_08": 708,
+      "ratio": 0.9240506329113924
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 32,
+      "time_at_threshold_08": 44,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 250,
+      "time_at_threshold_08": 724,
+      "ratio": 0.896
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 30,
+      "time_at_threshold_08": 890,
+      "ratio": 1.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 223,
+      "time_at_threshold_08": 746,
+      "ratio": 0.9551569506726457
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 0,
+      "time_at_threshold_08": null,
+      "ratio": 0.0
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 193,
+      "time_at_threshold_08": 762,
+      "ratio": 0.9481865284974094
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 91,
+      "time_at_threshold_08": null,
+      "ratio": 0.6813186813186813
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 179,
+      "time_at_threshold_08": null,
+      "ratio": 0.7877094972067039
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 250,
+      "time_at_threshold_08": 656,
+      "ratio": 0.852
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 186,
+      "time_at_threshold_08": 786,
+      "ratio": 0.9623655913978495
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 97,
+      "time_at_threshold_08": 526,
+      "ratio": 0.8865979381443299
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 191,
+      "time_at_threshold_08": 328,
+      "ratio": 0.8481675392670157
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 41,
+      "time_at_threshold_08": null,
+      "ratio": 0.3902439024390244
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 213,
+      "time_at_threshold_08": 548,
+      "ratio": 0.9154929577464789
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 111,
+      "time_at_threshold_08": 890,
+      "ratio": 1.0
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 223,
+      "time_at_threshold_08": 794,
+      "ratio": 0.8654708520179372
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 159,
+      "time_at_threshold_08": 96,
+      "ratio": 0.9874213836477987
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 163,
+      "time_at_threshold_08": null,
+      "ratio": 0.7484662576687117
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 54,
+      "time_at_threshold_08": null,
+      "ratio": 0.25925925925925924
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 157,
+      "time_at_threshold_08": 906,
+      "ratio": 0.9363057324840764
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 158,
+      "time_at_threshold_08": 810,
+      "ratio": 0.9430379746835443
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 83,
+      "time_at_threshold_08": 794,
+      "ratio": 0.8192771084337349
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 57,
+      "time_at_threshold_08": null,
+      "ratio": 0.5087719298245614
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 217,
+      "time_at_threshold_08": 412,
+      "ratio": 1.0
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 179,
+      "time_at_threshold_08": 890,
+      "ratio": 0.8379888268156425
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 68,
+      "time_at_threshold_08": null,
+      "ratio": 0.4852941176470588
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 196,
+      "time_at_threshold_08": 416,
+      "ratio": 0.9438775510204082
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 195,
+      "time_at_threshold_08": 770,
+      "ratio": 0.9487179487179487
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 64,
+      "time_at_threshold_08": null,
+      "ratio": 0.796875
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 174,
+      "time_at_threshold_08": null,
+      "ratio": 0.7873563218390804
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 15,
+      "time_at_threshold_08": 626,
+      "ratio": 0.8
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 146,
+      "time_at_threshold_08": null,
+      "ratio": 0.7876712328767124
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 234,
+      "time_at_threshold_08": 818,
+      "ratio": 0.9102564102564102
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 101,
+      "time_at_threshold_08": 10,
+      "ratio": 1.0
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 16,
+      "time_at_threshold_08": null,
+      "ratio": 0.375
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 60,
+      "time_at_threshold_08": null,
+      "ratio": 0.5166666666666667
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 153,
+      "time_at_threshold_08": 724,
+      "ratio": 0.9477124183006536
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 35,
+      "time_at_threshold_08": null,
+      "ratio": 0.17142857142857143
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 227,
+      "time_at_threshold_08": 962,
+      "ratio": 0.9823788546255506
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 202,
+      "time_at_threshold_08": 724,
+      "ratio": 0.9158415841584159
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 86,
+      "time_at_threshold_08": null,
+      "ratio": 0.5930232558139535
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 68,
+      "time_at_threshold_08": 882,
+      "ratio": 0.9264705882352942
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 137,
+      "time_at_threshold_08": 762,
+      "ratio": 0.9781021897810219
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 45,
+      "time_at_threshold_08": null,
+      "ratio": 0.5111111111111111
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 66,
+      "time_at_threshold_08": null,
+      "ratio": 0.696969696969697
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 203,
+      "time_at_threshold_08": 882,
+      "ratio": 0.8719211822660099
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 150,
+      "time_at_threshold_08": 746,
+      "ratio": 0.9133333333333333
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 194,
+      "time_at_threshold_08": 644,
+      "ratio": 0.8556701030927835
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 106,
+      "time_at_threshold_08": null,
+      "ratio": 0.6981132075471698
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 74,
+      "time_at_threshold_08": null,
+      "ratio": 0.6621621621621622
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 106,
+      "time_at_threshold_08": 24,
+      "ratio": 0.8962264150943396
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 47,
+      "time_at_threshold_08": null,
+      "ratio": 0.574468085106383
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 102,
+      "time_at_threshold_08": null,
+      "ratio": 0.6176470588235294
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 115,
+      "time_at_threshold_08": 794,
+      "ratio": 0.9391304347826087
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 172,
+      "time_at_threshold_08": 156,
+      "ratio": 0.813953488372093
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 124,
+      "time_at_threshold_08": 340,
+      "ratio": 0.9838709677419355
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 90,
+      "time_at_threshold_08": null,
+      "ratio": 0.5777777777777777
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 163,
+      "time_at_threshold_08": 962,
+      "ratio": 0.8588957055214724
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 37,
+      "time_at_threshold_08": null,
+      "ratio": 0.1891891891891892
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 193,
+      "time_at_threshold_08": 692,
+      "ratio": 0.8238341968911918
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 33,
+      "time_at_threshold_08": null,
+      "ratio": 0.5151515151515151
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 145,
+      "time_at_threshold_08": 794,
+      "ratio": 0.8344827586206897
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 92,
+      "time_at_threshold_08": null,
+      "ratio": 0.6086956521739131
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 94,
+      "time_at_threshold_08": null,
+      "ratio": 0.6382978723404256
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 124,
+      "time_at_threshold_08": 794,
+      "ratio": 0.8709677419354839
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 162,
+      "time_at_threshold_08": null,
+      "ratio": 0.7901234567901234
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 93,
+      "time_at_threshold_08": 724,
+      "ratio": 0.989247311827957
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 94,
+      "time_at_threshold_08": 44,
+      "ratio": 0.925531914893617
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 18,
+      "time_at_threshold_08": null,
+      "ratio": 0.7777777777777778
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 140,
+      "time_at_threshold_08": 842,
+      "ratio": 0.9571428571428572
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 163,
+      "time_at_threshold_08": null,
+      "ratio": 0.7852760736196319
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 196,
+      "time_at_threshold_08": 770,
+      "ratio": 0.9030612244897959
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 67,
+      "time_at_threshold_08": null,
+      "ratio": 0.5522388059701493
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 24,
+      "time_at_threshold_08": null,
+      "ratio": 0.20833333333333334
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 215,
+      "time_at_threshold_08": 432,
+      "ratio": 0.827906976744186
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 184,
+      "time_at_threshold_08": null,
+      "ratio": 0.782608695652174
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 197,
+      "time_at_threshold_08": 866,
+      "ratio": 0.8934010152284264
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 164,
+      "time_at_threshold_08": 906,
+      "ratio": 0.8048780487804879
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 144,
+      "time_at_threshold_08": 410,
+      "ratio": 0.8125
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 210,
+      "time_at_threshold_08": 664,
+      "ratio": 0.9238095238095239
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 81,
+      "time_at_threshold_08": null,
+      "ratio": 0.49382716049382713
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 210,
+      "time_at_threshold_08": 842,
+      "ratio": 0.819047619047619
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 87,
+      "time_at_threshold_08": null,
+      "ratio": 0.5172413793103449
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 129,
+      "time_at_threshold_08": 794,
+      "ratio": 1.0
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 79,
+      "time_at_threshold_08": 794,
+      "ratio": 0.8227848101265823
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 107,
+      "time_at_threshold_08": null,
+      "ratio": 0.7102803738317757
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 235,
+      "time_at_threshold_08": 526,
+      "ratio": 0.8765957446808511
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 167,
+      "time_at_threshold_08": 132,
+      "ratio": 0.9401197604790419
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 204,
+      "time_at_threshold_08": 82,
+      "ratio": 0.8970588235294118
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 162,
+      "time_at_threshold_08": 890,
+      "ratio": 0.9691358024691358
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 47,
+      "time_at_threshold_08": 786,
+      "ratio": 0.8936170212765957
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 70,
+      "time_at_threshold_08": null,
+      "ratio": 0.6428571428571429
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 42,
+      "time_at_threshold_08": null,
+      "ratio": 0.47619047619047616
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 51,
+      "time_at_threshold_08": null,
+      "ratio": 0.6078431372549019
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 130,
+      "time_at_threshold_08": 32,
+      "ratio": 0.9384615384615385
+    },
+    {
+      "category": "partial_stored_plus_noise",
+      "cue_size": 111,
+      "time_at_threshold_08": 588,
+      "ratio": 0.9009009009009009
+    },
+    {
+      "category": "random",
+      "cue_size": 497,
+      "time_at_threshold_08": null,
+      "ratio": 0.060362173038229376
+    },
+    {
+      "category": "random",
+      "cue_size": 151,
+      "time_at_threshold_08": null,
+      "ratio": 0.08609271523178808
+    },
+    {
+      "category": "random",
+      "cue_size": 499,
+      "time_at_threshold_08": null,
+      "ratio": 0.056112224448897796
+    },
+    {
+      "category": "random",
+      "cue_size": 223,
+      "time_at_threshold_08": null,
+      "ratio": 0.04484304932735426
+    },
+    {
+      "category": "random",
+      "cue_size": 461,
+      "time_at_threshold_08": null,
+      "ratio": 0.06073752711496746
+    },
+    {
+      "category": "random",
+      "cue_size": 582,
+      "time_at_threshold_08": null,
+      "ratio": 0.06529209621993128
+    },
+    {
+      "category": "random",
+      "cue_size": 516,
+      "time_at_threshold_08": null,
+      "ratio": 0.046511627906976744
+    },
+    {
+      "category": "random",
+      "cue_size": 28,
+      "time_at_threshold_08": null,
+      "ratio": 0.07142857142857142
+    },
+    {
+      "category": "random",
+      "cue_size": 188,
+      "time_at_threshold_08": null,
+      "ratio": 0.047872340425531915
+    },
+    {
+      "category": "random",
+      "cue_size": 506,
+      "time_at_threshold_08": null,
+      "ratio": 0.037549407114624504
+    },
+    {
+      "category": "random",
+      "cue_size": 432,
+      "time_at_threshold_08": null,
+      "ratio": 0.06944444444444445
+    },
+    {
+      "category": "random",
+      "cue_size": 478,
+      "time_at_threshold_08": null,
+      "ratio": 0.05230125523012552
+    },
+    {
+      "category": "random",
+      "cue_size": 278,
+      "time_at_threshold_08": null,
+      "ratio": 0.050359712230215826
+    },
+    {
+      "category": "random",
+      "cue_size": 389,
+      "time_at_threshold_08": null,
+      "ratio": 0.043701799485861184
+    },
+    {
+      "category": "random",
+      "cue_size": 597,
+      "time_at_threshold_08": null,
+      "ratio": 0.06365159128978225
+    },
+    {
+      "category": "random",
+      "cue_size": 41,
+      "time_at_threshold_08": null,
+      "ratio": 0.12195121951219512
+    },
+    {
+      "category": "random",
+      "cue_size": 293,
+      "time_at_threshold_08": null,
+      "ratio": 0.06484641638225255
+    },
+    {
+      "category": "random",
+      "cue_size": 209,
+      "time_at_threshold_08": null,
+      "ratio": 0.07177033492822966
+    },
+    {
+      "category": "random",
+      "cue_size": 354,
+      "time_at_threshold_08": null,
+      "ratio": 0.05084745762711865
+    },
+    {
+      "category": "random",
+      "cue_size": 591,
+      "time_at_threshold_08": null,
+      "ratio": 0.05752961082910321
+    },
+    {
+      "category": "random",
+      "cue_size": 216,
+      "time_at_threshold_08": null,
+      "ratio": 0.05092592592592592
+    },
+    {
+      "category": "random",
+      "cue_size": 448,
+      "time_at_threshold_08": null,
+      "ratio": 0.060267857142857144
+    },
+    {
+      "category": "random",
+      "cue_size": 247,
+      "time_at_threshold_08": null,
+      "ratio": 0.03643724696356275
+    },
+    {
+      "category": "random",
+      "cue_size": 63,
+      "time_at_threshold_08": null,
+      "ratio": 0.06349206349206349
+    },
+    {
+      "category": "random",
+      "cue_size": 576,
+      "time_at_threshold_08": null,
+      "ratio": 0.05555555555555555
+    },
+    {
+      "category": "random",
+      "cue_size": 195,
+      "time_at_threshold_08": null,
+      "ratio": 0.06153846153846154
+    },
+    {
+      "category": "random",
+      "cue_size": 466,
+      "time_at_threshold_08": null,
+      "ratio": 0.04721030042918455
+    },
+    {
+      "category": "random",
+      "cue_size": 252,
+      "time_at_threshold_08": null,
+      "ratio": 0.05555555555555555
+    },
+    {
+      "category": "random",
+      "cue_size": 592,
+      "time_at_threshold_08": null,
+      "ratio": 0.052364864864864864
+    },
+    {
+      "category": "random",
+      "cue_size": 590,
+      "time_at_threshold_08": null,
+      "ratio": 0.05084745762711865
+    },
+    {
+      "category": "random",
+      "cue_size": 434,
+      "time_at_threshold_08": null,
+      "ratio": 0.055299539170506916
+    },
+    {
+      "category": "random",
+      "cue_size": 110,
+      "time_at_threshold_08": null,
+      "ratio": 0.045454545454545456
+    },
+    {
+      "category": "random",
+      "cue_size": 388,
+      "time_at_threshold_08": null,
+      "ratio": 0.04381443298969072
+    },
+    {
+      "category": "random",
+      "cue_size": 297,
+      "time_at_threshold_08": null,
+      "ratio": 0.050505050505050504
+    },
+    {
+      "category": "random",
+      "cue_size": 383,
+      "time_at_threshold_08": null,
+      "ratio": 0.06266318537859007
+    },
+    {
+      "category": "random",
+      "cue_size": 355,
+      "time_at_threshold_08": null,
+      "ratio": 0.04507042253521127
+    },
+    {
+      "category": "random",
+      "cue_size": 365,
+      "time_at_threshold_08": null,
+      "ratio": 0.07671232876712329
+    },
+    {
+      "category": "random",
+      "cue_size": 545,
+      "time_at_threshold_08": null,
+      "ratio": 0.03486238532110092
+    },
+    {
+      "category": "random",
+      "cue_size": 74,
+      "time_at_threshold_08": null,
+      "ratio": 0.10810810810810811
+    },
+    {
+      "category": "random",
+      "cue_size": 54,
+      "time_at_threshold_08": null,
+      "ratio": 0.09259259259259259
+    },
+    {
+      "category": "random",
+      "cue_size": 26,
+      "time_at_threshold_08": null,
+      "ratio": 0.038461538461538464
+    },
+    {
+      "category": "random",
+      "cue_size": 585,
+      "time_at_threshold_08": null,
+      "ratio": 0.06153846153846154
+    },
+    {
+      "category": "random",
+      "cue_size": 30,
+      "time_at_threshold_08": null,
+      "ratio": 0.06666666666666667
+    },
+    {
+      "category": "random",
+      "cue_size": 207,
+      "time_at_threshold_08": null,
+      "ratio": 0.07246376811594203
+    },
+    {
+      "category": "random",
+      "cue_size": 93,
+      "time_at_threshold_08": null,
+      "ratio": 0.021505376344086023
+    },
+    {
+      "category": "random",
+      "cue_size": 139,
+      "time_at_threshold_08": null,
+      "ratio": 0.06474820143884892
+    },
+    {
+      "category": "random",
+      "cue_size": 295,
+      "time_at_threshold_08": null,
+      "ratio": 0.0576271186440678
+    },
+    {
+      "category": "random",
+      "cue_size": 418,
+      "time_at_threshold_08": null,
+      "ratio": 0.05263157894736842
+    },
+    {
+      "category": "random",
+      "cue_size": 514,
+      "time_at_threshold_08": null,
+      "ratio": 0.06031128404669261
+    },
+    {
+      "category": "random",
+      "cue_size": 159,
+      "time_at_threshold_08": null,
+      "ratio": 0.0440251572327044
+    },
+    {
+      "category": "random",
+      "cue_size": 291,
+      "time_at_threshold_08": null,
+      "ratio": 0.048109965635738834
+    },
+    {
+      "category": "random",
+      "cue_size": 564,
+      "time_at_threshold_08": null,
+      "ratio": 0.0673758865248227
+    },
+    {
+      "category": "random",
+      "cue_size": 409,
+      "time_at_threshold_08": null,
+      "ratio": 0.05867970660146699
+    },
+    {
+      "category": "random",
+      "cue_size": 330,
+      "time_at_threshold_08": null,
+      "ratio": 0.05757575757575758
+    },
+    {
+      "category": "random",
+      "cue_size": 386,
+      "time_at_threshold_08": null,
+      "ratio": 0.05699481865284974
+    },
+    {
+      "category": "random",
+      "cue_size": 430,
+      "time_at_threshold_08": null,
+      "ratio": 0.053488372093023255
+    },
+    {
+      "category": "random",
+      "cue_size": 310,
+      "time_at_threshold_08": null,
+      "ratio": 0.06451612903225806
+    },
+    {
+      "category": "random",
+      "cue_size": 477,
+      "time_at_threshold_08": null,
+      "ratio": 0.0649895178197065
+    },
+    {
+      "category": "random",
+      "cue_size": 25,
+      "time_at_threshold_08": null,
+      "ratio": 0.2
+    },
+    {
+      "category": "random",
+      "cue_size": 157,
+      "time_at_threshold_08": null,
+      "ratio": 0.07006369426751592
+    },
+    {
+      "category": "random",
+      "cue_size": 598,
+      "time_at_threshold_08": null,
+      "ratio": 0.061872909698996656
+    },
+    {
+      "category": "random",
+      "cue_size": 174,
+      "time_at_threshold_08": null,
+      "ratio": 0.05747126436781609
+    },
+    {
+      "category": "random",
+      "cue_size": 278,
+      "time_at_threshold_08": null,
+      "ratio": 0.0683453237410072
+    },
+    {
+      "category": "random",
+      "cue_size": 531,
+      "time_at_threshold_08": null,
+      "ratio": 0.0583804143126177
+    },
+    {
+      "category": "random",
+      "cue_size": 406,
+      "time_at_threshold_08": null,
+      "ratio": 0.046798029556650245
+    },
+    {
+      "category": "random",
+      "cue_size": 349,
+      "time_at_threshold_08": null,
+      "ratio": 0.054441260744985676
+    },
+    {
+      "category": "random",
+      "cue_size": 66,
+      "time_at_threshold_08": null,
+      "ratio": 0.030303030303030304
+    },
+    {
+      "category": "random",
+      "cue_size": 364,
+      "time_at_threshold_08": null,
+      "ratio": 0.0521978021978022
+    },
+    {
+      "category": "random",
+      "cue_size": 102,
+      "time_at_threshold_08": null,
+      "ratio": 0.06862745098039216
+    },
+    {
+      "category": "random",
+      "cue_size": 264,
+      "time_at_threshold_08": null,
+      "ratio": 0.056818181818181816
+    },
+    {
+      "category": "random",
+      "cue_size": 390,
+      "time_at_threshold_08": null,
+      "ratio": 0.0641025641025641
+    },
+    {
+      "category": "random",
+      "cue_size": 568,
+      "time_at_threshold_08": null,
+      "ratio": 0.051056338028169015
+    },
+    {
+      "category": "random",
+      "cue_size": 316,
+      "time_at_threshold_08": null,
+      "ratio": 0.056962025316455694
+    },
+    {
+      "category": "random",
+      "cue_size": 556,
+      "time_at_threshold_08": null,
+      "ratio": 0.0683453237410072
+    },
+    {
+      "category": "random",
+      "cue_size": 197,
+      "time_at_threshold_08": null,
+      "ratio": 0.030456852791878174
+    },
+    {
+      "category": "random",
+      "cue_size": 503,
+      "time_at_threshold_08": null,
+      "ratio": 0.055666003976143144
+    },
+    {
+      "category": "random",
+      "cue_size": 506,
+      "time_at_threshold_08": null,
+      "ratio": 0.05138339920948617
+    },
+    {
+      "category": "random",
+      "cue_size": 563,
+      "time_at_threshold_08": null,
+      "ratio": 0.06039076376554174
+    },
+    {
+      "category": "random",
+      "cue_size": 564,
+      "time_at_threshold_08": null,
+      "ratio": 0.05319148936170213
+    },
+    {
+      "category": "random",
+      "cue_size": 265,
+      "time_at_threshold_08": null,
+      "ratio": 0.06792452830188679
+    },
+    {
+      "category": "random",
+      "cue_size": 270,
+      "time_at_threshold_08": null,
+      "ratio": 0.04814814814814815
+    },
+    {
+      "category": "random",
+      "cue_size": 156,
+      "time_at_threshold_08": null,
+      "ratio": 0.08333333333333333
+    },
+    {
+      "category": "random",
+      "cue_size": 35,
+      "time_at_threshold_08": null,
+      "ratio": 0.02857142857142857
+    },
+    {
+      "category": "random",
+      "cue_size": 545,
+      "time_at_threshold_08": null,
+      "ratio": 0.05137614678899083
+    },
+    {
+      "category": "random",
+      "cue_size": 476,
+      "time_at_threshold_08": null,
+      "ratio": 0.03991596638655462
+    },
+    {
+      "category": "random",
+      "cue_size": 49,
+      "time_at_threshold_08": null,
+      "ratio": 0.10204081632653061
+    },
+    {
+      "category": "random",
+      "cue_size": 119,
+      "time_at_threshold_08": null,
+      "ratio": 0.05042016806722689
+    },
+    {
+      "category": "random",
+      "cue_size": 293,
+      "time_at_threshold_08": null,
+      "ratio": 0.051194539249146756
+    },
+    {
+      "category": "random",
+      "cue_size": 283,
+      "time_at_threshold_08": null,
+      "ratio": 0.06007067137809187
+    },
+    {
+      "category": "random",
+      "cue_size": 265,
+      "time_at_threshold_08": null,
+      "ratio": 0.06415094339622641
+    },
+    {
+      "category": "empty",
+      "cue_size": 0,
+      "time_at_threshold_08": null,
+      "ratio": 0.0
+    },
+    {
+      "category": "unknown",
+      "cue_size": 1,
+      "time_at_threshold_08": null,
+      "ratio": 0.0
+    },
+    {
+      "category": "dense",
+      "cue_size": 5584,
+      "time_at_threshold_08": null,
+      "ratio": 0.05193409742120344
+    }
+  ],
+  "lookup": {
+    "original": {
+      "median_ms": 2.126,
+      "p95_ms": 4.775519999999999,
+      "total_ms": 3032.9587
+    },
+    "fast": {
+      "median_ms": 0.1928,
+      "p95_ms": 0.8558399999999996,
+      "total_ms": 465.2042
+    }
+  },
+  "lookup_total_speedup": 6.519628799568018,
+  "rebuild_ms": 34.250800003064796,
+  "learning_160_updates_ms": {
+    "original": 3.6470999984885566,
+    "fast": 8.716600001207553
+  },
+  "mixed_160_learning_plus_480_query_ms": {
+    "original": 1179.723000001104,
+    "fast": 183.37719999908586
+  },
+  "mixed_speedup": 6.433313410865609,
+  "cache_memory": {
+    "allocated_cache_bytes_estimate": 1290068,
+    "posting_payload_bytes": 1102920,
+    "time_rows": 1250,
+    "feature_postings": 616,
+    "edges": 275730
+  },
+  "original_mapping_memory_bytes_estimate": 18302392,
+  "largest_query_posting_payload_bytes": 1102920,
+  "source_checkpoint_hashes": {
+    "F:\\一种AGI架构\\原架构闭环\\results\\continuous_balanced_1200.npz": "896689fb7f04f971935aca61a1195c2b3cc286e358fb2e4a4b5ab319c2ab81a5",
+    "F:\\一种AGI架构\\原架构闭环\\results\\continuous_balanced_1200_actual_sensors.npz": "a5878dc5075f4d45607904f25522aee3c705acb4ad46d5e6c4b4c1fe9fa10967",
+    "F:\\一种AGI架构\\前额叶区.py": "5087a9ce13ce6b727db27b8f6ae73f539f143115fdee0ae4b681acf7267a7b02",
+    "F:\\一种AGI架构\\原架构闭环\\brain.py": "933ba6362dee88c4d03b130cab783047e984e0e480a5a7bbc06780d1dc29fe6a",
+    "F:\\一种AGI架构\\原架构闭环\\original_runtime.py": "10338f0b7d7e7229834c69dfc819d8663bd298c50853a28373ae01d4d2bd0844"
+  },
+  "seconds": 16.26612020000175,
+  "limitations": [
+    "External direct dict/set mutation requires explicit rebuild_from_original; normal learning updates caches exactly.",
+    "Cache memory is additional implementation overhead and is not a second saved knowledge store.",
+    "Recorded sensor arrays use their saved float32 precision; probes are re-encoded from that actual recorded data.",
+    "Microbenchmark measures this real 1200-step index, not end-to-end frame speed or an unbounded future index.",
+    "Query concatenation temporarily allocates one int32 row entry per matched feature-time posting."
+  ],
+  "script_sha256": "d5a892b95eeadb07957ec001689f47b44fc24527f0b25238f0c6be4395eb4e28"
+}

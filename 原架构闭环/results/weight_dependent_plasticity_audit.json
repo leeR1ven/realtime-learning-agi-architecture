@@ -1,0 +1,532 @@
+{
+  "passed": true,
+  "parameters_rejected_before_mutation": 13,
+  "potentiation_formula": "delta_w = eta * max(0, 1 - w/ceiling), 0 < eta <= ceiling",
+  "depression_formula": "w_next = w / (1 + (1/decay_rate - 1) * w/ceiling)",
+  "amplification": [
+    {
+      "initial": 0.0,
+      "increment": 0.1,
+      "after": 0.1
+    },
+    {
+      "initial": 0.1,
+      "increment": 0.09,
+      "after": 0.19
+    },
+    {
+      "initial": 0.5,
+      "increment": 0.050000000000000044,
+      "after": 0.55
+    },
+    {
+      "initial": 0.9,
+      "increment": 0.010000000000000009,
+      "after": 0.91
+    },
+    {
+      "initial": 1.0,
+      "increment": 0.0,
+      "after": 1.0
+    },
+    {
+      "initial": 1.5,
+      "increment": 0.0,
+      "after": 1.5
+    },
+    {
+      "initial": 10.0,
+      "increment": 0.0,
+      "after": 10.0
+    }
+  ],
+  "repeated_training": [
+    {
+      "ceiling": 0.001,
+      "eta": 1.0000000000000001e-07,
+      "initial": 0.0,
+      "after_10000": 0.0006321389535670715,
+      "analytic": 0.0006321389535670296
+    },
+    {
+      "ceiling": 0.001,
+      "eta": 1.0000000000000001e-07,
+      "initial": 0.0004,
+      "after_10000": 0.0007792833721402381,
+      "analytic": 0.0007792833721402177
+    },
+    {
+      "ceiling": 0.001,
+      "eta": 1.0000000000000001e-07,
+      "initial": 0.001,
+      "after_10000": 0.001,
+      "analytic": 0.001
+    },
+    {
+      "ceiling": 0.001,
+      "eta": 1.0000000000000001e-07,
+      "initial": 0.0015,
+      "after_10000": 0.0015,
+      "analytic": 0.0015
+    },
+    {
+      "ceiling": 0.001,
+      "eta": 0.0001,
+      "initial": 0.0,
+      "after_10000": 0.0009999999999999992,
+      "analytic": 0.001
+    },
+    {
+      "ceiling": 0.001,
+      "eta": 0.0001,
+      "initial": 0.0004,
+      "after_10000": 0.0009999999999999992,
+      "analytic": 0.001
+    },
+    {
+      "ceiling": 0.001,
+      "eta": 0.0001,
+      "initial": 0.001,
+      "after_10000": 0.001,
+      "analytic": 0.001
+    },
+    {
+      "ceiling": 0.001,
+      "eta": 0.0001,
+      "initial": 0.0015,
+      "after_10000": 0.0015,
+      "analytic": 0.0015
+    },
+    {
+      "ceiling": 0.001,
+      "eta": 0.001,
+      "initial": 0.0,
+      "after_10000": 0.001,
+      "analytic": 0.001
+    },
+    {
+      "ceiling": 0.001,
+      "eta": 0.001,
+      "initial": 0.0004,
+      "after_10000": 0.001,
+      "analytic": 0.001
+    },
+    {
+      "ceiling": 0.001,
+      "eta": 0.001,
+      "initial": 0.001,
+      "after_10000": 0.001,
+      "analytic": 0.001
+    },
+    {
+      "ceiling": 0.001,
+      "eta": 0.001,
+      "initial": 0.0015,
+      "after_10000": 0.0015,
+      "analytic": 0.0015
+    },
+    {
+      "ceiling": 1.0,
+      "eta": 0.0001,
+      "initial": 0.0,
+      "after_10000": 0.6321389535670703,
+      "analytic": 0.6321389535670295
+    },
+    {
+      "ceiling": 1.0,
+      "eta": 0.0001,
+      "initial": 0.4,
+      "after_10000": 0.7792833721402428,
+      "analytic": 0.7792833721402177
+    },
+    {
+      "ceiling": 1.0,
+      "eta": 0.0001,
+      "initial": 1.0,
+      "after_10000": 1.0,
+      "analytic": 1.0
+    },
+    {
+      "ceiling": 1.0,
+      "eta": 0.0001,
+      "initial": 1.5,
+      "after_10000": 1.5,
+      "analytic": 1.5
+    },
+    {
+      "ceiling": 1.0,
+      "eta": 0.1,
+      "initial": 0.0,
+      "after_10000": 0.9999999999999996,
+      "analytic": 1.0
+    },
+    {
+      "ceiling": 1.0,
+      "eta": 0.1,
+      "initial": 0.4,
+      "after_10000": 0.9999999999999996,
+      "analytic": 1.0
+    },
+    {
+      "ceiling": 1.0,
+      "eta": 0.1,
+      "initial": 1.0,
+      "after_10000": 1.0,
+      "analytic": 1.0
+    },
+    {
+      "ceiling": 1.0,
+      "eta": 0.1,
+      "initial": 1.5,
+      "after_10000": 1.5,
+      "analytic": 1.5
+    },
+    {
+      "ceiling": 1.0,
+      "eta": 1.0,
+      "initial": 0.0,
+      "after_10000": 1.0,
+      "analytic": 1.0
+    },
+    {
+      "ceiling": 1.0,
+      "eta": 1.0,
+      "initial": 0.4,
+      "after_10000": 1.0,
+      "analytic": 1.0
+    },
+    {
+      "ceiling": 1.0,
+      "eta": 1.0,
+      "initial": 1.0,
+      "after_10000": 1.0,
+      "analytic": 1.0
+    },
+    {
+      "ceiling": 1.0,
+      "eta": 1.0,
+      "initial": 1.5,
+      "after_10000": 1.5,
+      "analytic": 1.5
+    },
+    {
+      "ceiling": 100.0,
+      "eta": 0.01,
+      "initial": 0.0,
+      "after_10000": 63.213895356707035,
+      "analytic": 63.213895356702956
+    },
+    {
+      "ceiling": 100.0,
+      "eta": 0.01,
+      "initial": 40.0,
+      "after_10000": 77.92833721402408,
+      "analytic": 77.92833721402178
+    },
+    {
+      "ceiling": 100.0,
+      "eta": 0.01,
+      "initial": 100.0,
+      "after_10000": 100.0,
+      "analytic": 100.0
+    },
+    {
+      "ceiling": 100.0,
+      "eta": 0.01,
+      "initial": 150.0,
+      "after_10000": 150.0,
+      "analytic": 150.0
+    },
+    {
+      "ceiling": 100.0,
+      "eta": 10.0,
+      "initial": 0.0,
+      "after_10000": 99.99999999999993,
+      "analytic": 100.0
+    },
+    {
+      "ceiling": 100.0,
+      "eta": 10.0,
+      "initial": 40.0,
+      "after_10000": 99.99999999999993,
+      "analytic": 100.0
+    },
+    {
+      "ceiling": 100.0,
+      "eta": 10.0,
+      "initial": 100.0,
+      "after_10000": 100.0,
+      "analytic": 100.0
+    },
+    {
+      "ceiling": 100.0,
+      "eta": 10.0,
+      "initial": 150.0,
+      "after_10000": 150.0,
+      "analytic": 150.0
+    },
+    {
+      "ceiling": 100.0,
+      "eta": 100.0,
+      "initial": 0.0,
+      "after_10000": 100.0,
+      "analytic": 100.0
+    },
+    {
+      "ceiling": 100.0,
+      "eta": 100.0,
+      "initial": 40.0,
+      "after_10000": 100.0,
+      "analytic": 100.0
+    },
+    {
+      "ceiling": 100.0,
+      "eta": 100.0,
+      "initial": 100.0,
+      "after_10000": 100.0,
+      "analytic": 100.0
+    },
+    {
+      "ceiling": 100.0,
+      "eta": 100.0,
+      "initial": 150.0,
+      "after_10000": 150.0,
+      "analytic": 150.0
+    }
+  ],
+  "depression": [
+    {
+      "rate": 0.1,
+      "before": 0.0,
+      "after": 0.0
+    },
+    {
+      "rate": 0.1,
+      "before": 0.02,
+      "after": 0.018348623853211007
+    },
+    {
+      "rate": 0.1,
+      "before": 0.2,
+      "after": 0.10526315789473684
+    },
+    {
+      "rate": 0.1,
+      "before": 1.0,
+      "after": 0.18181818181818182
+    },
+    {
+      "rate": 0.1,
+      "before": 2.0,
+      "after": 0.2
+    },
+    {
+      "rate": 0.1,
+      "before": 4.0,
+      "after": 0.21052631578947367
+    },
+    {
+      "rate": 0.1,
+      "before": 200.0,
+      "after": 0.22197558268590456
+    },
+    {
+      "rate": 0.5,
+      "before": 0.0,
+      "after": 0.0
+    },
+    {
+      "rate": 0.5,
+      "before": 0.02,
+      "after": 0.019801980198019802
+    },
+    {
+      "rate": 0.5,
+      "before": 0.2,
+      "after": 0.18181818181818182
+    },
+    {
+      "rate": 0.5,
+      "before": 1.0,
+      "after": 0.6666666666666666
+    },
+    {
+      "rate": 0.5,
+      "before": 2.0,
+      "after": 1.0
+    },
+    {
+      "rate": 0.5,
+      "before": 4.0,
+      "after": 1.3333333333333333
+    },
+    {
+      "rate": 0.5,
+      "before": 200.0,
+      "after": 1.9801980198019802
+    },
+    {
+      "rate": 0.9,
+      "before": 0.0,
+      "after": 0.0
+    },
+    {
+      "rate": 0.9,
+      "before": 0.02,
+      "after": 0.01997780244173141
+    },
+    {
+      "rate": 0.9,
+      "before": 0.2,
+      "after": 0.19780219780219782
+    },
+    {
+      "rate": 0.9,
+      "before": 1.0,
+      "after": 0.9473684210526316
+    },
+    {
+      "rate": 0.9,
+      "before": 2.0,
+      "after": 1.8
+    },
+    {
+      "rate": 0.9,
+      "before": 4.0,
+      "after": 3.2727272727272725
+    },
+    {
+      "rate": 0.9,
+      "before": 200.0,
+      "after": 16.51376146788991
+    },
+    {
+      "rate": 1.0,
+      "before": 0.0,
+      "after": 0.0
+    },
+    {
+      "rate": 1.0,
+      "before": 0.02,
+      "after": 0.02
+    },
+    {
+      "rate": 1.0,
+      "before": 0.2,
+      "after": 0.2
+    },
+    {
+      "rate": 1.0,
+      "before": 1.0,
+      "after": 1.0
+    },
+    {
+      "rate": 1.0,
+      "before": 2.0,
+      "after": 2.0
+    },
+    {
+      "rate": 1.0,
+      "before": 4.0,
+      "after": 4.0
+    },
+    {
+      "rate": 1.0,
+      "before": 200.0,
+      "after": 200.0
+    }
+  ],
+  "extreme_positive_float_cases": [
+    {
+      "ceiling": 1e-300,
+      "weight": 1e+300,
+      "rate": 0.5,
+      "result": 1e-300
+    },
+    {
+      "ceiling": 1.0,
+      "weight": 1e-300,
+      "rate": 1e-300,
+      "result": 5e-301
+    },
+    {
+      "ceiling": 1.0,
+      "weight": 1e+300,
+      "rate": 1e-300,
+      "result": 1e-300
+    },
+    {
+      "ceiling": 1.0,
+      "weight": 1e+300,
+      "rate": 1.0,
+      "result": 1e+300
+    }
+  ],
+  "multiplicative_values_and_counters_match_original": true,
+  "inherited_maintenance_schedule": true,
+  "maintenance_trigger_flags": [
+    true,
+    false,
+    false,
+    false,
+    true,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    true,
+    false,
+    false,
+    false,
+    true,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+  ],
+  "strict_less_than_floor_deletion_and_empty_rows": true,
+  "repeated_learning_one_edge_counts_once": true,
+  "legacy_above_ceiling_not_clipped": true,
+  "real_old_table_conversions": [
+    {
+      "name": "pfc_excitatory",
+      "edges": 204208,
+      "conversion_weight_sha256": "d7ba6bde3bb9ff7b1d62966a5c9314f6436f705e36228a06a6841adc9b6e17fe",
+      "audit_ceiling_only": 0.003495793829695634,
+      "above_ceiling_existing_edges": 151598,
+      "both_modes_share_original_weights_unchanged": true
+    },
+    {
+      "name": "visual_time_to_feature",
+      "edges": 136662,
+      "conversion_weight_sha256": "8b608262a1533b2872c6c694b485b793654ab66c4aec95da7f51680a406eca51",
+      "audit_ceiling_only": 1.0,
+      "above_ceiling_existing_edges": 0,
+      "both_modes_share_original_weights_unchanged": true
+    }
+  ],
+  "no_per_edge_state": true,
+  "no_distribution_constraint_or_noise": true,
+  "protected_hashes": {
+    "F:\\一种AGI架构\\原架构闭环\\results\\continuous_balanced_1200.npz": "896689fb7f04f971935aca61a1195c2b3cc286e358fb2e4a4b5ab319c2ab81a5",
+    "F:\\一种AGI架构\\权重连接管理.py": "408076efa5e27ab60cfc0dd0680abbc84571155d261e339835914fd768512d9d",
+    "F:\\一种AGI架构\\原架构闭环\\brain.py": "4087dd9b7a2be01953b8372f69c8f6c23baa8104cbdf7bd434bc2db499e86601",
+    "F:\\一种AGI架构\\原架构闭环\\original_runtime.py": "d489aa74403d1b96920f678a69d96f29e309b531f475c644ae8676fc430a4cbe"
+  },
+  "seconds": 0.6974588999983098,
+  "limits": [
+    "This changes the learning rule, not merely execution speed; no behavioural success is implied.",
+    "For normal positive edge weights the original counter convention is retained, including old==0 identifying a new connection.",
+    "A bounded single-edge weight does not itself bound the number of edges or recurrent network stability.",
+    "Weak-edge-dependent depression retains weak edges longer; edge count and actual retention need whole-life validation.",
+    "Only rounding overshoots for weights previously at/below the ceiling are limited to that endpoint; legacy higher weights are unchanged by potentiation."
+  ],
+  "script_sha256": "26b828ede19666eaa23f26f7e3ead22e799de5c49cfa46e3945107462ef3aab2"
+}

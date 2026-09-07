@@ -1,0 +1,3961 @@
+{
+  "scope": "Separate single-time candidate with four vocal actuators; no navigation integration, words, semantics, or AGI claim.",
+  "configuration": {
+    "seed": 2026,
+    "sensory_threshold": 0.6,
+    "visual_threshold": 0.58,
+    "audio_threshold": 0.52,
+    "motor_threshold": 0.52,
+    "audio_levels": null,
+    "motor_levels": 64,
+    "motor_reverse_window": 20,
+    "contrast_to_silence": true,
+    "pfc_hidden_threshold": 0.55,
+    "pfc_output_threshold": 1.0,
+    "pfc_spread": 5,
+    "pfc_firing_threshold": 2.0,
+    "pfc_hebb_increment": 0.0001,
+    "pfc_decay_floor": 5e-05,
+    "pfc_decay_rate": 0.9,
+    "pfc_decay_interval": 25,
+    "pfc_decay_warning": 1,
+    "pfc_weight_ceiling": null,
+    "pfc_weight_depression": "multiplicative",
+    "memory_decay_rate": 0.9995,
+    "memory_decay_interval": null,
+    "memory_decay_warning": null,
+    "pfc_target_high": 350,
+    "pfc_feedback_inhibition": 0.12,
+    "external_gain": 3.5,
+    "recall_gain": 6.0,
+    "index_threshold": 0.8,
+    "memory_threshold": 0.5,
+    "thought_steps": 2,
+    "auditory_onset_rms": 0.02,
+    "exploration_probability": 0.03
+  },
+  "seed": 917001,
+  "actual_frames": 288,
+  "physical_seconds": 28.8,
+  "clock": 576,
+  "one_current_time_neuron": true,
+  "all_pfc_pathways_active": true,
+  "training_origin": "Seeded continuous motor exploration, measured self PCM, and actual executed command only.",
+  "episode_controls_for_evaluator_only": [
+    [
+      0.7894878926943129,
+      0.8063099801606721,
+      0.07742420213000034,
+      0.7521024370538905
+    ],
+    [
+      0.625653174767064,
+      0.6375965453456082,
+      0.8105336426138736,
+      0.6507067188550014
+    ],
+    [
+      0.7176463312330661,
+      0.8892781862177757,
+      0.6725583586168266,
+      0.7564125995740777
+    ],
+    [
+      0.8582226760892693,
+      0.6977767733333144,
+      0.8177070733440227,
+      0.4236155045541703
+    ],
+    [
+      0.6489988700565018,
+      0.4651506356594785,
+      0.46129830567014407,
+      0.2760954421372361
+    ],
+    [
+      0.9111287833513333,
+      0.25754931755288063,
+      0.34950618476851075,
+      0.6294018330638436
+    ],
+    [
+      0.7045610415311929,
+      0.7457896264822158,
+      0.7306967350346225,
+      0.42422350890367255
+    ],
+    [
+      0.7526376135862815,
+      0.8042607981136329,
+      0.30066599730761046,
+      0.7946419428904985
+    ],
+    [
+      0.8313821331167742,
+      0.17899508222970967,
+      0.19334040952267817,
+      0.2251831104280569
+    ],
+    [
+      0.9157389258201423,
+      0.25815962973572704,
+      0.08233394200720154,
+      0.09360834683633966
+    ],
+    [
+      0.7543856821301415,
+      0.4240511754963239,
+      0.1648539817240286,
+      0.30957251248463996
+    ],
+    [
+      0.9042784721695218,
+      0.5472363278546463,
+      0.7925145760318049,
+      0.12167270918788982
+    ],
+    [
+      0.7099317902585249,
+      0.35073087919015045,
+      0.1847071975353971,
+      0.584514385732292
+    ],
+    [
+      0.7357037324261326,
+      0.2974098698025688,
+      0.7395759889728116,
+      0.3016901416100509
+    ],
+    [
+      0.6953469264580764,
+      0.5948438147753599,
+      0.6030460768238373,
+      0.3716939465362341
+    ],
+    [
+      0.749385663541067,
+      0.9013943249149229,
+      0.6033720851322062,
+      0.15135510485735304
+    ],
+    [
+      0.9394891253904765,
+      0.861618680923535,
+      0.1350337338414977,
+      0.8720559647957905
+    ],
+    [
+      0.7637333324583235,
+      0.8842734452918257,
+      0.17019095103054172,
+      0.10555293069761279
+    ],
+    [
+      0.6985801589816326,
+      0.7088376784231224,
+      0.2136942068187418,
+      0.8353126410490744
+    ],
+    [
+      0.6215241482882148,
+      0.7843669137498074,
+      0.7602762737639697,
+      0.9359286922868382
+    ],
+    [
+      0.9404712911890727,
+      0.10703307926119204,
+      0.6797458754654851,
+      0.2469309352758547
+    ],
+    [
+      0.7567790455065162,
+      0.37993128153578604,
+      0.22344584836405706,
+      0.5589900781333957
+    ],
+    [
+      0.8984713809480456,
+      0.06958304362568096,
+      0.0798823460185952,
+      0.7429839889395128
+    ],
+    [
+      0.6799634670235901,
+      0.47490043029831613,
+      0.7509574396488601,
+      0.8380314740471826
+    ]
+  ],
+  "unexperienced_controls_for_evaluator_only": [
+    [
+      0.8144878926943129,
+      0.7813099801606721,
+      0.05242420213000034,
+      0.7271024370538904
+    ],
+    [
+      0.650653174767064,
+      0.6625965453456082,
+      0.7855336426138736,
+      0.6757067188550014
+    ],
+    [
+      0.7426463312330661,
+      0.9142781862177757,
+      0.6475583586168265,
+      0.7314125995740777
+    ],
+    [
+      0.8832226760892693,
+      0.7227767733333145,
+      0.7927070733440227,
+      0.4486155045541703
+    ],
+    [
+      0.6739988700565018,
+      0.49015063565947853,
+      0.4862983056701441,
+      0.3010954421372361
+    ],
+    [
+      0.8861287833513333,
+      0.23254931755288064,
+      0.3745061847685108,
+      0.6544018330638436
+    ],
+    [
+      0.6795610415311929,
+      0.7207896264822158,
+      0.7556967350346225,
+      0.4492235089036726
+    ],
+    [
+      0.7276376135862814,
+      0.7792607981136329,
+      0.3256659973076105,
+      0.8196419428904985
+    ],
+    [
+      0.8063821331167742,
+      0.15399508222970967,
+      0.16834040952267817,
+      0.2001831104280569
+    ],
+    [
+      0.9407389258201423,
+      0.28315962973572706,
+      0.10733394200720153,
+      0.06860834683633965
+    ],
+    [
+      0.7793856821301415,
+      0.39905117549632385,
+      0.1398539817240286,
+      0.28457251248463994
+    ],
+    [
+      0.9292784721695219,
+      0.5722363278546463,
+      0.8175145760318049,
+      0.09667270918788981
+    ]
+  ],
+  "probe_protocol": "Independent frozen clone per sound; identical pre-probe state; no teacher motor or sound identifier input.",
+  "stages": {
+    "after_first_experience": {
+      "cues": 12,
+      "distinct_final_thought_sets": 3,
+      "final_pfc_response": {
+        "mean_spectral_cosine": 0.33802752951934845,
+        "median_fundamental_error_hz": 33.556721350343025,
+        "audible_responses": 12,
+        "spectral_cosine_at_least_0_8": 3
+      },
+      "initial_pfc_memory_response": {
+        "mean_spectral_cosine": 0.8418838198621795,
+        "median_fundamental_error_hz": 2.1924510760737377,
+        "audible_responses": 12,
+        "spectral_cosine_at_least_0_8": 8
+      },
+      "native_audio_memory_response": {
+        "mean_spectral_cosine": 0.8421145303840065,
+        "median_fundamental_error_hz": 1.9307497990163114,
+        "audible_responses": 12,
+        "spectral_cosine_at_least_0_8": 8
+      }
+    },
+    "after_new_experience": {
+      "cues": 12,
+      "distinct_final_thought_sets": 11,
+      "final_pfc_response": {
+        "mean_spectral_cosine": 0.6969447812382131,
+        "median_fundamental_error_hz": 6.153879086769436,
+        "audible_responses": 12,
+        "spectral_cosine_at_least_0_8": 6
+      },
+      "initial_pfc_memory_response": {
+        "mean_spectral_cosine": 0.8181018429723204,
+        "median_fundamental_error_hz": 4.260324129168154,
+        "audible_responses": 12,
+        "spectral_cosine_at_least_0_8": 7
+      },
+      "native_audio_memory_response": {
+        "mean_spectral_cosine": 0.8183325534941476,
+        "median_fundamental_error_hz": 3.989160387538263,
+        "audible_responses": 12,
+        "spectral_cosine_at_least_0_8": 7
+      }
+    },
+    "old_memory_content_retention": {
+      "visual": {
+        "old_times": 288,
+        "retained_exact_feature_sets": 288
+      },
+      "audio": {
+        "old_times": 288,
+        "retained_exact_feature_sets": 288
+      },
+      "motor": {
+        "old_times": 288,
+        "retained_exact_feature_sets": 288
+      }
+    },
+    "new_self_sounds": {
+      "cues": 12,
+      "distinct_final_thought_sets": 12,
+      "final_pfc_response": {
+        "mean_spectral_cosine": 0.671595133117244,
+        "median_fundamental_error_hz": 6.572977481850813,
+        "audible_responses": 12,
+        "spectral_cosine_at_least_0_8": 6
+      },
+      "initial_pfc_memory_response": {
+        "mean_spectral_cosine": 0.8094932332171374,
+        "median_fundamental_error_hz": 4.6211514871746004,
+        "audible_responses": 12,
+        "spectral_cosine_at_least_0_8": 8
+      },
+      "native_audio_memory_response": {
+        "mean_spectral_cosine": 0.8094932332171374,
+        "median_fundamental_error_hz": 4.6211514871746004,
+        "audible_responses": 12,
+        "spectral_cosine_at_least_0_8": 8
+      }
+    },
+    "unexperienced_nearby_sounds": {
+      "cues": 12,
+      "distinct_final_thought_sets": 3,
+      "final_pfc_response": {
+        "mean_spectral_cosine": 0.046577575116391136,
+        "median_fundamental_error_hz": 98.06140103795713,
+        "audible_responses": 3,
+        "spectral_cosine_at_least_0_8": 0
+      },
+      "initial_pfc_memory_response": {
+        "mean_spectral_cosine": 0.08050321058726288,
+        "median_fundamental_error_hz": 7.602415269137282,
+        "audible_responses": 3,
+        "spectral_cosine_at_least_0_8": 0
+      },
+      "native_audio_memory_response": {
+        "mean_spectral_cosine": 0.48923552053337344,
+        "median_fundamental_error_hz": 8.351845915617105,
+        "audible_responses": 12,
+        "spectral_cosine_at_least_0_8": 2
+      }
+    },
+    "before_any_voice_experience": {
+      "cues": 12,
+      "distinct_final_thought_sets": 8,
+      "final_pfc_response": {
+        "mean_spectral_cosine": 0.0,
+        "median_fundamental_error_hz": null,
+        "audible_responses": 0,
+        "spectral_cosine_at_least_0_8": 0
+      },
+      "initial_pfc_memory_response": {
+        "mean_spectral_cosine": 0.0,
+        "median_fundamental_error_hz": null,
+        "audible_responses": 0,
+        "spectral_cosine_at_least_0_8": 0
+      },
+      "native_audio_memory_response": {
+        "mean_spectral_cosine": 0.0,
+        "median_fundamental_error_hz": null,
+        "audible_responses": 0,
+        "spectral_cosine_at_least_0_8": 0
+      }
+    }
+  },
+  "probes": {
+    "after_first_experience": [
+      {
+        "cue_id": 0,
+        "cue_kind": "old_self_sounds",
+        "initial_pfc_index_time": 170,
+        "initial_pfc_index_ratio": 1.0,
+        "final_pfc_index_time": 170,
+        "final_pfc_index_ratio": 1.0,
+        "final_thought_cells": [
+          498,
+          499,
+          500,
+          4117,
+          4118
+        ],
+        "initial_controls": [
+          0.734375,
+          0.796875,
+          0.21875,
+          0.6875
+        ],
+        "final_controls": [
+          0.734375,
+          0.796875,
+          0.21875,
+          0.6875
+        ],
+        "native_controls": [
+          0.796875,
+          0.8125,
+          0.09375,
+          0.671875
+        ],
+        "final_pfc_response": {
+          "spectral_cosine": 0.9654628181734393,
+          "fine_fft_spectral_cosine": 0.6109848933920974,
+          "reference_measured_fundamental_hz": 289.6134841854383,
+          "response_measured_fundamental_hz": 287.16342899020685,
+          "absolute_fundamental_error_hz": 2.450055195231471,
+          "response_rms": 0.28324417056818446
+        },
+        "initial_pfc_memory_response": {
+          "spectral_cosine": 0.9654628181734393,
+          "fine_fft_spectral_cosine": 0.6109848933920974,
+          "reference_measured_fundamental_hz": 289.6134841854383,
+          "response_measured_fundamental_hz": 287.16342899020685,
+          "absolute_fundamental_error_hz": 2.450055195231471,
+          "response_rms": 0.28324417056818446
+        },
+        "native_audio_memory_response": {
+          "spectral_cosine": 0.9682313444353653,
+          "fine_fft_spectral_cosine": 0.7841738690385832,
+          "reference_measured_fundamental_hz": 289.6134841854383,
+          "response_measured_fundamental_hz": 291.2499999032914,
+          "absolute_fundamental_error_hz": 1.636515717853058,
+          "response_rms": 0.3420535531941989
+        }
+      },
+      {
+        "cue_id": 1,
+        "cue_kind": "old_self_sounds",
+        "initial_pfc_index_time": 26,
+        "initial_pfc_index_ratio": 1.0,
+        "final_pfc_index_time": 168,
+        "final_pfc_index_ratio": 1.0,
+        "final_thought_cells": [
+          498,
+          499,
+          500
+        ],
+        "initial_controls": [
+          0.65625,
+          0.640625,
+          0.8125,
+          0.53125
+        ],
+        "final_controls": [
+          0.734375,
+          0.796875,
+          0.21875,
+          0.6875
+        ],
+        "native_controls": [
+          0.65625,
+          0.640625,
+          0.8125,
+          0.53125
+        ],
+        "final_pfc_response": {
+          "spectral_cosine": 0.0760814361496678,
+          "fine_fft_spectral_cosine": 0.027468092774420434,
+          "reference_measured_fundamental_hz": 245.8148321383573,
+          "response_measured_fundamental_hz": 287.16342899020685,
+          "absolute_fundamental_error_hz": 41.34859685184955,
+          "response_rms": 0.28324417056818446
+        },
+        "initial_pfc_memory_response": {
+          "spectral_cosine": 0.9680222455401053,
+          "fine_fft_spectral_cosine": 0.6375907087826981,
+          "reference_measured_fundamental_hz": 245.8148321383573,
+          "response_measured_fundamental_hz": 246.52807266124915,
+          "absolute_fundamental_error_hz": 0.7132405228918515,
+          "response_rms": 0.2200614433076161
+        },
+        "native_audio_memory_response": {
+          "spectral_cosine": 0.9680222455401053,
+          "fine_fft_spectral_cosine": 0.6375907087826981,
+          "reference_measured_fundamental_hz": 245.8148321383573,
+          "response_measured_fundamental_hz": 246.52807266124915,
+          "absolute_fundamental_error_hz": 0.7132405228918515,
+          "response_rms": 0.2200614433076161
+        }
+      },
+      {
+        "cue_id": 2,
+        "cue_kind": "old_self_sounds",
+        "initial_pfc_index_time": 48,
+        "initial_pfc_index_ratio": 1.0,
+        "final_pfc_index_time": 168,
+        "final_pfc_index_ratio": 1.0,
+        "final_thought_cells": [
+          498,
+          499,
+          500
+        ],
+        "initial_controls": [
+          0.71875,
+          0.84375,
+          0.71875,
+          0.671875
+        ],
+        "final_controls": [
+          0.734375,
+          0.796875,
+          0.21875,
+          0.6875
+        ],
+        "native_controls": [
+          0.71875,
+          0.84375,
+          0.71875,
+          0.671875
+        ],
+        "final_pfc_response": {
+          "spectral_cosine": 0.07482596696290608,
+          "fine_fft_spectral_cosine": 8.122298809442123e-05,
+          "reference_measured_fundamental_hz": 311.2184791983193,
+          "response_measured_fundamental_hz": 287.16342899020685,
+          "absolute_fundamental_error_hz": 24.055050208112448,
+          "response_rms": 0.28324417056818446
+        },
+        "initial_pfc_memory_response": {
+          "spectral_cosine": 0.6159180180153923,
+          "fine_fft_spectral_cosine": 0.0005827650062842339,
+          "reference_measured_fundamental_hz": 311.2184791983193,
+          "response_measured_fundamental_hz": 299.3361882235054,
+          "absolute_fundamental_error_hz": 11.882290974813884,
+          "response_rms": 0.25045805500536844
+        },
+        "native_audio_memory_response": {
+          "spectral_cosine": 0.6159180180153923,
+          "fine_fft_spectral_cosine": 0.0005827650062842339,
+          "reference_measured_fundamental_hz": 311.2184791983193,
+          "response_measured_fundamental_hz": 299.3361882235054,
+          "absolute_fundamental_error_hz": 11.882290974813884,
+          "response_rms": 0.25045805500536844
+        }
+      },
+      {
+        "cue_id": 3,
+        "cue_kind": "old_self_sounds",
+        "initial_pfc_index_time": 74,
+        "initial_pfc_index_ratio": 1.0,
+        "final_pfc_index_time": 168,
+        "final_pfc_index_ratio": 1.0,
+        "final_thought_cells": [
+          498,
+          499,
+          500
+        ],
+        "initial_controls": [
+          0.859375,
+          0.734375,
+          0.8125,
+          0.34375
+        ],
+        "final_controls": [
+          0.734375,
+          0.796875,
+          0.21875,
+          0.6875
+        ],
+        "native_controls": [
+          0.859375,
+          0.734375,
+          0.8125,
+          0.34375
+        ],
+        "final_pfc_response": {
+          "spectral_cosine": 0.04291889851096485,
+          "fine_fft_spectral_cosine": 5.124335732290923e-05,
+          "reference_measured_fundamental_hz": 261.39858314137035,
+          "response_measured_fundamental_hz": 287.16342899020685,
+          "absolute_fundamental_error_hz": 25.7648458488365,
+          "response_rms": 0.28324417056818446
+        },
+        "initial_pfc_memory_response": {
+          "spectral_cosine": 0.47164189303732135,
+          "fine_fft_spectral_cosine": 0.0005186591490358465,
+          "reference_measured_fundamental_hz": 261.39858314137035,
+          "response_measured_fundamental_hz": 270.97192626394246,
+          "absolute_fundamental_error_hz": 9.573343122572112,
+          "response_rms": 0.29625679518376763
+        },
+        "native_audio_memory_response": {
+          "spectral_cosine": 0.47164189303732135,
+          "fine_fft_spectral_cosine": 0.0005186591490358465,
+          "reference_measured_fundamental_hz": 261.39858314137035,
+          "response_measured_fundamental_hz": 270.97192626394246,
+          "absolute_fundamental_error_hz": 9.573343122572112,
+          "response_rms": 0.29625679518376763
+        }
+      },
+      {
+        "cue_id": 4,
+        "cue_kind": "old_self_sounds",
+        "initial_pfc_index_time": 98,
+        "initial_pfc_index_ratio": 1.0,
+        "final_pfc_index_time": 168,
+        "final_pfc_index_ratio": 1.0,
+        "final_thought_cells": [
+          498,
+          499,
+          500
+        ],
+        "initial_controls": [
+          0.703125,
+          0.484375,
+          0.53125,
+          0.28125
+        ],
+        "final_controls": [
+          0.734375,
+          0.796875,
+          0.21875,
+          0.6875
+        ],
+        "native_controls": [
+          0.703125,
+          0.484375,
+          0.53125,
+          0.28125
+        ],
+        "final_pfc_response": {
+          "spectral_cosine": 0.042577759689476184,
+          "fine_fft_spectral_cosine": 0.0013320039640035482,
+          "reference_measured_fundamental_hz": 200.97350304143862,
+          "response_measured_fundamental_hz": 287.16342899020685,
+          "absolute_fundamental_error_hz": 86.18992594876823,
+          "response_rms": 0.28324417056818446
+        },
+        "initial_pfc_memory_response": {
+          "spectral_cosine": 0.7761856853159622,
+          "fine_fft_spectral_cosine": 0.009644916995935528,
+          "reference_measured_fundamental_hz": 200.97350304143862,
+          "response_measured_fundamental_hz": 205.9719284790032,
+          "absolute_fundamental_error_hz": 4.998425437564578,
+          "response_rms": 0.20899959219906628
+        },
+        "native_audio_memory_response": {
+          "spectral_cosine": 0.7761856853159622,
+          "fine_fft_spectral_cosine": 0.009644916995935528,
+          "reference_measured_fundamental_hz": 200.97350304143862,
+          "response_measured_fundamental_hz": 205.9719284790032,
+          "absolute_fundamental_error_hz": 4.998425437564578,
+          "response_rms": 0.20899959219906628
+        }
+      },
+      {
+        "cue_id": 5,
+        "cue_kind": "old_self_sounds",
+        "initial_pfc_index_time": 122,
+        "initial_pfc_index_ratio": 1.0,
+        "final_pfc_index_time": 168,
+        "final_pfc_index_ratio": 1.0,
+        "final_thought_cells": [
+          498,
+          499,
+          500
+        ],
+        "initial_controls": [
+          0.90625,
+          0.25,
+          0.328125,
+          0.484375
+        ],
+        "final_controls": [
+          0.734375,
+          0.796875,
+          0.21875,
+          0.6875
+        ],
+        "native_controls": [
+          0.90625,
+          0.25,
+          0.328125,
+          0.484375
+        ],
+        "final_pfc_response": {
+          "spectral_cosine": 0.472673665919316,
+          "fine_fft_spectral_cosine": 0.028942382872392296,
+          "reference_measured_fundamental_hz": 146.9266526438968,
+          "response_measured_fundamental_hz": 287.16342899020685,
+          "absolute_fundamental_error_hz": 140.23677634631005,
+          "response_rms": 0.28324417056818446
+        },
+        "initial_pfc_memory_response": {
+          "spectral_cosine": 0.8777058442019374,
+          "fine_fft_spectral_cosine": 0.17703332143339348,
+          "reference_measured_fundamental_hz": 146.9266526438968,
+          "response_measured_fundamental_hz": 145.00000000278018,
+          "absolute_fundamental_error_hz": 1.9266526411166183,
+          "response_rms": 0.2277381903262241
+        },
+        "native_audio_memory_response": {
+          "spectral_cosine": 0.8777058442019374,
+          "fine_fft_spectral_cosine": 0.17703332143339348,
+          "reference_measured_fundamental_hz": 146.9266526438968,
+          "response_measured_fundamental_hz": 145.00000000278018,
+          "absolute_fundamental_error_hz": 1.9266526411166183,
+          "response_rms": 0.2277381903262241
+        }
+      },
+      {
+        "cue_id": 6,
+        "cue_kind": "old_self_sounds",
+        "initial_pfc_index_time": 146,
+        "initial_pfc_index_ratio": 1.0,
+        "final_pfc_index_time": 168,
+        "final_pfc_index_ratio": 1.0,
+        "final_thought_cells": [
+          498,
+          499,
+          500
+        ],
+        "initial_controls": [
+          0.703125,
+          0.75,
+          0.734375,
+          0.34375
+        ],
+        "final_controls": [
+          0.734375,
+          0.796875,
+          0.21875,
+          0.6875
+        ],
+        "native_controls": [
+          0.703125,
+          0.75,
+          0.734375,
+          0.34375
+        ],
+        "final_pfc_response": {
+          "spectral_cosine": 0.0808502864658061,
+          "fine_fft_spectral_cosine": 0.00045980047903122176,
+          "reference_measured_fundamental_hz": 273.8836861858312,
+          "response_measured_fundamental_hz": 287.16342899020685,
+          "absolute_fundamental_error_hz": 13.279742804375644,
+          "response_rms": 0.28324417056818446
+        },
+        "initial_pfc_memory_response": {
+          "spectral_cosine": 0.972615800939425,
+          "fine_fft_spectral_cosine": 0.5402906895966778,
+          "reference_measured_fundamental_hz": 273.8836861858312,
+          "response_measured_fundamental_hz": 275.00000000511085,
+          "absolute_fundamental_error_hz": 1.1163138192796396,
+          "response_rms": 0.2261533865088383
+        },
+        "native_audio_memory_response": {
+          "spectral_cosine": 0.972615800939425,
+          "fine_fft_spectral_cosine": 0.5402906895966778,
+          "reference_measured_fundamental_hz": 273.8836861858312,
+          "response_measured_fundamental_hz": 275.00000000511085,
+          "absolute_fundamental_error_hz": 1.1163138192796396,
+          "response_rms": 0.2261533865088383
+        }
+      },
+      {
+        "cue_id": 7,
+        "cue_kind": "old_self_sounds",
+        "initial_pfc_index_time": 170,
+        "initial_pfc_index_ratio": 1.0,
+        "final_pfc_index_time": 170,
+        "final_pfc_index_ratio": 1.0,
+        "final_thought_cells": [
+          498,
+          499,
+          500,
+          4117,
+          4118
+        ],
+        "initial_controls": [
+          0.734375,
+          0.796875,
+          0.21875,
+          0.6875
+        ],
+        "final_controls": [
+          0.734375,
+          0.796875,
+          0.21875,
+          0.6875
+        ],
+        "native_controls": [
+          0.734375,
+          0.796875,
+          0.21875,
+          0.6875
+        ],
+        "final_pfc_response": {
+          "spectral_cosine": 0.9520800667689975,
+          "fine_fft_spectral_cosine": 0.6545958935921327,
+          "reference_measured_fundamental_hz": 289.07115670217854,
+          "response_measured_fundamental_hz": 287.16342899020685,
+          "absolute_fundamental_error_hz": 1.9077277119716882,
+          "response_rms": 0.28324417056818446
+        },
+        "initial_pfc_memory_response": {
+          "spectral_cosine": 0.9520800667689975,
+          "fine_fft_spectral_cosine": 0.6545958935921327,
+          "reference_measured_fundamental_hz": 289.07115670217854,
+          "response_measured_fundamental_hz": 287.16342899020685,
+          "absolute_fundamental_error_hz": 1.9077277119716882,
+          "response_rms": 0.28324417056818446
+        },
+        "native_audio_memory_response": {
+          "spectral_cosine": 0.9520800667689975,
+          "fine_fft_spectral_cosine": 0.6545958935921327,
+          "reference_measured_fundamental_hz": 289.07115670217854,
+          "response_measured_fundamental_hz": 287.16342899020685,
+          "absolute_fundamental_error_hz": 1.9077277119716882,
+          "response_rms": 0.28324417056818446
+        }
+      },
+      {
+        "cue_id": 8,
+        "cue_kind": "old_self_sounds",
+        "initial_pfc_index_time": 194,
+        "initial_pfc_index_ratio": 1.0,
+        "final_pfc_index_time": 194,
+        "final_pfc_index_ratio": 1.0,
+        "final_thought_cells": [
+          498,
+          499,
+          500,
+          2880,
+          2881,
+          2968,
+          2969
+        ],
+        "initial_controls": [
+          0.828125,
+          0.203125,
+          0.234375,
+          0.265625
+        ],
+        "final_controls": [
+          0.828125,
+          0.203125,
+          0.234375,
+          0.265625
+        ],
+        "native_controls": [
+          0.828125,
+          0.203125,
+          0.234375,
+          0.265625
+        ],
+        "final_pfc_response": {
+          "spectral_cosine": 0.8094783893854469,
+          "fine_fft_spectral_cosine": 0.017900424867811168,
+          "reference_measured_fundamental_hz": 126.50570965367163,
+          "response_measured_fundamental_hz": 132.83657261151038,
+          "absolute_fundamental_error_hz": 6.330862957838747,
+          "response_rms": 0.20434855893838666
+        },
+        "initial_pfc_memory_response": {
+          "spectral_cosine": 0.8094783893854469,
+          "fine_fft_spectral_cosine": 0.017900424867811168,
+          "reference_measured_fundamental_hz": 126.50570965367163,
+          "response_measured_fundamental_hz": 132.83657261151038,
+          "absolute_fundamental_error_hz": 6.330862957838747,
+          "response_rms": 0.20434855893838666
+        },
+        "native_audio_memory_response": {
+          "spectral_cosine": 0.8094783893854469,
+          "fine_fft_spectral_cosine": 0.017900424867811168,
+          "reference_measured_fundamental_hz": 126.50570965367163,
+          "response_measured_fundamental_hz": 132.83657261151038,
+          "absolute_fundamental_error_hz": 6.330862957838747,
+          "response_rms": 0.20434855893838666
+        }
+      },
+      {
+        "cue_id": 9,
+        "cue_kind": "old_self_sounds",
+        "initial_pfc_index_time": 218,
+        "initial_pfc_index_ratio": 1.0,
+        "final_pfc_index_time": 168,
+        "final_pfc_index_ratio": 1.0,
+        "final_thought_cells": [
+          498,
+          499,
+          500
+        ],
+        "initial_controls": [
+          0.890625,
+          0.265625,
+          0.09375,
+          0.109375
+        ],
+        "final_controls": [
+          0.734375,
+          0.796875,
+          0.21875,
+          0.6875
+        ],
+        "native_controls": [
+          0.890625,
+          0.265625,
+          0.09375,
+          0.109375
+        ],
+        "final_pfc_response": {
+          "spectral_cosine": 0.5031560825587373,
+          "fine_fft_spectral_cosine": 0.024631156380510104,
+          "reference_measured_fundamental_hz": 147.0932223591544,
+          "response_measured_fundamental_hz": 287.16342899020685,
+          "absolute_fundamental_error_hz": 140.07020663105246,
+          "response_rms": 0.28324417056818446
+        },
+        "initial_pfc_memory_response": {
+          "spectral_cosine": 0.9650139924466141,
+          "fine_fft_spectral_cosine": 0.5505993805818806,
+          "reference_measured_fundamental_hz": 147.0932223591544,
+          "response_measured_fundamental_hz": 149.0280693160704,
+          "absolute_fundamental_error_hz": 1.9348469569160045,
+          "response_rms": 0.25930824809153175
+        },
+        "native_audio_memory_response": {
+          "spectral_cosine": 0.9650139924466141,
+          "fine_fft_spectral_cosine": 0.5505993805818806,
+          "reference_measured_fundamental_hz": 147.0932223591544,
+          "response_measured_fundamental_hz": 149.0280693160704,
+          "absolute_fundamental_error_hz": 1.9348469569160045,
+          "response_rms": 0.25930824809153175
+        }
+      },
+      {
+        "cue_id": 10,
+        "cue_kind": "old_self_sounds",
+        "initial_pfc_index_time": 242,
+        "initial_pfc_index_ratio": 1.0,
+        "final_pfc_index_time": 168,
+        "final_pfc_index_ratio": 1.0,
+        "final_thought_cells": [
+          498,
+          499,
+          500
+        ],
+        "initial_controls": [
+          0.734375,
+          0.46875,
+          0.203125,
+          0.28125
+        ],
+        "final_controls": [
+          0.734375,
+          0.796875,
+          0.21875,
+          0.6875
+        ],
+        "native_controls": [
+          0.734375,
+          0.46875,
+          0.203125,
+          0.28125
+        ],
+        "final_pfc_response": {
+          "spectral_cosine": 0.03367600492852617,
+          "fine_fft_spectral_cosine": 0.01083084941909273,
+          "reference_measured_fundamental_hz": 190.2732460475443,
+          "response_measured_fundamental_hz": 287.16342899020685,
+          "absolute_fundamental_error_hz": 96.89018294266256,
+          "response_rms": 0.28324417056818446
+        },
+        "initial_pfc_memory_response": {
+          "spectral_cosine": 0.7305826106417902,
+          "fine_fft_spectral_cosine": 0.0029632783769765253,
+          "reference_measured_fundamental_hz": 190.2732460475443,
+          "response_measured_fundamental_hz": 201.83618506534572,
+          "absolute_fundamental_error_hz": 11.562939017801426,
+          "response_rms": 0.2290410097634631
+        },
+        "native_audio_memory_response": {
+          "spectral_cosine": 0.7305826106417902,
+          "fine_fft_spectral_cosine": 0.0029632783769765253,
+          "reference_measured_fundamental_hz": 190.2732460475443,
+          "response_measured_fundamental_hz": 201.83618506534572,
+          "absolute_fundamental_error_hz": 11.562939017801426,
+          "response_rms": 0.2290410097634631
+        }
+      },
+      {
+        "cue_id": 11,
+        "cue_kind": "old_self_sounds",
+        "initial_pfc_index_time": 266,
+        "initial_pfc_index_ratio": 1.0,
+        "final_pfc_index_time": 168,
+        "final_pfc_index_ratio": 1.0,
+        "final_thought_cells": [
+          498,
+          499,
+          500
+        ],
+        "initial_controls": [
+          0.90625,
+          0.546875,
+          0.8125,
+          0.125
+        ],
+        "final_controls": [
+          0.734375,
+          0.796875,
+          0.21875,
+          0.6875
+        ],
+        "native_controls": [
+          0.90625,
+          0.546875,
+          0.8125,
+          0.125
+        ],
+        "final_pfc_response": {
+          "spectral_cosine": 0.002548978718897704,
+          "fine_fft_spectral_cosine": 2.285065074129502e-05,
+          "reference_measured_fundamental_hz": 222.2640597003452,
+          "response_measured_fundamental_hz": 287.16342899020685,
+          "absolute_fundamental_error_hz": 64.89936928986165,
+          "response_rms": 0.28324417056818446
+        },
+        "initial_pfc_memory_response": {
+          "spectral_cosine": 0.9978984738797217,
+          "fine_fft_spectral_cosine": 0.9909004993476959,
+          "reference_measured_fundamental_hz": 222.2640597003452,
+          "response_measured_fundamental_hz": 222.16342890898144,
+          "absolute_fundamental_error_hz": 0.10063079136375563,
+          "response_rms": 0.31357850243359786
+        },
+        "native_audio_memory_response": {
+          "spectral_cosine": 0.9978984738797217,
+          "fine_fft_spectral_cosine": 0.9909004993476959,
+          "reference_measured_fundamental_hz": 222.2640597003452,
+          "response_measured_fundamental_hz": 222.16342890898144,
+          "absolute_fundamental_error_hz": 0.10063079136375563,
+          "response_rms": 0.31357850243359786
+        }
+      }
+    ],
+    "after_new_experience": [
+      {
+        "cue_id": 0,
+        "cue_kind": "old_self_sounds",
+        "initial_pfc_index_time": 170,
+        "initial_pfc_index_ratio": 1.0,
+        "final_pfc_index_time": 170,
+        "final_pfc_index_ratio": 1.0,
+        "final_thought_cells": [
+          498,
+          499,
+          500,
+          3920,
+          3921,
+          3923,
+          3924,
+          3927,
+          4117,
+          4118,
+          4120,
+          4121,
+          4125,
+          4127,
+          4129
+        ],
+        "initial_controls": [
+          0.734375,
+          0.796875,
+          0.21875,
+          0.6875
+        ],
+        "final_controls": [
+          0.734375,
+          0.796875,
+          0.21875,
+          0.6875
+        ],
+        "native_controls": [
+          0.796875,
+          0.8125,
+          0.09375,
+          0.671875
+        ],
+        "final_pfc_response": {
+          "spectral_cosine": 0.9654628181734393,
+          "fine_fft_spectral_cosine": 0.6109848933920974,
+          "reference_measured_fundamental_hz": 289.6134841854383,
+          "response_measured_fundamental_hz": 287.16342899020685,
+          "absolute_fundamental_error_hz": 2.450055195231471,
+          "response_rms": 0.28324417056818446
+        },
+        "initial_pfc_memory_response": {
+          "spectral_cosine": 0.9654628181734393,
+          "fine_fft_spectral_cosine": 0.6109848933920974,
+          "reference_measured_fundamental_hz": 289.6134841854383,
+          "response_measured_fundamental_hz": 287.16342899020685,
+          "absolute_fundamental_error_hz": 2.450055195231471,
+          "response_rms": 0.28324417056818446
+        },
+        "native_audio_memory_response": {
+          "spectral_cosine": 0.9682313444353653,
+          "fine_fft_spectral_cosine": 0.7841738690385832,
+          "reference_measured_fundamental_hz": 289.6134841854383,
+          "response_measured_fundamental_hz": 291.2499999032914,
+          "absolute_fundamental_error_hz": 1.636515717853058,
+          "response_rms": 0.3420535531941989
+        }
+      },
+      {
+        "cue_id": 1,
+        "cue_kind": "old_self_sounds",
+        "initial_pfc_index_time": 26,
+        "initial_pfc_index_ratio": 1.0,
+        "final_pfc_index_time": 288,
+        "final_pfc_index_ratio": 1.0,
+        "final_thought_cells": [
+          498,
+          499,
+          500
+        ],
+        "initial_controls": [
+          0.65625,
+          0.640625,
+          0.8125,
+          0.484375
+        ],
+        "final_controls": [
+          0.703125,
+          0.34375,
+          0.234375,
+          0.5
+        ],
+        "native_controls": [
+          0.65625,
+          0.640625,
+          0.8125,
+          0.484375
+        ],
+        "final_pfc_response": {
+          "spectral_cosine": 0.05298345349216853,
+          "fine_fft_spectral_cosine": 0.00021631026390639288,
+          "reference_measured_fundamental_hz": 245.8148321383573,
+          "response_measured_fundamental_hz": 169.33618369801644,
+          "absolute_fundamental_error_hz": 76.47864844034086,
+          "response_rms": 0.1970649543123082
+        },
+        "initial_pfc_memory_response": {
+          "spectral_cosine": 0.9554275291429388,
+          "fine_fft_spectral_cosine": 0.6365323025162959,
+          "reference_measured_fundamental_hz": 245.8148321383573,
+          "response_measured_fundamental_hz": 246.52807266588576,
+          "absolute_fundamental_error_hz": 0.7132405275284555,
+          "response_rms": 0.22022064700560917
+        },
+        "native_audio_memory_response": {
+          "spectral_cosine": 0.9554275291429388,
+          "fine_fft_spectral_cosine": 0.6365323025162959,
+          "reference_measured_fundamental_hz": 245.8148321383573,
+          "response_measured_fundamental_hz": 246.52807266588576,
+          "absolute_fundamental_error_hz": 0.7132405275284555,
+          "response_rms": 0.22022064700560917
+        }
+      },
+      {
+        "cue_id": 2,
+        "cue_kind": "old_self_sounds",
+        "initial_pfc_index_time": 48,
+        "initial_pfc_index_ratio": 1.0,
+        "final_pfc_index_time": 288,
+        "final_pfc_index_ratio": 1.0,
+        "final_thought_cells": [
+          498,
+          499,
+          500
+        ],
+        "initial_controls": [
+          0.71875,
+          0.84375,
+          0.71875,
+          0.671875
+        ],
+        "final_controls": [
+          0.703125,
+          0.34375,
+          0.234375,
+          0.5
+        ],
+        "native_controls": [
+          0.71875,
+          0.84375,
+          0.71875,
+          0.671875
+        ],
+        "final_pfc_response": {
+          "spectral_cosine": 0.06447735285687563,
+          "fine_fft_spectral_cosine": 0.008574366884717625,
+          "reference_measured_fundamental_hz": 311.2184791983193,
+          "response_measured_fundamental_hz": 169.33618369801644,
+          "absolute_fundamental_error_hz": 141.88229550030286,
+          "response_rms": 0.1970649543123082
+        },
+        "initial_pfc_memory_response": {
+          "spectral_cosine": 0.6159180180153923,
+          "fine_fft_spectral_cosine": 0.0005827650062842339,
+          "reference_measured_fundamental_hz": 311.2184791983193,
+          "response_measured_fundamental_hz": 299.3361882235054,
+          "absolute_fundamental_error_hz": 11.882290974813884,
+          "response_rms": 0.25045805500536844
+        },
+        "native_audio_memory_response": {
+          "spectral_cosine": 0.6159180180153923,
+          "fine_fft_spectral_cosine": 0.0005827650062842339,
+          "reference_measured_fundamental_hz": 311.2184791983193,
+          "response_measured_fundamental_hz": 299.3361882235054,
+          "absolute_fundamental_error_hz": 11.882290974813884,
+          "response_rms": 0.25045805500536844
+        }
+      },
+      {
+        "cue_id": 3,
+        "cue_kind": "old_self_sounds",
+        "initial_pfc_index_time": 74,
+        "initial_pfc_index_ratio": 1.0,
+        "final_pfc_index_time": 74,
+        "final_pfc_index_ratio": 1.0,
+        "final_thought_cells": [
+          498,
+          499,
+          500,
+          2968,
+          2969,
+          3640,
+          3641,
+          3644,
+          3649,
+          3794,
+          3795,
+          3796,
+          3797,
+          3799
+        ],
+        "initial_controls": [
+          0.859375,
+          0.734375,
+          0.8125,
+          0.34375
+        ],
+        "final_controls": [
+          0.859375,
+          0.734375,
+          0.8125,
+          0.34375
+        ],
+        "native_controls": [
+          0.859375,
+          0.734375,
+          0.8125,
+          0.34375
+        ],
+        "final_pfc_response": {
+          "spectral_cosine": 0.47164189303732135,
+          "fine_fft_spectral_cosine": 0.0005186591490358465,
+          "reference_measured_fundamental_hz": 261.39858314137035,
+          "response_measured_fundamental_hz": 270.97192626394246,
+          "absolute_fundamental_error_hz": 9.573343122572112,
+          "response_rms": 0.29625679518376763
+        },
+        "initial_pfc_memory_response": {
+          "spectral_cosine": 0.47164189303732135,
+          "fine_fft_spectral_cosine": 0.0005186591490358465,
+          "reference_measured_fundamental_hz": 261.39858314137035,
+          "response_measured_fundamental_hz": 270.97192626394246,
+          "absolute_fundamental_error_hz": 9.573343122572112,
+          "response_rms": 0.29625679518376763
+        },
+        "native_audio_memory_response": {
+          "spectral_cosine": 0.47164189303732135,
+          "fine_fft_spectral_cosine": 0.0005186591490358465,
+          "reference_measured_fundamental_hz": 261.39858314137035,
+          "response_measured_fundamental_hz": 270.97192626394246,
+          "absolute_fundamental_error_hz": 9.573343122572112,
+          "response_rms": 0.29625679518376763
+        }
+      },
+      {
+        "cue_id": 4,
+        "cue_kind": "old_self_sounds",
+        "initial_pfc_index_time": 98,
+        "initial_pfc_index_ratio": 1.0,
+        "final_pfc_index_time": 98,
+        "final_pfc_index_ratio": 1.0,
+        "final_thought_cells": [
+          498,
+          499,
+          500,
+          2875,
+          2876,
+          2877,
+          2992,
+          2993,
+          2994,
+          2999,
+          3003,
+          3004,
+          3006,
+          3388,
+          3390,
+          3391,
+          3392,
+          3395,
+          3398
+        ],
+        "initial_controls": [
+          0.703125,
+          0.46875,
+          0.53125,
+          0.28125
+        ],
+        "final_controls": [
+          0.703125,
+          0.46875,
+          0.53125,
+          0.28125
+        ],
+        "native_controls": [
+          0.703125,
+          0.46875,
+          0.53125,
+          0.28125
+        ],
+        "final_pfc_response": {
+          "spectral_cosine": 0.9589805383531519,
+          "fine_fft_spectral_cosine": 0.5982670615678529,
+          "reference_measured_fundamental_hz": 200.97350304143862,
+          "response_measured_fundamental_hz": 201.8361829685498,
+          "absolute_fundamental_error_hz": 0.8626799271111736,
+          "response_rms": 0.20812573810854484
+        },
+        "initial_pfc_memory_response": {
+          "spectral_cosine": 0.9589805383531519,
+          "fine_fft_spectral_cosine": 0.5982670615678529,
+          "reference_measured_fundamental_hz": 200.97350304143862,
+          "response_measured_fundamental_hz": 201.8361829685498,
+          "absolute_fundamental_error_hz": 0.8626799271111736,
+          "response_rms": 0.20812573810854484
+        },
+        "native_audio_memory_response": {
+          "spectral_cosine": 0.9589805383531519,
+          "fine_fft_spectral_cosine": 0.5982670615678529,
+          "reference_measured_fundamental_hz": 200.97350304143862,
+          "response_measured_fundamental_hz": 201.8361829685498,
+          "absolute_fundamental_error_hz": 0.8626799271111736,
+          "response_rms": 0.20812573810854484
+        }
+      },
+      {
+        "cue_id": 5,
+        "cue_kind": "old_self_sounds",
+        "initial_pfc_index_time": 122,
+        "initial_pfc_index_ratio": 1.0,
+        "final_pfc_index_time": 122,
+        "final_pfc_index_ratio": 1.0,
+        "final_thought_cells": [
+          498,
+          499,
+          500,
+          2711,
+          2714,
+          2715,
+          2716,
+          2717,
+          2922,
+          2923,
+          2924,
+          3022,
+          3023,
+          3024,
+          3025,
+          3654,
+          3655,
+          3658,
+          3663,
+          5672,
+          5677,
+          5678,
+          5679
+        ],
+        "initial_controls": [
+          0.90625,
+          0.28125,
+          0.328125,
+          0.484375
+        ],
+        "final_controls": [
+          0.90625,
+          0.28125,
+          0.328125,
+          0.484375
+        ],
+        "native_controls": [
+          0.90625,
+          0.28125,
+          0.328125,
+          0.484375
+        ],
+        "final_pfc_response": {
+          "spectral_cosine": 0.7363167511850973,
+          "fine_fft_spectral_cosine": 0.009267526938995638,
+          "reference_measured_fundamental_hz": 146.9266526438968,
+          "response_measured_fundamental_hz": 153.16381775433084,
+          "absolute_fundamental_error_hz": 6.237165110434034,
+          "response_rms": 0.23462026906147326
+        },
+        "initial_pfc_memory_response": {
+          "spectral_cosine": 0.7363167511850973,
+          "fine_fft_spectral_cosine": 0.009267526938995638,
+          "reference_measured_fundamental_hz": 146.9266526438968,
+          "response_measured_fundamental_hz": 153.16381775433084,
+          "absolute_fundamental_error_hz": 6.237165110434034,
+          "response_rms": 0.23462026906147326
+        },
+        "native_audio_memory_response": {
+          "spectral_cosine": 0.7363167511850973,
+          "fine_fft_spectral_cosine": 0.009267526938995638,
+          "reference_measured_fundamental_hz": 146.9266526438968,
+          "response_measured_fundamental_hz": 153.16381775433084,
+          "absolute_fundamental_error_hz": 6.237165110434034,
+          "response_rms": 0.23462026906147326
+        }
+      },
+      {
+        "cue_id": 6,
+        "cue_kind": "old_self_sounds",
+        "initial_pfc_index_time": 146,
+        "initial_pfc_index_ratio": 1.0,
+        "final_pfc_index_time": 146,
+        "final_pfc_index_ratio": 1.0,
+        "final_thought_cells": [
+          498,
+          499,
+          500,
+          3677,
+          3679
+        ],
+        "initial_controls": [
+          0.703125,
+          0.75,
+          0.734375,
+          0.34375
+        ],
+        "final_controls": [
+          0.703125,
+          0.75,
+          0.734375,
+          0.34375
+        ],
+        "native_controls": [
+          0.703125,
+          0.75,
+          0.734375,
+          0.34375
+        ],
+        "final_pfc_response": {
+          "spectral_cosine": 0.972615800939425,
+          "fine_fft_spectral_cosine": 0.5402906895966778,
+          "reference_measured_fundamental_hz": 273.8836861858312,
+          "response_measured_fundamental_hz": 275.00000000511085,
+          "absolute_fundamental_error_hz": 1.1163138192796396,
+          "response_rms": 0.2261533865088383
+        },
+        "initial_pfc_memory_response": {
+          "spectral_cosine": 0.972615800939425,
+          "fine_fft_spectral_cosine": 0.5402906895966778,
+          "reference_measured_fundamental_hz": 273.8836861858312,
+          "response_measured_fundamental_hz": 275.00000000511085,
+          "absolute_fundamental_error_hz": 1.1163138192796396,
+          "response_rms": 0.2261533865088383
+        },
+        "native_audio_memory_response": {
+          "spectral_cosine": 0.972615800939425,
+          "fine_fft_spectral_cosine": 0.5402906895966778,
+          "reference_measured_fundamental_hz": 273.8836861858312,
+          "response_measured_fundamental_hz": 275.00000000511085,
+          "absolute_fundamental_error_hz": 1.1163138192796396,
+          "response_rms": 0.2261533865088383
+        }
+      },
+      {
+        "cue_id": 7,
+        "cue_kind": "old_self_sounds",
+        "initial_pfc_index_time": 170,
+        "initial_pfc_index_ratio": 1.0,
+        "final_pfc_index_time": 170,
+        "final_pfc_index_ratio": 1.0,
+        "final_thought_cells": [
+          498,
+          499,
+          500,
+          2992,
+          2993,
+          2994,
+          2997,
+          2999,
+          3003,
+          3004,
+          3006,
+          3008,
+          3920,
+          3921,
+          3923,
+          3924,
+          3927,
+          4117,
+          4118,
+          4120,
+          4121,
+          4125,
+          4127,
+          4129
+        ],
+        "initial_controls": [
+          0.734375,
+          0.796875,
+          0.21875,
+          0.6875
+        ],
+        "final_controls": [
+          0.734375,
+          0.796875,
+          0.21875,
+          0.6875
+        ],
+        "native_controls": [
+          0.734375,
+          0.796875,
+          0.21875,
+          0.6875
+        ],
+        "final_pfc_response": {
+          "spectral_cosine": 0.9520800667689975,
+          "fine_fft_spectral_cosine": 0.6545958935921327,
+          "reference_measured_fundamental_hz": 289.07115670217854,
+          "response_measured_fundamental_hz": 287.16342899020685,
+          "absolute_fundamental_error_hz": 1.9077277119716882,
+          "response_rms": 0.28324417056818446
+        },
+        "initial_pfc_memory_response": {
+          "spectral_cosine": 0.9520800667689975,
+          "fine_fft_spectral_cosine": 0.6545958935921327,
+          "reference_measured_fundamental_hz": 289.07115670217854,
+          "response_measured_fundamental_hz": 287.16342899020685,
+          "absolute_fundamental_error_hz": 1.9077277119716882,
+          "response_rms": 0.28324417056818446
+        },
+        "native_audio_memory_response": {
+          "spectral_cosine": 0.9520800667689975,
+          "fine_fft_spectral_cosine": 0.6545958935921327,
+          "reference_measured_fundamental_hz": 289.07115670217854,
+          "response_measured_fundamental_hz": 287.16342899020685,
+          "absolute_fundamental_error_hz": 1.9077277119716882,
+          "response_rms": 0.28324417056818446
+        }
+      },
+      {
+        "cue_id": 8,
+        "cue_kind": "old_self_sounds",
+        "initial_pfc_index_time": 194,
+        "initial_pfc_index_ratio": 1.0,
+        "final_pfc_index_time": 194,
+        "final_pfc_index_ratio": 1.0,
+        "final_thought_cells": [
+          498,
+          499,
+          500,
+          2880,
+          2881,
+          2968,
+          2969,
+          3354,
+          3356,
+          3357,
+          3358,
+          3360,
+          3363,
+          3365,
+          3440,
+          3441,
+          3442,
+          3444
+        ],
+        "initial_controls": [
+          0.828125,
+          0.21875,
+          0.234375,
+          0.21875
+        ],
+        "final_controls": [
+          0.828125,
+          0.21875,
+          0.234375,
+          0.21875
+        ],
+        "native_controls": [
+          0.828125,
+          0.21875,
+          0.234375,
+          0.21875
+        ],
+        "final_pfc_response": {
+          "spectral_cosine": 0.6014505052511583,
+          "fine_fft_spectral_cosine": 0.0032470457005314636,
+          "reference_measured_fundamental_hz": 126.50570965367163,
+          "response_measured_fundamental_hz": 136.83618356103634,
+          "absolute_fundamental_error_hz": 10.330473907364706,
+          "response_rms": 0.207957959345472
+        },
+        "initial_pfc_memory_response": {
+          "spectral_cosine": 0.6014505052511583,
+          "fine_fft_spectral_cosine": 0.0032470457005314636,
+          "reference_measured_fundamental_hz": 126.50570965367163,
+          "response_measured_fundamental_hz": 136.83618356103634,
+          "absolute_fundamental_error_hz": 10.330473907364706,
+          "response_rms": 0.207957959345472
+        },
+        "native_audio_memory_response": {
+          "spectral_cosine": 0.6014505052511583,
+          "fine_fft_spectral_cosine": 0.0032470457005314636,
+          "reference_measured_fundamental_hz": 126.50570965367163,
+          "response_measured_fundamental_hz": 136.83618356103634,
+          "absolute_fundamental_error_hz": 10.330473907364706,
+          "response_rms": 0.207957959345472
+        }
+      },
+      {
+        "cue_id": 9,
+        "cue_kind": "old_self_sounds",
+        "initial_pfc_index_time": 218,
+        "initial_pfc_index_ratio": 1.0,
+        "final_pfc_index_time": 218,
+        "final_pfc_index_ratio": 1.0,
+        "final_thought_cells": [
+          498,
+          499,
+          500,
+          2717,
+          2722,
+          2723,
+          2914,
+          2916,
+          2922,
+          3104,
+          3106,
+          3107
+        ],
+        "initial_controls": [
+          0.890625,
+          0.28125,
+          0.09375,
+          0.109375
+        ],
+        "final_controls": [
+          0.890625,
+          0.28125,
+          0.09375,
+          0.109375
+        ],
+        "native_controls": [
+          0.890625,
+          0.28125,
+          0.09375,
+          0.109375
+        ],
+        "final_pfc_response": {
+          "spectral_cosine": 0.8587428848400921,
+          "fine_fft_spectral_cosine": 0.06353236382011965,
+          "reference_measured_fundamental_hz": 147.0932223591544,
+          "response_measured_fundamental_hz": 153.16381542225923,
+          "absolute_fundamental_error_hz": 6.0705930631048375,
+          "response_rms": 0.26282549192378934
+        },
+        "initial_pfc_memory_response": {
+          "spectral_cosine": 0.8587428848400921,
+          "fine_fft_spectral_cosine": 0.06353236382011965,
+          "reference_measured_fundamental_hz": 147.0932223591544,
+          "response_measured_fundamental_hz": 153.16381542225923,
+          "absolute_fundamental_error_hz": 6.0705930631048375,
+          "response_rms": 0.26282549192378934
+        },
+        "native_audio_memory_response": {
+          "spectral_cosine": 0.8587428848400921,
+          "fine_fft_spectral_cosine": 0.06353236382011965,
+          "reference_measured_fundamental_hz": 147.0932223591544,
+          "response_measured_fundamental_hz": 153.16381542225923,
+          "absolute_fundamental_error_hz": 6.0705930631048375,
+          "response_rms": 0.26282549192378934
+        }
+      },
+      {
+        "cue_id": 10,
+        "cue_kind": "old_self_sounds",
+        "initial_pfc_index_time": 242,
+        "initial_pfc_index_ratio": 1.0,
+        "final_pfc_index_time": 242,
+        "final_pfc_index_ratio": 1.0,
+        "final_thought_cells": [
+          498,
+          499,
+          500,
+          2755,
+          2757,
+          2758,
+          2759,
+          2880,
+          2881,
+          2992,
+          2993,
+          2994,
+          2999,
+          3003,
+          3004,
+          3006,
+          3354,
+          3356,
+          3357,
+          3358,
+          3360,
+          3363,
+          3365,
+          3487,
+          3488,
+          3489,
+          3590,
+          3594,
+          3595,
+          3597,
+          3599
+        ],
+        "initial_controls": [
+          0.734375,
+          0.46875,
+          0.203125,
+          0.296875
+        ],
+        "final_controls": [
+          0.734375,
+          0.46875,
+          0.203125,
+          0.296875
+        ],
+        "native_controls": [
+          0.734375,
+          0.46875,
+          0.203125,
+          0.296875
+        ],
+        "final_pfc_response": {
+          "spectral_cosine": 0.7306868360811091,
+          "fine_fft_spectral_cosine": 0.0029636868529181373,
+          "reference_measured_fundamental_hz": 190.2732460475443,
+          "response_measured_fundamental_hz": 201.8361850654004,
+          "absolute_fundamental_error_hz": 11.56293901785611,
+          "response_rms": 0.22900246989411638
+        },
+        "initial_pfc_memory_response": {
+          "spectral_cosine": 0.7306868360811091,
+          "fine_fft_spectral_cosine": 0.0029636868529181373,
+          "reference_measured_fundamental_hz": 190.2732460475443,
+          "response_measured_fundamental_hz": 201.8361850654004,
+          "absolute_fundamental_error_hz": 11.56293901785611,
+          "response_rms": 0.22900246989411638
+        },
+        "native_audio_memory_response": {
+          "spectral_cosine": 0.7306868360811091,
+          "fine_fft_spectral_cosine": 0.0029636868529181373,
+          "reference_measured_fundamental_hz": 190.2732460475443,
+          "response_measured_fundamental_hz": 201.8361850654004,
+          "absolute_fundamental_error_hz": 11.56293901785611,
+          "response_rms": 0.22900246989411638
+        }
+      },
+      {
+        "cue_id": 11,
+        "cue_kind": "old_self_sounds",
+        "initial_pfc_index_time": 266,
+        "initial_pfc_index_ratio": 1.0,
+        "final_pfc_index_time": 266,
+        "final_pfc_index_ratio": 1.0,
+        "final_thought_cells": [
+          498,
+          499,
+          500,
+          2782,
+          2784,
+          2786,
+          2787,
+          2788,
+          2914,
+          2916,
+          2922,
+          3197,
+          3198,
+          3199,
+          3487,
+          3488,
+          3489
+        ],
+        "initial_controls": [
+          0.90625,
+          0.546875,
+          0.8125,
+          0.125
+        ],
+        "final_controls": [
+          0.90625,
+          0.546875,
+          0.8125,
+          0.125
+        ],
+        "native_controls": [
+          0.90625,
+          0.546875,
+          0.8125,
+          0.125
+        ],
+        "final_pfc_response": {
+          "spectral_cosine": 0.9978984738797217,
+          "fine_fft_spectral_cosine": 0.9909004993476959,
+          "reference_measured_fundamental_hz": 222.2640597003452,
+          "response_measured_fundamental_hz": 222.16342890898144,
+          "absolute_fundamental_error_hz": 0.10063079136375563,
+          "response_rms": 0.31357850243359786
+        },
+        "initial_pfc_memory_response": {
+          "spectral_cosine": 0.9978984738797217,
+          "fine_fft_spectral_cosine": 0.9909004993476959,
+          "reference_measured_fundamental_hz": 222.2640597003452,
+          "response_measured_fundamental_hz": 222.16342890898144,
+          "absolute_fundamental_error_hz": 0.10063079136375563,
+          "response_rms": 0.31357850243359786
+        },
+        "native_audio_memory_response": {
+          "spectral_cosine": 0.9978984738797217,
+          "fine_fft_spectral_cosine": 0.9909004993476959,
+          "reference_measured_fundamental_hz": 222.2640597003452,
+          "response_measured_fundamental_hz": 222.16342890898144,
+          "absolute_fundamental_error_hz": 0.10063079136375563,
+          "response_rms": 0.31357850243359786
+        }
+      }
+    ],
+    "new_self_sounds": [
+      {
+        "cue_id": 12,
+        "cue_kind": "new_self_sounds",
+        "initial_pfc_index_time": 290,
+        "initial_pfc_index_ratio": 1.0,
+        "final_pfc_index_time": 290,
+        "final_pfc_index_ratio": 1.0,
+        "final_thought_cells": [
+          498,
+          499,
+          500,
+          2968,
+          2969,
+          3707,
+          3709,
+          3711,
+          3712,
+          3713,
+          3714,
+          3716,
+          3718
+        ],
+        "initial_controls": [
+          0.703125,
+          0.34375,
+          0.234375,
+          0.5
+        ],
+        "final_controls": [
+          0.703125,
+          0.34375,
+          0.234375,
+          0.5
+        ],
+        "native_controls": [
+          0.703125,
+          0.34375,
+          0.234375,
+          0.5
+        ],
+        "final_pfc_response": {
+          "spectral_cosine": 0.9249922104128185,
+          "fine_fft_spectral_cosine": 0.45955017455988817,
+          "reference_measured_fundamental_hz": 171.19953591051518,
+          "response_measured_fundamental_hz": 169.33618369801644,
+          "absolute_fundamental_error_hz": 1.8633522124987394,
+          "response_rms": 0.1970649543123082
+        },
+        "initial_pfc_memory_response": {
+          "spectral_cosine": 0.9249922104128185,
+          "fine_fft_spectral_cosine": 0.45955017455988817,
+          "reference_measured_fundamental_hz": 171.19953591051518,
+          "response_measured_fundamental_hz": 169.33618369801644,
+          "absolute_fundamental_error_hz": 1.8633522124987394,
+          "response_rms": 0.1970649543123082
+        },
+        "native_audio_memory_response": {
+          "spectral_cosine": 0.9249922104128185,
+          "fine_fft_spectral_cosine": 0.45955017455988817,
+          "reference_measured_fundamental_hz": 171.19953591051518,
+          "response_measured_fundamental_hz": 169.33618369801644,
+          "absolute_fundamental_error_hz": 1.8633522124987394,
+          "response_rms": 0.1970649543123082
+        }
+      },
+      {
+        "cue_id": 13,
+        "cue_kind": "new_self_sounds",
+        "initial_pfc_index_time": 312,
+        "initial_pfc_index_ratio": 1.0,
+        "final_pfc_index_time": 312,
+        "final_pfc_index_ratio": 1.0,
+        "final_thought_cells": [
+          498,
+          499,
+          500,
+          3228,
+          3229,
+          3234,
+          3237,
+          3239,
+          3440,
+          3441,
+          3442,
+          3444,
+          3546,
+          3550,
+          3553,
+          3556
+        ],
+        "initial_controls": [
+          0.71875,
+          0.3125,
+          0.734375,
+          0.28125
+        ],
+        "final_controls": [
+          0.71875,
+          0.3125,
+          0.734375,
+          0.28125
+        ],
+        "native_controls": [
+          0.71875,
+          0.3125,
+          0.734375,
+          0.28125
+        ],
+        "final_pfc_response": {
+          "spectral_cosine": 0.7769692472142502,
+          "fine_fft_spectral_cosine": 0.005633903408393713,
+          "reference_measured_fundamental_hz": 157.31261508884722,
+          "response_measured_fundamental_hz": 161.24999870992795,
+          "absolute_fundamental_error_hz": 3.937383621080727,
+          "response_rms": 0.19211580526387745
+        },
+        "initial_pfc_memory_response": {
+          "spectral_cosine": 0.7769692472142502,
+          "fine_fft_spectral_cosine": 0.005633903408393713,
+          "reference_measured_fundamental_hz": 157.31261508884722,
+          "response_measured_fundamental_hz": 161.24999870992795,
+          "absolute_fundamental_error_hz": 3.937383621080727,
+          "response_rms": 0.19211580526387745
+        },
+        "native_audio_memory_response": {
+          "spectral_cosine": 0.7769692472142502,
+          "fine_fft_spectral_cosine": 0.005633903408393713,
+          "reference_measured_fundamental_hz": 157.31261508884722,
+          "response_measured_fundamental_hz": 161.24999870992795,
+          "absolute_fundamental_error_hz": 3.937383621080727,
+          "response_rms": 0.19211580526387745
+        }
+      },
+      {
+        "cue_id": 14,
+        "cue_kind": "new_self_sounds",
+        "initial_pfc_index_time": 338,
+        "initial_pfc_index_ratio": 1.0,
+        "final_pfc_index_time": 338,
+        "final_pfc_index_ratio": 1.0,
+        "final_thought_cells": [
+          498,
+          499,
+          500,
+          2782,
+          2784,
+          2786,
+          2787,
+          2788,
+          2914,
+          2916,
+          2917,
+          2918,
+          2919,
+          3677,
+          3679
+        ],
+        "initial_controls": [
+          0.703125,
+          0.59375,
+          0.609375,
+          0.359375
+        ],
+        "final_controls": [
+          0.703125,
+          0.59375,
+          0.609375,
+          0.359375
+        ],
+        "native_controls": [
+          0.703125,
+          0.59375,
+          0.609375,
+          0.359375
+        ],
+        "final_pfc_response": {
+          "spectral_cosine": 0.9982054864406876,
+          "fine_fft_spectral_cosine": 0.9473210438770784,
+          "reference_measured_fundamental_hz": 234.6334719443197,
+          "response_measured_fundamental_hz": 234.33618428211935,
+          "absolute_fundamental_error_hz": 0.29728766220034686,
+          "response_rms": 0.2178307635825838
+        },
+        "initial_pfc_memory_response": {
+          "spectral_cosine": 0.9982054864406876,
+          "fine_fft_spectral_cosine": 0.9473210438770784,
+          "reference_measured_fundamental_hz": 234.6334719443197,
+          "response_measured_fundamental_hz": 234.33618428211935,
+          "absolute_fundamental_error_hz": 0.29728766220034686,
+          "response_rms": 0.2178307635825838
+        },
+        "native_audio_memory_response": {
+          "spectral_cosine": 0.9982054864406876,
+          "fine_fft_spectral_cosine": 0.9473210438770784,
+          "reference_measured_fundamental_hz": 234.6334719443197,
+          "response_measured_fundamental_hz": 234.33618428211935,
+          "absolute_fundamental_error_hz": 0.29728766220034686,
+          "response_rms": 0.2178307635825838
+        }
+      },
+      {
+        "cue_id": 15,
+        "cue_kind": "new_self_sounds",
+        "initial_pfc_index_time": 362,
+        "initial_pfc_index_ratio": 1.0,
+        "final_pfc_index_time": 362,
+        "final_pfc_index_ratio": 1.0,
+        "final_thought_cells": [
+          498,
+          499,
+          500,
+          2840,
+          2842,
+          2843,
+          2847,
+          2850,
+          2851,
+          3032,
+          3033,
+          3034,
+          3035,
+          3036,
+          3037,
+          3228,
+          3229,
+          3234,
+          3237,
+          3239,
+          3241,
+          3242,
+          3440,
+          3441,
+          3442,
+          3444
+        ],
+        "initial_controls": [
+          0.734375,
+          0.875,
+          0.609375,
+          0.15625
+        ],
+        "final_controls": [
+          0.734375,
+          0.875,
+          0.609375,
+          0.15625
+        ],
+        "native_controls": [
+          0.734375,
+          0.875,
+          0.609375,
+          0.15625
+        ],
+        "final_pfc_response": {
+          "spectral_cosine": 0.5620855599245208,
+          "fine_fft_spectral_cosine": 0.003255878269814101,
+          "reference_measured_fundamental_hz": 314.32344980784904,
+          "response_measured_fundamental_hz": 307.4999999979623,
+          "absolute_fundamental_error_hz": 6.8234498098867675,
+          "response_rms": 0.2961861832128885
+        },
+        "initial_pfc_memory_response": {
+          "spectral_cosine": 0.5620855599245208,
+          "fine_fft_spectral_cosine": 0.003255878269814101,
+          "reference_measured_fundamental_hz": 314.32344980784904,
+          "response_measured_fundamental_hz": 307.4999999979623,
+          "absolute_fundamental_error_hz": 6.8234498098867675,
+          "response_rms": 0.2961861832128885
+        },
+        "native_audio_memory_response": {
+          "spectral_cosine": 0.5620855599245208,
+          "fine_fft_spectral_cosine": 0.003255878269814101,
+          "reference_measured_fundamental_hz": 314.32344980784904,
+          "response_measured_fundamental_hz": 307.4999999979623,
+          "absolute_fundamental_error_hz": 6.8234498098867675,
+          "response_rms": 0.2961861832128885
+        }
+      },
+      {
+        "cue_id": 16,
+        "cue_kind": "new_self_sounds",
+        "initial_pfc_index_time": 384,
+        "initial_pfc_index_ratio": 1.0,
+        "final_pfc_index_time": 384,
+        "final_pfc_index_ratio": 1.0,
+        "final_thought_cells": [
+          498,
+          499,
+          500,
+          2840,
+          2842,
+          2843,
+          2847,
+          2850,
+          2851,
+          3022,
+          3023,
+          3024,
+          3025,
+          3794,
+          3795,
+          3796,
+          3797,
+          3799
+        ],
+        "initial_controls": [
+          0.875,
+          0.828125,
+          0.203125,
+          0.765625
+        ],
+        "final_controls": [
+          0.875,
+          0.828125,
+          0.203125,
+          0.765625
+        ],
+        "native_controls": [
+          0.875,
+          0.828125,
+          0.203125,
+          0.765625
+        ],
+        "final_pfc_response": {
+          "spectral_cosine": 0.8954535385436839,
+          "fine_fft_spectral_cosine": 0.01796795889193165,
+          "reference_measured_fundamental_hz": 303.98902396230716,
+          "response_measured_fundamental_hz": 295.33657102484847,
+          "absolute_fundamental_error_hz": 8.65245293745869,
+          "response_rms": 0.35228250307206244
+        },
+        "initial_pfc_memory_response": {
+          "spectral_cosine": 0.8954535385436839,
+          "fine_fft_spectral_cosine": 0.01796795889193165,
+          "reference_measured_fundamental_hz": 303.98902396230716,
+          "response_measured_fundamental_hz": 295.33657102484847,
+          "absolute_fundamental_error_hz": 8.65245293745869,
+          "response_rms": 0.35228250307206244
+        },
+        "native_audio_memory_response": {
+          "spectral_cosine": 0.8954535385436839,
+          "fine_fft_spectral_cosine": 0.01796795889193165,
+          "reference_measured_fundamental_hz": 303.98902396230716,
+          "response_measured_fundamental_hz": 295.33657102484847,
+          "absolute_fundamental_error_hz": 8.65245293745869,
+          "response_rms": 0.35228250307206244
+        }
+      },
+      {
+        "cue_id": 17,
+        "cue_kind": "new_self_sounds",
+        "initial_pfc_index_time": 410,
+        "initial_pfc_index_ratio": 1.0,
+        "final_pfc_index_time": 408,
+        "final_pfc_index_ratio": 1.0,
+        "final_thought_cells": [
+          498,
+          499,
+          500,
+          2840,
+          2842,
+          2843,
+          2847,
+          2850,
+          2851,
+          3022,
+          3023,
+          3024,
+          3025,
+          3241,
+          3242,
+          3243,
+          3246,
+          3247,
+          3248,
+          3249,
+          3251,
+          5314,
+          5317,
+          5318,
+          5319
+        ],
+        "initial_controls": [
+          0.71875,
+          0.859375,
+          0.203125,
+          0.109375
+        ],
+        "final_controls": [
+          0.71875,
+          0.859375,
+          0.203125,
+          0.109375
+        ],
+        "native_controls": [
+          0.71875,
+          0.859375,
+          0.203125,
+          0.109375
+        ],
+        "final_pfc_response": {
+          "spectral_cosine": 0.9276373405441027,
+          "fine_fft_spectral_cosine": 0.05167332727958934,
+          "reference_measured_fundamental_hz": 309.90384500733614,
+          "response_measured_fundamental_hz": 303.47192834852615,
+          "absolute_fundamental_error_hz": 6.431916658809996,
+          "response_rms": 0.29795842056542277
+        },
+        "initial_pfc_memory_response": {
+          "spectral_cosine": 0.9276373405441027,
+          "fine_fft_spectral_cosine": 0.05167332727958934,
+          "reference_measured_fundamental_hz": 309.90384500733614,
+          "response_measured_fundamental_hz": 303.47192834852615,
+          "absolute_fundamental_error_hz": 6.431916658809996,
+          "response_rms": 0.29795842056542277
+        },
+        "native_audio_memory_response": {
+          "spectral_cosine": 0.9276373405441027,
+          "fine_fft_spectral_cosine": 0.05167332727958934,
+          "reference_measured_fundamental_hz": 309.90384500733614,
+          "response_measured_fundamental_hz": 303.47192834852615,
+          "absolute_fundamental_error_hz": 6.431916658809996,
+          "response_rms": 0.29795842056542277
+        }
+      },
+      {
+        "cue_id": 18,
+        "cue_kind": "new_self_sounds",
+        "initial_pfc_index_time": 434,
+        "initial_pfc_index_ratio": 1.0,
+        "final_pfc_index_time": 434,
+        "final_pfc_index_ratio": 1.0,
+        "final_thought_cells": [
+          498,
+          499,
+          500,
+          2968,
+          2969,
+          4147
+        ],
+        "initial_controls": [
+          0.703125,
+          0.734375,
+          0.21875,
+          0.734375
+        ],
+        "final_controls": [
+          0.703125,
+          0.734375,
+          0.21875,
+          0.734375
+        ],
+        "native_controls": [
+          0.703125,
+          0.734375,
+          0.21875,
+          0.734375
+        ],
+        "final_pfc_response": {
+          "spectral_cosine": 0.8562648339071872,
+          "fine_fft_spectral_cosine": 0.0712252931652791,
+          "reference_measured_fundamental_hz": 264.257889881701,
+          "response_measured_fundamental_hz": 270.9719281865926,
+          "absolute_fundamental_error_hz": 6.714038304891631,
+          "response_rms": 0.25682468060870545
+        },
+        "initial_pfc_memory_response": {
+          "spectral_cosine": 0.8562648339071872,
+          "fine_fft_spectral_cosine": 0.0712252931652791,
+          "reference_measured_fundamental_hz": 264.257889881701,
+          "response_measured_fundamental_hz": 270.9719281865926,
+          "absolute_fundamental_error_hz": 6.714038304891631,
+          "response_rms": 0.25682468060870545
+        },
+        "native_audio_memory_response": {
+          "spectral_cosine": 0.8562648339071872,
+          "fine_fft_spectral_cosine": 0.0712252931652791,
+          "reference_measured_fundamental_hz": 264.257889881701,
+          "response_measured_fundamental_hz": 270.9719281865926,
+          "absolute_fundamental_error_hz": 6.714038304891631,
+          "response_rms": 0.25682468060870545
+        }
+      },
+      {
+        "cue_id": 19,
+        "cue_kind": "new_self_sounds",
+        "initial_pfc_index_time": 458,
+        "initial_pfc_index_ratio": 1.0,
+        "final_pfc_index_time": 458,
+        "final_pfc_index_ratio": 1.0,
+        "final_thought_cells": [
+          498,
+          499,
+          500,
+          3003,
+          3004,
+          3006,
+          3008,
+          4076,
+          4078
+        ],
+        "initial_controls": [
+          0.65625,
+          0.796875,
+          0.765625,
+          0.8125
+        ],
+        "final_controls": [
+          0.65625,
+          0.796875,
+          0.765625,
+          0.8125
+        ],
+        "native_controls": [
+          0.65625,
+          0.796875,
+          0.765625,
+          0.8125
+        ],
+        "final_pfc_response": {
+          "spectral_cosine": 0.8239996779071891,
+          "fine_fft_spectral_cosine": 0.03476517286169993,
+          "reference_measured_fundamental_hz": 283.9106698343074,
+          "response_measured_fundamental_hz": 287.16342912429235,
+          "absolute_fundamental_error_hz": 3.252759289984965,
+          "response_rms": 0.2097495769500102
+        },
+        "initial_pfc_memory_response": {
+          "spectral_cosine": 0.8239996779071891,
+          "fine_fft_spectral_cosine": 0.03476517286169993,
+          "reference_measured_fundamental_hz": 283.9106698343074,
+          "response_measured_fundamental_hz": 287.16342912429235,
+          "absolute_fundamental_error_hz": 3.252759289984965,
+          "response_rms": 0.2097495769500102
+        },
+        "native_audio_memory_response": {
+          "spectral_cosine": 0.8239996779071891,
+          "fine_fft_spectral_cosine": 0.03476517286169993,
+          "reference_measured_fundamental_hz": 283.9106698343074,
+          "response_measured_fundamental_hz": 287.16342912429235,
+          "absolute_fundamental_error_hz": 3.252759289984965,
+          "response_rms": 0.2097495769500102
+        }
+      },
+      {
+        "cue_id": 20,
+        "cue_kind": "new_self_sounds",
+        "initial_pfc_index_time": 482,
+        "initial_pfc_index_ratio": 1.0,
+        "final_pfc_index_time": 482,
+        "final_pfc_index_ratio": 1.0,
+        "final_thought_cells": [
+          498,
+          499,
+          500,
+          2901,
+          2902,
+          2905,
+          2906,
+          2907,
+          2909,
+          2968,
+          2969,
+          3033,
+          3034,
+          3035,
+          3036,
+          3037,
+          3317,
+          3319
+        ],
+        "initial_controls": [
+          0.921875,
+          0.203125,
+          0.71875,
+          0.203125
+        ],
+        "final_controls": [
+          0.921875,
+          0.203125,
+          0.71875,
+          0.203125
+        ],
+        "native_controls": [
+          0.921875,
+          0.203125,
+          0.71875,
+          0.203125
+        ],
+        "final_pfc_response": {
+          "spectral_cosine": 0.363773401757339,
+          "fine_fft_spectral_cosine": 0.007914330074137724,
+          "reference_measured_fundamental_hz": 107.8537406454039,
+          "response_measured_fundamental_hz": 132.83657114138936,
+          "absolute_fundamental_error_hz": 24.982830495985453,
+          "response_rms": 0.22943488009127722
+        },
+        "initial_pfc_memory_response": {
+          "spectral_cosine": 0.363773401757339,
+          "fine_fft_spectral_cosine": 0.007914330074137724,
+          "reference_measured_fundamental_hz": 107.8537406454039,
+          "response_measured_fundamental_hz": 132.83657114138936,
+          "absolute_fundamental_error_hz": 24.982830495985453,
+          "response_rms": 0.22943488009127722
+        },
+        "native_audio_memory_response": {
+          "spectral_cosine": 0.363773401757339,
+          "fine_fft_spectral_cosine": 0.007914330074137724,
+          "reference_measured_fundamental_hz": 107.8537406454039,
+          "response_measured_fundamental_hz": 132.83657114138936,
+          "absolute_fundamental_error_hz": 24.982830495985453,
+          "response_rms": 0.22943488009127722
+        }
+      },
+      {
+        "cue_id": 21,
+        "cue_kind": "new_self_sounds",
+        "initial_pfc_index_time": 506,
+        "initial_pfc_index_ratio": 1.0,
+        "final_pfc_index_time": 504,
+        "final_pfc_index_ratio": 1.0,
+        "final_thought_cells": [
+          498,
+          499,
+          500,
+          2968,
+          2969,
+          3654,
+          3655,
+          3658,
+          3663
+        ],
+        "initial_controls": [
+          0.734375,
+          0.359375,
+          0.21875,
+          0.484375
+        ],
+        "final_controls": [
+          0.734375,
+          0.359375,
+          0.21875,
+          0.484375
+        ],
+        "native_controls": [
+          0.734375,
+          0.359375,
+          0.21875,
+          0.484375
+        ],
+        "final_pfc_response": {
+          "spectral_cosine": 0.7644421697833734,
+          "fine_fft_spectral_cosine": 0.050373745659484444,
+          "reference_measured_fundamental_hz": 178.7768495890012,
+          "response_measured_fundamental_hz": 173.4719302357327,
+          "absolute_fundamental_error_hz": 5.304919353268474,
+          "response_rms": 0.21000060025050662
+        },
+        "initial_pfc_memory_response": {
+          "spectral_cosine": 0.7644421697833734,
+          "fine_fft_spectral_cosine": 0.050373745659484444,
+          "reference_measured_fundamental_hz": 178.7768495890012,
+          "response_measured_fundamental_hz": 173.4719302357327,
+          "absolute_fundamental_error_hz": 5.304919353268474,
+          "response_rms": 0.21000060025050662
+        },
+        "native_audio_memory_response": {
+          "spectral_cosine": 0.7644421697833734,
+          "fine_fft_spectral_cosine": 0.050373745659484444,
+          "reference_measured_fundamental_hz": 178.7768495890012,
+          "response_measured_fundamental_hz": 173.4719302357327,
+          "absolute_fundamental_error_hz": 5.304919353268474,
+          "response_rms": 0.21000060025050662
+        }
+      },
+      {
+        "cue_id": 22,
+        "cue_kind": "new_self_sounds",
+        "initial_pfc_index_time": 530,
+        "initial_pfc_index_ratio": 1.0,
+        "final_pfc_index_time": 194,
+        "final_pfc_index_ratio": 1.0,
+        "final_thought_cells": [
+          498,
+          499,
+          500,
+          2875,
+          2876,
+          2877,
+          2880,
+          2881
+        ],
+        "initial_controls": [
+          0.90625,
+          0.0625,
+          0.09375,
+          0.671875
+        ],
+        "final_controls": [
+          0.828125,
+          0.21875,
+          0.234375,
+          0.21875
+        ],
+        "native_controls": [
+          0.90625,
+          0.0625,
+          0.09375,
+          0.671875
+        ],
+        "final_pfc_response": {
+          "spectral_cosine": 0.15044055760334663,
+          "fine_fft_spectral_cosine": 0.0013612124147465445,
+          "reference_measured_fundamental_hz": 98.1295684097958,
+          "response_measured_fundamental_hz": 136.83618356103634,
+          "absolute_fundamental_error_hz": 38.70661515124054,
+          "response_rms": 0.207957959345472
+        },
+        "initial_pfc_memory_response": {
+          "spectral_cosine": 0.8959941359692739,
+          "fine_fft_spectral_cosine": 0.4226518374717796,
+          "reference_measured_fundamental_hz": 98.1295684097958,
+          "response_measured_fundamental_hz": 96.25000371640668,
+          "absolute_fundamental_error_hz": 1.8795646933891135,
+          "response_rms": 0.20863987435057865
+        },
+        "native_audio_memory_response": {
+          "spectral_cosine": 0.8959941359692739,
+          "fine_fft_spectral_cosine": 0.4226518374717796,
+          "reference_measured_fundamental_hz": 98.1295684097958,
+          "response_measured_fundamental_hz": 96.25000371640668,
+          "absolute_fundamental_error_hz": 1.8795646933891135,
+          "response_rms": 0.20863987435057865
+        }
+      },
+      {
+        "cue_id": 23,
+        "cue_kind": "new_self_sounds",
+        "initial_pfc_index_time": 554,
+        "initial_pfc_index_ratio": 1.0,
+        "final_pfc_index_time": 288,
+        "final_pfc_index_ratio": 1.0,
+        "final_thought_cells": [
+          498,
+          499,
+          500
+        ],
+        "initial_controls": [
+          0.71875,
+          0.46875,
+          0.75,
+          0.75
+        ],
+        "final_controls": [
+          0.703125,
+          0.34375,
+          0.234375,
+          0.5
+        ],
+        "native_controls": [
+          0.71875,
+          0.46875,
+          0.75,
+          0.75
+        ],
+        "final_pfc_response": {
+          "spectral_cosine": 0.014877573368427769,
+          "fine_fft_spectral_cosine": 0.006766378977033301,
+          "reference_measured_fundamental_hz": 203.50628783931955,
+          "response_measured_fundamental_hz": 169.33618369801644,
+          "absolute_fundamental_error_hz": 34.17010414130311,
+          "response_rms": 0.1970649543123082
+        },
+        "initial_pfc_memory_response": {
+          "spectral_cosine": 0.9241011962012219,
+          "fine_fft_spectral_cosine": 0.14210259800082634,
+          "reference_measured_fundamental_hz": 203.50628783931955,
+          "response_measured_fundamental_hz": 201.83618534957463,
+          "absolute_fundamental_error_hz": 1.6701024897449201,
+          "response_rms": 0.20776829837263974
+        },
+        "native_audio_memory_response": {
+          "spectral_cosine": 0.9241011962012219,
+          "fine_fft_spectral_cosine": 0.14210259800082634,
+          "reference_measured_fundamental_hz": 203.50628783931955,
+          "response_measured_fundamental_hz": 201.83618534957463,
+          "absolute_fundamental_error_hz": 1.6701024897449201,
+          "response_rms": 0.20776829837263974
+        }
+      }
+    ],
+    "unexperienced_nearby_sounds": [
+      {
+        "cue_id": 0,
+        "cue_kind": "unexperienced_nearby_sounds",
+        "initial_pfc_index_time": null,
+        "initial_pfc_index_ratio": 0.5476190476190477,
+        "final_pfc_index_time": null,
+        "final_pfc_index_ratio": 0.0,
+        "final_thought_cells": [],
+        "initial_controls": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "final_controls": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "native_controls": [
+          0.796875,
+          0.8125,
+          0.09375,
+          0.671875
+        ],
+        "final_pfc_response": {
+          "spectral_cosine": 0.0,
+          "fine_fft_spectral_cosine": 0.0,
+          "reference_measured_fundamental_hz": 283.1797281866137,
+          "response_measured_fundamental_hz": null,
+          "absolute_fundamental_error_hz": null,
+          "response_rms": 0.0
+        },
+        "initial_pfc_memory_response": {
+          "spectral_cosine": 0.0,
+          "fine_fft_spectral_cosine": 0.0,
+          "reference_measured_fundamental_hz": 283.1797281866137,
+          "response_measured_fundamental_hz": null,
+          "absolute_fundamental_error_hz": null,
+          "response_rms": 0.0
+        },
+        "native_audio_memory_response": {
+          "spectral_cosine": 0.7692615161467377,
+          "fine_fft_spectral_cosine": 0.03185573852556703,
+          "reference_measured_fundamental_hz": 283.1797281866137,
+          "response_measured_fundamental_hz": 291.2499999032914,
+          "absolute_fundamental_error_hz": 8.070271716677667,
+          "response_rms": 0.3420535531941989
+        }
+      },
+      {
+        "cue_id": 1,
+        "cue_kind": "unexperienced_nearby_sounds",
+        "initial_pfc_index_time": null,
+        "initial_pfc_index_ratio": 0.7096774193548387,
+        "final_pfc_index_time": null,
+        "final_pfc_index_ratio": 0.0,
+        "final_thought_cells": [],
+        "initial_controls": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "final_controls": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "native_controls": [
+          0.65625,
+          0.640625,
+          0.8125,
+          0.484375
+        ],
+        "final_pfc_response": {
+          "spectral_cosine": 0.0,
+          "fine_fft_spectral_cosine": 0.0,
+          "reference_measured_fundamental_hz": 252.2572433416326,
+          "response_measured_fundamental_hz": null,
+          "absolute_fundamental_error_hz": null,
+          "response_rms": 0.0
+        },
+        "initial_pfc_memory_response": {
+          "spectral_cosine": 0.0,
+          "fine_fft_spectral_cosine": 0.0,
+          "reference_measured_fundamental_hz": 252.2572433416326,
+          "response_measured_fundamental_hz": null,
+          "absolute_fundamental_error_hz": null,
+          "response_rms": 0.0
+        },
+        "native_audio_memory_response": {
+          "spectral_cosine": 0.41368481758172393,
+          "fine_fft_spectral_cosine": 0.002526563006243159,
+          "reference_measured_fundamental_hz": 252.2572433416326,
+          "response_measured_fundamental_hz": 246.52807266588576,
+          "absolute_fundamental_error_hz": 5.729170675746843,
+          "response_rms": 0.22022064700560917
+        }
+      },
+      {
+        "cue_id": 2,
+        "cue_kind": "unexperienced_nearby_sounds",
+        "initial_pfc_index_time": null,
+        "initial_pfc_index_ratio": 0.43333333333333335,
+        "final_pfc_index_time": null,
+        "final_pfc_index_ratio": 0.0,
+        "final_thought_cells": [],
+        "initial_controls": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "final_controls": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "native_controls": [
+          0.734375,
+          0.875,
+          0.609375,
+          0.15625
+        ],
+        "final_pfc_response": {
+          "spectral_cosine": 0.0,
+          "fine_fft_spectral_cosine": 0.0,
+          "reference_measured_fundamental_hz": 317.7292475614092,
+          "response_measured_fundamental_hz": null,
+          "absolute_fundamental_error_hz": null,
+          "response_rms": 0.0
+        },
+        "initial_pfc_memory_response": {
+          "spectral_cosine": 0.0,
+          "fine_fft_spectral_cosine": 0.0,
+          "reference_measured_fundamental_hz": 317.7292475614092,
+          "response_measured_fundamental_hz": null,
+          "absolute_fundamental_error_hz": null,
+          "response_rms": 0.0
+        },
+        "native_audio_memory_response": {
+          "spectral_cosine": 0.241082111313515,
+          "fine_fft_spectral_cosine": 0.00040640021681640544,
+          "reference_measured_fundamental_hz": 317.7292475614092,
+          "response_measured_fundamental_hz": 307.4999999979623,
+          "absolute_fundamental_error_hz": 10.229247563446904,
+          "response_rms": 0.2961861832128885
+        }
+      },
+      {
+        "cue_id": 3,
+        "cue_kind": "unexperienced_nearby_sounds",
+        "initial_pfc_index_time": 144,
+        "initial_pfc_index_ratio": 0.9210526315789473,
+        "final_pfc_index_time": 288,
+        "final_pfc_index_ratio": 1.0,
+        "final_thought_cells": [
+          498,
+          499,
+          500,
+          2968,
+          2969
+        ],
+        "initial_controls": [
+          0.703125,
+          0.75,
+          0.734375,
+          0.34375
+        ],
+        "final_controls": [
+          0.703125,
+          0.34375,
+          0.234375,
+          0.5
+        ],
+        "native_controls": [
+          0.859375,
+          0.734375,
+          0.8125,
+          0.34375
+        ],
+        "final_pfc_response": {
+          "spectral_cosine": 0.10110155288162621,
+          "fine_fft_spectral_cosine": 0.0001516795742689934,
+          "reference_measured_fundamental_hz": 267.9527437172865,
+          "response_measured_fundamental_hz": 169.33618369801644,
+          "absolute_fundamental_error_hz": 98.61656001927008,
+          "response_rms": 0.1970649543123082
+        },
+        "initial_pfc_memory_response": {
+          "spectral_cosine": 0.325396512928312,
+          "fine_fft_spectral_cosine": 0.0010810196456557284,
+          "reference_measured_fundamental_hz": 267.9527437172865,
+          "response_measured_fundamental_hz": 275.00000000511085,
+          "absolute_fundamental_error_hz": 7.047256287824325,
+          "response_rms": 0.2261533865088383
+        },
+        "native_audio_memory_response": {
+          "spectral_cosine": 0.8290332095374036,
+          "fine_fft_spectral_cosine": 0.028485262254916658,
+          "reference_measured_fundamental_hz": 267.9527437172865,
+          "response_measured_fundamental_hz": 270.97192626394246,
+          "absolute_fundamental_error_hz": 3.0191825466559408,
+          "response_rms": 0.29625679518376763
+        }
+      },
+      {
+        "cue_id": 4,
+        "cue_kind": "unexperienced_nearby_sounds",
+        "initial_pfc_index_time": 312,
+        "initial_pfc_index_ratio": 0.85,
+        "final_pfc_index_time": 312,
+        "final_pfc_index_ratio": 1.0,
+        "final_thought_cells": [
+          498,
+          499,
+          500,
+          3440,
+          3441,
+          3442,
+          3444,
+          3546,
+          3550,
+          3553,
+          3556
+        ],
+        "initial_controls": [
+          0.71875,
+          0.3125,
+          0.734375,
+          0.28125
+        ],
+        "final_controls": [
+          0.71875,
+          0.3125,
+          0.734375,
+          0.28125
+        ],
+        "native_controls": [
+          0.71875,
+          0.3125,
+          0.734375,
+          0.28125
+        ],
+        "final_pfc_response": {
+          "spectral_cosine": 0.32273681262075166,
+          "fine_fft_spectral_cosine": 0.03144461051080072,
+          "reference_measured_fundamental_hz": 207.43419091471503,
+          "response_measured_fundamental_hz": 161.24999870992795,
+          "absolute_fundamental_error_hz": 46.18419220478708,
+          "response_rms": 0.19211580526387745
+        },
+        "initial_pfc_memory_response": {
+          "spectral_cosine": 0.32273681262075166,
+          "fine_fft_spectral_cosine": 0.03144461051080072,
+          "reference_measured_fundamental_hz": 207.43419091471503,
+          "response_measured_fundamental_hz": 161.24999870992795,
+          "absolute_fundamental_error_hz": 46.18419220478708,
+          "response_rms": 0.19211580526387745
+        },
+        "native_audio_memory_response": {
+          "spectral_cosine": 0.32273681262075166,
+          "fine_fft_spectral_cosine": 0.03144461051080072,
+          "reference_measured_fundamental_hz": 207.43419091471503,
+          "response_measured_fundamental_hz": 161.24999870992795,
+          "absolute_fundamental_error_hz": 46.18419220478708,
+          "response_rms": 0.19211580526387745
+        }
+      },
+      {
+        "cue_id": 5,
+        "cue_kind": "unexperienced_nearby_sounds",
+        "initial_pfc_index_time": null,
+        "initial_pfc_index_ratio": 0.4528301886792453,
+        "final_pfc_index_time": null,
+        "final_pfc_index_ratio": 0.0,
+        "final_thought_cells": [],
+        "initial_controls": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "final_controls": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "native_controls": [
+          0.90625,
+          0.28125,
+          0.328125,
+          0.484375
+        ],
+        "final_pfc_response": {
+          "spectral_cosine": 0.0,
+          "fine_fft_spectral_cosine": 0.0,
+          "reference_measured_fundamental_hz": 140.49573379810408,
+          "response_measured_fundamental_hz": null,
+          "absolute_fundamental_error_hz": null,
+          "response_rms": 0.0
+        },
+        "initial_pfc_memory_response": {
+          "spectral_cosine": 0.0,
+          "fine_fft_spectral_cosine": 0.0,
+          "reference_measured_fundamental_hz": 140.49573379810408,
+          "response_measured_fundamental_hz": null,
+          "absolute_fundamental_error_hz": null,
+          "response_rms": 0.0
+        },
+        "native_audio_memory_response": {
+          "spectral_cosine": 0.21866020426200117,
+          "fine_fft_spectral_cosine": 0.028324239098188708,
+          "reference_measured_fundamental_hz": 140.49573379810408,
+          "response_measured_fundamental_hz": 153.16381775433084,
+          "absolute_fundamental_error_hz": 12.668083956226752,
+          "response_rms": 0.23462026906147326
+        }
+      },
+      {
+        "cue_id": 6,
+        "cue_kind": "unexperienced_nearby_sounds",
+        "initial_pfc_index_time": 144,
+        "initial_pfc_index_ratio": 0.85,
+        "final_pfc_index_time": 288,
+        "final_pfc_index_ratio": 1.0,
+        "final_thought_cells": [
+          498,
+          499,
+          500,
+          2968,
+          2969
+        ],
+        "initial_controls": [
+          0.703125,
+          0.75,
+          0.734375,
+          0.34375
+        ],
+        "final_controls": [
+          0.703125,
+          0.34375,
+          0.234375,
+          0.5
+        ],
+        "native_controls": [
+          0.859375,
+          0.734375,
+          0.8125,
+          0.34375
+        ],
+        "final_pfc_response": {
+          "spectral_cosine": 0.13509253589431575,
+          "fine_fft_spectral_cosine": 0.0003019664402982886,
+          "reference_measured_fundamental_hz": 267.39758473597357,
+          "response_measured_fundamental_hz": 169.33618369801644,
+          "absolute_fundamental_error_hz": 98.06140103795713,
+          "response_rms": 0.1970649543123082
+        },
+        "initial_pfc_memory_response": {
+          "spectral_cosine": 0.31790520149809076,
+          "fine_fft_spectral_cosine": 0.0002850962788527228,
+          "reference_measured_fundamental_hz": 267.39758473597357,
+          "response_measured_fundamental_hz": 275.00000000511085,
+          "absolute_fundamental_error_hz": 7.602415269137282,
+          "response_rms": 0.2261533865088383
+        },
+        "native_audio_memory_response": {
+          "spectral_cosine": 0.7865380628671521,
+          "fine_fft_spectral_cosine": 0.012161119881779845,
+          "reference_measured_fundamental_hz": 267.39758473597357,
+          "response_measured_fundamental_hz": 270.97192626394246,
+          "absolute_fundamental_error_hz": 3.5743415279688975,
+          "response_rms": 0.29625679518376763
+        }
+      },
+      {
+        "cue_id": 7,
+        "cue_kind": "unexperienced_nearby_sounds",
+        "initial_pfc_index_time": null,
+        "initial_pfc_index_ratio": 0.5882352941176471,
+        "final_pfc_index_time": null,
+        "final_pfc_index_ratio": 0.0,
+        "final_thought_cells": [],
+        "initial_controls": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "final_controls": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "native_controls": [
+          0.796875,
+          0.8125,
+          0.09375,
+          0.671875
+        ],
+        "final_pfc_response": {
+          "spectral_cosine": 0.0,
+          "fine_fft_spectral_cosine": 0.0,
+          "reference_measured_fundamental_hz": 282.61657978873484,
+          "response_measured_fundamental_hz": null,
+          "absolute_fundamental_error_hz": null,
+          "response_rms": 0.0
+        },
+        "initial_pfc_memory_response": {
+          "spectral_cosine": 0.0,
+          "fine_fft_spectral_cosine": 0.0,
+          "reference_measured_fundamental_hz": 282.61657978873484,
+          "response_measured_fundamental_hz": null,
+          "absolute_fundamental_error_hz": null,
+          "response_rms": 0.0
+        },
+        "native_audio_memory_response": {
+          "spectral_cosine": 0.6091694911132232,
+          "fine_fft_spectral_cosine": 0.012617903883637531,
+          "reference_measured_fundamental_hz": 282.61657978873484,
+          "response_measured_fundamental_hz": 291.2499999032914,
+          "absolute_fundamental_error_hz": 8.633420114556543,
+          "response_rms": 0.3420535531941989
+        }
+      },
+      {
+        "cue_id": 8,
+        "cue_kind": "unexperienced_nearby_sounds",
+        "initial_pfc_index_time": null,
+        "initial_pfc_index_ratio": 0.375,
+        "final_pfc_index_time": null,
+        "final_pfc_index_ratio": 0.0,
+        "final_thought_cells": [],
+        "initial_controls": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "final_controls": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "native_controls": [
+          0.921875,
+          0.203125,
+          0.71875,
+          0.203125
+        ],
+        "final_pfc_response": {
+          "spectral_cosine": 0.0,
+          "fine_fft_spectral_cosine": 0.0,
+          "reference_measured_fundamental_hz": 120.04189180881335,
+          "response_measured_fundamental_hz": null,
+          "absolute_fundamental_error_hz": null,
+          "response_rms": 0.0
+        },
+        "initial_pfc_memory_response": {
+          "spectral_cosine": 0.0,
+          "fine_fft_spectral_cosine": 0.0,
+          "reference_measured_fundamental_hz": 120.04189180881335,
+          "response_measured_fundamental_hz": null,
+          "absolute_fundamental_error_hz": null,
+          "response_rms": 0.0
+        },
+        "native_audio_memory_response": {
+          "spectral_cosine": 0.12935498750810978,
+          "fine_fft_spectral_cosine": 0.006935440044802599,
+          "reference_measured_fundamental_hz": 120.04189180881335,
+          "response_measured_fundamental_hz": 132.83657114138936,
+          "absolute_fundamental_error_hz": 12.79467933257601,
+          "response_rms": 0.22943488009127722
+        }
+      },
+      {
+        "cue_id": 9,
+        "cue_kind": "unexperienced_nearby_sounds",
+        "initial_pfc_index_time": null,
+        "initial_pfc_index_ratio": 0.45054945054945056,
+        "final_pfc_index_time": null,
+        "final_pfc_index_ratio": 0.0,
+        "final_thought_cells": [],
+        "initial_controls": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "final_controls": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "native_controls": [
+          0.890625,
+          0.28125,
+          0.09375,
+          0.109375
+        ],
+        "final_pfc_response": {
+          "spectral_cosine": 0.0,
+          "fine_fft_spectral_cosine": 0.0,
+          "reference_measured_fundamental_hz": 153.64006892080695,
+          "response_measured_fundamental_hz": null,
+          "absolute_fundamental_error_hz": null,
+          "response_rms": 0.0
+        },
+        "initial_pfc_memory_response": {
+          "spectral_cosine": 0.0,
+          "fine_fft_spectral_cosine": 0.0,
+          "reference_measured_fundamental_hz": 153.64006892080695,
+          "response_measured_fundamental_hz": null,
+          "absolute_fundamental_error_hz": null,
+          "response_rms": 0.0
+        },
+        "native_audio_memory_response": {
+          "spectral_cosine": 0.9953753943275616,
+          "fine_fft_spectral_cosine": 0.9190382810118657,
+          "reference_measured_fundamental_hz": 153.64006892080695,
+          "response_measured_fundamental_hz": 153.16381542225923,
+          "absolute_fundamental_error_hz": 0.47625349854772026,
+          "response_rms": 0.26282549192378934
+        }
+      },
+      {
+        "cue_id": 10,
+        "cue_kind": "unexperienced_nearby_sounds",
+        "initial_pfc_index_time": null,
+        "initial_pfc_index_ratio": 0.4426229508196721,
+        "final_pfc_index_time": null,
+        "final_pfc_index_ratio": 0.0,
+        "final_thought_cells": [],
+        "initial_controls": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "final_controls": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "native_controls": [
+          0.71875,
+          0.3125,
+          0.734375,
+          0.28125
+        ],
+        "final_pfc_response": {
+          "spectral_cosine": 0.0,
+          "fine_fft_spectral_cosine": 0.0,
+          "reference_measured_fundamental_hz": 183.75274180272885,
+          "response_measured_fundamental_hz": null,
+          "absolute_fundamental_error_hz": null,
+          "response_rms": 0.0
+        },
+        "initial_pfc_memory_response": {
+          "spectral_cosine": 0.0,
+          "fine_fft_spectral_cosine": 0.0,
+          "reference_measured_fundamental_hz": 183.75274180272885,
+          "response_measured_fundamental_hz": null,
+          "absolute_fundamental_error_hz": null,
+          "response_rms": 0.0
+        },
+        "native_audio_memory_response": {
+          "spectral_cosine": 0.12357380875034599,
+          "fine_fft_spectral_cosine": 0.01949061293987729,
+          "reference_measured_fundamental_hz": 183.75274180272885,
+          "response_measured_fundamental_hz": 161.24999870992795,
+          "absolute_fundamental_error_hz": 22.5027430928009,
+          "response_rms": 0.19211580526387745
+        }
+      },
+      {
+        "cue_id": 11,
+        "cue_kind": "unexperienced_nearby_sounds",
+        "initial_pfc_index_time": null,
+        "initial_pfc_index_ratio": 0.7037037037037037,
+        "final_pfc_index_time": null,
+        "final_pfc_index_ratio": 0.0,
+        "final_thought_cells": [],
+        "initial_controls": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "final_controls": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "native_controls": [
+          0.90625,
+          0.546875,
+          0.8125,
+          0.125
+        ],
+        "final_pfc_response": {
+          "spectral_cosine": 0.0,
+          "fine_fft_spectral_cosine": 0.0,
+          "reference_measured_fundamental_hz": 228.77627231546384,
+          "response_measured_fundamental_hz": null,
+          "absolute_fundamental_error_hz": null,
+          "response_rms": 0.0
+        },
+        "initial_pfc_memory_response": {
+          "spectral_cosine": 0.0,
+          "fine_fft_spectral_cosine": 0.0,
+          "reference_measured_fundamental_hz": 228.77627231546384,
+          "response_measured_fundamental_hz": null,
+          "absolute_fundamental_error_hz": null,
+          "response_rms": 0.0
+        },
+        "native_audio_memory_response": {
+          "spectral_cosine": 0.4323558303719543,
+          "fine_fft_spectral_cosine": 0.001704731368300894,
+          "reference_measured_fundamental_hz": 228.77627231546384,
+          "response_measured_fundamental_hz": 222.16342890898144,
+          "absolute_fundamental_error_hz": 6.612843406482398,
+          "response_rms": 0.31357850243359786
+        }
+      }
+    ],
+    "before_any_voice_experience": [
+      {
+        "cue_id": 0,
+        "cue_kind": "before_any_voice_experience",
+        "initial_pfc_index_time": null,
+        "initial_pfc_index_ratio": 0.0,
+        "final_pfc_index_time": null,
+        "final_pfc_index_ratio": 0.0,
+        "final_thought_cells": [
+          4117,
+          4118
+        ],
+        "initial_controls": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "final_controls": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "native_controls": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "final_pfc_response": {
+          "spectral_cosine": 0.0,
+          "fine_fft_spectral_cosine": 0.0,
+          "reference_measured_fundamental_hz": 289.6134841854383,
+          "response_measured_fundamental_hz": null,
+          "absolute_fundamental_error_hz": null,
+          "response_rms": 0.0
+        },
+        "initial_pfc_memory_response": {
+          "spectral_cosine": 0.0,
+          "fine_fft_spectral_cosine": 0.0,
+          "reference_measured_fundamental_hz": 289.6134841854383,
+          "response_measured_fundamental_hz": null,
+          "absolute_fundamental_error_hz": null,
+          "response_rms": 0.0
+        },
+        "native_audio_memory_response": {
+          "spectral_cosine": 0.0,
+          "fine_fft_spectral_cosine": 0.0,
+          "reference_measured_fundamental_hz": 289.6134841854383,
+          "response_measured_fundamental_hz": null,
+          "absolute_fundamental_error_hz": null,
+          "response_rms": 0.0
+        }
+      },
+      {
+        "cue_id": 1,
+        "cue_kind": "before_any_voice_experience",
+        "initial_pfc_index_time": null,
+        "initial_pfc_index_ratio": 0.0,
+        "final_pfc_index_time": null,
+        "final_pfc_index_ratio": 0.0,
+        "final_thought_cells": [],
+        "initial_controls": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "final_controls": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "native_controls": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "final_pfc_response": {
+          "spectral_cosine": 0.0,
+          "fine_fft_spectral_cosine": 0.0,
+          "reference_measured_fundamental_hz": 245.8148321383573,
+          "response_measured_fundamental_hz": null,
+          "absolute_fundamental_error_hz": null,
+          "response_rms": 0.0
+        },
+        "initial_pfc_memory_response": {
+          "spectral_cosine": 0.0,
+          "fine_fft_spectral_cosine": 0.0,
+          "reference_measured_fundamental_hz": 245.8148321383573,
+          "response_measured_fundamental_hz": null,
+          "absolute_fundamental_error_hz": null,
+          "response_rms": 0.0
+        },
+        "native_audio_memory_response": {
+          "spectral_cosine": 0.0,
+          "fine_fft_spectral_cosine": 0.0,
+          "reference_measured_fundamental_hz": 245.8148321383573,
+          "response_measured_fundamental_hz": null,
+          "absolute_fundamental_error_hz": null,
+          "response_rms": 0.0
+        }
+      },
+      {
+        "cue_id": 2,
+        "cue_kind": "before_any_voice_experience",
+        "initial_pfc_index_time": null,
+        "initial_pfc_index_ratio": 0.0,
+        "final_pfc_index_time": null,
+        "final_pfc_index_ratio": 0.0,
+        "final_thought_cells": [],
+        "initial_controls": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "final_controls": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "native_controls": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "final_pfc_response": {
+          "spectral_cosine": 0.0,
+          "fine_fft_spectral_cosine": 0.0,
+          "reference_measured_fundamental_hz": 311.2184791983193,
+          "response_measured_fundamental_hz": null,
+          "absolute_fundamental_error_hz": null,
+          "response_rms": 0.0
+        },
+        "initial_pfc_memory_response": {
+          "spectral_cosine": 0.0,
+          "fine_fft_spectral_cosine": 0.0,
+          "reference_measured_fundamental_hz": 311.2184791983193,
+          "response_measured_fundamental_hz": null,
+          "absolute_fundamental_error_hz": null,
+          "response_rms": 0.0
+        },
+        "native_audio_memory_response": {
+          "spectral_cosine": 0.0,
+          "fine_fft_spectral_cosine": 0.0,
+          "reference_measured_fundamental_hz": 311.2184791983193,
+          "response_measured_fundamental_hz": null,
+          "absolute_fundamental_error_hz": null,
+          "response_rms": 0.0
+        }
+      },
+      {
+        "cue_id": 3,
+        "cue_kind": "before_any_voice_experience",
+        "initial_pfc_index_time": null,
+        "initial_pfc_index_ratio": 0.0,
+        "final_pfc_index_time": null,
+        "final_pfc_index_ratio": 0.0,
+        "final_thought_cells": [
+          2968,
+          2969
+        ],
+        "initial_controls": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "final_controls": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "native_controls": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "final_pfc_response": {
+          "spectral_cosine": 0.0,
+          "fine_fft_spectral_cosine": 0.0,
+          "reference_measured_fundamental_hz": 261.39858314137035,
+          "response_measured_fundamental_hz": null,
+          "absolute_fundamental_error_hz": null,
+          "response_rms": 0.0
+        },
+        "initial_pfc_memory_response": {
+          "spectral_cosine": 0.0,
+          "fine_fft_spectral_cosine": 0.0,
+          "reference_measured_fundamental_hz": 261.39858314137035,
+          "response_measured_fundamental_hz": null,
+          "absolute_fundamental_error_hz": null,
+          "response_rms": 0.0
+        },
+        "native_audio_memory_response": {
+          "spectral_cosine": 0.0,
+          "fine_fft_spectral_cosine": 0.0,
+          "reference_measured_fundamental_hz": 261.39858314137035,
+          "response_measured_fundamental_hz": null,
+          "absolute_fundamental_error_hz": null,
+          "response_rms": 0.0
+        }
+      },
+      {
+        "cue_id": 4,
+        "cue_kind": "before_any_voice_experience",
+        "initial_pfc_index_time": null,
+        "initial_pfc_index_ratio": 0.0,
+        "final_pfc_index_time": null,
+        "final_pfc_index_ratio": 0.0,
+        "final_thought_cells": [],
+        "initial_controls": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "final_controls": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "native_controls": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "final_pfc_response": {
+          "spectral_cosine": 0.0,
+          "fine_fft_spectral_cosine": 0.0,
+          "reference_measured_fundamental_hz": 200.97350304143862,
+          "response_measured_fundamental_hz": null,
+          "absolute_fundamental_error_hz": null,
+          "response_rms": 0.0
+        },
+        "initial_pfc_memory_response": {
+          "spectral_cosine": 0.0,
+          "fine_fft_spectral_cosine": 0.0,
+          "reference_measured_fundamental_hz": 200.97350304143862,
+          "response_measured_fundamental_hz": null,
+          "absolute_fundamental_error_hz": null,
+          "response_rms": 0.0
+        },
+        "native_audio_memory_response": {
+          "spectral_cosine": 0.0,
+          "fine_fft_spectral_cosine": 0.0,
+          "reference_measured_fundamental_hz": 200.97350304143862,
+          "response_measured_fundamental_hz": null,
+          "absolute_fundamental_error_hz": null,
+          "response_rms": 0.0
+        }
+      },
+      {
+        "cue_id": 5,
+        "cue_kind": "before_any_voice_experience",
+        "initial_pfc_index_time": null,
+        "initial_pfc_index_ratio": 0.0,
+        "final_pfc_index_time": null,
+        "final_pfc_index_ratio": 0.0,
+        "final_thought_cells": [],
+        "initial_controls": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "final_controls": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "native_controls": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "final_pfc_response": {
+          "spectral_cosine": 0.0,
+          "fine_fft_spectral_cosine": 0.0,
+          "reference_measured_fundamental_hz": 146.9266526438968,
+          "response_measured_fundamental_hz": null,
+          "absolute_fundamental_error_hz": null,
+          "response_rms": 0.0
+        },
+        "initial_pfc_memory_response": {
+          "spectral_cosine": 0.0,
+          "fine_fft_spectral_cosine": 0.0,
+          "reference_measured_fundamental_hz": 146.9266526438968,
+          "response_measured_fundamental_hz": null,
+          "absolute_fundamental_error_hz": null,
+          "response_rms": 0.0
+        },
+        "native_audio_memory_response": {
+          "spectral_cosine": 0.0,
+          "fine_fft_spectral_cosine": 0.0,
+          "reference_measured_fundamental_hz": 146.9266526438968,
+          "response_measured_fundamental_hz": null,
+          "absolute_fundamental_error_hz": null,
+          "response_rms": 0.0
+        }
+      },
+      {
+        "cue_id": 6,
+        "cue_kind": "before_any_voice_experience",
+        "initial_pfc_index_time": null,
+        "initial_pfc_index_ratio": 0.0,
+        "final_pfc_index_time": null,
+        "final_pfc_index_ratio": 0.0,
+        "final_thought_cells": [
+          3677,
+          3679
+        ],
+        "initial_controls": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "final_controls": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "native_controls": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "final_pfc_response": {
+          "spectral_cosine": 0.0,
+          "fine_fft_spectral_cosine": 0.0,
+          "reference_measured_fundamental_hz": 273.8836861858312,
+          "response_measured_fundamental_hz": null,
+          "absolute_fundamental_error_hz": null,
+          "response_rms": 0.0
+        },
+        "initial_pfc_memory_response": {
+          "spectral_cosine": 0.0,
+          "fine_fft_spectral_cosine": 0.0,
+          "reference_measured_fundamental_hz": 273.8836861858312,
+          "response_measured_fundamental_hz": null,
+          "absolute_fundamental_error_hz": null,
+          "response_rms": 0.0
+        },
+        "native_audio_memory_response": {
+          "spectral_cosine": 0.0,
+          "fine_fft_spectral_cosine": 0.0,
+          "reference_measured_fundamental_hz": 273.8836861858312,
+          "response_measured_fundamental_hz": null,
+          "absolute_fundamental_error_hz": null,
+          "response_rms": 0.0
+        }
+      },
+      {
+        "cue_id": 7,
+        "cue_kind": "before_any_voice_experience",
+        "initial_pfc_index_time": null,
+        "initial_pfc_index_ratio": 0.0,
+        "final_pfc_index_time": null,
+        "final_pfc_index_ratio": 0.0,
+        "final_thought_cells": [
+          4117,
+          4118
+        ],
+        "initial_controls": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "final_controls": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "native_controls": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "final_pfc_response": {
+          "spectral_cosine": 0.0,
+          "fine_fft_spectral_cosine": 0.0,
+          "reference_measured_fundamental_hz": 289.07115670217854,
+          "response_measured_fundamental_hz": null,
+          "absolute_fundamental_error_hz": null,
+          "response_rms": 0.0
+        },
+        "initial_pfc_memory_response": {
+          "spectral_cosine": 0.0,
+          "fine_fft_spectral_cosine": 0.0,
+          "reference_measured_fundamental_hz": 289.07115670217854,
+          "response_measured_fundamental_hz": null,
+          "absolute_fundamental_error_hz": null,
+          "response_rms": 0.0
+        },
+        "native_audio_memory_response": {
+          "spectral_cosine": 0.0,
+          "fine_fft_spectral_cosine": 0.0,
+          "reference_measured_fundamental_hz": 289.07115670217854,
+          "response_measured_fundamental_hz": null,
+          "absolute_fundamental_error_hz": null,
+          "response_rms": 0.0
+        }
+      },
+      {
+        "cue_id": 8,
+        "cue_kind": "before_any_voice_experience",
+        "initial_pfc_index_time": null,
+        "initial_pfc_index_ratio": 0.0,
+        "final_pfc_index_time": null,
+        "final_pfc_index_ratio": 0.0,
+        "final_thought_cells": [
+          2880,
+          2881,
+          2968,
+          2969
+        ],
+        "initial_controls": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "final_controls": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "native_controls": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "final_pfc_response": {
+          "spectral_cosine": 0.0,
+          "fine_fft_spectral_cosine": 0.0,
+          "reference_measured_fundamental_hz": 126.50570965367163,
+          "response_measured_fundamental_hz": null,
+          "absolute_fundamental_error_hz": null,
+          "response_rms": 0.0
+        },
+        "initial_pfc_memory_response": {
+          "spectral_cosine": 0.0,
+          "fine_fft_spectral_cosine": 0.0,
+          "reference_measured_fundamental_hz": 126.50570965367163,
+          "response_measured_fundamental_hz": null,
+          "absolute_fundamental_error_hz": null,
+          "response_rms": 0.0
+        },
+        "native_audio_memory_response": {
+          "spectral_cosine": 0.0,
+          "fine_fft_spectral_cosine": 0.0,
+          "reference_measured_fundamental_hz": 126.50570965367163,
+          "response_measured_fundamental_hz": null,
+          "absolute_fundamental_error_hz": null,
+          "response_rms": 0.0
+        }
+      },
+      {
+        "cue_id": 9,
+        "cue_kind": "before_any_voice_experience",
+        "initial_pfc_index_time": null,
+        "initial_pfc_index_ratio": 0.0,
+        "final_pfc_index_time": null,
+        "final_pfc_index_ratio": 0.0,
+        "final_thought_cells": [
+          2717,
+          2722,
+          2723,
+          2914,
+          2916,
+          2922
+        ],
+        "initial_controls": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "final_controls": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "native_controls": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "final_pfc_response": {
+          "spectral_cosine": 0.0,
+          "fine_fft_spectral_cosine": 0.0,
+          "reference_measured_fundamental_hz": 147.0932223591544,
+          "response_measured_fundamental_hz": null,
+          "absolute_fundamental_error_hz": null,
+          "response_rms": 0.0
+        },
+        "initial_pfc_memory_response": {
+          "spectral_cosine": 0.0,
+          "fine_fft_spectral_cosine": 0.0,
+          "reference_measured_fundamental_hz": 147.0932223591544,
+          "response_measured_fundamental_hz": null,
+          "absolute_fundamental_error_hz": null,
+          "response_rms": 0.0
+        },
+        "native_audio_memory_response": {
+          "spectral_cosine": 0.0,
+          "fine_fft_spectral_cosine": 0.0,
+          "reference_measured_fundamental_hz": 147.0932223591544,
+          "response_measured_fundamental_hz": null,
+          "absolute_fundamental_error_hz": null,
+          "response_rms": 0.0
+        }
+      },
+      {
+        "cue_id": 10,
+        "cue_kind": "before_any_voice_experience",
+        "initial_pfc_index_time": null,
+        "initial_pfc_index_ratio": 0.0,
+        "final_pfc_index_time": null,
+        "final_pfc_index_ratio": 0.0,
+        "final_thought_cells": [
+          2880,
+          2881
+        ],
+        "initial_controls": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "final_controls": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "native_controls": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "final_pfc_response": {
+          "spectral_cosine": 0.0,
+          "fine_fft_spectral_cosine": 0.0,
+          "reference_measured_fundamental_hz": 190.2732460475443,
+          "response_measured_fundamental_hz": null,
+          "absolute_fundamental_error_hz": null,
+          "response_rms": 0.0
+        },
+        "initial_pfc_memory_response": {
+          "spectral_cosine": 0.0,
+          "fine_fft_spectral_cosine": 0.0,
+          "reference_measured_fundamental_hz": 190.2732460475443,
+          "response_measured_fundamental_hz": null,
+          "absolute_fundamental_error_hz": null,
+          "response_rms": 0.0
+        },
+        "native_audio_memory_response": {
+          "spectral_cosine": 0.0,
+          "fine_fft_spectral_cosine": 0.0,
+          "reference_measured_fundamental_hz": 190.2732460475443,
+          "response_measured_fundamental_hz": null,
+          "absolute_fundamental_error_hz": null,
+          "response_rms": 0.0
+        }
+      },
+      {
+        "cue_id": 11,
+        "cue_kind": "before_any_voice_experience",
+        "initial_pfc_index_time": null,
+        "initial_pfc_index_ratio": 0.0,
+        "final_pfc_index_time": null,
+        "final_pfc_index_ratio": 0.0,
+        "final_thought_cells": [
+          2914,
+          2916,
+          2922
+        ],
+        "initial_controls": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "final_controls": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "native_controls": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "final_pfc_response": {
+          "spectral_cosine": 0.0,
+          "fine_fft_spectral_cosine": 0.0,
+          "reference_measured_fundamental_hz": 222.2640597003452,
+          "response_measured_fundamental_hz": null,
+          "absolute_fundamental_error_hz": null,
+          "response_rms": 0.0
+        },
+        "initial_pfc_memory_response": {
+          "spectral_cosine": 0.0,
+          "fine_fft_spectral_cosine": 0.0,
+          "reference_measured_fundamental_hz": 222.2640597003452,
+          "response_measured_fundamental_hz": null,
+          "absolute_fundamental_error_hz": null,
+          "response_rms": 0.0
+        },
+        "native_audio_memory_response": {
+          "spectral_cosine": 0.0,
+          "fine_fft_spectral_cosine": 0.0,
+          "reference_measured_fundamental_hz": 222.2640597003452,
+          "response_measured_fundamental_hz": null,
+          "absolute_fundamental_error_hz": null,
+          "response_rms": 0.0
+        }
+      }
+    ]
+  },
+  "safe_checkpoint_roundtrip_and_8_learning_frames_exact": true,
+  "actual_pcm_replay_bitwise_equal": true,
+  "default_life_unchanged": true,
+  "default_life_sha256": "30ed4050c59349fcb8a9d3f2551437839d3665ffc19db068f740a441d3ae64d7",
+  "checkpoint_path": "F:\\一种AGI架构\\原架构闭环\\results\\vocal_learning_24_motor64.npz",
+  "checkpoint_sha256": "80d6043ff7c59ef01b2dea0d47a3619301c909d787560eabf51bda8e5fd1c6f0",
+  "wall_seconds": 22.676574099999925,
+  "limitations": [
+    "This candidate has a vocal body only; the default navigating brain was not replaced.",
+    "Initial/native memory readouts are diagnostic comparisons; the final recurrent PFC readout is reported separately.",
+    "Known sounds can test sensorimotor memory, and adjacent sounds can test local acoustic transfer, not language.",
+    "The actuator parameters and control schedules are evaluator data, absent from auditory or visual brain inputs."
+  ]
+}

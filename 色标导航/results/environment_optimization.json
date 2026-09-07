@@ -1,0 +1,89 @@
+{
+  "white_list_and_pure_read": true,
+  "target_identity_not_leaked_into_visual_or_body_sensors": true,
+  "cue_stops_after_point_six_seconds": true,
+  "direct_line_to_red_is_physically_occluded_by_wall": true,
+  "red_target_absent_from_all_initial_rays": true,
+  "real_muscles_move_body_and_cannot_cross_barrier": {
+    "final_x": 4.61999999999,
+    "impulse": 13.018434512412457
+  },
+  "velocity_is_body_frame": true,
+  "tone_mapping_can_be_permuted": [
+    660.0,
+    220.0,
+    440.0
+  ],
+  "geometry_reachability": {
+    "barrier": {
+      "all_starts_and_beacons_connected": true,
+      "grid_metres": 0.1,
+      "body_radius_with_clearance": 0.205,
+      "reachable_free_cells": 6965
+    },
+    "offset": {
+      "all_starts_and_beacons_connected": true,
+      "grid_metres": 0.1,
+      "body_radius_with_clearance": 0.205,
+      "reachable_free_cells": 6652
+    },
+    "crossbar": {
+      "all_starts_and_beacons_connected": true,
+      "grid_metres": 0.1,
+      "body_radius_with_clearance": 0.205,
+      "reachable_free_cells": 6823
+    }
+  },
+  "private_arrival_scoring": true,
+  "observation_optimization": {
+    "comparisons": [
+      {
+        "scenario": "barrier",
+        "frames": 250,
+        "all_physics_sensors_and_private_scores_exact": true,
+        "contact_steps": 97,
+        "path_length": 4.436848443905808
+      },
+      {
+        "scenario": "offset",
+        "frames": 250,
+        "all_physics_sensors_and_private_scores_exact": true,
+        "contact_steps": 108,
+        "path_length": 2.936848443905765
+      },
+      {
+        "scenario": "crossbar",
+        "frames": 250,
+        "all_physics_sensors_and_private_scores_exact": true,
+        "contact_steps": 57,
+        "path_length": 9.736848443905822
+      }
+    ],
+    "physics_substep_changed": false,
+    "arrival_sampling_changed": false,
+    "maximum_value_difference": 0,
+    "exception_restores_complete_observation": true,
+    "timing_frames_per_run": 250,
+    "raw_timing_seconds": {
+      "baseline": [
+        1.3137289999995119,
+        1.3358766000001197,
+        1.3352899000001344
+      ],
+      "optimized": [
+        0.32327290000012,
+        0.3141622000002826,
+        0.3058150000006208
+      ]
+    },
+    "median_baseline_seconds": 1.3352899000001344,
+    "median_optimized_seconds": 0.3141622000002826,
+    "speedup": 4.250320057597423,
+    "baseline_ms_per_step": 5.3411596000005375,
+    "optimized_ms_per_step": 1.2566488000011304,
+    "ray_evaluations_per_point_one_second_step": {
+      "baseline": 11,
+      "optimized": 1
+    }
+  }
+}

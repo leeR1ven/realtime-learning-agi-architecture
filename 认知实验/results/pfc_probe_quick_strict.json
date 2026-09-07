@@ -1,0 +1,5391 @@
+{
+  "version": "candidate-pfc-rate-reservoir-v1",
+  "candidate_not_original_pfc": true,
+  "quick": true,
+  "wall_seconds": 12.116274699999849,
+  "widths": [
+    64,
+    256,
+    1024
+  ],
+  "seeds": [
+    3,
+    11,
+    29
+  ],
+  "training_trials_per_independent_model": 1200,
+  "evaluation_trials": 240,
+  "chance_accuracy": 0.5,
+  "input_channels": 8,
+  "protocol": {
+    "context_frames": 2,
+    "training_delay_frames": [
+      2,
+      5
+    ],
+    "cue_frames": 2,
+    "distractor_probability_per_delay_frame": 0.5,
+    "distractor_amplitude": 0.35,
+    "long_delay_frames": [
+      8,
+      12
+    ],
+    "trial_boundary_resets_state": true,
+    "teaching_after_decision_only": true,
+    "test_feedback": false,
+    "per_seed_random_signed_token_permutation": true,
+    "per_seed_random_output_label_flip": true,
+    "task_scorer_in_environment_only": true,
+    "parameters_selected_before_first_run": true
+  },
+  "rules": {
+    "delta": "normalized presynaptic activity times postsynaptic teacher-minus-output error",
+    "hebb": "additive normalized presynaptic activity times teacher one-hot; L2-normalized output rows at decision"
+  },
+  "rows": [
+    {
+      "condition": "delayed_xor",
+      "width": 64,
+      "seed": 3,
+      "rule": "delta",
+      "config": {
+        "width": 64,
+        "inputs": 8,
+        "input_fanin": 3,
+        "recurrent_fanin": 8,
+        "input_gain": 1.5,
+        "recurrent_gain": 1.1,
+        "leak": 0.4,
+        "bias_gain": 0.1,
+        "learning_rate": 0.6,
+        "seed": 3,
+        "readout_rule": "delta"
+      },
+      "train": {
+        "trials": 1200,
+        "wall_seconds": 0.11097650000010617,
+        "online_accuracy": 0.6708333333333333,
+        "last_200_online_accuracy": 0.8,
+        "shuffled_feedback": false
+      },
+      "evaluation": {
+        "accuracy": 0.9125,
+        "correct": 219,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            120,
+            0
+          ],
+          [
+            21,
+            99
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            47,
+            60
+          ],
+          "01": [
+            60,
+            60
+          ],
+          "10": [
+            60,
+            60
+          ],
+          "11": [
+            52,
+            60
+          ]
+        },
+        "mean_true_margin": 0.41924310662530917,
+        "wall_seconds": 0.020645300000069255,
+        "feedback_supplied": false
+      },
+      "birth_hash": "223a31ea22d44a01a08cb94da54b406a4fd11451ec7548129ba70cd01d58dbf5",
+      "trainable_parameter_count": 130,
+      "fixed_synapse_count": 704
+    },
+    {
+      "condition": "context_cleared_before_cue",
+      "width": 64,
+      "seed": 3,
+      "rule": "delta",
+      "evaluation": {
+        "accuracy": 0.5,
+        "correct": 120,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            60,
+            60
+          ],
+          [
+            60,
+            60
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            60,
+            60
+          ],
+          "01": [
+            60,
+            60
+          ],
+          "10": [
+            0,
+            60
+          ],
+          "11": [
+            0,
+            60
+          ]
+        },
+        "mean_true_margin": 4.625929269271485e-18,
+        "wall_seconds": 0.02076169999963895,
+        "feedback_supplied": false
+      },
+      "trained_as": "delayed_xor"
+    },
+    {
+      "condition": "long_delay_8_to_12",
+      "width": 64,
+      "seed": 3,
+      "rule": "delta",
+      "evaluation": {
+        "accuracy": 0.5041666666666667,
+        "correct": 121,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            120,
+            0
+          ],
+          [
+            119,
+            1
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            1,
+            60
+          ],
+          "01": [
+            60,
+            60
+          ],
+          "10": [
+            60,
+            60
+          ],
+          "11": [
+            0,
+            60
+          ]
+        },
+        "mean_true_margin": 0.19623527297025098,
+        "wall_seconds": 0.037585500000204775,
+        "feedback_supplied": false
+      },
+      "trained_as": "delayed_xor"
+    },
+    {
+      "condition": "no_memory_trained",
+      "width": 64,
+      "seed": 3,
+      "rule": "delta",
+      "config": {
+        "width": 64,
+        "inputs": 8,
+        "input_fanin": 3,
+        "recurrent_fanin": 8,
+        "input_gain": 1.5,
+        "recurrent_gain": 1.1,
+        "leak": 0.4,
+        "bias_gain": 0.1,
+        "learning_rate": 0.6,
+        "seed": 3,
+        "readout_rule": "delta"
+      },
+      "train": {
+        "trials": 1200,
+        "wall_seconds": 0.1263066000001345,
+        "online_accuracy": 0.49916666666666665,
+        "last_200_online_accuracy": 0.52,
+        "shuffled_feedback": false
+      },
+      "evaluation": {
+        "accuracy": 0.5,
+        "correct": 120,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            120,
+            0
+          ],
+          [
+            120,
+            0
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            0,
+            60
+          ],
+          "01": [
+            60,
+            60
+          ],
+          "10": [
+            60,
+            60
+          ],
+          "11": [
+            0,
+            60
+          ]
+        },
+        "mean_true_margin": 7.401486830834377e-18,
+        "wall_seconds": 0.023069800000484975,
+        "feedback_supplied": false
+      },
+      "birth_hash": "223a31ea22d44a01a08cb94da54b406a4fd11451ec7548129ba70cd01d58dbf5",
+      "trainable_parameter_count": 130,
+      "fixed_synapse_count": 704
+    },
+    {
+      "condition": "shuffled_feedback",
+      "width": 64,
+      "seed": 3,
+      "rule": "delta",
+      "config": {
+        "width": 64,
+        "inputs": 8,
+        "input_fanin": 3,
+        "recurrent_fanin": 8,
+        "input_gain": 1.5,
+        "recurrent_gain": 1.1,
+        "leak": 0.4,
+        "bias_gain": 0.1,
+        "learning_rate": 0.6,
+        "seed": 3,
+        "readout_rule": "delta"
+      },
+      "train": {
+        "trials": 1200,
+        "wall_seconds": 0.11274009999942791,
+        "online_accuracy": 0.4975,
+        "last_200_online_accuracy": 0.52,
+        "shuffled_feedback": true
+      },
+      "evaluation": {
+        "accuracy": 0.5,
+        "correct": 120,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            0,
+            120
+          ],
+          [
+            0,
+            120
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            60,
+            60
+          ],
+          "01": [
+            0,
+            60
+          ],
+          "10": [
+            0,
+            60
+          ],
+          "11": [
+            60,
+            60
+          ]
+        },
+        "mean_true_margin": -0.00723872977251567,
+        "wall_seconds": 0.020743800000673218,
+        "feedback_supplied": false
+      },
+      "birth_hash": "223a31ea22d44a01a08cb94da54b406a4fd11451ec7548129ba70cd01d58dbf5",
+      "trainable_parameter_count": 130,
+      "fixed_synapse_count": 704
+    },
+    {
+      "condition": "current_cue_control",
+      "width": 64,
+      "seed": 3,
+      "rule": "delta",
+      "config": {
+        "width": 64,
+        "inputs": 8,
+        "input_fanin": 3,
+        "recurrent_fanin": 8,
+        "input_gain": 1.5,
+        "recurrent_gain": 1.1,
+        "leak": 0.4,
+        "bias_gain": 0.1,
+        "learning_rate": 0.6,
+        "seed": 3,
+        "readout_rule": "delta"
+      },
+      "train": {
+        "trials": 1200,
+        "wall_seconds": 0.11021999999957188,
+        "online_accuracy": 0.9975,
+        "last_200_online_accuracy": 1.0,
+        "shuffled_feedback": false
+      },
+      "evaluation": {
+        "accuracy": 1.0,
+        "correct": 240,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            120,
+            0
+          ],
+          [
+            0,
+            120
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            60,
+            60
+          ],
+          "01": [
+            60,
+            60
+          ],
+          "10": [
+            60,
+            60
+          ],
+          "11": [
+            60,
+            60
+          ]
+        },
+        "mean_true_margin": 0.9956140168554325,
+        "wall_seconds": 0.021620999999868218,
+        "feedback_supplied": false
+      },
+      "birth_hash": "223a31ea22d44a01a08cb94da54b406a4fd11451ec7548129ba70cd01d58dbf5",
+      "trainable_parameter_count": 130,
+      "fixed_synapse_count": 704
+    },
+    {
+      "condition": "delayed_xor",
+      "width": 64,
+      "seed": 11,
+      "rule": "delta",
+      "config": {
+        "width": 64,
+        "inputs": 8,
+        "input_fanin": 3,
+        "recurrent_fanin": 8,
+        "input_gain": 1.5,
+        "recurrent_gain": 1.1,
+        "leak": 0.4,
+        "bias_gain": 0.1,
+        "learning_rate": 0.6,
+        "seed": 11,
+        "readout_rule": "delta"
+      },
+      "train": {
+        "trials": 1200,
+        "wall_seconds": 0.11200660000031348,
+        "online_accuracy": 0.9158333333333334,
+        "last_200_online_accuracy": 1.0,
+        "shuffled_feedback": false
+      },
+      "evaluation": {
+        "accuracy": 1.0,
+        "correct": 240,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            120,
+            0
+          ],
+          [
+            0,
+            120
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            60,
+            60
+          ],
+          "01": [
+            60,
+            60
+          ],
+          "10": [
+            60,
+            60
+          ],
+          "11": [
+            60,
+            60
+          ]
+        },
+        "mean_true_margin": 0.8595006091526048,
+        "wall_seconds": 0.020606299999599287,
+        "feedback_supplied": false
+      },
+      "birth_hash": "1b0968ac0417ec2b12638807f30c1f8a0ee97852fb84cfefa5b41a2e7dc35dfe",
+      "trainable_parameter_count": 130,
+      "fixed_synapse_count": 704
+    },
+    {
+      "condition": "context_cleared_before_cue",
+      "width": 64,
+      "seed": 11,
+      "rule": "delta",
+      "evaluation": {
+        "accuracy": 0.5,
+        "correct": 120,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            120,
+            0
+          ],
+          [
+            120,
+            0
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            60,
+            60
+          ],
+          "01": [
+            0,
+            60
+          ],
+          "10": [
+            0,
+            60
+          ],
+          "11": [
+            60,
+            60
+          ]
+        },
+        "mean_true_margin": 7.401486830834377e-18,
+        "wall_seconds": 0.02093250000052649,
+        "feedback_supplied": false
+      },
+      "trained_as": "delayed_xor"
+    },
+    {
+      "condition": "long_delay_8_to_12",
+      "width": 64,
+      "seed": 11,
+      "rule": "delta",
+      "evaluation": {
+        "accuracy": 0.6875,
+        "correct": 165,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            101,
+            19
+          ],
+          [
+            56,
+            64
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            60,
+            60
+          ],
+          "01": [
+            4,
+            60
+          ],
+          "10": [
+            60,
+            60
+          ],
+          "11": [
+            41,
+            60
+          ]
+        },
+        "mean_true_margin": 1.0563602316723586,
+        "wall_seconds": 0.04460269999981392,
+        "feedback_supplied": false
+      },
+      "trained_as": "delayed_xor"
+    },
+    {
+      "condition": "no_memory_trained",
+      "width": 64,
+      "seed": 11,
+      "rule": "delta",
+      "config": {
+        "width": 64,
+        "inputs": 8,
+        "input_fanin": 3,
+        "recurrent_fanin": 8,
+        "input_gain": 1.5,
+        "recurrent_gain": 1.1,
+        "leak": 0.4,
+        "bias_gain": 0.1,
+        "learning_rate": 0.6,
+        "seed": 11,
+        "readout_rule": "delta"
+      },
+      "train": {
+        "trials": 1200,
+        "wall_seconds": 0.1467402000007496,
+        "online_accuracy": 0.495,
+        "last_200_online_accuracy": 0.52,
+        "shuffled_feedback": false
+      },
+      "evaluation": {
+        "accuracy": 0.5,
+        "correct": 120,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            60,
+            60
+          ],
+          [
+            60,
+            60
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            60,
+            60
+          ],
+          "01": [
+            60,
+            60
+          ],
+          "10": [
+            0,
+            60
+          ],
+          "11": [
+            0,
+            60
+          ]
+        },
+        "mean_true_margin": 0.0,
+        "wall_seconds": 0.024908700000196404,
+        "feedback_supplied": false
+      },
+      "birth_hash": "1b0968ac0417ec2b12638807f30c1f8a0ee97852fb84cfefa5b41a2e7dc35dfe",
+      "trainable_parameter_count": 130,
+      "fixed_synapse_count": 704
+    },
+    {
+      "condition": "shuffled_feedback",
+      "width": 64,
+      "seed": 11,
+      "rule": "delta",
+      "config": {
+        "width": 64,
+        "inputs": 8,
+        "input_fanin": 3,
+        "recurrent_fanin": 8,
+        "input_gain": 1.5,
+        "recurrent_gain": 1.1,
+        "leak": 0.4,
+        "bias_gain": 0.1,
+        "learning_rate": 0.6,
+        "seed": 11,
+        "readout_rule": "delta"
+      },
+      "train": {
+        "trials": 1200,
+        "wall_seconds": 0.11727019999943877,
+        "online_accuracy": 0.48833333333333334,
+        "last_200_online_accuracy": 0.535,
+        "shuffled_feedback": true
+      },
+      "evaluation": {
+        "accuracy": 0.5,
+        "correct": 120,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            60,
+            60
+          ],
+          [
+            60,
+            60
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            0,
+            60
+          ],
+          "01": [
+            0,
+            60
+          ],
+          "10": [
+            60,
+            60
+          ],
+          "11": [
+            60,
+            60
+          ]
+        },
+        "mean_true_margin": -0.008582094327071106,
+        "wall_seconds": 0.020718599999781873,
+        "feedback_supplied": false
+      },
+      "birth_hash": "1b0968ac0417ec2b12638807f30c1f8a0ee97852fb84cfefa5b41a2e7dc35dfe",
+      "trainable_parameter_count": 130,
+      "fixed_synapse_count": 704
+    },
+    {
+      "condition": "current_cue_control",
+      "width": 64,
+      "seed": 11,
+      "rule": "delta",
+      "config": {
+        "width": 64,
+        "inputs": 8,
+        "input_fanin": 3,
+        "recurrent_fanin": 8,
+        "input_gain": 1.5,
+        "recurrent_gain": 1.1,
+        "leak": 0.4,
+        "bias_gain": 0.1,
+        "learning_rate": 0.6,
+        "seed": 11,
+        "readout_rule": "delta"
+      },
+      "train": {
+        "trials": 1200,
+        "wall_seconds": 0.11828639999930601,
+        "online_accuracy": 0.9975,
+        "last_200_online_accuracy": 1.0,
+        "shuffled_feedback": false
+      },
+      "evaluation": {
+        "accuracy": 1.0,
+        "correct": 240,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            120,
+            0
+          ],
+          [
+            0,
+            120
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            60,
+            60
+          ],
+          "01": [
+            60,
+            60
+          ],
+          "10": [
+            60,
+            60
+          ],
+          "11": [
+            60,
+            60
+          ]
+        },
+        "mean_true_margin": 1.003263160790055,
+        "wall_seconds": 0.02084130000002915,
+        "feedback_supplied": false
+      },
+      "birth_hash": "1b0968ac0417ec2b12638807f30c1f8a0ee97852fb84cfefa5b41a2e7dc35dfe",
+      "trainable_parameter_count": 130,
+      "fixed_synapse_count": 704
+    },
+    {
+      "condition": "delayed_xor",
+      "width": 64,
+      "seed": 29,
+      "rule": "delta",
+      "config": {
+        "width": 64,
+        "inputs": 8,
+        "input_fanin": 3,
+        "recurrent_fanin": 8,
+        "input_gain": 1.5,
+        "recurrent_gain": 1.1,
+        "leak": 0.4,
+        "bias_gain": 0.1,
+        "learning_rate": 0.6,
+        "seed": 29,
+        "readout_rule": "delta"
+      },
+      "train": {
+        "trials": 1200,
+        "wall_seconds": 0.12424790000022767,
+        "online_accuracy": 0.68,
+        "last_200_online_accuracy": 0.87,
+        "shuffled_feedback": false
+      },
+      "evaluation": {
+        "accuracy": 0.775,
+        "correct": 186,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            68,
+            52
+          ],
+          [
+            2,
+            118
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            60,
+            60
+          ],
+          "01": [
+            60,
+            60
+          ],
+          "10": [
+            58,
+            60
+          ],
+          "11": [
+            8,
+            60
+          ]
+        },
+        "mean_true_margin": 0.4486842470013297,
+        "wall_seconds": 0.02073610000024928,
+        "feedback_supplied": false
+      },
+      "birth_hash": "21aac127a2ce0c6e2c187124c1f8ca695f0bb2a6e64f49180498a2e62339336d",
+      "trainable_parameter_count": 130,
+      "fixed_synapse_count": 704
+    },
+    {
+      "condition": "context_cleared_before_cue",
+      "width": 64,
+      "seed": 29,
+      "rule": "delta",
+      "evaluation": {
+        "accuracy": 0.5,
+        "correct": 120,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            120,
+            0
+          ],
+          [
+            120,
+            0
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            60,
+            60
+          ],
+          "01": [
+            0,
+            60
+          ],
+          "10": [
+            0,
+            60
+          ],
+          "11": [
+            60,
+            60
+          ]
+        },
+        "mean_true_margin": -1.8503717077085942e-18,
+        "wall_seconds": 0.0200619999995979,
+        "feedback_supplied": false
+      },
+      "trained_as": "delayed_xor"
+    },
+    {
+      "condition": "long_delay_8_to_12",
+      "width": 64,
+      "seed": 29,
+      "rule": "delta",
+      "evaluation": {
+        "accuracy": 0.375,
+        "correct": 90,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            23,
+            97
+          ],
+          [
+            53,
+            67
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            23,
+            60
+          ],
+          "01": [
+            60,
+            60
+          ],
+          "10": [
+            7,
+            60
+          ],
+          "11": [
+            0,
+            60
+          ]
+        },
+        "mean_true_margin": -0.06497012431022847,
+        "wall_seconds": 0.037292400000296766,
+        "feedback_supplied": false
+      },
+      "trained_as": "delayed_xor"
+    },
+    {
+      "condition": "no_memory_trained",
+      "width": 64,
+      "seed": 29,
+      "rule": "delta",
+      "config": {
+        "width": 64,
+        "inputs": 8,
+        "input_fanin": 3,
+        "recurrent_fanin": 8,
+        "input_gain": 1.5,
+        "recurrent_gain": 1.1,
+        "leak": 0.4,
+        "bias_gain": 0.1,
+        "learning_rate": 0.6,
+        "seed": 29,
+        "readout_rule": "delta"
+      },
+      "train": {
+        "trials": 1200,
+        "wall_seconds": 0.12172780000037164,
+        "online_accuracy": 0.4891666666666667,
+        "last_200_online_accuracy": 0.51,
+        "shuffled_feedback": false
+      },
+      "evaluation": {
+        "accuracy": 0.5,
+        "correct": 120,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            0,
+            120
+          ],
+          [
+            0,
+            120
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            0,
+            60
+          ],
+          "01": [
+            60,
+            60
+          ],
+          "10": [
+            60,
+            60
+          ],
+          "11": [
+            0,
+            60
+          ]
+        },
+        "mean_true_margin": 0.0,
+        "wall_seconds": 0.02050989999952435,
+        "feedback_supplied": false
+      },
+      "birth_hash": "21aac127a2ce0c6e2c187124c1f8ca695f0bb2a6e64f49180498a2e62339336d",
+      "trainable_parameter_count": 130,
+      "fixed_synapse_count": 704
+    },
+    {
+      "condition": "shuffled_feedback",
+      "width": 64,
+      "seed": 29,
+      "rule": "delta",
+      "config": {
+        "width": 64,
+        "inputs": 8,
+        "input_fanin": 3,
+        "recurrent_fanin": 8,
+        "input_gain": 1.5,
+        "recurrent_gain": 1.1,
+        "leak": 0.4,
+        "bias_gain": 0.1,
+        "learning_rate": 0.6,
+        "seed": 29,
+        "readout_rule": "delta"
+      },
+      "train": {
+        "trials": 1200,
+        "wall_seconds": 0.11166859999957524,
+        "online_accuracy": 0.51,
+        "last_200_online_accuracy": 0.5,
+        "shuffled_feedback": true
+      },
+      "evaluation": {
+        "accuracy": 0.5,
+        "correct": 120,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            60,
+            60
+          ],
+          [
+            60,
+            60
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            60,
+            60
+          ],
+          "01": [
+            60,
+            60
+          ],
+          "10": [
+            0,
+            60
+          ],
+          "11": [
+            0,
+            60
+          ]
+        },
+        "mean_true_margin": -0.007813043870968163,
+        "wall_seconds": 0.02050729999973555,
+        "feedback_supplied": false
+      },
+      "birth_hash": "21aac127a2ce0c6e2c187124c1f8ca695f0bb2a6e64f49180498a2e62339336d",
+      "trainable_parameter_count": 130,
+      "fixed_synapse_count": 704
+    },
+    {
+      "condition": "current_cue_control",
+      "width": 64,
+      "seed": 29,
+      "rule": "delta",
+      "config": {
+        "width": 64,
+        "inputs": 8,
+        "input_fanin": 3,
+        "recurrent_fanin": 8,
+        "input_gain": 1.5,
+        "recurrent_gain": 1.1,
+        "leak": 0.4,
+        "bias_gain": 0.1,
+        "learning_rate": 0.6,
+        "seed": 29,
+        "readout_rule": "delta"
+      },
+      "train": {
+        "trials": 1200,
+        "wall_seconds": 0.11085319999983767,
+        "online_accuracy": 0.9983333333333333,
+        "last_200_online_accuracy": 1.0,
+        "shuffled_feedback": false
+      },
+      "evaluation": {
+        "accuracy": 1.0,
+        "correct": 240,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            120,
+            0
+          ],
+          [
+            0,
+            120
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            60,
+            60
+          ],
+          "01": [
+            60,
+            60
+          ],
+          "10": [
+            60,
+            60
+          ],
+          "11": [
+            60,
+            60
+          ]
+        },
+        "mean_true_margin": 0.9966619671431585,
+        "wall_seconds": 0.02060780000010709,
+        "feedback_supplied": false
+      },
+      "birth_hash": "21aac127a2ce0c6e2c187124c1f8ca695f0bb2a6e64f49180498a2e62339336d",
+      "trainable_parameter_count": 130,
+      "fixed_synapse_count": 704
+    },
+    {
+      "condition": "delayed_xor",
+      "width": 256,
+      "seed": 3,
+      "rule": "delta",
+      "config": {
+        "width": 256,
+        "inputs": 8,
+        "input_fanin": 3,
+        "recurrent_fanin": 8,
+        "input_gain": 1.5,
+        "recurrent_gain": 1.1,
+        "leak": 0.4,
+        "bias_gain": 0.1,
+        "learning_rate": 0.6,
+        "seed": 3,
+        "readout_rule": "delta"
+      },
+      "train": {
+        "trials": 1200,
+        "wall_seconds": 0.17672610000045097,
+        "online_accuracy": 0.8366666666666667,
+        "last_200_online_accuracy": 1.0,
+        "shuffled_feedback": false
+      },
+      "evaluation": {
+        "accuracy": 1.0,
+        "correct": 240,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            120,
+            0
+          ],
+          [
+            0,
+            120
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            60,
+            60
+          ],
+          "01": [
+            60,
+            60
+          ],
+          "10": [
+            60,
+            60
+          ],
+          "11": [
+            60,
+            60
+          ]
+        },
+        "mean_true_margin": 0.7190611031220125,
+        "wall_seconds": 0.03372230000059062,
+        "feedback_supplied": false
+      },
+      "birth_hash": "b0e55bbb0027101d32ae2bcdc5e50a0cf7c48bae0fbe553f8d07ec58d664494a",
+      "trainable_parameter_count": 514,
+      "fixed_synapse_count": 2816
+    },
+    {
+      "condition": "context_cleared_before_cue",
+      "width": 256,
+      "seed": 3,
+      "rule": "delta",
+      "evaluation": {
+        "accuracy": 0.5,
+        "correct": 120,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            60,
+            60
+          ],
+          [
+            60,
+            60
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            0,
+            60
+          ],
+          "01": [
+            0,
+            60
+          ],
+          "10": [
+            60,
+            60
+          ],
+          "11": [
+            60,
+            60
+          ]
+        },
+        "mean_true_margin": 0.0,
+        "wall_seconds": 0.03318850000050588,
+        "feedback_supplied": false
+      },
+      "trained_as": "delayed_xor"
+    },
+    {
+      "condition": "long_delay_8_to_12",
+      "width": 256,
+      "seed": 3,
+      "rule": "delta",
+      "evaluation": {
+        "accuracy": 0.8375,
+        "correct": 201,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            90,
+            30
+          ],
+          [
+            9,
+            111
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            59,
+            60
+          ],
+          "01": [
+            58,
+            60
+          ],
+          "10": [
+            32,
+            60
+          ],
+          "11": [
+            52,
+            60
+          ]
+        },
+        "mean_true_margin": 0.25715031860275095,
+        "wall_seconds": 0.0643580000005386,
+        "feedback_supplied": false
+      },
+      "trained_as": "delayed_xor"
+    },
+    {
+      "condition": "no_memory_trained",
+      "width": 256,
+      "seed": 3,
+      "rule": "delta",
+      "config": {
+        "width": 256,
+        "inputs": 8,
+        "input_fanin": 3,
+        "recurrent_fanin": 8,
+        "input_gain": 1.5,
+        "recurrent_gain": 1.1,
+        "leak": 0.4,
+        "bias_gain": 0.1,
+        "learning_rate": 0.6,
+        "seed": 3,
+        "readout_rule": "delta"
+      },
+      "train": {
+        "trials": 1200,
+        "wall_seconds": 0.16989250000005995,
+        "online_accuracy": 0.49333333333333335,
+        "last_200_online_accuracy": 0.52,
+        "shuffled_feedback": false
+      },
+      "evaluation": {
+        "accuracy": 0.5,
+        "correct": 120,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            120,
+            0
+          ],
+          [
+            120,
+            0
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            0,
+            60
+          ],
+          "01": [
+            60,
+            60
+          ],
+          "10": [
+            60,
+            60
+          ],
+          "11": [
+            0,
+            60
+          ]
+        },
+        "mean_true_margin": 5.551115123125783e-18,
+        "wall_seconds": 0.03528159999950731,
+        "feedback_supplied": false
+      },
+      "birth_hash": "b0e55bbb0027101d32ae2bcdc5e50a0cf7c48bae0fbe553f8d07ec58d664494a",
+      "trainable_parameter_count": 514,
+      "fixed_synapse_count": 2816
+    },
+    {
+      "condition": "shuffled_feedback",
+      "width": 256,
+      "seed": 3,
+      "rule": "delta",
+      "config": {
+        "width": 256,
+        "inputs": 8,
+        "input_fanin": 3,
+        "recurrent_fanin": 8,
+        "input_gain": 1.5,
+        "recurrent_gain": 1.1,
+        "leak": 0.4,
+        "bias_gain": 0.1,
+        "learning_rate": 0.6,
+        "seed": 3,
+        "readout_rule": "delta"
+      },
+      "train": {
+        "trials": 1200,
+        "wall_seconds": 0.1735041000001729,
+        "online_accuracy": 0.5016666666666667,
+        "last_200_online_accuracy": 0.53,
+        "shuffled_feedback": true
+      },
+      "evaluation": {
+        "accuracy": 0.5,
+        "correct": 120,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            0,
+            120
+          ],
+          [
+            0,
+            120
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            60,
+            60
+          ],
+          "01": [
+            0,
+            60
+          ],
+          "10": [
+            0,
+            60
+          ],
+          "11": [
+            60,
+            60
+          ]
+        },
+        "mean_true_margin": -0.03842936912052678,
+        "wall_seconds": 0.03192569999919215,
+        "feedback_supplied": false
+      },
+      "birth_hash": "b0e55bbb0027101d32ae2bcdc5e50a0cf7c48bae0fbe553f8d07ec58d664494a",
+      "trainable_parameter_count": 514,
+      "fixed_synapse_count": 2816
+    },
+    {
+      "condition": "current_cue_control",
+      "width": 256,
+      "seed": 3,
+      "rule": "delta",
+      "config": {
+        "width": 256,
+        "inputs": 8,
+        "input_fanin": 3,
+        "recurrent_fanin": 8,
+        "input_gain": 1.5,
+        "recurrent_gain": 1.1,
+        "leak": 0.4,
+        "bias_gain": 0.1,
+        "learning_rate": 0.6,
+        "seed": 3,
+        "readout_rule": "delta"
+      },
+      "train": {
+        "trials": 1200,
+        "wall_seconds": 0.16643560000011348,
+        "online_accuracy": 0.9983333333333333,
+        "last_200_online_accuracy": 1.0,
+        "shuffled_feedback": false
+      },
+      "evaluation": {
+        "accuracy": 1.0,
+        "correct": 240,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            120,
+            0
+          ],
+          [
+            0,
+            120
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            60,
+            60
+          ],
+          "01": [
+            60,
+            60
+          ],
+          "10": [
+            60,
+            60
+          ],
+          "11": [
+            60,
+            60
+          ]
+        },
+        "mean_true_margin": 1.0024871578748535,
+        "wall_seconds": 0.031653000000005704,
+        "feedback_supplied": false
+      },
+      "birth_hash": "b0e55bbb0027101d32ae2bcdc5e50a0cf7c48bae0fbe553f8d07ec58d664494a",
+      "trainable_parameter_count": 514,
+      "fixed_synapse_count": 2816
+    },
+    {
+      "condition": "delayed_xor_hebb",
+      "width": 256,
+      "seed": 3,
+      "rule": "hebb",
+      "config": {
+        "width": 256,
+        "inputs": 8,
+        "input_fanin": 3,
+        "recurrent_fanin": 8,
+        "input_gain": 1.5,
+        "recurrent_gain": 1.1,
+        "leak": 0.4,
+        "bias_gain": 0.1,
+        "learning_rate": 0.6,
+        "seed": 3,
+        "readout_rule": "hebb"
+      },
+      "train": {
+        "trials": 1200,
+        "wall_seconds": 0.2186707999999271,
+        "online_accuracy": 0.5841666666666666,
+        "last_200_online_accuracy": 0.585,
+        "shuffled_feedback": false
+      },
+      "evaluation": {
+        "accuracy": 0.6916666666666667,
+        "correct": 166,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            60,
+            60
+          ],
+          [
+            14,
+            106
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            46,
+            60
+          ],
+          "01": [
+            60,
+            60
+          ],
+          "10": [
+            0,
+            60
+          ],
+          "11": [
+            60,
+            60
+          ]
+        },
+        "mean_true_margin": 0.022508619954290574,
+        "wall_seconds": 0.04029840000021068,
+        "feedback_supplied": false
+      },
+      "birth_hash": "b0e55bbb0027101d32ae2bcdc5e50a0cf7c48bae0fbe553f8d07ec58d664494a",
+      "trainable_parameter_count": 514,
+      "fixed_synapse_count": 2816
+    },
+    {
+      "condition": "context_cleared_before_cue",
+      "width": 256,
+      "seed": 3,
+      "rule": "hebb",
+      "evaluation": {
+        "accuracy": 0.5,
+        "correct": 120,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            60,
+            60
+          ],
+          [
+            60,
+            60
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            60,
+            60
+          ],
+          "01": [
+            60,
+            60
+          ],
+          "10": [
+            0,
+            60
+          ],
+          "11": [
+            0,
+            60
+          ]
+        },
+        "mean_true_margin": 0.0,
+        "wall_seconds": 0.04038029999992432,
+        "feedback_supplied": false
+      },
+      "trained_as": "delayed_xor_hebb"
+    },
+    {
+      "condition": "long_delay_8_to_12",
+      "width": 256,
+      "seed": 3,
+      "rule": "hebb",
+      "evaluation": {
+        "accuracy": 0.7458333333333333,
+        "correct": 179,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            60,
+            60
+          ],
+          [
+            1,
+            119
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            60,
+            60
+          ],
+          "01": [
+            60,
+            60
+          ],
+          "10": [
+            0,
+            60
+          ],
+          "11": [
+            59,
+            60
+          ]
+        },
+        "mean_true_margin": 0.007848378936766131,
+        "wall_seconds": 0.07960749999983818,
+        "feedback_supplied": false
+      },
+      "trained_as": "delayed_xor_hebb"
+    },
+    {
+      "condition": "delayed_xor",
+      "width": 256,
+      "seed": 11,
+      "rule": "delta",
+      "config": {
+        "width": 256,
+        "inputs": 8,
+        "input_fanin": 3,
+        "recurrent_fanin": 8,
+        "input_gain": 1.5,
+        "recurrent_gain": 1.1,
+        "leak": 0.4,
+        "bias_gain": 0.1,
+        "learning_rate": 0.6,
+        "seed": 11,
+        "readout_rule": "delta"
+      },
+      "train": {
+        "trials": 1200,
+        "wall_seconds": 0.1716671000003771,
+        "online_accuracy": 0.8558333333333333,
+        "last_200_online_accuracy": 0.99,
+        "shuffled_feedback": false
+      },
+      "evaluation": {
+        "accuracy": 1.0,
+        "correct": 240,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            120,
+            0
+          ],
+          [
+            0,
+            120
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            60,
+            60
+          ],
+          "01": [
+            60,
+            60
+          ],
+          "10": [
+            60,
+            60
+          ],
+          "11": [
+            60,
+            60
+          ]
+        },
+        "mean_true_margin": 0.784065678867714,
+        "wall_seconds": 0.03138349999971979,
+        "feedback_supplied": false
+      },
+      "birth_hash": "63f4e1aebbccee2d3bc0982dc1afc9c5ae8522e6344a47e353c7bdcbff197439",
+      "trainable_parameter_count": 514,
+      "fixed_synapse_count": 2816
+    },
+    {
+      "condition": "context_cleared_before_cue",
+      "width": 256,
+      "seed": 11,
+      "rule": "delta",
+      "evaluation": {
+        "accuracy": 0.5,
+        "correct": 120,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            0,
+            120
+          ],
+          [
+            0,
+            120
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            0,
+            60
+          ],
+          "01": [
+            60,
+            60
+          ],
+          "10": [
+            60,
+            60
+          ],
+          "11": [
+            0,
+            60
+          ]
+        },
+        "mean_true_margin": 3.7007434154171884e-18,
+        "wall_seconds": 0.033111900000221794,
+        "feedback_supplied": false
+      },
+      "trained_as": "delayed_xor"
+    },
+    {
+      "condition": "long_delay_8_to_12",
+      "width": 256,
+      "seed": 11,
+      "rule": "delta",
+      "evaluation": {
+        "accuracy": 0.725,
+        "correct": 174,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            56,
+            64
+          ],
+          [
+            2,
+            118
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            48,
+            60
+          ],
+          "01": [
+            60,
+            60
+          ],
+          "10": [
+            58,
+            60
+          ],
+          "11": [
+            8,
+            60
+          ]
+        },
+        "mean_true_margin": 0.321872708896956,
+        "wall_seconds": 0.06659529999978986,
+        "feedback_supplied": false
+      },
+      "trained_as": "delayed_xor"
+    },
+    {
+      "condition": "no_memory_trained",
+      "width": 256,
+      "seed": 11,
+      "rule": "delta",
+      "config": {
+        "width": 256,
+        "inputs": 8,
+        "input_fanin": 3,
+        "recurrent_fanin": 8,
+        "input_gain": 1.5,
+        "recurrent_gain": 1.1,
+        "leak": 0.4,
+        "bias_gain": 0.1,
+        "learning_rate": 0.6,
+        "seed": 11,
+        "readout_rule": "delta"
+      },
+      "train": {
+        "trials": 1200,
+        "wall_seconds": 0.17317050000019663,
+        "online_accuracy": 0.4875,
+        "last_200_online_accuracy": 0.49,
+        "shuffled_feedback": false
+      },
+      "evaluation": {
+        "accuracy": 0.5,
+        "correct": 120,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            60,
+            60
+          ],
+          [
+            60,
+            60
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            60,
+            60
+          ],
+          "01": [
+            60,
+            60
+          ],
+          "10": [
+            0,
+            60
+          ],
+          "11": [
+            0,
+            60
+          ]
+        },
+        "mean_true_margin": 0.0,
+        "wall_seconds": 0.032918200000494835,
+        "feedback_supplied": false
+      },
+      "birth_hash": "63f4e1aebbccee2d3bc0982dc1afc9c5ae8522e6344a47e353c7bdcbff197439",
+      "trainable_parameter_count": 514,
+      "fixed_synapse_count": 2816
+    },
+    {
+      "condition": "shuffled_feedback",
+      "width": 256,
+      "seed": 11,
+      "rule": "delta",
+      "config": {
+        "width": 256,
+        "inputs": 8,
+        "input_fanin": 3,
+        "recurrent_fanin": 8,
+        "input_gain": 1.5,
+        "recurrent_gain": 1.1,
+        "leak": 0.4,
+        "bias_gain": 0.1,
+        "learning_rate": 0.6,
+        "seed": 11,
+        "readout_rule": "delta"
+      },
+      "train": {
+        "trials": 1200,
+        "wall_seconds": 0.17671100000006845,
+        "online_accuracy": 0.49416666666666664,
+        "last_200_online_accuracy": 0.535,
+        "shuffled_feedback": true
+      },
+      "evaluation": {
+        "accuracy": 0.5,
+        "correct": 120,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            60,
+            60
+          ],
+          [
+            60,
+            60
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            0,
+            60
+          ],
+          "01": [
+            0,
+            60
+          ],
+          "10": [
+            60,
+            60
+          ],
+          "11": [
+            60,
+            60
+          ]
+        },
+        "mean_true_margin": -0.023946230016117946,
+        "wall_seconds": 0.03103740000005928,
+        "feedback_supplied": false
+      },
+      "birth_hash": "63f4e1aebbccee2d3bc0982dc1afc9c5ae8522e6344a47e353c7bdcbff197439",
+      "trainable_parameter_count": 514,
+      "fixed_synapse_count": 2816
+    },
+    {
+      "condition": "current_cue_control",
+      "width": 256,
+      "seed": 11,
+      "rule": "delta",
+      "config": {
+        "width": 256,
+        "inputs": 8,
+        "input_fanin": 3,
+        "recurrent_fanin": 8,
+        "input_gain": 1.5,
+        "recurrent_gain": 1.1,
+        "leak": 0.4,
+        "bias_gain": 0.1,
+        "learning_rate": 0.6,
+        "seed": 11,
+        "readout_rule": "delta"
+      },
+      "train": {
+        "trials": 1200,
+        "wall_seconds": 0.17044029999942722,
+        "online_accuracy": 0.9991666666666666,
+        "last_200_online_accuracy": 1.0,
+        "shuffled_feedback": false
+      },
+      "evaluation": {
+        "accuracy": 1.0,
+        "correct": 240,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            120,
+            0
+          ],
+          [
+            0,
+            120
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            60,
+            60
+          ],
+          "01": [
+            60,
+            60
+          ],
+          "10": [
+            60,
+            60
+          ],
+          "11": [
+            60,
+            60
+          ]
+        },
+        "mean_true_margin": 1.000101149998881,
+        "wall_seconds": 0.03319089999968128,
+        "feedback_supplied": false
+      },
+      "birth_hash": "63f4e1aebbccee2d3bc0982dc1afc9c5ae8522e6344a47e353c7bdcbff197439",
+      "trainable_parameter_count": 514,
+      "fixed_synapse_count": 2816
+    },
+    {
+      "condition": "delayed_xor_hebb",
+      "width": 256,
+      "seed": 11,
+      "rule": "hebb",
+      "config": {
+        "width": 256,
+        "inputs": 8,
+        "input_fanin": 3,
+        "recurrent_fanin": 8,
+        "input_gain": 1.5,
+        "recurrent_gain": 1.1,
+        "leak": 0.4,
+        "bias_gain": 0.1,
+        "learning_rate": 0.6,
+        "seed": 11,
+        "readout_rule": "hebb"
+      },
+      "train": {
+        "trials": 1200,
+        "wall_seconds": 0.20658730000013747,
+        "online_accuracy": 0.5491666666666667,
+        "last_200_online_accuracy": 0.5,
+        "shuffled_feedback": false
+      },
+      "evaluation": {
+        "accuracy": 0.5,
+        "correct": 120,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            60,
+            60
+          ],
+          [
+            60,
+            60
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            0,
+            60
+          ],
+          "01": [
+            0,
+            60
+          ],
+          "10": [
+            60,
+            60
+          ],
+          "11": [
+            60,
+            60
+          ]
+        },
+        "mean_true_margin": 0.030405330103185822,
+        "wall_seconds": 0.04649029999927734,
+        "feedback_supplied": false
+      },
+      "birth_hash": "63f4e1aebbccee2d3bc0982dc1afc9c5ae8522e6344a47e353c7bdcbff197439",
+      "trainable_parameter_count": 514,
+      "fixed_synapse_count": 2816
+    },
+    {
+      "condition": "context_cleared_before_cue",
+      "width": 256,
+      "seed": 11,
+      "rule": "hebb",
+      "evaluation": {
+        "accuracy": 0.5,
+        "correct": 120,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            60,
+            60
+          ],
+          [
+            60,
+            60
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            0,
+            60
+          ],
+          "01": [
+            0,
+            60
+          ],
+          "10": [
+            60,
+            60
+          ],
+          "11": [
+            60,
+            60
+          ]
+        },
+        "mean_true_margin": 0.0,
+        "wall_seconds": 0.03867979999995441,
+        "feedback_supplied": false
+      },
+      "trained_as": "delayed_xor_hebb"
+    },
+    {
+      "condition": "long_delay_8_to_12",
+      "width": 256,
+      "seed": 11,
+      "rule": "hebb",
+      "evaluation": {
+        "accuracy": 0.5,
+        "correct": 120,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            60,
+            60
+          ],
+          [
+            60,
+            60
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            0,
+            60
+          ],
+          "01": [
+            0,
+            60
+          ],
+          "10": [
+            60,
+            60
+          ],
+          "11": [
+            60,
+            60
+          ]
+        },
+        "mean_true_margin": 0.015573680816883423,
+        "wall_seconds": 0.07453270000041812,
+        "feedback_supplied": false
+      },
+      "trained_as": "delayed_xor_hebb"
+    },
+    {
+      "condition": "delayed_xor",
+      "width": 256,
+      "seed": 29,
+      "rule": "delta",
+      "config": {
+        "width": 256,
+        "inputs": 8,
+        "input_fanin": 3,
+        "recurrent_fanin": 8,
+        "input_gain": 1.5,
+        "recurrent_gain": 1.1,
+        "leak": 0.4,
+        "bias_gain": 0.1,
+        "learning_rate": 0.6,
+        "seed": 29,
+        "readout_rule": "delta"
+      },
+      "train": {
+        "trials": 1200,
+        "wall_seconds": 0.16698989999986225,
+        "online_accuracy": 0.8691666666666666,
+        "last_200_online_accuracy": 1.0,
+        "shuffled_feedback": false
+      },
+      "evaluation": {
+        "accuracy": 1.0,
+        "correct": 240,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            120,
+            0
+          ],
+          [
+            0,
+            120
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            60,
+            60
+          ],
+          "01": [
+            60,
+            60
+          ],
+          "10": [
+            60,
+            60
+          ],
+          "11": [
+            60,
+            60
+          ]
+        },
+        "mean_true_margin": 0.8025628083247575,
+        "wall_seconds": 0.031897099999696366,
+        "feedback_supplied": false
+      },
+      "birth_hash": "c001525d2ee3b12904fea84ff878781a0cc78430730ade68ef08cde97da6fddb",
+      "trainable_parameter_count": 514,
+      "fixed_synapse_count": 2816
+    },
+    {
+      "condition": "context_cleared_before_cue",
+      "width": 256,
+      "seed": 29,
+      "rule": "delta",
+      "evaluation": {
+        "accuracy": 0.5,
+        "correct": 120,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            120,
+            0
+          ],
+          [
+            120,
+            0
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            60,
+            60
+          ],
+          "01": [
+            0,
+            60
+          ],
+          "10": [
+            0,
+            60
+          ],
+          "11": [
+            60,
+            60
+          ]
+        },
+        "mean_true_margin": -1.8503717077085942e-18,
+        "wall_seconds": 0.031239800000548712,
+        "feedback_supplied": false
+      },
+      "trained_as": "delayed_xor"
+    },
+    {
+      "condition": "long_delay_8_to_12",
+      "width": 256,
+      "seed": 29,
+      "rule": "delta",
+      "evaluation": {
+        "accuracy": 0.9625,
+        "correct": 231,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            111,
+            9
+          ],
+          [
+            0,
+            120
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            60,
+            60
+          ],
+          "01": [
+            60,
+            60
+          ],
+          "10": [
+            60,
+            60
+          ],
+          "11": [
+            51,
+            60
+          ]
+        },
+        "mean_true_margin": 0.4749616853850076,
+        "wall_seconds": 0.058572199999616714,
+        "feedback_supplied": false
+      },
+      "trained_as": "delayed_xor"
+    },
+    {
+      "condition": "no_memory_trained",
+      "width": 256,
+      "seed": 29,
+      "rule": "delta",
+      "config": {
+        "width": 256,
+        "inputs": 8,
+        "input_fanin": 3,
+        "recurrent_fanin": 8,
+        "input_gain": 1.5,
+        "recurrent_gain": 1.1,
+        "leak": 0.4,
+        "bias_gain": 0.1,
+        "learning_rate": 0.6,
+        "seed": 29,
+        "readout_rule": "delta"
+      },
+      "train": {
+        "trials": 1200,
+        "wall_seconds": 0.19040859999950044,
+        "online_accuracy": 0.5008333333333334,
+        "last_200_online_accuracy": 0.525,
+        "shuffled_feedback": false
+      },
+      "evaluation": {
+        "accuracy": 0.5,
+        "correct": 120,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            0,
+            120
+          ],
+          [
+            0,
+            120
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            0,
+            60
+          ],
+          "01": [
+            60,
+            60
+          ],
+          "10": [
+            60,
+            60
+          ],
+          "11": [
+            0,
+            60
+          ]
+        },
+        "mean_true_margin": -1.295260195396016e-17,
+        "wall_seconds": 0.03250870000010764,
+        "feedback_supplied": false
+      },
+      "birth_hash": "c001525d2ee3b12904fea84ff878781a0cc78430730ade68ef08cde97da6fddb",
+      "trainable_parameter_count": 514,
+      "fixed_synapse_count": 2816
+    },
+    {
+      "condition": "shuffled_feedback",
+      "width": 256,
+      "seed": 29,
+      "rule": "delta",
+      "config": {
+        "width": 256,
+        "inputs": 8,
+        "input_fanin": 3,
+        "recurrent_fanin": 8,
+        "input_gain": 1.5,
+        "recurrent_gain": 1.1,
+        "leak": 0.4,
+        "bias_gain": 0.1,
+        "learning_rate": 0.6,
+        "seed": 29,
+        "readout_rule": "delta"
+      },
+      "train": {
+        "trials": 1200,
+        "wall_seconds": 0.17634970000017347,
+        "online_accuracy": 0.5275,
+        "last_200_online_accuracy": 0.525,
+        "shuffled_feedback": true
+      },
+      "evaluation": {
+        "accuracy": 0.5,
+        "correct": 120,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            60,
+            60
+          ],
+          [
+            60,
+            60
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            60,
+            60
+          ],
+          "01": [
+            60,
+            60
+          ],
+          "10": [
+            0,
+            60
+          ],
+          "11": [
+            0,
+            60
+          ]
+        },
+        "mean_true_margin": 0.02324804441193746,
+        "wall_seconds": 0.031835599999794795,
+        "feedback_supplied": false
+      },
+      "birth_hash": "c001525d2ee3b12904fea84ff878781a0cc78430730ade68ef08cde97da6fddb",
+      "trainable_parameter_count": 514,
+      "fixed_synapse_count": 2816
+    },
+    {
+      "condition": "current_cue_control",
+      "width": 256,
+      "seed": 29,
+      "rule": "delta",
+      "config": {
+        "width": 256,
+        "inputs": 8,
+        "input_fanin": 3,
+        "recurrent_fanin": 8,
+        "input_gain": 1.5,
+        "recurrent_gain": 1.1,
+        "leak": 0.4,
+        "bias_gain": 0.1,
+        "learning_rate": 0.6,
+        "seed": 29,
+        "readout_rule": "delta"
+      },
+      "train": {
+        "trials": 1200,
+        "wall_seconds": 0.1735899999994217,
+        "online_accuracy": 0.9983333333333333,
+        "last_200_online_accuracy": 1.0,
+        "shuffled_feedback": false
+      },
+      "evaluation": {
+        "accuracy": 1.0,
+        "correct": 240,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            120,
+            0
+          ],
+          [
+            0,
+            120
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            60,
+            60
+          ],
+          "01": [
+            60,
+            60
+          ],
+          "10": [
+            60,
+            60
+          ],
+          "11": [
+            60,
+            60
+          ]
+        },
+        "mean_true_margin": 0.9995479406478096,
+        "wall_seconds": 0.030474000000140222,
+        "feedback_supplied": false
+      },
+      "birth_hash": "c001525d2ee3b12904fea84ff878781a0cc78430730ade68ef08cde97da6fddb",
+      "trainable_parameter_count": 514,
+      "fixed_synapse_count": 2816
+    },
+    {
+      "condition": "delayed_xor_hebb",
+      "width": 256,
+      "seed": 29,
+      "rule": "hebb",
+      "config": {
+        "width": 256,
+        "inputs": 8,
+        "input_fanin": 3,
+        "recurrent_fanin": 8,
+        "input_gain": 1.5,
+        "recurrent_gain": 1.1,
+        "leak": 0.4,
+        "bias_gain": 0.1,
+        "learning_rate": 0.6,
+        "seed": 29,
+        "readout_rule": "hebb"
+      },
+      "train": {
+        "trials": 1200,
+        "wall_seconds": 0.2112277999995058,
+        "online_accuracy": 0.5233333333333333,
+        "last_200_online_accuracy": 0.48,
+        "shuffled_feedback": false
+      },
+      "evaluation": {
+        "accuracy": 0.5,
+        "correct": 120,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            60,
+            60
+          ],
+          [
+            60,
+            60
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            60,
+            60
+          ],
+          "01": [
+            60,
+            60
+          ],
+          "10": [
+            0,
+            60
+          ],
+          "11": [
+            0,
+            60
+          ]
+        },
+        "mean_true_margin": 0.031428595475259516,
+        "wall_seconds": 0.03869219999978668,
+        "feedback_supplied": false
+      },
+      "birth_hash": "c001525d2ee3b12904fea84ff878781a0cc78430730ade68ef08cde97da6fddb",
+      "trainable_parameter_count": 514,
+      "fixed_synapse_count": 2816
+    },
+    {
+      "condition": "context_cleared_before_cue",
+      "width": 256,
+      "seed": 29,
+      "rule": "hebb",
+      "evaluation": {
+        "accuracy": 0.5,
+        "correct": 120,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            60,
+            60
+          ],
+          [
+            60,
+            60
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            60,
+            60
+          ],
+          "01": [
+            60,
+            60
+          ],
+          "10": [
+            0,
+            60
+          ],
+          "11": [
+            0,
+            60
+          ]
+        },
+        "mean_true_margin": 0.0,
+        "wall_seconds": 0.03830689999995229,
+        "feedback_supplied": false
+      },
+      "trained_as": "delayed_xor_hebb"
+    },
+    {
+      "condition": "long_delay_8_to_12",
+      "width": 256,
+      "seed": 29,
+      "rule": "hebb",
+      "evaluation": {
+        "accuracy": 0.5,
+        "correct": 120,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            60,
+            60
+          ],
+          [
+            60,
+            60
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            60,
+            60
+          ],
+          "01": [
+            60,
+            60
+          ],
+          "10": [
+            0,
+            60
+          ],
+          "11": [
+            0,
+            60
+          ]
+        },
+        "mean_true_margin": 0.017993618143627415,
+        "wall_seconds": 0.07212390000040614,
+        "feedback_supplied": false
+      },
+      "trained_as": "delayed_xor_hebb"
+    },
+    {
+      "condition": "delayed_xor",
+      "width": 1024,
+      "seed": 3,
+      "rule": "delta",
+      "config": {
+        "width": 1024,
+        "inputs": 8,
+        "input_fanin": 3,
+        "recurrent_fanin": 8,
+        "input_gain": 1.5,
+        "recurrent_gain": 1.1,
+        "leak": 0.4,
+        "bias_gain": 0.1,
+        "learning_rate": 0.6,
+        "seed": 3,
+        "readout_rule": "delta"
+      },
+      "train": {
+        "trials": 1200,
+        "wall_seconds": 0.37696409999989555,
+        "online_accuracy": 0.815,
+        "last_200_online_accuracy": 0.99,
+        "shuffled_feedback": false
+      },
+      "evaluation": {
+        "accuracy": 1.0,
+        "correct": 240,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            120,
+            0
+          ],
+          [
+            0,
+            120
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            60,
+            60
+          ],
+          "01": [
+            60,
+            60
+          ],
+          "10": [
+            60,
+            60
+          ],
+          "11": [
+            60,
+            60
+          ]
+        },
+        "mean_true_margin": 0.6869958513743712,
+        "wall_seconds": 0.07321699999920384,
+        "feedback_supplied": false
+      },
+      "birth_hash": "14c5949425b363408d97b4c71e961b8f9fdfbeaeaa58f333f28765f887d81bf7",
+      "trainable_parameter_count": 2050,
+      "fixed_synapse_count": 11264
+    },
+    {
+      "condition": "context_cleared_before_cue",
+      "width": 1024,
+      "seed": 3,
+      "rule": "delta",
+      "evaluation": {
+        "accuracy": 0.5,
+        "correct": 120,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            60,
+            60
+          ],
+          [
+            60,
+            60
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            60,
+            60
+          ],
+          "01": [
+            60,
+            60
+          ],
+          "10": [
+            0,
+            60
+          ],
+          "11": [
+            0,
+            60
+          ]
+        },
+        "mean_true_margin": -2.312964634635743e-19,
+        "wall_seconds": 0.07196969999949943,
+        "feedback_supplied": false
+      },
+      "trained_as": "delayed_xor"
+    },
+    {
+      "condition": "long_delay_8_to_12",
+      "width": 1024,
+      "seed": 3,
+      "rule": "delta",
+      "evaluation": {
+        "accuracy": 0.8208333333333333,
+        "correct": 197,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            114,
+            6
+          ],
+          [
+            37,
+            83
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            23,
+            60
+          ],
+          "01": [
+            59,
+            60
+          ],
+          "10": [
+            55,
+            60
+          ],
+          "11": [
+            60,
+            60
+          ]
+        },
+        "mean_true_margin": 0.2494149903290315,
+        "wall_seconds": 0.14195790000030684,
+        "feedback_supplied": false
+      },
+      "trained_as": "delayed_xor"
+    },
+    {
+      "condition": "no_memory_trained",
+      "width": 1024,
+      "seed": 3,
+      "rule": "delta",
+      "config": {
+        "width": 1024,
+        "inputs": 8,
+        "input_fanin": 3,
+        "recurrent_fanin": 8,
+        "input_gain": 1.5,
+        "recurrent_gain": 1.1,
+        "leak": 0.4,
+        "bias_gain": 0.1,
+        "learning_rate": 0.6,
+        "seed": 3,
+        "readout_rule": "delta"
+      },
+      "train": {
+        "trials": 1200,
+        "wall_seconds": 0.38279810000040015,
+        "online_accuracy": 0.49583333333333335,
+        "last_200_online_accuracy": 0.52,
+        "shuffled_feedback": false
+      },
+      "evaluation": {
+        "accuracy": 0.5,
+        "correct": 120,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            120,
+            0
+          ],
+          [
+            120,
+            0
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            0,
+            60
+          ],
+          "01": [
+            60,
+            60
+          ],
+          "10": [
+            60,
+            60
+          ],
+          "11": [
+            0,
+            60
+          ]
+        },
+        "mean_true_margin": -3.7007434154171884e-18,
+        "wall_seconds": 0.07282690000010916,
+        "feedback_supplied": false
+      },
+      "birth_hash": "14c5949425b363408d97b4c71e961b8f9fdfbeaeaa58f333f28765f887d81bf7",
+      "trainable_parameter_count": 2050,
+      "fixed_synapse_count": 11264
+    },
+    {
+      "condition": "shuffled_feedback",
+      "width": 1024,
+      "seed": 3,
+      "rule": "delta",
+      "config": {
+        "width": 1024,
+        "inputs": 8,
+        "input_fanin": 3,
+        "recurrent_fanin": 8,
+        "input_gain": 1.5,
+        "recurrent_gain": 1.1,
+        "leak": 0.4,
+        "bias_gain": 0.1,
+        "learning_rate": 0.6,
+        "seed": 3,
+        "readout_rule": "delta"
+      },
+      "train": {
+        "trials": 1200,
+        "wall_seconds": 0.38533300000017334,
+        "online_accuracy": 0.5033333333333333,
+        "last_200_online_accuracy": 0.525,
+        "shuffled_feedback": true
+      },
+      "evaluation": {
+        "accuracy": 0.5,
+        "correct": 120,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            0,
+            120
+          ],
+          [
+            0,
+            120
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            60,
+            60
+          ],
+          "01": [
+            0,
+            60
+          ],
+          "10": [
+            0,
+            60
+          ],
+          "11": [
+            60,
+            60
+          ]
+        },
+        "mean_true_margin": -0.02669692329602104,
+        "wall_seconds": 0.07338770000023942,
+        "feedback_supplied": false
+      },
+      "birth_hash": "14c5949425b363408d97b4c71e961b8f9fdfbeaeaa58f333f28765f887d81bf7",
+      "trainable_parameter_count": 2050,
+      "fixed_synapse_count": 11264
+    },
+    {
+      "condition": "current_cue_control",
+      "width": 1024,
+      "seed": 3,
+      "rule": "delta",
+      "config": {
+        "width": 1024,
+        "inputs": 8,
+        "input_fanin": 3,
+        "recurrent_fanin": 8,
+        "input_gain": 1.5,
+        "recurrent_gain": 1.1,
+        "leak": 0.4,
+        "bias_gain": 0.1,
+        "learning_rate": 0.6,
+        "seed": 3,
+        "readout_rule": "delta"
+      },
+      "train": {
+        "trials": 1200,
+        "wall_seconds": 0.3900794000001042,
+        "online_accuracy": 0.9983333333333333,
+        "last_200_online_accuracy": 1.0,
+        "shuffled_feedback": false
+      },
+      "evaluation": {
+        "accuracy": 1.0,
+        "correct": 240,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            120,
+            0
+          ],
+          [
+            0,
+            120
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            60,
+            60
+          ],
+          "01": [
+            60,
+            60
+          ],
+          "10": [
+            60,
+            60
+          ],
+          "11": [
+            60,
+            60
+          ]
+        },
+        "mean_true_margin": 0.9983039939527006,
+        "wall_seconds": 0.07620839999981399,
+        "feedback_supplied": false
+      },
+      "birth_hash": "14c5949425b363408d97b4c71e961b8f9fdfbeaeaa58f333f28765f887d81bf7",
+      "trainable_parameter_count": 2050,
+      "fixed_synapse_count": 11264
+    },
+    {
+      "condition": "delayed_xor",
+      "width": 1024,
+      "seed": 11,
+      "rule": "delta",
+      "config": {
+        "width": 1024,
+        "inputs": 8,
+        "input_fanin": 3,
+        "recurrent_fanin": 8,
+        "input_gain": 1.5,
+        "recurrent_gain": 1.1,
+        "leak": 0.4,
+        "bias_gain": 0.1,
+        "learning_rate": 0.6,
+        "seed": 11,
+        "readout_rule": "delta"
+      },
+      "train": {
+        "trials": 1200,
+        "wall_seconds": 0.3789821000000302,
+        "online_accuracy": 0.8191666666666667,
+        "last_200_online_accuracy": 0.985,
+        "shuffled_feedback": false
+      },
+      "evaluation": {
+        "accuracy": 1.0,
+        "correct": 240,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            120,
+            0
+          ],
+          [
+            0,
+            120
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            60,
+            60
+          ],
+          "01": [
+            60,
+            60
+          ],
+          "10": [
+            60,
+            60
+          ],
+          "11": [
+            60,
+            60
+          ]
+        },
+        "mean_true_margin": 0.6708861500879145,
+        "wall_seconds": 0.07291189999978087,
+        "feedback_supplied": false
+      },
+      "birth_hash": "b77c1ae43c882abe8f60731027e47f2ec335bba46baa4a2e8afc9d642d9e9529",
+      "trainable_parameter_count": 2050,
+      "fixed_synapse_count": 11264
+    },
+    {
+      "condition": "context_cleared_before_cue",
+      "width": 1024,
+      "seed": 11,
+      "rule": "delta",
+      "evaluation": {
+        "accuracy": 0.5,
+        "correct": 120,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            60,
+            60
+          ],
+          [
+            60,
+            60
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            60,
+            60
+          ],
+          "01": [
+            60,
+            60
+          ],
+          "10": [
+            0,
+            60
+          ],
+          "11": [
+            0,
+            60
+          ]
+        },
+        "mean_true_margin": 0.0,
+        "wall_seconds": 0.08092360000046028,
+        "feedback_supplied": false
+      },
+      "trained_as": "delayed_xor"
+    },
+    {
+      "condition": "long_delay_8_to_12",
+      "width": 1024,
+      "seed": 11,
+      "rule": "delta",
+      "evaluation": {
+        "accuracy": 0.8083333333333333,
+        "correct": 194,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            118,
+            2
+          ],
+          [
+            44,
+            76
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            60,
+            60
+          ],
+          "01": [
+            30,
+            60
+          ],
+          "10": [
+            46,
+            60
+          ],
+          "11": [
+            58,
+            60
+          ]
+        },
+        "mean_true_margin": 0.26217982745269086,
+        "wall_seconds": 0.138605600000119,
+        "feedback_supplied": false
+      },
+      "trained_as": "delayed_xor"
+    },
+    {
+      "condition": "no_memory_trained",
+      "width": 1024,
+      "seed": 11,
+      "rule": "delta",
+      "config": {
+        "width": 1024,
+        "inputs": 8,
+        "input_fanin": 3,
+        "recurrent_fanin": 8,
+        "input_gain": 1.5,
+        "recurrent_gain": 1.1,
+        "leak": 0.4,
+        "bias_gain": 0.1,
+        "learning_rate": 0.6,
+        "seed": 11,
+        "readout_rule": "delta"
+      },
+      "train": {
+        "trials": 1200,
+        "wall_seconds": 0.3768902000001617,
+        "online_accuracy": 0.4825,
+        "last_200_online_accuracy": 0.49,
+        "shuffled_feedback": false
+      },
+      "evaluation": {
+        "accuracy": 0.5,
+        "correct": 120,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            60,
+            60
+          ],
+          [
+            60,
+            60
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            60,
+            60
+          ],
+          "01": [
+            60,
+            60
+          ],
+          "10": [
+            0,
+            60
+          ],
+          "11": [
+            0,
+            60
+          ]
+        },
+        "mean_true_margin": 0.0,
+        "wall_seconds": 0.07507359999999608,
+        "feedback_supplied": false
+      },
+      "birth_hash": "b77c1ae43c882abe8f60731027e47f2ec335bba46baa4a2e8afc9d642d9e9529",
+      "trainable_parameter_count": 2050,
+      "fixed_synapse_count": 11264
+    },
+    {
+      "condition": "shuffled_feedback",
+      "width": 1024,
+      "seed": 11,
+      "rule": "delta",
+      "config": {
+        "width": 1024,
+        "inputs": 8,
+        "input_fanin": 3,
+        "recurrent_fanin": 8,
+        "input_gain": 1.5,
+        "recurrent_gain": 1.1,
+        "leak": 0.4,
+        "bias_gain": 0.1,
+        "learning_rate": 0.6,
+        "seed": 11,
+        "readout_rule": "delta"
+      },
+      "train": {
+        "trials": 1200,
+        "wall_seconds": 0.38580280000041967,
+        "online_accuracy": 0.4841666666666667,
+        "last_200_online_accuracy": 0.515,
+        "shuffled_feedback": true
+      },
+      "evaluation": {
+        "accuracy": 0.5,
+        "correct": 120,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            60,
+            60
+          ],
+          [
+            60,
+            60
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            0,
+            60
+          ],
+          "01": [
+            0,
+            60
+          ],
+          "10": [
+            60,
+            60
+          ],
+          "11": [
+            60,
+            60
+          ]
+        },
+        "mean_true_margin": -0.008894717552359833,
+        "wall_seconds": 0.07341139999971347,
+        "feedback_supplied": false
+      },
+      "birth_hash": "b77c1ae43c882abe8f60731027e47f2ec335bba46baa4a2e8afc9d642d9e9529",
+      "trainable_parameter_count": 2050,
+      "fixed_synapse_count": 11264
+    },
+    {
+      "condition": "current_cue_control",
+      "width": 1024,
+      "seed": 11,
+      "rule": "delta",
+      "config": {
+        "width": 1024,
+        "inputs": 8,
+        "input_fanin": 3,
+        "recurrent_fanin": 8,
+        "input_gain": 1.5,
+        "recurrent_gain": 1.1,
+        "leak": 0.4,
+        "bias_gain": 0.1,
+        "learning_rate": 0.6,
+        "seed": 11,
+        "readout_rule": "delta"
+      },
+      "train": {
+        "trials": 1200,
+        "wall_seconds": 0.372972000000118,
+        "online_accuracy": 0.9991666666666666,
+        "last_200_online_accuracy": 1.0,
+        "shuffled_feedback": false
+      },
+      "evaluation": {
+        "accuracy": 1.0,
+        "correct": 240,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            120,
+            0
+          ],
+          [
+            0,
+            120
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            60,
+            60
+          ],
+          "01": [
+            60,
+            60
+          ],
+          "10": [
+            60,
+            60
+          ],
+          "11": [
+            60,
+            60
+          ]
+        },
+        "mean_true_margin": 1.0012326394948468,
+        "wall_seconds": 0.07266970000000583,
+        "feedback_supplied": false
+      },
+      "birth_hash": "b77c1ae43c882abe8f60731027e47f2ec335bba46baa4a2e8afc9d642d9e9529",
+      "trainable_parameter_count": 2050,
+      "fixed_synapse_count": 11264
+    },
+    {
+      "condition": "delayed_xor",
+      "width": 1024,
+      "seed": 29,
+      "rule": "delta",
+      "config": {
+        "width": 1024,
+        "inputs": 8,
+        "input_fanin": 3,
+        "recurrent_fanin": 8,
+        "input_gain": 1.5,
+        "recurrent_gain": 1.1,
+        "leak": 0.4,
+        "bias_gain": 0.1,
+        "learning_rate": 0.6,
+        "seed": 29,
+        "readout_rule": "delta"
+      },
+      "train": {
+        "trials": 1200,
+        "wall_seconds": 0.37449280000055296,
+        "online_accuracy": 0.8166666666666667,
+        "last_200_online_accuracy": 0.99,
+        "shuffled_feedback": false
+      },
+      "evaluation": {
+        "accuracy": 1.0,
+        "correct": 240,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            120,
+            0
+          ],
+          [
+            0,
+            120
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            60,
+            60
+          ],
+          "01": [
+            60,
+            60
+          ],
+          "10": [
+            60,
+            60
+          ],
+          "11": [
+            60,
+            60
+          ]
+        },
+        "mean_true_margin": 0.6719321236279664,
+        "wall_seconds": 0.0722211000002062,
+        "feedback_supplied": false
+      },
+      "birth_hash": "32fc7c94d2b0b296c3ee8e8b17ba26d641f00a4043cc5806f7e0b75bb9e22aff",
+      "trainable_parameter_count": 2050,
+      "fixed_synapse_count": 11264
+    },
+    {
+      "condition": "context_cleared_before_cue",
+      "width": 1024,
+      "seed": 29,
+      "rule": "delta",
+      "evaluation": {
+        "accuracy": 0.5,
+        "correct": 120,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            60,
+            60
+          ],
+          [
+            60,
+            60
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            60,
+            60
+          ],
+          "01": [
+            60,
+            60
+          ],
+          "10": [
+            0,
+            60
+          ],
+          "11": [
+            0,
+            60
+          ]
+        },
+        "mean_true_margin": 0.0,
+        "wall_seconds": 0.08555609999984881,
+        "feedback_supplied": false
+      },
+      "trained_as": "delayed_xor"
+    },
+    {
+      "condition": "long_delay_8_to_12",
+      "width": 1024,
+      "seed": 29,
+      "rule": "delta",
+      "evaluation": {
+        "accuracy": 0.7625,
+        "correct": 183,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            63,
+            57
+          ],
+          [
+            0,
+            120
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            60,
+            60
+          ],
+          "01": [
+            60,
+            60
+          ],
+          "10": [
+            60,
+            60
+          ],
+          "11": [
+            3,
+            60
+          ]
+        },
+        "mean_true_margin": 0.22959246739019823,
+        "wall_seconds": 0.13707160000012664,
+        "feedback_supplied": false
+      },
+      "trained_as": "delayed_xor"
+    },
+    {
+      "condition": "no_memory_trained",
+      "width": 1024,
+      "seed": 29,
+      "rule": "delta",
+      "config": {
+        "width": 1024,
+        "inputs": 8,
+        "input_fanin": 3,
+        "recurrent_fanin": 8,
+        "input_gain": 1.5,
+        "recurrent_gain": 1.1,
+        "leak": 0.4,
+        "bias_gain": 0.1,
+        "learning_rate": 0.6,
+        "seed": 29,
+        "readout_rule": "delta"
+      },
+      "train": {
+        "trials": 1200,
+        "wall_seconds": 0.4099330999997619,
+        "online_accuracy": 0.5008333333333334,
+        "last_200_online_accuracy": 0.525,
+        "shuffled_feedback": false
+      },
+      "evaluation": {
+        "accuracy": 0.5,
+        "correct": 120,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            0,
+            120
+          ],
+          [
+            0,
+            120
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            0,
+            60
+          ],
+          "01": [
+            60,
+            60
+          ],
+          "10": [
+            60,
+            60
+          ],
+          "11": [
+            0,
+            60
+          ]
+        },
+        "mean_true_margin": 5.551115123125783e-18,
+        "wall_seconds": 0.07919080000010581,
+        "feedback_supplied": false
+      },
+      "birth_hash": "32fc7c94d2b0b296c3ee8e8b17ba26d641f00a4043cc5806f7e0b75bb9e22aff",
+      "trainable_parameter_count": 2050,
+      "fixed_synapse_count": 11264
+    },
+    {
+      "condition": "shuffled_feedback",
+      "width": 1024,
+      "seed": 29,
+      "rule": "delta",
+      "config": {
+        "width": 1024,
+        "inputs": 8,
+        "input_fanin": 3,
+        "recurrent_fanin": 8,
+        "input_gain": 1.5,
+        "recurrent_gain": 1.1,
+        "leak": 0.4,
+        "bias_gain": 0.1,
+        "learning_rate": 0.6,
+        "seed": 29,
+        "readout_rule": "delta"
+      },
+      "train": {
+        "trials": 1200,
+        "wall_seconds": 0.4379559999997582,
+        "online_accuracy": 0.5208333333333334,
+        "last_200_online_accuracy": 0.525,
+        "shuffled_feedback": true
+      },
+      "evaluation": {
+        "accuracy": 0.5,
+        "correct": 120,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            60,
+            60
+          ],
+          [
+            60,
+            60
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            60,
+            60
+          ],
+          "01": [
+            60,
+            60
+          ],
+          "10": [
+            0,
+            60
+          ],
+          "11": [
+            0,
+            60
+          ]
+        },
+        "mean_true_margin": 0.014452119916381638,
+        "wall_seconds": 0.07287850000011531,
+        "feedback_supplied": false
+      },
+      "birth_hash": "32fc7c94d2b0b296c3ee8e8b17ba26d641f00a4043cc5806f7e0b75bb9e22aff",
+      "trainable_parameter_count": 2050,
+      "fixed_synapse_count": 11264
+    },
+    {
+      "condition": "current_cue_control",
+      "width": 1024,
+      "seed": 29,
+      "rule": "delta",
+      "config": {
+        "width": 1024,
+        "inputs": 8,
+        "input_fanin": 3,
+        "recurrent_fanin": 8,
+        "input_gain": 1.5,
+        "recurrent_gain": 1.1,
+        "leak": 0.4,
+        "bias_gain": 0.1,
+        "learning_rate": 0.6,
+        "seed": 29,
+        "readout_rule": "delta"
+      },
+      "train": {
+        "trials": 1200,
+        "wall_seconds": 0.38817139999991923,
+        "online_accuracy": 0.9983333333333333,
+        "last_200_online_accuracy": 1.0,
+        "shuffled_feedback": false
+      },
+      "evaluation": {
+        "accuracy": 1.0,
+        "correct": 240,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            120,
+            0
+          ],
+          [
+            0,
+            120
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            60,
+            60
+          ],
+          "01": [
+            60,
+            60
+          ],
+          "10": [
+            60,
+            60
+          ],
+          "11": [
+            60,
+            60
+          ]
+        },
+        "mean_true_margin": 1.0003918954864175,
+        "wall_seconds": 0.07877430000007735,
+        "feedback_supplied": false
+      },
+      "birth_hash": "32fc7c94d2b0b296c3ee8e8b17ba26d641f00a4043cc5806f7e0b75bb9e22aff",
+      "trainable_parameter_count": 2050,
+      "fixed_synapse_count": 11264
+    },
+    {
+      "condition": "strict_novel_paired_context",
+      "width": 64,
+      "seed": 3,
+      "rule": "delta",
+      "trained_as": "delayed_xor",
+      "evaluation": {
+        "accuracy": 0.7541666666666667,
+        "correct": 181,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            120,
+            0
+          ],
+          [
+            59,
+            61
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            26,
+            60
+          ],
+          "01": [
+            60,
+            60
+          ],
+          "10": [
+            60,
+            60
+          ],
+          "11": [
+            35,
+            60
+          ]
+        },
+        "mean_true_margin": 0.36964210257959945,
+        "matched_context_pairs": 120,
+        "both_contexts_correct_fraction": 0.5083333333333333,
+        "wall_seconds": 0.027649099999507598,
+        "feedback_supplied": false
+      }
+    },
+    {
+      "condition": "strict_paired_context_cleared",
+      "width": 64,
+      "seed": 3,
+      "rule": "delta",
+      "trained_as": "delayed_xor",
+      "evaluation": {
+        "accuracy": 0.5,
+        "correct": 120,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            60,
+            60
+          ],
+          [
+            60,
+            60
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            60,
+            60
+          ],
+          "01": [
+            60,
+            60
+          ],
+          "10": [
+            0,
+            60
+          ],
+          "11": [
+            0,
+            60
+          ]
+        },
+        "mean_true_margin": 2.3129646346357427e-18,
+        "matched_context_pairs": 120,
+        "both_contexts_correct_fraction": 0.0,
+        "wall_seconds": 0.02684399999998277,
+        "feedback_supplied": false
+      }
+    },
+    {
+      "condition": "strict_novel_paired_context",
+      "width": 64,
+      "seed": 11,
+      "rule": "delta",
+      "trained_as": "delayed_xor",
+      "evaluation": {
+        "accuracy": 1.0,
+        "correct": 240,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            120,
+            0
+          ],
+          [
+            0,
+            120
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            60,
+            60
+          ],
+          "01": [
+            60,
+            60
+          ],
+          "10": [
+            60,
+            60
+          ],
+          "11": [
+            60,
+            60
+          ]
+        },
+        "mean_true_margin": 0.8852511596335321,
+        "matched_context_pairs": 120,
+        "both_contexts_correct_fraction": 1.0,
+        "wall_seconds": 0.02580130000023928,
+        "feedback_supplied": false
+      }
+    },
+    {
+      "condition": "strict_paired_context_cleared",
+      "width": 64,
+      "seed": 11,
+      "rule": "delta",
+      "trained_as": "delayed_xor",
+      "evaluation": {
+        "accuracy": 0.5,
+        "correct": 120,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            120,
+            0
+          ],
+          [
+            120,
+            0
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            60,
+            60
+          ],
+          "01": [
+            0,
+            60
+          ],
+          "10": [
+            0,
+            60
+          ],
+          "11": [
+            60,
+            60
+          ]
+        },
+        "mean_true_margin": 0.0,
+        "matched_context_pairs": 120,
+        "both_contexts_correct_fraction": 0.0,
+        "wall_seconds": 0.02632960000028106,
+        "feedback_supplied": false
+      }
+    },
+    {
+      "condition": "strict_novel_paired_context",
+      "width": 64,
+      "seed": 29,
+      "rule": "delta",
+      "trained_as": "delayed_xor",
+      "evaluation": {
+        "accuracy": 0.7375,
+        "correct": 177,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            60,
+            60
+          ],
+          [
+            3,
+            117
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            59,
+            60
+          ],
+          "01": [
+            60,
+            60
+          ],
+          "10": [
+            57,
+            60
+          ],
+          "11": [
+            1,
+            60
+          ]
+        },
+        "mean_true_margin": 0.4044542503226875,
+        "matched_context_pairs": 120,
+        "both_contexts_correct_fraction": 0.475,
+        "wall_seconds": 0.026136200000109966,
+        "feedback_supplied": false
+      }
+    },
+    {
+      "condition": "strict_paired_context_cleared",
+      "width": 64,
+      "seed": 29,
+      "rule": "delta",
+      "trained_as": "delayed_xor",
+      "evaluation": {
+        "accuracy": 0.5,
+        "correct": 120,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            120,
+            0
+          ],
+          [
+            120,
+            0
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            60,
+            60
+          ],
+          "01": [
+            0,
+            60
+          ],
+          "10": [
+            0,
+            60
+          ],
+          "11": [
+            60,
+            60
+          ]
+        },
+        "mean_true_margin": 3.7007434154171884e-18,
+        "matched_context_pairs": 120,
+        "both_contexts_correct_fraction": 0.0,
+        "wall_seconds": 0.026658400000087568,
+        "feedback_supplied": false
+      }
+    },
+    {
+      "condition": "strict_novel_paired_context",
+      "width": 256,
+      "seed": 3,
+      "rule": "delta",
+      "trained_as": "delayed_xor",
+      "evaluation": {
+        "accuracy": 1.0,
+        "correct": 240,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            120,
+            0
+          ],
+          [
+            0,
+            120
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            60,
+            60
+          ],
+          "01": [
+            60,
+            60
+          ],
+          "10": [
+            60,
+            60
+          ],
+          "11": [
+            60,
+            60
+          ]
+        },
+        "mean_true_margin": 0.6908557094890121,
+        "matched_context_pairs": 120,
+        "both_contexts_correct_fraction": 1.0,
+        "wall_seconds": 0.03829370000039489,
+        "feedback_supplied": false
+      }
+    },
+    {
+      "condition": "strict_paired_context_cleared",
+      "width": 256,
+      "seed": 3,
+      "rule": "delta",
+      "trained_as": "delayed_xor",
+      "evaluation": {
+        "accuracy": 0.5,
+        "correct": 120,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            60,
+            60
+          ],
+          [
+            60,
+            60
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            0,
+            60
+          ],
+          "01": [
+            0,
+            60
+          ],
+          "10": [
+            60,
+            60
+          ],
+          "11": [
+            60,
+            60
+          ]
+        },
+        "mean_true_margin": 0.0,
+        "matched_context_pairs": 120,
+        "both_contexts_correct_fraction": 0.0,
+        "wall_seconds": 0.03860439999971277,
+        "feedback_supplied": false
+      }
+    },
+    {
+      "condition": "strict_novel_paired_context",
+      "width": 256,
+      "seed": 3,
+      "rule": "hebb",
+      "trained_as": "delayed_xor_hebb",
+      "evaluation": {
+        "accuracy": 0.7041666666666667,
+        "correct": 169,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            60,
+            60
+          ],
+          [
+            11,
+            109
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            49,
+            60
+          ],
+          "01": [
+            60,
+            60
+          ],
+          "10": [
+            0,
+            60
+          ],
+          "11": [
+            60,
+            60
+          ]
+        },
+        "mean_true_margin": 0.02166516885911557,
+        "matched_context_pairs": 120,
+        "both_contexts_correct_fraction": 0.5,
+        "wall_seconds": 0.04944660000001022,
+        "feedback_supplied": false
+      }
+    },
+    {
+      "condition": "strict_paired_context_cleared",
+      "width": 256,
+      "seed": 3,
+      "rule": "hebb",
+      "trained_as": "delayed_xor_hebb",
+      "evaluation": {
+        "accuracy": 0.5,
+        "correct": 120,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            60,
+            60
+          ],
+          [
+            60,
+            60
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            60,
+            60
+          ],
+          "01": [
+            60,
+            60
+          ],
+          "10": [
+            0,
+            60
+          ],
+          "11": [
+            0,
+            60
+          ]
+        },
+        "mean_true_margin": 0.0,
+        "matched_context_pairs": 120,
+        "both_contexts_correct_fraction": 0.0,
+        "wall_seconds": 0.048304599999937636,
+        "feedback_supplied": false
+      }
+    },
+    {
+      "condition": "strict_novel_paired_context",
+      "width": 256,
+      "seed": 11,
+      "rule": "delta",
+      "trained_as": "delayed_xor",
+      "evaluation": {
+        "accuracy": 0.9958333333333333,
+        "correct": 239,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            120,
+            0
+          ],
+          [
+            1,
+            119
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            60,
+            60
+          ],
+          "01": [
+            60,
+            60
+          ],
+          "10": [
+            59,
+            60
+          ],
+          "11": [
+            60,
+            60
+          ]
+        },
+        "mean_true_margin": 0.7419834311773638,
+        "matched_context_pairs": 120,
+        "both_contexts_correct_fraction": 0.9916666666666667,
+        "wall_seconds": 0.03726050000022951,
+        "feedback_supplied": false
+      }
+    },
+    {
+      "condition": "strict_paired_context_cleared",
+      "width": 256,
+      "seed": 11,
+      "rule": "delta",
+      "trained_as": "delayed_xor",
+      "evaluation": {
+        "accuracy": 0.5,
+        "correct": 120,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            0,
+            120
+          ],
+          [
+            0,
+            120
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            0,
+            60
+          ],
+          "01": [
+            60,
+            60
+          ],
+          "10": [
+            60,
+            60
+          ],
+          "11": [
+            0,
+            60
+          ]
+        },
+        "mean_true_margin": 4.625929269271485e-18,
+        "matched_context_pairs": 120,
+        "both_contexts_correct_fraction": 0.0,
+        "wall_seconds": 0.049186700000063865,
+        "feedback_supplied": false
+      }
+    },
+    {
+      "condition": "strict_novel_paired_context",
+      "width": 256,
+      "seed": 11,
+      "rule": "hebb",
+      "trained_as": "delayed_xor_hebb",
+      "evaluation": {
+        "accuracy": 0.5041666666666667,
+        "correct": 121,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            61,
+            59
+          ],
+          [
+            60,
+            60
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            1,
+            60
+          ],
+          "01": [
+            0,
+            60
+          ],
+          "10": [
+            60,
+            60
+          ],
+          "11": [
+            60,
+            60
+          ]
+        },
+        "mean_true_margin": 0.02864310706919681,
+        "matched_context_pairs": 120,
+        "both_contexts_correct_fraction": 0.008333333333333333,
+        "wall_seconds": 0.049363399999492685,
+        "feedback_supplied": false
+      }
+    },
+    {
+      "condition": "strict_paired_context_cleared",
+      "width": 256,
+      "seed": 11,
+      "rule": "hebb",
+      "trained_as": "delayed_xor_hebb",
+      "evaluation": {
+        "accuracy": 0.5,
+        "correct": 120,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            60,
+            60
+          ],
+          [
+            60,
+            60
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            0,
+            60
+          ],
+          "01": [
+            0,
+            60
+          ],
+          "10": [
+            60,
+            60
+          ],
+          "11": [
+            60,
+            60
+          ]
+        },
+        "mean_true_margin": 0.0,
+        "matched_context_pairs": 120,
+        "both_contexts_correct_fraction": 0.0,
+        "wall_seconds": 0.05125240000052145,
+        "feedback_supplied": false
+      }
+    },
+    {
+      "condition": "strict_novel_paired_context",
+      "width": 256,
+      "seed": 29,
+      "rule": "delta",
+      "trained_as": "delayed_xor",
+      "evaluation": {
+        "accuracy": 1.0,
+        "correct": 240,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            120,
+            0
+          ],
+          [
+            0,
+            120
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            60,
+            60
+          ],
+          "01": [
+            60,
+            60
+          ],
+          "10": [
+            60,
+            60
+          ],
+          "11": [
+            60,
+            60
+          ]
+        },
+        "mean_true_margin": 0.7591329022219938,
+        "matched_context_pairs": 120,
+        "both_contexts_correct_fraction": 1.0,
+        "wall_seconds": 0.03870089999963966,
+        "feedback_supplied": false
+      }
+    },
+    {
+      "condition": "strict_paired_context_cleared",
+      "width": 256,
+      "seed": 29,
+      "rule": "delta",
+      "trained_as": "delayed_xor",
+      "evaluation": {
+        "accuracy": 0.5,
+        "correct": 120,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            120,
+            0
+          ],
+          [
+            120,
+            0
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            60,
+            60
+          ],
+          "01": [
+            0,
+            60
+          ],
+          "10": [
+            0,
+            60
+          ],
+          "11": [
+            60,
+            60
+          ]
+        },
+        "mean_true_margin": -1.8503717077085942e-18,
+        "matched_context_pairs": 120,
+        "both_contexts_correct_fraction": 0.0,
+        "wall_seconds": 0.03911410000000615,
+        "feedback_supplied": false
+      }
+    },
+    {
+      "condition": "strict_novel_paired_context",
+      "width": 256,
+      "seed": 29,
+      "rule": "hebb",
+      "trained_as": "delayed_xor_hebb",
+      "evaluation": {
+        "accuracy": 0.5,
+        "correct": 120,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            60,
+            60
+          ],
+          [
+            60,
+            60
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            60,
+            60
+          ],
+          "01": [
+            60,
+            60
+          ],
+          "10": [
+            0,
+            60
+          ],
+          "11": [
+            0,
+            60
+          ]
+        },
+        "mean_true_margin": 0.03096112850685962,
+        "matched_context_pairs": 120,
+        "both_contexts_correct_fraction": 0.0,
+        "wall_seconds": 0.058115900000302645,
+        "feedback_supplied": false
+      }
+    },
+    {
+      "condition": "strict_paired_context_cleared",
+      "width": 256,
+      "seed": 29,
+      "rule": "hebb",
+      "trained_as": "delayed_xor_hebb",
+      "evaluation": {
+        "accuracy": 0.5,
+        "correct": 120,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            60,
+            60
+          ],
+          [
+            60,
+            60
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            60,
+            60
+          ],
+          "01": [
+            60,
+            60
+          ],
+          "10": [
+            0,
+            60
+          ],
+          "11": [
+            0,
+            60
+          ]
+        },
+        "mean_true_margin": 0.0,
+        "matched_context_pairs": 120,
+        "both_contexts_correct_fraction": 0.0,
+        "wall_seconds": 0.047884000000522065,
+        "feedback_supplied": false
+      }
+    },
+    {
+      "condition": "strict_novel_paired_context",
+      "width": 1024,
+      "seed": 3,
+      "rule": "delta",
+      "trained_as": "delayed_xor",
+      "evaluation": {
+        "accuracy": 1.0,
+        "correct": 240,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            120,
+            0
+          ],
+          [
+            0,
+            120
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            60,
+            60
+          ],
+          "01": [
+            60,
+            60
+          ],
+          "10": [
+            60,
+            60
+          ],
+          "11": [
+            60,
+            60
+          ]
+        },
+        "mean_true_margin": 0.6524816623974609,
+        "matched_context_pairs": 120,
+        "both_contexts_correct_fraction": 1.0,
+        "wall_seconds": 0.08603990000028716,
+        "feedback_supplied": false
+      }
+    },
+    {
+      "condition": "strict_paired_context_cleared",
+      "width": 1024,
+      "seed": 3,
+      "rule": "delta",
+      "trained_as": "delayed_xor",
+      "evaluation": {
+        "accuracy": 0.5,
+        "correct": 120,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            60,
+            60
+          ],
+          [
+            60,
+            60
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            60,
+            60
+          ],
+          "01": [
+            60,
+            60
+          ],
+          "10": [
+            0,
+            60
+          ],
+          "11": [
+            0,
+            60
+          ]
+        },
+        "mean_true_margin": 4.625929269271486e-19,
+        "matched_context_pairs": 120,
+        "both_contexts_correct_fraction": 0.0,
+        "wall_seconds": 0.09221490000072663,
+        "feedback_supplied": false
+      }
+    },
+    {
+      "condition": "strict_novel_paired_context",
+      "width": 1024,
+      "seed": 11,
+      "rule": "delta",
+      "trained_as": "delayed_xor",
+      "evaluation": {
+        "accuracy": 1.0,
+        "correct": 240,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            120,
+            0
+          ],
+          [
+            0,
+            120
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            60,
+            60
+          ],
+          "01": [
+            60,
+            60
+          ],
+          "10": [
+            60,
+            60
+          ],
+          "11": [
+            60,
+            60
+          ]
+        },
+        "mean_true_margin": 0.6516567150332387,
+        "matched_context_pairs": 120,
+        "both_contexts_correct_fraction": 1.0,
+        "wall_seconds": 0.09369520000018383,
+        "feedback_supplied": false
+      }
+    },
+    {
+      "condition": "strict_paired_context_cleared",
+      "width": 1024,
+      "seed": 11,
+      "rule": "delta",
+      "trained_as": "delayed_xor",
+      "evaluation": {
+        "accuracy": 0.5,
+        "correct": 120,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            60,
+            60
+          ],
+          [
+            60,
+            60
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            60,
+            60
+          ],
+          "01": [
+            60,
+            60
+          ],
+          "10": [
+            0,
+            60
+          ],
+          "11": [
+            0,
+            60
+          ]
+        },
+        "mean_true_margin": 0.0,
+        "matched_context_pairs": 120,
+        "both_contexts_correct_fraction": 0.0,
+        "wall_seconds": 0.08810760000051232,
+        "feedback_supplied": false
+      }
+    },
+    {
+      "condition": "strict_novel_paired_context",
+      "width": 1024,
+      "seed": 29,
+      "rule": "delta",
+      "trained_as": "delayed_xor",
+      "evaluation": {
+        "accuracy": 1.0,
+        "correct": 240,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            120,
+            0
+          ],
+          [
+            0,
+            120
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            60,
+            60
+          ],
+          "01": [
+            60,
+            60
+          ],
+          "10": [
+            60,
+            60
+          ],
+          "11": [
+            60,
+            60
+          ]
+        },
+        "mean_true_margin": 0.6522142045123147,
+        "matched_context_pairs": 120,
+        "both_contexts_correct_fraction": 1.0,
+        "wall_seconds": 0.09068419999948674,
+        "feedback_supplied": false
+      }
+    },
+    {
+      "condition": "strict_paired_context_cleared",
+      "width": 1024,
+      "seed": 29,
+      "rule": "delta",
+      "trained_as": "delayed_xor",
+      "evaluation": {
+        "accuracy": 0.5,
+        "correct": 120,
+        "trials": 240,
+        "confusion_expected_by_predicted": [
+          [
+            60,
+            60
+          ],
+          [
+            60,
+            60
+          ]
+        ],
+        "per_context_cue_correct_total": {
+          "00": [
+            60,
+            60
+          ],
+          "01": [
+            60,
+            60
+          ],
+          "10": [
+            0,
+            60
+          ],
+          "11": [
+            0,
+            60
+          ]
+        },
+        "mean_true_margin": -1.8503717077085942e-18,
+        "matched_context_pairs": 120,
+        "both_contexts_correct_fraction": 0.0,
+        "wall_seconds": 0.08518689999982598,
+        "feedback_supplied": false
+      }
+    }
+  ],
+  "summary": [
+    {
+      "condition": "context_cleared_before_cue",
+      "width": 64,
+      "rule": "delta",
+      "mean_accuracy": 0.5,
+      "std_across_seeds": 0.0,
+      "min_accuracy": 0.5,
+      "max_accuracy": 0.5,
+      "seeds": [
+        3,
+        11,
+        29
+      ],
+      "accuracies": [
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "condition": "context_cleared_before_cue",
+      "width": 256,
+      "rule": "delta",
+      "mean_accuracy": 0.5,
+      "std_across_seeds": 0.0,
+      "min_accuracy": 0.5,
+      "max_accuracy": 0.5,
+      "seeds": [
+        3,
+        11,
+        29
+      ],
+      "accuracies": [
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "condition": "context_cleared_before_cue",
+      "width": 256,
+      "rule": "hebb",
+      "mean_accuracy": 0.5,
+      "std_across_seeds": 0.0,
+      "min_accuracy": 0.5,
+      "max_accuracy": 0.5,
+      "seeds": [
+        3,
+        11,
+        29
+      ],
+      "accuracies": [
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "condition": "context_cleared_before_cue",
+      "width": 1024,
+      "rule": "delta",
+      "mean_accuracy": 0.5,
+      "std_across_seeds": 0.0,
+      "min_accuracy": 0.5,
+      "max_accuracy": 0.5,
+      "seeds": [
+        3,
+        11,
+        29
+      ],
+      "accuracies": [
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "condition": "current_cue_control",
+      "width": 64,
+      "rule": "delta",
+      "mean_accuracy": 1.0,
+      "std_across_seeds": 0.0,
+      "min_accuracy": 1.0,
+      "max_accuracy": 1.0,
+      "seeds": [
+        3,
+        11,
+        29
+      ],
+      "accuracies": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "condition": "current_cue_control",
+      "width": 256,
+      "rule": "delta",
+      "mean_accuracy": 1.0,
+      "std_across_seeds": 0.0,
+      "min_accuracy": 1.0,
+      "max_accuracy": 1.0,
+      "seeds": [
+        3,
+        11,
+        29
+      ],
+      "accuracies": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "condition": "current_cue_control",
+      "width": 1024,
+      "rule": "delta",
+      "mean_accuracy": 1.0,
+      "std_across_seeds": 0.0,
+      "min_accuracy": 1.0,
+      "max_accuracy": 1.0,
+      "seeds": [
+        3,
+        11,
+        29
+      ],
+      "accuracies": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "condition": "delayed_xor",
+      "width": 64,
+      "rule": "delta",
+      "mean_accuracy": 0.8958333333333334,
+      "std_across_seeds": 0.09260879487872027,
+      "min_accuracy": 0.775,
+      "max_accuracy": 1.0,
+      "seeds": [
+        3,
+        11,
+        29
+      ],
+      "accuracies": [
+        0.9125,
+        1.0,
+        0.775
+      ]
+    },
+    {
+      "condition": "delayed_xor",
+      "width": 256,
+      "rule": "delta",
+      "mean_accuracy": 1.0,
+      "std_across_seeds": 0.0,
+      "min_accuracy": 1.0,
+      "max_accuracy": 1.0,
+      "seeds": [
+        3,
+        11,
+        29
+      ],
+      "accuracies": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "condition": "delayed_xor",
+      "width": 1024,
+      "rule": "delta",
+      "mean_accuracy": 1.0,
+      "std_across_seeds": 0.0,
+      "min_accuracy": 1.0,
+      "max_accuracy": 1.0,
+      "seeds": [
+        3,
+        11,
+        29
+      ],
+      "accuracies": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "condition": "delayed_xor_hebb",
+      "width": 256,
+      "rule": "hebb",
+      "mean_accuracy": 0.5638888888888889,
+      "std_across_seeds": 0.0903525331516144,
+      "min_accuracy": 0.5,
+      "max_accuracy": 0.6916666666666667,
+      "seeds": [
+        3,
+        11,
+        29
+      ],
+      "accuracies": [
+        0.6916666666666667,
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "condition": "long_delay_8_to_12",
+      "width": 64,
+      "rule": "delta",
+      "mean_accuracy": 0.5222222222222223,
+      "std_across_seeds": 0.12821483225382524,
+      "min_accuracy": 0.375,
+      "max_accuracy": 0.6875,
+      "seeds": [
+        3,
+        11,
+        29
+      ],
+      "accuracies": [
+        0.5041666666666667,
+        0.6875,
+        0.375
+      ]
+    },
+    {
+      "condition": "long_delay_8_to_12",
+      "width": 256,
+      "rule": "delta",
+      "mean_accuracy": 0.8416666666666667,
+      "std_across_seeds": 0.09700372272352348,
+      "min_accuracy": 0.725,
+      "max_accuracy": 0.9625,
+      "seeds": [
+        3,
+        11,
+        29
+      ],
+      "accuracies": [
+        0.8375,
+        0.725,
+        0.9625
+      ]
+    },
+    {
+      "condition": "long_delay_8_to_12",
+      "width": 256,
+      "rule": "hebb",
+      "mean_accuracy": 0.5819444444444445,
+      "std_across_seeds": 0.11588694469446197,
+      "min_accuracy": 0.5,
+      "max_accuracy": 0.7458333333333333,
+      "seeds": [
+        3,
+        11,
+        29
+      ],
+      "accuracies": [
+        0.7458333333333333,
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "condition": "long_delay_8_to_12",
+      "width": 1024,
+      "rule": "delta",
+      "mean_accuracy": 0.7972222222222222,
+      "std_across_seeds": 0.025077041785094165,
+      "min_accuracy": 0.7625,
+      "max_accuracy": 0.8208333333333333,
+      "seeds": [
+        3,
+        11,
+        29
+      ],
+      "accuracies": [
+        0.8208333333333333,
+        0.8083333333333333,
+        0.7625
+      ]
+    },
+    {
+      "condition": "no_memory_trained",
+      "width": 64,
+      "rule": "delta",
+      "mean_accuracy": 0.5,
+      "std_across_seeds": 0.0,
+      "min_accuracy": 0.5,
+      "max_accuracy": 0.5,
+      "seeds": [
+        3,
+        11,
+        29
+      ],
+      "accuracies": [
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "condition": "no_memory_trained",
+      "width": 256,
+      "rule": "delta",
+      "mean_accuracy": 0.5,
+      "std_across_seeds": 0.0,
+      "min_accuracy": 0.5,
+      "max_accuracy": 0.5,
+      "seeds": [
+        3,
+        11,
+        29
+      ],
+      "accuracies": [
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "condition": "no_memory_trained",
+      "width": 1024,
+      "rule": "delta",
+      "mean_accuracy": 0.5,
+      "std_across_seeds": 0.0,
+      "min_accuracy": 0.5,
+      "max_accuracy": 0.5,
+      "seeds": [
+        3,
+        11,
+        29
+      ],
+      "accuracies": [
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "condition": "shuffled_feedback",
+      "width": 64,
+      "rule": "delta",
+      "mean_accuracy": 0.5,
+      "std_across_seeds": 0.0,
+      "min_accuracy": 0.5,
+      "max_accuracy": 0.5,
+      "seeds": [
+        3,
+        11,
+        29
+      ],
+      "accuracies": [
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "condition": "shuffled_feedback",
+      "width": 256,
+      "rule": "delta",
+      "mean_accuracy": 0.5,
+      "std_across_seeds": 0.0,
+      "min_accuracy": 0.5,
+      "max_accuracy": 0.5,
+      "seeds": [
+        3,
+        11,
+        29
+      ],
+      "accuracies": [
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "condition": "shuffled_feedback",
+      "width": 1024,
+      "rule": "delta",
+      "mean_accuracy": 0.5,
+      "std_across_seeds": 0.0,
+      "min_accuracy": 0.5,
+      "max_accuracy": 0.5,
+      "seeds": [
+        3,
+        11,
+        29
+      ],
+      "accuracies": [
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "condition": "strict_novel_paired_context",
+      "width": 64,
+      "rule": "delta",
+      "mean_accuracy": 0.8305555555555556,
+      "std_across_seeds": 0.12000835876237749,
+      "min_accuracy": 0.7375,
+      "max_accuracy": 1.0,
+      "seeds": [
+        3,
+        11,
+        29
+      ],
+      "accuracies": [
+        0.7541666666666667,
+        1.0,
+        0.7375
+      ]
+    },
+    {
+      "condition": "strict_novel_paired_context",
+      "width": 256,
+      "rule": "delta",
+      "mean_accuracy": 0.9986111111111112,
+      "std_across_seeds": 0.0019641855032959585,
+      "min_accuracy": 0.9958333333333333,
+      "max_accuracy": 1.0,
+      "seeds": [
+        3,
+        11,
+        29
+      ],
+      "accuracies": [
+        1.0,
+        0.9958333333333333,
+        1.0
+      ]
+    },
+    {
+      "condition": "strict_novel_paired_context",
+      "width": 256,
+      "rule": "hebb",
+      "mean_accuracy": 0.5694444444444445,
+      "std_across_seeds": 0.09527818270079166,
+      "min_accuracy": 0.5,
+      "max_accuracy": 0.7041666666666667,
+      "seeds": [
+        3,
+        11,
+        29
+      ],
+      "accuracies": [
+        0.7041666666666667,
+        0.5041666666666667,
+        0.5
+      ]
+    },
+    {
+      "condition": "strict_novel_paired_context",
+      "width": 1024,
+      "rule": "delta",
+      "mean_accuracy": 1.0,
+      "std_across_seeds": 0.0,
+      "min_accuracy": 1.0,
+      "max_accuracy": 1.0,
+      "seeds": [
+        3,
+        11,
+        29
+      ],
+      "accuracies": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "condition": "strict_paired_context_cleared",
+      "width": 64,
+      "rule": "delta",
+      "mean_accuracy": 0.5,
+      "std_across_seeds": 0.0,
+      "min_accuracy": 0.5,
+      "max_accuracy": 0.5,
+      "seeds": [
+        3,
+        11,
+        29
+      ],
+      "accuracies": [
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "condition": "strict_paired_context_cleared",
+      "width": 256,
+      "rule": "delta",
+      "mean_accuracy": 0.5,
+      "std_across_seeds": 0.0,
+      "min_accuracy": 0.5,
+      "max_accuracy": 0.5,
+      "seeds": [
+        3,
+        11,
+        29
+      ],
+      "accuracies": [
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "condition": "strict_paired_context_cleared",
+      "width": 256,
+      "rule": "hebb",
+      "mean_accuracy": 0.5,
+      "std_across_seeds": 0.0,
+      "min_accuracy": 0.5,
+      "max_accuracy": 0.5,
+      "seeds": [
+        3,
+        11,
+        29
+      ],
+      "accuracies": [
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "condition": "strict_paired_context_cleared",
+      "width": 1024,
+      "rule": "delta",
+      "mean_accuracy": 0.5,
+      "std_across_seeds": 0.0,
+      "min_accuracy": 0.5,
+      "max_accuracy": 0.5,
+      "seeds": [
+        3,
+        11,
+        29
+      ],
+      "accuracies": [
+        0.5,
+        0.5,
+        0.5
+      ]
+    }
+  ],
+  "checkpoint_checks": [
+    {
+      "path": "F:\\一种AGI架构\\认知实验\\results\\pfc_probe_quick_checkpoints\\delayed_xor_n64_seed3.npz",
+      "condition": "delayed_xor",
+      "width": 64,
+      "seed": 3,
+      "exact_continuation": true
+    },
+    {
+      "path": "F:\\一种AGI架构\\认知实验\\results\\pfc_probe_quick_checkpoints\\delayed_xor_n64_seed11.npz",
+      "condition": "delayed_xor",
+      "width": 64,
+      "seed": 11,
+      "exact_continuation": true
+    },
+    {
+      "path": "F:\\一种AGI架构\\认知实验\\results\\pfc_probe_quick_checkpoints\\delayed_xor_n64_seed29.npz",
+      "condition": "delayed_xor",
+      "width": 64,
+      "seed": 29,
+      "exact_continuation": true
+    },
+    {
+      "path": "F:\\一种AGI架构\\认知实验\\results\\pfc_probe_quick_checkpoints\\delayed_xor_n256_seed3.npz",
+      "condition": "delayed_xor",
+      "width": 256,
+      "seed": 3,
+      "exact_continuation": true
+    },
+    {
+      "path": "F:\\一种AGI架构\\认知实验\\results\\pfc_probe_quick_checkpoints\\delayed_xor_hebb_n256_seed3.npz",
+      "condition": "delayed_xor_hebb",
+      "width": 256,
+      "seed": 3,
+      "exact_continuation": true
+    },
+    {
+      "path": "F:\\一种AGI架构\\认知实验\\results\\pfc_probe_quick_checkpoints\\delayed_xor_n256_seed11.npz",
+      "condition": "delayed_xor",
+      "width": 256,
+      "seed": 11,
+      "exact_continuation": true
+    },
+    {
+      "path": "F:\\一种AGI架构\\认知实验\\results\\pfc_probe_quick_checkpoints\\delayed_xor_hebb_n256_seed11.npz",
+      "condition": "delayed_xor_hebb",
+      "width": 256,
+      "seed": 11,
+      "exact_continuation": true
+    },
+    {
+      "path": "F:\\一种AGI架构\\认知实验\\results\\pfc_probe_quick_checkpoints\\delayed_xor_n256_seed29.npz",
+      "condition": "delayed_xor",
+      "width": 256,
+      "seed": 29,
+      "exact_continuation": true
+    },
+    {
+      "path": "F:\\一种AGI架构\\认知实验\\results\\pfc_probe_quick_checkpoints\\delayed_xor_hebb_n256_seed29.npz",
+      "condition": "delayed_xor_hebb",
+      "width": 256,
+      "seed": 29,
+      "exact_continuation": true
+    },
+    {
+      "path": "F:\\一种AGI架构\\认知实验\\results\\pfc_probe_quick_checkpoints\\delayed_xor_n1024_seed3.npz",
+      "condition": "delayed_xor",
+      "width": 1024,
+      "seed": 3,
+      "exact_continuation": true
+    },
+    {
+      "path": "F:\\一种AGI架构\\认知实验\\results\\pfc_probe_quick_checkpoints\\delayed_xor_n1024_seed11.npz",
+      "condition": "delayed_xor",
+      "width": 1024,
+      "seed": 11,
+      "exact_continuation": true
+    },
+    {
+      "path": "F:\\一种AGI架构\\认知实验\\results\\pfc_probe_quick_checkpoints\\delayed_xor_n1024_seed29.npz",
+      "condition": "delayed_xor",
+      "width": 1024,
+      "seed": 29,
+      "exact_continuation": true
+    }
+  ],
+  "all_checkpoint_checks_passed": true,
+  "limitations": [
+    "New fixed-random recurrent leaky-tanh candidate; not an implementation result of the original PFC.",
+    "Delta uses an explicit output error signal, while the separately reported Hebb condition does not.",
+    "Four abstract sensory combinations and externally marked episode boundaries; no natural language or physical embodiment.",
+    "Short training with no hyperparameter search; failure does not prove all local-learning recurrent systems cannot solve the task.",
+    "Only readout weights learn; fixed recurrent circuits do not acquire task-specific working memory.",
+    "A successful delayed-XOR score is limited evidence of state-dependent nonlinear readout, not AGI or broad cognitive ability.",
+    "Width changes random feature diversity and readout parameter count together; width alone is not an isolated causal explanation.",
+    "Seed standard deviation is descriptive and not a confidence interval; examples within each seed share a trained model.",
+    "The original IID test repeats some complete training sequences. Strict paired results exclude all such sequences but rejection changes the delay distribution."
+  ],
+  "split_audit": {
+    "3": {
+      "iid_full_sequence_overlap": 131,
+      "iid_test_count": 240,
+      "strict_full_sequence_overlap": 0,
+      "strict_test_count": 240,
+      "strict_context_pairs": 120,
+      "strict_delay_counts": {
+        "2": 0,
+        "3": 32,
+        "4": 82,
+        "5": 126
+      }
+    },
+    "11": {
+      "iid_full_sequence_overlap": 128,
+      "iid_test_count": 240,
+      "strict_full_sequence_overlap": 0,
+      "strict_test_count": 240,
+      "strict_context_pairs": 120,
+      "strict_delay_counts": {
+        "2": 2,
+        "3": 38,
+        "4": 72,
+        "5": 128
+      }
+    },
+    "29": {
+      "iid_full_sequence_overlap": 134,
+      "iid_test_count": 240,
+      "strict_full_sequence_overlap": 0,
+      "strict_test_count": 240,
+      "strict_context_pairs": 120,
+      "strict_delay_counts": {
+        "2": 2,
+        "3": 46,
+        "4": 90,
+        "5": 102
+      }
+    }
+  },
+  "strict_heldout_augmentation": {
+    "source": "F:\\一种AGI架构\\认知实验\\results\\pfc_probe_quick.json",
+    "retrained": false,
+    "wall_seconds": 1.3802258000005168
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "distance_encoding": {
+    "source": "色标导航/associative_controller.py:104,181,213",
+    "all_zero_positive_beyond_metres": 5.666426688112432,
+    "example_distances": [
+      6.0,
+      9.0,
+      12.0
+    ],
+    "old_positive_counts": [
+      0,
+      0,
+      0
+    ],
+    "proposed_fixed_d_over_16_with_64_levels_counts": [
+      24,
+      36,
+      48
+    ],
+    "classification": "Confirmed information loss in navigation adapter; physical range is still correctly measured"
+  },
+  "directional_touch": {
+    "source": "闭环仿真/world.py:230; 色标导航/associative_controller.py:178",
+    "physical_order": [
+      "front",
+      "back",
+      "left",
+      "right"
+    ],
+    "different_front_and_left_touch_produce_identical_old_values": true,
+    "proposed_fix": "Keep all four already available body-frame channels; 129 sensory values become 132",
+    "classification": "Confirmed information loss in navigation adapter, not a world collision defect"
+  },
+  "velocity_angular_clipping": {
+    "source": "色标导航/associative_controller.py:182",
+    "limits": {
+      "body_velocity_m_per_s": [
+        -3,
+        3
+      ],
+      "angular_velocity_rad_per_s": [
+        -4,
+        4
+      ]
+    },
+    "recorded_checkpoint_checks": [
+      {
+        "checkpoint": "route_switch_evaluation.npz",
+        "recorded_events": 45865,
+        "body_velocity_values_at_clip_endpoints": 0,
+        "angular_values_at_clip_endpoints": 0,
+        "decoded_recorded_velocity_min": -1.0864593982696533,
+        "decoded_recorded_velocity_max": 1.333327293395996,
+        "decoded_recorded_angular_min": -2.769562244415283,
+        "decoded_recorded_angular_max": 2.4706215858459473,
+        "depth_rays_below_first_old_threshold_fraction": 0.1298952395353826
+      },
+      {
+        "checkpoint": "route_texture_evaluation.npz",
+        "recorded_events": 35441,
+        "body_velocity_values_at_clip_endpoints": 0,
+        "angular_values_at_clip_endpoints": 0,
+        "decoded_recorded_velocity_min": -1.0864593982696533,
+        "decoded_recorded_velocity_max": 1.3333282470703125,
+        "decoded_recorded_angular_min": -2.769562244415283,
+        "decoded_recorded_angular_max": 2.431582450866699,
+        "depth_rays_below_first_old_threshold_fraction": 0.12937904067732742
+      }
+    ],
+    "interpretation": "Check actual endpoint counts before attributing failure to clipping. These archives cover recorded pre-action observations, not every internal 5ms physics substep."
+  },
+  "restricted_audio": {
+    "source": "色标导航/route_switch_controller.py:28,41",
+    "frequencies_hz": [
+      220,
+      440,
+      660,
+      990,
+      1320
+    ],
+    "1100_hz_pure_tone_max_receptor_response": 6.590610691534771e-15,
+    "classification": "Deliberate five-band experimental adapter; not general audition or a learned language decoder"
+  },
+  "original_module_adapter_requirements": {
+    "vision_source": "视觉前处理.py:68,90",
+    "one_by_31_ray_image_causes_zero_area_downsampling": "FloatingPointError",
+    "24_by_16_image_is_finite": true,
+    "audio_source": "听觉前处理.py:69,97",
+    "eight_khz_point_one_second_rfft_bins": 401,
+    "original_minimum_spectrum_bins": 1500,
+    "direct_audio_adapter_error": "频点数少于频带数，请先提高频谱分辨率",
+    "interpretation": "Original modules define their own sensor layouts. A 31-ray strip and 800-sample PCM chunk cannot silently be passed as full compatible image/spectrum inputs."
+  },
+  "action_consequence_timing": {
+    "sources": [
+      "色标导航/associative_controller.py:492",
+      "色标导航/route_switch_experiment.py:73",
+      "色标导航/route_switch_experiment.py:77",
+      "色标导航/route_switch_experiment.py:88"
+    ],
+    "existing_order": "Record current sensory values and proposed command, execute world step, reward if terminal, then break.",
+    "confirmed_gap": "The final post-action terminal observation is never passed into the old learner. Nonterminal consequences appear only as the next frame sensory state.",
+    "proposed_fix": "act prepares a pending action; after successful physics, observe_outcome commits actual applied muscles and post-action sensory values, including terminal outcomes without another action."
+  },
+  "priorities": [
+    "Replace lossy navigation receptor adapter: fixed d/16 with 64 threshold levels, all four directional touch values; innate reflex reads physical distances directly.",
+    "Commit real action consequences after physics, including terminal sensory outcomes; scheduled route changes provide actual cross-rule experience without labels entering the brain."
+  ],
+  "no_training_or_frozen_code_changes": true
+}

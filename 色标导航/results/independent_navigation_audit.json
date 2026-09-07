@@ -1,0 +1,151 @@
+{
+  "controller_sha256": "b3eec1ff3c757ba6c94cfc735fb3a3a97f1bcb6188877c00fabe22a359d66bce",
+  "scope": "Interface/causality microtests; not evidence of successful target navigation",
+  "teaching_fixture_commands_were_executed": true,
+  "silent_context_intervention_changes_action": {
+    "red": {
+      "muscles": [
+        0.44999998807907104,
+        0.0,
+        0.44999998807907104,
+        0.0
+      ],
+      "active": 58,
+      "recall_count": 8,
+      "context": [
+        0
+      ]
+    },
+    "green": {
+      "muscles": [
+        0.0,
+        0.20000000298023224,
+        0.20000000298023224,
+        0.0
+      ],
+      "active": 64,
+      "recall_count": 2,
+      "context": [
+        1
+      ]
+    }
+  },
+  "private_target_change_with_same_packet_has_no_effect": true,
+  "extra_goal_route_position_fields_ignored": true,
+  "teacher_action_does_not_replace_current_prediction": true,
+  "context_visual_and_motor_return_lesions": {
+    "context_enabled": {
+      "muscles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "rest",
+      "recall_count": 0,
+      "active": 0
+    },
+    "view_enabled": {
+      "muscles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "rest",
+      "recall_count": 0,
+      "active": 0
+    },
+    "motor_memory_enabled": {
+      "muscles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "rest",
+      "recall_count": 8,
+      "active": 58
+    }
+  },
+  "autonomous_action_not_automatically_correct_and_reward_is_retrospective": true,
+  "erasing_audit_only_backward_links_leaves_action_identical": true,
+  "microfixture_multiple_events_can_be_active": 8,
+  "production_rollout_has_no_teacher_or_planner_calls": true,
+  "production_rollout_two_frame_smoke": {
+    "passed": true,
+    "teacher_supplied": false
+  },
+  "ordered_link_microfixture": {
+    "changed_links": 11,
+    "identical_current_packet_state_and_event_weights": true,
+    "same_transition_target_multiset": true,
+    "answers": {
+      "ordered": {
+        "muscles": [
+          0.0,
+          0.20000000298023224,
+          0.20000000298023224,
+          0.0
+        ],
+        "selected_events": [
+          1
+        ],
+        "sequence_supported_events": [
+          1,
+          2
+        ],
+        "feedback_pfc_active_count": 58
+      },
+      "shuffled": {
+        "muscles": [
+          0.20000000298023224,
+          0.0,
+          0.0,
+          0.20000000298023224
+        ],
+        "selected_events": [
+          2
+        ],
+        "sequence_supported_events": [
+          2,
+          6
+        ],
+        "feedback_pfc_active_count": 58
+      },
+      "no_sequence": {
+        "muscles": [
+          0.21666666865348816,
+          0.06666667014360428,
+          0.21666666865348816,
+          0.06666667014360428
+        ],
+        "selected_events": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "sequence_supported_events": [],
+        "feedback_pfc_active_count": 58
+      }
+    },
+    "ordered_vs_shuffled_action_differs": true,
+    "proves_room_or_subgoal_dependency_learning": false
+  },
+  "capacity_and_continuation": {
+    "saved_state_continues_exactly_with_online_updates": true,
+    "all_confirmed_capacity_stops_new_autonomous_recording": true,
+    "capacity_probe_slots": 4,
+    "skipped_new_events": 1,
+    "limitation": "At full confirmed capacity, new autonomous experiences cannot be stored until a replacement/expansion policy is supplied."
+  }
+}

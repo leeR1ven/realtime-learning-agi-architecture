@@ -1,0 +1,62 @@
+{
+  "kind": "navigation_readiness_environment_boundary_v1",
+  "packet_fields": [
+    "observation",
+    "waveform"
+  ],
+  "sensor_fields": [
+    "angular_velocity",
+    "pain",
+    "ray_colors",
+    "ray_distances",
+    "touch",
+    "velocity"
+  ],
+  "waveform_shape": [
+    800
+  ],
+  "switch_changes_only_audio": true,
+  "world_pose_time_unchanged": true,
+  "brain_packet_digest_accepted_both": true,
+  "audio_absolute_max": 0.8938695552774685,
+  "metrics_private": [
+    "arrival_route_score",
+    "arrivals",
+    "chosen_route",
+    "contact_steps",
+    "control_steps",
+    "correct_arrival",
+    "crossings",
+    "elapsed_seconds",
+    "final_position",
+    "first_beacon",
+    "first_beacon_correct",
+    "first_target_time",
+    "initial_pose",
+    "midline_crossings",
+    "normal_contact_impulse",
+    "passages",
+    "path_length",
+    "path_sampling_max_dt",
+    "remaining_target_distance",
+    "requested_route",
+    "route_gate_geometry",
+    "route_requests",
+    "route_tone_map",
+    "scenario",
+    "start",
+    "success",
+    "target",
+    "target_frequency_hz",
+    "target_index",
+    "target_reached",
+    "terminated",
+    "texture_enabled",
+    "texture_seed",
+    "texture_semantics",
+    "tone_map",
+    "trajectory_samples",
+    "used_passage",
+    "wrong_beacon_entries"
+  ]
+}

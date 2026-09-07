@@ -1,0 +1,169 @@
+{
+  "brain_sha256": "937b1c60826a16c7a5c877aeed77f092399544be6be991128d1ead409510f478",
+  "no_privileged_label_or_position_action_bypass": true,
+  "disconnected_encoder_audio_action": 1,
+  "encoder_disconnection_blocks_raw_audio_drive": true,
+  "PCM_only_after_pairing_0": {
+    "expected_action": 4,
+    "actual_action": 4,
+    "correct": true
+  },
+  "PCM_only_after_pairing_1": {
+    "expected_action": 2,
+    "actual_action": 2,
+    "correct": true
+  },
+  "two_parent_disjoint_sound_association_merge": [
+    {
+      "tone": 0,
+      "expected": 4,
+      "actual": 4
+    },
+    {
+      "tone": 1,
+      "expected": 2,
+      "actual": 2
+    }
+  ],
+  "legacy_pfc_and_memory_severed_scores_identical_on_probes": false,
+  "inherited_memory_path_action_causality_without_audio_matrix": {
+    "pfc_only": {
+      "action": 4,
+      "temporal_motor": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "episodic_motor": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "episodic_only": {
+      "action": 4,
+      "temporal_motor": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "episodic_motor": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "both": {
+      "action": 4,
+      "temporal_motor": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "episodic_motor": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "both_disconnected": {
+      "action": 1,
+      "temporal_motor": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "episodic_motor": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "normal_checkpoint_continuation": {
+    "same_actions_and_emissions": true,
+    "pfc_max_difference": 0.0,
+    "memory_max_difference": 0.0
+  },
+  "checkpoint_decay_boundary": {
+    "before": [
+      200,
+      199
+    ],
+    "restored": [
+      200,
+      199
+    ],
+    "same_weights_after_next_frame": true,
+    "max_difference": 0.0
+  },
+  "checkpoint_fixed_motor_corruption_rejected": true,
+  "pure_unknown_330Hz_feature_leak": [
+    1.2223512835554578e-15,
+    1.742915617855217e-15,
+    2.157614669489258e-15,
+    1.1126769173603907e-15
+  ],
+  "long_continuation_crossing_decay": {
+    "frames_before_save": 1560,
+    "frames_after_save": 280,
+    "all_actions_and_audio_exact": true,
+    "first_difference": null,
+    "pfc_max_difference": 0.0,
+    "memory_in_max_difference": 0.0,
+    "memory_out_max_difference": 0.0,
+    "maintenance_original": [
+      [
+        1840,
+        -200
+      ],
+      [
+        1840,
+        -200
+      ],
+      [
+        3680,
+        3632
+      ],
+      [
+        3680,
+        3631
+      ]
+    ],
+    "maintenance_restored": [
+      [
+        1840,
+        -200
+      ],
+      [
+        1840,
+        -200
+      ],
+      [
+        3680,
+        3632
+      ],
+      [
+        3680,
+        3631
+      ]
+    ],
+    "wall_seconds": 7.577253000000383
+  }
+}

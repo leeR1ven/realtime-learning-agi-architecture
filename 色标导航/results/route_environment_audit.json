@@ -1,0 +1,48 @@
+{
+  "simultaneous_target_and_route_pcm": {
+    "220_Hz": 0.44999999999999984,
+    "990_Hz": 0.45000000000000073
+  },
+  "clone_switch_changes_only_pcm_and_private_bookkeeping": true,
+  "cue_stops_and_exact_same_actions_same_physics": true,
+  "swapped_mapping_has_identical_pcm_for_equal_frequency": true,
+  "actual_muscle_passages": {
+    "bottom": {
+      "route": "bottom",
+      "direction": "left_to_right",
+      "time": 1.5564777436509811,
+      "t": 1.5564777436509811,
+      "position": [
+        5.0,
+        0.55
+      ],
+      "request_index": 0,
+      "completed_time": 1.9599999999999802,
+      "completed_position": [
+        5.384666373313002,
+        0.55
+      ],
+      "origin_side": "left"
+    },
+    "top": {
+      "route": "top",
+      "direction": "left_to_right",
+      "time": 1.5564777436509811,
+      "t": 1.5564777436509811,
+      "position": [
+        5.0,
+        6.8
+      ],
+      "request_index": 0,
+      "completed_time": 1.9599999999999802,
+      "completed_position": [
+        5.384666373313002,
+        6.8
+      ],
+      "origin_side": "left"
+    }
+  },
+  "blocked_forward_muscles_cannot_fake_passage": true,
+  "detector_units_midline_retreat_excluded_and_reverse_direction_recorded": true,
+  "scoring_units_first_arrival_final_and_latest_instruction_required": true
+}

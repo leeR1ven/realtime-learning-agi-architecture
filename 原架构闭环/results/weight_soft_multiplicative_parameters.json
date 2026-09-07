@@ -1,0 +1,5 @@
+{
+  "pfc_hebb_increment": 0.0005,
+  "pfc_weight_ceiling": 0.025,
+  "pfc_weight_depression": "multiplicative"
+}

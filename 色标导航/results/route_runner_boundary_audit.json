@@ -1,0 +1,78 @@
+{
+  "boundary_fixture_units": [
+    {
+      "correct": true,
+      "learning": true,
+      "reward_enabled": true,
+      "reward_calls": [
+        [
+          2,
+          1.0
+        ]
+      ],
+      "terminated_frame": 2
+    },
+    {
+      "correct": false,
+      "learning": true,
+      "reward_enabled": true,
+      "reward_calls": [],
+      "terminated_frame": 2
+    },
+    {
+      "correct": true,
+      "learning": false,
+      "reward_enabled": false,
+      "reward_calls": [],
+      "terminated_frame": 2
+    },
+    {
+      "correct": true,
+      "learning": true,
+      "reward_enabled": false,
+      "reward_calls": [],
+      "terminated_frame": 2
+    }
+  ],
+  "rule_clear_time": 10.599999999999998,
+  "clear_happens_before_first_post_pulse_observation": true,
+  "original_strict_counterexample": {
+    "crossings": [
+      {
+        "direction": "left_to_right",
+        "route": "bottom",
+        "time": 10.3
+      },
+      {
+        "direction": "right_to_left",
+        "route": "bottom",
+        "time": 11.0
+      },
+      {
+        "direction": "left_to_right",
+        "route": "bottom",
+        "time": 13.0
+      }
+    ],
+    "original_pass": true,
+    "protocol_pass": false
+  },
+  "finding": "Runner must additionally require first forward crossing time >=10.6; root accepted deterministic recount without retraining.",
+  "source_sha256": "ce6ee3a38ced5fdea049a507be1d8cbf06a2e96024fac74f7b3ac11419e5e054",
+  "static_review": {
+    "reward_only_after_physical_step_and_first_correct_arrival": true,
+    "prefix_fixed_100_frames_rejects_any_prior_forward_midline_or_leaving_left_approach": true,
+    "clone_before_each_intervention_includes_environment_controller_and_rng": true,
+    "no_cue_scores_retained_original_route": true,
+    "swapped_mapping_pairs_old_acoustics_with_new_private_requirement": true,
+    "clear_rule_also_clears_replay_activity_but_preserves_goal": true,
+    "trial_starts_crossed_with_both_routes": true,
+    "goal_preserved_is_a_diagnostic_activity_check_not_semantic_goal_understanding": true
+  },
+  "limits": [
+    "Synthetic boundary units do not establish physical navigation success.",
+    "Stay/no-cue success measures retention; no-cue failure is not required.",
+    "Clearing rule and replay tests that combined state, not an isolated anatomical PFC.",
+    "Pair success is a behavior test for two absolute cues, not general language or subgoal reasoning."
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "results": [
+    {
+      "seed": 71,
+      "capacity": 128,
+      "steps": 240,
+      "assemblies": 46,
+      "relations": 138,
+      "visited_places": 46,
+      "walkable_places": 54,
+      "visited_beacons": [
+        true,
+        false,
+        false
+      ],
+      "movements": 208,
+      "clock": 482,
+      "current_time_cells": 1,
+      "median_ms": 3.3316999997623498,
+      "p95_ms": 4.727539998748397,
+      "navigation": 7,
+      "navigation_trials": 12,
+      "switches": 1,
+      "switch_trials": 2,
+      "lesion_success": 0,
+      "lesion_trials": 3,
+      "blocked": 1
+    }
+  ],
+  "original_life_unchanged": true,
+  "original_life_sha256": "30ed4050c59349fcb8a9d3f2551437839d3665ffc19db068f740a441d3ae64d7",
+  "limits": [
+    "Engineered new PFC propagation rule, not spontaneous original-PFC emergence",
+    "New lattice body with downward texture camera; no continuous-body transfer proof",
+    "Start-goal combinations were not trained as commanded routes; local transitions were explored",
+    "Goal change is a previously paired tone, not natural-language understanding"
+  ]
+}

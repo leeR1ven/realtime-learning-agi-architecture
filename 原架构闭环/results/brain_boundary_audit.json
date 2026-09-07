@@ -1,0 +1,471 @@
+{
+  "core_checks_passed": true,
+  "source_sha256": {
+    "brain.py": "9440c41fd3aeaaa1573ceb829beeef0e350583e6b5edf89f8be054fd92ce832b",
+    "original_runtime.py": "d489aa74403d1b96920f678a69d96f29e309b531f475c644ae8676fc430a4cbe",
+    "sensory_adapter.py": "9a7cd6aaf2c923f95b428128812ff86e34231c0f63a49e771335f53ec22ac1dd",
+    "experience_environment.py": "17badebfbf2443ea263b87782fabe034b85287e922b7569f5ec2f985593a3ea8"
+  },
+  "default_brain_config": {
+    "seed": 2026,
+    "sensory_threshold": 0.6,
+    "visual_threshold": null,
+    "audio_threshold": null,
+    "motor_threshold": null,
+    "audio_levels": null,
+    "motor_levels": null,
+    "motor_reverse_window": null,
+    "contrast_to_silence": false,
+    "pfc_hidden_threshold": 0.55,
+    "pfc_output_threshold": 1.2,
+    "pfc_spread": 10,
+    "pfc_firing_threshold": 2.0,
+    "pfc_hebb_increment": 0.01,
+    "pfc_decay_floor": 5e-05,
+    "pfc_decay_rate": null,
+    "pfc_decay_interval": null,
+    "pfc_decay_warning": null,
+    "pfc_weight_ceiling": null,
+    "pfc_weight_depression": "multiplicative",
+    "memory_decay_rate": null,
+    "memory_decay_interval": null,
+    "memory_decay_warning": null,
+    "pfc_target_high": 120,
+    "pfc_feedback_inhibition": 0.12,
+    "external_gain": 3.5,
+    "recall_gain": 3.5,
+    "index_threshold": 0.9,
+    "memory_threshold": 0.5,
+    "thought_steps": 2,
+    "auditory_onset_rms": 0.02,
+    "exploration_probability": 0.03
+  },
+  "initial_physical_frames": 8,
+  "initial_single_timeline_frames": 9,
+  "initial_shared_clock_steps": 18,
+  "timeline_active_cells": 1,
+  "frames": [
+    {
+      "physical_frame": 0,
+      "act_added_memory_frames": 1,
+      "recorded_frames": 2,
+      "shared_clock": 4,
+      "actual_muscles": [
+        0.6,
+        0.0,
+        0.6,
+        0.0
+      ]
+    },
+    {
+      "physical_frame": 1,
+      "act_added_memory_frames": 0,
+      "recorded_frames": 3,
+      "shared_clock": 6,
+      "actual_muscles": [
+        0.6,
+        0.0,
+        0.6,
+        0.0
+      ]
+    },
+    {
+      "physical_frame": 2,
+      "act_added_memory_frames": 0,
+      "recorded_frames": 4,
+      "shared_clock": 8,
+      "actual_muscles": [
+        0.6,
+        0.0,
+        0.6,
+        0.0
+      ]
+    },
+    {
+      "physical_frame": 3,
+      "act_added_memory_frames": 0,
+      "recorded_frames": 5,
+      "shared_clock": 10,
+      "actual_muscles": [
+        0.6,
+        0.0,
+        0.6,
+        0.0
+      ]
+    },
+    {
+      "physical_frame": 4,
+      "act_added_memory_frames": 0,
+      "recorded_frames": 6,
+      "shared_clock": 12,
+      "actual_muscles": [
+        0.6,
+        0.0,
+        0.6,
+        0.0
+      ]
+    },
+    {
+      "physical_frame": 5,
+      "act_added_memory_frames": 0,
+      "recorded_frames": 7,
+      "shared_clock": 14,
+      "actual_muscles": [
+        0.6,
+        0.0,
+        0.6,
+        0.0
+      ]
+    },
+    {
+      "physical_frame": 6,
+      "act_added_memory_frames": 0,
+      "recorded_frames": 8,
+      "shared_clock": 16,
+      "actual_muscles": [
+        0.6,
+        0.0,
+        0.6,
+        0.0
+      ]
+    },
+    {
+      "physical_frame": 7,
+      "act_added_memory_frames": 0,
+      "recorded_frames": 9,
+      "shared_clock": 18,
+      "actual_muscles": [
+        0.6,
+        0.0,
+        0.6,
+        0.0
+      ]
+    }
+  ],
+  "prepared_avoids_duplicate_recording": true,
+  "index_receives_actual_same_frame_external_pfc": true,
+  "invalid_outcome_rejections_with_entire_snapshot_unchanged": [
+    "nan_rgb",
+    "wrong_rgb_shape",
+    "nan_pcm",
+    "wrong_pcm_length",
+    "negative_distance",
+    "invalid_touch",
+    "private_position",
+    "private_target",
+    "different_applied_muscles",
+    "non_boolean_terminal"
+  ],
+  "invalid_act_rejections_with_entire_snapshot_unchanged": [
+    "nan_rgb",
+    "short_pcm",
+    "private_position",
+    "private_target"
+  ],
+  "learning": false,
+  "motor_learning_steps": 0,
+  "checkpoint_continuations": [
+    {
+      "kind": "prepared",
+      "continued_physical_frames": 10,
+      "added_recorded_frames": 10,
+      "added_time_steps": 20,
+      "full_snapshot_and_physics_equal_after_every_frame": true,
+      "checkpoint_bytes": 3443133,
+      "final_snapshot_sha256": "7ff912d6cc05a116df4be5ae12f43eaa7b626bc03040641f648ef95e79948b2e",
+      "trajectory": [
+        {
+          "frame": 0,
+          "muscles": [
+            0.6,
+            0.0,
+            0.6,
+            0.0
+          ],
+          "position": [
+            3.567551885245488,
+            4.0
+          ]
+        },
+        {
+          "frame": 1,
+          "muscles": [
+            0.6,
+            0.0,
+            0.6,
+            0.0
+          ],
+          "position": [
+            3.674904818349661,
+            4.0
+          ]
+        },
+        {
+          "frame": 2,
+          "muscles": [
+            0.6,
+            0.0,
+            0.6,
+            0.0
+          ],
+          "position": [
+            3.7865200174827427,
+            4.0
+          ]
+        },
+        {
+          "frame": 3,
+          "muscles": [
+            0.6,
+            0.0,
+            0.6,
+            0.0
+          ],
+          "position": [
+            3.9016982281477817,
+            4.0
+          ]
+        },
+        {
+          "frame": 4,
+          "muscles": [
+            0.6,
+            0.0,
+            0.6,
+            0.0
+          ],
+          "position": [
+            4.019854913429256,
+            4.0
+          ]
+        },
+        {
+          "frame": 5,
+          "muscles": [
+            0.6,
+            0.0,
+            0.6,
+            0.0
+          ],
+          "position": [
+            4.140501433773319,
+            4.0
+          ]
+        },
+        {
+          "frame": 6,
+          "muscles": [
+            0.6,
+            0.0,
+            0.6,
+            0.0
+          ],
+          "position": [
+            4.263229314356165,
+            4.0
+          ]
+        },
+        {
+          "frame": 7,
+          "muscles": [
+            0.6,
+            0.0,
+            0.6,
+            0.0
+          ],
+          "position": [
+            4.387697093500443,
+            4.0
+          ]
+        },
+        {
+          "frame": 8,
+          "muscles": [
+            0.6,
+            0.0,
+            0.6,
+            0.0
+          ],
+          "position": [
+            4.513619328700745,
+            4.0
+          ]
+        },
+        {
+          "frame": 9,
+          "muscles": [
+            0.0,
+            0.3,
+            0.3,
+            0.0
+          ],
+          "position": [
+            4.634425685181835,
+            4.000006590817823
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "pending",
+      "continued_physical_frames": 10,
+      "added_recorded_frames": 10,
+      "added_time_steps": 20,
+      "full_snapshot_and_physics_equal_after_every_frame": true,
+      "checkpoint_bytes": 3441071,
+      "final_snapshot_sha256": "f7c715b7b612fe742802507f34d4b5606220b5dff2dd688adc1b1f1f1d1c1ad9",
+      "trajectory": [
+        {
+          "frame": 0,
+          "muscles": [
+            0.0,
+            0.3,
+            0.3,
+            0.0
+          ],
+          "position": [
+            4.737924302593418,
+            4.000037621570889
+          ]
+        },
+        {
+          "frame": 1,
+          "muscles": [
+            0.0,
+            0.3,
+            0.3,
+            0.0
+          ],
+          "position": [
+            4.824648989567227,
+            4.000075750560253
+          ]
+        },
+        {
+          "frame": 2,
+          "muscles": [
+            0.0,
+            0.3,
+            0.3,
+            0.0
+          ],
+          "position": [
+            4.897162626925412,
+            4.000110035457947
+          ]
+        },
+        {
+          "frame": 3,
+          "muscles": [
+            0.0,
+            0.3,
+            0.3,
+            0.0
+          ],
+          "position": [
+            4.957781242375759,
+            4.000139032977596
+          ]
+        },
+        {
+          "frame": 4,
+          "muscles": [
+            0.0,
+            0.3,
+            0.3,
+            0.0
+          ],
+          "position": [
+            5.008455057531497,
+            4.000163313060216
+          ]
+        },
+        {
+          "frame": 5,
+          "muscles": [
+            0.0,
+            0.3,
+            0.3,
+            0.0
+          ],
+          "position": [
+            5.050815487878041,
+            4.000183614084575
+          ]
+        },
+        {
+          "frame": 6,
+          "muscles": [
+            0.0,
+            0.3,
+            0.3,
+            0.0
+          ],
+          "position": [
+            5.086226394541403,
+            4.000200585011774
+          ]
+        },
+        {
+          "frame": 7,
+          "muscles": [
+            0.0,
+            0.3,
+            0.3,
+            0.0
+          ],
+          "position": [
+            5.1158278948073965,
+            4.0002147717809535
+          ]
+        },
+        {
+          "frame": 8,
+          "muscles": [
+            0.0,
+            0.3,
+            0.3,
+            0.0
+          ],
+          "position": [
+            5.140573062307247,
+            4.000226631115427
+          ]
+        },
+        {
+          "frame": 9,
+          "muscles": [
+            0.0,
+            0.3,
+            0.3,
+            0.0
+          ],
+          "position": [
+            5.161258612330537,
+            4.0002365448436334
+          ]
+        }
+      ]
+    }
+  ],
+  "two_branches_from_one_snapshot_are_isolated": {
+    "prepared_flags_muscles_info_independent": true,
+    "pending_flags_muscles_learning_info_independent": true,
+    "source_snapshot_unmodified": true,
+    "scope": "Ownership-only mutation of a genuine pending proposal; no mutated action executed or learned."
+  },
+  "terminal_real_outcome_recorded_once": true,
+  "terminal_memory_uses_actual_execution": true,
+  "terminal_has_no_pending_or_prepared_action": true,
+  "terminal_does_not_consume_exploration_rng_or_sequence": true,
+  "adapter_alone_ignores_extra_keys": true,
+  "brain_entry_rejects_private_fields_before_any_state_change": true,
+  "extra_private_keys_change_packet_digest": false,
+  "issues": [],
+  "elapsed_seconds": 1.2586955999977363,
+  "operational_limits": [
+    "Changing flags after an observation is already prepared does not retroactively change its cached next action; set ablations before processing that observation.",
+    "Frozen evaluation advances the single timeline and current modality activity but does not permanently learn new memory weights."
+  ],
+  "scope": "Short frozen-plasticity interface audit, not learned recall quality or navigation."
+}

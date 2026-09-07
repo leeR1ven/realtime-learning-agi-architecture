@@ -1,0 +1,557 @@
+{
+  "status": "complete",
+  "source_report": "F:\\一种AGI架构\\原架构闭环\\results\\continuous_baseline_1200.json",
+  "source_report_sha256": "c4797f06c4bac9c1e4fb5ff8253905e7ef38987f6e8f1d0b6540b8e892f3815b",
+  "audited_runner_sha256": "0fa2e35cba608b7afc5509aebd9bd0d9ea166398d6e50fb6ab9541a3dad660d1",
+  "base_life_sha256": "6717be86ecffd6157f719c945911fee05b152d8d111db8fe182fcff434b550ca",
+  "source_report_status": "complete",
+  "continuous_steps": 1200,
+  "initial_clock": 98,
+  "final_clock": 2500,
+  "chronological_catalog_and_physical_time_exact": true,
+  "starting_saved_references": 49,
+  "continuous_actual_catalog_entries": 1201,
+  "initial_catalog_read_only": true,
+  "corrected_checks": [
+    {
+      "stage": 300,
+      "known_cue_count": 6,
+      "reported_first_initial": 5,
+      "reported_first_final": 5,
+      "corrected_first": {
+        "initial": {
+          "correct": 6
+        },
+        "final": {
+          "correct": 6
+        }
+      },
+      "all_probe_frames": {
+        "initial": {
+          "correct": 48
+        },
+        "final": {
+          "correct": 48
+        }
+      },
+      "changed_scores": [
+        {
+          "frequency": 220.0,
+          "color": "red",
+          "frame": 0,
+          "phase": "final",
+          "time": 0,
+          "old_correct": false,
+          "independently_correct": true,
+          "cells": 44,
+          "reference_source": "baseline_saved_reference"
+        },
+        {
+          "frequency": 220.0,
+          "color": "red",
+          "frame": 1,
+          "phase": "final",
+          "time": 0,
+          "old_correct": false,
+          "independently_correct": true,
+          "cells": 44,
+          "reference_source": "baseline_saved_reference"
+        },
+        {
+          "frequency": 220.0,
+          "color": "red",
+          "frame": 2,
+          "phase": "final",
+          "time": 0,
+          "old_correct": false,
+          "independently_correct": true,
+          "cells": 44,
+          "reference_source": "baseline_saved_reference"
+        },
+        {
+          "frequency": 220.0,
+          "color": "red",
+          "frame": 3,
+          "phase": "final",
+          "time": 0,
+          "old_correct": false,
+          "independently_correct": true,
+          "cells": 44,
+          "reference_source": "baseline_saved_reference"
+        },
+        {
+          "frequency": 220.0,
+          "color": "red",
+          "frame": 4,
+          "phase": "final",
+          "time": 0,
+          "old_correct": false,
+          "independently_correct": true,
+          "cells": 44,
+          "reference_source": "baseline_saved_reference"
+        },
+        {
+          "frequency": 220.0,
+          "color": "red",
+          "frame": 5,
+          "phase": "final",
+          "time": 0,
+          "old_correct": false,
+          "independently_correct": true,
+          "cells": 44,
+          "reference_source": "baseline_saved_reference"
+        },
+        {
+          "frequency": 220.0,
+          "color": "red",
+          "frame": 6,
+          "phase": "initial",
+          "time": 0,
+          "old_correct": false,
+          "independently_correct": true,
+          "cells": 44,
+          "reference_source": "baseline_saved_reference"
+        },
+        {
+          "frequency": 220.0,
+          "color": "red",
+          "frame": 6,
+          "phase": "final",
+          "time": 0,
+          "old_correct": false,
+          "independently_correct": true,
+          "cells": 44,
+          "reference_source": "baseline_saved_reference"
+        },
+        {
+          "frequency": 220.0,
+          "color": "red",
+          "frame": 7,
+          "phase": "initial",
+          "time": 0,
+          "old_correct": false,
+          "independently_correct": true,
+          "cells": 44,
+          "reference_source": "baseline_saved_reference"
+        },
+        {
+          "frequency": 220.0,
+          "color": "red",
+          "frame": 7,
+          "phase": "final",
+          "time": 0,
+          "old_correct": false,
+          "independently_correct": true,
+          "cells": 44,
+          "reference_source": "baseline_saved_reference"
+        },
+        {
+          "frequency": 660.0,
+          "color": "blue",
+          "frame": 0,
+          "phase": "initial",
+          "time": 44,
+          "old_correct": false,
+          "independently_correct": true,
+          "cells": 54,
+          "reference_source": "baseline_saved_reference"
+        },
+        {
+          "frequency": 660.0,
+          "color": "blue",
+          "frame": 1,
+          "phase": "initial",
+          "time": 44,
+          "old_correct": false,
+          "independently_correct": true,
+          "cells": 54,
+          "reference_source": "baseline_saved_reference"
+        },
+        {
+          "frequency": 660.0,
+          "color": "blue",
+          "frame": 2,
+          "phase": "initial",
+          "time": 44,
+          "old_correct": false,
+          "independently_correct": true,
+          "cells": 54,
+          "reference_source": "baseline_saved_reference"
+        },
+        {
+          "frequency": 660.0,
+          "color": "blue",
+          "frame": 3,
+          "phase": "initial",
+          "time": 44,
+          "old_correct": false,
+          "independently_correct": true,
+          "cells": 54,
+          "reference_source": "baseline_saved_reference"
+        },
+        {
+          "frequency": 660.0,
+          "color": "blue",
+          "frame": 4,
+          "phase": "initial",
+          "time": 44,
+          "old_correct": false,
+          "independently_correct": true,
+          "cells": 54,
+          "reference_source": "baseline_saved_reference"
+        },
+        {
+          "frequency": 660.0,
+          "color": "blue",
+          "frame": 5,
+          "phase": "initial",
+          "time": 44,
+          "old_correct": false,
+          "independently_correct": true,
+          "cells": 54,
+          "reference_source": "baseline_saved_reference"
+        }
+      ]
+    },
+    {
+      "stage": 600,
+      "known_cue_count": 6,
+      "reported_first_initial": 5,
+      "reported_first_final": 2,
+      "corrected_first": {
+        "initial": {
+          "correct": 6
+        },
+        "final": {
+          "wrong_color": 3,
+          "correct": 2,
+          "no_recall": 1
+        }
+      },
+      "all_probe_frames": {
+        "initial": {
+          "correct": 40,
+          "wrong_color": 8
+        },
+        "final": {
+          "wrong_color": 30,
+          "no_recall": 2,
+          "correct": 16
+        }
+      },
+      "changed_scores": [
+        {
+          "frequency": 660.0,
+          "color": "blue",
+          "frame": 0,
+          "phase": "initial",
+          "time": 44,
+          "old_correct": false,
+          "independently_correct": true,
+          "cells": 54,
+          "reference_source": "baseline_saved_reference"
+        },
+        {
+          "frequency": 660.0,
+          "color": "blue",
+          "frame": 1,
+          "phase": "initial",
+          "time": 44,
+          "old_correct": false,
+          "independently_correct": true,
+          "cells": 54,
+          "reference_source": "baseline_saved_reference"
+        },
+        {
+          "frequency": 660.0,
+          "color": "blue",
+          "frame": 2,
+          "phase": "initial",
+          "time": 44,
+          "old_correct": false,
+          "independently_correct": true,
+          "cells": 54,
+          "reference_source": "baseline_saved_reference"
+        },
+        {
+          "frequency": 660.0,
+          "color": "blue",
+          "frame": 3,
+          "phase": "initial",
+          "time": 44,
+          "old_correct": false,
+          "independently_correct": true,
+          "cells": 54,
+          "reference_source": "baseline_saved_reference"
+        },
+        {
+          "frequency": 660.0,
+          "color": "blue",
+          "frame": 4,
+          "phase": "initial",
+          "time": 44,
+          "old_correct": false,
+          "independently_correct": true,
+          "cells": 54,
+          "reference_source": "baseline_saved_reference"
+        },
+        {
+          "frequency": 660.0,
+          "color": "blue",
+          "frame": 5,
+          "phase": "initial",
+          "time": 44,
+          "old_correct": false,
+          "independently_correct": true,
+          "cells": 54,
+          "reference_source": "baseline_saved_reference"
+        }
+      ]
+    },
+    {
+      "stage": 900,
+      "known_cue_count": 6,
+      "reported_first_initial": 5,
+      "reported_first_final": 2,
+      "corrected_first": {
+        "initial": {
+          "correct": 6
+        },
+        "final": {
+          "wrong_color": 3,
+          "correct": 2,
+          "no_recall": 1
+        }
+      },
+      "all_probe_frames": {
+        "initial": {
+          "correct": 40,
+          "wrong_color": 7,
+          "no_recall": 1
+        },
+        "final": {
+          "wrong_color": 26,
+          "correct": 16,
+          "no_recall": 6
+        }
+      },
+      "changed_scores": [
+        {
+          "frequency": 660.0,
+          "color": "blue",
+          "frame": 0,
+          "phase": "initial",
+          "time": 44,
+          "old_correct": false,
+          "independently_correct": true,
+          "cells": 54,
+          "reference_source": "baseline_saved_reference"
+        },
+        {
+          "frequency": 660.0,
+          "color": "blue",
+          "frame": 1,
+          "phase": "initial",
+          "time": 44,
+          "old_correct": false,
+          "independently_correct": true,
+          "cells": 54,
+          "reference_source": "baseline_saved_reference"
+        },
+        {
+          "frequency": 660.0,
+          "color": "blue",
+          "frame": 2,
+          "phase": "initial",
+          "time": 44,
+          "old_correct": false,
+          "independently_correct": true,
+          "cells": 54,
+          "reference_source": "baseline_saved_reference"
+        },
+        {
+          "frequency": 660.0,
+          "color": "blue",
+          "frame": 3,
+          "phase": "initial",
+          "time": 44,
+          "old_correct": false,
+          "independently_correct": true,
+          "cells": 54,
+          "reference_source": "baseline_saved_reference"
+        },
+        {
+          "frequency": 660.0,
+          "color": "blue",
+          "frame": 4,
+          "phase": "initial",
+          "time": 44,
+          "old_correct": false,
+          "independently_correct": true,
+          "cells": 54,
+          "reference_source": "baseline_saved_reference"
+        },
+        {
+          "frequency": 660.0,
+          "color": "blue",
+          "frame": 5,
+          "phase": "initial",
+          "time": 44,
+          "old_correct": false,
+          "independently_correct": true,
+          "cells": 54,
+          "reference_source": "baseline_saved_reference"
+        }
+      ]
+    },
+    {
+      "stage": 1200,
+      "known_cue_count": 6,
+      "reported_first_initial": 5,
+      "reported_first_final": 2,
+      "corrected_first": {
+        "initial": {
+          "correct": 6
+        },
+        "final": {
+          "wrong_color": 4,
+          "correct": 2
+        }
+      },
+      "all_probe_frames": {
+        "initial": {
+          "correct": 40,
+          "wrong_color": 8
+        },
+        "final": {
+          "wrong_color": 32,
+          "correct": 16
+        }
+      },
+      "changed_scores": [
+        {
+          "frequency": 660.0,
+          "color": "blue",
+          "frame": 0,
+          "phase": "initial",
+          "time": 44,
+          "old_correct": false,
+          "independently_correct": true,
+          "cells": 54,
+          "reference_source": "baseline_saved_reference"
+        },
+        {
+          "frequency": 660.0,
+          "color": "blue",
+          "frame": 1,
+          "phase": "initial",
+          "time": 44,
+          "old_correct": false,
+          "independently_correct": true,
+          "cells": 54,
+          "reference_source": "baseline_saved_reference"
+        },
+        {
+          "frequency": 660.0,
+          "color": "blue",
+          "frame": 2,
+          "phase": "initial",
+          "time": 44,
+          "old_correct": false,
+          "independently_correct": true,
+          "cells": 54,
+          "reference_source": "baseline_saved_reference"
+        },
+        {
+          "frequency": 660.0,
+          "color": "blue",
+          "frame": 3,
+          "phase": "initial",
+          "time": 44,
+          "old_correct": false,
+          "independently_correct": true,
+          "cells": 54,
+          "reference_source": "baseline_saved_reference"
+        },
+        {
+          "frequency": 660.0,
+          "color": "blue",
+          "frame": 4,
+          "phase": "initial",
+          "time": 44,
+          "old_correct": false,
+          "independently_correct": true,
+          "cells": 54,
+          "reference_source": "baseline_saved_reference"
+        },
+        {
+          "frequency": 660.0,
+          "color": "blue",
+          "frame": 5,
+          "phase": "initial",
+          "time": 44,
+          "old_correct": false,
+          "independently_correct": true,
+          "cells": 54,
+          "reference_source": "baseline_saved_reference"
+        }
+      ]
+    }
+  ],
+  "reference_limit": "Old nonempty cells are baseline saved memory references, not reconstructed raw sensations.",
+  "findings": [
+    {
+      "severity": "scoring_bug",
+      "lines": [
+        177,
+        91
+      ],
+      "detail": "Empty starting catalog labels genuine old-time recall incorrect; independent report preserves and corrects those scores."
+    },
+    {
+      "severity": "scope",
+      "lines": [
+        177,
+        221
+      ],
+      "detail": "Original direct anchors begin after continuation start, so direct_anchor scores do not by themselves test earlier life memories."
+    },
+    {
+      "severity": "scope",
+      "lines": [
+        243
+      ],
+      "detail": "LifeSession.save preserves its UI catalog, while new strict references live separately in this report; resume audits need both."
+    },
+    {
+      "severity": "boundary",
+      "lines": [
+        244
+      ],
+      "detail": "steps+1 clock assertion assumes first present changes prepared packet; true in this run, not for every possible base life."
+    }
+  ],
+  "assess_complete_main_life_state_unchanged": {
+    "before_sha256": "e8f0d00615464dca36cfe984b2963c2f6df0a5662ea25e210af9412cd73ade38",
+    "after_sha256": "e8f0d00615464dca36cfe984b2963c2f6df0a5662ea25e210af9412cd73ade38",
+    "frozen_clone_physics_frames": 12,
+    "no_training": true,
+    "direct_anchors": 3,
+    "includes_three_endogenous_clone_microsteps": true
+  },
+  "actual_raw_corpus_alignment": {
+    "corpus_sha256": "4a777f525c9fb4cb507245654ec1cf0519d4918508b3f89c30a6dafabc6908ff",
+    "frames": 1200,
+    "failures": [],
+    "rgb_color_rays_and_PCM_spectrum_agree_with_catalog": true,
+    "coexposure_frames": {
+      "220:red": 160,
+      "440:green": 160,
+      "660:blue": 160,
+      "990:red": 112,
+      "1320:green": 104,
+      "1750:blue": 104
+    },
+    "records_include_true_final_outcome_but_corpus_contains_preaction_frames_only": true
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "passed": false,
+  "scope": "Small disposable integration units, not navigation success or new training.",
+  "checks": {
+    "pending_and_grounding": {
+      "passed": true,
+      "evidence": {
+        "act_does_not_record_or_learn": true,
+        "pending_reentry_rejected": true,
+        "outcome_pairing_and_learning_mode_enforced": true,
+        "observed_transitions": 1,
+        "strong_imagined_activity_excluded_from_learned_pre_post_edges": true,
+        "actual_pre_active": 11,
+        "imagined_pfc_active": 128,
+        "double_outcome_rejected": true
+      }
+    },
+    "invalid_feedback_atomicity": {
+      "passed": false,
+      "error": "AssertionError: Rejected call partially mutated the controller"
+    },
+    "terminal_observation": {
+      "passed": true,
+      "evidence": {
+        "real_first_arrival_terminal": true,
+        "post_terminal_sensation_saved": true,
+        "decisions": 1,
+        "outcomes": 1,
+        "phantom_decisions": 0,
+        "reward": 0.0
+      }
+    },
+    "fact_value_rule_separation": {
+      "passed": true,
+      "evidence": {
+        "unrewarded_facts_recalled": 6,
+        "same_rule_positive_value_recalled": 7,
+        "cross_rule_shared_sensory_cells": 7,
+        "cross_rule_facts_recalled": 8,
+        "cross_rule_motor_value_events": 0,
+        "synthetic_positive_value_fixture": true
+      }
+    },
+    "capacity_retirement": {
+      "passed": true,
+      "evidence": {
+        "fixtures": [
+          {
+            "capacity": 1,
+            "new_facts_after_all_slots_rewarded": 8,
+            "retirements_before_reset": 8,
+            "dangling_or_asymmetric_links": 0,
+            "reset_starts_new_chain": true,
+            "core_learned_connections_survive": true
+          },
+          {
+            "capacity": 4,
+            "new_facts_after_all_slots_rewarded": 8,
+            "retirements_before_reset": 8,
+            "dangling_or_asymmetric_links": 0,
+            "reset_starts_new_chain": true,
+            "core_learned_connections_survive": true
+          }
+        ],
+        "raw_fact_retirement_is_explicit_not_lossless_archiving": true
+      }
+    },
+    "motor_competition": {
+      "passed": true,
+      "evidence": {
+        "synthetic_equal_left_right_memory_fixture": true,
+        "before": [
+          0.15000000596046448,
+          0.15000000596046448,
+          0.15000000596046448,
+          0.15000000596046448
+        ],
+        "after": [
+          0.0,
+          0.30000001192092896,
+          0.30000001192092896,
+          0.0
+        ],
+        "winner": 3,
+        "group_mechanism": "Five innate template groups with argmax competition; not an additional learned motor vocabulary."
+      }
+    },
+    "pending_save_restore_and_freeze": {
+      "passed": true,
+      "evidence": {
+        "pending_decision_saved_and_resumed_once": true,
+        "online_continuation_frames": 10,
+        "includes_real_midway_audio_change": true,
+        "complete_core_snapshots_and_facts_equal": true,
+        "frozen_physical_frames": 6,
+        "frozen_facts_synapses_and_maintenance_unchanged": true,
+        "temporary_archive_removed": true
+      }
+    },
+    "input_boundary": {
+      "passed": true,
+      "evidence": {
+        "environment_emits_only_sensors_and_pcm": true,
+        "injected_private_labels_coordinates_and_packet_reward_ignored": true,
+        "explicit_outcome_reward_is_only_value_input": true
+      }
+    }
+  },
+  "wall_seconds": 0.3933271000005334,
+  "source_sha256": {
+    "audit_integrated_controller.py": "cad95957499eada4cb04ac6b675248848e94c882256c68932cfad5d423c5a487",
+    "integrated_controller.py": "06a3c2218eb5b12e429bbe104f6139f224c8dd4badfb7bb1ad757da98f4dd4cf",
+    "recurrent_core.py": "849847278d89453eef8f2a54bbfe67daa45c77c035cacbed7d578a3f69e22b4d",
+    "integration_environment.py": "77df362438da943e9deb793767eb6026550a1fbe0b38ca1dc17ae36954a8daf9"
+  }
+}

@@ -1,0 +1,418 @@
+{
+  "status": "complete",
+  "source_report": "F:\\一种AGI架构\\原架构闭环\\results\\active_body_soft_wide_600.json",
+  "unchanged_input_sha256": {
+    "F:\\一种AGI架构\\原架构闭环\\results\\active_body_soft_wide_600.json": "a7cf582269259fe0c679efe359d8cdf3101922d72f48beeae24aaba6fae5e2a8",
+    "原架构闭环\\results\\continuous_balanced_extended_3600.json": "87136bb959367ece1efb1a6e636606708894c5782045f63b2c0c9032da67bdd5",
+    "原架构闭环\\results\\active_body_soft_wide_600.npz": "cd5a4ade1be8f5ad2fb4ca461592862576778eb2ee0763f975e77ee4cdb2c7bd",
+    "原架构闭环\\results\\continuous_balanced_extended_3600.npz": "2ce7dbff6147c4ab4b123e7e6af7085dda3f0ef1744b6383efe7602b6c64fc8a"
+  },
+  "baseline_reference_count": 4851,
+  "reference_origin": "Previous complete report catalog; raw earlier entries retained without relabelling.",
+  "old_content_retention_from_actual_CSR": {
+    "visual": {
+      "correct": 4851,
+      "total": 4851,
+      "empty_references": 0,
+      "empty_preserved": 0,
+      "minimum_expected_weight": 0.9772568626563747
+    },
+    "audio": {
+      "correct": 3250,
+      "total": 3250,
+      "empty_references": 1601,
+      "empty_preserved": 1601,
+      "minimum_expected_weight": 0.9910381481909833
+    },
+    "motor": {
+      "correct": 4851,
+      "total": 4851,
+      "empty_references": 0,
+      "empty_preserved": 0,
+      "minimum_expected_weight": 0.9743287543394147
+    }
+  },
+  "old_content_mismatches": [],
+  "same_event_content_recount": [
+    {
+      "stage": 300,
+      "known_cue_count": 18,
+      "reported_first_initial": 18,
+      "reported_first_final": 0,
+      "corrected_first": {
+        "initial": {
+          "correct": 18
+        },
+        "final": {
+          "no_recall": 18
+        }
+      },
+      "all_probe_frames": {
+        "initial": {
+          "correct": 108,
+          "no_recall": 36
+        },
+        "final": {
+          "no_recall": 144
+        }
+      },
+      "changed_scores": []
+    },
+    {
+      "stage": 600,
+      "known_cue_count": 18,
+      "reported_first_initial": 18,
+      "reported_first_final": 0,
+      "corrected_first": {
+        "initial": {
+          "correct": 18
+        },
+        "final": {
+          "no_recall": 18
+        }
+      },
+      "all_probe_frames": {
+        "initial": {
+          "correct": 108,
+          "no_recall": 36
+        },
+        "final": {
+          "no_recall": 144
+        }
+      },
+      "changed_scores": []
+    }
+  ],
+  "cue_state_distinctness": [
+    {
+      "stage": 300,
+      "cue_count": 18,
+      "distinct_first_thought_sets": 1,
+      "distinct_first_final_visual_sets": 1,
+      "distinct_first_muscle_vectors": 1,
+      "first_thought_cell_counts": [
+        334
+      ],
+      "distinct_all_probe_frame_thought_sets": 1,
+      "distinct_all_probe_frame_muscle_vectors": 1,
+      "unique_first_muscle_vectors": [
+        [
+          0.125,
+          0.3,
+          0.55,
+          0.3
+        ]
+      ],
+      "all_probe_final_indices_none": true,
+      "all_probe_final_visual_cells_empty": true,
+      "independent_original_index_vote": [
+        {
+          "frequencies": [
+            220.0,
+            440.0,
+            660.0,
+            990.0,
+            1320.0,
+            1750.0,
+            307.0,
+            777.0,
+            2047.0,
+            2503.0,
+            2999.0,
+            3331.0,
+            1127.0,
+            1513.0,
+            1877.0,
+            2253.0,
+            2751.0,
+            3751.0
+          ],
+          "thought_cell_count": 334,
+          "thought_cells_sha256": "137a851b45931a963ead6f63c65dd6bb6a62565a8763a46d6af981dc75357699",
+          "best_available_time": 468,
+          "best_votes": 258,
+          "relative_vote": 0.7724550898203593,
+          "relative_threshold": 0.8,
+          "accepted_time": null
+        }
+      ],
+      "first_final_content_nonmatches": [
+        {
+          "frequency": 220.0,
+          "expected_color": "red",
+          "time": null,
+          "recalled_colors": []
+        },
+        {
+          "frequency": 440.0,
+          "expected_color": "green",
+          "time": null,
+          "recalled_colors": []
+        },
+        {
+          "frequency": 660.0,
+          "expected_color": "blue",
+          "time": null,
+          "recalled_colors": []
+        },
+        {
+          "frequency": 990.0,
+          "expected_color": "red",
+          "time": null,
+          "recalled_colors": []
+        },
+        {
+          "frequency": 1320.0,
+          "expected_color": "green",
+          "time": null,
+          "recalled_colors": []
+        },
+        {
+          "frequency": 1750.0,
+          "expected_color": "blue",
+          "time": null,
+          "recalled_colors": []
+        },
+        {
+          "frequency": 307.0,
+          "expected_color": "red",
+          "time": null,
+          "recalled_colors": []
+        },
+        {
+          "frequency": 777.0,
+          "expected_color": "green",
+          "time": null,
+          "recalled_colors": []
+        },
+        {
+          "frequency": 2047.0,
+          "expected_color": "blue",
+          "time": null,
+          "recalled_colors": []
+        },
+        {
+          "frequency": 2503.0,
+          "expected_color": "red",
+          "time": null,
+          "recalled_colors": []
+        },
+        {
+          "frequency": 2999.0,
+          "expected_color": "green",
+          "time": null,
+          "recalled_colors": []
+        },
+        {
+          "frequency": 3331.0,
+          "expected_color": "blue",
+          "time": null,
+          "recalled_colors": []
+        },
+        {
+          "frequency": 1127.0,
+          "expected_color": "red",
+          "time": null,
+          "recalled_colors": []
+        },
+        {
+          "frequency": 1513.0,
+          "expected_color": "green",
+          "time": null,
+          "recalled_colors": []
+        },
+        {
+          "frequency": 1877.0,
+          "expected_color": "blue",
+          "time": null,
+          "recalled_colors": []
+        },
+        {
+          "frequency": 2253.0,
+          "expected_color": "red",
+          "time": null,
+          "recalled_colors": []
+        },
+        {
+          "frequency": 2751.0,
+          "expected_color": "green",
+          "time": null,
+          "recalled_colors": []
+        },
+        {
+          "frequency": 3751.0,
+          "expected_color": "blue",
+          "time": null,
+          "recalled_colors": []
+        }
+      ]
+    },
+    {
+      "stage": 600,
+      "cue_count": 18,
+      "distinct_first_thought_sets": 1,
+      "distinct_first_final_visual_sets": 1,
+      "distinct_first_muscle_vectors": 1,
+      "first_thought_cell_counts": [
+        334
+      ],
+      "distinct_all_probe_frame_thought_sets": 1,
+      "distinct_all_probe_frame_muscle_vectors": 1,
+      "unique_first_muscle_vectors": [
+        [
+          0.125,
+          0.3,
+          0.55,
+          0.3
+        ]
+      ],
+      "all_probe_final_indices_none": true,
+      "all_probe_final_visual_cells_empty": true,
+      "independent_original_index_vote": [
+        {
+          "frequencies": [
+            220.0,
+            440.0,
+            660.0,
+            990.0,
+            1320.0,
+            1750.0,
+            307.0,
+            777.0,
+            2047.0,
+            2503.0,
+            2999.0,
+            3331.0,
+            1127.0,
+            1513.0,
+            1877.0,
+            2253.0,
+            2751.0,
+            3751.0
+          ],
+          "thought_cell_count": 334,
+          "thought_cells_sha256": "137a851b45931a963ead6f63c65dd6bb6a62565a8763a46d6af981dc75357699",
+          "best_available_time": 10530,
+          "best_votes": 262,
+          "relative_vote": 0.7844311377245509,
+          "relative_threshold": 0.8,
+          "accepted_time": null
+        }
+      ],
+      "first_final_content_nonmatches": [
+        {
+          "frequency": 220.0,
+          "expected_color": "red",
+          "time": null,
+          "recalled_colors": []
+        },
+        {
+          "frequency": 440.0,
+          "expected_color": "green",
+          "time": null,
+          "recalled_colors": []
+        },
+        {
+          "frequency": 660.0,
+          "expected_color": "blue",
+          "time": null,
+          "recalled_colors": []
+        },
+        {
+          "frequency": 990.0,
+          "expected_color": "red",
+          "time": null,
+          "recalled_colors": []
+        },
+        {
+          "frequency": 1320.0,
+          "expected_color": "green",
+          "time": null,
+          "recalled_colors": []
+        },
+        {
+          "frequency": 1750.0,
+          "expected_color": "blue",
+          "time": null,
+          "recalled_colors": []
+        },
+        {
+          "frequency": 307.0,
+          "expected_color": "red",
+          "time": null,
+          "recalled_colors": []
+        },
+        {
+          "frequency": 777.0,
+          "expected_color": "green",
+          "time": null,
+          "recalled_colors": []
+        },
+        {
+          "frequency": 2047.0,
+          "expected_color": "blue",
+          "time": null,
+          "recalled_colors": []
+        },
+        {
+          "frequency": 2503.0,
+          "expected_color": "red",
+          "time": null,
+          "recalled_colors": []
+        },
+        {
+          "frequency": 2999.0,
+          "expected_color": "green",
+          "time": null,
+          "recalled_colors": []
+        },
+        {
+          "frequency": 3331.0,
+          "expected_color": "blue",
+          "time": null,
+          "recalled_colors": []
+        },
+        {
+          "frequency": 1127.0,
+          "expected_color": "red",
+          "time": null,
+          "recalled_colors": []
+        },
+        {
+          "frequency": 1513.0,
+          "expected_color": "green",
+          "time": null,
+          "recalled_colors": []
+        },
+        {
+          "frequency": 1877.0,
+          "expected_color": "blue",
+          "time": null,
+          "recalled_colors": []
+        },
+        {
+          "frequency": 2253.0,
+          "expected_color": "red",
+          "time": null,
+          "recalled_colors": []
+        },
+        {
+          "frequency": 2751.0,
+          "expected_color": "green",
+          "time": null,
+          "recalled_colors": []
+        },
+        {
+          "frequency": 3751.0,
+          "expected_color": "blue",
+          "time": null,
+          "recalled_colors": []
+        }
+      ]
+    }
+  ],
+  "distinct_thought_patterns_across_all_saved_probe_frames": 1,
+  "index_vote_audit_method": "Original set-intersection votes/gap/insertion-order rule; each historical check uses its append-only index prefix before the recorded clock, with no ring wrap.",
+  "no_model_execution_or_learning": true,
+  "limit": "Neuron-set/content identity and action diversity only; none establishes correct goal-directed navigation or a failure of learned shortcuts."
+}

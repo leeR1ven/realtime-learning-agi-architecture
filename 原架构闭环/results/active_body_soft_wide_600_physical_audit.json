@@ -1,0 +1,46 @@
+{
+  "status": "complete",
+  "source_report": "F:\\一种AGI架构\\原架构闭环\\results\\active_body_soft_wide_600.json",
+  "unchanged_input_sha256": {
+    "F:\\一种AGI架构\\原架构闭环\\results\\active_body_soft_wide_600.json": "a7cf582269259fe0c679efe359d8cdf3101922d72f48beeae24aaba6fae5e2a8",
+    "原架构闭环\\results\\continuous_balanced_extended_3600.npz": "2ce7dbff6147c4ab4b123e7e6af7085dda3f0ef1744b6383efe7602b6c64fc8a",
+    "原架构闭环\\results\\active_body_soft_wide_600.npz": "cd5a4ade1be8f5ad2fb4ca461592862576778eb2ee0763f975e77ee4cdb2c7bd",
+    "原架构闭环\\results\\active_body_soft_wide_600_actual_sensors.npz": "4988ab2609065c29380c59e062589631f441d998006fb7453165334191801461"
+  },
+  "physical_frames_replayed_exact": 600,
+  "position_heading_speed_touch_and_applied_muscles_exact": true,
+  "next_frame_raw_body_data_exact_float32": true,
+  "final_world_matches_full_checkpoint": true,
+  "movement": {
+    "path_length": 21.467442022234295,
+    "net_displacement": 5.419174311280949,
+    "moving_steps": 600,
+    "contact_steps": 4,
+    "sources": {
+      "body_reflex": 36,
+      "pfc_time_motor_recall": 344,
+      "spontaneous_muscles": 220
+    }
+  },
+  "integrated_substep_path_length": 21.485890052216327,
+  "physics_contact_steps": 4,
+  "longest_stationary_run_steps": 0,
+  "fraction_stationary": 0.0,
+  "start_position": [
+    9.819999999990001,
+    3.2575824370767905
+  ],
+  "final_position": [
+    5.895271960523834,
+    6.994420677123503
+  ],
+  "elapsed_physical_seconds": 59.99999999994543,
+  "start_clock": 9702,
+  "final_clock": 10904,
+  "sensory_frame_delta": 601,
+  "one_shared_timeline": true,
+  "body_translation_observed": true,
+  "no_brain_training_or_teacher": true,
+  "no_position_velocity_or_heading_injection": true,
+  "limit": "Exact physics replay demonstrates actual body motion, not goal-directed or learned route correctness."
+}

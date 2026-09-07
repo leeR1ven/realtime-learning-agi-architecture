@@ -1,0 +1,22 @@
+{
+  "only_actual_wall_hits_colored_objects_occlude_normally": true,
+  "model_and_viewer_ray_rgb_identical": true,
+  "same_surface_color_across_camera_views": true,
+  "continuous_local_pigment": {
+    "maximum_RGB_change_per_centimetre": 0.0070383787597828595,
+    "observed_min": 0.28660864341325043,
+    "observed_max": 0.6489787200062764
+  },
+  "unchanged_16_threshold_color_receptors": {
+    "samples_on_one_fixed_wall": 510,
+    "original_uniform_wall_RGB_patterns": 1,
+    "textured_wall_RGB_patterns": 41,
+    "meaning": "Visible color distinctions survive existing quantization; this is not a full-observation ambiguity or learning test"
+  },
+  "120_identical_actions_exact_physics_audio_and_route_score": true,
+  "disabled_texture_exact_original_packet": true,
+  "route_change_cannot_change_visible_pigment": true,
+  "independent_texture_seed_changes_only_paint": true,
+  "renderer_surface_segments_available": 590,
+  "limit": "Adds visible local cues at unchanged 31 rays and RGB thresholds; learning improvement is untested. Formal experiment and viewer defaults remain unchanged."
+}

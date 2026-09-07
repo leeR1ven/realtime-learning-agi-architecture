@@ -1,0 +1,12 @@
+{
+  "old_index_threshold": 0.9,
+  "new_index_threshold": 0.8,
+  "memory_weights_and_index_unchanged": true,
+  "control_steps_preserved": 48,
+  "clock_preserved": 98,
+  "world_time_preserved": 4.79999999999992,
+  "prepared_next_action_preserved": true,
+  "rollback_snapshot": "F:\\一种AGI架构\\原架构闭环\\results\\living_before_index_margin.npz",
+  "previous_sha256": "670f68d042f190bbe1a4917ca8904ab4a1da4b1d4d064d5d68a05b4f4e6bfa31",
+  "updated_sha256": "c46b2525937c54b9f3927cdf32abb8b648712d7a2b137d8d57aea96d77a229dd"
+}

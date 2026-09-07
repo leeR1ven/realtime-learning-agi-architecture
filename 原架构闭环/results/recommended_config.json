@@ -1,0 +1,37 @@
+{
+  "adapter_kwargs": {
+    "threshold": 0.6,
+    "visual_threshold": 0.58,
+    "audio_threshold": 0.52,
+    "contrast_to_silence": true,
+    "motor_threshold": 0.52,
+    "motor_reverse_window": 20,
+    "motor_once": true,
+    "motor_levels": 40
+  },
+  "pfc_kwargs": {
+    "pfc_spread": 5,
+    "pfc_hidden_threshold": 0.55,
+    "pfc_output_threshold": 1.0
+  },
+  "widths": {
+    "visual": 2640,
+    "audio": 2560,
+    "motor": 320
+  },
+  "seed_protocol": [
+    2026,
+    2027,
+    2028
+  ],
+  "new_structure": "One fixed per-cell audio XOR-to-silence layer after the unchanged original auditory network; positive and negative deviations retain original cell identity.",
+  "original_parameter_changes": "Per-modality thresholds; original PFC spread/output threshold; 40 thermometer pairs per muscle and the original reverse-Hebb window distance 20; original one-shot update unchanged.",
+  "calibration_files": [
+    "calibration.json",
+    "calibration_contrast.json",
+    "calibration_motor.json",
+    "calibration_motor-wide.json",
+    "calibration_joint.json"
+  ],
+  "validation_action_rng_seed": 177401
+}

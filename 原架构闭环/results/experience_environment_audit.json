@@ -1,0 +1,94 @@
+{
+  "passed": true,
+  "model_training": false,
+  "teacher_actions": 0,
+  "continuous_exposure_probe_seconds": 8.399999999999913,
+  "joint_exposures": [
+    {
+      "beacon": "red",
+      "frequency_hz": 220.0,
+      "start_time": 0.0,
+      "audible_visible_frames": 6
+    },
+    {
+      "beacon": "green",
+      "frequency_hz": 777.0,
+      "start_time": 0.7000000000000005,
+      "audible_visible_frames": 6
+    },
+    {
+      "beacon": "blue",
+      "frequency_hz": 1503.0,
+      "start_time": 1.3999999999999921,
+      "audible_visible_frames": 6
+    },
+    {
+      "beacon": "red",
+      "frequency_hz": 220.0,
+      "start_time": 2.0999999999999774,
+      "audible_visible_frames": 6
+    },
+    {
+      "beacon": "green",
+      "frequency_hz": 777.0,
+      "start_time": 2.7999999999999625,
+      "audible_visible_frames": 6
+    },
+    {
+      "beacon": "blue",
+      "frequency_hz": 1503.0,
+      "start_time": 3.4999999999999476,
+      "audible_visible_frames": 6
+    },
+    {
+      "beacon": "red",
+      "frequency_hz": 220.0,
+      "start_time": 4.199999999999933,
+      "audible_visible_frames": 6
+    },
+    {
+      "beacon": "green",
+      "frequency_hz": 777.0,
+      "start_time": 4.899999999999918,
+      "audible_visible_frames": 6
+    },
+    {
+      "beacon": "blue",
+      "frequency_hz": 1503.0,
+      "start_time": 5.599999999999903,
+      "audible_visible_frames": 6
+    },
+    {
+      "beacon": "red",
+      "frequency_hz": 220.0,
+      "start_time": 6.299999999999888,
+      "audible_visible_frames": 6
+    },
+    {
+      "beacon": "green",
+      "frequency_hz": 777.0,
+      "start_time": 6.999999999999873,
+      "audible_visible_frames": 6
+    },
+    {
+      "beacon": "blue",
+      "frequency_hz": 1503.0,
+      "start_time": 7.699999999999858,
+      "audible_visible_frames": 6
+    }
+  ],
+  "actual_joint_frames": 72,
+  "sound_only_probe_frames": 12,
+  "same_world_identity_and_clock": true,
+  "sensor_whitelist_exact": true,
+  "sound_only_changes_only_pcm": true,
+  "private_target_and_legacy_tone_map_do_not_change_packet": true,
+  "arbitrary_777_hz_pcm_max_error": 1.7332502794120686e-10,
+  "exact_point6_stop": true,
+  "invisible_pairing_rejected_without_mutation": true,
+  "physical_and_observation_exact_comparison_frames": 57,
+  "physics_contact_frames": 34,
+  "texture_renderer_matches_sensor": true,
+  "no_automatic_reward_or_terminal": true,
+  "limitation": "Stimulus exposure and physical integrity checks do not establish learning or navigation."
+}

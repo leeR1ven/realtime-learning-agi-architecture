@@ -1,0 +1,103 @@
+{
+  "trusted_events_by_audio_signature": {
+    "1": 1104,
+    "2": 0,
+    "4": 1017
+  },
+  "audio_signature_meaning": {
+    "1": "red 220Hz",
+    "2": "green 440Hz",
+    "4": "blue 660Hz"
+  },
+  "shuffle_seed": 351,
+  "changed_forward_links": 13504,
+  "weights_sensory_memories_and_context_preserved": true,
+  "incoming_target_multisets_preserved_per_context": true,
+  "outcomes": [
+    {
+      "condition": "learned_matched_probe",
+      "target": "red",
+      "reached": true,
+      "steps": 663,
+      "contacts": 4
+    },
+    {
+      "condition": "learned_matched_probe",
+      "target": "green",
+      "reached": false,
+      "steps": 1200,
+      "contacts": 18
+    },
+    {
+      "condition": "learned_matched_probe",
+      "target": "blue",
+      "reached": false,
+      "steps": 1200,
+      "contacts": 8
+    },
+    {
+      "condition": "no_sequence",
+      "target": "red",
+      "reached": true,
+      "steps": 723,
+      "contacts": 1
+    },
+    {
+      "condition": "no_sequence",
+      "target": "green",
+      "reached": false,
+      "steps": 1200,
+      "contacts": 18
+    },
+    {
+      "condition": "no_sequence",
+      "target": "blue",
+      "reached": true,
+      "steps": 435,
+      "contacts": 1
+    },
+    {
+      "condition": "shuffled_sequence",
+      "target": "red",
+      "reached": false,
+      "steps": 1200,
+      "contacts": 0
+    },
+    {
+      "condition": "shuffled_sequence",
+      "target": "green",
+      "reached": false,
+      "steps": 1200,
+      "contacts": 18
+    },
+    {
+      "condition": "shuffled_sequence",
+      "target": "blue",
+      "reached": false,
+      "steps": 1200,
+      "contacts": 1
+    },
+    {
+      "condition": "no_recall_feedback",
+      "target": "red",
+      "reached": true,
+      "steps": 592,
+      "contacts": 36
+    },
+    {
+      "condition": "no_recall_feedback",
+      "target": "green",
+      "reached": false,
+      "steps": 1200,
+      "contacts": 18
+    },
+    {
+      "condition": "no_recall_feedback",
+      "target": "blue",
+      "reached": false,
+      "steps": 1200,
+      "contacts": 8
+    }
+  ],
+  "interpretation": "Directed order can change actions and this matched red outcome, but removing order improves overall success from 1/3 to 2/3. No general performance advantage or abstract prerequisite/subgoal learning is established."
+}

@@ -1,0 +1,945 @@
+{
+  "scope": "Existing prototype persistent PFC state, single-step causal intervention",
+  "brain_sha256": "46a340585491945f1c1e10d60cb6078ddab92d2b90f47c67abc9461d38b3eda8",
+  "checkpoint_sha256": "d1aa32ed2f53d3cef5c38a09ef08da2221f3b6e9688fe39ddb555f8b5d8efe5a",
+  "rows": [
+    {
+      "cue": -1,
+      "all_scores_identical": true,
+      "all_muscles_identical": true,
+      "predictions": [
+        {
+          "state": "empty",
+          "action": 1,
+          "muscles": [
+            0.6,
+            0.0,
+            0.6,
+            0.0
+          ],
+          "scores": [
+            0.08,
+            0.65,
+            0.0,
+            0.035,
+            0.025
+          ],
+          "next_thought_active": 33
+        },
+        {
+          "state": "all_active",
+          "action": 1,
+          "muscles": [
+            0.6,
+            0.0,
+            0.6,
+            0.0
+          ],
+          "scores": [
+            0.08,
+            0.65,
+            0.0,
+            0.035,
+            0.025
+          ],
+          "next_thought_active": 46
+        },
+        {
+          "state": "random_0",
+          "action": 1,
+          "muscles": [
+            0.6,
+            0.0,
+            0.6,
+            0.0
+          ],
+          "scores": [
+            0.08,
+            0.65,
+            0.0,
+            0.035,
+            0.025
+          ],
+          "next_thought_active": 33
+        },
+        {
+          "state": "random_1",
+          "action": 1,
+          "muscles": [
+            0.6,
+            0.0,
+            0.6,
+            0.0
+          ],
+          "scores": [
+            0.08,
+            0.65,
+            0.0,
+            0.035,
+            0.025
+          ],
+          "next_thought_active": 33
+        },
+        {
+          "state": "random_2",
+          "action": 1,
+          "muscles": [
+            0.6,
+            0.0,
+            0.6,
+            0.0
+          ],
+          "scores": [
+            0.08,
+            0.65,
+            0.0,
+            0.035,
+            0.025
+          ],
+          "next_thought_active": 33
+        },
+        {
+          "state": "random_3",
+          "action": 1,
+          "muscles": [
+            0.6,
+            0.0,
+            0.6,
+            0.0
+          ],
+          "scores": [
+            0.08,
+            0.65,
+            0.0,
+            0.035,
+            0.025
+          ],
+          "next_thought_active": 34
+        },
+        {
+          "state": "random_4",
+          "action": 1,
+          "muscles": [
+            0.6,
+            0.0,
+            0.6,
+            0.0
+          ],
+          "scores": [
+            0.08,
+            0.65,
+            0.0,
+            0.035,
+            0.025
+          ],
+          "next_thought_active": 33
+        },
+        {
+          "state": "random_5",
+          "action": 1,
+          "muscles": [
+            0.6,
+            0.0,
+            0.6,
+            0.0
+          ],
+          "scores": [
+            0.08,
+            0.65,
+            0.0,
+            0.035,
+            0.025
+          ],
+          "next_thought_active": 33
+        },
+        {
+          "state": "random_6",
+          "action": 1,
+          "muscles": [
+            0.6,
+            0.0,
+            0.6,
+            0.0
+          ],
+          "scores": [
+            0.08,
+            0.65,
+            0.0,
+            0.035,
+            0.025
+          ],
+          "next_thought_active": 33
+        },
+        {
+          "state": "random_7",
+          "action": 1,
+          "muscles": [
+            0.6,
+            0.0,
+            0.6,
+            0.0
+          ],
+          "scores": [
+            0.08,
+            0.65,
+            0.0,
+            0.035,
+            0.025
+          ],
+          "next_thought_active": 33
+        }
+      ]
+    },
+    {
+      "cue": 0,
+      "all_scores_identical": true,
+      "all_muscles_identical": true,
+      "predictions": [
+        {
+          "state": "empty",
+          "action": 1,
+          "muscles": [
+            0.6,
+            0.0,
+            0.6,
+            0.0
+          ],
+          "scores": [
+            0.75,
+            2.1763813450339766,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "next_thought_active": 33
+        },
+        {
+          "state": "all_active",
+          "action": 1,
+          "muscles": [
+            0.6,
+            0.0,
+            0.6,
+            0.0
+          ],
+          "scores": [
+            0.75,
+            2.1763813450339766,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "next_thought_active": 48
+        },
+        {
+          "state": "random_0",
+          "action": 1,
+          "muscles": [
+            0.6,
+            0.0,
+            0.6,
+            0.0
+          ],
+          "scores": [
+            0.75,
+            2.1763813450339766,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "next_thought_active": 33
+        },
+        {
+          "state": "random_1",
+          "action": 1,
+          "muscles": [
+            0.6,
+            0.0,
+            0.6,
+            0.0
+          ],
+          "scores": [
+            0.75,
+            2.1763813450339766,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "next_thought_active": 33
+        },
+        {
+          "state": "random_2",
+          "action": 1,
+          "muscles": [
+            0.6,
+            0.0,
+            0.6,
+            0.0
+          ],
+          "scores": [
+            0.75,
+            2.1763813450339766,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "next_thought_active": 33
+        },
+        {
+          "state": "random_3",
+          "action": 1,
+          "muscles": [
+            0.6,
+            0.0,
+            0.6,
+            0.0
+          ],
+          "scores": [
+            0.75,
+            2.1763813450339766,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "next_thought_active": 33
+        },
+        {
+          "state": "random_4",
+          "action": 1,
+          "muscles": [
+            0.6,
+            0.0,
+            0.6,
+            0.0
+          ],
+          "scores": [
+            0.75,
+            2.1763813450339766,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "next_thought_active": 33
+        },
+        {
+          "state": "random_5",
+          "action": 1,
+          "muscles": [
+            0.6,
+            0.0,
+            0.6,
+            0.0
+          ],
+          "scores": [
+            0.75,
+            2.1763813450339766,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "next_thought_active": 33
+        },
+        {
+          "state": "random_6",
+          "action": 1,
+          "muscles": [
+            0.6,
+            0.0,
+            0.6,
+            0.0
+          ],
+          "scores": [
+            0.75,
+            2.1763813450339766,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "next_thought_active": 33
+        },
+        {
+          "state": "random_7",
+          "action": 1,
+          "muscles": [
+            0.6,
+            0.0,
+            0.6,
+            0.0
+          ],
+          "scores": [
+            0.75,
+            2.1763813450339766,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "next_thought_active": 33
+        }
+      ]
+    },
+    {
+      "cue": 1,
+      "all_scores_identical": true,
+      "all_muscles_identical": true,
+      "predictions": [
+        {
+          "state": "empty",
+          "action": 3,
+          "muscles": [
+            0.0,
+            0.3,
+            0.3,
+            0.0
+          ],
+          "scores": [
+            0.75,
+            0.0,
+            0.0,
+            2.176409872960421,
+            0.0
+          ],
+          "next_thought_active": 33
+        },
+        {
+          "state": "all_active",
+          "action": 3,
+          "muscles": [
+            0.0,
+            0.3,
+            0.3,
+            0.0
+          ],
+          "scores": [
+            0.75,
+            0.0,
+            0.0,
+            2.176409872960421,
+            0.0
+          ],
+          "next_thought_active": 48
+        },
+        {
+          "state": "random_0",
+          "action": 3,
+          "muscles": [
+            0.0,
+            0.3,
+            0.3,
+            0.0
+          ],
+          "scores": [
+            0.75,
+            0.0,
+            0.0,
+            2.176409872960421,
+            0.0
+          ],
+          "next_thought_active": 33
+        },
+        {
+          "state": "random_1",
+          "action": 3,
+          "muscles": [
+            0.0,
+            0.3,
+            0.3,
+            0.0
+          ],
+          "scores": [
+            0.75,
+            0.0,
+            0.0,
+            2.176409872960421,
+            0.0
+          ],
+          "next_thought_active": 33
+        },
+        {
+          "state": "random_2",
+          "action": 3,
+          "muscles": [
+            0.0,
+            0.3,
+            0.3,
+            0.0
+          ],
+          "scores": [
+            0.75,
+            0.0,
+            0.0,
+            2.176409872960421,
+            0.0
+          ],
+          "next_thought_active": 33
+        },
+        {
+          "state": "random_3",
+          "action": 3,
+          "muscles": [
+            0.0,
+            0.3,
+            0.3,
+            0.0
+          ],
+          "scores": [
+            0.75,
+            0.0,
+            0.0,
+            2.176409872960421,
+            0.0
+          ],
+          "next_thought_active": 33
+        },
+        {
+          "state": "random_4",
+          "action": 3,
+          "muscles": [
+            0.0,
+            0.3,
+            0.3,
+            0.0
+          ],
+          "scores": [
+            0.75,
+            0.0,
+            0.0,
+            2.176409872960421,
+            0.0
+          ],
+          "next_thought_active": 33
+        },
+        {
+          "state": "random_5",
+          "action": 3,
+          "muscles": [
+            0.0,
+            0.3,
+            0.3,
+            0.0
+          ],
+          "scores": [
+            0.75,
+            0.0,
+            0.0,
+            2.176409872960421,
+            0.0
+          ],
+          "next_thought_active": 33
+        },
+        {
+          "state": "random_6",
+          "action": 3,
+          "muscles": [
+            0.0,
+            0.3,
+            0.3,
+            0.0
+          ],
+          "scores": [
+            0.75,
+            0.0,
+            0.0,
+            2.176409872960421,
+            0.0
+          ],
+          "next_thought_active": 33
+        },
+        {
+          "state": "random_7",
+          "action": 3,
+          "muscles": [
+            0.0,
+            0.3,
+            0.3,
+            0.0
+          ],
+          "scores": [
+            0.75,
+            0.0,
+            0.0,
+            2.176409872960421,
+            0.0
+          ],
+          "next_thought_active": 33
+        }
+      ]
+    },
+    {
+      "cue": 2,
+      "all_scores_identical": true,
+      "all_muscles_identical": true,
+      "predictions": [
+        {
+          "state": "empty",
+          "action": 4,
+          "muscles": [
+            0.3,
+            0.0,
+            0.0,
+            0.3
+          ],
+          "scores": [
+            0.75,
+            0.0,
+            0.0,
+            0.0,
+            2.1763813450339766
+          ],
+          "next_thought_active": 33
+        },
+        {
+          "state": "all_active",
+          "action": 4,
+          "muscles": [
+            0.3,
+            0.0,
+            0.0,
+            0.3
+          ],
+          "scores": [
+            0.75,
+            0.0,
+            0.0,
+            0.0,
+            2.1763813450339766
+          ],
+          "next_thought_active": 48
+        },
+        {
+          "state": "random_0",
+          "action": 4,
+          "muscles": [
+            0.3,
+            0.0,
+            0.0,
+            0.3
+          ],
+          "scores": [
+            0.75,
+            0.0,
+            0.0,
+            0.0,
+            2.1763813450339766
+          ],
+          "next_thought_active": 33
+        },
+        {
+          "state": "random_1",
+          "action": 4,
+          "muscles": [
+            0.3,
+            0.0,
+            0.0,
+            0.3
+          ],
+          "scores": [
+            0.75,
+            0.0,
+            0.0,
+            0.0,
+            2.1763813450339766
+          ],
+          "next_thought_active": 33
+        },
+        {
+          "state": "random_2",
+          "action": 4,
+          "muscles": [
+            0.3,
+            0.0,
+            0.0,
+            0.3
+          ],
+          "scores": [
+            0.75,
+            0.0,
+            0.0,
+            0.0,
+            2.1763813450339766
+          ],
+          "next_thought_active": 33
+        },
+        {
+          "state": "random_3",
+          "action": 4,
+          "muscles": [
+            0.3,
+            0.0,
+            0.0,
+            0.3
+          ],
+          "scores": [
+            0.75,
+            0.0,
+            0.0,
+            0.0,
+            2.1763813450339766
+          ],
+          "next_thought_active": 33
+        },
+        {
+          "state": "random_4",
+          "action": 4,
+          "muscles": [
+            0.3,
+            0.0,
+            0.0,
+            0.3
+          ],
+          "scores": [
+            0.75,
+            0.0,
+            0.0,
+            0.0,
+            2.1763813450339766
+          ],
+          "next_thought_active": 33
+        },
+        {
+          "state": "random_5",
+          "action": 4,
+          "muscles": [
+            0.3,
+            0.0,
+            0.0,
+            0.3
+          ],
+          "scores": [
+            0.75,
+            0.0,
+            0.0,
+            0.0,
+            2.1763813450339766
+          ],
+          "next_thought_active": 33
+        },
+        {
+          "state": "random_6",
+          "action": 4,
+          "muscles": [
+            0.3,
+            0.0,
+            0.0,
+            0.3
+          ],
+          "scores": [
+            0.75,
+            0.0,
+            0.0,
+            0.0,
+            2.1763813450339766
+          ],
+          "next_thought_active": 33
+        },
+        {
+          "state": "random_7",
+          "action": 4,
+          "muscles": [
+            0.3,
+            0.0,
+            0.0,
+            0.3
+          ],
+          "scores": [
+            0.75,
+            0.0,
+            0.0,
+            0.0,
+            2.1763813450339766
+          ],
+          "next_thought_active": 33
+        }
+      ]
+    },
+    {
+      "cue": 3,
+      "all_scores_identical": true,
+      "all_muscles_identical": true,
+      "predictions": [
+        {
+          "state": "empty",
+          "action": 0,
+          "muscles": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scores": [
+            2.926409872960421,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "next_thought_active": 33
+        },
+        {
+          "state": "all_active",
+          "action": 0,
+          "muscles": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scores": [
+            2.926409872960421,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "next_thought_active": 47
+        },
+        {
+          "state": "random_0",
+          "action": 0,
+          "muscles": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scores": [
+            2.926409872960421,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "next_thought_active": 33
+        },
+        {
+          "state": "random_1",
+          "action": 0,
+          "muscles": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scores": [
+            2.926409872960421,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "next_thought_active": 33
+        },
+        {
+          "state": "random_2",
+          "action": 0,
+          "muscles": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scores": [
+            2.926409872960421,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "next_thought_active": 33
+        },
+        {
+          "state": "random_3",
+          "action": 0,
+          "muscles": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scores": [
+            2.926409872960421,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "next_thought_active": 34
+        },
+        {
+          "state": "random_4",
+          "action": 0,
+          "muscles": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scores": [
+            2.926409872960421,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "next_thought_active": 33
+        },
+        {
+          "state": "random_5",
+          "action": 0,
+          "muscles": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scores": [
+            2.926409872960421,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "next_thought_active": 33
+        },
+        {
+          "state": "random_6",
+          "action": 0,
+          "muscles": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scores": [
+            2.926409872960421,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "next_thought_active": 33
+        },
+        {
+          "state": "random_7",
+          "action": 0,
+          "muscles": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scores": [
+            2.926409872960421,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "next_thought_active": 33
+        }
+      ]
+    }
+  ],
+  "pfc_disabled_still_advances_state": true,
+  "persistent_state_perturbation_changes_motor_scores": false,
+  "interpretation": "This tests the prototype's persistent activity, not the causal role of all learned PFC weights. Cue-to-motor PFC associations remain connected. It is not a test of the user's full proposed architecture."
+}

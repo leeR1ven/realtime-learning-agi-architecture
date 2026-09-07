@@ -1,0 +1,31 @@
+{
+  "promoted": true,
+  "report": "F:\\一种AGI架构\\原架构闭环\\results\\active_body_additive_600.json",
+  "candidate": "F:\\一种AGI架构\\原架构闭环\\results\\active_body_additive_600.npz",
+  "candidate_sha256": "30ed4050c59349fcb8a9d3f2551437839d3665ffc19db068f740a441d3ae64d7",
+  "target": "F:\\一种AGI架构\\原架构闭环\\results\\living_original.npz",
+  "target_sha256": "30ed4050c59349fcb8a9d3f2551437839d3665ffc19db068f740a441d3ae64d7",
+  "previous_sha256": "6717be86ecffd6157f719c945911fee05b152d8d111db8fe182fcff434b550ca",
+  "rollback": "F:\\一种AGI架构\\原架构闭环\\results\\living_before_continuous_learning.npz",
+  "lineage": [
+    {
+      "base_life": "F:\\一种AGI架构\\原架构闭环\\results\\continuous_balanced_extended_3600.npz",
+      "base_sha256": "2ce7dbff6147c4ab4b123e7e6af7085dda3f0ef1744b6383efe7602b6c64fc8a"
+    },
+    {
+      "base_life": "F:\\一种AGI架构\\原架构闭环\\results\\continuous_balanced_1200.npz",
+      "base_sha256": "896689fb7f04f971935aca61a1195c2b3cc286e358fb2e4a4b5ab319c2ab81a5"
+    },
+    {
+      "base_life": "F:\\一种AGI架构\\原架构闭环\\results\\living_original.npz",
+      "base_sha256": "6717be86ecffd6157f719c945911fee05b152d8d111db8fe182fcff434b550ca"
+    }
+  ],
+  "all_flags_enabled": true,
+  "single_time_neuron_active": true,
+  "actual_control_steps": 5448,
+  "current_time_cell": 10904,
+  "physical_time": 544.799999999577,
+  "full_selected_life_equal_after_save_load": true,
+  "selected_learning_rule": "Original additive with audited decay parameters; nonlinear options remain disabled"
+}

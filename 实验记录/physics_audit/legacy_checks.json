@@ -1,0 +1,70 @@
+{
+  "M_matches_absolute_angle_kinetic_metric_error": 8.881784197001252e-16,
+  "M_symmetry_error": 4.440892098500626e-16,
+  "GM_asymmetry": 1.6719199999999996,
+  "unit_force_virtual_work": {
+    "expected_generalized_force": [
+      0.39999999999993335,
+      0.41999999999993,
+      0.35999999999994
+    ],
+    "actual_generalized_force": [
+      0.5900000000000001,
+      0.39000000000000007,
+      0.18000000000000005
+    ]
+  },
+  "internal_knee_torque_in_free_flight": {
+    "applied_internal_torque": 10.0,
+    "Hdot_expected": 0.0,
+    "Hdot_actual": 10.000000000375547
+  },
+  "jump_injected_from_rest": {
+    "com_velocity": [
+      0.0,
+      1.8
+    ],
+    "linear_momentum_added": [
+      0.0,
+      34.2
+    ],
+    "kinetic_energy_added_joules": 30.78
+  },
+  "legacy_step_support_mismatch": {
+    "reported_foot_x": 0.5,
+    "actual_chain_base_x": 0.0
+  },
+  "one_second_old_baselines": [
+    {
+      "scenario": "quiet",
+      "sim_seconds": 1.0049999999999448,
+      "fallen": false,
+      "reason": "",
+      "max_lean": 0.00769350182198004,
+      "step_intents": 0,
+      "jumps": 0,
+      "displacement": 0.0
+    },
+    {
+      "scenario": "push_8",
+      "sim_seconds": 1.0049999999999448,
+      "fallen": false,
+      "reason": "",
+      "max_lean": 0.04728477787824533,
+      "step_intents": 0,
+      "jumps": 0,
+      "displacement": 0.0
+    },
+    {
+      "scenario": "push_32_jump",
+      "sim_seconds": 1.0049999999999448,
+      "fallen": false,
+      "reason": "",
+      "max_lean": 0.18953176376348763,
+      "step_intents": 2,
+      "jumps": 0,
+      "displacement": 0.0
+    }
+  ],
+  "baseline_wall_seconds": 1.2780410000000302
+}

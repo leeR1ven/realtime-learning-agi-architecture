@@ -1,0 +1,1600 @@
+{
+  "passed": true,
+  "checkpoint": "F:\\一种AGI架构\\原架构闭环\\results\\active_body_additive_600.npz",
+  "cue_cases": 251,
+  "distinct_cue_bit_patterns": 205,
+  "categories": {
+    "actual_recorded_audio": 64,
+    "actual_recorded_multimodal": 64,
+    "dense": 1,
+    "empty": 1,
+    "random": 120,
+    "saved_actual_thought": 1
+  },
+  "exact_current_gate_microstep_cases": 251,
+  "continuing_microsteps": 24,
+  "original_learning_updates": 12,
+  "timed_additional_exact_microstep_cases": 753,
+  "fixtures": {
+    "large_tiny_positive_weight_sum_order_bitwise_equal": true,
+    "direct_dictionary_mutations_immediately_visible": true,
+    "temporary_excitation_and_disinhibition_lesions_exact": true,
+    "empty_and_multidimensional_cues_match": true,
+    "original_learning_microstep_and_constructor_inherited": true,
+    "no_new_instance_state": true
+  },
+  "original_pfc_E_edges": 486657,
+  "original_pfc_DI_edges": 40707,
+  "benchmark_after_identical_disclosed_local_updates": true,
+  "current_gate_and_activity_bitwise_equal": true,
+  "dynamic_inhibition_bitwise_equal": true,
+  "stats": {
+    "original": {
+      "drive": {
+        "median_ms": 1.6426,
+        "p95_ms": 25.09218,
+        "total_ms": 6186.1399
+      },
+      "gate": {
+        "median_ms": 0.1955,
+        "p95_ms": 2.3979399999999997,
+        "total_ms": 668.4358
+      },
+      "microstep": {
+        "median_ms": 1.8236,
+        "p95_ms": 27.406019999999998,
+        "total_ms": 6877.4497
+      }
+    },
+    "fast": {
+      "drive": {
+        "median_ms": 0.4231,
+        "p95_ms": 6.9833,
+        "total_ms": 1705.8065
+      },
+      "gate": {
+        "median_ms": 0.0829,
+        "p95_ms": 0.869,
+        "total_ms": 225.652
+      },
+      "microstep": {
+        "median_ms": 0.4936,
+        "p95_ms": 7.672059999999999,
+        "total_ms": 1925.9823
+      }
+    }
+  },
+  "total_time_speedup": {
+    "drive": 3.626519127462582,
+    "gate": 2.9622418591459416,
+    "microstep": 3.5708789743290996
+  },
+  "persistent_cache_bytes": 0,
+  "maximum_dense_excitation_temporary_payload_bytes": 7812832,
+  "original_source_and_dict_order_preserved": true,
+  "protected_hashes": {
+    "F:\\一种AGI架构\\原架构闭环\\results\\active_body_additive_600.npz": "30ed4050c59349fcb8a9d3f2551437839d3665ffc19db068f740a441d3ae64d7",
+    "F:\\一种AGI架构\\原架构闭环\\results\\active_body_additive_600_actual_sensors.npz": "c5fd74341ada9b9f261e29fc144a28776c7cdf4403af25d42606c128a3ec6010",
+    "F:\\一种AGI架构\\前额叶区.py": "5087a9ce13ce6b727db27b8f6ae73f539f143115fdee0ae4b681acf7267a7b02",
+    "F:\\一种AGI架构\\原架构闭环\\brain.py": "9440c41fd3aeaaa1573ceb829beeef0e350583e6b5edf89f8be054fd92ce832b",
+    "F:\\一种AGI架构\\原架构闭环\\original_runtime.py": "d489aa74403d1b96920f678a69d96f29e309b531f475c644ae8676fc430a4cbe",
+    "F:\\一种AGI架构\\原架构闭环\\weight_dependent_plasticity.py": "26b828ede19666eaa23f26f7e3ead22e799de5c49cfa46e3945107462ef3aab2"
+  },
+  "microstep_diagnostics": [
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 249,
+      "actual_active_count": 123,
+      "inhibition_strength": 1.0
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 30,
+      "actual_active_count": 3,
+      "inhibition_strength": 0.85
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 203,
+      "actual_active_count": 4288,
+      "inhibition_strength": 0.9774999999999999
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 0,
+      "actual_active_count": 0,
+      "inhibition_strength": 0.9774999999999999
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 245,
+      "actual_active_count": 253,
+      "inhibition_strength": 0.9774999999999999
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 32,
+      "actual_active_count": 4082,
+      "inhibition_strength": 1.1241249999999998
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 225,
+      "actual_active_count": 80,
+      "inhibition_strength": 1.1241249999999998
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 7,
+      "actual_active_count": 2,
+      "inhibition_strength": 0.9555062499999998
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 209,
+      "actual_active_count": 4188,
+      "inhibition_strength": 1.0988321874999996
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 30,
+      "actual_active_count": 0,
+      "inhibition_strength": 0.9340073593749996
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 256,
+      "actual_active_count": 267,
+      "inhibition_strength": 0.9340073593749996
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 0,
+      "actual_active_count": 4195,
+      "inhibition_strength": 1.0741084632812494
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 235,
+      "actual_active_count": 98,
+      "inhibition_strength": 1.0741084632812494
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 0,
+      "actual_active_count": 0,
+      "inhibition_strength": 0.9129921937890619
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 262,
+      "actual_active_count": 4249,
+      "inhibition_strength": 1.049941022857421
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 33,
+      "actual_active_count": 0,
+      "inhibition_strength": 0.8924498694288079
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 252,
+      "actual_active_count": 257,
+      "inhibition_strength": 0.8924498694288079
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 29,
+      "actual_active_count": 4222,
+      "inhibition_strength": 1.026317349843129
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 249,
+      "actual_active_count": 78,
+      "inhibition_strength": 1.026317349843129
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 35,
+      "actual_active_count": 0,
+      "inhibition_strength": 0.8723697473666596
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 222,
+      "actual_active_count": 4271,
+      "inhibition_strength": 1.0032252094716585
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 0,
+      "actual_active_count": 0,
+      "inhibition_strength": 1.0032252094716585
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 201,
+      "actual_active_count": 253,
+      "inhibition_strength": 1.0032252094716585
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 0,
+      "actual_active_count": 4133,
+      "inhibition_strength": 1.1537089908924072
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 224,
+      "actual_active_count": 73,
+      "inhibition_strength": 1.1537089908924072
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 28,
+      "actual_active_count": 0,
+      "inhibition_strength": 0.9806526422585461
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 272,
+      "actual_active_count": 4239,
+      "inhibition_strength": 1.1277505385973279
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 33,
+      "actual_active_count": 0,
+      "inhibition_strength": 0.9585879578077287
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 281,
+      "actual_active_count": 255,
+      "inhibition_strength": 0.9585879578077287
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 27,
+      "actual_active_count": 4214,
+      "inhibition_strength": 1.102376151478888
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 232,
+      "actual_active_count": 98,
+      "inhibition_strength": 1.102376151478888
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 0,
+      "actual_active_count": 0,
+      "inhibition_strength": 0.9370197287570546
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 240,
+      "actual_active_count": 4216,
+      "inhibition_strength": 1.0775726880706127
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 0,
+      "actual_active_count": 0,
+      "inhibition_strength": 1.0775726880706127
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 261,
+      "actual_active_count": 256,
+      "inhibition_strength": 1.0775726880706127
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 29,
+      "actual_active_count": 4116,
+      "inhibition_strength": 1.2392085912812045
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 216,
+      "actual_active_count": 77,
+      "inhibition_strength": 1.2392085912812045
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 13,
+      "actual_active_count": 0,
+      "inhibition_strength": 1.0533273025890237
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 244,
+      "actual_active_count": 4151,
+      "inhibition_strength": 1.2113263979773772
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 16,
+      "actual_active_count": 0,
+      "inhibition_strength": 1.0296274382807706
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 239,
+      "actual_active_count": 253,
+      "inhibition_strength": 1.0296274382807706
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 0,
+      "actual_active_count": 4160,
+      "inhibition_strength": 1.184071554022886
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 251,
+      "actual_active_count": 64,
+      "inhibition_strength": 1.184071554022886
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 33,
+      "actual_active_count": 0,
+      "inhibition_strength": 1.0064608209194532
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 266,
+      "actual_active_count": 4150,
+      "inhibition_strength": 1.1574299440573712
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 30,
+      "actual_active_count": 0,
+      "inhibition_strength": 0.9838154524487654
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 264,
+      "actual_active_count": 246,
+      "inhibition_strength": 0.9838154524487654
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 41,
+      "actual_active_count": 4138,
+      "inhibition_strength": 1.1313877703160802
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 251,
+      "actual_active_count": 64,
+      "inhibition_strength": 1.1313877703160802
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 41,
+      "actual_active_count": 0,
+      "inhibition_strength": 0.9616796047686681
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 235,
+      "actual_active_count": 4245,
+      "inhibition_strength": 1.1059315454839682
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 0,
+      "actual_active_count": 0,
+      "inhibition_strength": 1.1059315454839682
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 254,
+      "actual_active_count": 245,
+      "inhibition_strength": 1.1059315454839682
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 30,
+      "actual_active_count": 4042,
+      "inhibition_strength": 1.2718212773065634
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 238,
+      "actual_active_count": 50,
+      "inhibition_strength": 1.2718212773065634
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 28,
+      "actual_active_count": 0,
+      "inhibition_strength": 1.0810480857105789
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 270,
+      "actual_active_count": 4160,
+      "inhibition_strength": 1.2432052985671656
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 32,
+      "actual_active_count": 0,
+      "inhibition_strength": 1.0567245037820907
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 215,
+      "actual_active_count": 240,
+      "inhibition_strength": 1.0567245037820907
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 0,
+      "actual_active_count": 4133,
+      "inhibition_strength": 1.2152331793494042
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 231,
+      "actual_active_count": 52,
+      "inhibition_strength": 1.2152331793494042
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 0,
+      "actual_active_count": 0,
+      "inhibition_strength": 1.0329482024469936
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 245,
+      "actual_active_count": 4257,
+      "inhibition_strength": 1.1878904328140425
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 7,
+      "actual_active_count": 0,
+      "inhibition_strength": 1.009706867891936
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 262,
+      "actual_active_count": 241,
+      "inhibition_strength": 1.009706867891936
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 35,
+      "actual_active_count": 4084,
+      "inhibition_strength": 1.1611628980757265
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 232,
+      "actual_active_count": 64,
+      "inhibition_strength": 1.1611628980757265
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 13,
+      "actual_active_count": 0,
+      "inhibition_strength": 0.9869884633643675
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 231,
+      "actual_active_count": 4183,
+      "inhibition_strength": 1.1350367328690225
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 0,
+      "actual_active_count": 0,
+      "inhibition_strength": 1.1350367328690225
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 202,
+      "actual_active_count": 236,
+      "inhibition_strength": 1.1350367328690225
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 0,
+      "actual_active_count": 4008,
+      "inhibition_strength": 1.3052922427993758
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 279,
+      "actual_active_count": 52,
+      "inhibition_strength": 1.3052922427993758
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 24,
+      "actual_active_count": 0,
+      "inhibition_strength": 1.1094984063794695
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 272,
+      "actual_active_count": 4146,
+      "inhibition_strength": 1.2759231673363898
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 33,
+      "actual_active_count": 0,
+      "inhibition_strength": 1.0845346922359314
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 234,
+      "actual_active_count": 246,
+      "inhibition_strength": 1.0845346922359314
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 27,
+      "actual_active_count": 4107,
+      "inhibition_strength": 1.247214896071321
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 227,
+      "actual_active_count": 53,
+      "inhibition_strength": 1.247214896071321
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 0,
+      "actual_active_count": 0,
+      "inhibition_strength": 1.0601326616606228
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 225,
+      "actual_active_count": 4202,
+      "inhibition_strength": 1.2191525609097162
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 0,
+      "actual_active_count": 0,
+      "inhibition_strength": 1.2191525609097162
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 240,
+      "actual_active_count": 232,
+      "inhibition_strength": 1.2191525609097162
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 33,
+      "actual_active_count": 4037,
+      "inhibition_strength": 1.4020254450461735
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 239,
+      "actual_active_count": 50,
+      "inhibition_strength": 1.4020254450461735
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 16,
+      "actual_active_count": 0,
+      "inhibition_strength": 1.1917216282892475
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 256,
+      "actual_active_count": 4096,
+      "inhibition_strength": 1.3704798725326346
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 30,
+      "actual_active_count": 0,
+      "inhibition_strength": 1.1649078916527393
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 207,
+      "actual_active_count": 231,
+      "inhibition_strength": 1.1649078916527393
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 0,
+      "actual_active_count": 4071,
+      "inhibition_strength": 1.3396440754006502
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 251,
+      "actual_active_count": 59,
+      "inhibition_strength": 1.3396440754006502
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 26,
+      "actual_active_count": 0,
+      "inhibition_strength": 1.1386974640905527
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 243,
+      "actual_active_count": 4101,
+      "inhibition_strength": 1.3095020837041356
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 33,
+      "actual_active_count": 0,
+      "inhibition_strength": 1.1130767711485152
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 235,
+      "actual_active_count": 229,
+      "inhibition_strength": 1.1130767711485152
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 29,
+      "actual_active_count": 4119,
+      "inhibition_strength": 1.2800382868207925
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 268,
+      "actual_active_count": 54,
+      "inhibition_strength": 1.2800382868207925
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 29,
+      "actual_active_count": 0,
+      "inhibition_strength": 1.0880325437976737
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 234,
+      "actual_active_count": 4223,
+      "inhibition_strength": 1.2512374253673246
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 0,
+      "actual_active_count": 0,
+      "inhibition_strength": 1.2512374253673246
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 269,
+      "actual_active_count": 246,
+      "inhibition_strength": 1.2512374253673246
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 30,
+      "actual_active_count": 4008,
+      "inhibition_strength": 1.4389230391724233
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 248,
+      "actual_active_count": 38,
+      "inhibition_strength": 1.4389230391724233
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 13,
+      "actual_active_count": 0,
+      "inhibition_strength": 1.2230845832965598
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 285,
+      "actual_active_count": 4102,
+      "inhibition_strength": 1.4065472707910436
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 35,
+      "actual_active_count": 0,
+      "inhibition_strength": 1.195565180172387
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 222,
+      "actual_active_count": 241,
+      "inhibition_strength": 1.195565180172387
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 0,
+      "actual_active_count": 4032,
+      "inhibition_strength": 1.374899957198245
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 217,
+      "actual_active_count": 38,
+      "inhibition_strength": 1.374899957198245
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 0,
+      "actual_active_count": 0,
+      "inhibition_strength": 1.1686649636185082
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 243,
+      "actual_active_count": 4108,
+      "inhibition_strength": 1.3439647081612844
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 7,
+      "actual_active_count": 0,
+      "inhibition_strength": 1.1423700019370917
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 261,
+      "actual_active_count": 238,
+      "inhibition_strength": 1.1423700019370917
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 41,
+      "actual_active_count": 4051,
+      "inhibition_strength": 1.3137255022276553
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 251,
+      "actual_active_count": 39,
+      "inhibition_strength": 1.3137255022276553
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 32,
+      "actual_active_count": 0,
+      "inhibition_strength": 1.116666676893507
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 193,
+      "actual_active_count": 4144,
+      "inhibition_strength": 1.284166678427533
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 0,
+      "actual_active_count": 0,
+      "inhibition_strength": 1.284166678427533
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 235,
+      "actual_active_count": 240,
+      "inhibition_strength": 1.284166678427533
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 0,
+      "actual_active_count": 4043,
+      "inhibition_strength": 1.4767916801916627
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 278,
+      "actual_active_count": 38,
+      "inhibition_strength": 1.4767916801916627
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 24,
+      "actual_active_count": 0,
+      "inhibition_strength": 1.2552729281629134
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 240,
+      "actual_active_count": 4019,
+      "inhibition_strength": 1.4435638673873503
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 30,
+      "actual_active_count": 0,
+      "inhibition_strength": 1.2270292872792476
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 279,
+      "actual_active_count": 247,
+      "inhibition_strength": 1.2270292872792476
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 28,
+      "actual_active_count": 4018,
+      "inhibition_strength": 1.4110836803711346
+    },
+    {
+      "category": "actual_recorded_multimodal",
+      "cue_size": 212,
+      "actual_active_count": 55,
+      "inhibition_strength": 1.4110836803711346
+    },
+    {
+      "category": "actual_recorded_audio",
+      "cue_size": 0,
+      "actual_active_count": 0,
+      "inhibition_strength": 1.1994211283154643
+    },
+    {
+      "category": "random",
+      "cue_size": 1,
+      "actual_active_count": 4050,
+      "inhibition_strength": 1.3793342975627838
+    },
+    {
+      "category": "random",
+      "cue_size": 24,
+      "actual_active_count": 0,
+      "inhibition_strength": 1.1724341529283662
+    },
+    {
+      "category": "random",
+      "cue_size": 31,
+      "actual_active_count": 31,
+      "inhibition_strength": 1.1724341529283662
+    },
+    {
+      "category": "random",
+      "cue_size": 64,
+      "actual_active_count": 4049,
+      "inhibition_strength": 1.3482992758676209
+    },
+    {
+      "category": "random",
+      "cue_size": 120,
+      "actual_active_count": 0,
+      "inhibition_strength": 1.1460543844874778
+    },
+    {
+      "category": "random",
+      "cue_size": 250,
+      "actual_active_count": 115,
+      "inhibition_strength": 1.1460543844874778
+    },
+    {
+      "category": "random",
+      "cue_size": 350,
+      "actual_active_count": 3886,
+      "inhibition_strength": 1.3179625421605994
+    },
+    {
+      "category": "random",
+      "cue_size": 800,
+      "actual_active_count": 0,
+      "inhibition_strength": 1.1202681608365095
+    },
+    {
+      "category": "random",
+      "cue_size": 1500,
+      "actual_active_count": 69,
+      "inhibition_strength": 1.1202681608365095
+    },
+    {
+      "category": "random",
+      "cue_size": 1,
+      "actual_active_count": 4145,
+      "inhibition_strength": 1.2883083849619859
+    },
+    {
+      "category": "random",
+      "cue_size": 24,
+      "actual_active_count": 0,
+      "inhibition_strength": 1.095062127217688
+    },
+    {
+      "category": "random",
+      "cue_size": 31,
+      "actual_active_count": 31,
+      "inhibition_strength": 1.095062127217688
+    },
+    {
+      "category": "random",
+      "cue_size": 64,
+      "actual_active_count": 4016,
+      "inhibition_strength": 1.259321446300341
+    },
+    {
+      "category": "random",
+      "cue_size": 120,
+      "actual_active_count": 0,
+      "inhibition_strength": 1.0704232293552898
+    },
+    {
+      "category": "random",
+      "cue_size": 250,
+      "actual_active_count": 191,
+      "inhibition_strength": 1.0704232293552898
+    },
+    {
+      "category": "random",
+      "cue_size": 350,
+      "actual_active_count": 3921,
+      "inhibition_strength": 1.230986713758583
+    },
+    {
+      "category": "random",
+      "cue_size": 800,
+      "actual_active_count": 0,
+      "inhibition_strength": 1.0463387066947956
+    },
+    {
+      "category": "random",
+      "cue_size": 1500,
+      "actual_active_count": 62,
+      "inhibition_strength": 1.0463387066947956
+    },
+    {
+      "category": "random",
+      "cue_size": 1,
+      "actual_active_count": 4123,
+      "inhibition_strength": 1.2032895126990149
+    },
+    {
+      "category": "random",
+      "cue_size": 24,
+      "actual_active_count": 0,
+      "inhibition_strength": 1.0227960857941627
+    },
+    {
+      "category": "random",
+      "cue_size": 31,
+      "actual_active_count": 31,
+      "inhibition_strength": 1.0227960857941627
+    },
+    {
+      "category": "random",
+      "cue_size": 64,
+      "actual_active_count": 4063,
+      "inhibition_strength": 1.1762154986632871
+    },
+    {
+      "category": "random",
+      "cue_size": 120,
+      "actual_active_count": 0,
+      "inhibition_strength": 0.999783173863794
+    },
+    {
+      "category": "random",
+      "cue_size": 250,
+      "actual_active_count": 229,
+      "inhibition_strength": 0.999783173863794
+    },
+    {
+      "category": "random",
+      "cue_size": 350,
+      "actual_active_count": 4011,
+      "inhibition_strength": 1.149750649943363
+    },
+    {
+      "category": "random",
+      "cue_size": 800,
+      "actual_active_count": 0,
+      "inhibition_strength": 0.9772880524518585
+    },
+    {
+      "category": "random",
+      "cue_size": 1500,
+      "actual_active_count": 83,
+      "inhibition_strength": 0.9772880524518585
+    },
+    {
+      "category": "random",
+      "cue_size": 1,
+      "actual_active_count": 4164,
+      "inhibition_strength": 1.123881260319637
+    },
+    {
+      "category": "random",
+      "cue_size": 24,
+      "actual_active_count": 0,
+      "inhibition_strength": 0.9552990712716914
+    },
+    {
+      "category": "random",
+      "cue_size": 31,
+      "actual_active_count": 31,
+      "inhibition_strength": 0.9552990712716914
+    },
+    {
+      "category": "random",
+      "cue_size": 64,
+      "actual_active_count": 4142,
+      "inhibition_strength": 1.0985939319624451
+    },
+    {
+      "category": "random",
+      "cue_size": 120,
+      "actual_active_count": 0,
+      "inhibition_strength": 0.9338048421680784
+    },
+    {
+      "category": "random",
+      "cue_size": 250,
+      "actual_active_count": 244,
+      "inhibition_strength": 0.9338048421680784
+    },
+    {
+      "category": "random",
+      "cue_size": 350,
+      "actual_active_count": 3998,
+      "inhibition_strength": 1.0738755684932901
+    },
+    {
+      "category": "random",
+      "cue_size": 800,
+      "actual_active_count": 0,
+      "inhibition_strength": 0.9127942332192965
+    },
+    {
+      "category": "random",
+      "cue_size": 1500,
+      "actual_active_count": 124,
+      "inhibition_strength": 0.9127942332192965
+    },
+    {
+      "category": "random",
+      "cue_size": 1,
+      "actual_active_count": 4188,
+      "inhibition_strength": 1.0497133682021909
+    },
+    {
+      "category": "random",
+      "cue_size": 24,
+      "actual_active_count": 0,
+      "inhibition_strength": 0.8922563629718622
+    },
+    {
+      "category": "random",
+      "cue_size": 31,
+      "actual_active_count": 31,
+      "inhibition_strength": 0.8922563629718622
+    },
+    {
+      "category": "random",
+      "cue_size": 64,
+      "actual_active_count": 4222,
+      "inhibition_strength": 1.0260948174176414
+    },
+    {
+      "category": "random",
+      "cue_size": 120,
+      "actual_active_count": 0,
+      "inhibition_strength": 0.8721805948049952
+    },
+    {
+      "category": "random",
+      "cue_size": 250,
+      "actual_active_count": 248,
+      "inhibition_strength": 0.8721805948049952
+    },
+    {
+      "category": "random",
+      "cue_size": 350,
+      "actual_active_count": 4072,
+      "inhibition_strength": 1.0030076840257445
+    },
+    {
+      "category": "random",
+      "cue_size": 800,
+      "actual_active_count": 0,
+      "inhibition_strength": 0.8525565314218828
+    },
+    {
+      "category": "random",
+      "cue_size": 1500,
+      "actual_active_count": 130,
+      "inhibition_strength": 0.8525565314218828
+    },
+    {
+      "category": "random",
+      "cue_size": 1,
+      "actual_active_count": 4233,
+      "inhibition_strength": 0.9804400111351652
+    },
+    {
+      "category": "random",
+      "cue_size": 24,
+      "actual_active_count": 0,
+      "inhibition_strength": 0.8333740094648904
+    },
+    {
+      "category": "random",
+      "cue_size": 31,
+      "actual_active_count": 31,
+      "inhibition_strength": 0.8333740094648904
+    },
+    {
+      "category": "random",
+      "cue_size": 64,
+      "actual_active_count": 4171,
+      "inhibition_strength": 0.9583801108846238
+    },
+    {
+      "category": "random",
+      "cue_size": 120,
+      "actual_active_count": 0,
+      "inhibition_strength": 0.8146230942519302
+    },
+    {
+      "category": "random",
+      "cue_size": 250,
+      "actual_active_count": 250,
+      "inhibition_strength": 0.8146230942519302
+    },
+    {
+      "category": "random",
+      "cue_size": 350,
+      "actual_active_count": 4105,
+      "inhibition_strength": 0.9368165583897197
+    },
+    {
+      "category": "random",
+      "cue_size": 800,
+      "actual_active_count": 0,
+      "inhibition_strength": 0.7962940746312617
+    },
+    {
+      "category": "random",
+      "cue_size": 1500,
+      "actual_active_count": 243,
+      "inhibition_strength": 0.7962940746312617
+    },
+    {
+      "category": "random",
+      "cue_size": 1,
+      "actual_active_count": 4257,
+      "inhibition_strength": 0.9157381858259509
+    },
+    {
+      "category": "random",
+      "cue_size": 24,
+      "actual_active_count": 0,
+      "inhibition_strength": 0.7783774579520583
+    },
+    {
+      "category": "random",
+      "cue_size": 31,
+      "actual_active_count": 31,
+      "inhibition_strength": 0.7783774579520583
+    },
+    {
+      "category": "random",
+      "cue_size": 64,
+      "actual_active_count": 4235,
+      "inhibition_strength": 0.8951340766448669
+    },
+    {
+      "category": "random",
+      "cue_size": 120,
+      "actual_active_count": 0,
+      "inhibition_strength": 0.7608639651481368
+    },
+    {
+      "category": "random",
+      "cue_size": 250,
+      "actual_active_count": 250,
+      "inhibition_strength": 0.7608639651481368
+    },
+    {
+      "category": "random",
+      "cue_size": 350,
+      "actual_active_count": 4216,
+      "inhibition_strength": 0.8749935599203572
+    },
+    {
+      "category": "random",
+      "cue_size": 800,
+      "actual_active_count": 0,
+      "inhibition_strength": 0.7437445259323036
+    },
+    {
+      "category": "random",
+      "cue_size": 1500,
+      "actual_active_count": 409,
+      "inhibition_strength": 0.855306204822149
+    },
+    {
+      "category": "random",
+      "cue_size": 1,
+      "actual_active_count": 4234,
+      "inhibition_strength": 0.9836021355454713
+    },
+    {
+      "category": "random",
+      "cue_size": 24,
+      "actual_active_count": 0,
+      "inhibition_strength": 0.8360618152136505
+    },
+    {
+      "category": "random",
+      "cue_size": 31,
+      "actual_active_count": 31,
+      "inhibition_strength": 0.8360618152136505
+    },
+    {
+      "category": "random",
+      "cue_size": 64,
+      "actual_active_count": 4233,
+      "inhibition_strength": 0.961471087495698
+    },
+    {
+      "category": "random",
+      "cue_size": 120,
+      "actual_active_count": 0,
+      "inhibition_strength": 0.8172504243713433
+    },
+    {
+      "category": "random",
+      "cue_size": 250,
+      "actual_active_count": 250,
+      "inhibition_strength": 0.8172504243713433
+    },
+    {
+      "category": "random",
+      "cue_size": 350,
+      "actual_active_count": 4131,
+      "inhibition_strength": 0.9398379880270448
+    },
+    {
+      "category": "random",
+      "cue_size": 800,
+      "actual_active_count": 0,
+      "inhibition_strength": 0.798862289822988
+    },
+    {
+      "category": "random",
+      "cue_size": 1500,
+      "actual_active_count": 260,
+      "inhibition_strength": 0.798862289822988
+    },
+    {
+      "category": "random",
+      "cue_size": 1,
+      "actual_active_count": 4239,
+      "inhibition_strength": 0.9186916332964361
+    },
+    {
+      "category": "random",
+      "cue_size": 24,
+      "actual_active_count": 0,
+      "inhibition_strength": 0.7808878883019706
+    },
+    {
+      "category": "random",
+      "cue_size": 31,
+      "actual_active_count": 31,
+      "inhibition_strength": 0.7808878883019706
+    },
+    {
+      "category": "random",
+      "cue_size": 64,
+      "actual_active_count": 4207,
+      "inhibition_strength": 0.8980210715472662
+    },
+    {
+      "category": "random",
+      "cue_size": 120,
+      "actual_active_count": 0,
+      "inhibition_strength": 0.7633179108151762
+    },
+    {
+      "category": "random",
+      "cue_size": 250,
+      "actual_active_count": 250,
+      "inhibition_strength": 0.7633179108151762
+    },
+    {
+      "category": "random",
+      "cue_size": 350,
+      "actual_active_count": 4093,
+      "inhibition_strength": 0.8778155974374525
+    },
+    {
+      "category": "random",
+      "cue_size": 800,
+      "actual_active_count": 0,
+      "inhibition_strength": 0.7461432578218347
+    },
+    {
+      "category": "random",
+      "cue_size": 1500,
+      "actual_active_count": 341,
+      "inhibition_strength": 0.7461432578218347
+    },
+    {
+      "category": "random",
+      "cue_size": 1,
+      "actual_active_count": 4221,
+      "inhibition_strength": 0.8580647464951098
+    },
+    {
+      "category": "random",
+      "cue_size": 24,
+      "actual_active_count": 0,
+      "inhibition_strength": 0.7293550345208433
+    },
+    {
+      "category": "random",
+      "cue_size": 31,
+      "actual_active_count": 31,
+      "inhibition_strength": 0.7293550345208433
+    },
+    {
+      "category": "random",
+      "cue_size": 64,
+      "actual_active_count": 4227,
+      "inhibition_strength": 0.8387582896989697
+    },
+    {
+      "category": "random",
+      "cue_size": 120,
+      "actual_active_count": 0,
+      "inhibition_strength": 0.7129445462441242
+    },
+    {
+      "category": "random",
+      "cue_size": 250,
+      "actual_active_count": 250,
+      "inhibition_strength": 0.7129445462441242
+    },
+    {
+      "category": "random",
+      "cue_size": 350,
+      "actual_active_count": 4224,
+      "inhibition_strength": 0.8198862281807427
+    },
+    {
+      "category": "random",
+      "cue_size": 800,
+      "actual_active_count": 0,
+      "inhibition_strength": 0.6969032939536313
+    },
+    {
+      "category": "random",
+      "cue_size": 1500,
+      "actual_active_count": 525,
+      "inhibition_strength": 0.8014387880466759
+    },
+    {
+      "category": "random",
+      "cue_size": 1,
+      "actual_active_count": 4226,
+      "inhibition_strength": 0.9216546062536772
+    },
+    {
+      "category": "random",
+      "cue_size": 24,
+      "actual_active_count": 0,
+      "inhibition_strength": 0.7834064153156256
+    },
+    {
+      "category": "random",
+      "cue_size": 31,
+      "actual_active_count": 31,
+      "inhibition_strength": 0.7834064153156256
+    },
+    {
+      "category": "random",
+      "cue_size": 64,
+      "actual_active_count": 4246,
+      "inhibition_strength": 0.9009173776129694
+    },
+    {
+      "category": "random",
+      "cue_size": 120,
+      "actual_active_count": 0,
+      "inhibition_strength": 0.765779770971024
+    },
+    {
+      "category": "random",
+      "cue_size": 250,
+      "actual_active_count": 250,
+      "inhibition_strength": 0.765779770971024
+    },
+    {
+      "category": "random",
+      "cue_size": 350,
+      "actual_active_count": 4188,
+      "inhibition_strength": 0.8806467366166776
+    },
+    {
+      "category": "random",
+      "cue_size": 800,
+      "actual_active_count": 0,
+      "inhibition_strength": 0.7485497261241759
+    },
+    {
+      "category": "random",
+      "cue_size": 1500,
+      "actual_active_count": 340,
+      "inhibition_strength": 0.7485497261241759
+    },
+    {
+      "category": "random",
+      "cue_size": 1,
+      "actual_active_count": 4281,
+      "inhibition_strength": 0.8608321850428022
+    },
+    {
+      "category": "random",
+      "cue_size": 24,
+      "actual_active_count": 0,
+      "inhibition_strength": 0.7317073572863819
+    },
+    {
+      "category": "random",
+      "cue_size": 31,
+      "actual_active_count": 31,
+      "inhibition_strength": 0.7317073572863819
+    },
+    {
+      "category": "random",
+      "cue_size": 64,
+      "actual_active_count": 4295,
+      "inhibition_strength": 0.8414634608793391
+    },
+    {
+      "category": "random",
+      "cue_size": 120,
+      "actual_active_count": 0,
+      "inhibition_strength": 0.7152439417474382
+    },
+    {
+      "category": "random",
+      "cue_size": 250,
+      "actual_active_count": 250,
+      "inhibition_strength": 0.7152439417474382
+    },
+    {
+      "category": "random",
+      "cue_size": 350,
+      "actual_active_count": 4213,
+      "inhibition_strength": 0.8225305330095539
+    },
+    {
+      "category": "random",
+      "cue_size": 800,
+      "actual_active_count": 0,
+      "inhibition_strength": 0.6991509530581208
+    },
+    {
+      "category": "random",
+      "cue_size": 1500,
+      "actual_active_count": 493,
+      "inhibition_strength": 0.8040235960168388
+    },
+    {
+      "category": "random",
+      "cue_size": 1,
+      "actual_active_count": 4206,
+      "inhibition_strength": 0.9246271354193646
+    },
+    {
+      "category": "random",
+      "cue_size": 24,
+      "actual_active_count": 0,
+      "inhibition_strength": 0.7859330651064599
+    },
+    {
+      "category": "random",
+      "cue_size": 31,
+      "actual_active_count": 31,
+      "inhibition_strength": 0.7859330651064599
+    },
+    {
+      "category": "random",
+      "cue_size": 64,
+      "actual_active_count": 4191,
+      "inhibition_strength": 0.9038230248724288
+    },
+    {
+      "category": "random",
+      "cue_size": 120,
+      "actual_active_count": 0,
+      "inhibition_strength": 0.7682495711415644
+    },
+    {
+      "category": "random",
+      "cue_size": 250,
+      "actual_active_count": 250,
+      "inhibition_strength": 0.7682495711415644
+    },
+    {
+      "category": "random",
+      "cue_size": 350,
+      "actual_active_count": 4097,
+      "inhibition_strength": 0.883487006812799
+    },
+    {
+      "category": "random",
+      "cue_size": 800,
+      "actual_active_count": 0,
+      "inhibition_strength": 0.7509639557908792
+    },
+    {
+      "category": "random",
+      "cue_size": 1500,
+      "actual_active_count": 382,
+      "inhibition_strength": 0.8636085491595109
+    },
+    {
+      "category": "random",
+      "cue_size": 1,
+      "actual_active_count": 4172,
+      "inhibition_strength": 0.9931498315334375
+    },
+    {
+      "category": "random",
+      "cue_size": 24,
+      "actual_active_count": 0,
+      "inhibition_strength": 0.8441773568034219
+    },
+    {
+      "category": "random",
+      "cue_size": 31,
+      "actual_active_count": 31,
+      "inhibition_strength": 0.8441773568034219
+    },
+    {
+      "category": "empty",
+      "cue_size": 0,
+      "actual_active_count": 4267,
+      "inhibition_strength": 0.9708039603239351
+    },
+    {
+      "category": "dense",
+      "cue_size": 5520,
+      "actual_active_count": 213,
+      "inhibition_strength": 0.9708039603239351
+    },
+    {
+      "category": "saved_actual_thought",
+      "cue_size": 284,
+      "actual_active_count": 260,
+      "inhibition_strength": 0.9708039603239351
+    }
+  ],
+  "seconds": 26.530636600000435,
+  "limitations": [
+    "Exactness is empirically bitwise on the current NumPy/CPU and tested valid original table data.",
+    "Temporary target/weight arrays are rebuilt every call; no stale cache or new persistent model state exists.",
+    "Only recurrent current/gate execution is optimized; original learning, decay, thresholds, inhibition updates and saved model remain unchanged.",
+    "This is a component benchmark, not an end-to-end 10Hz or long-run throughput guarantee.",
+    "Recorded sensory probes retain the float32 precision of the actual sensor archive."
+  ],
+  "script_sha256": "3b152c93f0478a3540f0a0761258b584f22358a7e5773b7989bf9d5bb90c9a58"
+}

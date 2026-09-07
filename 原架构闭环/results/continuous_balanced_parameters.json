@@ -1,0 +1,7 @@
+{
+  "pfc_decay_warning": 1,
+  "pfc_decay_interval": 25,
+  "pfc_decay_rate": 0.9,
+  "pfc_hebb_increment": 0.0001,
+  "memory_decay_rate": 0.9995
+}

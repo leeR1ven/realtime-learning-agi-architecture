@@ -1,0 +1,55 @@
+{
+  "passed": true,
+  "policy": "fixed default",
+  "equivalence": {
+    "frames_equal_to_direct_original_calls": 12,
+    "frozen_frames_advance_clock_without_connections_or_maintenance": 2,
+    "microsteps_equal_to_original_activity_excitation_gate": 12,
+    "native_original_audio_playback_equal_queries": 12,
+    "decay_maintenance_exercised": true,
+    "runtime_objects_are_original_class_instances": true,
+    "microstep_does_not_autowrite_connections": true
+  },
+  "temporal": {
+    "same_time_three_modality_completion": 4,
+    "native_audio_forward_offset_preserved_internal_steps": 2,
+    "recall_does_not_advance_clock_or_learn": true,
+    "unknown_index_cue_rejected": true,
+    "wrap_uses_original_connection_union_semantics": true
+  },
+  "index_binding": {
+    "explicit_same_frame_forward_index_partial_cue_completion": 2,
+    "default_thought_index_behavior_unchanged": true,
+    "thought_to_thought_hebb_connections_unchanged": true,
+    "same_single_index_and_same_frame_time": true,
+    "explicit_index_frozen_learning_and_npz_restore_checked": true,
+    "scope": "Distinct discrete forward/thought activity binding fixture, not real PCM recognition."
+  },
+  "snapshot": {
+    "npz_allow_pickle_false_bytes": 11106,
+    "exact_continuation_frames": 10,
+    "independent_clone_shared_clock_state": true,
+    "public_pfc_parameter_intervention_restored": true
+  },
+  "adapter_width": {
+    "widths": {
+      "visual": 2640,
+      "audio": 2560,
+      "motor": 80,
+      "pfc": 5280
+    },
+    "time_cells": 1728000,
+    "pfc_hebb_increment": 0.01,
+    "pfc_disappearance_threshold": 5e-05,
+    "construction_seconds_after_original_imports": 0.0005345999998098705,
+    "synthetic_active_counts": {
+      "visual": 64,
+      "audio": 64,
+      "motor": 8,
+      "pfc": 24
+    },
+    "record_and_microstep_median_ms": 1.4977000000726548,
+    "record_and_microstep_max_ms": 1.6618999998172512,
+    "note": "Fixed dimensions smoke only. Not a dense-activity performance guarantee or embodied learning result."
+  }
+}

@@ -1,0 +1,23 @@
+# Python 运行缓存
+__pycache__/
+*.py[cod]
+*.pyo
+
+# 虚拟环境（可随时重建，不必入库）
+.venv/
+venv/
+env/
+
+# IDE / 编辑器
+.idea/
+.vscode/
+*.iml
+
+# 系统文件
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# 运行时生成文件（可重新生成）
+*.log
+*.pid

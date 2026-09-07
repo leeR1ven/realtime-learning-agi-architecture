@@ -1,0 +1,61 @@
+<mujoco model="平面火柴人（站立本能训练）">
+  <option timestep="0.02" gravity="0 0 -9.81" integrator="Euler"/>
+  <compiler angle="degree"/>
+
+  <worldbody>
+    <geom name="地面" type="plane" size="5 5 0.1" pos="0 0 0" rgba="0.55 0.55 0.6 1"/>
+    <light pos="0 4 6" dir="0 -1 -1"/>
+
+    <body name="骨盆" pos="0 0 0.95">
+      <joint name="平移X" type="slide" axis="1 0 0" damping="0.1"/>
+      <joint name="平移Z" type="slide" axis="0 0 1" damping="0.1"/>
+      <joint name="俯仰" type="hinge" axis="0 1 0" damping="0.05"/>
+      <geom name="骨盆体" type="capsule" fromto="-0.02 0 0.02  -0.02 0 0.14" size="0.08" mass="3.5"/>
+
+      <!-- 躯干 + 头 -->
+      <body name="躯干" pos="-0.02 0 0.14">
+        <geom name="躯干体" type="capsule" fromto="0 0 0  0.02 0 0.42" size="0.08" mass="5.5"/>
+        <body name="头" pos="0.02 0 0.42">
+          <geom name="头体" type="sphere" size="0.07" mass="1.2" pos="0 0 0.07"/>
+        </body>
+      </body>
+
+      <!-- 左腿（y 偏 -0.09，和右腿并排但不重叠） -->
+      <body name="左腿根" pos="0 -0.09 0">
+        <joint name="左髋" type="hinge" axis="0 1 0" range="-35 75" damping="0.5"/>
+        <geom name="左大腿" type="capsule" fromto="0 0 0 0 0 -0.42" size="0.05" mass="2.4"/>
+        <body name="左小腿" pos="0 0 -0.42">
+          <joint name="左膝" type="hinge" axis="0 1 0" range="0 145" damping="0.4"/>
+          <geom name="左小腿体" type="capsule" fromto="0 0 0 0 0 -0.40" size="0.045" mass="2.0"/>
+          <body name="左脚" pos="0 0 -0.40">
+            <joint name="左踝" type="hinge" axis="0 1 0" range="-35 35" damping="0.3"/>
+            <geom name="左脚底" type="box" size="0.09 0.05 0.035" pos="0.05 0 -0.035" mass="0.8"/>
+          </body>
+        </body>
+      </body>
+
+      <!-- 右腿 -->
+      <body name="右腿根" pos="0 0.09 0">
+        <joint name="右髋" type="hinge" axis="0 1 0" range="-35 75" damping="0.5"/>
+        <geom name="右大腿" type="capsule" fromto="0 0 0 0 0 -0.42" size="0.05" mass="2.4"/>
+        <body name="右小腿" pos="0 0 -0.42">
+          <joint name="右膝" type="hinge" axis="0 1 0" range="0 145" damping="0.4"/>
+          <geom name="右小腿体" type="capsule" fromto="0 0 0 0 0 -0.40" size="0.045" mass="2.0"/>
+          <body name="右脚" pos="0 0 -0.40">
+            <joint name="右踝" type="hinge" axis="0 1 0" range="-35 35" damping="0.3"/>
+            <geom name="右脚底" type="box" size="0.09 0.05 0.035" pos="0.05 0 -0.035" mass="0.8"/>
+          </body>
+        </body>
+      </body>
+    </body>
+  </worldbody>
+
+  <actuator>
+    <motor name="左髋肌" joint="左髋" gear="1" ctrlrange="-150 150"/>
+    <motor name="左膝肌" joint="左膝" gear="1" ctrlrange="-150 150"/>
+    <motor name="左踝肌" joint="左踝" gear="1" ctrlrange="-70 70"/>
+    <motor name="右髋肌" joint="右髋" gear="1" ctrlrange="-150 150"/>
+    <motor name="右膝肌" joint="右膝" gear="1" ctrlrange="-150 150"/>
+    <motor name="右踝肌" joint="右踝" gear="1" ctrlrange="-70 70"/>
+  </actuator>
+</mujoco>

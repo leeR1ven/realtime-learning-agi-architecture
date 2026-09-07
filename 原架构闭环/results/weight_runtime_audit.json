@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "depression": "multiplicative",
+      "exact_continuation_frames": 12,
+      "safe_numeric_roundtrip": true,
+      "change_rule_keeps_weights_and_clock": true,
+      "maintenance_count": 17
+    },
+    {
+      "depression": "weight_dependent",
+      "exact_continuation_frames": 12,
+      "safe_numeric_roundtrip": true,
+      "change_rule_keeps_weights_and_clock": true,
+      "maintenance_count": 17
+    }
+  ]
+}

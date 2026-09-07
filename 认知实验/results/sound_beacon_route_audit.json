@@ -1,0 +1,6245 @@
+{
+  "scope": "Existing navigation prototype, not the complete original brain architecture",
+  "limitations": [
+    "No rewardless recall in this prototype does not disprove the original shared-time architecture.",
+    "An image containing red in recalled events is only a trace observation; it does not establish a goal image or spatial reasoning.",
+    "Visual-input lesion removes body receptors too; ordinary blank vision still activates paired negative receptors.",
+    "The exposure theater is a controlled sensory experiment, not autonomous route learning.",
+    "The prototype internally cuts event links on goal changes: 12 presentations are not one unbroken stored timeline.",
+    "The displayed connection is strongest only within the first returned event; it is not established as the dominant causal source of the final action."
+  ],
+  "audit_script_sha256": "9ebda55a632d0c66bd5b1ac92f7da4550d14d209b8bf78f1130feb2d276d34f7",
+  "source_sha256": {
+    "associative_controller.py": "b3eec1ff3c757ba6c94cfc735fb3a3a97f1bcb6188877c00fabe22a359d66bce",
+    "route_switch_controller.py": "33ce2f5ac5ab0a4774b1381130967df6406c834d69730b1208009deabc27408f",
+    "environment.py": "98982b163650eeab0b7f9e9a9c0e0133b587f8c5a6b1cbc31212a0bb41070613",
+    "textured_route_environment.py": "fe05fcf650abe8a05fe424f93a47ac200fcf6eefe457bc616445131920cad883"
+  },
+  "coexposure": {
+    "protocol": "12 presentations x 6 actual physics steps; same 8192-cell birth; no model reset between presentations; no reward, teacher, or model changes",
+    "birth_hash": "c88e52ea910f5b3e035ef8efb9a3b3685527cea89f8bba08cac20b0e08c55d41",
+    "events": 72,
+    "joint_exposure_frames": 72,
+    "joint_exposure_by_color": {
+      "red": 24,
+      "green": 24,
+      "blue": 24
+    },
+    "stored_feature_event_connections": 16411,
+    "reward_gated_readout_connections": 0,
+    "valued_events": 0,
+    "teacher_events": 0,
+    "chain_starts": 12,
+    "evaluation_preserved_all_learned_connections": true,
+    "presentations": [
+      {
+        "event_id": 0,
+        "repetition": 0,
+        "stimulus_color": "red",
+        "time": 0.0,
+        "color_ray_counts": [
+          3,
+          0,
+          0
+        ],
+        "heard_receptors": [
+          1.0,
+          1.2478451119842444e-15,
+          9.008972575599229e-16,
+          1.4883530604369832e-15,
+          2.9635986460272946e-15
+        ],
+        "joint_visible_and_audible": true,
+        "muscles_executed": [
+          0.30000001192092896,
+          0.0,
+          0.0,
+          0.30000001192092896
+        ]
+      },
+      {
+        "event_id": 1,
+        "repetition": 0,
+        "stimulus_color": "red",
+        "time": 0.10000000000000002,
+        "color_ray_counts": [
+          3,
+          0,
+          0
+        ],
+        "heard_receptors": [
+          1.0,
+          2.285135954485891e-15,
+          3.5054623842271292e-15,
+          7.859392369738402e-16,
+          3.718020209332192e-15
+        ],
+        "joint_visible_and_audible": true,
+        "muscles_executed": [
+          0.30000001192092896,
+          0.0,
+          0.0,
+          0.30000001192092896
+        ]
+      },
+      {
+        "event_id": 2,
+        "repetition": 0,
+        "stimulus_color": "red",
+        "time": 0.2000000000000001,
+        "color_ray_counts": [
+          3,
+          0,
+          0
+        ],
+        "heard_receptors": [
+          1.0,
+          9.768372803955656e-16,
+          7.165766755844274e-15,
+          5.4794222443755154e-15,
+          6.395290540933301e-15
+        ],
+        "joint_visible_and_audible": true,
+        "muscles_executed": [
+          0.30000001192092896,
+          0.0,
+          0.0,
+          0.30000001192092896
+        ]
+      },
+      {
+        "event_id": 3,
+        "repetition": 0,
+        "stimulus_color": "red",
+        "time": 0.30000000000000016,
+        "color_ray_counts": [
+          3,
+          0,
+          0
+        ],
+        "heard_receptors": [
+          1.0,
+          1.3568198770283334e-15,
+          9.493606421946339e-15,
+          4.3084175091540686e-16,
+          2.8383241505146824e-15
+        ],
+        "joint_visible_and_audible": true,
+        "muscles_executed": [
+          0.30000001192092896,
+          0.0,
+          0.0,
+          0.30000001192092896
+        ]
+      },
+      {
+        "event_id": 4,
+        "repetition": 0,
+        "stimulus_color": "red",
+        "time": 0.40000000000000024,
+        "color_ray_counts": [
+          3,
+          0,
+          0
+        ],
+        "heard_receptors": [
+          1.0,
+          2.137975214534099e-15,
+          4.8137313853364965e-15,
+          5.595360398961684e-15,
+          6.331523665335692e-15
+        ],
+        "joint_visible_and_audible": true,
+        "muscles_executed": [
+          0.30000001192092896,
+          0.0,
+          0.0,
+          0.30000001192092896
+        ]
+      },
+      {
+        "event_id": 5,
+        "repetition": 0,
+        "stimulus_color": "red",
+        "time": 0.5000000000000003,
+        "color_ray_counts": [
+          3,
+          0,
+          0
+        ],
+        "heard_receptors": [
+          1.0,
+          3.4877864898482118e-15,
+          1.4057221529278272e-15,
+          2.222647450538508e-14,
+          9.30345115849457e-15
+        ],
+        "joint_visible_and_audible": true,
+        "muscles_executed": [
+          0.30000001192092896,
+          0.0,
+          0.0,
+          0.30000001192092896
+        ]
+      },
+      {
+        "event_id": 6,
+        "repetition": 0,
+        "stimulus_color": "green",
+        "time": 0.0,
+        "color_ray_counts": [
+          0,
+          3,
+          0
+        ],
+        "heard_receptors": [
+          6.494010712784729e-16,
+          1.0,
+          9.78368932413617e-16,
+          1.3808126224423697e-15,
+          2.449420549342106e-15
+        ],
+        "joint_visible_and_audible": true,
+        "muscles_executed": [
+          0.30000001192092896,
+          0.0,
+          0.0,
+          0.30000001192092896
+        ]
+      },
+      {
+        "event_id": 7,
+        "repetition": 0,
+        "stimulus_color": "green",
+        "time": 0.10000000000000002,
+        "color_ray_counts": [
+          0,
+          3,
+          0
+        ],
+        "heard_receptors": [
+          3.738603560069956e-15,
+          1.0,
+          4.36084603598419e-15,
+          3.629507995991629e-15,
+          8.091913931437897e-15
+        ],
+        "joint_visible_and_audible": true,
+        "muscles_executed": [
+          0.30000001192092896,
+          0.0,
+          0.0,
+          0.30000001192092896
+        ]
+      },
+      {
+        "event_id": 8,
+        "repetition": 0,
+        "stimulus_color": "green",
+        "time": 0.2000000000000001,
+        "color_ray_counts": [
+          0,
+          3,
+          0
+        ],
+        "heard_receptors": [
+          2.2904272113367533e-16,
+          1.0,
+          7.783750980867407e-15,
+          3.1182877682108745e-15,
+          1.975015906276326e-15
+        ],
+        "joint_visible_and_audible": true,
+        "muscles_executed": [
+          0.30000001192092896,
+          0.0,
+          0.0,
+          0.30000001192092896
+        ]
+      },
+      {
+        "event_id": 9,
+        "repetition": 0,
+        "stimulus_color": "green",
+        "time": 0.30000000000000016,
+        "color_ray_counts": [
+          0,
+          3,
+          0
+        ],
+        "heard_receptors": [
+          3.1061355283778867e-15,
+          1.0,
+          2.256121044838211e-15,
+          2.657621763508742e-15,
+          1.4750425595981005e-14
+        ],
+        "joint_visible_and_audible": true,
+        "muscles_executed": [
+          0.30000001192092896,
+          0.0,
+          0.0,
+          0.30000001192092896
+        ]
+      },
+      {
+        "event_id": 10,
+        "repetition": 0,
+        "stimulus_color": "green",
+        "time": 0.40000000000000024,
+        "color_ray_counts": [
+          0,
+          3,
+          0
+        ],
+        "heard_receptors": [
+          3.0665232535999795e-15,
+          1.0,
+          3.385163132005506e-15,
+          9.704164092275422e-16,
+          9.485849033172021e-15
+        ],
+        "joint_visible_and_audible": true,
+        "muscles_executed": [
+          0.30000001192092896,
+          0.0,
+          0.0,
+          0.30000001192092896
+        ]
+      },
+      {
+        "event_id": 11,
+        "repetition": 0,
+        "stimulus_color": "green",
+        "time": 0.5000000000000003,
+        "color_ray_counts": [
+          0,
+          3,
+          0
+        ],
+        "heard_receptors": [
+          5.459763982073148e-15,
+          1.0,
+          7.166922198237336e-15,
+          5.143594753728555e-15,
+          3.196972141983687e-15
+        ],
+        "joint_visible_and_audible": true,
+        "muscles_executed": [
+          0.30000001192092896,
+          0.0,
+          0.0,
+          0.30000001192092896
+        ]
+      },
+      {
+        "event_id": 12,
+        "repetition": 0,
+        "stimulus_color": "blue",
+        "time": 0.0,
+        "color_ray_counts": [
+          0,
+          0,
+          3
+        ],
+        "heard_receptors": [
+          2.0316579012306727e-15,
+          1.3946732890822858e-15,
+          1.0,
+          3.834967826057326e-15,
+          1.1752775916059243e-15
+        ],
+        "joint_visible_and_audible": true,
+        "muscles_executed": [
+          0.30000001192092896,
+          0.0,
+          0.0,
+          0.30000001192092896
+        ]
+      },
+      {
+        "event_id": 13,
+        "repetition": 0,
+        "stimulus_color": "blue",
+        "time": 0.10000000000000002,
+        "color_ray_counts": [
+          0,
+          0,
+          3
+        ],
+        "heard_receptors": [
+          1.266830881148715e-15,
+          3.84077916845217e-15,
+          1.0,
+          6.983978715507548e-15,
+          4.298131737063693e-14
+        ],
+        "joint_visible_and_audible": true,
+        "muscles_executed": [
+          0.30000001192092896,
+          0.0,
+          0.0,
+          0.30000001192092896
+        ]
+      },
+      {
+        "event_id": 14,
+        "repetition": 0,
+        "stimulus_color": "blue",
+        "time": 0.2000000000000001,
+        "color_ray_counts": [
+          0,
+          0,
+          3
+        ],
+        "heard_receptors": [
+          7.822288637106124e-15,
+          1.0950018833226818e-14,
+          1.0,
+          2.823463488380469e-14,
+          4.2113292910500036e-14
+        ],
+        "joint_visible_and_audible": true,
+        "muscles_executed": [
+          0.30000001192092896,
+          0.0,
+          0.0,
+          0.30000001192092896
+        ]
+      },
+      {
+        "event_id": 15,
+        "repetition": 0,
+        "stimulus_color": "blue",
+        "time": 0.30000000000000016,
+        "color_ray_counts": [
+          0,
+          0,
+          3
+        ],
+        "heard_receptors": [
+          3.174390950549151e-15,
+          1.0232619309253453e-14,
+          1.0,
+          2.0044693469855337e-14,
+          7.500050798064753e-14
+        ],
+        "joint_visible_and_audible": true,
+        "muscles_executed": [
+          0.30000001192092896,
+          0.0,
+          0.0,
+          0.30000001192092896
+        ]
+      },
+      {
+        "event_id": 16,
+        "repetition": 0,
+        "stimulus_color": "blue",
+        "time": 0.40000000000000024,
+        "color_ray_counts": [
+          0,
+          0,
+          3
+        ],
+        "heard_receptors": [
+          7.255770558625614e-16,
+          7.03307002997029e-15,
+          1.0,
+          1.2792107166031286e-14,
+          6.416755006914398e-14
+        ],
+        "joint_visible_and_audible": true,
+        "muscles_executed": [
+          0.30000001192092896,
+          0.0,
+          0.0,
+          0.30000001192092896
+        ]
+      },
+      {
+        "event_id": 17,
+        "repetition": 0,
+        "stimulus_color": "blue",
+        "time": 0.5000000000000003,
+        "color_ray_counts": [
+          0,
+          0,
+          3
+        ],
+        "heard_receptors": [
+          1.0797466857363031e-14,
+          1.6526162218145575e-15,
+          1.0,
+          2.856992847507732e-14,
+          7.948186167690922e-14
+        ],
+        "joint_visible_and_audible": true,
+        "muscles_executed": [
+          0.30000001192092896,
+          0.0,
+          0.0,
+          0.30000001192092896
+        ]
+      },
+      {
+        "event_id": 18,
+        "repetition": 1,
+        "stimulus_color": "red",
+        "time": 0.0,
+        "color_ray_counts": [
+          3,
+          0,
+          0
+        ],
+        "heard_receptors": [
+          1.0,
+          9.646366881288691e-16,
+          2.8358792443708124e-15,
+          1.1490354761003547e-15,
+          1.9940550947949782e-15
+        ],
+        "joint_visible_and_audible": true,
+        "muscles_executed": [
+          0.30000001192092896,
+          0.0,
+          0.0,
+          0.30000001192092896
+        ]
+      },
+      {
+        "event_id": 19,
+        "repetition": 1,
+        "stimulus_color": "red",
+        "time": 0.10000000000000002,
+        "color_ray_counts": [
+          3,
+          0,
+          0
+        ],
+        "heard_receptors": [
+          1.0,
+          2.434403200328134e-15,
+          5.15395519646797e-15,
+          1.4708966930128737e-15,
+          2.137899200037619e-15
+        ],
+        "joint_visible_and_audible": true,
+        "muscles_executed": [
+          0.30000001192092896,
+          0.0,
+          0.0,
+          0.30000001192092896
+        ]
+      },
+      {
+        "event_id": 20,
+        "repetition": 1,
+        "stimulus_color": "red",
+        "time": 0.2000000000000001,
+        "color_ray_counts": [
+          3,
+          0,
+          0
+        ],
+        "heard_receptors": [
+          1.0,
+          1.1458135386206114e-15,
+          7.566018375217e-15,
+          4.524115275078546e-15,
+          1.7915723449237657e-15
+        ],
+        "joint_visible_and_audible": true,
+        "muscles_executed": [
+          0.30000001192092896,
+          0.0,
+          0.0,
+          0.30000001192092896
+        ]
+      },
+      {
+        "event_id": 21,
+        "repetition": 1,
+        "stimulus_color": "red",
+        "time": 0.30000000000000016,
+        "color_ray_counts": [
+          3,
+          0,
+          0
+        ],
+        "heard_receptors": [
+          1.0,
+          1.5119469838869403e-15,
+          2.2890280900295586e-15,
+          2.4468048768780685e-15,
+          4.568060138296502e-15
+        ],
+        "joint_visible_and_audible": true,
+        "muscles_executed": [
+          0.30000001192092896,
+          0.0,
+          0.0,
+          0.30000001192092896
+        ]
+      },
+      {
+        "event_id": 22,
+        "repetition": 1,
+        "stimulus_color": "red",
+        "time": 0.40000000000000024,
+        "color_ray_counts": [
+          3,
+          0,
+          0
+        ],
+        "heard_receptors": [
+          1.0,
+          5.798580644496178e-17,
+          5.000060349185572e-15,
+          2.5730346006890013e-15,
+          2.48574068783706e-15
+        ],
+        "joint_visible_and_audible": true,
+        "muscles_executed": [
+          0.6000000238418579,
+          0.0,
+          0.6000000238418579,
+          0.0
+        ]
+      },
+      {
+        "event_id": 23,
+        "repetition": 1,
+        "stimulus_color": "red",
+        "time": 0.5000000000000003,
+        "color_ray_counts": [
+          3,
+          0,
+          0
+        ],
+        "heard_receptors": [
+          1.0,
+          3.387224063278292e-15,
+          3.4759144830337607e-15,
+          1.7979451579866588e-14,
+          1.2545559318882943e-14
+        ],
+        "joint_visible_and_audible": true,
+        "muscles_executed": [
+          0.6000000238418579,
+          0.0,
+          0.6000000238418579,
+          0.0
+        ]
+      },
+      {
+        "event_id": 24,
+        "repetition": 1,
+        "stimulus_color": "green",
+        "time": 0.0,
+        "color_ray_counts": [
+          0,
+          3,
+          0
+        ],
+        "heard_receptors": [
+          9.468565824153416e-16,
+          1.0,
+          8.514665996580839e-16,
+          1.4728545917528813e-15,
+          9.408364659554714e-16
+        ],
+        "joint_visible_and_audible": true,
+        "muscles_executed": [
+          0.6000000238418579,
+          0.0,
+          0.6000000238418579,
+          0.0
+        ]
+      },
+      {
+        "event_id": 25,
+        "repetition": 1,
+        "stimulus_color": "green",
+        "time": 0.10000000000000002,
+        "color_ray_counts": [
+          0,
+          3,
+          0
+        ],
+        "heard_receptors": [
+          4.653271888487872e-15,
+          1.0,
+          1.6854040427661987e-15,
+          2.524927969085809e-15,
+          1.85391009763942e-15
+        ],
+        "joint_visible_and_audible": true,
+        "muscles_executed": [
+          0.6000000238418579,
+          0.0,
+          0.6000000238418579,
+          0.0
+        ]
+      },
+      {
+        "event_id": 26,
+        "repetition": 1,
+        "stimulus_color": "green",
+        "time": 0.2000000000000001,
+        "color_ray_counts": [
+          0,
+          3,
+          0
+        ],
+        "heard_receptors": [
+          1.5180311297070598e-15,
+          1.0,
+          7.783698879403299e-15,
+          1.4604030134734481e-15,
+          1.4724987948999478e-15
+        ],
+        "joint_visible_and_audible": true,
+        "muscles_executed": [
+          0.6000000238418579,
+          0.0,
+          0.6000000238418579,
+          0.0
+        ]
+      },
+      {
+        "event_id": 27,
+        "repetition": 1,
+        "stimulus_color": "green",
+        "time": 0.30000000000000016,
+        "color_ray_counts": [
+          0,
+          3,
+          0
+        ],
+        "heard_receptors": [
+          6.260099730967863e-16,
+          1.0,
+          8.048238849922964e-15,
+          1.6601982985068787e-15,
+          1.1244200749935467e-14
+        ],
+        "joint_visible_and_audible": true,
+        "muscles_executed": [
+          0.6000000238418579,
+          0.0,
+          0.6000000238418579,
+          0.0
+        ]
+      },
+      {
+        "event_id": 28,
+        "repetition": 1,
+        "stimulus_color": "green",
+        "time": 0.40000000000000024,
+        "color_ray_counts": [
+          0,
+          3,
+          0
+        ],
+        "heard_receptors": [
+          4.1307395506158265e-15,
+          1.0,
+          7.006493686735199e-15,
+          1.4449670457301168e-15,
+          8.308139737532652e-15
+        ],
+        "joint_visible_and_audible": true,
+        "muscles_executed": [
+          0.6000000238418579,
+          0.0,
+          0.6000000238418579,
+          0.0
+        ]
+      },
+      {
+        "event_id": 29,
+        "repetition": 1,
+        "stimulus_color": "green",
+        "time": 0.5000000000000003,
+        "color_ray_counts": [
+          0,
+          3,
+          0
+        ],
+        "heard_receptors": [
+          6.159597045762612e-15,
+          1.0,
+          6.357709560005106e-15,
+          7.320131833627257e-15,
+          2.3511498434786198e-15
+        ],
+        "joint_visible_and_audible": true,
+        "muscles_executed": [
+          0.6000000238418579,
+          0.0,
+          0.6000000238418579,
+          0.0
+        ]
+      },
+      {
+        "event_id": 30,
+        "repetition": 1,
+        "stimulus_color": "blue",
+        "time": 0.0,
+        "color_ray_counts": [
+          0,
+          0,
+          3
+        ],
+        "heard_receptors": [
+          2.237220806231406e-15,
+          3.3761042430457204e-15,
+          1.0,
+          2.454189958649307e-15,
+          2.320462026948358e-15
+        ],
+        "joint_visible_and_audible": true,
+        "muscles_executed": [
+          0.6000000238418579,
+          0.0,
+          0.6000000238418579,
+          0.0
+        ]
+      },
+      {
+        "event_id": 31,
+        "repetition": 1,
+        "stimulus_color": "blue",
+        "time": 0.10000000000000002,
+        "color_ray_counts": [
+          0,
+          0,
+          3
+        ],
+        "heard_receptors": [
+          3.1088630802526e-15,
+          1.885734895873564e-15,
+          1.0,
+          5.102506293767838e-15,
+          4.7938873185521786e-14
+        ],
+        "joint_visible_and_audible": true,
+        "muscles_executed": [
+          0.6000000238418579,
+          0.0,
+          0.6000000238418579,
+          0.0
+        ]
+      },
+      {
+        "event_id": 32,
+        "repetition": 1,
+        "stimulus_color": "blue",
+        "time": 0.2000000000000001,
+        "color_ray_counts": [
+          0,
+          0,
+          3
+        ],
+        "heard_receptors": [
+          3.4375893561392434e-15,
+          4.581237219537055e-15,
+          1.0,
+          1.731536349890293e-14,
+          4.089344928270039e-14
+        ],
+        "joint_visible_and_audible": true,
+        "muscles_executed": [
+          0.6000000238418579,
+          0.0,
+          0.6000000238418579,
+          0.0
+        ]
+      },
+      {
+        "event_id": 33,
+        "repetition": 1,
+        "stimulus_color": "blue",
+        "time": 0.30000000000000016,
+        "color_ray_counts": [
+          0,
+          0,
+          3
+        ],
+        "heard_receptors": [
+          2.674077025694552e-15,
+          9.643619213778912e-15,
+          1.0,
+          1.8182973833845338e-14,
+          7.811870824012063e-14
+        ],
+        "joint_visible_and_audible": true,
+        "muscles_executed": [
+          0.6000000238418579,
+          0.0,
+          0.6000000238418579,
+          0.0
+        ]
+      },
+      {
+        "event_id": 34,
+        "repetition": 1,
+        "stimulus_color": "blue",
+        "time": 0.40000000000000024,
+        "color_ray_counts": [
+          0,
+          0,
+          3
+        ],
+        "heard_receptors": [
+          8.082626486048164e-15,
+          9.936830208855405e-15,
+          1.0,
+          1.7013384973567768e-14,
+          6.572996011720023e-14
+        ],
+        "joint_visible_and_audible": true,
+        "muscles_executed": [
+          0.6000000238418579,
+          0.0,
+          0.6000000238418579,
+          0.0
+        ]
+      },
+      {
+        "event_id": 35,
+        "repetition": 1,
+        "stimulus_color": "blue",
+        "time": 0.5000000000000003,
+        "color_ray_counts": [
+          0,
+          0,
+          3
+        ],
+        "heard_receptors": [
+          5.084415270072963e-15,
+          6.598208647823428e-15,
+          1.0,
+          2.1484577893930608e-14,
+          7.423954093512492e-14
+        ],
+        "joint_visible_and_audible": true,
+        "muscles_executed": [
+          0.6000000238418579,
+          0.0,
+          0.6000000238418579,
+          0.0
+        ]
+      },
+      {
+        "event_id": 36,
+        "repetition": 2,
+        "stimulus_color": "red",
+        "time": 0.0,
+        "color_ray_counts": [
+          3,
+          0,
+          0
+        ],
+        "heard_receptors": [
+          1.0,
+          1.2970645119066932e-15,
+          2.2739168875624065e-16,
+          1.2684916225675807e-15,
+          3.3112298987882024e-15
+        ],
+        "joint_visible_and_audible": true,
+        "muscles_executed": [
+          0.6000000238418579,
+          0.0,
+          0.6000000238418579,
+          0.0
+        ]
+      },
+      {
+        "event_id": 37,
+        "repetition": 2,
+        "stimulus_color": "red",
+        "time": 0.10000000000000002,
+        "color_ray_counts": [
+          3,
+          0,
+          0
+        ],
+        "heard_receptors": [
+          1.0,
+          3.0944485756678775e-15,
+          5.0663614542637856e-15,
+          6.689343602492411e-16,
+          4.400566347510622e-15
+        ],
+        "joint_visible_and_audible": true,
+        "muscles_executed": [
+          0.6000000238418579,
+          0.0,
+          0.6000000238418579,
+          0.0
+        ]
+      },
+      {
+        "event_id": 38,
+        "repetition": 2,
+        "stimulus_color": "red",
+        "time": 0.2000000000000001,
+        "color_ray_counts": [
+          3,
+          0,
+          0
+        ],
+        "heard_receptors": [
+          1.0,
+          9.3118727161211e-16,
+          8.048649642712916e-15,
+          4.815950498282366e-15,
+          6.631295723120012e-15
+        ],
+        "joint_visible_and_audible": true,
+        "muscles_executed": [
+          0.6000000238418579,
+          0.0,
+          0.6000000238418579,
+          0.0
+        ]
+      },
+      {
+        "event_id": 39,
+        "repetition": 2,
+        "stimulus_color": "red",
+        "time": 0.30000000000000016,
+        "color_ray_counts": [
+          3,
+          0,
+          0
+        ],
+        "heard_receptors": [
+          1.0,
+          1.697262441130036e-15,
+          1.1721075200100638e-14,
+          2.066780498229654e-15,
+          3.421665156544827e-15
+        ],
+        "joint_visible_and_audible": true,
+        "muscles_executed": [
+          0.6000000238418579,
+          0.0,
+          0.6000000238418579,
+          0.0
+        ]
+      },
+      {
+        "event_id": 40,
+        "repetition": 2,
+        "stimulus_color": "red",
+        "time": 0.40000000000000024,
+        "color_ray_counts": [
+          3,
+          0,
+          0
+        ],
+        "heard_receptors": [
+          1.0,
+          2.41134887117596e-15,
+          6.893110799972396e-15,
+          5.544494839632201e-15,
+          6.393561338514942e-15
+        ],
+        "joint_visible_and_audible": true,
+        "muscles_executed": [
+          0.0,
+          0.30000001192092896,
+          0.30000001192092896,
+          0.0
+        ]
+      },
+      {
+        "event_id": 41,
+        "repetition": 2,
+        "stimulus_color": "red",
+        "time": 0.5000000000000003,
+        "color_ray_counts": [
+          3,
+          0,
+          0
+        ],
+        "heard_receptors": [
+          1.0,
+          2.9046931889088157e-15,
+          2.4665685953208396e-15,
+          2.2504151441102975e-14,
+          8.876740699164977e-15
+        ],
+        "joint_visible_and_audible": true,
+        "muscles_executed": [
+          0.0,
+          0.30000001192092896,
+          0.30000001192092896,
+          0.0
+        ]
+      },
+      {
+        "event_id": 42,
+        "repetition": 2,
+        "stimulus_color": "green",
+        "time": 0.0,
+        "color_ray_counts": [
+          0,
+          3,
+          0
+        ],
+        "heard_receptors": [
+          1.2747089751989846e-15,
+          1.0,
+          1.425086540847954e-15,
+          1.9702500454408514e-15,
+          4.5483521095881155e-15
+        ],
+        "joint_visible_and_audible": true,
+        "muscles_executed": [
+          0.0,
+          0.30000001192092896,
+          0.30000001192092896,
+          0.0
+        ]
+      },
+      {
+        "event_id": 43,
+        "repetition": 2,
+        "stimulus_color": "green",
+        "time": 0.10000000000000002,
+        "color_ray_counts": [
+          0,
+          3,
+          0
+        ],
+        "heard_receptors": [
+          3.1927990027596484e-15,
+          1.0,
+          3.2724775072649395e-15,
+          2.950549832588524e-15,
+          1.1228075969935156e-14
+        ],
+        "joint_visible_and_audible": true,
+        "muscles_executed": [
+          0.0,
+          0.30000001192092896,
+          0.30000001192092896,
+          0.0
+        ]
+      },
+      {
+        "event_id": 44,
+        "repetition": 2,
+        "stimulus_color": "green",
+        "time": 0.2000000000000001,
+        "color_ray_counts": [
+          0,
+          3,
+          0
+        ],
+        "heard_receptors": [
+          1.1825789161383093e-15,
+          1.0,
+          5.568672160701575e-15,
+          3.721631675049665e-15,
+          3.959206477602873e-15
+        ],
+        "joint_visible_and_audible": true,
+        "muscles_executed": [
+          0.0,
+          0.30000001192092896,
+          0.30000001192092896,
+          0.0
+        ]
+      },
+      {
+        "event_id": 45,
+        "repetition": 2,
+        "stimulus_color": "green",
+        "time": 0.30000000000000016,
+        "color_ray_counts": [
+          0,
+          3,
+          0
+        ],
+        "heard_receptors": [
+          2.440507445739957e-15,
+          1.0,
+          8.295775011800711e-15,
+          3.573515231698065e-15,
+          1.6695006720525413e-14
+        ],
+        "joint_visible_and_audible": true,
+        "muscles_executed": [
+          0.0,
+          0.30000001192092896,
+          0.30000001192092896,
+          0.0
+        ]
+      },
+      {
+        "event_id": 46,
+        "repetition": 2,
+        "stimulus_color": "green",
+        "time": 0.40000000000000024,
+        "color_ray_counts": [
+          0,
+          3,
+          0
+        ],
+        "heard_receptors": [
+          1.2079005089972172e-15,
+          1.0,
+          1.1569942588519466e-15,
+          1.4090897305634485e-15,
+          9.403360700513047e-15
+        ],
+        "joint_visible_and_audible": true,
+        "muscles_executed": [
+          0.0,
+          0.30000001192092896,
+          0.30000001192092896,
+          0.0
+        ]
+      },
+      {
+        "event_id": 47,
+        "repetition": 2,
+        "stimulus_color": "green",
+        "time": 0.5000000000000003,
+        "color_ray_counts": [
+          0,
+          3,
+          0
+        ],
+        "heard_receptors": [
+          3.038414421653165e-15,
+          1.0,
+          6.154505149263936e-15,
+          2.3812925942824758e-15,
+          5.452028643355115e-15
+        ],
+        "joint_visible_and_audible": true,
+        "muscles_executed": [
+          0.0,
+          0.30000001192092896,
+          0.30000001192092896,
+          0.0
+        ]
+      },
+      {
+        "event_id": 48,
+        "repetition": 2,
+        "stimulus_color": "blue",
+        "time": 0.0,
+        "color_ray_counts": [
+          0,
+          0,
+          3
+        ],
+        "heard_receptors": [
+          1.8665432247269673e-15,
+          3.8487742731139445e-15,
+          1.0,
+          1.8510439671651126e-15,
+          2.1111766593099387e-15
+        ],
+        "joint_visible_and_audible": true,
+        "muscles_executed": [
+          0.0,
+          0.30000001192092896,
+          0.30000001192092896,
+          0.0
+        ]
+      },
+      {
+        "event_id": 49,
+        "repetition": 2,
+        "stimulus_color": "blue",
+        "time": 0.10000000000000002,
+        "color_ray_counts": [
+          0,
+          0,
+          3
+        ],
+        "heard_receptors": [
+          2.3816524165890135e-15,
+          2.4767392233545433e-15,
+          1.0,
+          4.2636892787388905e-15,
+          4.956016819400038e-14
+        ],
+        "joint_visible_and_audible": true,
+        "muscles_executed": [
+          0.6000000238418579,
+          0.0,
+          0.6000000238418579,
+          0.0
+        ]
+      },
+      {
+        "event_id": 50,
+        "repetition": 2,
+        "stimulus_color": "blue",
+        "time": 0.2000000000000001,
+        "color_ray_counts": [
+          0,
+          0,
+          3
+        ],
+        "heard_receptors": [
+          4.606739345278398e-15,
+          7.954176050740909e-15,
+          1.0,
+          1.5727118636174966e-14,
+          4.174508191692498e-14
+        ],
+        "joint_visible_and_audible": true,
+        "muscles_executed": [
+          0.6000000238418579,
+          0.0,
+          0.6000000238418579,
+          0.0
+        ]
+      },
+      {
+        "event_id": 51,
+        "repetition": 2,
+        "stimulus_color": "blue",
+        "time": 0.30000000000000016,
+        "color_ray_counts": [
+          0,
+          0,
+          3
+        ],
+        "heard_receptors": [
+          3.2267885766466134e-15,
+          9.554879768020265e-15,
+          1.0,
+          1.7932443784658613e-14,
+          7.834322890342736e-14
+        ],
+        "joint_visible_and_audible": true,
+        "muscles_executed": [
+          0.6000000238418579,
+          0.0,
+          0.6000000238418579,
+          0.0
+        ]
+      },
+      {
+        "event_id": 52,
+        "repetition": 2,
+        "stimulus_color": "blue",
+        "time": 0.40000000000000024,
+        "color_ray_counts": [
+          0,
+          0,
+          3
+        ],
+        "heard_receptors": [
+          9.253801073469225e-15,
+          1.196399481065279e-14,
+          1.0,
+          1.573701542296393e-14,
+          6.441660187550916e-14
+        ],
+        "joint_visible_and_audible": true,
+        "muscles_executed": [
+          0.6000000238418579,
+          0.0,
+          0.6000000238418579,
+          0.0
+        ]
+      },
+      {
+        "event_id": 53,
+        "repetition": 2,
+        "stimulus_color": "blue",
+        "time": 0.5000000000000003,
+        "color_ray_counts": [
+          0,
+          0,
+          3
+        ],
+        "heard_receptors": [
+          4.235856070870978e-15,
+          6.914009211125302e-15,
+          1.0,
+          2.1698451849679566e-14,
+          7.38431757186029e-14
+        ],
+        "joint_visible_and_audible": true,
+        "muscles_executed": [
+          0.6000000238418579,
+          0.0,
+          0.6000000238418579,
+          0.0
+        ]
+      },
+      {
+        "event_id": 54,
+        "repetition": 3,
+        "stimulus_color": "red",
+        "time": 0.0,
+        "color_ray_counts": [
+          3,
+          0,
+          0
+        ],
+        "heard_receptors": [
+          1.0,
+          1.3435454961917075e-15,
+          1.2469522595550174e-15,
+          5.525277298687368e-16,
+          2.9867927264348955e-15
+        ],
+        "joint_visible_and_audible": true,
+        "muscles_executed": [
+          0.6000000238418579,
+          0.0,
+          0.6000000238418579,
+          0.0
+        ]
+      },
+      {
+        "event_id": 55,
+        "repetition": 3,
+        "stimulus_color": "red",
+        "time": 0.10000000000000002,
+        "color_ray_counts": [
+          3,
+          0,
+          0
+        ],
+        "heard_receptors": [
+          1.0,
+          3.78210500326325e-15,
+          6.428910518036685e-15,
+          3.978289239393045e-16,
+          5.013522514267845e-15
+        ],
+        "joint_visible_and_audible": true,
+        "muscles_executed": [
+          0.6000000238418579,
+          0.0,
+          0.6000000238418579,
+          0.0
+        ]
+      },
+      {
+        "event_id": 56,
+        "repetition": 3,
+        "stimulus_color": "red",
+        "time": 0.2000000000000001,
+        "color_ray_counts": [
+          3,
+          0,
+          0
+        ],
+        "heard_receptors": [
+          1.0,
+          9.625209227333312e-16,
+          9.086173280847245e-15,
+          3.5049539255378832e-15,
+          6.299111294819302e-15
+        ],
+        "joint_visible_and_audible": true,
+        "muscles_executed": [
+          0.6000000238418579,
+          0.0,
+          0.6000000238418579,
+          0.0
+        ]
+      },
+      {
+        "event_id": 57,
+        "repetition": 3,
+        "stimulus_color": "red",
+        "time": 0.30000000000000016,
+        "color_ray_counts": [
+          3,
+          0,
+          0
+        ],
+        "heard_receptors": [
+          1.0,
+          3.4015080188233255e-15,
+          1.2541240918053271e-14,
+          3.027500654532987e-15,
+          5.052830761993702e-15
+        ],
+        "joint_visible_and_audible": true,
+        "muscles_executed": [
+          0.6000000238418579,
+          0.0,
+          0.6000000238418579,
+          0.0
+        ]
+      },
+      {
+        "event_id": 58,
+        "repetition": 3,
+        "stimulus_color": "red",
+        "time": 0.40000000000000024,
+        "color_ray_counts": [
+          3,
+          0,
+          0
+        ],
+        "heard_receptors": [
+          1.0,
+          2.474378536278246e-15,
+          8.829520080558182e-15,
+          4.969815108159757e-15,
+          5.863658664925417e-15
+        ],
+        "joint_visible_and_audible": true,
+        "muscles_executed": [
+          0.6000000238418579,
+          0.0,
+          0.6000000238418579,
+          0.0
+        ]
+      },
+      {
+        "event_id": 59,
+        "repetition": 3,
+        "stimulus_color": "red",
+        "time": 0.5000000000000003,
+        "color_ray_counts": [
+          3,
+          0,
+          0
+        ],
+        "heard_receptors": [
+          1.0,
+          1.8837395203464707e-15,
+          3.6643731382403616e-15,
+          2.1988051586802638e-14,
+          9.176306426108659e-15
+        ],
+        "joint_visible_and_audible": true,
+        "muscles_executed": [
+          0.6000000238418579,
+          0.0,
+          0.6000000238418579,
+          0.0
+        ]
+      },
+      {
+        "event_id": 60,
+        "repetition": 3,
+        "stimulus_color": "green",
+        "time": 0.0,
+        "color_ray_counts": [
+          0,
+          3,
+          0
+        ],
+        "heard_receptors": [
+          7.896750523746867e-16,
+          1.0,
+          7.140590879799954e-16,
+          1.2782859189394196e-15,
+          7.495386502246674e-16
+        ],
+        "joint_visible_and_audible": true,
+        "muscles_executed": [
+          0.6000000238418579,
+          0.0,
+          0.6000000238418579,
+          0.0
+        ]
+      },
+      {
+        "event_id": 61,
+        "repetition": 3,
+        "stimulus_color": "green",
+        "time": 0.10000000000000002,
+        "color_ray_counts": [
+          0,
+          3,
+          0
+        ],
+        "heard_receptors": [
+          3.59785633879654e-15,
+          1.0,
+          2.1378928987712407e-15,
+          2.1670391222583604e-15,
+          3.181996319817037e-15
+        ],
+        "joint_visible_and_audible": true,
+        "muscles_executed": [
+          0.6000000238418579,
+          0.0,
+          0.6000000238418579,
+          0.0
+        ]
+      },
+      {
+        "event_id": 62,
+        "repetition": 3,
+        "stimulus_color": "green",
+        "time": 0.2000000000000001,
+        "color_ray_counts": [
+          0,
+          3,
+          0
+        ],
+        "heard_receptors": [
+          1.0497236822276731e-15,
+          1.0,
+          8.117823228431333e-15,
+          2.1137546279466787e-15,
+          8.784173035987076e-16
+        ],
+        "joint_visible_and_audible": true,
+        "muscles_executed": [
+          0.30000001192092896,
+          0.0,
+          0.0,
+          0.30000001192092896
+        ]
+      },
+      {
+        "event_id": 63,
+        "repetition": 3,
+        "stimulus_color": "green",
+        "time": 0.30000000000000016,
+        "color_ray_counts": [
+          0,
+          3,
+          0
+        ],
+        "heard_receptors": [
+          3.2884219019288548e-15,
+          1.0,
+          6.371017206703357e-15,
+          1.7909041857022464e-15,
+          1.0735341905009216e-14
+        ],
+        "joint_visible_and_audible": true,
+        "muscles_executed": [
+          0.30000001192092896,
+          0.0,
+          0.0,
+          0.30000001192092896
+        ]
+      },
+      {
+        "event_id": 64,
+        "repetition": 3,
+        "stimulus_color": "green",
+        "time": 0.40000000000000024,
+        "color_ray_counts": [
+          0,
+          3,
+          0
+        ],
+        "heard_receptors": [
+          3.9012665436794794e-15,
+          1.0,
+          5.951947490529296e-15,
+          1.1890964196030014e-15,
+          8.829200802855734e-15
+        ],
+        "joint_visible_and_audible": true,
+        "muscles_executed": [
+          0.30000001192092896,
+          0.0,
+          0.0,
+          0.30000001192092896
+        ]
+      },
+      {
+        "event_id": 65,
+        "repetition": 3,
+        "stimulus_color": "green",
+        "time": 0.5000000000000003,
+        "color_ray_counts": [
+          0,
+          4,
+          0
+        ],
+        "heard_receptors": [
+          6.2192318791403676e-15,
+          1.0,
+          6.84372616269818e-15,
+          6.793751465774055e-15,
+          2.0052770107380195e-15
+        ],
+        "joint_visible_and_audible": true,
+        "muscles_executed": [
+          0.30000001192092896,
+          0.0,
+          0.0,
+          0.30000001192092896
+        ]
+      },
+      {
+        "event_id": 66,
+        "repetition": 3,
+        "stimulus_color": "blue",
+        "time": 0.0,
+        "color_ray_counts": [
+          0,
+          0,
+          3
+        ],
+        "heard_receptors": [
+          2.3343638527073876e-15,
+          2.999672307601489e-15,
+          1.0,
+          2.4727391756905363e-15,
+          2.3000348151553338e-15
+        ],
+        "joint_visible_and_audible": true,
+        "muscles_executed": [
+          0.30000001192092896,
+          0.0,
+          0.0,
+          0.30000001192092896
+        ]
+      },
+      {
+        "event_id": 67,
+        "repetition": 3,
+        "stimulus_color": "blue",
+        "time": 0.10000000000000002,
+        "color_ray_counts": [
+          0,
+          0,
+          3
+        ],
+        "heard_receptors": [
+          3.0580148001824967e-15,
+          1.8403572863077293e-15,
+          1.0,
+          4.814896002166411e-15,
+          4.7531900350213283e-14
+        ],
+        "joint_visible_and_audible": true,
+        "muscles_executed": [
+          0.30000001192092896,
+          0.0,
+          0.0,
+          0.30000001192092896
+        ]
+      },
+      {
+        "event_id": 68,
+        "repetition": 3,
+        "stimulus_color": "blue",
+        "time": 0.2000000000000001,
+        "color_ray_counts": [
+          0,
+          0,
+          3
+        ],
+        "heard_receptors": [
+          3.524151238680959e-15,
+          8.127547375618847e-15,
+          1.0,
+          1.8461712493229477e-14,
+          4.046475442709387e-14
+        ],
+        "joint_visible_and_audible": true,
+        "muscles_executed": [
+          0.30000001192092896,
+          0.0,
+          0.0,
+          0.30000001192092896
+        ]
+      },
+      {
+        "event_id": 69,
+        "repetition": 3,
+        "stimulus_color": "blue",
+        "time": 0.30000000000000016,
+        "color_ray_counts": [
+          0,
+          0,
+          3
+        ],
+        "heard_receptors": [
+          2.279704896662271e-15,
+          9.733462670937383e-15,
+          1.0,
+          1.8330230731035147e-14,
+          7.789840004572932e-14
+        ],
+        "joint_visible_and_audible": true,
+        "muscles_executed": [
+          0.30000001192092896,
+          0.0,
+          0.0,
+          0.30000001192092896
+        ]
+      },
+      {
+        "event_id": 70,
+        "repetition": 3,
+        "stimulus_color": "blue",
+        "time": 0.40000000000000024,
+        "color_ray_counts": [
+          0,
+          0,
+          3
+        ],
+        "heard_receptors": [
+          8.070658411039932e-15,
+          7.671335668045114e-15,
+          1.0,
+          1.5510968974557293e-14,
+          6.449712076049747e-14
+        ],
+        "joint_visible_and_audible": true,
+        "muscles_executed": [
+          0.30000001192092896,
+          0.0,
+          0.0,
+          0.30000001192092896
+        ]
+      },
+      {
+        "event_id": 71,
+        "repetition": 3,
+        "stimulus_color": "blue",
+        "time": 0.5000000000000003,
+        "color_ray_counts": [
+          0,
+          0,
+          3
+        ],
+        "heard_receptors": [
+          5.720167005758678e-15,
+          6.367994119350033e-15,
+          1.0,
+          2.156941060156652e-14,
+          7.460288542405325e-14
+        ],
+        "joint_visible_and_audible": true,
+        "muscles_executed": [
+          0.30000001192092896,
+          0.0,
+          0.0,
+          0.30000001192092896
+        ]
+      }
+    ],
+    "probes": [
+      {
+        "name": "red_same_av_view",
+        "visual_input_lesion": false,
+        "preceded_by_rule_only_sensory_probe": false,
+        "current_color_ray_counts": [
+          3,
+          0,
+          0
+        ],
+        "heard_receptors": [
+          1.0,
+          1.3435454961917075e-15,
+          1.2469522595550174e-15,
+          5.525277298687368e-16,
+          2.9867927264348955e-15
+        ],
+        "goal_activity": [
+          0
+        ],
+        "rule_activity": [
+          0
+        ],
+        "pfc_active_count": 230,
+        "actual_recorded_feature_event_connections_reachable": 5302,
+        "reward_gated_connections_reachable": 0,
+        "recall_count": 0,
+        "recalled_events": [],
+        "recalled_view": null,
+        "feedback_pfc_count": 0,
+        "sequence_supported_events": [],
+        "source": "spontaneous_exploration",
+        "muscles": [
+          0.30000001192092896,
+          0.0,
+          0.0,
+          0.30000001192092896
+        ],
+        "strongest_connection_in_first_recalled_event": null,
+        "learning": false,
+        "reward": 0,
+        "no_physical_rollout": true
+      },
+      {
+        "name": "red_tone_without_visible_beacon",
+        "visual_input_lesion": false,
+        "preceded_by_rule_only_sensory_probe": false,
+        "current_color_ray_counts": [
+          0,
+          0,
+          0
+        ],
+        "heard_receptors": [
+          1.0,
+          1.2478451119842444e-15,
+          9.008972575599229e-16,
+          1.4883530604369832e-15,
+          2.9635986460272946e-15
+        ],
+        "goal_activity": [
+          0
+        ],
+        "rule_activity": [
+          0
+        ],
+        "pfc_active_count": 233,
+        "actual_recorded_feature_event_connections_reachable": 5108,
+        "reward_gated_connections_reachable": 0,
+        "recall_count": 0,
+        "recalled_events": [],
+        "recalled_view": null,
+        "feedback_pfc_count": 0,
+        "sequence_supported_events": [],
+        "source": "spontaneous_exploration",
+        "muscles": [
+          0.30000001192092896,
+          0.0,
+          0.0,
+          0.30000001192092896
+        ],
+        "strongest_connection_in_first_recalled_event": null,
+        "learning": false,
+        "reward": 0,
+        "no_physical_rollout": true
+      },
+      {
+        "name": "red_sensory_input_lesion",
+        "visual_input_lesion": true,
+        "preceded_by_rule_only_sensory_probe": false,
+        "current_color_ray_counts": [
+          0,
+          0,
+          0
+        ],
+        "heard_receptors": [
+          1.0,
+          1.2478451119842444e-15,
+          9.008972575599229e-16,
+          1.4883530604369832e-15,
+          2.9635986460272946e-15
+        ],
+        "goal_activity": [
+          0
+        ],
+        "rule_activity": [
+          0
+        ],
+        "pfc_active_count": 0,
+        "actual_recorded_feature_event_connections_reachable": 0,
+        "reward_gated_connections_reachable": 0,
+        "recall_count": 0,
+        "recalled_events": [],
+        "recalled_view": null,
+        "feedback_pfc_count": 0,
+        "sequence_supported_events": [],
+        "source": "spontaneous_exploration",
+        "muscles": [
+          0.30000001192092896,
+          0.0,
+          0.0,
+          0.30000001192092896
+        ],
+        "strongest_connection_in_first_recalled_event": null,
+        "learning": false,
+        "reward": 0,
+        "no_physical_rollout": true
+      },
+      {
+        "name": "green_same_av_view",
+        "visual_input_lesion": false,
+        "preceded_by_rule_only_sensory_probe": false,
+        "current_color_ray_counts": [
+          0,
+          3,
+          0
+        ],
+        "heard_receptors": [
+          7.896750523746867e-16,
+          1.0,
+          7.140590879799954e-16,
+          1.2782859189394196e-15,
+          7.495386502246674e-16
+        ],
+        "goal_activity": [
+          1
+        ],
+        "rule_activity": [
+          0
+        ],
+        "pfc_active_count": 231,
+        "actual_recorded_feature_event_connections_reachable": 5284,
+        "reward_gated_connections_reachable": 0,
+        "recall_count": 0,
+        "recalled_events": [],
+        "recalled_view": null,
+        "feedback_pfc_count": 0,
+        "sequence_supported_events": [],
+        "source": "spontaneous_exploration",
+        "muscles": [
+          0.30000001192092896,
+          0.0,
+          0.0,
+          0.30000001192092896
+        ],
+        "strongest_connection_in_first_recalled_event": null,
+        "learning": false,
+        "reward": 0,
+        "no_physical_rollout": true
+      },
+      {
+        "name": "green_tone_without_visible_beacon",
+        "visual_input_lesion": false,
+        "preceded_by_rule_only_sensory_probe": false,
+        "current_color_ray_counts": [
+          0,
+          0,
+          0
+        ],
+        "heard_receptors": [
+          8.443572047983183e-16,
+          1.0,
+          1.4154101906822722e-15,
+          1.0510230850739576e-15,
+          7.769188436916037e-16
+        ],
+        "goal_activity": [
+          1
+        ],
+        "rule_activity": [
+          0
+        ],
+        "pfc_active_count": 236,
+        "actual_recorded_feature_event_connections_reachable": 5127,
+        "reward_gated_connections_reachable": 0,
+        "recall_count": 0,
+        "recalled_events": [],
+        "recalled_view": null,
+        "feedback_pfc_count": 0,
+        "sequence_supported_events": [],
+        "source": "spontaneous_exploration",
+        "muscles": [
+          0.30000001192092896,
+          0.0,
+          0.0,
+          0.30000001192092896
+        ],
+        "strongest_connection_in_first_recalled_event": null,
+        "learning": false,
+        "reward": 0,
+        "no_physical_rollout": true
+      },
+      {
+        "name": "green_sensory_input_lesion",
+        "visual_input_lesion": true,
+        "preceded_by_rule_only_sensory_probe": false,
+        "current_color_ray_counts": [
+          0,
+          0,
+          0
+        ],
+        "heard_receptors": [
+          8.443572047983183e-16,
+          1.0,
+          1.4154101906822722e-15,
+          1.0510230850739576e-15,
+          7.769188436916037e-16
+        ],
+        "goal_activity": [
+          1
+        ],
+        "rule_activity": [
+          0
+        ],
+        "pfc_active_count": 0,
+        "actual_recorded_feature_event_connections_reachable": 0,
+        "reward_gated_connections_reachable": 0,
+        "recall_count": 0,
+        "recalled_events": [],
+        "recalled_view": null,
+        "feedback_pfc_count": 0,
+        "sequence_supported_events": [],
+        "source": "spontaneous_exploration",
+        "muscles": [
+          0.30000001192092896,
+          0.0,
+          0.0,
+          0.30000001192092896
+        ],
+        "strongest_connection_in_first_recalled_event": null,
+        "learning": false,
+        "reward": 0,
+        "no_physical_rollout": true
+      },
+      {
+        "name": "blue_same_av_view",
+        "visual_input_lesion": false,
+        "preceded_by_rule_only_sensory_probe": false,
+        "current_color_ray_counts": [
+          0,
+          0,
+          3
+        ],
+        "heard_receptors": [
+          2.3343638527073876e-15,
+          2.999672307601489e-15,
+          1.0,
+          2.4727391756905363e-15,
+          2.3000348151553338e-15
+        ],
+        "goal_activity": [
+          2
+        ],
+        "rule_activity": [
+          0
+        ],
+        "pfc_active_count": 223,
+        "actual_recorded_feature_event_connections_reachable": 5047,
+        "reward_gated_connections_reachable": 0,
+        "recall_count": 0,
+        "recalled_events": [],
+        "recalled_view": null,
+        "feedback_pfc_count": 0,
+        "sequence_supported_events": [],
+        "source": "spontaneous_exploration",
+        "muscles": [
+          0.30000001192092896,
+          0.0,
+          0.0,
+          0.30000001192092896
+        ],
+        "strongest_connection_in_first_recalled_event": null,
+        "learning": false,
+        "reward": 0,
+        "no_physical_rollout": true
+      },
+      {
+        "name": "blue_tone_without_visible_beacon",
+        "visual_input_lesion": false,
+        "preceded_by_rule_only_sensory_probe": false,
+        "current_color_ray_counts": [
+          0,
+          0,
+          0
+        ],
+        "heard_receptors": [
+          2.610007466862187e-15,
+          1.4150051150273247e-15,
+          1.0,
+          3.965816204719032e-15,
+          1.7035990132801374e-15
+        ],
+        "goal_activity": [
+          2
+        ],
+        "rule_activity": [
+          0
+        ],
+        "pfc_active_count": 222,
+        "actual_recorded_feature_event_connections_reachable": 4909,
+        "reward_gated_connections_reachable": 0,
+        "recall_count": 0,
+        "recalled_events": [],
+        "recalled_view": null,
+        "feedback_pfc_count": 0,
+        "sequence_supported_events": [],
+        "source": "spontaneous_exploration",
+        "muscles": [
+          0.30000001192092896,
+          0.0,
+          0.0,
+          0.30000001192092896
+        ],
+        "strongest_connection_in_first_recalled_event": null,
+        "learning": false,
+        "reward": 0,
+        "no_physical_rollout": true
+      },
+      {
+        "name": "blue_sensory_input_lesion",
+        "visual_input_lesion": true,
+        "preceded_by_rule_only_sensory_probe": false,
+        "current_color_ray_counts": [
+          0,
+          0,
+          0
+        ],
+        "heard_receptors": [
+          2.610007466862187e-15,
+          1.4150051150273247e-15,
+          1.0,
+          3.965816204719032e-15,
+          1.7035990132801374e-15
+        ],
+        "goal_activity": [
+          2
+        ],
+        "rule_activity": [
+          0
+        ],
+        "pfc_active_count": 0,
+        "actual_recorded_feature_event_connections_reachable": 0,
+        "reward_gated_connections_reachable": 0,
+        "recall_count": 0,
+        "recalled_events": [],
+        "recalled_view": null,
+        "feedback_pfc_count": 0,
+        "sequence_supported_events": [],
+        "source": "spontaneous_exploration",
+        "muscles": [
+          0.30000001192092896,
+          0.0,
+          0.0,
+          0.30000001192092896
+        ],
+        "strongest_connection_in_first_recalled_event": null,
+        "learning": false,
+        "reward": 0,
+        "no_physical_rollout": true
+      }
+    ]
+  },
+  "registered_checkpoint": {
+    "path": "F:\\一种AGI架构\\色标导航\\results\\route_texture_evaluation.npz",
+    "checkpoint_sha256": "c609e12caa78679d611bf87fb575eaea27b1ed66f8b437616261e2a6862a0715",
+    "birth_hash": "c88e52ea910f5b3e035ef8efb9a3b3685527cea89f8bba08cac20b0e08c55d41",
+    "all_learned_connections_unchanged": true,
+    "probes": [
+      {
+        "name": "middle_bottom_goal_and_rule_tones",
+        "visual_input_lesion": false,
+        "preceded_by_rule_only_sensory_probe": false,
+        "current_color_ray_counts": [
+          0,
+          0,
+          2
+        ],
+        "heard_receptors": [
+          1.0,
+          1.21955703399528e-15,
+          2.5301838627599176e-15,
+          1.0,
+          3.540329012889653e-15
+        ],
+        "goal_activity": [
+          0
+        ],
+        "rule_activity": [
+          1
+        ],
+        "pfc_active_count": 244,
+        "actual_recorded_feature_event_connections_reachable": 2656696,
+        "reward_gated_connections_reachable": 1010845,
+        "recall_count": 16,
+        "recalled_events": [
+          {
+            "event_id": 31795,
+            "weight": 0.054041847586631775,
+            "strength": 0.7293665409088135,
+            "color_ray_counts": [
+              0,
+              0,
+              2
+            ],
+            "next_event": 31796,
+            "muscles": [
+              0.6000000238418579,
+              0.0,
+              0.6000000238418579,
+              0.0
+            ]
+          },
+          {
+            "event_id": 20911,
+            "weight": 0.06994571536779404,
+            "strength": 0.8277474045753479,
+            "color_ray_counts": [
+              0,
+              0,
+              2
+            ],
+            "next_event": 20912,
+            "muscles": [
+              0.6000000238418579,
+              0.0,
+              0.6000000238418579,
+              0.0
+            ]
+          },
+          {
+            "event_id": 15702,
+            "weight": 0.04342781752347946,
+            "strength": 0.5139309167861938,
+            "color_ray_counts": [
+              0,
+              0,
+              2
+            ],
+            "next_event": 15703,
+            "muscles": [
+              0.6000000238418579,
+              0.0,
+              0.6000000238418579,
+              0.0
+            ]
+          },
+          {
+            "event_id": 22357,
+            "weight": 0.04770917445421219,
+            "strength": 0.5645970702171326,
+            "color_ray_counts": [
+              0,
+              0,
+              2
+            ],
+            "next_event": 22358,
+            "muscles": [
+              0.6000000238418579,
+              0.0,
+              0.6000000238418579,
+              0.0
+            ]
+          },
+          {
+            "event_id": 31794,
+            "weight": 0.061601586639881134,
+            "strength": 0.7290018200874329,
+            "color_ray_counts": [
+              0,
+              0,
+              2
+            ],
+            "next_event": 31795,
+            "muscles": [
+              0.6000000238418579,
+              0.0,
+              0.6000000238418579,
+              0.0
+            ]
+          },
+          {
+            "event_id": 7175,
+            "weight": 0.06466368585824966,
+            "strength": 0.7652391195297241,
+            "color_ray_counts": [
+              0,
+              0,
+              2
+            ],
+            "next_event": 7176,
+            "muscles": [
+              0.6000000238418579,
+              0.0,
+              0.6000000238418579,
+              0.0
+            ]
+          },
+          {
+            "event_id": 15700,
+            "weight": 0.0497564859688282,
+            "strength": 0.51341712474823,
+            "color_ray_counts": [
+              0,
+              0,
+              2
+            ],
+            "next_event": 15701,
+            "muscles": [
+              0.6000000238418579,
+              0.0,
+              0.6000000238418579,
+              0.0
+            ]
+          },
+          {
+            "event_id": 15701,
+            "weight": 0.049781378358602524,
+            "strength": 0.5136739611625671,
+            "color_ray_counts": [
+              0,
+              0,
+              2
+            ],
+            "next_event": 15702,
+            "muscles": [
+              0.6000000238418579,
+              0.0,
+              0.6000000238418579,
+              0.0
+            ]
+          },
+          {
+            "event_id": 20909,
+            "weight": 0.08013878762722015,
+            "strength": 0.8269198536872864,
+            "color_ray_counts": [
+              0,
+              0,
+              2
+            ],
+            "next_event": 20910,
+            "muscles": [
+              0.6000000834465027,
+              0.0,
+              0.6000000834465027,
+              0.0
+            ]
+          },
+          {
+            "event_id": 20910,
+            "weight": 0.0801788792014122,
+            "strength": 0.8273335099220276,
+            "color_ray_counts": [
+              0,
+              0,
+              2
+            ],
+            "next_event": 20911,
+            "muscles": [
+              0.6000000834465027,
+              0.0,
+              0.6000000834465027,
+              0.0
+            ]
+          },
+          {
+            "event_id": 7174,
+            "weight": 0.07412408292293549,
+            "strength": 0.7648565173149109,
+            "color_ray_counts": [
+              0,
+              0,
+              2
+            ],
+            "next_event": 7175,
+            "muscles": [
+              0.6000000238418579,
+              0.0,
+              0.6000000238418579,
+              0.0
+            ]
+          },
+          {
+            "event_id": 7173,
+            "weight": 0.07408702373504639,
+            "strength": 0.764474093914032,
+            "color_ray_counts": [
+              0,
+              0,
+              2
+            ],
+            "next_event": 7174,
+            "muscles": [
+              0.6000000238418579,
+              0.0,
+              0.6000000238418579,
+              0.0
+            ]
+          },
+          {
+            "event_id": 22355,
+            "weight": 0.05466175451874733,
+            "strength": 0.5640326142311096,
+            "color_ray_counts": [
+              0,
+              0,
+              2
+            ],
+            "next_event": 22356,
+            "muscles": [
+              0.5999999642372131,
+              0.0,
+              0.5999999642372131,
+              0.0
+            ]
+          },
+          {
+            "event_id": 22356,
+            "weight": 0.05468910187482834,
+            "strength": 0.5643147826194763,
+            "color_ray_counts": [
+              0,
+              0,
+              2
+            ],
+            "next_event": 22357,
+            "muscles": [
+              0.6000000238418579,
+              0.0,
+              0.6000000238418579,
+              0.0
+            ]
+          },
+          {
+            "event_id": 31793,
+            "weight": 0.07061399519443512,
+            "strength": 0.7286373376846313,
+            "color_ray_counts": [
+              0,
+              0,
+              2
+            ],
+            "next_event": 31794,
+            "muscles": [
+              0.6000000238418579,
+              0.0,
+              0.6000000238418579,
+              0.0
+            ]
+          },
+          {
+            "event_id": 31792,
+            "weight": 0.0705786868929863,
+            "strength": 0.7282730340957642,
+            "color_ray_counts": [
+              0,
+              0,
+              2
+            ],
+            "next_event": 31793,
+            "muscles": [
+              0.6000000238418579,
+              0.0,
+              0.6000000238418579,
+              0.0
+            ]
+          }
+        ],
+        "recalled_view": [
+          0.18268351256847382,
+          0.1809808313846588,
+          0.1758754849433899,
+          0.1673804670572281,
+          0.15553544461727142,
+          0.1404377520084381,
+          0.12229545414447784,
+          0.10151225328445435,
+          0.07881830632686615,
+          0.055453378707170486,
+          0.13371622562408447,
+          0.14846917986869812,
+          0.16006901860237122,
+          0.16840091347694397,
+          0.17341311275959015,
+          0.17508551478385925,
+          0.17341311275959015,
+          0.16840091347694397,
+          0.16006901860237122,
+          0.14846917986869812,
+          0.13371622562408447,
+          0.11604101955890656,
+          0.03215150162577629,
+          0.04527704045176506,
+          0.058253198862075806,
+          0.07024183124303818,
+          0.08064781874418259,
+          0.08906728774309158,
+          0.09523731470108032,
+          0.24196510016918182,
+          0.23871666193008423,
+          0.4001731872558594,
+          0.5928863286972046,
+          0.49203604459762573,
+          0.5242950916290283,
+          0.6181768774986267,
+          0.5919406414031982,
+          0.5166561603546143,
+          0.6065096855163574,
+          0.5522253513336182,
+          0.41841983795166016,
+          0.6084593534469604,
+          0.4830998182296753,
+          0.41082048416137695,
+          0.6191249489784241,
+          0.5637013912200928,
+          0.49918824434280396,
+          0.43358129262924194,
+          0.5528745651245117,
+          0.5399704575538635,
+          0.30956822633743286,
+          0.5218139886856079,
+          0.4556739330291748,
+          0.3733242452144623,
+          0.5724097490310669,
+          0.5602464079856873,
+          0.3317985534667969,
+          0.34651827812194824,
+          0.5372005701065063,
+          0.4294220805168152,
+          0.28473934531211853,
+          0.5464922189712524,
+          0.4893176853656769,
+          0.5619980692863464,
+          0.4575387239456177,
+          0.4595014452934265,
+          0.6271926164627075,
+          0.41297805309295654,
+          0.4543225169181824,
+          0.5168027877807617,
+          0.3613741993904114,
+          0.29641133546829224,
+          0.3433572053909302,
+          0.46013328433036804,
+          0.3594047427177429,
+          0.3780733346939087,
+          0.509308934211731,
+          0.3433665931224823,
+          0.4780207872390747,
+          0.4791293740272522,
+          0.33304834365844727,
+          0.5442241430282593,
+          0.47190389037132263,
+          0.4747774600982666,
+          0.5044424533843994,
+          0.48951295018196106,
+          0.50728440284729,
+          0.41820475459098816,
+          0.4583715796470642,
+          0.4428834617137909,
+          0.4916278123855591,
+          0.5501867532730103,
+          0.4000333547592163,
+          0.4592645764350891,
+          0.4816955327987671,
+          0.47041821479797363,
+          0.41233155131340027,
+          0.3521406054496765,
+          0.44308188557624817,
+          0.32171911001205444,
+          0.5376092195510864,
+          0.653984010219574,
+          0.5851892232894897,
+          0.268158882856369,
+          0.5736795663833618,
+          0.32916128635406494,
+          0.526870846748352,
+          0.4918321371078491,
+          0.3258097171783447,
+          0.6355040073394775,
+          0.43285995721817017,
+          0.3585392236709595,
+          0.6618574857711792,
+          0.5126760601997375,
+          0.5037984848022461,
+          0.6356149315834045,
+          0.4873868227005005,
+          0.38157519698143005,
+          0.03999999910593033,
+          0.03999999910593033,
+          1.0,
+          0.03999999910593033,
+          0.03999999910593033,
+          1.0,
+          0.5285236835479736,
+          0.5,
+          0.5,
+          0.0,
+          0.0
+        ],
+        "feedback_pfc_count": 245,
+        "sequence_supported_events": [],
+        "source": "associative_memory",
+        "muscles": [
+          0.6000000238418579,
+          0.0,
+          0.6000000238418579,
+          0.0
+        ],
+        "strongest_connection_in_first_recalled_event": {
+          "mixed_cell": 5178,
+          "goal_input_cell": 0,
+          "goal_input_activity": 1.0,
+          "rule_input_cell": 1,
+          "rule_input_activity": 1.0,
+          "current_sensory_inputs": [
+            {
+              "receptor": 2754,
+              "channel": 86,
+              "meaning": "rgb_ray_18_G",
+              "value": 0.5070381164550781,
+              "threshold": 0.11764705926179886,
+              "side": "greater_or_equal"
+            },
+            {
+              "receptor": 3958,
+              "channel": 123,
+              "meaning": "rgb_ray_30_B",
+              "value": 1.0,
+              "threshold": 0.7058823704719543,
+              "side": "greater_or_equal"
+            }
+          ],
+          "mixed_cell_threshold": 3.5,
+          "destination_event_id": 31795,
+          "cell_to_event_current": 0.0050800051716050915,
+          "fixed_input_connections": true,
+          "event_connection_from_experience": true
+        },
+        "learning": false,
+        "reward": 0,
+        "no_physical_rollout": true
+      },
+      {
+        "name": "middle_bottom_silence",
+        "visual_input_lesion": false,
+        "preceded_by_rule_only_sensory_probe": false,
+        "current_color_ray_counts": [
+          0,
+          0,
+          2
+        ],
+        "heard_receptors": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "goal_activity": [],
+        "rule_activity": [
+          0
+        ],
+        "pfc_active_count": 0,
+        "actual_recorded_feature_event_connections_reachable": 0,
+        "reward_gated_connections_reachable": 0,
+        "recall_count": 0,
+        "recalled_events": [],
+        "recalled_view": null,
+        "feedback_pfc_count": 0,
+        "sequence_supported_events": [],
+        "source": "spontaneous_exploration",
+        "muscles": [
+          0.30000001192092896,
+          0.0,
+          0.0,
+          0.30000001192092896
+        ],
+        "strongest_connection_in_first_recalled_event": null,
+        "learning": false,
+        "reward": 0,
+        "no_physical_rollout": true
+      },
+      {
+        "name": "bottom_goal_tone_only",
+        "visual_input_lesion": false,
+        "preceded_by_rule_only_sensory_probe": false,
+        "current_color_ray_counts": [
+          0,
+          0,
+          2
+        ],
+        "heard_receptors": [
+          1.0,
+          3.8123233708345147e-16,
+          1.596016443649628e-15,
+          6.462315621902291e-16,
+          1.111021092803936e-15
+        ],
+        "goal_activity": [
+          0
+        ],
+        "rule_activity": [
+          0
+        ],
+        "pfc_active_count": 233,
+        "actual_recorded_feature_event_connections_reachable": 0,
+        "reward_gated_connections_reachable": 0,
+        "recall_count": 0,
+        "recalled_events": [],
+        "recalled_view": null,
+        "feedback_pfc_count": 0,
+        "sequence_supported_events": [],
+        "source": "spontaneous_exploration",
+        "muscles": [
+          0.30000001192092896,
+          0.0,
+          0.0,
+          0.30000001192092896
+        ],
+        "strongest_connection_in_first_recalled_event": null,
+        "learning": false,
+        "reward": 0,
+        "no_physical_rollout": true
+      },
+      {
+        "name": "bottom_rule_tone_only",
+        "visual_input_lesion": false,
+        "preceded_by_rule_only_sensory_probe": false,
+        "current_color_ray_counts": [
+          0,
+          0,
+          2
+        ],
+        "heard_receptors": [
+          5.6302352862795965e-16,
+          1.4646671152025942e-15,
+          1.1170502796541042e-15,
+          1.0,
+          3.567244579639234e-15
+        ],
+        "goal_activity": [],
+        "rule_activity": [
+          1
+        ],
+        "pfc_active_count": 0,
+        "actual_recorded_feature_event_connections_reachable": 0,
+        "reward_gated_connections_reachable": 0,
+        "recall_count": 0,
+        "recalled_events": [],
+        "recalled_view": null,
+        "feedback_pfc_count": 0,
+        "sequence_supported_events": [],
+        "source": "spontaneous_exploration",
+        "muscles": [
+          0.30000001192092896,
+          0.0,
+          0.0,
+          0.30000001192092896
+        ],
+        "strongest_connection_in_first_recalled_event": null,
+        "learning": false,
+        "reward": 0,
+        "no_physical_rollout": true
+      },
+      {
+        "name": "bottom_rule_held_goal_tone",
+        "visual_input_lesion": false,
+        "preceded_by_rule_only_sensory_probe": true,
+        "current_color_ray_counts": [
+          0,
+          0,
+          2
+        ],
+        "heard_receptors": [
+          1.0,
+          3.8123233708345147e-16,
+          1.596016443649628e-15,
+          6.462315621902291e-16,
+          1.111021092803936e-15
+        ],
+        "goal_activity": [
+          0
+        ],
+        "rule_activity": [
+          1
+        ],
+        "pfc_active_count": 244,
+        "actual_recorded_feature_event_connections_reachable": 2656696,
+        "reward_gated_connections_reachable": 1010845,
+        "recall_count": 16,
+        "recalled_events": [
+          {
+            "event_id": 31795,
+            "weight": 0.054041847586631775,
+            "strength": 0.7293665409088135,
+            "color_ray_counts": [
+              0,
+              0,
+              2
+            ],
+            "next_event": 31796,
+            "muscles": [
+              0.6000000238418579,
+              0.0,
+              0.6000000238418579,
+              0.0
+            ]
+          },
+          {
+            "event_id": 20911,
+            "weight": 0.06994571536779404,
+            "strength": 0.8277474045753479,
+            "color_ray_counts": [
+              0,
+              0,
+              2
+            ],
+            "next_event": 20912,
+            "muscles": [
+              0.6000000238418579,
+              0.0,
+              0.6000000238418579,
+              0.0
+            ]
+          },
+          {
+            "event_id": 15702,
+            "weight": 0.04342781752347946,
+            "strength": 0.5139309167861938,
+            "color_ray_counts": [
+              0,
+              0,
+              2
+            ],
+            "next_event": 15703,
+            "muscles": [
+              0.6000000238418579,
+              0.0,
+              0.6000000238418579,
+              0.0
+            ]
+          },
+          {
+            "event_id": 22357,
+            "weight": 0.04770917445421219,
+            "strength": 0.5645970702171326,
+            "color_ray_counts": [
+              0,
+              0,
+              2
+            ],
+            "next_event": 22358,
+            "muscles": [
+              0.6000000238418579,
+              0.0,
+              0.6000000238418579,
+              0.0
+            ]
+          },
+          {
+            "event_id": 31794,
+            "weight": 0.061601586639881134,
+            "strength": 0.7290018200874329,
+            "color_ray_counts": [
+              0,
+              0,
+              2
+            ],
+            "next_event": 31795,
+            "muscles": [
+              0.6000000238418579,
+              0.0,
+              0.6000000238418579,
+              0.0
+            ]
+          },
+          {
+            "event_id": 7175,
+            "weight": 0.06466368585824966,
+            "strength": 0.7652391195297241,
+            "color_ray_counts": [
+              0,
+              0,
+              2
+            ],
+            "next_event": 7176,
+            "muscles": [
+              0.6000000238418579,
+              0.0,
+              0.6000000238418579,
+              0.0
+            ]
+          },
+          {
+            "event_id": 15700,
+            "weight": 0.0497564859688282,
+            "strength": 0.51341712474823,
+            "color_ray_counts": [
+              0,
+              0,
+              2
+            ],
+            "next_event": 15701,
+            "muscles": [
+              0.6000000238418579,
+              0.0,
+              0.6000000238418579,
+              0.0
+            ]
+          },
+          {
+            "event_id": 15701,
+            "weight": 0.049781378358602524,
+            "strength": 0.5136739611625671,
+            "color_ray_counts": [
+              0,
+              0,
+              2
+            ],
+            "next_event": 15702,
+            "muscles": [
+              0.6000000238418579,
+              0.0,
+              0.6000000238418579,
+              0.0
+            ]
+          },
+          {
+            "event_id": 20909,
+            "weight": 0.08013878762722015,
+            "strength": 0.8269198536872864,
+            "color_ray_counts": [
+              0,
+              0,
+              2
+            ],
+            "next_event": 20910,
+            "muscles": [
+              0.6000000834465027,
+              0.0,
+              0.6000000834465027,
+              0.0
+            ]
+          },
+          {
+            "event_id": 20910,
+            "weight": 0.0801788792014122,
+            "strength": 0.8273335099220276,
+            "color_ray_counts": [
+              0,
+              0,
+              2
+            ],
+            "next_event": 20911,
+            "muscles": [
+              0.6000000834465027,
+              0.0,
+              0.6000000834465027,
+              0.0
+            ]
+          },
+          {
+            "event_id": 7174,
+            "weight": 0.07412408292293549,
+            "strength": 0.7648565173149109,
+            "color_ray_counts": [
+              0,
+              0,
+              2
+            ],
+            "next_event": 7175,
+            "muscles": [
+              0.6000000238418579,
+              0.0,
+              0.6000000238418579,
+              0.0
+            ]
+          },
+          {
+            "event_id": 7173,
+            "weight": 0.07408702373504639,
+            "strength": 0.764474093914032,
+            "color_ray_counts": [
+              0,
+              0,
+              2
+            ],
+            "next_event": 7174,
+            "muscles": [
+              0.6000000238418579,
+              0.0,
+              0.6000000238418579,
+              0.0
+            ]
+          },
+          {
+            "event_id": 22355,
+            "weight": 0.05466175451874733,
+            "strength": 0.5640326142311096,
+            "color_ray_counts": [
+              0,
+              0,
+              2
+            ],
+            "next_event": 22356,
+            "muscles": [
+              0.5999999642372131,
+              0.0,
+              0.5999999642372131,
+              0.0
+            ]
+          },
+          {
+            "event_id": 22356,
+            "weight": 0.05468910187482834,
+            "strength": 0.5643147826194763,
+            "color_ray_counts": [
+              0,
+              0,
+              2
+            ],
+            "next_event": 22357,
+            "muscles": [
+              0.6000000238418579,
+              0.0,
+              0.6000000238418579,
+              0.0
+            ]
+          },
+          {
+            "event_id": 31793,
+            "weight": 0.07061399519443512,
+            "strength": 0.7286373376846313,
+            "color_ray_counts": [
+              0,
+              0,
+              2
+            ],
+            "next_event": 31794,
+            "muscles": [
+              0.6000000238418579,
+              0.0,
+              0.6000000238418579,
+              0.0
+            ]
+          },
+          {
+            "event_id": 31792,
+            "weight": 0.0705786868929863,
+            "strength": 0.7282730340957642,
+            "color_ray_counts": [
+              0,
+              0,
+              2
+            ],
+            "next_event": 31793,
+            "muscles": [
+              0.6000000238418579,
+              0.0,
+              0.6000000238418579,
+              0.0
+            ]
+          }
+        ],
+        "recalled_view": [
+          0.18268351256847382,
+          0.1809808313846588,
+          0.1758754849433899,
+          0.1673804670572281,
+          0.15553544461727142,
+          0.1404377520084381,
+          0.12229545414447784,
+          0.10151225328445435,
+          0.07881830632686615,
+          0.055453378707170486,
+          0.13371622562408447,
+          0.14846917986869812,
+          0.16006901860237122,
+          0.16840091347694397,
+          0.17341311275959015,
+          0.17508551478385925,
+          0.17341311275959015,
+          0.16840091347694397,
+          0.16006901860237122,
+          0.14846917986869812,
+          0.13371622562408447,
+          0.11604101955890656,
+          0.03215150162577629,
+          0.04527704045176506,
+          0.058253198862075806,
+          0.07024183124303818,
+          0.08064781874418259,
+          0.08906728774309158,
+          0.09523731470108032,
+          0.24196510016918182,
+          0.23871666193008423,
+          0.4001731872558594,
+          0.5928863286972046,
+          0.49203604459762573,
+          0.5242950916290283,
+          0.6181768774986267,
+          0.5919406414031982,
+          0.5166561603546143,
+          0.6065096855163574,
+          0.5522253513336182,
+          0.41841983795166016,
+          0.6084593534469604,
+          0.4830998182296753,
+          0.41082048416137695,
+          0.6191249489784241,
+          0.5637013912200928,
+          0.49918824434280396,
+          0.43358129262924194,
+          0.5528745651245117,
+          0.5399704575538635,
+          0.30956822633743286,
+          0.5218139886856079,
+          0.4556739330291748,
+          0.3733242452144623,
+          0.5724097490310669,
+          0.5602464079856873,
+          0.3317985534667969,
+          0.34651827812194824,
+          0.5372005701065063,
+          0.4294220805168152,
+          0.28473934531211853,
+          0.5464922189712524,
+          0.4893176853656769,
+          0.5619980692863464,
+          0.4575387239456177,
+          0.4595014452934265,
+          0.6271926164627075,
+          0.41297805309295654,
+          0.4543225169181824,
+          0.5168027877807617,
+          0.3613741993904114,
+          0.29641133546829224,
+          0.3433572053909302,
+          0.46013328433036804,
+          0.3594047427177429,
+          0.3780733346939087,
+          0.509308934211731,
+          0.3433665931224823,
+          0.4780207872390747,
+          0.4791293740272522,
+          0.33304834365844727,
+          0.5442241430282593,
+          0.47190389037132263,
+          0.4747774600982666,
+          0.5044424533843994,
+          0.48951295018196106,
+          0.50728440284729,
+          0.41820475459098816,
+          0.4583715796470642,
+          0.4428834617137909,
+          0.4916278123855591,
+          0.5501867532730103,
+          0.4000333547592163,
+          0.4592645764350891,
+          0.4816955327987671,
+          0.47041821479797363,
+          0.41233155131340027,
+          0.3521406054496765,
+          0.44308188557624817,
+          0.32171911001205444,
+          0.5376092195510864,
+          0.653984010219574,
+          0.5851892232894897,
+          0.268158882856369,
+          0.5736795663833618,
+          0.32916128635406494,
+          0.526870846748352,
+          0.4918321371078491,
+          0.3258097171783447,
+          0.6355040073394775,
+          0.43285995721817017,
+          0.3585392236709595,
+          0.6618574857711792,
+          0.5126760601997375,
+          0.5037984848022461,
+          0.6356149315834045,
+          0.4873868227005005,
+          0.38157519698143005,
+          0.03999999910593033,
+          0.03999999910593033,
+          1.0,
+          0.03999999910593033,
+          0.03999999910593033,
+          1.0,
+          0.5285236835479736,
+          0.5,
+          0.5,
+          0.0,
+          0.0
+        ],
+        "feedback_pfc_count": 245,
+        "sequence_supported_events": [],
+        "source": "associative_memory",
+        "muscles": [
+          0.6000000238418579,
+          0.0,
+          0.6000000238418579,
+          0.0
+        ],
+        "strongest_connection_in_first_recalled_event": {
+          "mixed_cell": 5178,
+          "goal_input_cell": 0,
+          "goal_input_activity": 1.0,
+          "rule_input_cell": 1,
+          "rule_input_activity": 1.0,
+          "current_sensory_inputs": [
+            {
+              "receptor": 2754,
+              "channel": 86,
+              "meaning": "rgb_ray_18_G",
+              "value": 0.5070381164550781,
+              "threshold": 0.11764705926179886,
+              "side": "greater_or_equal"
+            },
+            {
+              "receptor": 3958,
+              "channel": 123,
+              "meaning": "rgb_ray_30_B",
+              "value": 1.0,
+              "threshold": 0.7058823704719543,
+              "side": "greater_or_equal"
+            }
+          ],
+          "mixed_cell_threshold": 3.5,
+          "destination_event_id": 31795,
+          "cell_to_event_current": 0.0050800051716050915,
+          "fixed_input_connections": true,
+          "event_connection_from_experience": true
+        },
+        "learning": false,
+        "reward": 0,
+        "no_physical_rollout": true
+      },
+      {
+        "name": "bottom_rule_held_silence",
+        "visual_input_lesion": false,
+        "preceded_by_rule_only_sensory_probe": true,
+        "current_color_ray_counts": [
+          0,
+          0,
+          2
+        ],
+        "heard_receptors": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "goal_activity": [],
+        "rule_activity": [
+          1
+        ],
+        "pfc_active_count": 0,
+        "actual_recorded_feature_event_connections_reachable": 0,
+        "reward_gated_connections_reachable": 0,
+        "recall_count": 0,
+        "recalled_events": [],
+        "recalled_view": null,
+        "feedback_pfc_count": 0,
+        "sequence_supported_events": [],
+        "source": "spontaneous_exploration",
+        "muscles": [
+          0.30000001192092896,
+          0.0,
+          0.0,
+          0.30000001192092896
+        ],
+        "strongest_connection_in_first_recalled_event": null,
+        "learning": false,
+        "reward": 0,
+        "no_physical_rollout": true
+      },
+      {
+        "name": "lower_bottom_goal_and_rule_tones",
+        "visual_input_lesion": false,
+        "preceded_by_rule_only_sensory_probe": false,
+        "current_color_ray_counts": [
+          0,
+          0,
+          1
+        ],
+        "heard_receptors": [
+          1.0,
+          1.21955703399528e-15,
+          2.5301838627599176e-15,
+          1.0,
+          3.540329012889653e-15
+        ],
+        "goal_activity": [
+          0
+        ],
+        "rule_activity": [
+          1
+        ],
+        "pfc_active_count": 228,
+        "actual_recorded_feature_event_connections_reachable": 2571148,
+        "reward_gated_connections_reachable": 975549,
+        "recall_count": 16,
+        "recalled_events": [
+          {
+            "event_id": 32809,
+            "weight": 0.03839948773384094,
+            "strength": 0.5427248477935791,
+            "color_ray_counts": [
+              0,
+              0,
+              1
+            ],
+            "next_event": 32810,
+            "muscles": [
+              0.6000000238418579,
+              0.0,
+              0.6000000238418579,
+              0.0
+            ]
+          },
+          {
+            "event_id": 23503,
+            "weight": 0.06828456372022629,
+            "strength": 0.894913911819458,
+            "color_ray_counts": [
+              0,
+              0,
+              1
+            ],
+            "next_event": 23504,
+            "muscles": [
+              0.6000000238418579,
+              0.0,
+              0.6000000238418579,
+              0.0
+            ]
+          },
+          {
+            "event_id": 20586,
+            "weight": 0.06495347619056702,
+            "strength": 0.8512578010559082,
+            "color_ray_counts": [
+              0,
+              0,
+              1
+            ],
+            "next_event": 20587,
+            "muscles": [
+              0.6000000238418579,
+              0.0,
+              0.6000000238418579,
+              0.0
+            ]
+          },
+          {
+            "event_id": 25705,
+            "weight": 0.0655408427119255,
+            "strength": 0.8589556217193604,
+            "color_ray_counts": [
+              0,
+              0,
+              1
+            ],
+            "next_event": 25706,
+            "muscles": [
+              0.6000000238418579,
+              0.0,
+              0.6000000238418579,
+              0.0
+            ]
+          },
+          {
+            "event_id": 32808,
+            "weight": 0.0413907989859581,
+            "strength": 0.5424534678459167,
+            "color_ray_counts": [
+              0,
+              0,
+              1
+            ],
+            "next_event": 32809,
+            "muscles": [
+              0.6000000238418579,
+              0.0,
+              0.6000000238418579,
+              0.0
+            ]
+          },
+          {
+            "event_id": 18636,
+            "weight": 0.06414641439914703,
+            "strength": 0.8406806588172913,
+            "color_ray_counts": [
+              0,
+              0,
+              1
+            ],
+            "next_event": 18637,
+            "muscles": [
+              0.6000000238418579,
+              0.0,
+              0.6000000238418579,
+              0.0
+            ]
+          },
+          {
+            "event_id": 20584,
+            "weight": 0.07012812048196793,
+            "strength": 0.8504067659378052,
+            "color_ray_counts": [
+              0,
+              0,
+              1
+            ],
+            "next_event": 20585,
+            "muscles": [
+              0.6000000238418579,
+              0.0,
+              0.6000000238418579,
+              0.0
+            ]
+          },
+          {
+            "event_id": 20585,
+            "weight": 0.07016320526599884,
+            "strength": 0.8508321642875671,
+            "color_ray_counts": [
+              0,
+              0,
+              1
+            ],
+            "next_event": 20586,
+            "muscles": [
+              0.6000000238418579,
+              0.0,
+              0.6000000238418579,
+              0.0
+            ]
+          },
+          {
+            "event_id": 23501,
+            "weight": 0.07372459024190903,
+            "strength": 0.8940191864967346,
+            "color_ray_counts": [
+              0,
+              0,
+              1
+            ],
+            "next_event": 23502,
+            "muscles": [
+              0.6000000238418579,
+              0.0,
+              0.6000000238418579,
+              0.0
+            ]
+          },
+          {
+            "event_id": 23502,
+            "weight": 0.0737614706158638,
+            "strength": 0.8944664597511292,
+            "color_ray_counts": [
+              0,
+              0,
+              1
+            ],
+            "next_event": 23503,
+            "muscles": [
+              0.6000000238418579,
+              0.0,
+              0.6000000238418579,
+              0.0
+            ]
+          },
+          {
+            "event_id": 18635,
+            "weight": 0.06929140537977219,
+            "strength": 0.8402603268623352,
+            "color_ray_counts": [
+              0,
+              0,
+              1
+            ],
+            "next_event": 18636,
+            "muscles": [
+              0.6000000238418579,
+              0.0,
+              0.6000000238418579,
+              0.0
+            ]
+          },
+          {
+            "event_id": 18634,
+            "weight": 0.06925676017999649,
+            "strength": 0.8398401737213135,
+            "color_ray_counts": [
+              0,
+              0,
+              1
+            ],
+            "next_event": 18635,
+            "muscles": [
+              0.6000000238418579,
+              0.0,
+              0.6000000238418579,
+              0.0
+            ]
+          },
+          {
+            "event_id": 25703,
+            "weight": 0.0707622841000557,
+            "strength": 0.8580968976020813,
+            "color_ray_counts": [
+              0,
+              0,
+              1
+            ],
+            "next_event": 25704,
+            "muscles": [
+              0.5999999642372131,
+              0.0,
+              0.5999999642372131,
+              0.0
+            ]
+          },
+          {
+            "event_id": 25704,
+            "weight": 0.07079768180847168,
+            "strength": 0.8585261702537537,
+            "color_ray_counts": [
+              0,
+              0,
+              1
+            ],
+            "next_event": 25705,
+            "muscles": [
+              0.5999999642372131,
+              0.0,
+              0.5999999642372131,
+              0.0
+            ]
+          },
+          {
+            "event_id": 32807,
+            "weight": 0.04471063241362572,
+            "strength": 0.5421822667121887,
+            "color_ray_counts": [
+              0,
+              0,
+              1
+            ],
+            "next_event": 32808,
+            "muscles": [
+              0.6000000238418579,
+              0.0,
+              0.6000000238418579,
+              0.0
+            ]
+          },
+          {
+            "event_id": 32806,
+            "weight": 0.044688280671834946,
+            "strength": 0.5419111847877502,
+            "color_ray_counts": [
+              0,
+              0,
+              1
+            ],
+            "next_event": 32807,
+            "muscles": [
+              0.6000000238418579,
+              0.0,
+              0.6000000238418579,
+              0.0
+            ]
+          }
+        ],
+        "recalled_view": [
+          0.49658530950546265,
+          0.49467429518699646,
+          0.488879919052124,
+          0.47901496291160583,
+          0.46475476026535034,
+          0.44561928510665894,
+          0.4209473133087158,
+          0.3898696303367615,
+          0.3512933850288391,
+          0.3039442300796509,
+          0.24659696221351624,
+          0.17888441681861877,
+          0.1038043349981308,
+          0.03449936956167221,
+          0.012692801654338837,
+          0.17502978444099426,
+          0.17335757613182068,
+          0.16834606230258942,
+          0.16001535952091217,
+          0.14841732382774353,
+          0.13366691768169403,
+          0.1159951388835907,
+          0.09583286195993423,
+          0.07393684983253479,
+          0.029118558391928673,
+          0.02213684469461441,
+          0.026989705860614777,
+          0.031122468411922455,
+          0.034261807799339294,
+          0.0362187922000885,
+          0.08780348300933838,
+          0.4000113606452942,
+          0.5928593277931213,
+          0.49175822734832764,
+          0.44730812311172485,
+          0.6008521318435669,
+          0.5484575033187866,
+          0.5084091424942017,
+          0.6145452857017517,
+          0.5815781354904175,
+          0.5328840017318726,
+          0.6186192035675049,
+          0.6008083820343018,
+          0.5260252952575684,
+          0.6080702543258667,
+          0.570364773273468,
+          0.49971601366996765,
+          0.6074569225311279,
+          0.5382717251777649,
+          0.43202856183052063,
+          0.6059395670890808,
+          0.490964412689209,
+          0.402360737323761,
+          0.614879310131073,
+          0.5347489714622498,
+          0.42050760984420776,
+          0.6204604506492615,
+          0.554750382900238,
+          0.49049878120422363,
+          0.4583897590637207,
+          0.5480382442474365,
+          0.5409364700317383,
+          0.30314067006111145,
+          0.519092321395874,
+          0.4520435333251953,
+          0.37374967336654663,
+          0.5716757774353027,
+          0.610283374786377,
+          0.33518752455711365,
+          0.31328532099723816,
+          0.39070045948028564,
+          0.294625461101532,
+          0.6200848817825317,
+          0.37327298521995544,
+          0.427675724029541,
+          0.4770798087120056,
+          0.5421119928359985,
+          0.48826900124549866,
+          0.564921498298645,
+          0.41978204250335693,
+          0.4354649782180786,
+          0.5984723567962646,
+          0.49119269847869873,
+          0.46830397844314575,
+          0.5861021280288696,
+          0.36376333236694336,
+          0.3608366847038269,
+          0.3834497034549713,
+          0.4345936179161072,
+          0.3434096574783325,
+          0.35781610012054443,
+          0.5099829435348511,
+          0.34307295083999634,
+          0.48155373334884644,
+          0.47339263558387756,
+          0.39616096019744873,
+          0.5390653610229492,
+          0.48672938346862793,
+          0.506790041923523,
+          0.42072004079818726,
+          0.5249881744384766,
+          0.3961825370788574,
+          0.47781842947006226,
+          0.3821091055870056,
+          0.4504733979701996,
+          0.3894875943660736,
+          0.5111867189407349,
+          0.540716290473938,
+          0.5469307899475098,
+          0.3245662748813629,
+          0.5331445932388306,
+          0.3113948106765747,
+          0.6328599452972412,
+          0.43158143758773804,
+          0.339388370513916,
+          0.6609327793121338,
+          0.5184618234634399,
+          0.5081177353858948,
+          0.5861226320266724,
+          0.40151509642601013,
+          0.2975674867630005,
+          0.03999999538064003,
+          0.03999999538064003,
+          1.0,
+          0.5281556844711304,
+          0.5,
+          0.5,
+          0.0,
+          0.0
+        ],
+        "feedback_pfc_count": 228,
+        "sequence_supported_events": [],
+        "source": "associative_memory",
+        "muscles": [
+          0.6000000238418579,
+          0.0,
+          0.6000000238418579,
+          0.0
+        ],
+        "strongest_connection_in_first_recalled_event": {
+          "mixed_cell": 5379,
+          "goal_input_cell": 0,
+          "goal_input_activity": 1.0,
+          "rule_input_cell": 1,
+          "rule_input_activity": 1.0,
+          "current_sensory_inputs": [
+            {
+              "receptor": 3881,
+              "channel": 121,
+              "meaning": "rgb_ray_30_R",
+              "value": 0.03999999910593033,
+              "threshold": 0.29411765933036804,
+              "side": "less"
+            },
+            {
+              "receptor": 2162,
+              "channel": 67,
+              "meaning": "rgb_ray_12_R",
+              "value": 0.6139293313026428,
+              "threshold": 0.5882353186607361,
+              "side": "greater_or_equal"
+            }
+          ],
+          "mixed_cell_threshold": 3.5,
+          "destination_event_id": 32809,
+          "cell_to_event_current": 0.007804881953259094,
+          "fixed_input_connections": true,
+          "event_connection_from_experience": true
+        },
+        "learning": false,
+        "reward": 0,
+        "no_physical_rollout": true
+      },
+      {
+        "name": "lower_bottom_silence",
+        "visual_input_lesion": false,
+        "preceded_by_rule_only_sensory_probe": false,
+        "current_color_ray_counts": [
+          0,
+          0,
+          1
+        ],
+        "heard_receptors": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "goal_activity": [],
+        "rule_activity": [
+          0
+        ],
+        "pfc_active_count": 0,
+        "actual_recorded_feature_event_connections_reachable": 0,
+        "reward_gated_connections_reachable": 0,
+        "recall_count": 0,
+        "recalled_events": [],
+        "recalled_view": null,
+        "feedback_pfc_count": 0,
+        "sequence_supported_events": [],
+        "source": "spontaneous_exploration",
+        "muscles": [
+          0.30000001192092896,
+          0.0,
+          0.0,
+          0.30000001192092896
+        ],
+        "strongest_connection_in_first_recalled_event": null,
+        "learning": false,
+        "reward": 0,
+        "no_physical_rollout": true
+      },
+      {
+        "name": "upper_bottom_goal_and_rule_tones",
+        "visual_input_lesion": false,
+        "preceded_by_rule_only_sensory_probe": false,
+        "current_color_ray_counts": [
+          0,
+          0,
+          31
+        ],
+        "heard_receptors": [
+          1.0,
+          1.21955703399528e-15,
+          2.5301838627599176e-15,
+          1.0,
+          3.540329012889653e-15
+        ],
+        "goal_activity": [
+          0
+        ],
+        "rule_activity": [
+          1
+        ],
+        "pfc_active_count": 231,
+        "actual_recorded_feature_event_connections_reachable": 1020131,
+        "reward_gated_connections_reachable": 374710,
+        "recall_count": 8,
+        "recalled_events": [
+          {
+            "event_id": 7516,
+            "weight": 0.13041327893733978,
+            "strength": 0.9075340032577515,
+            "color_ray_counts": [
+              0,
+              31,
+              0
+            ],
+            "next_event": 7517,
+            "muscles": [
+              0.0,
+              0.5,
+              0.0,
+              0.5
+            ]
+          },
+          {
+            "event_id": 7517,
+            "weight": 0.13047851622104645,
+            "strength": 0.9079880118370056,
+            "color_ray_counts": [
+              0,
+              31,
+              0
+            ],
+            "next_event": 7518,
+            "muscles": [
+              0.0,
+              0.5,
+              0.0,
+              0.5
+            ]
+          },
+          {
+            "event_id": 7518,
+            "weight": 0.1305437833070755,
+            "strength": 0.9084421992301941,
+            "color_ray_counts": [
+              0,
+              31,
+              0
+            ],
+            "next_event": 7519,
+            "muscles": [
+              0.0,
+              0.5,
+              0.0,
+              0.5
+            ]
+          },
+          {
+            "event_id": 7519,
+            "weight": 0.13060908019542694,
+            "strength": 0.9088966250419617,
+            "color_ray_counts": [
+              0,
+              31,
+              0
+            ],
+            "next_event": 7520,
+            "muscles": [
+              0.0,
+              0.5,
+              0.0,
+              0.5
+            ]
+          },
+          {
+            "event_id": 7520,
+            "weight": 0.11939921975135803,
+            "strength": 0.9093513488769531,
+            "color_ray_counts": [
+              0,
+              31,
+              0
+            ],
+            "next_event": 7521,
+            "muscles": [
+              0.30000001192092896,
+              0.0,
+              0.0,
+              0.30000001192092896
+            ]
+          },
+          {
+            "event_id": 7521,
+            "weight": 0.11945895105600357,
+            "strength": 0.9098062515258789,
+            "color_ray_counts": [
+              0,
+              31,
+              0
+            ],
+            "next_event": 7522,
+            "muscles": [
+              0.30000001192092896,
+              0.0,
+              0.0,
+              0.30000001192092896
+            ]
+          },
+          {
+            "event_id": 7522,
+            "weight": 0.1195187047123909,
+            "strength": 0.9102613925933838,
+            "color_ray_counts": [
+              0,
+              31,
+              0
+            ],
+            "next_event": 7523,
+            "muscles": [
+              0.30000001192092896,
+              0.0,
+              0.0,
+              0.30000001192092896
+            ]
+          },
+          {
+            "event_id": 7523,
+            "weight": 0.11957849562168121,
+            "strength": 0.910716712474823,
+            "color_ray_counts": [
+              0,
+              31,
+              0
+            ],
+            "next_event": 7524,
+            "muscles": [
+              0.30000001192092896,
+              0.0,
+              0.0,
+              0.30000001192092896
+            ]
+          }
+        ],
+        "recalled_view": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.03999999910593033,
+          1.0,
+          0.03999999910593033,
+          0.03999999910593033,
+          1.0,
+          0.03999999910593033,
+          0.03999999910593033,
+          1.0,
+          0.03999999910593033,
+          0.03999999910593033,
+          1.0,
+          0.03999999910593033,
+          0.03999999910593033,
+          1.0,
+          0.03999999910593033,
+          0.03999999910593033,
+          1.0,
+          0.03999999910593033,
+          0.03999999910593033,
+          1.0,
+          0.03999999910593033,
+          0.03999999910593033,
+          1.0,
+          0.03999999910593033,
+          0.03999999910593033,
+          1.0,
+          0.03999999910593033,
+          0.03999999910593033,
+          1.0,
+          0.03999999910593033,
+          0.03999999910593033,
+          1.0,
+          0.03999999910593033,
+          0.03999999910593033,
+          1.0,
+          0.03999999910593033,
+          0.03999999910593033,
+          1.0,
+          0.03999999910593033,
+          0.03999999910593033,
+          1.0,
+          0.03999999910593033,
+          0.03999999910593033,
+          1.0,
+          0.03999999910593033,
+          0.03999999910593033,
+          1.0,
+          0.03999999910593033,
+          0.03999999910593033,
+          1.0,
+          0.03999999910593033,
+          0.03999999910593033,
+          1.0,
+          0.03999999910593033,
+          0.03999999910593033,
+          1.0,
+          0.03999999910593033,
+          0.03999999910593033,
+          1.0,
+          0.03999999910593033,
+          0.03999999910593033,
+          1.0,
+          0.03999999910593033,
+          0.03999999910593033,
+          1.0,
+          0.03999999910593033,
+          0.03999999910593033,
+          1.0,
+          0.03999999910593033,
+          0.03999999910593033,
+          1.0,
+          0.03999999910593033,
+          0.03999999910593033,
+          1.0,
+          0.03999999910593033,
+          0.03999999910593033,
+          1.0,
+          0.03999999910593033,
+          0.03999999910593033,
+          1.0,
+          0.03999999910593033,
+          0.03999999910593033,
+          1.0,
+          0.03999999910593033,
+          0.03999999910593033,
+          1.0,
+          0.03999999910593033,
+          0.03999999910593033,
+          1.0,
+          0.03999999910593033,
+          0.03999999910593033,
+          1.0,
+          0.03999999910593033,
+          0.5041189789772034,
+          0.49884748458862305,
+          0.466195672750473,
+          0.0,
+          0.0
+        ],
+        "feedback_pfc_count": 242,
+        "sequence_supported_events": [],
+        "source": "body_reflex",
+        "muscles": [
+          0.0,
+          0.5,
+          0.0,
+          0.5
+        ],
+        "strongest_connection_in_first_recalled_event": {
+          "mixed_cell": 1792,
+          "goal_input_cell": 0,
+          "goal_input_activity": 1.0,
+          "rule_input_cell": 1,
+          "rule_input_activity": 1.0,
+          "current_sensory_inputs": [
+            {
+              "receptor": 406,
+              "channel": 12,
+              "meaning": "depth_ray_12",
+              "value": 1.0,
+              "threshold": 0.7058823704719543,
+              "side": "greater_or_equal"
+            },
+            {
+              "receptor": 414,
+              "channel": 12,
+              "meaning": "depth_ray_12",
+              "value": 1.0,
+              "threshold": 0.9411764740943909,
+              "side": "greater_or_equal"
+            }
+          ],
+          "mixed_cell_threshold": 3.5,
+          "destination_event_id": 7516,
+          "cell_to_event_current": 0.01938188378528691,
+          "fixed_input_connections": true,
+          "event_connection_from_experience": true
+        },
+        "learning": false,
+        "reward": 0,
+        "no_physical_rollout": true
+      },
+      {
+        "name": "upper_bottom_silence",
+        "visual_input_lesion": false,
+        "preceded_by_rule_only_sensory_probe": false,
+        "current_color_ray_counts": [
+          0,
+          0,
+          31
+        ],
+        "heard_receptors": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "goal_activity": [],
+        "rule_activity": [
+          0
+        ],
+        "pfc_active_count": 0,
+        "actual_recorded_feature_event_connections_reachable": 0,
+        "reward_gated_connections_reachable": 0,
+        "recall_count": 0,
+        "recalled_events": [],
+        "recalled_view": null,
+        "feedback_pfc_count": 0,
+        "sequence_supported_events": [],
+        "source": "body_reflex",
+        "muscles": [
+          0.0,
+          0.5,
+          0.0,
+          0.5
+        ],
+        "strongest_connection_in_first_recalled_event": null,
+        "learning": false,
+        "reward": 0,
+        "no_physical_rollout": true
+      },
+      {
+        "name": "bottom_sensory_input_lesion",
+        "visual_input_lesion": true,
+        "preceded_by_rule_only_sensory_probe": false,
+        "current_color_ray_counts": [
+          0,
+          0,
+          31
+        ],
+        "heard_receptors": [
+          1.0,
+          1.21955703399528e-15,
+          2.5301838627599176e-15,
+          1.0,
+          3.540329012889653e-15
+        ],
+        "goal_activity": [
+          0
+        ],
+        "rule_activity": [
+          1
+        ],
+        "pfc_active_count": 0,
+        "actual_recorded_feature_event_connections_reachable": 0,
+        "reward_gated_connections_reachable": 0,
+        "recall_count": 0,
+        "recalled_events": [],
+        "recalled_view": null,
+        "feedback_pfc_count": 0,
+        "sequence_supported_events": [],
+        "source": "body_reflex",
+        "muscles": [
+          0.0,
+          0.5,
+          0.0,
+          0.5
+        ],
+        "strongest_connection_in_first_recalled_event": null,
+        "learning": false,
+        "reward": 0,
+        "no_physical_rollout": true
+      },
+      {
+        "name": "middle_top_goal_and_rule_tones",
+        "visual_input_lesion": false,
+        "preceded_by_rule_only_sensory_probe": false,
+        "current_color_ray_counts": [
+          0,
+          0,
+          2
+        ],
+        "heard_receptors": [
+          1.0,
+          1.4191524584133167e-15,
+          1.4014144718012168e-15,
+          1.3271808684102225e-15,
+          1.0
+        ],
+        "goal_activity": [
+          0
+        ],
+        "rule_activity": [
+          2
+        ],
+        "pfc_active_count": 219,
+        "actual_recorded_feature_event_connections_reachable": 2657662,
+        "reward_gated_connections_reachable": 1741466,
+        "recall_count": 16,
+        "recalled_events": [
+          {
+            "event_id": 34034,
+            "weight": 0.05675144121050835,
+            "strength": 0.5989194512367249,
+            "color_ray_counts": [
+              0,
+              0,
+              2
+            ],
+            "next_event": 34035,
+            "muscles": [
+              0.6000000238418579,
+              0.0,
+              0.6000000238418579,
+              0.0
+            ]
+          },
+          {
+            "event_id": 35062,
+            "weight": 0.07843434810638428,
+            "strength": 0.8277474045753479,
+            "color_ray_counts": [
+              0,
+              0,
+              2
+            ],
+            "next_event": 35063,
+            "muscles": [
+              0.6000000834465027,
+              0.0,
+              0.6000000834465027,
+              0.0
+            ]
+          },
+          {
+            "event_id": 13382,
+            "weight": 0.0602315254509449,
+            "strength": 0.6356461048126221,
+            "color_ray_counts": [
+              0,
+              0,
+              2
+            ],
+            "next_event": 13383,
+            "muscles": [
+              0.6000000238418579,
+              0.0,
+              0.6000000238418579,
+              0.0
+            ]
+          },
+          {
+            "event_id": 11572,
+            "weight": 0.0489913709461689,
+            "strength": 0.5170245170593262,
+            "color_ray_counts": [
+              0,
+              0,
+              2
+            ],
+            "next_event": 11573,
+            "muscles": [
+              0.6000000238418579,
+              0.0,
+              0.6000000238418579,
+              0.0
+            ]
+          },
+          {
+            "event_id": 13380,
+            "weight": 0.06454353034496307,
+            "strength": 0.6350106596946716,
+            "color_ray_counts": [
+              0,
+              0,
+              2
+            ],
+            "next_event": 13381,
+            "muscles": [
+              0.6000000238418579,
+              0.0,
+              0.6000000238418579,
+              0.0
+            ]
+          },
+          {
+            "event_id": 13381,
+            "weight": 0.06457581371068954,
+            "strength": 0.6353282928466797,
+            "color_ray_counts": [
+              0,
+              0,
+              2
+            ],
+            "next_event": 13382,
+            "muscles": [
+              0.6000000238418579,
+              0.0,
+              0.6000000238418579,
+              0.0
+            ]
+          },
+          {
+            "event_id": 11571,
+            "weight": 0.05252495035529137,
+            "strength": 0.5167660117149353,
+            "color_ray_counts": [
+              0,
+              0,
+              2
+            ],
+            "next_event": 11572,
+            "muscles": [
+              0.6000000238418579,
+              0.0,
+              0.6000000238418579,
+              0.0
+            ]
+          },
+          {
+            "event_id": 11570,
+            "weight": 0.05249868705868721,
+            "strength": 0.516507625579834,
+            "color_ray_counts": [
+              0,
+              0,
+              2
+            ],
+            "next_event": 11571,
+            "muscles": [
+              0.6000000238418579,
+              0.0,
+              0.6000000238418579,
+              0.0
+            ]
+          },
+          {
+            "event_id": 28175,
+            "weight": 0.05265646427869797,
+            "strength": 0.5180599093437195,
+            "color_ray_counts": [
+              0,
+              0,
+              2
+            ],
+            "next_event": 28176,
+            "muscles": [
+              0.6000000238418579,
+              0.0,
+              0.6000000238418579,
+              0.0
+            ]
+          },
+          {
+            "event_id": 28176,
+            "weight": 0.05268280580639839,
+            "strength": 0.5183190703392029,
+            "color_ray_counts": [
+              0,
+              0,
+              2
+            ],
+            "next_event": 28177,
+            "muscles": [
+              0.6000000238418579,
+              0.0,
+              0.6000000238418579,
+              0.0
+            ]
+          },
+          {
+            "event_id": 26498,
+            "weight": 0.06317030638456345,
+            "strength": 0.6215002536773682,
+            "color_ray_counts": [
+              0,
+              0,
+              2
+            ],
+            "next_event": 26499,
+            "muscles": [
+              0.5999999642372131,
+              0.0,
+              0.5999999642372131,
+              0.0
+            ]
+          },
+          {
+            "event_id": 26497,
+            "weight": 0.06313873082399368,
+            "strength": 0.621189534664154,
+            "color_ray_counts": [
+              0,
+              0,
+              2
+            ],
+            "next_event": 26498,
+            "muscles": [
+              0.6000000238418579,
+              0.0,
+              0.6000000238418579,
+              0.0
+            ]
+          },
+          {
+            "event_id": 34032,
+            "weight": 0.06081429868936539,
+            "strength": 0.5983206629753113,
+            "color_ray_counts": [
+              0,
+              0,
+              2
+            ],
+            "next_event": 34033,
+            "muscles": [
+              0.6000000834465027,
+              0.0,
+              0.6000000834465027,
+              0.0
+            ]
+          },
+          {
+            "event_id": 34033,
+            "weight": 0.060844723135232925,
+            "strength": 0.5986199975013733,
+            "color_ray_counts": [
+              0,
+              0,
+              2
+            ],
+            "next_event": 34034,
+            "muscles": [
+              0.6000000238418579,
+              0.0,
+              0.6000000238418579,
+              0.0
+            ]
+          },
+          {
+            "event_id": 35061,
+            "weight": 0.08409154415130615,
+            "strength": 0.8273335099220276,
+            "color_ray_counts": [
+              0,
+              0,
+              2
+            ],
+            "next_event": 35062,
+            "muscles": [
+              0.6000000834465027,
+              0.0,
+              0.6000000834465027,
+              0.0
+            ]
+          },
+          {
+            "event_id": 35060,
+            "weight": 0.08404949307441711,
+            "strength": 0.8269198536872864,
+            "color_ray_counts": [
+              0,
+              0,
+              2
+            ],
+            "next_event": 35061,
+            "muscles": [
+              0.6000000238418579,
+              0.0,
+              0.6000000238418579,
+              0.0
+            ]
+          }
+        ],
+        "recalled_view": [
+          0.182683527469635,
+          0.1809808611869812,
+          0.1758754849433899,
+          0.1673804521560669,
+          0.15553545951843262,
+          0.1404377520084381,
+          0.12229545414447784,
+          0.10151226073503494,
+          0.07881830632686615,
+          0.05545337498188019,
+          0.13332749903202057,
+          0.14806023240089417,
+          0.159645676612854,
+          0.1679680049419403,
+          0.17297470569610596,
+          0.1746453493833542,
+          0.17297470569610596,
+          0.1679680049419403,
+          0.159645676612854,
+          0.14806023240089417,
+          0.13332749903202057,
+          0.11567963659763336,
+          0.03215150162577629,
+          0.04527704417705536,
+          0.05825319513678551,
+          0.07024183869361877,
+          0.08064781129360199,
+          0.08906728774309158,
+          0.09523731470108032,
+          0.24227704107761383,
+          0.23831045627593994,
+          0.3988962769508362,
+          0.5930116176605225,
+          0.4899446368217468,
+          0.5235918760299683,
+          0.6180168986320496,
+          0.5911446809768677,
+          0.5173844695091248,
+          0.6064146757125854,
+          0.552925169467926,
+          0.4189918041229248,
+          0.6082531213760376,
+          0.4822552800178528,
+          0.40963202714920044,
+          0.6189539432525635,
+          0.5648006200790405,
+          0.4981417655944824,
+          0.43674522638320923,
+          0.5522769689559937,
+          0.5401742458343506,
+          0.3083072304725647,
+          0.520893931388855,
+          0.4561268091201782,
+          0.37344831228256226,
+          0.5725302696228027,
+          0.558962345123291,
+          0.33247435092926025,
+          0.34832674264907837,
+          0.5379807353019714,
+          0.4290963411331177,
+          0.2856816351413727,
+          0.5476062297821045,
+          0.4896341562271118,
+          0.5613695979118347,
+          0.45634815096855164,
+          0.4588293731212616,
+          0.6264960169792175,
+          0.41389358043670654,
+          0.45452865958213806,
+          0.5176959037780762,
+          0.36137887835502625,
+          0.29672613739967346,
+          0.34351474046707153,
+          0.4600309133529663,
+          0.35936516523361206,
+          0.37790340185165405,
+          0.509308934211731,
+          0.3433666229248047,
+          0.4780207872390747,
+          0.4791199862957001,
+          0.33317404985427856,
+          0.544180154800415,
+          0.4720273017883301,
+          0.4750162959098816,
+          0.5040367841720581,
+          0.48884427547454834,
+          0.5072122812271118,
+          0.41877996921539307,
+          0.45886531472206116,
+          0.44271379709243774,
+          0.4914848804473877,
+          0.5504041910171509,
+          0.4001990854740143,
+          0.45902878046035767,
+          0.48136645555496216,
+          0.47294163703918457,
+          0.4130423665046692,
+          0.35173994302749634,
+          0.44147709012031555,
+          0.321311891078949,
+          0.5382016897201538,
+          0.6550415754318237,
+          0.5856434106826782,
+          0.2660335302352905,
+          0.5731762647628784,
+          0.3274087905883789,
+          0.5291043519973755,
+          0.4916142225265503,
+          0.3252700865268707,
+          0.6357081532478333,
+          0.43324410915374756,
+          0.35962772369384766,
+          0.6617451906204224,
+          0.5132829546928406,
+          0.5042388439178467,
+          0.6347295045852661,
+          0.4858373999595642,
+          0.37997353076934814,
+          0.03999999910593033,
+          0.03999999910593033,
+          1.0,
+          0.03999999910593033,
+          0.03999999910593033,
+          1.0,
+          0.5228216648101807,
+          0.5,
+          0.5,
+          0.0,
+          0.0
+        ],
+        "feedback_pfc_count": 220,
+        "sequence_supported_events": [],
+        "source": "associative_memory",
+        "muscles": [
+          0.6000000238418579,
+          0.0,
+          0.6000000238418579,
+          0.0
+        ],
+        "strongest_connection_in_first_recalled_event": {
+          "mixed_cell": 6756,
+          "goal_input_cell": 0,
+          "goal_input_activity": 1.0,
+          "rule_input_cell": 2,
+          "rule_input_activity": 1.0,
+          "current_sensory_inputs": [
+            {
+              "receptor": 197,
+              "channel": 6,
+              "meaning": "depth_ray_6",
+              "value": 0.12229544669389725,
+              "threshold": 0.1764705926179886,
+              "side": "less"
+            },
+            {
+              "receptor": 3873,
+              "channel": 121,
+              "meaning": "rgb_ray_30_R",
+              "value": 0.03999999910593033,
+              "threshold": 0.05882352963089943,
+              "side": "less"
+            }
+          ],
+          "mixed_cell_threshold": 3.5,
+          "destination_event_id": 34034,
+          "cell_to_event_current": 0.004405970404429002,
+          "fixed_input_connections": true,
+          "event_connection_from_experience": true
+        },
+        "learning": false,
+        "reward": 0,
+        "no_physical_rollout": true
+      },
+      {
+        "name": "middle_top_silence",
+        "visual_input_lesion": false,
+        "preceded_by_rule_only_sensory_probe": false,
+        "current_color_ray_counts": [
+          0,
+          0,
+          2
+        ],
+        "heard_receptors": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "goal_activity": [],
+        "rule_activity": [
+          0
+        ],
+        "pfc_active_count": 0,
+        "actual_recorded_feature_event_connections_reachable": 0,
+        "reward_gated_connections_reachable": 0,
+        "recall_count": 0,
+        "recalled_events": [],
+        "recalled_view": null,
+        "feedback_pfc_count": 0,
+        "sequence_supported_events": [],
+        "source": "spontaneous_exploration",
+        "muscles": [
+          0.30000001192092896,
+          0.0,
+          0.0,
+          0.30000001192092896
+        ],
+        "strongest_connection_in_first_recalled_event": null,
+        "learning": false,
+        "reward": 0,
+        "no_physical_rollout": true
+      },
+      {
+        "name": "top_goal_tone_only",
+        "visual_input_lesion": false,
+        "preceded_by_rule_only_sensory_probe": false,
+        "current_color_ray_counts": [
+          0,
+          0,
+          2
+        ],
+        "heard_receptors": [
+          1.0,
+          3.8123233708345147e-16,
+          1.596016443649628e-15,
+          6.462315621902291e-16,
+          1.111021092803936e-15
+        ],
+        "goal_activity": [
+          0
+        ],
+        "rule_activity": [
+          0
+        ],
+        "pfc_active_count": 233,
+        "actual_recorded_feature_event_connections_reachable": 0,
+        "reward_gated_connections_reachable": 0,
+        "recall_count": 0,
+        "recalled_events": [],
+        "recalled_view": null,
+        "feedback_pfc_count": 0,
+        "sequence_supported_events": [],
+        "source": "spontaneous_exploration",
+        "muscles": [
+          0.30000001192092896,
+          0.0,
+          0.0,
+          0.30000001192092896
+        ],
+        "strongest_connection_in_first_recalled_event": null,
+        "learning": false,
+        "reward": 0,
+        "no_physical_rollout": true
+      },
+      {
+        "name": "top_rule_tone_only",
+        "visual_input_lesion": false,
+        "preceded_by_rule_only_sensory_probe": false,
+        "current_color_ray_counts": [
+          0,
+          0,
+          2
+        ],
+        "heard_receptors": [
+          2.0035247978950306e-15,
+          1.2110226357184334e-15,
+          1.3277945325950495e-15,
+          7.198706651151158e-16,
+          1.0
+        ],
+        "goal_activity": [],
+        "rule_activity": [
+          2
+        ],
+        "pfc_active_count": 0,
+        "actual_recorded_feature_event_connections_reachable": 0,
+        "reward_gated_connections_reachable": 0,
+        "recall_count": 0,
+        "recalled_events": [],
+        "recalled_view": null,
+        "feedback_pfc_count": 0,
+        "sequence_supported_events": [],
+        "source": "spontaneous_exploration",
+        "muscles": [
+          0.30000001192092896,
+          0.0,
+          0.0,
+          0.30000001192092896
+        ],
+        "strongest_connection_in_first_recalled_event": null,
+        "learning": false,
+        "reward": 0,
+        "no_physical_rollout": true
+      },
+      {
+        "name": "top_rule_held_goal_tone",
+        "visual_input_lesion": false,
+        "preceded_by_rule_only_sensory_probe": true,
+        "current_color_ray_counts": [
+          0,
+          0,
+          2
+        ],
+        "heard_receptors": [
+          1.0,
+          3.8123233708345147e-16,
+          1.596016443649628e-15,
+          6.462315621902291e-16,
+          1.111021092803936e-15
+        ],
+        "goal_activity": [
+          0
+        ],
+        "rule_activity": [
+          2
+        ],
+        "pfc_active_count": 219,
+        "actual_recorded_feature_event_connections_reachable": 2657662,
+        "reward_gated_connections_reachable": 1741466,
+        "recall_count": 16,
+        "recalled_events": [
+          {
+            "event_id": 34034,
+            "weight": 0.05675144121050835,
+            "strength": 0.5989194512367249,
+            "color_ray_counts": [
+              0,
+              0,
+              2
+            ],
+            "next_event": 34035,
+            "muscles": [
+              0.6000000238418579,
+              0.0,
+              0.6000000238418579,
+              0.0
+            ]
+          },
+          {
+            "event_id": 35062,
+            "weight": 0.07843434810638428,
+            "strength": 0.8277474045753479,
+            "color_ray_counts": [
+              0,
+              0,
+              2
+            ],
+            "next_event": 35063,
+            "muscles": [
+              0.6000000834465027,
+              0.0,
+              0.6000000834465027,
+              0.0
+            ]
+          },
+          {
+            "event_id": 13382,
+            "weight": 0.0602315254509449,
+            "strength": 0.6356461048126221,
+            "color_ray_counts": [
+              0,
+              0,
+              2
+            ],
+            "next_event": 13383,
+            "muscles": [
+              0.6000000238418579,
+              0.0,
+              0.6000000238418579,
+              0.0
+            ]
+          },
+          {
+            "event_id": 11572,
+            "weight": 0.0489913709461689,
+            "strength": 0.5170245170593262,
+            "color_ray_counts": [
+              0,
+              0,
+              2
+            ],
+            "next_event": 11573,
+            "muscles": [
+              0.6000000238418579,
+              0.0,
+              0.6000000238418579,
+              0.0
+            ]
+          },
+          {
+            "event_id": 13380,
+            "weight": 0.06454353034496307,
+            "strength": 0.6350106596946716,
+            "color_ray_counts": [
+              0,
+              0,
+              2
+            ],
+            "next_event": 13381,
+            "muscles": [
+              0.6000000238418579,
+              0.0,
+              0.6000000238418579,
+              0.0
+            ]
+          },
+          {
+            "event_id": 13381,
+            "weight": 0.06457581371068954,
+            "strength": 0.6353282928466797,
+            "color_ray_counts": [
+              0,
+              0,
+              2
+            ],
+            "next_event": 13382,
+            "muscles": [
+              0.6000000238418579,
+              0.0,
+              0.6000000238418579,
+              0.0
+            ]
+          },
+          {
+            "event_id": 11571,
+            "weight": 0.05252495035529137,
+            "strength": 0.5167660117149353,
+            "color_ray_counts": [
+              0,
+              0,
+              2
+            ],
+            "next_event": 11572,
+            "muscles": [
+              0.6000000238418579,
+              0.0,
+              0.6000000238418579,
+              0.0
+            ]
+          },
+          {
+            "event_id": 11570,
+            "weight": 0.05249868705868721,
+            "strength": 0.516507625579834,
+            "color_ray_counts": [
+              0,
+              0,
+              2
+            ],
+            "next_event": 11571,
+            "muscles": [
+              0.6000000238418579,
+              0.0,
+              0.6000000238418579,
+              0.0
+            ]
+          },
+          {
+            "event_id": 28175,
+            "weight": 0.05265646427869797,
+            "strength": 0.5180599093437195,
+            "color_ray_counts": [
+              0,
+              0,
+              2
+            ],
+            "next_event": 28176,
+            "muscles": [
+              0.6000000238418579,
+              0.0,
+              0.6000000238418579,
+              0.0
+            ]
+          },
+          {
+            "event_id": 28176,
+            "weight": 0.05268280580639839,
+            "strength": 0.5183190703392029,
+            "color_ray_counts": [
+              0,
+              0,
+              2
+            ],
+            "next_event": 28177,
+            "muscles": [
+              0.6000000238418579,
+              0.0,
+              0.6000000238418579,
+              0.0
+            ]
+          },
+          {
+            "event_id": 26498,
+            "weight": 0.06317030638456345,
+            "strength": 0.6215002536773682,
+            "color_ray_counts": [
+              0,
+              0,
+              2
+            ],
+            "next_event": 26499,
+            "muscles": [
+              0.5999999642372131,
+              0.0,
+              0.5999999642372131,
+              0.0
+            ]
+          },
+          {
+            "event_id": 26497,
+            "weight": 0.06313873082399368,
+            "strength": 0.621189534664154,
+            "color_ray_counts": [
+              0,
+              0,
+              2
+            ],
+            "next_event": 26498,
+            "muscles": [
+              0.6000000238418579,
+              0.0,
+              0.6000000238418579,
+              0.0
+            ]
+          },
+          {
+            "event_id": 34032,
+            "weight": 0.06081429868936539,
+            "strength": 0.5983206629753113,
+            "color_ray_counts": [
+              0,
+              0,
+              2
+            ],
+            "next_event": 34033,
+            "muscles": [
+              0.6000000834465027,
+              0.0,
+              0.6000000834465027,
+              0.0
+            ]
+          },
+          {
+            "event_id": 34033,
+            "weight": 0.060844723135232925,
+            "strength": 0.5986199975013733,
+            "color_ray_counts": [
+              0,
+              0,
+              2
+            ],
+            "next_event": 34034,
+            "muscles": [
+              0.6000000238418579,
+              0.0,
+              0.6000000238418579,
+              0.0
+            ]
+          },
+          {
+            "event_id": 35061,
+            "weight": 0.08409154415130615,
+            "strength": 0.8273335099220276,
+            "color_ray_counts": [
+              0,
+              0,
+              2
+            ],
+            "next_event": 35062,
+            "muscles": [
+              0.6000000834465027,
+              0.0,
+              0.6000000834465027,
+              0.0
+            ]
+          },
+          {
+            "event_id": 35060,
+            "weight": 0.08404949307441711,
+            "strength": 0.8269198536872864,
+            "color_ray_counts": [
+              0,
+              0,
+              2
+            ],
+            "next_event": 35061,
+            "muscles": [
+              0.6000000238418579,
+              0.0,
+              0.6000000238418579,
+              0.0
+            ]
+          }
+        ],
+        "recalled_view": [
+          0.182683527469635,
+          0.1809808611869812,
+          0.1758754849433899,
+          0.1673804521560669,
+          0.15553545951843262,
+          0.1404377520084381,
+          0.12229545414447784,
+          0.10151226073503494,
+          0.07881830632686615,
+          0.05545337498188019,
+          0.13332749903202057,
+          0.14806023240089417,
+          0.159645676612854,
+          0.1679680049419403,
+          0.17297470569610596,
+          0.1746453493833542,
+          0.17297470569610596,
+          0.1679680049419403,
+          0.159645676612854,
+          0.14806023240089417,
+          0.13332749903202057,
+          0.11567963659763336,
+          0.03215150162577629,
+          0.04527704417705536,
+          0.05825319513678551,
+          0.07024183869361877,
+          0.08064781129360199,
+          0.08906728774309158,
+          0.09523731470108032,
+          0.24227704107761383,
+          0.23831045627593994,
+          0.3988962769508362,
+          0.5930116176605225,
+          0.4899446368217468,
+          0.5235918760299683,
+          0.6180168986320496,
+          0.5911446809768677,
+          0.5173844695091248,
+          0.6064146757125854,
+          0.552925169467926,
+          0.4189918041229248,
+          0.6082531213760376,
+          0.4822552800178528,
+          0.40963202714920044,
+          0.6189539432525635,
+          0.5648006200790405,
+          0.4981417655944824,
+          0.43674522638320923,
+          0.5522769689559937,
+          0.5401742458343506,
+          0.3083072304725647,
+          0.520893931388855,
+          0.4561268091201782,
+          0.37344831228256226,
+          0.5725302696228027,
+          0.558962345123291,
+          0.33247435092926025,
+          0.34832674264907837,
+          0.5379807353019714,
+          0.4290963411331177,
+          0.2856816351413727,
+          0.5476062297821045,
+          0.4896341562271118,
+          0.5613695979118347,
+          0.45634815096855164,
+          0.4588293731212616,
+          0.6264960169792175,
+          0.41389358043670654,
+          0.45452865958213806,
+          0.5176959037780762,
+          0.36137887835502625,
+          0.29672613739967346,
+          0.34351474046707153,
+          0.4600309133529663,
+          0.35936516523361206,
+          0.37790340185165405,
+          0.509308934211731,
+          0.3433666229248047,
+          0.4780207872390747,
+          0.4791199862957001,
+          0.33317404985427856,
+          0.544180154800415,
+          0.4720273017883301,
+          0.4750162959098816,
+          0.5040367841720581,
+          0.48884427547454834,
+          0.5072122812271118,
+          0.41877996921539307,
+          0.45886531472206116,
+          0.44271379709243774,
+          0.4914848804473877,
+          0.5504041910171509,
+          0.4001990854740143,
+          0.45902878046035767,
+          0.48136645555496216,
+          0.47294163703918457,
+          0.4130423665046692,
+          0.35173994302749634,
+          0.44147709012031555,
+          0.321311891078949,
+          0.5382016897201538,
+          0.6550415754318237,
+          0.5856434106826782,
+          0.2660335302352905,
+          0.5731762647628784,
+          0.3274087905883789,
+          0.5291043519973755,
+          0.4916142225265503,
+          0.3252700865268707,
+          0.6357081532478333,
+          0.43324410915374756,
+          0.35962772369384766,
+          0.6617451906204224,
+          0.5132829546928406,
+          0.5042388439178467,
+          0.6347295045852661,
+          0.4858373999595642,
+          0.37997353076934814,
+          0.03999999910593033,
+          0.03999999910593033,
+          1.0,
+          0.03999999910593033,
+          0.03999999910593033,
+          1.0,
+          0.5228216648101807,
+          0.5,
+          0.5,
+          0.0,
+          0.0
+        ],
+        "feedback_pfc_count": 220,
+        "sequence_supported_events": [],
+        "source": "associative_memory",
+        "muscles": [
+          0.6000000238418579,
+          0.0,
+          0.6000000238418579,
+          0.0
+        ],
+        "strongest_connection_in_first_recalled_event": {
+          "mixed_cell": 6756,
+          "goal_input_cell": 0,
+          "goal_input_activity": 1.0,
+          "rule_input_cell": 2,
+          "rule_input_activity": 1.0,
+          "current_sensory_inputs": [
+            {
+              "receptor": 197,
+              "channel": 6,
+              "meaning": "depth_ray_6",
+              "value": 0.12229544669389725,
+              "threshold": 0.1764705926179886,
+              "side": "less"
+            },
+            {
+              "receptor": 3873,
+              "channel": 121,
+              "meaning": "rgb_ray_30_R",
+              "value": 0.03999999910593033,
+              "threshold": 0.05882352963089943,
+              "side": "less"
+            }
+          ],
+          "mixed_cell_threshold": 3.5,
+          "destination_event_id": 34034,
+          "cell_to_event_current": 0.004405970404429002,
+          "fixed_input_connections": true,
+          "event_connection_from_experience": true
+        },
+        "learning": false,
+        "reward": 0,
+        "no_physical_rollout": true
+      },
+      {
+        "name": "top_rule_held_silence",
+        "visual_input_lesion": false,
+        "preceded_by_rule_only_sensory_probe": true,
+        "current_color_ray_counts": [
+          0,
+          0,
+          2
+        ],
+        "heard_receptors": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "goal_activity": [],
+        "rule_activity": [
+          2
+        ],
+        "pfc_active_count": 0,
+        "actual_recorded_feature_event_connections_reachable": 0,
+        "reward_gated_connections_reachable": 0,
+        "recall_count": 0,
+        "recalled_events": [],
+        "recalled_view": null,
+        "feedback_pfc_count": 0,
+        "sequence_supported_events": [],
+        "source": "spontaneous_exploration",
+        "muscles": [
+          0.30000001192092896,
+          0.0,
+          0.0,
+          0.30000001192092896
+        ],
+        "strongest_connection_in_first_recalled_event": null,
+        "learning": false,
+        "reward": 0,
+        "no_physical_rollout": true
+      },
+      {
+        "name": "lower_top_goal_and_rule_tones",
+        "visual_input_lesion": false,
+        "preceded_by_rule_only_sensory_probe": false,
+        "current_color_ray_counts": [
+          0,
+          0,
+          1
+        ],
+        "heard_receptors": [
+          1.0,
+          1.4191524584133167e-15,
+          1.4014144718012168e-15,
+          1.3271808684102225e-15,
+          1.0
+        ],
+        "goal_activity": [
+          0
+        ],
+        "rule_activity": [
+          2
+        ],
+        "pfc_active_count": 222,
+        "actual_recorded_feature_event_connections_reachable": 2777756,
+        "reward_gated_connections_reachable": 1821896,
+        "recall_count": 4,
+        "recalled_events": [
+          {
+            "event_id": 10911,
+            "weight": 0.2736547291278839,
+            "strength": 0.7195838093757629,
+            "color_ray_counts": [
+              0,
+              0,
+              1
+            ],
+            "next_event": 10912,
+            "muscles": [
+              0.0,
+              0.30000001192092896,
+              0.30000001192092896,
+              0.0
+            ]
+          },
+          {
+            "event_id": 14289,
+            "weight": 0.18787430226802826,
+            "strength": 0.494021475315094,
+            "color_ray_counts": [
+              0,
+              0,
+              1
+            ],
+            "next_event": 14290,
+            "muscles": [
+              0.0,
+              0.30000001192092896,
+              0.30000001192092896,
+              0.0
+            ]
+          },
+          {
+            "event_id": 21290,
+            "weight": 0.22336705029010773,
+            "strength": 0.5873507857322693,
+            "color_ray_counts": [
+              0,
+              0,
+              1
+            ],
+            "next_event": 21291,
+            "muscles": [
+              0.0,
+              0.30000001192092896,
+              0.30000001192092896,
+              0.0
+            ]
+          },
+          {
+            "event_id": 23726,
+            "weight": 0.3151038885116577,
+            "strength": 0.8285757303237915,
+            "color_ray_counts": [
+              0,
+              0,
+              1
+            ],
+            "next_event": 23727,
+            "muscles": [
+              0.0,
+              0.30000001192092896,
+              0.30000001192092896,
+              0.0
+            ]
+          }
+        ],
+        "recalled_view": [
+          0.49658527970314026,
+          0.4946742355823517,
+          0.488879919052124,
+          0.47901490330696106,
+          0.46475473046302795,
+          0.44561928510665894,
+          0.4209473133087158,
+          0.3898696005344391,
+          0.3512933552265167,
+          0.3039442002773285,
+          0.24659694731235504,
+          0.17888441681861877,
+          0.1038043349981308,
+          0.03449936956167221,
+          0.01260122749954462,
+          0.17377394437789917,
+          0.17210689187049866,
+          0.16711115837097168,
+          0.15880806744098663,
+          0.1472514569759369,
+          0.13255919516086578,
+          0.11496598273515701,
+          0.09490705281496048,
+          0.0731433555483818,
+          0.016923971474170685,
+          0.02213684469461441,
+          0.026989707723259926,
+          0.031122468411922455,
+          0.034261804074048996,
+          0.0362187922000885,
+          0.08731817454099655,
+          0.39636701345443726,
+          0.5939099192619324,
+          0.4860090911388397,
+          0.44130605459213257,
+          0.5994626879692078,
+          0.5443459153175354,
+          0.5037620067596436,
+          0.6135045886039734,
+          0.5790756344795227,
+          0.5326255559921265,
+          0.619255542755127,
+          0.6016599535942078,
+          0.527183473110199,
+          0.6087267994880676,
+          0.5734813809394836,
+          0.5039027333259583,
+          0.6075125336647034,
+          0.5412532687187195,
+          0.43528643250465393,
+          0.6057538986206055,
+          0.49359753727912903,
+          0.40349045395851135,
+          0.6143681406974792,
+          0.5284603238105774,
+          0.41684970259666443,
+          0.6202744245529175,
+          0.5580814480781555,
+          0.4869990348815918,
+          0.4682773947715759,
+          0.5460993051528931,
+          0.5410533547401428,
+          0.3019757568836212,
+          0.5192045569419861,
+          0.451791912317276,
+          0.37324389815330505,
+          0.57126384973526,
+          0.613929271697998,
+          0.32629549503326416,
+          0.31456834077835083,
+          0.392852246761322,
+          0.29682600498199463,
+          0.6175895929336548,
+          0.373628169298172,
+          0.426899790763855,
+          0.4778881072998047,
+          0.5421119928359985,
+          0.48826900124549866,
+          0.5649215579032898,
+          0.42025142908096313,
+          0.43580955266952515,
+          0.5989601612091064,
+          0.4895328879356384,
+          0.4679475426673889,
+          0.5845163464546204,
+          0.3636084496974945,
+          0.3579969108104706,
+          0.38141071796417236,
+          0.4371110796928406,
+          0.34521961212158203,
+          0.3589700162410736,
+          0.5104103088378906,
+          0.34284836053848267,
+          0.48391014337539673,
+          0.4729577600955963,
+          0.40087664127349854,
+          0.5387831926345825,
+          0.48127052187919617,
+          0.5060632228851318,
+          0.4255010187625885,
+          0.5291188955307007,
+          0.3957558274269104,
+          0.4753688871860504,
+          0.3405604958534241,
+          0.382369726896286,
+          0.3721619248390198,
+          0.5062166452407837,
+          0.5374066829681396,
+          0.5418931841850281,
+          0.3369201421737671,
+          0.5299484133720398,
+          0.3141395151615143,
+          0.6331369280815125,
+          0.43001696467399597,
+          0.3422849774360657,
+          0.6609982252120972,
+          0.518768846988678,
+          0.5082572102546692,
+          0.5832619071006775,
+          0.39965319633483887,
+          0.29382044076919556,
+          0.03999999910593033,
+          0.03999999910593033,
+          0.9999999403953552,
+          0.4999999701976776,
+          0.4999999701976776,
+          0.4999999701976776,
+          0.0,
+          0.0
+        ],
+        "feedback_pfc_count": 222,
+        "sequence_supported_events": [],
+        "source": "associative_memory",
+        "muscles": [
+          0.0,
+          0.30000001192092896,
+          0.30000001192092896,
+          0.0
+        ],
+        "strongest_connection_in_first_recalled_event": {
+          "mixed_cell": 7334,
+          "goal_input_cell": 0,
+          "goal_input_activity": 1.0,
+          "rule_input_cell": 2,
+          "rule_input_activity": 1.0,
+          "current_sensory_inputs": [
+            {
+              "receptor": 3960,
+              "channel": 123,
+              "meaning": "rgb_ray_30_B",
+              "value": 1.0,
+              "threshold": 0.7647058963775635,
+              "side": "greater_or_equal"
+            },
+            {
+              "receptor": 104,
+              "channel": 3,
+              "meaning": "depth_ray_3",
+              "value": 0.47901493310928345,
+              "threshold": 0.29411765933036804,
+              "side": "greater_or_equal"
+            }
+          ],
+          "mixed_cell_threshold": 3.5,
+          "destination_event_id": 10911,
+          "cell_to_event_current": 0.004733969667063179,
+          "fixed_input_connections": true,
+          "event_connection_from_experience": true
+        },
+        "learning": false,
+        "reward": 0,
+        "no_physical_rollout": true
+      },
+      {
+        "name": "lower_top_silence",
+        "visual_input_lesion": false,
+        "preceded_by_rule_only_sensory_probe": false,
+        "current_color_ray_counts": [
+          0,
+          0,
+          1
+        ],
+        "heard_receptors": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "goal_activity": [],
+        "rule_activity": [
+          0
+        ],
+        "pfc_active_count": 0,
+        "actual_recorded_feature_event_connections_reachable": 0,
+        "reward_gated_connections_reachable": 0,
+        "recall_count": 0,
+        "recalled_events": [],
+        "recalled_view": null,
+        "feedback_pfc_count": 0,
+        "sequence_supported_events": [],
+        "source": "spontaneous_exploration",
+        "muscles": [
+          0.30000001192092896,
+          0.0,
+          0.0,
+          0.30000001192092896
+        ],
+        "strongest_connection_in_first_recalled_event": null,
+        "learning": false,
+        "reward": 0,
+        "no_physical_rollout": true
+      },
+      {
+        "name": "upper_top_goal_and_rule_tones",
+        "visual_input_lesion": false,
+        "preceded_by_rule_only_sensory_probe": false,
+        "current_color_ray_counts": [
+          0,
+          0,
+          31
+        ],
+        "heard_receptors": [
+          1.0,
+          1.4191524584133167e-15,
+          1.4014144718012168e-15,
+          1.3271808684102225e-15,
+          1.0
+        ],
+        "goal_activity": [
+          0
+        ],
+        "rule_activity": [
+          2
+        ],
+        "pfc_active_count": 211,
+        "actual_recorded_feature_event_connections_reachable": 815535,
+        "reward_gated_connections_reachable": 524065,
+        "recall_count": 16,
+        "recalled_events": [
+          {
+            "event_id": 6276,
+            "weight": 0.0543103851377964,
+            "strength": 0.6388331055641174,
+            "color_ray_counts": [
+              0,
+              0,
+              31
+            ],
+            "next_event": 6277,
+            "muscles": [
+              0.0,
+              0.5,
+              0.0,
+              0.5
+            ]
+          },
+          {
+            "event_id": 6277,
+            "weight": 0.05433755740523338,
+            "strength": 0.6391527056694031,
+            "color_ray_counts": [
+              0,
+              0,
+              31
+            ],
+            "next_event": 6278,
+            "muscles": [
+              0.0,
+              0.5,
+              0.0,
+              0.5
+            ]
+          },
+          {
+            "event_id": 6278,
+            "weight": 0.05375475436449051,
+            "strength": 0.6394724249839783,
+            "color_ray_counts": [
+              0,
+              0,
+              31
+            ],
+            "next_event": 6279,
+            "muscles": [
+              0.0,
+              0.5,
+              0.0,
+              0.5
+            ]
+          },
+          {
+            "event_id": 6279,
+            "weight": 0.05378163978457451,
+            "strength": 0.6397923231124878,
+            "color_ray_counts": [
+              0,
+              0,
+              31
+            ],
+            "next_event": 6280,
+            "muscles": [
+              0.0,
+              0.5,
+              0.0,
+              0.5
+            ]
+          },
+          {
+            "event_id": 12892,
+            "weight": 0.06663744151592255,
+            "strength": 0.7838317155838013,
+            "color_ray_counts": [
+              0,
+              0,
+              31
+            ],
+            "next_event": 12893,
+            "muscles": [
+              0.0,
+              0.5,
+              0.0,
+              0.5
+            ]
+          },
+          {
+            "event_id": 12893,
+            "weight": 0.06667077541351318,
+            "strength": 0.7842238545417786,
+            "color_ray_counts": [
+              0,
+              0,
+              31
+            ],
+            "next_event": 12894,
+            "muscles": [
+              0.0,
+              0.5,
+              0.0,
+              0.5
+            ]
+          },
+          {
+            "event_id": 12894,
+            "weight": 0.06595569103956223,
+            "strength": 0.7846161723136902,
+            "color_ray_counts": [
+              0,
+              0,
+              31
+            ],
+            "next_event": 12895,
+            "muscles": [
+              0.0,
+              0.5,
+              0.0,
+              0.5
+            ]
+          },
+          {
+            "event_id": 12895,
+            "weight": 0.0659886822104454,
+            "strength": 0.7850086688995361,
+            "color_ray_counts": [
+              0,
+              0,
+              31
+            ],
+            "next_event": 12896,
+            "muscles": [
+              0.0,
+              0.5,
+              0.0,
+              0.5
+            ]
+          },
+          {
+            "event_id": 29491,
+            "weight": 0.05990380421280861,
+            "strength": 0.7046264410018921,
+            "color_ray_counts": [
+              0,
+              0,
+              31
+            ],
+            "next_event": 29492,
+            "muscles": [
+              0.0,
+              0.5,
+              0.0,
+              0.5
+            ]
+          },
+          {
+            "event_id": 29492,
+            "weight": 0.05993376672267914,
+            "strength": 0.704978883266449,
+            "color_ray_counts": [
+              0,
+              0,
+              31
+            ],
+            "next_event": 29493,
+            "muscles": [
+              0.0,
+              0.5,
+              0.0,
+              0.5
+            ]
+          },
+          {
+            "event_id": 29493,
+            "weight": 0.059290941804647446,
+            "strength": 0.705331563949585,
+            "color_ray_counts": [
+              0,
+              0,
+              31
+            ],
+            "next_event": 29494,
+            "muscles": [
+              0.0,
+              0.5,
+              0.0,
+              0.5
+            ]
+          },
+          {
+            "event_id": 29494,
+            "weight": 0.0593206025660038,
+            "strength": 0.7056844234466553,
+            "color_ray_counts": [
+              0,
+              0,
+              31
+            ],
+            "next_event": 29495,
+            "muscles": [
+              0.0,
+              0.5,
+              0.0,
+              0.5
+            ]
+          },
+          {
+            "event_id": 32427,
+            "weight": 0.07037093490362167,
+            "strength": 0.8277474045753479,
+            "color_ray_counts": [
+              0,
+              0,
+              31
+            ],
+            "next_event": 32428,
+            "muscles": [
+              0.0,
+              0.5,
+              0.0,
+              0.5
+            ]
+          },
+          {
+            "event_id": 32428,
+            "weight": 0.07040613144636154,
+            "strength": 0.8281614780426025,
+            "color_ray_counts": [
+              0,
+              0,
+              31
+            ],
+            "next_event": 32429,
+            "muscles": [
+              0.0,
+              0.5,
+              0.0,
+              0.5
+            ]
+          },
+          {
+            "event_id": 32429,
+            "weight": 0.06965098530054092,
+            "strength": 0.8285757303237915,
+            "color_ray_counts": [
+              0,
+              0,
+              31
+            ],
+            "next_event": 32430,
+            "muscles": [
+              0.0,
+              0.5,
+              0.0,
+              0.5
+            ]
+          },
+          {
+            "event_id": 32430,
+            "weight": 0.06968582421541214,
+            "strength": 0.8289902210235596,
+            "color_ray_counts": [
+              0,
+              0,
+              31
+            ],
+            "next_event": 32431,
+            "muscles": [
+              0.0,
+              0.5,
+              0.0,
+              0.5
+            ]
+          }
+        ],
+        "recalled_view": [
+          0.9999998807907104,
+          0.9999998807907104,
+          0.9999998807907104,
+          0.9999998807907104,
+          0.9999998807907104,
+          0.9999998807907104,
+          0.9999998807907104,
+          0.9999998807907104,
+          0.9999998807907104,
+          0.9999998807907104,
+          0.9999998807907104,
+          0.9999998807907104,
+          0.9999998807907104,
+          0.9999998807907104,
+          0.9999998807907104,
+          0.9999998807907104,
+          0.9999998807907104,
+          0.9999998807907104,
+          0.9999998807907104,
+          0.9999998807907104,
+          0.9999998807907104,
+          0.9999998807907104,
+          0.9999998807907104,
+          0.9999998807907104,
+          0.9999998807907104,
+          0.9999998807907104,
+          0.9999998807907104,
+          0.9999998807907104,
+          0.9999998807907104,
+          0.9999998807907104,
+          0.9999998807907104,
+          0.03999999538064003,
+          0.03999999538064003,
+          0.9999998807907104,
+          0.03999999538064003,
+          0.03999999538064003,
+          0.9999998807907104,
+          0.03999999538064003,
+          0.03999999538064003,
+          0.9999998807907104,
+          0.03999999538064003,
+          0.03999999538064003,
+          0.9999998807907104,
+          0.03999999538064003,
+          0.03999999538064003,
+          0.9999998807907104,
+          0.03999999538064003,
+          0.03999999538064003,
+          0.9999998807907104,
+          0.03999999538064003,
+          0.03999999538064003,
+          0.9999998807907104,
+          0.03999999538064003,
+          0.03999999538064003,
+          0.9999998807907104,
+          0.03999999538064003,
+          0.03999999538064003,
+          0.9999998807907104,
+          0.03999999538064003,
+          0.03999999538064003,
+          0.9999998807907104,
+          0.03999999538064003,
+          0.03999999538064003,
+          0.9999998807907104,
+          0.03999999538064003,
+          0.03999999538064003,
+          0.9999998807907104,
+          0.03999999538064003,
+          0.03999999538064003,
+          0.9999998807907104,
+          0.03999999538064003,
+          0.03999999538064003,
+          0.9999998807907104,
+          0.03999999538064003,
+          0.03999999538064003,
+          0.9999998807907104,
+          0.03999999538064003,
+          0.03999999538064003,
+          0.9999998807907104,
+          0.03999999538064003,
+          0.03999999538064003,
+          0.9999998807907104,
+          0.03999999538064003,
+          0.03999999538064003,
+          0.9999998807907104,
+          0.03999999538064003,
+          0.03999999538064003,
+          0.9999998807907104,
+          0.03999999538064003,
+          0.03999999538064003,
+          0.9999998807907104,
+          0.03999999538064003,
+          0.03999999538064003,
+          0.9999998807907104,
+          0.03999999538064003,
+          0.03999999538064003,
+          0.9999998807907104,
+          0.03999999538064003,
+          0.03999999538064003,
+          0.9999998807907104,
+          0.03999999538064003,
+          0.03999999538064003,
+          0.9999998807907104,
+          0.03999999538064003,
+          0.03999999538064003,
+          0.9999998807907104,
+          0.03999999538064003,
+          0.03999999538064003,
+          0.9999998807907104,
+          0.03999999538064003,
+          0.03999999538064003,
+          0.9999998807907104,
+          0.03999999538064003,
+          0.03999999538064003,
+          0.9999998807907104,
+          0.03999999538064003,
+          0.03999999538064003,
+          0.9999998807907104,
+          0.03999999538064003,
+          0.03999999538064003,
+          0.9999998807907104,
+          0.03999999538064003,
+          0.03999999538064003,
+          0.9999998807907104,
+          0.4661397635936737,
+          0.4999999403953552,
+          0.4999999403953552,
+          0.0,
+          0.0
+        ],
+        "feedback_pfc_count": 212,
+        "sequence_supported_events": [],
+        "source": "body_reflex",
+        "muscles": [
+          0.0,
+          0.5,
+          0.0,
+          0.5
+        ],
+        "strongest_connection_in_first_recalled_event": {
+          "mixed_cell": 529,
+          "goal_input_cell": 0,
+          "goal_input_activity": 1.0,
+          "rule_input_cell": 2,
+          "rule_input_activity": 1.0,
+          "current_sensory_inputs": [
+            {
+              "receptor": 2428,
+              "channel": 75,
+              "meaning": "rgb_ray_14_B",
+              "value": 1.0,
+              "threshold": 0.8823529481887817,
+              "side": "greater_or_equal"
+            },
+            {
+              "receptor": 824,
+              "channel": 25,
+              "meaning": "depth_ray_25",
+              "value": 1.0,
+              "threshold": 0.7647058963775635,
+              "side": "greater_or_equal"
+            }
+          ],
+          "mixed_cell_threshold": 3.5,
+          "destination_event_id": 6276,
+          "cell_to_event_current": 0.01721071000087582,
+          "fixed_input_connections": true,
+          "event_connection_from_experience": true
+        },
+        "learning": false,
+        "reward": 0,
+        "no_physical_rollout": true
+      },
+      {
+        "name": "upper_top_silence",
+        "visual_input_lesion": false,
+        "preceded_by_rule_only_sensory_probe": false,
+        "current_color_ray_counts": [
+          0,
+          0,
+          31
+        ],
+        "heard_receptors": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "goal_activity": [],
+        "rule_activity": [
+          0
+        ],
+        "pfc_active_count": 0,
+        "actual_recorded_feature_event_connections_reachable": 0,
+        "reward_gated_connections_reachable": 0,
+        "recall_count": 0,
+        "recalled_events": [],
+        "recalled_view": null,
+        "feedback_pfc_count": 0,
+        "sequence_supported_events": [],
+        "source": "body_reflex",
+        "muscles": [
+          0.0,
+          0.5,
+          0.0,
+          0.5
+        ],
+        "strongest_connection_in_first_recalled_event": null,
+        "learning": false,
+        "reward": 0,
+        "no_physical_rollout": true
+      },
+      {
+        "name": "top_sensory_input_lesion",
+        "visual_input_lesion": true,
+        "preceded_by_rule_only_sensory_probe": false,
+        "current_color_ray_counts": [
+          0,
+          0,
+          31
+        ],
+        "heard_receptors": [
+          1.0,
+          1.4191524584133167e-15,
+          1.4014144718012168e-15,
+          1.3271808684102225e-15,
+          1.0
+        ],
+        "goal_activity": [
+          0
+        ],
+        "rule_activity": [
+          2
+        ],
+        "pfc_active_count": 0,
+        "actual_recorded_feature_event_connections_reachable": 0,
+        "reward_gated_connections_reachable": 0,
+        "recall_count": 0,
+        "recalled_events": [],
+        "recalled_view": null,
+        "feedback_pfc_count": 0,
+        "sequence_supported_events": [],
+        "source": "body_reflex",
+        "muscles": [
+          0.0,
+          0.5,
+          0.0,
+          0.5
+        ],
+        "strongest_connection_in_first_recalled_event": null,
+        "learning": false,
+        "reward": 0,
+        "no_physical_rollout": true
+      }
+    ]
+  }
+}

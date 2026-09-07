@@ -1,0 +1,430 @@
+{
+  "status": "complete",
+  "source_report": "F:\\一种AGI架构\\原架构闭环\\results\\continuous_balanced_1200.json",
+  "unchanged_input_sha256": {
+    "F:\\一种AGI架构\\原架构闭环\\results\\continuous_balanced_1200.json": "1afbaa2ca1b04b4e4e4d5dc6de7c2d04da1d053ffa92b3375c41e085d03b4133",
+    "F:\\一种AGI架构\\原架构闭环\\results\\continuous_balanced_parameters.json": "d3a027b5fc09d6824ecf56b0e174d6396d2d41905fa10d7929c38121db20bf04",
+    "F:\\一种AGI架构\\原架构闭环\\results\\living_original.npz": "6717be86ecffd6157f719c945911fee05b152d8d111db8fe182fcff434b550ca",
+    "原架构闭环\\results\\continuous_balanced_1200.npz": "896689fb7f04f971935aca61a1195c2b3cc286e358fb2e4a4b5ab319c2ab81a5"
+  },
+  "parameters": {
+    "pfc_decay_warning": 1,
+    "pfc_decay_interval": 25,
+    "pfc_decay_rate": 0.9,
+    "pfc_hebb_increment": 0.0001,
+    "memory_decay_rate": 0.9995
+  },
+  "runtime_now_sha256": "10338f0b7d7e7229834c69dfc819d8663bd298c50853a28373ae01d4d2bd0844",
+  "runtime_reported_sha256": "4bf738d9471cdba11b6fcfd0a3f57ee69f10cf0b985caed88c04d757782044a9",
+  "runtime_note": "Current runtime may use an exact derived index cache; serialized canonical memory and equations are unchanged. Separate index-equivalence audit is external.",
+  "checkpoint_hash_present_in_original_report": false,
+  "checkpoint_identity_evidence": "Current SHA captured; configuration, exact terminal memory activations, clock, and control counts cross-checked with report.",
+  "saved_reference_retention": {
+    "visual": {
+      "correct": 49,
+      "total": 49,
+      "empty_references": 0,
+      "minimum_expected_weight": 0.9980014995000627
+    },
+    "audio": {
+      "correct": 48,
+      "total": 48,
+      "empty_references": 1,
+      "minimum_expected_weight": 1.0
+    },
+    "motor": {
+      "correct": 49,
+      "total": 49,
+      "empty_references": 0,
+      "minimum_expected_weight": 0.9950112350131176
+    }
+  },
+  "retention_failures": [],
+  "sensory_alignment": {
+    "frames": 1200,
+    "actual_color_and_PCM_spectrum_all_match": true,
+    "one_timeline": true,
+    "start_clock": 98,
+    "final_clock": 2500,
+    "new_observations": 1201,
+    "coexposure_frames": {
+      "220:red": 160,
+      "440:green": 160,
+      "660:blue": 160,
+      "990:red": 112,
+      "1320:green": 104,
+      "1750:blue": 104
+    },
+    "corpus_sha256": "a5878dc5075f4d45607904f25522aee3c705acb4ad46d5e6c4b4c1fe9fa10967"
+  },
+  "same_event_visual_content_diagnostics": [
+    {
+      "stage": 300,
+      "known_cue_count": 6,
+      "reported_first_initial": 6,
+      "reported_first_final": 6,
+      "corrected_first": {
+        "initial": {
+          "correct": 6
+        },
+        "final": {
+          "correct": 6
+        }
+      },
+      "all_probe_frames": {
+        "initial": {
+          "correct": 48
+        },
+        "final": {
+          "correct": 48
+        }
+      },
+      "changed_scores": []
+    },
+    {
+      "stage": 600,
+      "known_cue_count": 6,
+      "reported_first_initial": 6,
+      "reported_first_final": 6,
+      "corrected_first": {
+        "initial": {
+          "correct": 6
+        },
+        "final": {
+          "correct": 6
+        }
+      },
+      "all_probe_frames": {
+        "initial": {
+          "correct": 48
+        },
+        "final": {
+          "correct": 48
+        }
+      },
+      "changed_scores": []
+    },
+    {
+      "stage": 900,
+      "known_cue_count": 6,
+      "reported_first_initial": 6,
+      "reported_first_final": 6,
+      "corrected_first": {
+        "initial": {
+          "correct": 6
+        },
+        "final": {
+          "correct": 6
+        }
+      },
+      "all_probe_frames": {
+        "initial": {
+          "correct": 48
+        },
+        "final": {
+          "correct": 48
+        }
+      },
+      "changed_scores": []
+    },
+    {
+      "stage": 1200,
+      "known_cue_count": 6,
+      "reported_first_initial": 6,
+      "reported_first_final": 6,
+      "corrected_first": {
+        "initial": {
+          "correct": 6
+        },
+        "final": {
+          "correct": 6
+        }
+      },
+      "all_probe_frames": {
+        "initial": {
+          "correct": 48
+        },
+        "final": {
+          "correct": 48
+        }
+      },
+      "changed_scores": []
+    }
+  ],
+  "behavior_limit": "These visual-content diagnostics do not grade action/route correctness; learned shortcuts can change intermediate recalled content. No navigation, logic-collapse, or AGI inference is made.",
+  "original_brain_from_snapshot_equal": true,
+  "full_life_roundtrip_equal": true,
+  "transient_prepared_action_retained": true,
+  "custom_parameters_and_maintenance_before": {
+    "pfc_excitatory": {
+      "强化量": 0.0001,
+      "衰减率": 0.9,
+      "消失下限": 5e-05,
+      "警戒线": 1,
+      "衰减间隔": 25,
+      "维护次数": 1249,
+      "上次衰减维护": 1233
+    },
+    "pfc_disinhibitory": {
+      "强化量": 0.0001,
+      "衰减率": 0.9,
+      "消失下限": 5e-05,
+      "警戒线": 1,
+      "衰减间隔": 25,
+      "维护次数": 1249,
+      "上次衰减维护": 1249
+    },
+    "visual_feature_to_time": {
+      "强化量": 1.0,
+      "衰减率": 0.9995,
+      "消失下限": 0.05,
+      "警戒线": 100000,
+      "衰减间隔": 200,
+      "维护次数": 2500,
+      "上次衰减维护": 2423
+    },
+    "visual_time_to_feature": {
+      "强化量": 1.0,
+      "衰减率": 0.9995,
+      "消失下限": 0.05,
+      "警戒线": 100000,
+      "衰减间隔": 200,
+      "维护次数": 2500,
+      "上次衰减维护": 2422
+    },
+    "audio_feature_to_time": {
+      "强化量": 1.0,
+      "衰减率": 0.9995,
+      "消失下限": 0.05,
+      "警戒线": 100000,
+      "衰减间隔": 200,
+      "维护次数": 2500,
+      "上次衰减维护": -200
+    },
+    "audio_time_to_feature": {
+      "强化量": 1.0,
+      "衰减率": 0.9995,
+      "消失下限": 0.05,
+      "警戒线": 100000,
+      "衰减间隔": 200,
+      "维护次数": 2500,
+      "上次衰减维护": -200
+    },
+    "motor_feature_to_time": {
+      "强化量": 1.0,
+      "衰减率": 0.9995,
+      "消失下限": 0.05,
+      "警戒线": 100000,
+      "衰减间隔": 200,
+      "维护次数": 2500,
+      "上次衰减维护": 2332
+    },
+    "motor_time_to_feature": {
+      "强化量": 1.0,
+      "衰减率": 0.9995,
+      "消失下限": 0.05,
+      "警戒线": 100000,
+      "衰减间隔": 200,
+      "维护次数": 2500,
+      "上次衰减维护": 2331
+    }
+  },
+  "custom_parameters_and_maintenance_after": {
+    "pfc_excitatory": {
+      "强化量": 0.0001,
+      "衰减率": 0.9,
+      "消失下限": 5e-05,
+      "警戒线": 1,
+      "衰减间隔": 25,
+      "维护次数": 1259,
+      "上次衰减维护": 1258
+    },
+    "pfc_disinhibitory": {
+      "强化量": 0.0001,
+      "衰减率": 0.9,
+      "消失下限": 5e-05,
+      "警戒线": 1,
+      "衰减间隔": 25,
+      "维护次数": 1259,
+      "上次衰减维护": 1249
+    },
+    "visual_feature_to_time": {
+      "强化量": 1.0,
+      "衰减率": 0.9995,
+      "消失下限": 0.05,
+      "警戒线": 100000,
+      "衰减间隔": 200,
+      "维护次数": 2520,
+      "上次衰减维护": 2423
+    },
+    "visual_time_to_feature": {
+      "强化量": 1.0,
+      "衰减率": 0.9995,
+      "消失下限": 0.05,
+      "警戒线": 100000,
+      "衰减间隔": 200,
+      "维护次数": 2520,
+      "上次衰减维护": 2422
+    },
+    "audio_feature_to_time": {
+      "强化量": 1.0,
+      "衰减率": 0.9995,
+      "消失下限": 0.05,
+      "警戒线": 100000,
+      "衰减间隔": 200,
+      "维护次数": 2520,
+      "上次衰减维护": -200
+    },
+    "audio_time_to_feature": {
+      "强化量": 1.0,
+      "衰减率": 0.9995,
+      "消失下限": 0.05,
+      "警戒线": 100000,
+      "衰减间隔": 200,
+      "维护次数": 2520,
+      "上次衰减维护": -200
+    },
+    "motor_feature_to_time": {
+      "强化量": 1.0,
+      "衰减率": 0.9995,
+      "消失下限": 0.05,
+      "警戒线": 100000,
+      "衰减间隔": 200,
+      "维护次数": 2520,
+      "上次衰减维护": 2332
+    },
+    "motor_time_to_feature": {
+      "强化量": 1.0,
+      "衰减率": 0.9995,
+      "消失下限": 0.05,
+      "警戒线": 100000,
+      "衰减间隔": 200,
+      "维护次数": 2520,
+      "上次衰减维护": 2331
+    }
+  },
+  "continuation_learning_enabled": true,
+  "continuation_frames": [
+    {
+      "frame": 1,
+      "complete_state_sha256": "223e3f1675de833d768425ae998365fac01ee409ec8b0a2676be2a0761cf2294",
+      "clock": 2502,
+      "physical_time": 124.8999999999589,
+      "muscles": [
+        0.0,
+        0.5,
+        0.0,
+        0.5
+      ]
+    },
+    {
+      "frame": 2,
+      "complete_state_sha256": "8a1b0d9d8b2605280a750a4adbefb72ae5195c965869b947eaa6b3108b2aa3d5",
+      "clock": 2504,
+      "physical_time": 124.9999999999588,
+      "muscles": [
+        0.0,
+        0.5,
+        0.0,
+        0.5
+      ]
+    },
+    {
+      "frame": 3,
+      "complete_state_sha256": "3a257461dab0ac4cb318905a1f26e35dd6163da6b54b3834f30f2955334cc0fd",
+      "clock": 2506,
+      "physical_time": 125.09999999995871,
+      "muscles": [
+        0.0,
+        0.5,
+        0.0,
+        0.5
+      ]
+    },
+    {
+      "frame": 4,
+      "complete_state_sha256": "edced7c7a164bab7b49d8141bac0aa9317c6dc47634ea2454203e646915a3893",
+      "clock": 2508,
+      "physical_time": 125.19999999995862,
+      "muscles": [
+        0.0,
+        0.5,
+        0.0,
+        0.5
+      ]
+    },
+    {
+      "frame": 5,
+      "complete_state_sha256": "e4e0e2a6bd63ddeaadf5953062ce2c4a122eca0b3549ccd25910bd5cf151ba0d",
+      "clock": 2510,
+      "physical_time": 125.29999999995853,
+      "muscles": [
+        0.0,
+        0.5,
+        0.0,
+        0.5
+      ]
+    },
+    {
+      "frame": 6,
+      "complete_state_sha256": "436bdef4d722bb00eb0d9fb4742d4449aee9c3dc436d17820bda25382379a156",
+      "clock": 2512,
+      "physical_time": 125.39999999995844,
+      "muscles": [
+        0.0,
+        0.5,
+        0.0,
+        0.5
+      ]
+    },
+    {
+      "frame": 7,
+      "complete_state_sha256": "c4582681c6b34e25507c32a4ea617c00affffb9e33922e98a29e446d89c2f7f5",
+      "clock": 2514,
+      "physical_time": 125.49999999995835,
+      "muscles": [
+        0.0,
+        0.5,
+        0.0,
+        0.5
+      ]
+    },
+    {
+      "frame": 8,
+      "complete_state_sha256": "c99748ad16a418e21e7be4d4c75ad99d360556376afc12446e4a5869aa3e42cc",
+      "clock": 2516,
+      "physical_time": 125.59999999995826,
+      "muscles": [
+        0.0,
+        0.5,
+        0.0,
+        0.5
+      ]
+    },
+    {
+      "frame": 9,
+      "complete_state_sha256": "0f81f0739114c61dcee26cbe33931cf5281d7433a75db1fa0174145233ba9abd",
+      "clock": 2518,
+      "physical_time": 125.69999999995817,
+      "muscles": [
+        0.0,
+        0.5,
+        0.0,
+        0.5
+      ]
+    },
+    {
+      "frame": 10,
+      "complete_state_sha256": "17df82b503ba620ffcd138347ae2d7b09cb1317abb457e9d329096b3db335901",
+      "clock": 2520,
+      "physical_time": 125.79999999995808,
+      "muscles": [
+        0.0,
+        0.5,
+        0.0,
+        0.5
+      ]
+    }
+  ],
+  "formal_life_or_report_written": false
+}

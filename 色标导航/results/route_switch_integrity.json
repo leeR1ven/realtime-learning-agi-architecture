@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "scope": "Independent integrity units, not navigation or AGI acceptance",
+  "interface": {
+    "packet_exact_sensor_whitelist": true,
+    "omitted_private_answers_cannot_steer_policy": true,
+    "route_sound_keeps_red_goal_population": true,
+    "silent_rule_population_retention_frames": 200,
+    "rule_only_intervention_preserves_goal": true,
+    "artificial_reward_calls": 0,
+    "teacher_calls": 0,
+    "limitation": "State retention is a unit check, not evidence of behavioral route-memory dependence."
+  },
+  "prefix_cloning": {
+    "model": "newborn 512-neuron audit fixture; not the trained model",
+    "split_frames": 100,
+    "dt": 0.1,
+    "seeds": [
+      831,
+      931,
+      1031
+    ],
+    "rows": [
+      {
+        "seed": 831,
+        "initial_route": "bottom",
+        "prefix_frames": 100,
+        "prefix_trajectory_sha256": "6ec9375489f762ab0f42313faa122949decfeeefff65a1c1ff1b077a175c8faa",
+        "cloned_complete_state_sha256": "9fa8e563d6bcd15840871706d202c366fe6cd396d52ecd0565e9df5d329e0dfa",
+        "exact_clone": true,
+        "same_cue_continuation_steps": 25,
+        "invalid_reasons": []
+      },
+      {
+        "seed": 831,
+        "initial_route": "top",
+        "prefix_frames": 100,
+        "prefix_trajectory_sha256": "6ec9375489f762ab0f42313faa122949decfeeefff65a1c1ff1b077a175c8faa",
+        "cloned_complete_state_sha256": "f0608410cb7ad2ea9656a46dda3a3099075a4be133b51c9b2438f9ded918b540",
+        "exact_clone": true,
+        "same_cue_continuation_steps": 25,
+        "invalid_reasons": []
+      },
+      {
+        "seed": 931,
+        "initial_route": "bottom",
+        "prefix_frames": 100,
+        "prefix_trajectory_sha256": "842b748952ac2dc5be4220f067a69fbb3beccfa24032c5066e644b518e8a0d99",
+        "cloned_complete_state_sha256": "e52a34cfb8de96a9528194ea0a89ce4b331ede0f007518723e753f5d58af70a3",
+        "exact_clone": true,
+        "same_cue_continuation_steps": 25,
+        "invalid_reasons": []
+      },
+      {
+        "seed": 931,
+        "initial_route": "top",
+        "prefix_frames": 100,
+        "prefix_trajectory_sha256": "842b748952ac2dc5be4220f067a69fbb3beccfa24032c5066e644b518e8a0d99",
+        "cloned_complete_state_sha256": "fa5a89d1b0852271a079b3eb13f660a08b634db1fc601557190fe711d867539c",
+        "exact_clone": true,
+        "same_cue_continuation_steps": 25,
+        "invalid_reasons": []
+      },
+      {
+        "seed": 1031,
+        "initial_route": "bottom",
+        "prefix_frames": 100,
+        "prefix_trajectory_sha256": "8cd6d0867b0f733e2692fc2dea340ad25084cc3383887a9420505437055b6ab3",
+        "cloned_complete_state_sha256": "d1d083f86a80eccc0cfd0657f7789154cee643550fc15290b61e78bbca821acb",
+        "exact_clone": true,
+        "same_cue_continuation_steps": 25,
+        "invalid_reasons": []
+      },
+      {
+        "seed": 1031,
+        "initial_route": "top",
+        "prefix_frames": 100,
+        "prefix_trajectory_sha256": "8cd6d0867b0f733e2692fc2dea340ad25084cc3383887a9420505437055b6ab3",
+        "cloned_complete_state_sha256": "b2a6f3cdde5dca19d06fc1314f048cef6206819ce068f853710a66e89f06f200",
+        "exact_clone": true,
+        "same_cue_continuation_steps": 25,
+        "invalid_reasons": []
+      }
+    ]
+  },
+  "checkpoint_continuation": {
+    "exact_online_continuation_frames": 25,
+    "sparse_time_links_equal": true,
+    "teacher_events": 0,
+    "test_archive_temporary_and_removed": true
+  },
+  "integrity_checks_passed": true,
+  "source_sha256": {
+    "audit_route_switch.py": "d19735fb443799b366a74543c18967cd5fffaa522914f0ea5e7586bec0e10ebc",
+    "route_switch_controller.py": "33ce2f5ac5ab0a4774b1381130967df6406c834d69730b1208009deabc27408f",
+    "route_switch_environment.py": "f84f07d303e007ad46d3d6fd3a019e9ee965894e6daee21a9a25ed343ebde79c"
+  },
+  "wall_seconds": 2.378085600000304
+}

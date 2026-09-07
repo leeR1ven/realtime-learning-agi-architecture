@@ -1,0 +1,458 @@
+{
+  "status": "complete",
+  "gray": {
+    "source": "F:\\一种AGI架构\\色标导航\\results\\route_switch_evaluation.json",
+    "source_sha256": "0babefabbec304006a534f76fa26c41d5700973e463ed402215942e78017eb3c",
+    "checkpoint_sha256": "852be537f84f9feb8e4313b74994527946fd688f87fd64515e819721a2cf0fbb",
+    "birth_hash": "c88e52ea910f5b3e035ef8efb9a3b3685527cea89f8bba08cac20b0e08c55d41",
+    "summary": {
+      "training_successes": 10,
+      "training_trials": 36,
+      "paired_successes": 0,
+      "paired_denominator": 6,
+      "valid_prefixes": 4,
+      "branch_successes": {
+        "stay": 1,
+        "switch": 2,
+        "no_cue": 1,
+        "swapped_acoustic_mapping": 1,
+        "clear_rule_after_cue": 0
+      }
+    },
+    "pairs": [
+      {
+        "seed": 831,
+        "initial_route": "bottom",
+        "valid_prefix": false,
+        "strict_branches": {},
+        "pair_success": false
+      },
+      {
+        "seed": 831,
+        "initial_route": "top",
+        "valid_prefix": false,
+        "strict_branches": {},
+        "pair_success": false
+      },
+      {
+        "seed": 931,
+        "initial_route": "bottom",
+        "valid_prefix": true,
+        "strict_branches": {
+          "stay": false,
+          "switch": true,
+          "no_cue": false,
+          "swapped_acoustic_mapping": true,
+          "clear_rule_after_cue": false
+        },
+        "pair_success": false
+      },
+      {
+        "seed": 931,
+        "initial_route": "top",
+        "valid_prefix": true,
+        "strict_branches": {
+          "stay": false,
+          "switch": false,
+          "no_cue": false,
+          "swapped_acoustic_mapping": false,
+          "clear_rule_after_cue": false
+        },
+        "pair_success": false
+      },
+      {
+        "seed": 1031,
+        "initial_route": "bottom",
+        "valid_prefix": true,
+        "strict_branches": {
+          "stay": false,
+          "switch": true,
+          "no_cue": false,
+          "swapped_acoustic_mapping": false,
+          "clear_rule_after_cue": false
+        },
+        "pair_success": false
+      },
+      {
+        "seed": 1031,
+        "initial_route": "top",
+        "valid_prefix": true,
+        "strict_branches": {
+          "stay": true,
+          "switch": false,
+          "no_cue": true,
+          "swapped_acoustic_mapping": false,
+          "clear_rule_after_cue": false
+        },
+        "pair_success": false
+      }
+    ],
+    "coverage": [
+      {
+        "start": "middle",
+        "route": "bottom",
+        "trials": 6,
+        "rewarded": 1,
+        "physical_red_arrivals": 4
+      },
+      {
+        "start": "middle",
+        "route": "top",
+        "trials": 6,
+        "rewarded": 2,
+        "physical_red_arrivals": 4
+      },
+      {
+        "start": "lower",
+        "route": "bottom",
+        "trials": 6,
+        "rewarded": 0,
+        "physical_red_arrivals": 0
+      },
+      {
+        "start": "lower",
+        "route": "top",
+        "trials": 6,
+        "rewarded": 2,
+        "physical_red_arrivals": 3
+      },
+      {
+        "start": "upper",
+        "route": "bottom",
+        "trials": 6,
+        "rewarded": 2,
+        "physical_red_arrivals": 4
+      },
+      {
+        "start": "upper",
+        "route": "top",
+        "trials": 6,
+        "rewarded": 3,
+        "physical_red_arrivals": 3
+      }
+    ],
+    "rewarded_training_episodes_with_opposite_first_passage": [],
+    "matching_full_clone_hashes": 20,
+    "frozen_evaluation_rows": 26,
+    "exact_same_physical_trajectory_controls": [
+      {
+        "seed": 931,
+        "initial_route": "bottom",
+        "compared_to_stay": "no_cue",
+        "full_physics_samples": 405,
+        "sampled_muscles_and_logged_brain_info_equal": true
+      },
+      {
+        "seed": 931,
+        "initial_route": "bottom",
+        "compared_to_stay": "swapped_acoustic_mapping",
+        "full_physics_samples": 405,
+        "sampled_muscles_and_logged_brain_info_equal": true
+      },
+      {
+        "seed": 931,
+        "initial_route": "top",
+        "compared_to_stay": "no_cue",
+        "full_physics_samples": 1601,
+        "sampled_muscles_and_logged_brain_info_equal": true
+      },
+      {
+        "seed": 931,
+        "initial_route": "top",
+        "compared_to_stay": "swapped_acoustic_mapping",
+        "full_physics_samples": 1601,
+        "sampled_muscles_and_logged_brain_info_equal": true
+      },
+      {
+        "seed": 1031,
+        "initial_route": "bottom",
+        "compared_to_stay": "no_cue",
+        "full_physics_samples": 1601,
+        "sampled_muscles_and_logged_brain_info_equal": true
+      },
+      {
+        "seed": 1031,
+        "initial_route": "bottom",
+        "compared_to_stay": "swapped_acoustic_mapping",
+        "full_physics_samples": 1601,
+        "sampled_muscles_and_logged_brain_info_equal": true
+      },
+      {
+        "seed": 1031,
+        "initial_route": "top",
+        "compared_to_stay": "no_cue",
+        "full_physics_samples": 704,
+        "sampled_muscles_and_logged_brain_info_equal": true
+      },
+      {
+        "seed": 1031,
+        "initial_route": "top",
+        "compared_to_stay": "swapped_acoustic_mapping",
+        "full_physics_samples": 704,
+        "sampled_muscles_and_logged_brain_info_equal": true
+      }
+    ],
+    "checkpoint_inventory_matches_report": true,
+    "teacher_event_count": 0,
+    "frozen_evaluation_evidence": "Recorded event counts and strength sums unchanged, no rewards, learning=False; this audit does not claim per-array before/after evaluation hashes"
+  },
+  "textured": {
+    "source": "F:\\一种AGI架构\\色标导航\\results\\route_texture_evaluation.json",
+    "source_sha256": "2219094081169271132a675754c58f0d6d966985b972de3e0d6e7084f755b5bf",
+    "checkpoint_sha256": "c609e12caa78679d611bf87fb575eaea27b1ed66f8b437616261e2a6862a0715",
+    "birth_hash": "c88e52ea910f5b3e035ef8efb9a3b3685527cea89f8bba08cac20b0e08c55d41",
+    "summary": {
+      "training_successes": 24,
+      "training_trials": 36,
+      "paired_successes": 2,
+      "paired_denominator": 6,
+      "valid_prefixes": 6,
+      "branch_successes": {
+        "stay": 5,
+        "switch": 3,
+        "no_cue": 5,
+        "swapped_acoustic_mapping": 1,
+        "clear_rule_after_cue": 0
+      }
+    },
+    "pairs": [
+      {
+        "seed": 831,
+        "initial_route": "bottom",
+        "valid_prefix": true,
+        "strict_branches": {
+          "stay": true,
+          "switch": true,
+          "no_cue": true,
+          "swapped_acoustic_mapping": false,
+          "clear_rule_after_cue": false
+        },
+        "pair_success": true
+      },
+      {
+        "seed": 831,
+        "initial_route": "top",
+        "valid_prefix": true,
+        "strict_branches": {
+          "stay": true,
+          "switch": false,
+          "no_cue": true,
+          "swapped_acoustic_mapping": false,
+          "clear_rule_after_cue": false
+        },
+        "pair_success": false
+      },
+      {
+        "seed": 931,
+        "initial_route": "bottom",
+        "valid_prefix": true,
+        "strict_branches": {
+          "stay": false,
+          "switch": true,
+          "no_cue": false,
+          "swapped_acoustic_mapping": true,
+          "clear_rule_after_cue": false
+        },
+        "pair_success": false
+      },
+      {
+        "seed": 931,
+        "initial_route": "top",
+        "valid_prefix": true,
+        "strict_branches": {
+          "stay": true,
+          "switch": false,
+          "no_cue": true,
+          "swapped_acoustic_mapping": false,
+          "clear_rule_after_cue": false
+        },
+        "pair_success": false
+      },
+      {
+        "seed": 1031,
+        "initial_route": "bottom",
+        "valid_prefix": true,
+        "strict_branches": {
+          "stay": true,
+          "switch": true,
+          "no_cue": true,
+          "swapped_acoustic_mapping": false,
+          "clear_rule_after_cue": false
+        },
+        "pair_success": true
+      },
+      {
+        "seed": 1031,
+        "initial_route": "top",
+        "valid_prefix": true,
+        "strict_branches": {
+          "stay": true,
+          "switch": false,
+          "no_cue": true,
+          "swapped_acoustic_mapping": false,
+          "clear_rule_after_cue": false
+        },
+        "pair_success": false
+      }
+    ],
+    "coverage": [
+      {
+        "start": "middle",
+        "route": "bottom",
+        "trials": 6,
+        "rewarded": 5,
+        "physical_red_arrivals": 5
+      },
+      {
+        "start": "middle",
+        "route": "top",
+        "trials": 6,
+        "rewarded": 6,
+        "physical_red_arrivals": 6
+      },
+      {
+        "start": "lower",
+        "route": "bottom",
+        "trials": 6,
+        "rewarded": 5,
+        "physical_red_arrivals": 5
+      },
+      {
+        "start": "lower",
+        "route": "top",
+        "trials": 6,
+        "rewarded": 4,
+        "physical_red_arrivals": 4
+      },
+      {
+        "start": "upper",
+        "route": "bottom",
+        "trials": 6,
+        "rewarded": 0,
+        "physical_red_arrivals": 3
+      },
+      {
+        "start": "upper",
+        "route": "top",
+        "trials": 6,
+        "rewarded": 4,
+        "physical_red_arrivals": 4
+      }
+    ],
+    "rewarded_training_episodes_with_opposite_first_passage": [],
+    "matching_full_clone_hashes": 30,
+    "frozen_evaluation_rows": 36,
+    "exact_same_physical_trajectory_controls": [
+      {
+        "seed": 831,
+        "initial_route": "bottom",
+        "compared_to_stay": "no_cue",
+        "full_physics_samples": 1246,
+        "sampled_muscles_and_logged_brain_info_equal": true
+      },
+      {
+        "seed": 831,
+        "initial_route": "bottom",
+        "compared_to_stay": "swapped_acoustic_mapping",
+        "full_physics_samples": 1246,
+        "sampled_muscles_and_logged_brain_info_equal": true
+      },
+      {
+        "seed": 831,
+        "initial_route": "top",
+        "compared_to_stay": "no_cue",
+        "full_physics_samples": 741,
+        "sampled_muscles_and_logged_brain_info_equal": true
+      },
+      {
+        "seed": 831,
+        "initial_route": "top",
+        "compared_to_stay": "swapped_acoustic_mapping",
+        "full_physics_samples": 741,
+        "sampled_muscles_and_logged_brain_info_equal": true
+      },
+      {
+        "seed": 931,
+        "initial_route": "bottom",
+        "compared_to_stay": "no_cue",
+        "full_physics_samples": 560,
+        "sampled_muscles_and_logged_brain_info_equal": true
+      },
+      {
+        "seed": 931,
+        "initial_route": "bottom",
+        "compared_to_stay": "swapped_acoustic_mapping",
+        "full_physics_samples": 560,
+        "sampled_muscles_and_logged_brain_info_equal": true
+      },
+      {
+        "seed": 931,
+        "initial_route": "top",
+        "compared_to_stay": "no_cue",
+        "full_physics_samples": 638,
+        "sampled_muscles_and_logged_brain_info_equal": true
+      },
+      {
+        "seed": 931,
+        "initial_route": "top",
+        "compared_to_stay": "swapped_acoustic_mapping",
+        "full_physics_samples": 638,
+        "sampled_muscles_and_logged_brain_info_equal": true
+      },
+      {
+        "seed": 1031,
+        "initial_route": "bottom",
+        "compared_to_stay": "no_cue",
+        "full_physics_samples": 588,
+        "sampled_muscles_and_logged_brain_info_equal": true
+      },
+      {
+        "seed": 1031,
+        "initial_route": "bottom",
+        "compared_to_stay": "swapped_acoustic_mapping",
+        "full_physics_samples": 588,
+        "sampled_muscles_and_logged_brain_info_equal": true
+      },
+      {
+        "seed": 1031,
+        "initial_route": "top",
+        "compared_to_stay": "no_cue",
+        "full_physics_samples": 402,
+        "sampled_muscles_and_logged_brain_info_equal": true
+      },
+      {
+        "seed": 1031,
+        "initial_route": "top",
+        "compared_to_stay": "swapped_acoustic_mapping",
+        "full_physics_samples": 402,
+        "sampled_muscles_and_logged_brain_info_equal": true
+      }
+    ],
+    "checkpoint_inventory_matches_report": true,
+    "teacher_event_count": 0,
+    "frozen_evaluation_evidence": "Recorded event counts and strength sums unchanged, no rewards, learning=False; this audit does not claim per-array before/after evaluation hashes"
+  },
+  "comparison": {
+    "same_birth_hash": true,
+    "same_all_36_episode_schedule": true,
+    "same_protocol_except_visible_wall_texture_seed": true,
+    "identical_physics_scoring_and_controller_module_hashes": [
+      "environment.py",
+      "associative_controller.py",
+      "route_switch_environment.py",
+      "route_switch_controller.py"
+    ],
+    "texture_seed": 44017,
+    "runner_hash_differs_reason": "Texture factory/option plus first-crossing scoring correction and digest provenance; both result sets independently recounted using the same first+last >=10.6 rule.",
+    "training_success_change": "10/36 -> 24/36",
+    "strict_pair_success_change": "0/6 -> 2/6"
+  },
+  "interpretation": [
+    "Visible texture improved this fixed birth, training schedule and probe set; six pairs are not broad reliability evidence.",
+    "Texture condition still has zero rewarded upper-start/bottom-route episodes out of six; successful static examples elsewhere do not establish coverage at every switching pose.",
+    "No-cue retains the old requirement. Identical trajectories for stay/no-cue/swapped acoustics support the absence of a private route-label behavior bypass.",
+    "Clearing rule state also clears replay activity; its failure tests that combined intervention, not isolated proof of an anatomical PFC mechanism.",
+    "Both recorded conditions have zero rewarded training episodes whose first complete passage was the opposite route; successful episodes still do not establish shortest-path planning.",
+    "No new training, parameter changes or source-result edits were performed by this audit."
+  ]
+}

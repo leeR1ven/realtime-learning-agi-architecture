@@ -1,0 +1,500 @@
+{
+  "protocol": {
+    "selection": "Exactly the first six far-pose pairs in the prior gray-wall audit; no reselection.",
+    "environment_seed": 20260906,
+    "texture_seed": 44017,
+    "intervention": "Only stored 31x3 RGB replaced by renderer output at the exact recorded pre-action camera pose.",
+    "fixed": "All 31 stored depth inputs and five body/pain/touch inputs, goal/rule activity, 16 levels, and all 8192 birth connections.",
+    "pose_restore": "Finite recorded world.position/heading restored solely for ray rendering; no step, collision correction, scoring, reset-to-contact or learning.",
+    "position_or_route_oracle_fed_to_model": false,
+    "model_instantiated": false,
+    "model_trained": false,
+    "actual_controller_actions_evaluated": false
+  },
+  "source_sha256": "034193c4165cd6e2845fcd6fb83bf0fad8a66e5ba174305a59c2eba1b4571264",
+  "input_sha256": {
+    "F:\\一种AGI架构\\色标导航\\results\\route_switch_evaluation.npz": "852be537f84f9feb8e4313b74994527946fd688f87fd64515e819721a2cf0fbb",
+    "F:\\一种AGI架构\\色标导航\\results\\route_ambiguity_audit.json": "d6e312bd78152b46a7a2ae6995b170425e69c5d9250afcb8488c42f078e362b2"
+  },
+  "training_history_sha256": "9754e752dac58d7ee03fad4a758baa05b96e17f8bb6e34de7eb76fe22a8652b9",
+  "verification": {
+    "unique_event_poses": 12,
+    "all_gray_rgb_match": true,
+    "all_gray_depth_match": true,
+    "all_original_codes_match_stored": true,
+    "all_non_rgb_inputs_exact": true,
+    "all_geometric_rays_and_hit_types_unchanged": true,
+    "all_birth_connections_reused": true,
+    "environment_rng_unchanged": true,
+    "renderer_time_unchanged": true,
+    "input_files_unchanged": true
+  },
+  "summary": {
+    "pairs": 6,
+    "baseline_exact_code_collisions": 2,
+    "collisions_split": 2,
+    "all_pairs_have_lower_jaccard": true,
+    "gray_jaccard_range": [
+      0.9914893617021276,
+      1.0
+    ],
+    "texture_jaccard_range": [
+      0.6425855513307985,
+      0.6678200692041523
+    ]
+  },
+  "pairs": [
+    {
+      "event_ids": [
+        35213,
+        17319
+      ],
+      "route": "bottom",
+      "separation_m": 8.222017782693072,
+      "heading_difference_deg": 179.97948938541663,
+      "gray": {
+        "continuous_input_rmse": 0.0024356988873887836,
+        "rgb_rmse": 0.0,
+        "paired_receptor_mismatch": 0.00048449612403100775,
+        "paired_changed_level_count": 1,
+        "mixed_8192_jaccard": 1.0,
+        "mixed_8192_equal": true,
+        "mixed_intersection": 226,
+        "mixed_union": 226,
+        "first_mixed_active": 226,
+        "second_mixed_active": 226
+      },
+      "rgb_only_texture": {
+        "continuous_input_rmse": 0.13436419499602895,
+        "rgb_rmse": 0.15822152534097994,
+        "paired_receptor_mismatch": 0.10755813953488372,
+        "paired_changed_level_count": 222,
+        "mixed_8192_jaccard": 0.6666666666666666,
+        "mixed_8192_equal": false,
+        "mixed_intersection": 180,
+        "mixed_union": 270,
+        "first_mixed_active": 214,
+        "second_mixed_active": 236
+      },
+      "exact_collision_split": true
+    },
+    {
+      "event_ids": [
+        35211,
+        17317
+      ],
+      "route": "bottom",
+      "separation_m": 8.292451703118886,
+      "heading_difference_deg": 178.6680152586753,
+      "gray": {
+        "continuous_input_rmse": 0.011966249345290942,
+        "rgb_rmse": 0.0,
+        "paired_receptor_mismatch": 0.0024224806201550387,
+        "paired_changed_level_count": 5,
+        "mixed_8192_jaccard": 1.0,
+        "mixed_8192_equal": true,
+        "mixed_intersection": 222,
+        "mixed_union": 222,
+        "first_mixed_active": 222,
+        "second_mixed_active": 222
+      },
+      "rgb_only_texture": {
+        "continuous_input_rmse": 0.13789621619181722,
+        "rgb_rmse": 0.16179472643973297,
+        "paired_receptor_mismatch": 0.11288759689922481,
+        "paired_changed_level_count": 233,
+        "mixed_8192_jaccard": 0.6425855513307985,
+        "mixed_8192_equal": false,
+        "mixed_intersection": 169,
+        "mixed_union": 263,
+        "first_mixed_active": 208,
+        "second_mixed_active": 224
+      },
+      "exact_collision_split": true
+    },
+    {
+      "event_ids": [
+        17321,
+        35215
+      ],
+      "route": "bottom",
+      "separation_m": 8.047835474055963,
+      "heading_difference_deg": 179.6637235820686,
+      "gray": {
+        "continuous_input_rmse": 0.0035272694955011076,
+        "rgb_rmse": 0.0,
+        "paired_receptor_mismatch": 0.0009689922480620155,
+        "paired_changed_level_count": 2,
+        "mixed_8192_jaccard": 0.9957805907172996,
+        "mixed_8192_equal": false,
+        "mixed_intersection": 236,
+        "mixed_union": 237,
+        "first_mixed_active": 237,
+        "second_mixed_active": 236
+      },
+      "rgb_only_texture": {
+        "continuous_input_rmse": 0.13416673724562145,
+        "rgb_rmse": 0.15796035490578358,
+        "paired_receptor_mismatch": 0.10755813953488372,
+        "paired_changed_level_count": 222,
+        "mixed_8192_jaccard": 0.6678200692041523,
+        "mixed_8192_equal": false,
+        "mixed_intersection": 193,
+        "mixed_union": 289,
+        "first_mixed_active": 248,
+        "second_mixed_active": 234
+      },
+      "exact_collision_split": false
+    },
+    {
+      "event_ids": [
+        35791,
+        35045
+      ],
+      "route": "bottom",
+      "separation_m": 9.991684315228085,
+      "heading_difference_deg": 176.35931332564002,
+      "gray": {
+        "continuous_input_rmse": 0.009267402189742736,
+        "rgb_rmse": 0.0,
+        "paired_receptor_mismatch": 0.005329457364341085,
+        "paired_changed_level_count": 11,
+        "mixed_8192_jaccard": 0.9956140350877193,
+        "mixed_8192_equal": false,
+        "mixed_intersection": 227,
+        "mixed_union": 228,
+        "first_mixed_active": 227,
+        "second_mixed_active": 228
+      },
+      "rgb_only_texture": {
+        "continuous_input_rmse": 0.13652403577322186,
+        "rgb_rmse": 0.16042040402157892,
+        "paired_receptor_mismatch": 0.11337209302325581,
+        "paired_changed_level_count": 234,
+        "mixed_8192_jaccard": 0.6606498194945848,
+        "mixed_8192_equal": false,
+        "mixed_intersection": 183,
+        "mixed_union": 277,
+        "first_mixed_active": 226,
+        "second_mixed_active": 234
+      },
+      "exact_collision_split": false
+    },
+    {
+      "event_ids": [
+        17323,
+        16557
+      ],
+      "route": "bottom",
+      "separation_m": 7.798729450777059,
+      "heading_difference_deg": 179.39271328123706,
+      "gray": {
+        "continuous_input_rmse": 0.004515558237326151,
+        "rgb_rmse": 0.0,
+        "paired_receptor_mismatch": 0.0024224806201550387,
+        "paired_changed_level_count": 5,
+        "mixed_8192_jaccard": 0.9916317991631799,
+        "mixed_8192_equal": false,
+        "mixed_intersection": 237,
+        "mixed_union": 239,
+        "first_mixed_active": 238,
+        "second_mixed_active": 238
+      },
+      "rgb_only_texture": {
+        "continuous_input_rmse": 0.13620056404732064,
+        "rgb_rmse": 0.16032212989603,
+        "paired_receptor_mismatch": 0.10707364341085271,
+        "paired_changed_level_count": 221,
+        "mixed_8192_jaccard": 0.6631578947368421,
+        "mixed_8192_equal": false,
+        "mixed_intersection": 189,
+        "mixed_union": 285,
+        "first_mixed_active": 242,
+        "second_mixed_active": 232
+      },
+      "exact_collision_split": false
+    },
+    {
+      "event_ids": [
+        17126,
+        7208
+      ],
+      "route": "bottom",
+      "separation_m": 5.242832329583044,
+      "heading_difference_deg": 89.402223511125,
+      "gray": {
+        "continuous_input_rmse": 0.016444532192583673,
+        "rgb_rmse": 0.0,
+        "paired_receptor_mismatch": 0.003875968992248062,
+        "paired_changed_level_count": 8,
+        "mixed_8192_jaccard": 0.9914893617021276,
+        "mixed_8192_equal": false,
+        "mixed_intersection": 233,
+        "mixed_union": 235,
+        "first_mixed_active": 235,
+        "second_mixed_active": 233
+      },
+      "rgb_only_texture": {
+        "continuous_input_rmse": 0.14723195871877298,
+        "rgb_rmse": 0.1723175577758413,
+        "paired_receptor_mismatch": 0.11676356589147287,
+        "paired_changed_level_count": 241,
+        "mixed_8192_jaccard": 0.6535714285714286,
+        "mixed_8192_equal": false,
+        "mixed_intersection": 183,
+        "mixed_union": 280,
+        "first_mixed_active": 240,
+        "second_mixed_active": 223
+      },
+      "exact_collision_split": false
+    }
+  ],
+  "pose_checks": [
+    {
+      "event_id": 7208,
+      "position": [
+        4.527488804616656,
+        3.4
+      ],
+      "heading": 0.0,
+      "episode": 5,
+      "action_index": 35,
+      "context_signature": 17,
+      "gray_rgb_exact_float32": true,
+      "gray_rgb_max_error": 0.0,
+      "gray_depth_proximity_max_error": 0.0,
+      "gray_depth_proximity_exact_float32": true,
+      "original_mixed_matches_saved_activity": true,
+      "non_rgb_stored_inputs_exactly_preserved": true,
+      "wall_rays": 31,
+      "texture_changed_rgb_components": 93,
+      "texture_changed_mixed_cells": 74
+    },
+    {
+      "event_id": 16557,
+      "position": [
+        3.4669691562594376,
+        0.46304725565689225
+      ],
+      "heading": -1.6141879629693818,
+      "episode": 14,
+      "action_index": 346,
+      "context_signature": 17,
+      "gray_rgb_exact_float32": true,
+      "gray_rgb_max_error": 0.0,
+      "gray_depth_proximity_max_error": 0.0,
+      "gray_depth_proximity_exact_float32": true,
+      "original_mixed_matches_saved_activity": true,
+      "non_rgb_stored_inputs_exactly_preserved": true,
+      "wall_rays": 31,
+      "texture_changed_rgb_components": 93,
+      "texture_changed_mixed_cells": 114
+    },
+    {
+      "event_id": 17126,
+      "position": [
+        7.516683230623173,
+        7.707204141859628
+      ],
+      "heading": 1.5603631588730167,
+      "episode": 14,
+      "action_index": 915,
+      "context_signature": 17,
+      "gray_rgb_exact_float32": true,
+      "gray_rgb_max_error": 0.0,
+      "gray_depth_proximity_max_error": 0.0,
+      "gray_depth_proximity_exact_float32": true,
+      "original_mixed_matches_saved_activity": true,
+      "non_rgb_stored_inputs_exactly_preserved": true,
+      "wall_rays": 31,
+      "texture_changed_rgb_components": 93,
+      "texture_changed_mixed_cells": 99
+    },
+    {
+      "event_id": 17317,
+      "position": [
+        6.709266105189152,
+        7.817905501921463
+      ],
+      "heading": 1.4370834320671095,
+      "episode": 14,
+      "action_index": 1106,
+      "context_signature": 17,
+      "gray_rgb_exact_float32": true,
+      "gray_rgb_max_error": 0.0,
+      "gray_depth_proximity_max_error": 0.0,
+      "gray_depth_proximity_exact_float32": true,
+      "original_mixed_matches_saved_activity": true,
+      "non_rgb_stored_inputs_exactly_preserved": true,
+      "wall_rays": 31,
+      "texture_changed_rgb_components": 93,
+      "texture_changed_mixed_cells": 88
+    },
+    {
+      "event_id": 17319,
+      "position": [
+        6.732998635615847,
+        7.771838319502259
+      ],
+      "heading": 1.4989805897244164,
+      "episode": 14,
+      "action_index": 1108,
+      "context_signature": 17,
+      "gray_rgb_exact_float32": true,
+      "gray_rgb_max_error": 0.0,
+      "gray_depth_proximity_max_error": 0.0,
+      "gray_depth_proximity_exact_float32": true,
+      "original_mixed_matches_saved_activity": true,
+      "non_rgb_stored_inputs_exactly_preserved": true,
+      "wall_rays": 31,
+      "texture_changed_rgb_components": 93,
+      "texture_changed_mixed_cells": 88
+    },
+    {
+      "event_id": 17321,
+      "position": [
+        6.744642701968842,
+        7.67327813292145
+      ],
+      "heading": 1.5134316602048052,
+      "episode": 14,
+      "action_index": 1110,
+      "context_signature": 17,
+      "gray_rgb_exact_float32": true,
+      "gray_rgb_max_error": 0.0,
+      "gray_depth_proximity_max_error": 0.0,
+      "gray_depth_proximity_exact_float32": true,
+      "original_mixed_matches_saved_activity": true,
+      "non_rgb_stored_inputs_exactly_preserved": true,
+      "wall_rays": 31,
+      "texture_changed_rgb_components": 93,
+      "texture_changed_mixed_cells": 95
+    },
+    {
+      "event_id": 17323,
+      "position": [
+        6.748901162957013,
+        7.537586346638825
+      ],
+      "heading": 1.5168055378743652,
+      "episode": 14,
+      "action_index": 1112,
+      "context_signature": 17,
+      "gray_rgb_exact_float32": true,
+      "gray_rgb_max_error": 0.0,
+      "gray_depth_proximity_max_error": 0.0,
+      "gray_depth_proximity_exact_float32": true,
+      "original_mixed_matches_saved_activity": true,
+      "non_rgb_stored_inputs_exactly_preserved": true,
+      "wall_rays": 31,
+      "texture_changed_rgb_components": 93,
+      "texture_changed_mixed_cells": 90
+    },
+    {
+      "event_id": 35045,
+      "position": [
+        0.7999256934900298,
+        1.2698731412330797
+      ],
+      "heading": -2.2706092127392483,
+      "episode": 27,
+      "action_index": 169,
+      "context_signature": 17,
+      "gray_rgb_exact_float32": true,
+      "gray_rgb_max_error": 0.0,
+      "gray_depth_proximity_max_error": 0.0,
+      "gray_depth_proximity_exact_float32": true,
+      "original_mixed_matches_saved_activity": true,
+      "non_rgb_stored_inputs_exactly_preserved": true,
+      "wall_rays": 31,
+      "texture_changed_rgb_components": 93,
+      "texture_changed_mixed_cells": 132
+    },
+    {
+      "event_id": 35211,
+      "position": [
+        3.475181271335419,
+        0.1821049194025241
+      ],
+      "heading": -1.6812617022002425,
+      "episode": 27,
+      "action_index": 335,
+      "context_signature": 17,
+      "gray_rgb_exact_float32": true,
+      "gray_rgb_max_error": 0.0,
+      "gray_depth_proximity_max_error": 0.0,
+      "gray_depth_proximity_exact_float32": true,
+      "original_mixed_matches_saved_activity": true,
+      "non_rgb_stored_inputs_exactly_preserved": true,
+      "wall_rays": 31,
+      "texture_changed_rgb_components": 93,
+      "texture_changed_mixed_cells": 110
+    },
+    {
+      "event_id": 35213,
+      "position": [
+        3.462506757770238,
+        0.22826759365451801
+      ],
+      "heading": -1.6429700416214643,
+      "episode": 27,
+      "action_index": 337,
+      "context_signature": 17,
+      "gray_rgb_exact_float32": true,
+      "gray_rgb_max_error": 0.0,
+      "gray_depth_proximity_max_error": 0.0,
+      "gray_depth_proximity_exact_float32": true,
+      "original_mixed_matches_saved_activity": true,
+      "non_rgb_stored_inputs_exactly_preserved": true,
+      "wall_rays": 31,
+      "texture_changed_rgb_components": 93,
+      "texture_changed_mixed_cells": 106
+    },
+    {
+      "event_id": 35215,
+      "position": [
+        3.4585511999574923,
+        0.326900899353712
+      ],
+      "heading": -1.6340301240747035,
+      "episode": 27,
+      "action_index": 339,
+      "context_signature": 17,
+      "gray_rgb_exact_float32": true,
+      "gray_rgb_max_error": 0.0,
+      "gray_depth_proximity_max_error": 0.0,
+      "gray_depth_proximity_exact_float32": true,
+      "original_mixed_matches_saved_activity": true,
+      "non_rgb_stored_inputs_exactly_preserved": true,
+      "wall_rays": 31,
+      "texture_changed_rgb_components": 93,
+      "texture_changed_mixed_cells": 112
+    },
+    {
+      "event_id": 35791,
+      "position": [
+        9.154886723515007,
+        6.74968898138126
+      ],
+      "heading": 0.9345254103516094,
+      "episode": 27,
+      "action_index": 915,
+      "context_signature": 17,
+      "gray_rgb_exact_float32": true,
+      "gray_rgb_max_error": 0.0,
+      "gray_depth_proximity_max_error": 0.0,
+      "gray_depth_proximity_exact_float32": true,
+      "original_mixed_matches_saved_activity": true,
+      "non_rgb_stored_inputs_exactly_preserved": true,
+      "wall_rays": 31,
+      "texture_changed_rgb_components": 93,
+      "texture_changed_mixed_cells": 87
+    }
+  ],
+  "limitations": [
+    "This is a deliberately selected six-pair white-box representation counterfactual, not a random population estimate.",
+    "It establishes that visible texture separates these particular old sensory codes at the unchanged 8192 width; it does not establish the unique cause of navigation outcomes.",
+    "No textured policy, recall competition, action rollout, reward, or learning was tested. The unchanged old memories were not reinterpreted as newly trained texture memories."
+  ],
+  "elapsed_seconds": 0.9780386999991606
+}

@@ -1,0 +1,97 @@
+{
+  "status": "passed",
+  "mechanism": "Persistent temporal-Hebbian cell excitation and cell-to-site disinhibition; finite local efficacy and population-mean current normalization.",
+  "code_sha256": "849847278d89453eef8f2a54bbfe67daa45c77c035cacbed7d578a3f69e22b4d",
+  "python": "3.13.7",
+  "numpy": "2.5.2",
+  "small_causal_checks": {
+    "fact_sequence_with_no_task_reward": [
+      [
+        0,
+        1
+      ],
+      [
+        8,
+        9
+      ],
+      [
+        16,
+        17
+      ],
+      []
+    ],
+    "same_state_disinhibition_on": [
+      8,
+      9
+    ],
+    "same_state_disinhibition_off": [],
+    "same_state_recurrence_off": [],
+    "coactive_true_successors": [
+      8,
+      9,
+      24,
+      25
+    ],
+    "persistent_blank_steps": 12,
+    "activity_reset_and_intervention_causal": true,
+    "external_and_replay_sources_independently_causal": true,
+    "internal_replay_does_not_strengthen_synapses": true,
+    "observed_transition_without_reward_does_strengthen_synapses": true,
+    "uniform_decay_only_deletion": true,
+    "global_inhibition_and_site_density_checked": true,
+    "safe_npz_size_bytes": 6396,
+    "continued_npz_restore_identical_steps": 12
+  },
+  "activity_size_normalization": [
+    {
+      "active_sources": 16,
+      "maximum_recurrent_current": 0.9989966750144958,
+      "excitatory_edges": 256
+    },
+    {
+      "active_sources": 512,
+      "maximum_recurrent_current": 0.9989933967590332,
+      "excitatory_edges": 262144
+    }
+  ],
+  "performance": {
+    "width": 8192,
+    "active_sources_per_step": 500,
+    "stored_cyclic_patterns": 6,
+    "measured_steps": 30,
+    "initial_allocation_seconds": 0.08944809999957215,
+    "observe_transition": {
+      "median_ms": 9.790850000172213,
+      "p95_ms": 11.038340000322933,
+      "max_ms": 15.573200000289944
+    },
+    "advance": {
+      "median_ms": 2.667700000529294,
+      "p95_ms": 3.1957550007064115,
+      "max_ms": 3.8003999998181826
+    },
+    "combined": {
+      "median_ms": 12.521050000032119,
+      "p95_ms": 13.851295000495154,
+      "max_ms": 19.373600000108127
+    },
+    "frame_budget_ms": 100.0,
+    "within_budget_at_p95": true,
+    "excitatory_edges": 1500000,
+    "disinhibitory_edges": 39000,
+    "allocated_synapse_bytes": 100764000,
+    "fully_materialized_synapse_bytes": 275152896,
+    "note": "Synthetic 500-active patterns; integration lookup/physics/serialization costs are excluded."
+  },
+  "limits": [
+    "These constructed neural fixtures do not establish navigation, flexible subgoals, language, or AGI.",
+    "Transitions are unsupervised facts. Task value and candidate selection must remain a separate mechanism in the integrator.",
+    "A finite width cannot create information absent from its input; overlapping experiences may interfere and produce mixed successors.",
+    "Population-mean normalization suppresses associations when many unrelated presynaptic cells are concurrently active; this is a stability tradeoff.",
+    "Default uniform decay gradually weakens inactive facts; this is not indefinite retention or an unbounded capacity claim.",
+    "Full 8192-row storage is about 275 MB before Python/state/CSR snapshot copies. Full 32768 rows would exceed 4 GB.",
+    "advance learning=True means maintenance only. observe_transition must receive actual before/after activity after executed physics, never an imagined successor."
+  ],
+  "elapsed_seconds": 0.8339458000009472,
+  "default_weight_half_life_observed_steps": 27656.51459721217
+}

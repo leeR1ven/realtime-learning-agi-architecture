@@ -1,0 +1,15 @@
+# 文本文件入库统一用 LF，检出时按平台处理
+* text=auto
+
+# 二进制文件不做换行转换
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.npz binary
+*.wav binary
+*.zip binary
+*.xml binary
+*.exe binary
+*.dll binary
+*.blend binary
+*.pdf binary

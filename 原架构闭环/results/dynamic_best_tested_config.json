@@ -1,0 +1,16 @@
+{
+  "seed": 2026,
+  "pfc_hebb_increment": 0.0001,
+  "pfc_feedback_inhibition": 0.12,
+  "pfc_target_high": 350,
+  "sensory_threshold": 0.6,
+  "visual_threshold": 0.58,
+  "audio_threshold": 0.52,
+  "contrast_to_silence": true,
+  "motor_threshold": 0.52,
+  "motor_reverse_window": 20,
+  "motor_levels": 40,
+  "pfc_spread": 5,
+  "pfc_hidden_threshold": 0.55,
+  "pfc_output_threshold": 1.0
+}

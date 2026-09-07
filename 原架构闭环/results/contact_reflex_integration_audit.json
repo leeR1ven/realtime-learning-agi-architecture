@@ -1,0 +1,243 @@
+{
+  "status": "passed",
+  "source_sha256": {
+    "brain.py": "9440c41fd3aeaaa1573ceb829beeef0e350583e6b5edf89f8be054fd92ce832b",
+    "contact_reflex.py": "fa6c82dae8270f2b991f321b114884a13db231bd9726c55a09887ed871e57094",
+    "audit_reflex_contact.py": "3bc3302562a8753913c72d6878841d60e1011d196f2981cb390f4008f22cc5ec"
+  },
+  "cases": 279,
+  "production_equals_frozen_candidate": true,
+  "brain_delegates_same_output": true,
+  "disabled_reflex_returns_none_all_cases": true,
+  "inputs_unchanged": true,
+  "named_cases": [
+    {
+      "case": "touch_0_open_left",
+      "muscles": [
+        0.0,
+        0.1,
+        0.0,
+        0.5
+      ]
+    },
+    {
+      "case": "touch_0_open_right",
+      "muscles": [
+        0.0,
+        0.5,
+        0.0,
+        0.1
+      ]
+    },
+    {
+      "case": "touch_0_open_equal",
+      "muscles": [
+        0.0,
+        0.5,
+        0.0,
+        0.1
+      ]
+    },
+    {
+      "case": "touch_1_open_left",
+      "muscles": [
+        0.1,
+        0.0,
+        0.5,
+        0.0
+      ]
+    },
+    {
+      "case": "touch_1_open_right",
+      "muscles": [
+        0.5,
+        0.0,
+        0.1,
+        0.0
+      ]
+    },
+    {
+      "case": "touch_1_open_equal",
+      "muscles": [
+        0.5,
+        0.0,
+        0.1,
+        0.0
+      ]
+    },
+    {
+      "case": "touch_2_open_left",
+      "muscles": [
+        0.5,
+        0.0,
+        0.1,
+        0.0
+      ]
+    },
+    {
+      "case": "touch_2_open_right",
+      "muscles": [
+        0.5,
+        0.0,
+        0.1,
+        0.0
+      ]
+    },
+    {
+      "case": "touch_2_open_equal",
+      "muscles": [
+        0.5,
+        0.0,
+        0.1,
+        0.0
+      ]
+    },
+    {
+      "case": "touch_3_open_left",
+      "muscles": [
+        0.1,
+        0.0,
+        0.5,
+        0.0
+      ]
+    },
+    {
+      "case": "touch_3_open_right",
+      "muscles": [
+        0.1,
+        0.0,
+        0.5,
+        0.0
+      ]
+    },
+    {
+      "case": "touch_3_open_equal",
+      "muscles": [
+        0.1,
+        0.0,
+        0.5,
+        0.0
+      ]
+    },
+    {
+      "case": "pain_only_0.0",
+      "muscles": null
+    },
+    {
+      "case": "pain_only_0.019999",
+      "muscles": null
+    },
+    {
+      "case": "pain_only_0.02",
+      "muscles": null
+    },
+    {
+      "case": "pain_only_0.020001",
+      "muscles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "case": "pain_only_1.0",
+      "muscles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "case": "front_depth_0.219999",
+      "muscles": [
+        0.0,
+        0.5,
+        0.0,
+        0.5
+      ]
+    },
+    {
+      "case": "front_depth_0.22",
+      "muscles": null
+    },
+    {
+      "case": "front_depth_0.220001",
+      "muscles": null
+    },
+    {
+      "case": "equal_touch_boundary_0.019999",
+      "muscles": null
+    },
+    {
+      "case": "equal_touch_boundary_0.02",
+      "muscles": null
+    },
+    {
+      "case": "equal_touch_boundary_0.020001",
+      "muscles": [
+        0.0,
+        0.5,
+        0.0,
+        0.1
+      ]
+    }
+  ],
+  "generic_force_and_turn_signs": {
+    "front_back_retreat_toward_open_side": [
+      {
+        "touch": "front",
+        "open_side": "left",
+        "muscles": [
+          0.0,
+          0.1,
+          0.0,
+          0.5
+        ],
+        "longitudinal_force_sign": -1.0,
+        "retreat_bending_side": "left"
+      },
+      {
+        "touch": "front",
+        "open_side": "right",
+        "muscles": [
+          0.0,
+          0.5,
+          0.0,
+          0.1
+        ],
+        "longitudinal_force_sign": -1.0,
+        "retreat_bending_side": "right"
+      },
+      {
+        "touch": "back",
+        "open_side": "left",
+        "muscles": [
+          0.1,
+          0.0,
+          0.5,
+          0.0
+        ],
+        "longitudinal_force_sign": 1.0,
+        "retreat_bending_side": "left"
+      },
+      {
+        "touch": "back",
+        "open_side": "right",
+        "muscles": [
+          0.5,
+          0.0,
+          0.1,
+          0.0
+        ],
+        "longitudinal_force_sign": 1.0,
+        "retreat_bending_side": "right"
+      }
+    ],
+    "nondirectional_residual_pain_requests_zero_drive": true
+  },
+  "new_brain_state_or_timer": false,
+  "no_training_or_checkpoint_write": true,
+  "limit": "Integration equivalence of an innate contact controller; no learned navigation conclusion."
+}

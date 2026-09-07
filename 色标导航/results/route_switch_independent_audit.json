@@ -1,0 +1,321 @@
+{
+  "audit_schema_version": 1,
+  "integrity_passed": true,
+  "scope": "Independent read-only rescore and provenance audit; no new rollouts, training, rewards, or model edits.",
+  "scoring_rule": "First complete left-to-right passage AND final passage before first red arrival must both cross midline at or after 10.6s and use the requested route; red goal remains active. Both stay/switch must pass for a pair.",
+  "summary": {
+    "training_successes": 10,
+    "training_trials": 36,
+    "rewarded_routes": {
+      "bottom": 3,
+      "top": 7
+    },
+    "paired_successes": 0,
+    "all_predeclared_pairs": 6,
+    "valid_prefixes": 4,
+    "invalid_prefixes": 2,
+    "strict_branch_successes": {
+      "stay": 1,
+      "switch": 2,
+      "no_cue": 1,
+      "swapped_acoustic_mapping": 1,
+      "clear_rule_after_cue": 0
+    }
+  },
+  "checks": {
+    "six_fixed_pairs_present": true,
+    "invalid_pairs_retained_in_denominator": true,
+    "six_training_combinations_each_repeated_six_times": true,
+    "training_raw_and_final_reports_equal": true,
+    "only_terminal_correct_arrivals_rewarded": true,
+    "all_twenty_clones_match_full_prefix_state_hash": true,
+    "all_twenty_branches_rewardless_no_teacher_and_reported_memory_counts_sums_unchanged": true,
+    "same_physical_goal_red_every_trial": true,
+    "independent_strict_rescore_matches_final_report": true,
+    "same_physics_and_sampled_brain_trace_under_equal_tone_and_no_cue": true,
+    "executed_source_hash_matches_original_registration": true,
+    "original_report_preserved_with_matching_sha256": true,
+    "no_new_rollouts_for_scoring_correction": true
+  },
+  "pairs": [
+    {
+      "seed": 831,
+      "initial_route": "bottom",
+      "valid_prefix": false,
+      "invalid_reasons": [
+        "already_crossed_midline",
+        "no_longer_on_left_approach"
+      ],
+      "recomputed_branches": {},
+      "pair_success": false
+    },
+    {
+      "seed": 831,
+      "initial_route": "top",
+      "valid_prefix": false,
+      "invalid_reasons": [
+        "no_longer_on_left_approach"
+      ],
+      "recomputed_branches": {},
+      "pair_success": false
+    },
+    {
+      "seed": 931,
+      "initial_route": "bottom",
+      "valid_prefix": true,
+      "invalid_reasons": [],
+      "recomputed_branches": {
+        "stay": {
+          "strict_success": false,
+          "expected_route": "bottom",
+          "first_route": "top",
+          "first_midline_time": 23.215711959591676,
+          "arrival_last_route": "top",
+          "arrival_last_midline_time": 23.215711959591676,
+          "target_reached": true
+        },
+        "switch": {
+          "strict_success": true,
+          "expected_route": "top",
+          "first_route": "top",
+          "first_midline_time": 103.50261300489353,
+          "arrival_last_route": "top",
+          "arrival_last_midline_time": 103.50261300489353,
+          "target_reached": true
+        },
+        "no_cue": {
+          "strict_success": false,
+          "expected_route": "bottom",
+          "first_route": "top",
+          "first_midline_time": 23.215711959591676,
+          "arrival_last_route": "top",
+          "arrival_last_midline_time": 23.215711959591676,
+          "target_reached": true
+        },
+        "swapped_acoustic_mapping": {
+          "strict_success": true,
+          "expected_route": "top",
+          "first_route": "top",
+          "first_midline_time": 23.215711959591676,
+          "arrival_last_route": "top",
+          "arrival_last_midline_time": 23.215711959591676,
+          "target_reached": true
+        },
+        "clear_rule_after_cue": {
+          "strict_success": false,
+          "expected_route": "top",
+          "first_route": "top",
+          "first_midline_time": 117.39999305493788,
+          "arrival_last_route": null,
+          "arrival_last_midline_time": null,
+          "target_reached": false
+        }
+      },
+      "pair_success": false,
+      "same_acoustic_cue_and_no_new_cue_physics_identical": true,
+      "same_acoustic_cue_and_no_new_cue_sampled_brain_actions_identical": true,
+      "cue_end_rule_clear_visible_with_goal_preserved": true
+    },
+    {
+      "seed": 931,
+      "initial_route": "top",
+      "valid_prefix": true,
+      "invalid_reasons": [],
+      "recomputed_branches": {
+        "stay": {
+          "strict_success": false,
+          "expected_route": "top",
+          "first_route": "top",
+          "first_midline_time": 106.3249572542768,
+          "arrival_last_route": null,
+          "arrival_last_midline_time": null,
+          "target_reached": false
+        },
+        "switch": {
+          "strict_success": false,
+          "expected_route": "bottom",
+          "first_route": "top",
+          "first_midline_time": 53.40730990710786,
+          "arrival_last_route": null,
+          "arrival_last_midline_time": null,
+          "target_reached": false
+        },
+        "no_cue": {
+          "strict_success": false,
+          "expected_route": "top",
+          "first_route": "top",
+          "first_midline_time": 106.3249572542768,
+          "arrival_last_route": null,
+          "arrival_last_midline_time": null,
+          "target_reached": false
+        },
+        "swapped_acoustic_mapping": {
+          "strict_success": false,
+          "expected_route": "bottom",
+          "first_route": "top",
+          "first_midline_time": 106.3249572542768,
+          "arrival_last_route": null,
+          "arrival_last_midline_time": null,
+          "target_reached": false
+        },
+        "clear_rule_after_cue": {
+          "strict_success": false,
+          "expected_route": "bottom",
+          "first_route": "top",
+          "first_midline_time": 63.00230008724514,
+          "arrival_last_route": null,
+          "arrival_last_midline_time": null,
+          "target_reached": false
+        }
+      },
+      "pair_success": false,
+      "same_acoustic_cue_and_no_new_cue_physics_identical": true,
+      "same_acoustic_cue_and_no_new_cue_sampled_brain_actions_identical": true,
+      "cue_end_rule_clear_visible_with_goal_preserved": true
+    },
+    {
+      "seed": 1031,
+      "initial_route": "bottom",
+      "valid_prefix": true,
+      "invalid_reasons": [],
+      "recomputed_branches": {
+        "stay": {
+          "strict_success": false,
+          "expected_route": "bottom",
+          "first_route": "bottom",
+          "first_midline_time": 126.82969228764837,
+          "arrival_last_route": null,
+          "arrival_last_midline_time": null,
+          "target_reached": false
+        },
+        "switch": {
+          "strict_success": true,
+          "expected_route": "top",
+          "first_route": "top",
+          "first_midline_time": 57.11480664324275,
+          "arrival_last_route": "top",
+          "arrival_last_midline_time": 57.11480664324275,
+          "target_reached": true
+        },
+        "no_cue": {
+          "strict_success": false,
+          "expected_route": "bottom",
+          "first_route": "bottom",
+          "first_midline_time": 126.82969228764837,
+          "arrival_last_route": null,
+          "arrival_last_midline_time": null,
+          "target_reached": false
+        },
+        "swapped_acoustic_mapping": {
+          "strict_success": false,
+          "expected_route": "top",
+          "first_route": "bottom",
+          "first_midline_time": 126.82969228764837,
+          "arrival_last_route": null,
+          "arrival_last_midline_time": null,
+          "target_reached": false
+        },
+        "clear_rule_after_cue": {
+          "strict_success": false,
+          "expected_route": "top",
+          "first_route": "bottom",
+          "first_midline_time": 87.27898776006792,
+          "arrival_last_route": null,
+          "arrival_last_midline_time": null,
+          "target_reached": false
+        }
+      },
+      "pair_success": false,
+      "same_acoustic_cue_and_no_new_cue_physics_identical": true,
+      "same_acoustic_cue_and_no_new_cue_sampled_brain_actions_identical": true,
+      "cue_end_rule_clear_visible_with_goal_preserved": true
+    },
+    {
+      "seed": 1031,
+      "initial_route": "top",
+      "valid_prefix": true,
+      "invalid_reasons": [],
+      "recomputed_branches": {
+        "stay": {
+          "strict_success": true,
+          "expected_route": "top",
+          "first_route": "top",
+          "first_midline_time": 18.801648072936413,
+          "arrival_last_route": "top",
+          "arrival_last_midline_time": 18.801648072936413,
+          "target_reached": true
+        },
+        "switch": {
+          "strict_success": false,
+          "expected_route": "bottom",
+          "first_route": "top",
+          "first_midline_time": 25.428881097229205,
+          "arrival_last_route": "top",
+          "arrival_last_midline_time": 25.428881097229205,
+          "target_reached": true
+        },
+        "no_cue": {
+          "strict_success": true,
+          "expected_route": "top",
+          "first_route": "top",
+          "first_midline_time": 18.801648072936413,
+          "arrival_last_route": "top",
+          "arrival_last_midline_time": 18.801648072936413,
+          "target_reached": true
+        },
+        "swapped_acoustic_mapping": {
+          "strict_success": false,
+          "expected_route": "bottom",
+          "first_route": "top",
+          "first_midline_time": 18.801648072936413,
+          "arrival_last_route": "top",
+          "arrival_last_midline_time": 18.801648072936413,
+          "target_reached": true
+        },
+        "clear_rule_after_cue": {
+          "strict_success": false,
+          "expected_route": "bottom",
+          "first_route": null,
+          "first_midline_time": null,
+          "arrival_last_route": null,
+          "arrival_last_midline_time": null,
+          "target_reached": false
+        }
+      },
+      "pair_success": false,
+      "same_acoustic_cue_and_no_new_cue_physics_identical": true,
+      "same_acoustic_cue_and_no_new_cue_sampled_brain_actions_identical": true,
+      "cue_end_rule_clear_visible_with_goal_preserved": true
+    }
+  ],
+  "checkpoint_inventory": {
+    "path": "F:\\一种AGI架构\\色标导航\\results\\route_switch_evaluation.npz",
+    "sha256": "852be537f84f9feb8e4313b74994527946fd688f87fd64515e819721a2cf0fbb",
+    "birth_hash": "c88e52ea910f5b3e035ef8efb9a3b3685527cea89f8bba08cac20b0e08c55d41",
+    "stored_events": 45865,
+    "confirmed_events": 9128,
+    "teacher_events": 0,
+    "confirmed_context_signature_counts": {
+      "17": 2826,
+      "33": 6302
+    },
+    "no_teacher_events": true,
+    "limitation": "Audio-context counts alone do not prove both physical passages were learned; the episode trajectories and reward logs must also agree.",
+    "time_link_mismatches": 0,
+    "episode_chain_starts": 36
+  },
+  "limitations": [
+    "Passing these integrity checks does not mean the route-switch task passed: paired success is 0/6.",
+    "Training includes rewarded experiences for both physical routes, but this does not establish reliable route selection, causal subgoals, or planning.",
+    "The swapped-mapping branch has exactly the same actual sound and trajectory as stay; scoring differences reflect a changed route expectation, not changed behavior.",
+    "No-cue/stay equivalence and rule-population persistence do not by themselves prove cognitive memory dependence.",
+    "Frozen evaluation count/strength-sum invariants are recorded; no separate per-frame hash of every learned array was added to the completed run.",
+    "Commands are two absolute trained tones on one map; relative route commands, natural language and reward-free reasoning were not tested."
+  ],
+  "artifacts_sha256": {
+    "final_report": "0babefabbec304006a534f76fa26c41d5700973e463ed402215942e78017eb3c",
+    "original_report": "6976cb5daa7915c79632ce5d492c7b4019047fc27f66c930519c0af74a82e1be",
+    "executed_runner": "ce6ee3a38ced5fdea049a507be1d8cbf06a2e96024fac74f7b3ac11419e5e054",
+    "route_state_digest.py": "408ca5009a500b27c9d0a04507c17087d31009fbaedf42aa58b703f0efb802fd"
+  }
+}

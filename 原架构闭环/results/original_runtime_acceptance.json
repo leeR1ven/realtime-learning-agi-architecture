@@ -1,0 +1,74 @@
+{
+  "status": "passed",
+  "scope": "Unchanged original-class orchestration and snapshot acceptance; no navigation training.",
+  "runtime_sha256": "89468008148912f94c06409f8a6637fb067eb4216c55db58a87cc30c97008a01",
+  "original_source_sha256": {
+    "海马体时间区.py": "0750490f9487a6035c288b3f3076e81fb1b13d114f31f9c6fc2695f908008bd7",
+    "视觉记忆区.py": "1ddcd0182e6ae1ec8417ca6946ed00d78218885e63ac50bf63e9527187520818",
+    "听觉记忆区.py": "12842a94eec6522051bac336b6543de7facccd69b2cb215c62c22fb67e4bf888",
+    "运动记忆区.py": "61fe384657140946058f1bb74cf12e2f94e2d2e060676930a756499150c45c09",
+    "前额叶区.py": "5087a9ce13ce6b727db27b8f6ae73f539f143115fdee0ae4b681acf7267a7b02",
+    "权重连接管理.py": "408076efa5e27ab60cfc0dd0680abbc84571155d261e339835914fd768512d9d"
+  },
+  "equivalence": {
+    "frames_equal_to_direct_original_calls": 12,
+    "frozen_frames_advance_clock_without_connections_or_maintenance": 2,
+    "microsteps_equal_to_original_activity_excitation_gate": 12,
+    "native_original_audio_playback_equal_queries": 12,
+    "decay_maintenance_exercised": true,
+    "runtime_objects_are_original_class_instances": true,
+    "microstep_does_not_autowrite_connections": true
+  },
+  "temporal": {
+    "same_time_three_modality_completion": 4,
+    "native_audio_forward_offset_preserved_internal_steps": 2,
+    "recall_does_not_advance_clock_or_learn": true,
+    "unknown_index_cue_rejected": true,
+    "wrap_uses_original_connection_union_semantics": true
+  },
+  "index_input_binding": {
+    "explicit_same_frame_forward_index_partial_cue_completion": 2,
+    "default_thought_index_behavior_unchanged": true,
+    "thought_to_thought_hebb_connections_unchanged": true,
+    "same_single_index_and_same_frame_time": true,
+    "explicit_index_frozen_learning_and_npz_restore_checked": true,
+    "scope": "Distinct discrete forward/thought activity binding fixture, not real PCM recognition."
+  },
+  "snapshot": {
+    "npz_allow_pickle_false_bytes": 11106,
+    "exact_continuation_frames": 10,
+    "independent_clone_shared_clock_state": true,
+    "public_pfc_parameter_intervention_restored": true
+  },
+  "adapter_width_smoke": {
+    "widths": {
+      "visual": 2640,
+      "audio": 2560,
+      "motor": 80,
+      "pfc": 5280
+    },
+    "time_cells": 1728000,
+    "pfc_hebb_increment": 0.01,
+    "pfc_disappearance_threshold": 5e-05,
+    "construction_seconds_after_original_imports": 0.0005214000011619646,
+    "synthetic_active_counts": {
+      "visual": 64,
+      "audio": 64,
+      "motor": 8,
+      "pfc": 24
+    },
+    "record_and_microstep_median_ms": 1.3924000013503246,
+    "record_and_microstep_max_ms": 1.4207000021997374,
+    "note": "Fixed dimensions smoke only. Not a dense-activity performance guarantee or embodied learning result."
+  },
+  "limits": [
+    "The original audio feature->time offset is retained; it must not be presented as guaranteed same-frame sound-to-vision alignment.",
+    "The original hippocampal index retains its single winning-time/tie behavior. No new disambiguator is added.",
+    "A full turn of the original ring reuses time identifiers and can merge old/new content. This wrapper does not introduce retirement or extra epoch labels.",
+    "Original additive Hebb, raw current sums and original global inhibition are preserved; large activity can still saturate or be expensive.",
+    "PFC transition learning is once per actual outer frame; three modality memories learn on each of the two original internal clock steps.",
+    "Safe snapshots contain only original connection/state data and explicit parameters, without goal, route, reward, fact/value or action-planner fields."
+  ],
+  "original_sources_unchanged": true,
+  "elapsed_seconds": 0.19256709999899613
+}

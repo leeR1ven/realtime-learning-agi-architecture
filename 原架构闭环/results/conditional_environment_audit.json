@@ -1,0 +1,346 @@
+{
+  "scope": "environment only; scripted fixture actions are not agent success",
+  "default_actual_audio_visual_timing": [
+    {
+      "frame": 0,
+      "time": 0.0,
+      "audio_rms": 0.31819805153394637,
+      "red_rays": [],
+      "blue_rays": []
+    },
+    {
+      "frame": 1,
+      "time": 0.10000000000000002,
+      "audio_rms": 0.31819805153394637,
+      "red_rays": [],
+      "blue_rays": []
+    },
+    {
+      "frame": 2,
+      "time": 0.2000000000000001,
+      "audio_rms": 0.318198051533946,
+      "red_rays": [],
+      "blue_rays": []
+    },
+    {
+      "frame": 3,
+      "time": 0.30000000000000016,
+      "audio_rms": 0.3181980515339458,
+      "red_rays": [],
+      "blue_rays": []
+    },
+    {
+      "frame": 4,
+      "time": 0.40000000000000024,
+      "audio_rms": 0.318198051533946,
+      "red_rays": [],
+      "blue_rays": []
+    },
+    {
+      "frame": 5,
+      "time": 0.5000000000000003,
+      "audio_rms": 0.3181980515339463,
+      "red_rays": [],
+      "blue_rays": []
+    },
+    {
+      "frame": 6,
+      "time": 0.6000000000000004,
+      "audio_rms": 0.0,
+      "red_rays": [],
+      "blue_rays": []
+    },
+    {
+      "frame": 7,
+      "time": 0.7000000000000005,
+      "audio_rms": 0.0,
+      "red_rays": [],
+      "blue_rays": []
+    },
+    {
+      "frame": 8,
+      "time": 0.8000000000000006,
+      "audio_rms": 0.0,
+      "red_rays": [],
+      "blue_rays": []
+    },
+    {
+      "frame": 9,
+      "time": 0.9000000000000007,
+      "audio_rms": 0.0,
+      "red_rays": [],
+      "blue_rays": []
+    },
+    {
+      "frame": 10,
+      "time": 1.0000000000000007,
+      "audio_rms": 0.0,
+      "red_rays": [
+        18,
+        19
+      ],
+      "blue_rays": [
+        11,
+        12
+      ]
+    },
+    {
+      "frame": 11,
+      "time": 1.0999999999999985,
+      "audio_rms": 0.0,
+      "red_rays": [
+        18,
+        19
+      ],
+      "blue_rays": [
+        11,
+        12
+      ]
+    },
+    {
+      "frame": 12,
+      "time": 1.1999999999999964,
+      "audio_rms": 0.0,
+      "red_rays": [
+        18,
+        19
+      ],
+      "blue_rays": [
+        11,
+        12
+      ]
+    }
+  ],
+  "white_list_pure_read_and_actual_two_markers_visible": true,
+  "context_only_changes_actual_object_RGB_at_fixed_reveal": true,
+  "counterbalance_counts": {
+    "(1.35, 2.8, 0.0):cue=1": {
+      "upper": 2,
+      "lower": 2
+    },
+    "(1.35, 2.8, 0.0):context=1": {
+      "upper": 2,
+      "lower": 2
+    },
+    "(1.35, 3.2, 0.0):cue=0": {
+      "upper": 2,
+      "lower": 2
+    },
+    "(1.35, 3.2, 0.0):context=0": {
+      "upper": 2,
+      "lower": 2
+    },
+    "(1.35, 3.2, 0.0):context=1": {
+      "upper": 2,
+      "lower": 2
+    },
+    "(1.35, 3.0, 0.0):cue=1": {
+      "upper": 2,
+      "lower": 2
+    },
+    "(1.35, 3.0, 0.0):context=0": {
+      "upper": 2,
+      "lower": 2
+    },
+    "(1.35, 3.0, 0.0):cue=0": {
+      "upper": 2,
+      "lower": 2
+    },
+    "(1.35, 2.8, 0.0):context=0": {
+      "upper": 2,
+      "lower": 2
+    },
+    "(1.35, 3.0, 0.0):context=1": {
+      "upper": 2,
+      "lower": 2
+    },
+    "(1.35, 2.8, 0.0):cue=0": {
+      "upper": 2,
+      "lower": 2
+    },
+    "(1.35, 3.2, 0.0):cue=1": {
+      "upper": 2,
+      "lower": 2
+    }
+  },
+  "physical_both_choices_all_conditions_rule_flip_only_reward": [
+    {
+      "cue": 0,
+      "context": 0,
+      "fixture": "upper",
+      "response": {
+        "choice": "upper",
+        "time": 4.8404928145525385,
+        "position": [
+          3.5,
+          4.470694634213633
+        ],
+        "premature": false,
+        "within_budget": true,
+        "correct": true
+      },
+      "rule_flip_rewards": [
+        1.0,
+        0.0
+      ],
+      "contact_steps": 0
+    },
+    {
+      "cue": 0,
+      "context": 1,
+      "fixture": "upper",
+      "response": {
+        "choice": "upper",
+        "time": 4.8404928145525385,
+        "position": [
+          3.5,
+          4.470694634213633
+        ],
+        "premature": false,
+        "within_budget": true,
+        "correct": false
+      },
+      "rule_flip_rewards": [
+        0.0,
+        1.0
+      ],
+      "contact_steps": 0
+    },
+    {
+      "cue": 1,
+      "context": 0,
+      "fixture": "upper",
+      "response": {
+        "choice": "upper",
+        "time": 4.8404928145525385,
+        "position": [
+          3.5,
+          4.470694634213633
+        ],
+        "premature": false,
+        "within_budget": true,
+        "correct": false
+      },
+      "rule_flip_rewards": [
+        0.0,
+        1.0
+      ],
+      "contact_steps": 0
+    },
+    {
+      "cue": 1,
+      "context": 1,
+      "fixture": "upper",
+      "response": {
+        "choice": "upper",
+        "time": 4.8404928145525385,
+        "position": [
+          3.5,
+          4.470694634213633
+        ],
+        "premature": false,
+        "within_budget": true,
+        "correct": true
+      },
+      "rule_flip_rewards": [
+        1.0,
+        0.0
+      ],
+      "contact_steps": 0
+    },
+    {
+      "cue": 0,
+      "context": 0,
+      "fixture": "lower",
+      "response": {
+        "choice": "lower",
+        "time": 4.8404928145525385,
+        "position": [
+          3.5,
+          1.5293053657863662
+        ],
+        "premature": false,
+        "within_budget": true,
+        "correct": false
+      },
+      "rule_flip_rewards": [
+        0.0,
+        1.0
+      ],
+      "contact_steps": 0
+    },
+    {
+      "cue": 0,
+      "context": 1,
+      "fixture": "lower",
+      "response": {
+        "choice": "lower",
+        "time": 4.8404928145525385,
+        "position": [
+          3.5,
+          1.5293053657863662
+        ],
+        "premature": false,
+        "within_budget": true,
+        "correct": true
+      },
+      "rule_flip_rewards": [
+        1.0,
+        0.0
+      ],
+      "contact_steps": 0
+    },
+    {
+      "cue": 1,
+      "context": 0,
+      "fixture": "lower",
+      "response": {
+        "choice": "lower",
+        "time": 4.8404928145525385,
+        "position": [
+          3.5,
+          1.5293053657863662
+        ],
+        "premature": false,
+        "within_budget": true,
+        "correct": true
+      },
+      "rule_flip_rewards": [
+        1.0,
+        0.0
+      ],
+      "contact_steps": 0
+    },
+    {
+      "cue": 1,
+      "context": 1,
+      "fixture": "lower",
+      "response": {
+        "choice": "lower",
+        "time": 4.8404928145525385,
+        "position": [
+          3.5,
+          1.5293053657863662
+        ],
+        "premature": false,
+        "within_budget": true,
+        "correct": false
+      },
+      "rule_flip_rewards": [
+        0.0,
+        1.0
+      ],
+      "contact_steps": 0
+    }
+  ],
+  "straight_collision_no_middle_shortcut": {
+    "contacts": 20,
+    "position": [
+      2.6199999999899997,
+      3.0
+    ]
+  },
+  "optional_simultaneous_and_delayed_cue_controls": true,
+  "no_brain_run_or_training": true,
+  "source_sha256": "6cdd3a2a197033bc0916a11af731a36e067e591da12d6ec966d4d9bb2e8c4e57"
+}

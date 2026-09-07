@@ -1,0 +1,1157 @@
+{
+  "scope": "原始固定前额叶来源图静态可达性；不修改结构、不训练、不执行感觉模块",
+  "source_files": {
+    "视觉前处理.py": {
+      "path": "F:\\一种AGI架构\\视觉前处理.py",
+      "sha256": "900015082a5043e2a8238e101d507811230002903d12d2cd434dffff447285ff"
+    },
+    "听觉前处理.py": {
+      "path": "F:\\一种AGI架构\\听觉前处理.py",
+      "sha256": "a328e65cc0f3f60635610ba309f2970ff94dabde5749144dcbf14ef3d5658779"
+    },
+    "运动输出区.py": {
+      "path": "F:\\一种AGI架构\\运动输出区.py",
+      "sha256": "45e1430f89334911d9cb91ab0031227b3f5a3c4bf7d6f6d185760a340a876b5c"
+    },
+    "前额叶区.py": {
+      "path": "F:\\一种AGI架构\\前额叶区.py",
+      "sha256": "5087a9ce13ce6b727db27b8f6ae73f539f143115fdee0ae4b681acf7267a7b02"
+    }
+  },
+  "source_files_unchanged": true,
+  "input_blocks": {
+    "vision": {
+      "width": 23040,
+      "start_inclusive": 0,
+      "end_exclusive": 23040
+    },
+    "audio": {
+      "width": 30000,
+      "start_inclusive": 23040,
+      "end_exclusive": 53040
+    },
+    "motor": {
+      "width": 4000,
+      "start_inclusive": 53040,
+      "end_exclusive": 57040
+    }
+  },
+  "total_output_neurons": 57040,
+  "configuration": {
+    "层数": 3,
+    "连接半径": 10,
+    "扩散宽度": 10,
+    "隐藏层阈值": 0.55,
+    "输出层阈值": 1.2
+  },
+  "propagation_layers": 2,
+  "actual_source_tables_match_original_ring_formula": true,
+  "ancestor_formula": "For output i: (i + each ancestor_offset) % total_output_neurons",
+  "ancestor_offsets": [
+    -20,
+    -19,
+    -18,
+    -17,
+    -16,
+    -15,
+    -14,
+    -13,
+    -12,
+    -11,
+    -10,
+    -9,
+    -8,
+    -7,
+    -6,
+    -5,
+    -4,
+    -3,
+    -2,
+    -1,
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "ancestors_per_output_after_modality_diffusion": 41,
+  "source_table_propagation_matches_full_ancestor_enumeration": true,
+  "vision_audio": {
+    "count": 40,
+    "fraction": 0.0007012622720897616,
+    "percent": 0.07012622720897616,
+    "output_ids_inclusive": [
+      [
+        23020,
+        23059
+      ]
+    ]
+  },
+  "vision_motor": {
+    "count": 40,
+    "fraction": 0.0007012622720897616,
+    "percent": 0.07012622720897616,
+    "output_ids_inclusive": [
+      [
+        0,
+        19
+      ],
+      [
+        57020,
+        57039
+      ]
+    ]
+  },
+  "audio_motor": {
+    "count": 40,
+    "fraction": 0.0007012622720897616,
+    "percent": 0.07012622720897616,
+    "output_ids_inclusive": [
+      [
+        53020,
+        53059
+      ]
+    ]
+  },
+  "all_three": {
+    "count": 0,
+    "fraction": 0.0,
+    "percent": 0.0,
+    "output_ids_inclusive": []
+  },
+  "any_cross_modal": {
+    "count": 120,
+    "fraction": 0.0021037868162692847,
+    "percent": 0.21037868162692847,
+    "output_ids_inclusive": [
+      [
+        0,
+        19
+      ],
+      [
+        23020,
+        23059
+      ],
+      [
+        53020,
+        53059
+      ],
+      [
+        57020,
+        57039
+      ]
+    ]
+  },
+  "per_output_modality_mask_runs": {
+    "1": {
+      "modalities": [
+        "vision"
+      ],
+      "count": 23000,
+      "fraction": 0.4032258064516129,
+      "percent": 40.32258064516129,
+      "output_ids_inclusive": [
+        [
+          20,
+          23019
+        ]
+      ]
+    },
+    "2": {
+      "modalities": [
+        "audio"
+      ],
+      "count": 29960,
+      "fraction": 0.5252454417952315,
+      "percent": 52.52454417952315,
+      "output_ids_inclusive": [
+        [
+          23060,
+          53019
+        ]
+      ]
+    },
+    "3": {
+      "modalities": [
+        "vision",
+        "audio"
+      ],
+      "count": 40,
+      "fraction": 0.0007012622720897616,
+      "percent": 0.07012622720897616,
+      "output_ids_inclusive": [
+        [
+          23020,
+          23059
+        ]
+      ]
+    },
+    "4": {
+      "modalities": [
+        "motor"
+      ],
+      "count": 3960,
+      "fraction": 0.0694249649368864,
+      "percent": 6.9424964936886395,
+      "output_ids_inclusive": [
+        [
+          53060,
+          57019
+        ]
+      ]
+    },
+    "5": {
+      "modalities": [
+        "vision",
+        "motor"
+      ],
+      "count": 40,
+      "fraction": 0.0007012622720897616,
+      "percent": 0.07012622720897616,
+      "output_ids_inclusive": [
+        [
+          0,
+          19
+        ],
+        [
+          57020,
+          57039
+        ]
+      ]
+    },
+    "6": {
+      "modalities": [
+        "audio",
+        "motor"
+      ],
+      "count": 40,
+      "fraction": 0.0007012622720897616,
+      "percent": 0.07012622720897616,
+      "output_ids_inclusive": [
+        [
+          53020,
+          53059
+        ]
+      ]
+    },
+    "7": {
+      "modalities": [
+        "vision",
+        "audio",
+        "motor"
+      ],
+      "count": 0,
+      "fraction": 0.0,
+      "percent": 0.0,
+      "output_ids_inclusive": []
+    }
+  },
+  "by_propagation_layer": [
+    {
+      "layer": 1,
+      "vision_audio": {
+        "count": 20,
+        "fraction": 0.0003506311360448808,
+        "percent": 0.03506311360448808,
+        "output_ids_inclusive": [
+          [
+            23030,
+            23049
+          ]
+        ]
+      },
+      "any_cross_modal": {
+        "count": 60,
+        "fraction": 0.0010518934081346423,
+        "percent": 0.10518934081346423,
+        "output_ids_inclusive": [
+          [
+            0,
+            9
+          ],
+          [
+            23030,
+            23049
+          ],
+          [
+            53030,
+            53049
+          ],
+          [
+            57030,
+            57039
+          ]
+        ]
+      }
+    },
+    {
+      "layer": 2,
+      "vision_audio": {
+        "count": 40,
+        "fraction": 0.0007012622720897616,
+        "percent": 0.07012622720897616,
+        "output_ids_inclusive": [
+          [
+            23020,
+            23059
+          ]
+        ]
+      },
+      "any_cross_modal": {
+        "count": 120,
+        "fraction": 0.0021037868162692847,
+        "percent": 0.21037868162692847,
+        "output_ids_inclusive": [
+          [
+            0,
+            19
+          ],
+          [
+            23020,
+            23059
+          ],
+          [
+            53020,
+            53059
+          ],
+          [
+            57020,
+            57039
+          ]
+        ]
+      }
+    }
+  ],
+  "boundary_examples": [
+    {
+      "output_id": 0,
+      "modality_mask": 5,
+      "ancestors": {
+        "vision": {
+          "concatenated_input_ancestors": [
+            [
+              0,
+              20
+            ]
+          ],
+          "undiffused_modality_output_ancestors": [
+            [
+              0,
+              30
+            ],
+            [
+              23030,
+              23039
+            ]
+          ],
+          "count_before_diffusion": 41
+        },
+        "audio": {
+          "concatenated_input_ancestors": [],
+          "undiffused_modality_output_ancestors": [],
+          "count_before_diffusion": 0
+        },
+        "motor": {
+          "concatenated_input_ancestors": [
+            [
+              57020,
+              57039
+            ]
+          ],
+          "undiffused_modality_output_ancestors": [
+            [
+              53040,
+              53049
+            ],
+            [
+              57010,
+              57039
+            ]
+          ],
+          "count_before_diffusion": 40
+        }
+      }
+    },
+    {
+      "output_id": 19,
+      "modality_mask": 5,
+      "ancestors": {
+        "vision": {
+          "concatenated_input_ancestors": [
+            [
+              0,
+              39
+            ]
+          ],
+          "undiffused_modality_output_ancestors": [
+            [
+              0,
+              49
+            ],
+            [
+              23030,
+              23039
+            ]
+          ],
+          "count_before_diffusion": 60
+        },
+        "audio": {
+          "concatenated_input_ancestors": [],
+          "undiffused_modality_output_ancestors": [],
+          "count_before_diffusion": 0
+        },
+        "motor": {
+          "concatenated_input_ancestors": [
+            [
+              57039,
+              57039
+            ]
+          ],
+          "undiffused_modality_output_ancestors": [
+            [
+              53040,
+              53049
+            ],
+            [
+              57029,
+              57039
+            ]
+          ],
+          "count_before_diffusion": 21
+        }
+      }
+    },
+    {
+      "output_id": 20,
+      "modality_mask": 1,
+      "ancestors": {
+        "vision": {
+          "concatenated_input_ancestors": [
+            [
+              0,
+              40
+            ]
+          ],
+          "undiffused_modality_output_ancestors": [
+            [
+              0,
+              50
+            ],
+            [
+              23030,
+              23039
+            ]
+          ],
+          "count_before_diffusion": 61
+        },
+        "audio": {
+          "concatenated_input_ancestors": [],
+          "undiffused_modality_output_ancestors": [],
+          "count_before_diffusion": 0
+        },
+        "motor": {
+          "concatenated_input_ancestors": [],
+          "undiffused_modality_output_ancestors": [],
+          "count_before_diffusion": 0
+        }
+      }
+    },
+    {
+      "output_id": 23019,
+      "modality_mask": 1,
+      "ancestors": {
+        "vision": {
+          "concatenated_input_ancestors": [
+            [
+              22999,
+              23039
+            ]
+          ],
+          "undiffused_modality_output_ancestors": [
+            [
+              0,
+              9
+            ],
+            [
+              22989,
+              23039
+            ]
+          ],
+          "count_before_diffusion": 61
+        },
+        "audio": {
+          "concatenated_input_ancestors": [],
+          "undiffused_modality_output_ancestors": [],
+          "count_before_diffusion": 0
+        },
+        "motor": {
+          "concatenated_input_ancestors": [],
+          "undiffused_modality_output_ancestors": [],
+          "count_before_diffusion": 0
+        }
+      }
+    },
+    {
+      "output_id": 23020,
+      "modality_mask": 3,
+      "ancestors": {
+        "vision": {
+          "concatenated_input_ancestors": [
+            [
+              23000,
+              23039
+            ]
+          ],
+          "undiffused_modality_output_ancestors": [
+            [
+              0,
+              9
+            ],
+            [
+              22990,
+              23039
+            ]
+          ],
+          "count_before_diffusion": 60
+        },
+        "audio": {
+          "concatenated_input_ancestors": [
+            [
+              23040,
+              23040
+            ]
+          ],
+          "undiffused_modality_output_ancestors": [
+            [
+              23040,
+              23050
+            ],
+            [
+              53030,
+              53039
+            ]
+          ],
+          "count_before_diffusion": 21
+        },
+        "motor": {
+          "concatenated_input_ancestors": [],
+          "undiffused_modality_output_ancestors": [],
+          "count_before_diffusion": 0
+        }
+      }
+    },
+    {
+      "output_id": 23039,
+      "modality_mask": 3,
+      "ancestors": {
+        "vision": {
+          "concatenated_input_ancestors": [
+            [
+              23019,
+              23039
+            ]
+          ],
+          "undiffused_modality_output_ancestors": [
+            [
+              0,
+              9
+            ],
+            [
+              23009,
+              23039
+            ]
+          ],
+          "count_before_diffusion": 41
+        },
+        "audio": {
+          "concatenated_input_ancestors": [
+            [
+              23040,
+              23059
+            ]
+          ],
+          "undiffused_modality_output_ancestors": [
+            [
+              23040,
+              23069
+            ],
+            [
+              53030,
+              53039
+            ]
+          ],
+          "count_before_diffusion": 40
+        },
+        "motor": {
+          "concatenated_input_ancestors": [],
+          "undiffused_modality_output_ancestors": [],
+          "count_before_diffusion": 0
+        }
+      }
+    },
+    {
+      "output_id": 23040,
+      "modality_mask": 3,
+      "ancestors": {
+        "vision": {
+          "concatenated_input_ancestors": [
+            [
+              23020,
+              23039
+            ]
+          ],
+          "undiffused_modality_output_ancestors": [
+            [
+              0,
+              9
+            ],
+            [
+              23010,
+              23039
+            ]
+          ],
+          "count_before_diffusion": 40
+        },
+        "audio": {
+          "concatenated_input_ancestors": [
+            [
+              23040,
+              23060
+            ]
+          ],
+          "undiffused_modality_output_ancestors": [
+            [
+              23040,
+              23070
+            ],
+            [
+              53030,
+              53039
+            ]
+          ],
+          "count_before_diffusion": 41
+        },
+        "motor": {
+          "concatenated_input_ancestors": [],
+          "undiffused_modality_output_ancestors": [],
+          "count_before_diffusion": 0
+        }
+      }
+    },
+    {
+      "output_id": 23059,
+      "modality_mask": 3,
+      "ancestors": {
+        "vision": {
+          "concatenated_input_ancestors": [
+            [
+              23039,
+              23039
+            ]
+          ],
+          "undiffused_modality_output_ancestors": [
+            [
+              0,
+              9
+            ],
+            [
+              23029,
+              23039
+            ]
+          ],
+          "count_before_diffusion": 21
+        },
+        "audio": {
+          "concatenated_input_ancestors": [
+            [
+              23040,
+              23079
+            ]
+          ],
+          "undiffused_modality_output_ancestors": [
+            [
+              23040,
+              23089
+            ],
+            [
+              53030,
+              53039
+            ]
+          ],
+          "count_before_diffusion": 60
+        },
+        "motor": {
+          "concatenated_input_ancestors": [],
+          "undiffused_modality_output_ancestors": [],
+          "count_before_diffusion": 0
+        }
+      }
+    },
+    {
+      "output_id": 23060,
+      "modality_mask": 2,
+      "ancestors": {
+        "vision": {
+          "concatenated_input_ancestors": [],
+          "undiffused_modality_output_ancestors": [],
+          "count_before_diffusion": 0
+        },
+        "audio": {
+          "concatenated_input_ancestors": [
+            [
+              23040,
+              23080
+            ]
+          ],
+          "undiffused_modality_output_ancestors": [
+            [
+              23040,
+              23090
+            ],
+            [
+              53030,
+              53039
+            ]
+          ],
+          "count_before_diffusion": 61
+        },
+        "motor": {
+          "concatenated_input_ancestors": [],
+          "undiffused_modality_output_ancestors": [],
+          "count_before_diffusion": 0
+        }
+      }
+    },
+    {
+      "output_id": 53019,
+      "modality_mask": 2,
+      "ancestors": {
+        "vision": {
+          "concatenated_input_ancestors": [],
+          "undiffused_modality_output_ancestors": [],
+          "count_before_diffusion": 0
+        },
+        "audio": {
+          "concatenated_input_ancestors": [
+            [
+              52999,
+              53039
+            ]
+          ],
+          "undiffused_modality_output_ancestors": [
+            [
+              23040,
+              23049
+            ],
+            [
+              52989,
+              53039
+            ]
+          ],
+          "count_before_diffusion": 61
+        },
+        "motor": {
+          "concatenated_input_ancestors": [],
+          "undiffused_modality_output_ancestors": [],
+          "count_before_diffusion": 0
+        }
+      }
+    },
+    {
+      "output_id": 53020,
+      "modality_mask": 6,
+      "ancestors": {
+        "vision": {
+          "concatenated_input_ancestors": [],
+          "undiffused_modality_output_ancestors": [],
+          "count_before_diffusion": 0
+        },
+        "audio": {
+          "concatenated_input_ancestors": [
+            [
+              53000,
+              53039
+            ]
+          ],
+          "undiffused_modality_output_ancestors": [
+            [
+              23040,
+              23049
+            ],
+            [
+              52990,
+              53039
+            ]
+          ],
+          "count_before_diffusion": 60
+        },
+        "motor": {
+          "concatenated_input_ancestors": [
+            [
+              53040,
+              53040
+            ]
+          ],
+          "undiffused_modality_output_ancestors": [
+            [
+              53040,
+              53050
+            ],
+            [
+              57030,
+              57039
+            ]
+          ],
+          "count_before_diffusion": 21
+        }
+      }
+    },
+    {
+      "output_id": 53039,
+      "modality_mask": 6,
+      "ancestors": {
+        "vision": {
+          "concatenated_input_ancestors": [],
+          "undiffused_modality_output_ancestors": [],
+          "count_before_diffusion": 0
+        },
+        "audio": {
+          "concatenated_input_ancestors": [
+            [
+              53019,
+              53039
+            ]
+          ],
+          "undiffused_modality_output_ancestors": [
+            [
+              23040,
+              23049
+            ],
+            [
+              53009,
+              53039
+            ]
+          ],
+          "count_before_diffusion": 41
+        },
+        "motor": {
+          "concatenated_input_ancestors": [
+            [
+              53040,
+              53059
+            ]
+          ],
+          "undiffused_modality_output_ancestors": [
+            [
+              53040,
+              53069
+            ],
+            [
+              57030,
+              57039
+            ]
+          ],
+          "count_before_diffusion": 40
+        }
+      }
+    },
+    {
+      "output_id": 53040,
+      "modality_mask": 6,
+      "ancestors": {
+        "vision": {
+          "concatenated_input_ancestors": [],
+          "undiffused_modality_output_ancestors": [],
+          "count_before_diffusion": 0
+        },
+        "audio": {
+          "concatenated_input_ancestors": [
+            [
+              53020,
+              53039
+            ]
+          ],
+          "undiffused_modality_output_ancestors": [
+            [
+              23040,
+              23049
+            ],
+            [
+              53010,
+              53039
+            ]
+          ],
+          "count_before_diffusion": 40
+        },
+        "motor": {
+          "concatenated_input_ancestors": [
+            [
+              53040,
+              53060
+            ]
+          ],
+          "undiffused_modality_output_ancestors": [
+            [
+              53040,
+              53070
+            ],
+            [
+              57030,
+              57039
+            ]
+          ],
+          "count_before_diffusion": 41
+        }
+      }
+    },
+    {
+      "output_id": 53059,
+      "modality_mask": 6,
+      "ancestors": {
+        "vision": {
+          "concatenated_input_ancestors": [],
+          "undiffused_modality_output_ancestors": [],
+          "count_before_diffusion": 0
+        },
+        "audio": {
+          "concatenated_input_ancestors": [
+            [
+              53039,
+              53039
+            ]
+          ],
+          "undiffused_modality_output_ancestors": [
+            [
+              23040,
+              23049
+            ],
+            [
+              53029,
+              53039
+            ]
+          ],
+          "count_before_diffusion": 21
+        },
+        "motor": {
+          "concatenated_input_ancestors": [
+            [
+              53040,
+              53079
+            ]
+          ],
+          "undiffused_modality_output_ancestors": [
+            [
+              53040,
+              53089
+            ],
+            [
+              57030,
+              57039
+            ]
+          ],
+          "count_before_diffusion": 60
+        }
+      }
+    },
+    {
+      "output_id": 53060,
+      "modality_mask": 4,
+      "ancestors": {
+        "vision": {
+          "concatenated_input_ancestors": [],
+          "undiffused_modality_output_ancestors": [],
+          "count_before_diffusion": 0
+        },
+        "audio": {
+          "concatenated_input_ancestors": [],
+          "undiffused_modality_output_ancestors": [],
+          "count_before_diffusion": 0
+        },
+        "motor": {
+          "concatenated_input_ancestors": [
+            [
+              53040,
+              53080
+            ]
+          ],
+          "undiffused_modality_output_ancestors": [
+            [
+              53040,
+              53090
+            ],
+            [
+              57030,
+              57039
+            ]
+          ],
+          "count_before_diffusion": 61
+        }
+      }
+    },
+    {
+      "output_id": 57019,
+      "modality_mask": 4,
+      "ancestors": {
+        "vision": {
+          "concatenated_input_ancestors": [],
+          "undiffused_modality_output_ancestors": [],
+          "count_before_diffusion": 0
+        },
+        "audio": {
+          "concatenated_input_ancestors": [],
+          "undiffused_modality_output_ancestors": [],
+          "count_before_diffusion": 0
+        },
+        "motor": {
+          "concatenated_input_ancestors": [
+            [
+              56999,
+              57039
+            ]
+          ],
+          "undiffused_modality_output_ancestors": [
+            [
+              53040,
+              53049
+            ],
+            [
+              56989,
+              57039
+            ]
+          ],
+          "count_before_diffusion": 61
+        }
+      }
+    },
+    {
+      "output_id": 57020,
+      "modality_mask": 5,
+      "ancestors": {
+        "vision": {
+          "concatenated_input_ancestors": [
+            [
+              0,
+              0
+            ]
+          ],
+          "undiffused_modality_output_ancestors": [
+            [
+              0,
+              10
+            ],
+            [
+              23030,
+              23039
+            ]
+          ],
+          "count_before_diffusion": 21
+        },
+        "audio": {
+          "concatenated_input_ancestors": [],
+          "undiffused_modality_output_ancestors": [],
+          "count_before_diffusion": 0
+        },
+        "motor": {
+          "concatenated_input_ancestors": [
+            [
+              57000,
+              57039
+            ]
+          ],
+          "undiffused_modality_output_ancestors": [
+            [
+              53040,
+              53049
+            ],
+            [
+              56990,
+              57039
+            ]
+          ],
+          "count_before_diffusion": 60
+        }
+      }
+    },
+    {
+      "output_id": 57039,
+      "modality_mask": 5,
+      "ancestors": {
+        "vision": {
+          "concatenated_input_ancestors": [
+            [
+              0,
+              19
+            ]
+          ],
+          "undiffused_modality_output_ancestors": [
+            [
+              0,
+              29
+            ],
+            [
+              23030,
+              23039
+            ]
+          ],
+          "count_before_diffusion": 40
+        },
+        "audio": {
+          "concatenated_input_ancestors": [],
+          "undiffused_modality_output_ancestors": [],
+          "count_before_diffusion": 0
+        },
+        "motor": {
+          "concatenated_input_ancestors": [
+            [
+              57019,
+              57039
+            ]
+          ],
+          "undiffused_modality_output_ancestors": [
+            [
+              53040,
+              53049
+            ],
+            [
+              57009,
+              57039
+            ]
+          ],
+          "count_before_diffusion": 41
+        }
+      }
+    }
+  ],
+  "diffusion_effect": "每路先在自己的段内扩散；改变原始特征祖先范围，不能把本来只依赖单模态的输出变成跨模态输出。因此上述模态共可达数量对扩散前后相同。",
+  "limitations": [
+    "只审原固定前额网，未把海马共享时间关联、可塑前额联想、返回线多轮循环并入此静态图。",
+    "可达不等于达到放电阈值，也不等于一个细胞必须同时依赖两路才放电。",
+    "不可从跨模态细胞数量稀少直接推出某个PCM不能引起视觉联想；需要实际活动、已学连接和抑制状态探针。",
+    "输出只有三路并排拼接，并不代表任意视觉与任意听觉细胞都在固定前向网内混合。",
+    "本次未运行任何训练、导航、声音识别或目标图像保持实验。"
+  ],
+  "line_references": {
+    "vision_layout": "视觉前处理.py:68-81",
+    "audio_layout": "听觉前处理.py:68-79",
+    "motor_layout": "运动输出区.py:94-103",
+    "ring_sources": "前额叶区.py:39-50",
+    "diffusion_and_concat": "前额叶区.py:8-15,54-67",
+    "global_pfc_config": "前额叶区.py:308-319"
+  }
+}

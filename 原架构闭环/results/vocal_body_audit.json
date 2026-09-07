@@ -1,0 +1,70 @@
+{
+  "scope": "Only a vocal actuator and self-hearing substrate; no neural training or language achievement.",
+  "checks": {
+    "fresh_no_airflow_is_exact_silence": true,
+    "released_airflow_decays_without_reset": true,
+    "tension_changes_measured_fundamental": true,
+    "aperture_moves_first_resonance_spectrum": true,
+    "tongue_moves_second_resonance_spectrum": true,
+    "airflow_scales_actual_acoustic_pressure": true,
+    "phase_and_actuators_continuous_across_frames": true,
+    "later_frame_is_not_restarted_first_frame": true,
+    "one_thousand_variable_frames_stable_and_bounded": true,
+    "invalid_actions_rejected_before_body_mutation": true,
+    "safe_npz_roundtrip_exact": true,
+    "restore_preserves_32_continued_frames_bitwise": true,
+    "malformed_snapshot_rejected": true,
+    "self_hearing_is_exact_linear_physical_mixture": true,
+    "self_hearing_does_not_modify_input_buffers": true,
+    "self_hearing_has_no_voice_isolation_or_labels": true,
+    "invalid_acoustic_gains_rejected": true,
+    "actual_audio_frontend_receives_distinct_self_sounds": true,
+    "source_unchanged_during_audit": true
+  },
+  "all_passed": true,
+  "measurements": {
+    "airflow_release_rms": [
+      0.07370212954255612,
+      1.8051385073184694e-05,
+      4.305245918518471e-09,
+      1.0060827601420432e-12,
+      2.353218080830167e-16
+    ],
+    "measured_fundamentals_hz": [
+      119.40298507462687,
+      242.42424242424244
+    ],
+    "first_resonance_high_to_low_band_energy": [
+      0.0003361435396431463,
+      168.12525485407554
+    ],
+    "second_resonance_high_to_low_band_energy": [
+      0.0005135363235921882,
+      447.3388373954906
+    ],
+    "one_second_partition_max_absolute_difference": 1.8229306952832758e-12,
+    "random_stream": {
+      "frames": 1000,
+      "physical_seconds": 100.0,
+      "maximum_absolute_pcm": 0.780778848846249,
+      "median_render_ms": 2.000099999804661,
+      "p95_render_ms": 2.7993499995773163
+    },
+    "invalid_actions_rejected": 12,
+    "self_heard_auditory_features": {
+      "distinct_sets": 6,
+      "samples": 6,
+      "active_counts": [
+        35,
+        42,
+        58,
+        72,
+        74,
+        64
+      ]
+    }
+  },
+  "body_source_sha256": "ea979debb3c658072815cebec14d9a6458db9cff14eba60622afc34f727ac3db",
+  "demo_wav": "F:\\一种AGI架构\\原架构闭环\\results\\vocal_body_actuator_demo.wav",
+  "demo_note": "Six seconds of scripted body controls, not learned speech or a neural policy."
+}

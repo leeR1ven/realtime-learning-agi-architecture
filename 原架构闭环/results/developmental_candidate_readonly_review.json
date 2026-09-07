@@ -1,0 +1,58 @@
+{
+  "kind": "developmental_candidate_readonly_review_v1",
+  "passed": true,
+  "source_and_checkpoint_hashes": {
+    "F:\\一种AGI架构\\原架构闭环\\developmental_navigation.py": "b7bb1942ce4834361a5051660a915e61eaf54bf84944dc5b96e02983125881a6",
+    "F:\\一种AGI架构\\原架构闭环\\developmental_world.py": "51e64af4d2c750cfda0bd6a574f1db0ec0debb14777fde235506344cee83ee4c",
+    "F:\\一种AGI架构\\原架构闭环\\results\\living_original.npz": "30ed4050c59349fcb8a9d3f2551437839d3665ffc19db068f740a441d3ae64d7",
+    "F:\\一种AGI架构\\原架构闭环\\results\\developmental_pilot_71.npz": "55e999bceda511ffa853cb7033c477aca0eddfb843be80fc3535348f45523905"
+  },
+  "snapshot_pending_trace_detached": true,
+  "invalid_goal_rejected": true,
+  "disabled_propagation_clears_stored_field": true,
+  "unknown_sound_clears_previous_goal": true,
+  "safe_numeric_checkpoint_continue_exact_steps": 12,
+  "default_life_and_pilot_unchanged": true,
+  "separate_freeze_probe": {
+    "autonomous_steps": 200,
+    "frozen_steps": 15,
+    "learned_tables_parameters_unchanged": true
+  },
+  "separate_block_probe": {
+    "checkpoint": "developmental_pilot_71.npz",
+    "blocked_at_step": 3,
+    "blocked_cell": [
+      5,
+      1
+    ],
+    "start": [
+      2,
+      2
+    ],
+    "same_goal": [
+      8,
+      2
+    ],
+    "frozen": {
+      "success": false,
+      "steps": 100,
+      "collisions": 97
+    },
+    "online": {
+      "success": true,
+      "steps": 19,
+      "collisions": 1,
+      "used_alternate_gap": [
+        5,
+        7
+      ]
+    },
+    "limit": "Same initial state and actual 3-step path, but online branch learned before obstacle; use matched-prefix clone for a stronger causal comparison."
+  },
+  "limits": [
+    "Engineered experienced-transition value propagation, not demonstrated original spiking PFC emergence",
+    "Different lattice body with nine downward texture samples",
+    "Goal-switch probes are not same-goal route-instruction probes",
+    "No current read-only test establishes natural-language understanding or AGI"
+  ]
+}

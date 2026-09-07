@@ -1,0 +1,38 @@
+{
+  "white_list_and_pure_read": true,
+  "target_identity_not_leaked_into_visual_or_body_sensors": true,
+  "cue_stops_after_point_six_seconds": true,
+  "direct_line_to_red_is_physically_occluded_by_wall": true,
+  "red_target_absent_from_all_initial_rays": true,
+  "real_muscles_move_body_and_cannot_cross_barrier": {
+    "final_x": 4.61999999999,
+    "impulse": 13.018434512412457
+  },
+  "velocity_is_body_frame": true,
+  "tone_mapping_can_be_permuted": [
+    660.0,
+    220.0,
+    440.0
+  ],
+  "geometry_reachability": {
+    "barrier": {
+      "all_starts_and_beacons_connected": true,
+      "grid_metres": 0.1,
+      "body_radius_with_clearance": 0.205,
+      "reachable_free_cells": 6965
+    },
+    "offset": {
+      "all_starts_and_beacons_connected": true,
+      "grid_metres": 0.1,
+      "body_radius_with_clearance": 0.205,
+      "reachable_free_cells": 6652
+    },
+    "crossbar": {
+      "all_starts_and_beacons_connected": true,
+      "grid_metres": 0.1,
+      "body_radius_with_clearance": 0.205,
+      "reachable_free_cells": 6823
+    }
+  },
+  "private_arrival_scoring": true
+}

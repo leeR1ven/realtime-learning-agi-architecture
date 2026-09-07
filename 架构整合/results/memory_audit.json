@@ -1,0 +1,655 @@
+{
+  "schema_version": 1,
+  "scope": "No full retraining; existing registered archives are read-only.",
+  "units": {
+    "synthetic_fixture_reward_only": true,
+    "registered_models_modified": false,
+    "fact_and_rule_gating": {
+      "unrewarded": {
+        "stored_facts": 12,
+        "active_fact_links": 108,
+        "active_readout_links": 0,
+        "repeated_input_recall_count": 0,
+        "exposed_novelty_fields": []
+      },
+      "same_input_recall_after_synthetic_reward": 12,
+      "identical_view_new_rule_recall_count": 0,
+      "identical_view_new_rule_pfc_overlap": 0,
+      "goal_preserved": true,
+      "fact": "Reward gates factual access; the fixed rule conjunction also prevents retrieval of the identical view learned under another rule."
+    },
+    "capacity_and_restore": {
+      "mixed_reward_and_unrewarded_capacity_four": {
+        "stored_ids": [
+          0,
+          3,
+          4,
+          5
+        ],
+        "dangling_references": [
+          {
+            "event_id": 0,
+            "field": "event_next",
+            "missing_target": 1
+          },
+          {
+            "event_id": 3,
+            "field": "event_previous",
+            "missing_target": 2
+          }
+        ]
+      },
+      "save_load_preserves_the_existing_dangling_references": true,
+      "save_load_continuation_eight_frames_exact": true,
+      "fully_rewarded_capacity_four": {
+        "attempted_new_facts": 8,
+        "new_facts_stored": 0,
+        "skipped_unconfirmed_events": 8
+      },
+      "attribution": "Dangling edges originate in slot recycling, not in the tested save/load operation."
+    },
+    "opposing_motor_fixture": {
+      "weights": [
+        0.5,
+        0.5
+      ],
+      "muscles": [
+        0.15000000596046448,
+        0.15000000596046448,
+        0.15000000596046448,
+        0.15000000596046448
+      ],
+      "left_net_force_units": 0.0,
+      "right_net_force_units": 0.0,
+      "turn_current": 0.0,
+      "scope": "Numerical readout fixture. Real body reflex/exploration can override it; this is not the main cause of the registered 25.43s wrong passage."
+    }
+  },
+  "gray": {
+    "summary": {
+      "training_successes": 10,
+      "training_trials": 36,
+      "rewarded_routes": {
+        "bottom": 3,
+        "top": 7
+      },
+      "paired_successes": 0,
+      "predeclared_pairs": 6,
+      "completed_pairs": 6,
+      "valid_prefixes": 4,
+      "branch_successes": {
+        "stay": 1,
+        "switch": 2,
+        "no_cue": 1,
+        "swapped_acoustic_mapping": 1,
+        "clear_rule_after_cue": 0
+      }
+    },
+    "inventory": {
+      "max_events": 100000,
+      "stored_events": 45865,
+      "reward_accessible_events": 9128,
+      "stored_but_reward_blocked_events": 36737,
+      "teacher_events": 0,
+      "dangling_time_references": 0,
+      "skipped_unconfirmed_events": 0
+    },
+    "training_start_route_coverage": [
+      {
+        "start": "middle",
+        "route": "bottom",
+        "episodes": 6,
+        "successes": 1,
+        "recorded_facts": 7050,
+        "reward_accessible_facts": 538
+      },
+      {
+        "start": "middle",
+        "route": "top",
+        "episodes": 6,
+        "successes": 2,
+        "recorded_facts": 6332,
+        "reward_accessible_facts": 1859
+      },
+      {
+        "start": "lower",
+        "route": "bottom",
+        "episodes": 6,
+        "successes": 0,
+        "recorded_facts": 9600,
+        "reward_accessible_facts": 0
+      },
+      {
+        "start": "lower",
+        "route": "top",
+        "episodes": 6,
+        "successes": 2,
+        "recorded_facts": 7447,
+        "reward_accessible_facts": 1955
+      },
+      {
+        "start": "upper",
+        "route": "bottom",
+        "episodes": 6,
+        "successes": 2,
+        "recorded_facts": 8148,
+        "reward_accessible_facts": 2288
+      },
+      {
+        "start": "upper",
+        "route": "top",
+        "episodes": 6,
+        "successes": 3,
+        "recorded_facts": 7288,
+        "reward_accessible_facts": 2488
+      }
+    ],
+    "all_successful_episodes_entire_recorded_episode_reinforced": true,
+    "rewarded_backtracking_episodes": [
+      {
+        "episode": 27,
+        "route": "bottom",
+        "steps": 1020,
+        "strengthened": 1020,
+        "passages": [
+          {
+            "route": "bottom",
+            "direction": "left_to_right",
+            "time": 55.11639348581986,
+            "t": 55.11639348581986,
+            "position": [
+              5.0,
+              0.7228017711631376
+            ],
+            "request_index": 0,
+            "completed_time": 55.510000000009946,
+            "completed_position": [
+              5.389559187841665,
+              0.8910236346086584
+            ],
+            "origin_side": "left"
+          },
+          {
+            "route": "bottom",
+            "direction": "right_to_left",
+            "time": 63.10675461156545,
+            "t": 63.10675461156545,
+            "position": [
+              5.0,
+              0.9141680871293
+            ],
+            "request_index": 0,
+            "completed_time": 66.0700000000124,
+            "completed_position": [
+              4.617199064733966,
+              0.35606625719663104
+            ],
+            "origin_side": "right"
+          },
+          {
+            "route": "bottom",
+            "direction": "left_to_right",
+            "time": 71.37954755502344,
+            "t": 71.37954755502344,
+            "position": [
+              5.0,
+              0.3425038236997107
+            ],
+            "request_index": 0,
+            "completed_time": 71.81000000000718,
+            "completed_position": [
+              5.384689054750745,
+              0.5172932177675355
+            ],
+            "origin_side": "left"
+          }
+        ],
+        "source_counts": {
+          "body_reflex": 167,
+          "associative_memory": 754,
+          "persistent_exploration": 99
+        }
+      }
+    ],
+    "correct_arrivals_after_wrong_first_passage": [],
+    "offline_switch_state_coverage": [
+      {
+        "seed": 931,
+        "initial_route": "bottom",
+        "new_route": "top",
+        "switch_success": true,
+        "prefix_position": [
+          3.8626998143432303,
+          3.8558983602215813
+        ],
+        "prefix_heading": 1.791293278574651,
+        "within_0.5m_30deg": {
+          "recorded_facts": 49,
+          "reward_accessible_facts": 0
+        },
+        "within_1.0m_60deg": {
+          "recorded_facts": 476,
+          "reward_accessible_facts": 53
+        }
+      },
+      {
+        "seed": 931,
+        "initial_route": "top",
+        "new_route": "bottom",
+        "switch_success": false,
+        "prefix_position": [
+          3.594113522277964,
+          3.7524708642424685
+        ],
+        "prefix_heading": -1.4939885364196455,
+        "within_0.5m_30deg": {
+          "recorded_facts": 36,
+          "reward_accessible_facts": 0
+        },
+        "within_1.0m_60deg": {
+          "recorded_facts": 174,
+          "reward_accessible_facts": 17
+        }
+      },
+      {
+        "seed": 1031,
+        "initial_route": "bottom",
+        "new_route": "top",
+        "switch_success": true,
+        "prefix_position": [
+          4.014370995700491,
+          4.031802194703707
+        ],
+        "prefix_heading": 0.7660454920638289,
+        "within_0.5m_30deg": {
+          "recorded_facts": 68,
+          "reward_accessible_facts": 5
+        },
+        "within_1.0m_60deg": {
+          "recorded_facts": 509,
+          "reward_accessible_facts": 70
+        }
+      },
+      {
+        "seed": 1031,
+        "initial_route": "top",
+        "new_route": "bottom",
+        "switch_success": false,
+        "prefix_position": [
+          3.9554918162942725,
+          7.39574172047166
+        ],
+        "prefix_heading": 1.8886787129923048,
+        "within_0.5m_30deg": {
+          "recorded_facts": 33,
+          "reward_accessible_facts": 0
+        },
+        "within_1.0m_60deg": {
+          "recorded_facts": 209,
+          "reward_accessible_facts": 0
+        }
+      }
+    ],
+    "coverage_scope": "Position and heading thresholds are offline descriptive diagnostics, not model inputs or a proof of exact visual equivalence.",
+    "checkpoint_sha256": "852be537f84f9feb8e4313b74994527946fd688f87fd64515e819721a2cf0fbb",
+    "report_sha256": "0babefabbec304006a534f76fa26c41d5700973e463ed402215942e78017eb3c"
+  },
+  "texture": {
+    "summary": {
+      "training_successes": 24,
+      "training_trials": 36,
+      "rewarded_routes": {
+        "bottom": 10,
+        "top": 14
+      },
+      "paired_successes": 2,
+      "predeclared_pairs": 6,
+      "completed_pairs": 6,
+      "valid_prefixes": 6,
+      "branch_successes": {
+        "stay": 5,
+        "switch": 3,
+        "no_cue": 5,
+        "swapped_acoustic_mapping": 1,
+        "clear_rule_after_cue": 0
+      }
+    },
+    "inventory": {
+      "max_events": 100000,
+      "stored_events": 35441,
+      "reward_accessible_events": 18353,
+      "stored_but_reward_blocked_events": 17088,
+      "teacher_events": 0,
+      "dangling_time_references": 0,
+      "skipped_unconfirmed_events": 0
+    },
+    "training_start_route_coverage": [
+      {
+        "start": "middle",
+        "route": "bottom",
+        "episodes": 6,
+        "successes": 5,
+        "recorded_facts": 5634,
+        "reward_accessible_facts": 4034
+      },
+      {
+        "start": "middle",
+        "route": "top",
+        "episodes": 6,
+        "successes": 6,
+        "recorded_facts": 5909,
+        "reward_accessible_facts": 5909
+      },
+      {
+        "start": "lower",
+        "route": "bottom",
+        "episodes": 6,
+        "successes": 5,
+        "recorded_facts": 4033,
+        "reward_accessible_facts": 2433
+      },
+      {
+        "start": "lower",
+        "route": "top",
+        "episodes": 6,
+        "successes": 4,
+        "recorded_facts": 6712,
+        "reward_accessible_facts": 3512
+      },
+      {
+        "start": "upper",
+        "route": "bottom",
+        "episodes": 6,
+        "successes": 0,
+        "recorded_facts": 7488,
+        "reward_accessible_facts": 0
+      },
+      {
+        "start": "upper",
+        "route": "top",
+        "episodes": 6,
+        "successes": 4,
+        "recorded_facts": 5665,
+        "reward_accessible_facts": 2465
+      }
+    ],
+    "all_successful_episodes_entire_recorded_episode_reinforced": true,
+    "rewarded_backtracking_episodes": [
+      {
+        "episode": 12,
+        "route": "top",
+        "steps": 1411,
+        "strengthened": 1411,
+        "passages": [
+          {
+            "route": "top",
+            "direction": "left_to_right",
+            "time": 49.00680491902431,
+            "t": 49.00680491902431,
+            "position": [
+              5.0,
+              6.5412712126716634
+            ],
+            "request_index": 0,
+            "completed_time": 49.30000000000677,
+            "completed_position": [
+              5.383281909244663,
+              6.532601558847665
+            ],
+            "origin_side": "left"
+          },
+          {
+            "route": "top",
+            "direction": "right_to_left",
+            "time": 87.08980326218565,
+            "t": 87.08980326218565,
+            "position": [
+              5.0,
+              6.652454101449286
+            ],
+            "request_index": 0,
+            "completed_time": 88.30999999999217,
+            "completed_position": [
+              4.6139428134263865,
+              6.796614461103805
+            ],
+            "origin_side": "right"
+          },
+          {
+            "route": "top",
+            "direction": "left_to_right",
+            "time": 95.62067343417502,
+            "t": 95.62067343417502,
+            "position": [
+              5.0,
+              7.573510958809738
+            ],
+            "request_index": 0,
+            "completed_time": 102.32999999997942,
+            "completed_position": [
+              5.381697955320193,
+              6.76835254562487
+            ],
+            "origin_side": "left"
+          }
+        ],
+        "source_counts": {
+          "associative_memory": 1062,
+          "persistent_exploration": 167,
+          "body_reflex": 182
+        }
+      },
+      {
+        "episode": 28,
+        "route": "top",
+        "steps": 1316,
+        "strengthened": 1316,
+        "passages": [
+          {
+            "route": "top",
+            "direction": "left_to_right",
+            "time": 27.38116441579399,
+            "t": 27.38116441579399,
+            "position": [
+              5.0,
+              6.764362238071732
+            ],
+            "request_index": 0,
+            "completed_time": 27.929999999998728,
+            "completed_position": [
+              5.387426969219852,
+              6.621879427170938
+            ],
+            "origin_side": "left"
+          },
+          {
+            "route": "top",
+            "direction": "right_to_left",
+            "time": 82.30944528566468,
+            "t": 82.30944528566468,
+            "position": [
+              5.0,
+              6.778840950910588
+            ],
+            "request_index": 0,
+            "completed_time": 82.86999999999712,
+            "completed_position": [
+              4.611953543883574,
+              6.640270582931397
+            ],
+            "origin_side": "right"
+          },
+          {
+            "route": "top",
+            "direction": "left_to_right",
+            "time": 109.03712145397441,
+            "t": 109.03712145397441,
+            "position": [
+              5.0,
+              7.477356279447768
+            ],
+            "request_index": 0,
+            "completed_time": 112.00999999997062,
+            "completed_position": [
+              5.383539165724146,
+              6.988815405049733
+            ],
+            "origin_side": "left"
+          }
+        ],
+        "source_counts": {
+          "associative_memory": 894,
+          "body_reflex": 251,
+          "persistent_exploration": 171
+        }
+      }
+    ],
+    "correct_arrivals_after_wrong_first_passage": [],
+    "offline_switch_state_coverage": [
+      {
+        "seed": 831,
+        "initial_route": "bottom",
+        "new_route": "top",
+        "switch_success": true,
+        "prefix_position": [
+          3.0673072713551828,
+          0.4217438750475124
+        ],
+        "prefix_heading": 2.7338620578448056,
+        "within_0.5m_30deg": {
+          "recorded_facts": 21,
+          "reward_accessible_facts": 0
+        },
+        "within_1.0m_60deg": {
+          "recorded_facts": 83,
+          "reward_accessible_facts": 0
+        }
+      },
+      {
+        "seed": 831,
+        "initial_route": "top",
+        "new_route": "bottom",
+        "switch_success": false,
+        "prefix_position": [
+          3.786253328902611,
+          5.221739970479267
+        ],
+        "prefix_heading": 1.6552010853495824,
+        "within_0.5m_30deg": {
+          "recorded_facts": 0,
+          "reward_accessible_facts": 0
+        },
+        "within_1.0m_60deg": {
+          "recorded_facts": 51,
+          "reward_accessible_facts": 0
+        }
+      },
+      {
+        "seed": 931,
+        "initial_route": "bottom",
+        "new_route": "top",
+        "switch_success": true,
+        "prefix_position": [
+          4.095620387841282,
+          3.514155268834695
+        ],
+        "prefix_heading": 0.26369616201973445,
+        "within_0.5m_30deg": {
+          "recorded_facts": 34,
+          "reward_accessible_facts": 11
+        },
+        "within_1.0m_60deg": {
+          "recorded_facts": 472,
+          "reward_accessible_facts": 357
+        }
+      },
+      {
+        "seed": 931,
+        "initial_route": "top",
+        "new_route": "bottom",
+        "switch_success": false,
+        "prefix_position": [
+          3.8185623101903126,
+          6.4237581765242275
+        ],
+        "prefix_heading": 1.4581086168849176,
+        "within_0.5m_30deg": {
+          "recorded_facts": 17,
+          "reward_accessible_facts": 0
+        },
+        "within_1.0m_60deg": {
+          "recorded_facts": 126,
+          "reward_accessible_facts": 0
+        }
+      },
+      {
+        "seed": 1031,
+        "initial_route": "bottom",
+        "new_route": "top",
+        "switch_success": true,
+        "prefix_position": [
+          4.205682948990668,
+          3.5173135230411994
+        ],
+        "prefix_heading": 0.2727206211433679,
+        "within_0.5m_30deg": {
+          "recorded_facts": 36,
+          "reward_accessible_facts": 10
+        },
+        "within_1.0m_60deg": {
+          "recorded_facts": 439,
+          "reward_accessible_facts": 334
+        }
+      },
+      {
+        "seed": 1031,
+        "initial_route": "top",
+        "new_route": "bottom",
+        "switch_success": false,
+        "prefix_position": [
+          3.8185623101903126,
+          6.4237581765242275
+        ],
+        "prefix_heading": 1.4581086168849176,
+        "within_0.5m_30deg": {
+          "recorded_facts": 17,
+          "reward_accessible_facts": 0
+        },
+        "within_1.0m_60deg": {
+          "recorded_facts": 126,
+          "reward_accessible_facts": 0
+        }
+      }
+    ],
+    "coverage_scope": "Position and heading thresholds are offline descriptive diagnostics, not model inputs or a proof of exact visual equivalence.",
+    "checkpoint_sha256": "c609e12caa78679d611bf87fb575eaea27b1ed66f8b437616261e2a6862a0715",
+    "report_sha256": "2219094081169271132a675754c58f0d6d966985b972de3e0d6e7084f755b5bf"
+  },
+  "priorities": [
+    {
+      "priority": 1,
+      "kind": "实现偏差与容量缺陷",
+      "action": "分离事实可回忆强度与任务价值；提供不被当前规则硬屏蔽的感觉事实通路；容量扩展或显式归档，回收须修复边界引用且不能停止新增事实。"
+    },
+    {
+      "priority": 2,
+      "kind": "建模缺口",
+      "action": "把原PFC动态联想/抑制接到事实回忆和下一感官预测，利用真实前后状态识别阶段不一致；奖励只调价值与经过验证的可塑资格，不再使整段游走等同可执行路线。"
+    },
+    {
+      "priority": 3,
+      "kind": "建模缺口，较低优先级",
+      "action": "在原PFC/运动竞争中抑制互斥行动，保留多记忆供比较，但只让相容运动协同进入肌肉合成；用左右互斥记忆夹具及实际身体动作检验。"
+    }
+  ],
+  "limitations": [
+    "A gray-wall failure has a direct recorded wrong-phase memory chain; texture coverage counts alone do not prove its exact failed event chain.",
+    "No dangling links or capacity exhaustion were found in either completed registered archive; capacity failures are reproduced in disposable small fixtures.",
+    "The 80% visual-support gate and sequence gain are parameters, but increasing width or retuning those values alone does not restore missing factual access or phase reasoning."
+  ],
+  "source_sha256": {
+    "F:\\一种AGI架构\\架构整合\\memory_audit.py": "893e9b21b0c5ed8499dfc242180ce165b879823aedfc350ad4b2d89ed0d0a3fb",
+    "F:\\一种AGI架构\\色标导航\\associative_controller.py": "b3eec1ff3c757ba6c94cfc735fb3a3a97f1bcb6188877c00fabe22a359d66bce",
+    "F:\\一种AGI架构\\色标导航\\route_switch_controller.py": "33ce2f5ac5ab0a4774b1381130967df6406c834d69730b1208009deabc27408f"
+  }
+}

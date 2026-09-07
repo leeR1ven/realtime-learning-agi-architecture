@@ -1,0 +1,49 @@
+{
+  "kind": "navigation_readiness_small_mechanism_probe_v1",
+  "scope": "Artificial feature-level diagnostic, not navigation training or behavior.",
+  "frames": [
+    {
+      "index_time": 0,
+      "visual": 0,
+      "incoming_motor": 0
+    },
+    {
+      "index_time": 2,
+      "visual": 1,
+      "incoming_motor": 1
+    },
+    {
+      "index_time": 4,
+      "visual": 2,
+      "incoming_motor": 2
+    }
+  ],
+  "repeated_shared_sound_query_times": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "current_view_recall": {
+    "time": 2,
+    "visual": [
+      1
+    ],
+    "motor": [
+      1
+    ]
+  },
+  "explicit_following_frame_for_offline_comparison_only": {
+    "time": 4,
+    "visual": [
+      2
+    ],
+    "motor": [
+      2
+    ]
+  },
+  "one_current_time_cell": 1,
+  "clock_unchanged_by_recall": true
+}

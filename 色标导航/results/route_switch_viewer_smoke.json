@@ -1,0 +1,19 @@
+{
+  "real_physics_28_frames": true,
+  "same_world_and_brain_at_mid_cue": true,
+  "silent_goal_and_changed_rule_retained": true,
+  "wrong_route_arrival_never_rewarded_and_no_late_steps": true,
+  "temporary_checkpoint_roundtrip": true,
+  "withdrawn_tk_layout": {
+    "root_requested_width": 1177,
+    "root_requested_height": 837,
+    "canvas_items": 58,
+    "right_scroll_region": "0 0 400 808"
+  },
+  "textured_real_physics_frames": 5,
+  "withdrawn_texture_viewer_surface_segments": 590,
+  "texture_viewer_and_brain_ray_colors_identical": true,
+  "both_evaluation_checkpoint_paths_reject_save": true,
+  "official_and_living_checkpoints_unchanged": true,
+  "limitation": "Interface smoke test; not evidence of learned navigation or switching"
+}

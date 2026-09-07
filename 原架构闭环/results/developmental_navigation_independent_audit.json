@@ -1,0 +1,3371 @@
+{
+  "kind": "developmental_navigation_independent_audit_v1",
+  "passed": true,
+  "scope": "Disposable evaluation clones of the saved pilot; no default-life or pilot mutation.",
+  "source_and_checkpoint_hashes": {
+    "F:\\一种AGI架构\\原架构闭环\\developmental_navigation.py": "d97113ba2ad9dd1a5347a0530f0177f858cbb9a5413bf161991ff12ab74f2587",
+    "F:\\一种AGI架构\\原架构闭环\\developmental_world.py": "bed16efe174152859e758319d9132ee51a2c487382c90b6793fb186e027c2496",
+    "F:\\一种AGI架构\\原架构闭环\\original_runtime.py": "1834f45694bed7ff548f67600083598b63fb55d60e434d809b9c20419db457c8",
+    "F:\\一种AGI架构\\原架构闭环\\growing_time_ring.py": "77d5f73ac4d7131ccd6d2695ed88e23e9985b27c3a2ffd6edfcd80cd70514ed6",
+    "F:\\一种AGI架构\\原架构闭环\\results\\living_original.npz": "30ed4050c59349fcb8a9d3f2551437839d3665ffc19db068f740a441d3ae64d7",
+    "F:\\一种AGI架构\\原架构闭环\\results\\developmental_navigation_71.npz": "43a63755a3038963e70d037bf2c32d4a6bbfb6269787538bae8310bef4a49f0a",
+    "F:\\一种AGI架构\\原架构闭环\\results\\developmental_navigation_71.json": "7260bb4b4a8fe091e596bdab8ca12ac61cfe067cac71e938b109ade665a8bf1a"
+  },
+  "fixes_and_serialization": {
+    "snapshot_arrays_and_trace_detached": true,
+    "invalid_goal_rejected": true,
+    "unknown_sound_clears_goal": true,
+    "disabled_propagation_clears_field": true,
+    "privileged_packet_cases_rejected_without_mutation": 9,
+    "safe_numeric_checkpoint_resume_steps_exact": 12
+  },
+  "actual_memory_alignment": {
+    "actual_training_actions_aligned": 3600,
+    "frozen_selected_motor_references_aligned": 104,
+    "learned_relations_source_successor_time_aligned": 188
+  },
+  "same_state_blocked_route": {
+    "prefix_actual_path": [
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        4,
+        2
+      ],
+      [
+        4,
+        1
+      ]
+    ],
+    "prefix_clock": 7210,
+    "all_three_clones_full_state_equal_before_environment_change": true,
+    "blocked_source_assembly": 9,
+    "blocked_motor_channel": 0,
+    "intervention": "After three frozen physical steps, only two worlds gain a wall at (5,1); one brain then learns from actual outcomes.",
+    "outcomes": [
+      {
+        "condition": "open_frozen",
+        "online": false,
+        "success": true,
+        "steps": 5,
+        "collisions": 0,
+        "path": [
+          [
+            4,
+            1
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            6,
+            1
+          ],
+          [
+            7,
+            1
+          ],
+          [
+            8,
+            1
+          ],
+          [
+            8,
+            2
+          ]
+        ],
+        "trace": [
+          {
+            "step": 0,
+            "time": 7210,
+            "position": [
+              5,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": false,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 56,
+              "action": 0,
+              "successor": 57,
+              "motor_time": 7078,
+              "excitation": 0.7807489599999998
+            }
+          },
+          {
+            "step": 1,
+            "time": 7212,
+            "position": [
+              6,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": false,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 57,
+              "action": 0,
+              "successor": 53,
+              "motor_time": 6384,
+              "excitation": 0.8305839999999999
+            }
+          },
+          {
+            "step": 2,
+            "time": 7214,
+            "position": [
+              7,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": false,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 53,
+              "action": 0,
+              "successor": 50,
+              "motor_time": 6378,
+              "excitation": 0.8835999999999999
+            }
+          },
+          {
+            "step": 3,
+            "time": 7216,
+            "position": [
+              8,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": false,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 50,
+              "action": 2,
+              "successor": 51,
+              "motor_time": 6844,
+              "excitation": 0.94
+            }
+          },
+          {
+            "step": 4,
+            "time": 7218,
+            "position": [
+              8,
+              2
+            ],
+            "action": [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            "contact": false,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": null
+          }
+        ],
+        "selected_memory_checks": 4,
+        "final_clock": 7220,
+        "learned_state_unchanged": true
+      },
+      {
+        "condition": "blocked_frozen",
+        "online": false,
+        "success": false,
+        "steps": 100,
+        "collisions": 100,
+        "path": [
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ]
+        ],
+        "trace": [
+          {
+            "step": 0,
+            "time": 7210,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 1,
+            "time": 7212,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 2,
+            "time": 7214,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 3,
+            "time": 7216,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 4,
+            "time": 7218,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 5,
+            "time": 7220,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 6,
+            "time": 7222,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 7,
+            "time": 7224,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 8,
+            "time": 7226,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 9,
+            "time": 7228,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 10,
+            "time": 7230,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 11,
+            "time": 7232,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 12,
+            "time": 7234,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 13,
+            "time": 7236,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 14,
+            "time": 7238,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 15,
+            "time": 7240,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 16,
+            "time": 7242,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 17,
+            "time": 7244,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 18,
+            "time": 7246,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 19,
+            "time": 7248,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 20,
+            "time": 7250,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 21,
+            "time": 7252,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 22,
+            "time": 7254,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 23,
+            "time": 7256,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 24,
+            "time": 7258,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 25,
+            "time": 7260,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 26,
+            "time": 7262,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 27,
+            "time": 7264,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 28,
+            "time": 7266,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 29,
+            "time": 7268,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 30,
+            "time": 7270,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 31,
+            "time": 7272,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 32,
+            "time": 7274,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 33,
+            "time": 7276,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 34,
+            "time": 7278,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 35,
+            "time": 7280,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 36,
+            "time": 7282,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 37,
+            "time": 7284,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 38,
+            "time": 7286,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 39,
+            "time": 7288,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 40,
+            "time": 7290,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 41,
+            "time": 7292,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 42,
+            "time": 7294,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 43,
+            "time": 7296,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 44,
+            "time": 7298,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 45,
+            "time": 7300,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 46,
+            "time": 7302,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 47,
+            "time": 7304,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 48,
+            "time": 7306,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 49,
+            "time": 7308,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 50,
+            "time": 7310,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 51,
+            "time": 7312,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 52,
+            "time": 7314,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 53,
+            "time": 7316,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 54,
+            "time": 7318,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 55,
+            "time": 7320,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 56,
+            "time": 7322,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 57,
+            "time": 7324,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 58,
+            "time": 7326,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 59,
+            "time": 7328,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 60,
+            "time": 7330,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 61,
+            "time": 7332,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 62,
+            "time": 7334,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 63,
+            "time": 7336,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 64,
+            "time": 7338,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 65,
+            "time": 7340,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 66,
+            "time": 7342,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 67,
+            "time": 7344,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 68,
+            "time": 7346,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 69,
+            "time": 7348,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 70,
+            "time": 7350,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 71,
+            "time": 7352,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 72,
+            "time": 7354,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 73,
+            "time": 7356,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 74,
+            "time": 7358,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 75,
+            "time": 7360,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 76,
+            "time": 7362,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 77,
+            "time": 7364,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 78,
+            "time": 7366,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 79,
+            "time": 7368,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 80,
+            "time": 7370,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 81,
+            "time": 7372,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 82,
+            "time": 7374,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 83,
+            "time": 7376,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 84,
+            "time": 7378,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 85,
+            "time": 7380,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 86,
+            "time": 7382,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 87,
+            "time": 7384,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 88,
+            "time": 7386,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 89,
+            "time": 7388,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 90,
+            "time": 7390,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 91,
+            "time": 7392,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 92,
+            "time": 7394,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 93,
+            "time": 7396,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 94,
+            "time": 7398,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 95,
+            "time": 7400,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 96,
+            "time": 7402,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 97,
+            "time": 7404,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 98,
+            "time": 7406,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 99,
+            "time": 7408,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 0.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 0,
+              "successor": 56,
+              "motor_time": 7076,
+              "excitation": 0.7339040223999997
+            }
+          }
+        ],
+        "selected_memory_checks": 100,
+        "final_clock": 7410,
+        "learned_state_unchanged": true
+      },
+      {
+        "condition": "blocked_online",
+        "online": true,
+        "success": true,
+        "steps": 16,
+        "collisions": 1,
+        "path": [
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            4,
+            7
+          ],
+          [
+            5,
+            7
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            7
+          ],
+          [
+            8,
+            6
+          ],
+          [
+            8,
+            5
+          ],
+          [
+            8,
+            4
+          ],
+          [
+            8,
+            3
+          ],
+          [
+            8,
+            2
+          ]
+        ],
+        "trace": [
+          {
+            "step": 0,
+            "time": 7210,
+            "position": [
+              4,
+              1
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": true,
+            "blocked_connection_inhibition": 1.0,
+            "selected_edge": {
+              "source": 9,
+              "action": 2,
+              "successor": 8,
+              "motor_time": 7072,
+              "excitation": 0.39529179875968146
+            }
+          },
+          {
+            "step": 1,
+            "time": 7212,
+            "position": [
+              4,
+              2
+            ],
+            "action": [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            "contact": false,
+            "blocked_connection_inhibition": 1.0,
+            "selected_edge": {
+              "source": 8,
+              "action": 2,
+              "successor": 11,
+              "motor_time": 7030,
+              "excitation": 0.42052319016987394
+            }
+          },
+          {
+            "step": 2,
+            "time": 7214,
+            "position": [
+              4,
+              3
+            ],
+            "action": [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            "contact": false,
+            "blocked_connection_inhibition": 1.0,
+            "selected_edge": {
+              "source": 11,
+              "action": 2,
+              "successor": 12,
+              "motor_time": 7108,
+              "excitation": 0.4473650959253978
+            }
+          },
+          {
+            "step": 3,
+            "time": 7216,
+            "position": [
+              4,
+              4
+            ],
+            "action": [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            "contact": false,
+            "blocked_connection_inhibition": 1.0,
+            "selected_edge": {
+              "source": 12,
+              "action": 2,
+              "successor": 41,
+              "motor_time": 7126,
+              "excitation": 0.475920314814253
+            }
+          },
+          {
+            "step": 4,
+            "time": 7218,
+            "position": [
+              4,
+              5
+            ],
+            "action": [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            "contact": false,
+            "blocked_connection_inhibition": 1.0,
+            "selected_edge": {
+              "source": 41,
+              "action": 2,
+              "successor": 23,
+              "motor_time": 7140,
+              "excitation": 0.5062982072492054
+            }
+          },
+          {
+            "step": 5,
+            "time": 7220,
+            "position": [
+              4,
+              6
+            ],
+            "action": [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            "contact": false,
+            "blocked_connection_inhibition": 1.0,
+            "selected_edge": {
+              "source": 23,
+              "action": 2,
+              "successor": 24,
+              "motor_time": 7142,
+              "excitation": 0.5386151140948994
+            }
+          },
+          {
+            "step": 6,
+            "time": 7222,
+            "position": [
+              4,
+              7
+            ],
+            "action": [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            "contact": false,
+            "blocked_connection_inhibition": 1.0,
+            "selected_edge": {
+              "source": 24,
+              "action": 0,
+              "successor": 25,
+              "motor_time": 7144,
+              "excitation": 0.5729948022286164
+            }
+          },
+          {
+            "step": 7,
+            "time": 7224,
+            "position": [
+              5,
+              7
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": false,
+            "blocked_connection_inhibition": 1.0,
+            "selected_edge": {
+              "source": 25,
+              "action": 0,
+              "successor": 26,
+              "motor_time": 7146,
+              "excitation": 0.6095689385410813
+            }
+          },
+          {
+            "step": 8,
+            "time": 7226,
+            "position": [
+              6,
+              7
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": false,
+            "blocked_connection_inhibition": 1.0,
+            "selected_edge": {
+              "source": 26,
+              "action": 0,
+              "successor": 29,
+              "motor_time": 7148,
+              "excitation": 0.6484775941926397
+            }
+          },
+          {
+            "step": 9,
+            "time": 7228,
+            "position": [
+              7,
+              7
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": false,
+            "blocked_connection_inhibition": 1.0,
+            "selected_edge": {
+              "source": 29,
+              "action": 0,
+              "successor": 39,
+              "motor_time": 6902,
+              "excitation": 0.6898697810559997
+            }
+          },
+          {
+            "step": 10,
+            "time": 7230,
+            "position": [
+              8,
+              7
+            ],
+            "action": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "contact": false,
+            "blocked_connection_inhibition": 1.0,
+            "selected_edge": {
+              "source": 39,
+              "action": 3,
+              "successor": 33,
+              "motor_time": 6904,
+              "excitation": 0.7339040223999997
+            }
+          },
+          {
+            "step": 11,
+            "time": 7232,
+            "position": [
+              8,
+              6
+            ],
+            "action": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "contact": false,
+            "blocked_connection_inhibition": 1.0,
+            "selected_edge": {
+              "source": 33,
+              "action": 3,
+              "successor": 32,
+              "motor_time": 7178,
+              "excitation": 0.7807489599999998
+            }
+          },
+          {
+            "step": 12,
+            "time": 7234,
+            "position": [
+              8,
+              5
+            ],
+            "action": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "contact": false,
+            "blocked_connection_inhibition": 1.0,
+            "selected_edge": {
+              "source": 32,
+              "action": 3,
+              "successor": 37,
+              "motor_time": 6860,
+              "excitation": 0.8305839999999999
+            }
+          },
+          {
+            "step": 13,
+            "time": 7236,
+            "position": [
+              8,
+              4
+            ],
+            "action": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "contact": false,
+            "blocked_connection_inhibition": 1.0,
+            "selected_edge": {
+              "source": 37,
+              "action": 3,
+              "successor": 46,
+              "motor_time": 6826,
+              "excitation": 0.8835999999999999
+            }
+          },
+          {
+            "step": 14,
+            "time": 7238,
+            "position": [
+              8,
+              3
+            ],
+            "action": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "contact": false,
+            "blocked_connection_inhibition": 1.0,
+            "selected_edge": {
+              "source": 46,
+              "action": 3,
+              "successor": 51,
+              "motor_time": 6848,
+              "excitation": 0.94
+            }
+          },
+          {
+            "step": 15,
+            "time": 7240,
+            "position": [
+              8,
+              2
+            ],
+            "action": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "contact": false,
+            "blocked_connection_inhibition": 1.0,
+            "selected_edge": null
+          }
+        ],
+        "selected_memory_checks": 15,
+        "final_clock": 7242,
+        "learned_state_unchanged": false
+      }
+    ]
+  },
+  "attribution": [
+    "OriginalRuntime supplies the single chronological multimodal record and actual motor recall.",
+    "New sensory-prototype assemblies, action-conditioned experience edges, maximum discounted goal propagation and contact-dependent edge inhibition supply candidate navigation.",
+    "The original spiking PFC receives transition learning but is not called to choose these actions; planner success is not evidence of its spontaneous emergence.",
+    "This is a new lattice body with nine downward pigment samples, not transfer to the original continuous physical body.",
+    "Pilot switches change the destination; the matched-prefix blocked-route test keeps the destination fixed and changes the available path.",
+    "No language or AGI conclusion follows from this bounded navigation result."
+  ]
+}

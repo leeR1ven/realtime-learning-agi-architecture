@@ -1,0 +1,1851 @@
+{
+  "status": "complete",
+  "source_sha256": {
+    "F:\\一种AGI架构\\前额叶区.py": "5087a9ce13ce6b727db27b8f6ae73f539f143115fdee0ae4b681acf7267a7b02",
+    "F:\\一种AGI架构\\权重连接管理.py": "408076efa5e27ab60cfc0dd0680abbc84571155d261e339835914fd768512d9d",
+    "F:\\一种AGI架构\\原架构闭环\\weight_dependent_plasticity.py": "26b828ede19666eaa23f26f7e3ead22e799de5c49cfa46e3945107462ef3aab2"
+  },
+  "script_sha256": "299375cf4b623e105e22d20432949ef70381238260505b60d774c600e0cf3a4d",
+  "parameters": {
+    "W": 0.025,
+    "eta_old": 0.0001,
+    "eta_soft": 0.0005,
+    "r": 0.9,
+    "maintenance_interval": 25,
+    "warning": 1,
+    "floor": 5e-05
+  },
+  "equations": {
+    "growth_old": "w+eta_old",
+    "growth_soft": "w+eta_soft*max(0,1-w/W)",
+    "depression_old": "r*w",
+    "depression_weight_dependent": "w/[1+(1/r-1)*(w/W)]",
+    "soft_without_decay": "W-(W-w0)*(1-eta/W)^n, provided0<=w0<=W",
+    "unused_soft_depression": "1/w_k=1/w0+k*(1/r-1)/W until floor deletion",
+    "maintenance_phase": "Original维护 runs before学习. From an empty one-edge table with warning1, the first decay is call2, then27,52,...; it is not deferred until call25."
+  },
+  "scalar_checks": [
+    {
+      "mode": "additive",
+      "eta": 0.0001,
+      "exposure_milestones": [
+        {
+          "exposures": 1,
+          "weight": 0.0001,
+          "maintenance_calls": 1,
+          "decays_so_far": 0,
+          "last_decay_call": -25,
+          "next_increment": 0.0001
+        },
+        {
+          "exposures": 3,
+          "weight": 0.00029,
+          "maintenance_calls": 3,
+          "decays_so_far": 1,
+          "last_decay_call": 2,
+          "next_increment": 9.999999999999999e-05
+        },
+        {
+          "exposures": 10,
+          "weight": 0.0009900000000000002,
+          "maintenance_calls": 10,
+          "decays_so_far": 1,
+          "last_decay_call": 2,
+          "next_increment": 0.00010000000000000005
+        },
+        {
+          "exposures": 30,
+          "weight": 0.002730999999999999,
+          "maintenance_calls": 30,
+          "decays_so_far": 2,
+          "last_decay_call": 27,
+          "next_increment": 9.999999999999983e-05
+        },
+        {
+          "exposures": 100,
+          "weight": 0.008563110000000006,
+          "maintenance_calls": 100,
+          "decays_so_far": 4,
+          "last_decay_call": 77,
+          "next_increment": 9.99999999999994e-05
+        },
+        {
+          "exposures": 1000,
+          "weight": 0.02453195601475814,
+          "maintenance_calls": 1000,
+          "decays_so_far": 40,
+          "last_decay_call": 977,
+          "next_increment": 9.99999999999994e-05
+        }
+      ],
+      "one_exposure_then_blank": [
+        {
+          "blank_maintenance_calls": 0,
+          "weight": 0.0001,
+          "present": true,
+          "decays_so_far": 0
+        },
+        {
+          "blank_maintenance_calls": 1,
+          "weight": 9e-05,
+          "present": true,
+          "decays_so_far": 1
+        },
+        {
+          "blank_maintenance_calls": 3,
+          "weight": 9e-05,
+          "present": true,
+          "decays_so_far": 1
+        },
+        {
+          "blank_maintenance_calls": 10,
+          "weight": 9e-05,
+          "present": true,
+          "decays_so_far": 1
+        },
+        {
+          "blank_maintenance_calls": 30,
+          "weight": 8.1e-05,
+          "present": true,
+          "decays_so_far": 2
+        },
+        {
+          "blank_maintenance_calls": 100,
+          "weight": 6.561000000000002e-05,
+          "present": true,
+          "decays_so_far": 4
+        },
+        {
+          "blank_maintenance_calls": 1000,
+          "weight": 0.0,
+          "present": false,
+          "decays_so_far": 7
+        },
+        {
+          "blank_maintenance_calls": 10000,
+          "weight": 0.0,
+          "present": false,
+          "decays_so_far": 7
+        },
+        {
+          "blank_maintenance_calls": 100000,
+          "weight": 0.0,
+          "present": false,
+          "decays_so_far": 7
+        }
+      ],
+      "one_exposure_deletion": {
+        "blank_maintenance_calls": 151,
+        "total_maintenance_calls": 152,
+        "depression_events": 7
+      },
+      "independent_scalar_matches_actual_table": true
+    },
+    {
+      "mode": "soft_multiplicative",
+      "eta": 0.0005,
+      "exposure_milestones": [
+        {
+          "exposures": 1,
+          "weight": 0.0005,
+          "maintenance_calls": 1,
+          "decays_so_far": 0,
+          "last_decay_call": -25,
+          "next_increment": 0.00049
+        },
+        {
+          "exposures": 3,
+          "weight": 0.0014221799999999999,
+          "maintenance_calls": 3,
+          "decays_so_far": 1,
+          "last_decay_call": 2,
+          "next_increment": 0.00047155640000000006
+        },
+        {
+          "exposures": 10,
+          "weight": 0.00453149243970482,
+          "maintenance_calls": 10,
+          "decays_so_far": 1,
+          "last_decay_call": 2,
+          "next_increment": 0.00040937015120590375
+        },
+        {
+          "exposures": 30,
+          "weight": 0.010395634664535766,
+          "maintenance_calls": 30,
+          "decays_so_far": 2,
+          "last_decay_call": 27,
+          "next_increment": 0.0002920873067092846
+        },
+        {
+          "exposures": 100,
+          "weight": 0.019748417990175085,
+          "maintenance_calls": 100,
+          "decays_so_far": 4,
+          "last_decay_call": 77,
+          "next_increment": 0.00010503164019649847
+        },
+        {
+          "exposures": 1000,
+          "weight": 0.021630526685659155,
+          "maintenance_calls": 1000,
+          "decays_so_far": 40,
+          "last_decay_call": 977,
+          "next_increment": 6.738946628681575e-05
+        }
+      ],
+      "one_exposure_then_blank": [
+        {
+          "blank_maintenance_calls": 0,
+          "weight": 0.0005,
+          "present": true,
+          "decays_so_far": 0
+        },
+        {
+          "blank_maintenance_calls": 1,
+          "weight": 0.00045000000000000004,
+          "present": true,
+          "decays_so_far": 1
+        },
+        {
+          "blank_maintenance_calls": 3,
+          "weight": 0.00045000000000000004,
+          "present": true,
+          "decays_so_far": 1
+        },
+        {
+          "blank_maintenance_calls": 10,
+          "weight": 0.00045000000000000004,
+          "present": true,
+          "decays_so_far": 1
+        },
+        {
+          "blank_maintenance_calls": 30,
+          "weight": 0.00040500000000000003,
+          "present": true,
+          "decays_so_far": 2
+        },
+        {
+          "blank_maintenance_calls": 100,
+          "weight": 0.00032805000000000003,
+          "present": true,
+          "decays_so_far": 4
+        },
+        {
+          "blank_maintenance_calls": 1000,
+          "weight": 0.0,
+          "present": false,
+          "decays_so_far": 22
+        },
+        {
+          "blank_maintenance_calls": 10000,
+          "weight": 0.0,
+          "present": false,
+          "decays_so_far": 22
+        },
+        {
+          "blank_maintenance_calls": 100000,
+          "weight": 0.0,
+          "present": false,
+          "decays_so_far": 22
+        }
+      ],
+      "one_exposure_deletion": {
+        "blank_maintenance_calls": 526,
+        "total_maintenance_calls": 527,
+        "depression_events": 22
+      },
+      "independent_scalar_matches_actual_table": true
+    },
+    {
+      "mode": "soft_weight_dependent",
+      "eta": 0.0005,
+      "exposure_milestones": [
+        {
+          "exposures": 1,
+          "weight": 0.0005,
+          "maintenance_calls": 1,
+          "decays_so_far": 0,
+          "last_decay_call": -25,
+          "next_increment": 0.00049
+        },
+        {
+          "exposures": 3,
+          "weight": 0.0014691352549889135,
+          "maintenance_calls": 3,
+          "decays_so_far": 1,
+          "last_decay_call": 2,
+          "next_increment": 0.00047061729490022186
+        },
+        {
+          "exposures": 10,
+          "weight": 0.004572255495480807,
+          "maintenance_calls": 10,
+          "decays_so_far": 1,
+          "last_decay_call": 2,
+          "next_increment": 0.00040855489009038355
+        },
+        {
+          "exposures": 30,
+          "weight": 0.010953136874891124,
+          "maintenance_calls": 30,
+          "decays_so_far": 2,
+          "last_decay_call": 27,
+          "next_increment": 0.0002809372625021782
+        },
+        {
+          "exposures": 100,
+          "weight": 0.0203039557325854,
+          "maintenance_calls": 100,
+          "decays_so_far": 4,
+          "last_decay_call": 77,
+          "next_increment": 9.392088534829202e-05
+        },
+        {
+          "exposures": 1000,
+          "weight": 0.021953302902351122,
+          "maintenance_calls": 1000,
+          "decays_so_far": 40,
+          "last_decay_call": 977,
+          "next_increment": 6.093394195297655e-05
+        }
+      ],
+      "one_exposure_then_blank": [
+        {
+          "blank_maintenance_calls": 0,
+          "weight": 0.0005,
+          "present": true,
+          "decays_so_far": 0
+        },
+        {
+          "blank_maintenance_calls": 1,
+          "weight": 0.0004988913525498891,
+          "present": true,
+          "decays_so_far": 1
+        },
+        {
+          "blank_maintenance_calls": 3,
+          "weight": 0.0004988913525498891,
+          "present": true,
+          "decays_so_far": 1
+        },
+        {
+          "blank_maintenance_calls": 10,
+          "weight": 0.0004988913525498891,
+          "present": true,
+          "decays_so_far": 1
+        },
+        {
+          "blank_maintenance_calls": 30,
+          "weight": 0.000497787610619469,
+          "present": true,
+          "decays_so_far": 2
+        },
+        {
+          "blank_maintenance_calls": 100,
+          "weight": 0.0004955947136563877,
+          "present": true,
+          "decays_so_far": 4
+        },
+        {
+          "blank_maintenance_calls": 1000,
+          "weight": 0.0004591836734693878,
+          "present": true,
+          "decays_so_far": 40
+        },
+        {
+          "blank_maintenance_calls": 10000,
+          "weight": 0.00026470588235294104,
+          "present": true,
+          "decays_so_far": 400
+        },
+        {
+          "blank_maintenance_calls": 100000,
+          "weight": 5.0561797752809056e-05,
+          "present": true,
+          "decays_so_far": 4000
+        }
+      ],
+      "one_exposure_deletion": {
+        "blank_maintenance_calls": 101251,
+        "total_maintenance_calls": 101252,
+        "depression_events": 4051
+      },
+      "independent_scalar_matches_actual_table": true
+    }
+  ],
+  "cycle_equilibria": [
+    {
+      "mode": "additive",
+      "positive_exposures_per_decay_cycle": 1,
+      "peak_weight_analytic": 0.0010000000000000002,
+      "peak_weight_numeric": 0.000999999999990615,
+      "after_decay_weight": 0.0009000000000000002,
+      "coactive_250_sources_E_at_peak": 0.25000000000000006,
+      "numeric_iterations": 242,
+      "timing": "A cycle applies one depression then m consecutive positive exposures; peak is after those exposures. No floor deletion occurs at these positive equilibria."
+    },
+    {
+      "mode": "additive",
+      "positive_exposures_per_decay_cycle": 5,
+      "peak_weight_analytic": 0.005000000000000001,
+      "peak_weight_numeric": 0.0049999999999903524,
+      "after_decay_weight": 0.004500000000000001,
+      "coactive_250_sources_E_at_peak": 1.2500000000000002,
+      "numeric_iterations": 257,
+      "timing": "A cycle applies one depression then m consecutive positive exposures; peak is after those exposures. No floor deletion occurs at these positive equilibria."
+    },
+    {
+      "mode": "additive",
+      "positive_exposures_per_decay_cycle": 25,
+      "peak_weight_analytic": 0.025000000000000005,
+      "peak_weight_numeric": 0.02499999999998991,
+      "after_decay_weight": 0.022500000000000006,
+      "coactive_250_sources_E_at_peak": 6.250000000000001,
+      "numeric_iterations": 272,
+      "timing": "A cycle applies one depression then m consecutive positive exposures; peak is after those exposures. No floor deletion occurs at these positive equilibria."
+    },
+    {
+      "mode": "soft_multiplicative",
+      "positive_exposures_per_decay_cycle": 1,
+      "peak_weight_analytic": 0.004237288135593225,
+      "peak_weight_numeric": 0.004237288135585226,
+      "after_decay_weight": 0.0038135593220339024,
+      "coactive_250_sources_E_at_peak": 1.0593220338983063,
+      "numeric_iterations": 216,
+      "timing": "A cycle applies one depression then m consecutive positive exposures; peak is after those exposures. No floor deletion occurs at these positive equilibria."
+    },
+    {
+      "mode": "soft_multiplicative",
+      "positive_exposures_per_decay_cycle": 5,
+      "peak_weight_analytic": 0.012881233200641138,
+      "peak_weight_numeric": 0.012881233200636647,
+      "after_decay_weight": 0.011593109880577025,
+      "coactive_250_sources_E_at_peak": 3.2203083001602844,
+      "numeric_iterations": 140,
+      "timing": "A cycle applies one depression then m consecutive positive exposures; peak is after those exposures. No floor deletion occurs at these positive equilibria."
+    },
+    {
+      "mode": "soft_multiplicative",
+      "positive_exposures_per_decay_cycle": 25,
+      "peak_weight_analytic": 0.02169791615247329,
+      "peak_weight_numeric": 0.021697916152472088,
+      "after_decay_weight": 0.01952812453722596,
+      "coactive_250_sources_E_at_peak": 5.4244790381183225,
+      "numeric_iterations": 51,
+      "timing": "A cycle applies one depression then m consecutive positive exposures; peak is after those exposures. No floor deletion occurs at these positive equilibria."
+    },
+    {
+      "mode": "soft_weight_dependent",
+      "positive_exposures_per_decay_cycle": 1,
+      "peak_weight_analytic": 0.008793516572461453,
+      "peak_weight_numeric": 0.008793516572451168,
+      "after_decay_weight": 0.008462772012715768,
+      "coactive_250_sources_E_at_peak": 2.198379143115363,
+      "numeric_iterations": 290,
+      "timing": "A cycle applies one depression then m consecutive positive exposures; peak is after those exposures. No floor deletion occurs at these positive equilibria."
+    },
+    {
+      "mode": "soft_weight_dependent",
+      "positive_exposures_per_decay_cycle": 5,
+      "peak_weight_analytic": 0.015546754213284445,
+      "peak_weight_numeric": 0.01554675421328033,
+      "after_decay_weight": 0.014541953432002777,
+      "coactive_250_sources_E_at_peak": 3.886688553321111,
+      "numeric_iterations": 126,
+      "timing": "A cycle applies one depression then m consecutive positive exposures; peak is after those exposures. No floor deletion occurs at these positive equilibria."
+    },
+    {
+      "mode": "soft_weight_dependent",
+      "positive_exposures_per_decay_cycle": 25,
+      "peak_weight_analytic": 0.02201423684432916,
+      "peak_weight_numeric": 0.022014236844327534,
+      "after_decay_weight": 0.02005229881990818,
+      "coactive_250_sources_E_at_peak": 5.50355921108229,
+      "numeric_iterations": 45,
+      "timing": "A cycle applies one depression then m consecutive positive exposures; peak is after those exposures. No floor deletion occurs at these positive equilibria."
+    }
+  ],
+  "local_update_values": [
+    {
+      "weight": 0.0,
+      "old_increment": 0.0001,
+      "new_increment": 0.0005,
+      "new_increment_divided_by_old": 5.0,
+      "multiplicative_after_one_decay": 0.0,
+      "weight_dependent_after_one_decay": 0.0,
+      "weight_dependent_retained_fraction": null
+    },
+    {
+      "weight": 0.0005,
+      "old_increment": 0.0001,
+      "new_increment": 0.00049,
+      "new_increment_divided_by_old": 4.8999999999999995,
+      "multiplicative_after_one_decay": 0.00045000000000000004,
+      "weight_dependent_after_one_decay": 0.0004988913525498892,
+      "weight_dependent_retained_fraction": 0.9977827050997785
+    },
+    {
+      "weight": 0.001869,
+      "old_increment": 0.0001,
+      "new_increment": 0.00046261999999999996,
+      "new_increment_divided_by_old": 4.626199999999999,
+      "multiplicative_after_one_decay": 0.0016821,
+      "weight_dependent_after_one_decay": 0.001853602739907171,
+      "weight_dependent_retained_fraction": 0.9917617656004126
+    },
+    {
+      "weight": 0.02,
+      "old_increment": 0.0001,
+      "new_increment": 9.99999999999994e-05,
+      "new_increment_divided_by_old": 0.9999999999999939,
+      "multiplicative_after_one_decay": 0.018000000000000002,
+      "weight_dependent_after_one_decay": 0.01836734693877551,
+      "weight_dependent_retained_fraction": 0.9183673469387754
+    },
+    {
+      "weight": 0.0243,
+      "old_increment": 0.0001,
+      "new_increment": 1.4000000000000123e-05,
+      "new_increment_divided_by_old": 0.14000000000000123,
+      "multiplicative_after_one_decay": 0.02187,
+      "weight_dependent_after_one_decay": 0.021931407942238263,
+      "weight_dependent_retained_fraction": 0.9025270758122742
+    },
+    {
+      "weight": 0.025,
+      "old_increment": 0.0001,
+      "new_increment": 0.0,
+      "new_increment_divided_by_old": 0.0,
+      "multiplicative_after_one_decay": 0.022500000000000003,
+      "weight_dependent_after_one_decay": 0.0225,
+      "weight_dependent_retained_fraction": 0.8999999999999999
+    }
+  ],
+  "neuronal_fixtures": [
+    {
+      "mode": "additive",
+      "parameters": {
+        "width": 520,
+        "A_cells": 125,
+        "B_cells": 125,
+        "C_cells": 24,
+        "PFC_firing_threshold": 2.0,
+        "rest_I": 1.0,
+        "feedback_I": 0.12,
+        "DI_cancellation": 0.2,
+        "target_high": 350
+      },
+      "training": "Each exposure calls original PFC.学习(artificialA|B, artificialC). Only connection plasticity differs across the three arms. No sensory data or autonomous route learning is claimed.",
+      "milestones": [
+        {
+          "exposures": 1,
+          "representative_edge_0_to_320": 0.0001,
+          "E_edges": 6000,
+          "DI_edges": 250,
+          "probes": [
+            {
+              "cue": "A",
+              "source_active_cells": 125,
+              "target_C_active_cells": 0,
+              "all_active_cells": 0,
+              "target_cell": 320,
+              "E": 0.01249999999999998,
+              "net_I": 0.9975,
+              "threshold": 2.9975,
+              "margin": -2.985,
+              "interpretation": "Partial cue C activation is permitted pattern completion. UnknownU has no learned edges and should remain inactive in this fixture."
+            },
+            {
+              "cue": "B",
+              "source_active_cells": 125,
+              "target_C_active_cells": 0,
+              "all_active_cells": 0,
+              "target_cell": 320,
+              "E": 0.01249999999999998,
+              "net_I": 0.9975,
+              "threshold": 2.9975,
+              "margin": -2.985,
+              "interpretation": "Partial cue C activation is permitted pattern completion. UnknownU has no learned edges and should remain inactive in this fixture."
+            },
+            {
+              "cue": "AB",
+              "source_active_cells": 250,
+              "target_C_active_cells": 0,
+              "all_active_cells": 0,
+              "target_cell": 320,
+              "E": 0.024999999999999904,
+              "net_I": 0.995,
+              "threshold": 2.995,
+              "margin": -2.97,
+              "interpretation": "Partial cue C activation is permitted pattern completion. UnknownU has no learned edges and should remain inactive in this fixture."
+            },
+            {
+              "cue": "U",
+              "source_active_cells": 125,
+              "target_C_active_cells": 0,
+              "all_active_cells": 0,
+              "target_cell": 320,
+              "E": 0.0,
+              "net_I": 1.0,
+              "threshold": 3.0,
+              "margin": -3.0,
+              "interpretation": "Partial cue C activation is permitted pattern completion. UnknownU has no learned edges and should remain inactive in this fixture."
+            }
+          ]
+        },
+        {
+          "exposures": 3,
+          "representative_edge_0_to_320": 0.00029,
+          "E_edges": 6000,
+          "DI_edges": 250,
+          "probes": [
+            {
+              "cue": "A",
+              "source_active_cells": 125,
+              "target_C_active_cells": 0,
+              "all_active_cells": 0,
+              "target_cell": 320,
+              "E": 0.036249999999999914,
+              "net_I": 0.99275,
+              "threshold": 2.99275,
+              "margin": -2.9565,
+              "interpretation": "Partial cue C activation is permitted pattern completion. UnknownU has no learned edges and should remain inactive in this fixture."
+            },
+            {
+              "cue": "B",
+              "source_active_cells": 125,
+              "target_C_active_cells": 0,
+              "all_active_cells": 0,
+              "target_cell": 320,
+              "E": 0.036249999999999914,
+              "net_I": 0.99275,
+              "threshold": 2.99275,
+              "margin": -2.9565,
+              "interpretation": "Partial cue C activation is permitted pattern completion. UnknownU has no learned edges and should remain inactive in this fixture."
+            },
+            {
+              "cue": "AB",
+              "source_active_cells": 250,
+              "target_C_active_cells": 0,
+              "all_active_cells": 0,
+              "target_cell": 320,
+              "E": 0.07249999999999975,
+              "net_I": 0.9855,
+              "threshold": 2.9855,
+              "margin": -2.9130000000000003,
+              "interpretation": "Partial cue C activation is permitted pattern completion. UnknownU has no learned edges and should remain inactive in this fixture."
+            },
+            {
+              "cue": "U",
+              "source_active_cells": 125,
+              "target_C_active_cells": 0,
+              "all_active_cells": 0,
+              "target_cell": 320,
+              "E": 0.0,
+              "net_I": 1.0,
+              "threshold": 3.0,
+              "margin": -3.0,
+              "interpretation": "Partial cue C activation is permitted pattern completion. UnknownU has no learned edges and should remain inactive in this fixture."
+            }
+          ]
+        },
+        {
+          "exposures": 10,
+          "representative_edge_0_to_320": 0.0009900000000000002,
+          "E_edges": 6000,
+          "DI_edges": 250,
+          "probes": [
+            {
+              "cue": "A",
+              "source_active_cells": 125,
+              "target_C_active_cells": 0,
+              "all_active_cells": 0,
+              "target_cell": 320,
+              "E": 0.12375000000000025,
+              "net_I": 0.97525,
+              "threshold": 2.97525,
+              "margin": -2.8514999999999997,
+              "interpretation": "Partial cue C activation is permitted pattern completion. UnknownU has no learned edges and should remain inactive in this fixture."
+            },
+            {
+              "cue": "B",
+              "source_active_cells": 125,
+              "target_C_active_cells": 0,
+              "all_active_cells": 0,
+              "target_cell": 320,
+              "E": 0.12375000000000025,
+              "net_I": 0.97525,
+              "threshold": 2.97525,
+              "margin": -2.8514999999999997,
+              "interpretation": "Partial cue C activation is permitted pattern completion. UnknownU has no learned edges and should remain inactive in this fixture."
+            },
+            {
+              "cue": "AB",
+              "source_active_cells": 250,
+              "target_C_active_cells": 0,
+              "all_active_cells": 0,
+              "target_cell": 320,
+              "E": 0.24749999999999914,
+              "net_I": 0.9505000000000001,
+              "threshold": 2.9505,
+              "margin": -2.7030000000000007,
+              "interpretation": "Partial cue C activation is permitted pattern completion. UnknownU has no learned edges and should remain inactive in this fixture."
+            },
+            {
+              "cue": "U",
+              "source_active_cells": 125,
+              "target_C_active_cells": 0,
+              "all_active_cells": 0,
+              "target_cell": 320,
+              "E": 0.0,
+              "net_I": 1.0,
+              "threshold": 3.0,
+              "margin": -3.0,
+              "interpretation": "Partial cue C activation is permitted pattern completion. UnknownU has no learned edges and should remain inactive in this fixture."
+            }
+          ]
+        },
+        {
+          "exposures": 30,
+          "representative_edge_0_to_320": 0.002730999999999999,
+          "E_edges": 6000,
+          "DI_edges": 250,
+          "probes": [
+            {
+              "cue": "A",
+              "source_active_cells": 125,
+              "target_C_active_cells": 0,
+              "all_active_cells": 0,
+              "target_cell": 320,
+              "E": 0.3413749999999999,
+              "net_I": 0.931725,
+              "threshold": 2.931725,
+              "margin": -2.5903500000000004,
+              "interpretation": "Partial cue C activation is permitted pattern completion. UnknownU has no learned edges and should remain inactive in this fixture."
+            },
+            {
+              "cue": "B",
+              "source_active_cells": 125,
+              "target_C_active_cells": 0,
+              "all_active_cells": 0,
+              "target_cell": 320,
+              "E": 0.3413749999999999,
+              "net_I": 0.931725,
+              "threshold": 2.931725,
+              "margin": -2.5903500000000004,
+              "interpretation": "Partial cue C activation is permitted pattern completion. UnknownU has no learned edges and should remain inactive in this fixture."
+            },
+            {
+              "cue": "AB",
+              "source_active_cells": 250,
+              "target_C_active_cells": 0,
+              "all_active_cells": 0,
+              "target_cell": 320,
+              "E": 0.6827500000000015,
+              "net_I": 0.8634499999999997,
+              "threshold": 2.86345,
+              "margin": -2.180699999999998,
+              "interpretation": "Partial cue C activation is permitted pattern completion. UnknownU has no learned edges and should remain inactive in this fixture."
+            },
+            {
+              "cue": "U",
+              "source_active_cells": 125,
+              "target_C_active_cells": 0,
+              "all_active_cells": 0,
+              "target_cell": 320,
+              "E": 0.0,
+              "net_I": 1.0,
+              "threshold": 3.0,
+              "margin": -3.0,
+              "interpretation": "Partial cue C activation is permitted pattern completion. UnknownU has no learned edges and should remain inactive in this fixture."
+            }
+          ]
+        },
+        {
+          "exposures": 100,
+          "representative_edge_0_to_320": 0.008563110000000006,
+          "E_edges": 6000,
+          "DI_edges": 250,
+          "probes": [
+            {
+              "cue": "A",
+              "source_active_cells": 125,
+              "target_C_active_cells": 0,
+              "all_active_cells": 0,
+              "target_cell": 320,
+              "E": 1.0703887499999998,
+              "net_I": 0.78592225,
+              "threshold": 2.78592225,
+              "margin": -1.7155335000000003,
+              "interpretation": "Partial cue C activation is permitted pattern completion. UnknownU has no learned edges and should remain inactive in this fixture."
+            },
+            {
+              "cue": "B",
+              "source_active_cells": 125,
+              "target_C_active_cells": 0,
+              "all_active_cells": 0,
+              "target_cell": 320,
+              "E": 1.0703887499999998,
+              "net_I": 0.78592225,
+              "threshold": 2.78592225,
+              "margin": -1.7155335000000003,
+              "interpretation": "Partial cue C activation is permitted pattern completion. UnknownU has no learned edges and should remain inactive in this fixture."
+            },
+            {
+              "cue": "AB",
+              "source_active_cells": 250,
+              "target_C_active_cells": 0,
+              "all_active_cells": 0,
+              "target_cell": 320,
+              "E": 2.140777500000008,
+              "net_I": 0.5718444999999983,
+              "threshold": 2.5718444999999983,
+              "margin": -0.4310669999999903,
+              "interpretation": "Partial cue C activation is permitted pattern completion. UnknownU has no learned edges and should remain inactive in this fixture."
+            },
+            {
+              "cue": "U",
+              "source_active_cells": 125,
+              "target_C_active_cells": 0,
+              "all_active_cells": 0,
+              "target_cell": 320,
+              "E": 0.0,
+              "net_I": 1.0,
+              "threshold": 3.0,
+              "margin": -3.0,
+              "interpretation": "Partial cue C activation is permitted pattern completion. UnknownU has no learned edges and should remain inactive in this fixture."
+            }
+          ]
+        },
+        {
+          "exposures": 1000,
+          "representative_edge_0_to_320": 0.02453195601475814,
+          "E_edges": 6000,
+          "DI_edges": 250,
+          "probes": [
+            {
+              "cue": "A",
+              "source_active_cells": 125,
+              "target_C_active_cells": 24,
+              "all_active_cells": 24,
+              "target_cell": 320,
+              "E": 3.066494501844764,
+              "net_I": 0.38670109963104715,
+              "threshold": 2.386701099631047,
+              "margin": 0.6797934022137171,
+              "interpretation": "Partial cue C activation is permitted pattern completion. UnknownU has no learned edges and should remain inactive in this fixture."
+            },
+            {
+              "cue": "B",
+              "source_active_cells": 125,
+              "target_C_active_cells": 24,
+              "all_active_cells": 24,
+              "target_cell": 320,
+              "E": 3.066494501844764,
+              "net_I": 0.38670109963104715,
+              "threshold": 2.386701099631047,
+              "margin": 0.6797934022137171,
+              "interpretation": "Partial cue C activation is permitted pattern completion. UnknownU has no learned edges and should remain inactive in this fixture."
+            },
+            {
+              "cue": "AB",
+              "source_active_cells": 250,
+              "target_C_active_cells": 24,
+              "all_active_cells": 24,
+              "target_cell": 320,
+              "E": 6.132989003689565,
+              "net_I": 0.0,
+              "threshold": 2.0,
+              "margin": 4.132989003689565,
+              "interpretation": "Partial cue C activation is permitted pattern completion. UnknownU has no learned edges and should remain inactive in this fixture."
+            },
+            {
+              "cue": "U",
+              "source_active_cells": 125,
+              "target_C_active_cells": 0,
+              "all_active_cells": 0,
+              "target_cell": 320,
+              "E": 0.0,
+              "net_I": 1.0,
+              "threshold": 3.0,
+              "margin": -3.0,
+              "interpretation": "Partial cue C activation is permitted pattern completion. UnknownU has no learned edges and should remain inactive in this fixture."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "soft_multiplicative",
+      "parameters": {
+        "width": 520,
+        "A_cells": 125,
+        "B_cells": 125,
+        "C_cells": 24,
+        "PFC_firing_threshold": 2.0,
+        "rest_I": 1.0,
+        "feedback_I": 0.12,
+        "DI_cancellation": 0.2,
+        "target_high": 350
+      },
+      "training": "Each exposure calls original PFC.学习(artificialA|B, artificialC). Only connection plasticity differs across the three arms. No sensory data or autonomous route learning is claimed.",
+      "milestones": [
+        {
+          "exposures": 1,
+          "representative_edge_0_to_320": 0.0005,
+          "E_edges": 6000,
+          "DI_edges": 250,
+          "probes": [
+            {
+              "cue": "A",
+              "source_active_cells": 125,
+              "target_C_active_cells": 0,
+              "all_active_cells": 0,
+              "target_cell": 320,
+              "E": 0.06250000000000004,
+              "net_I": 0.9875,
+              "threshold": 2.9875,
+              "margin": -2.925,
+              "interpretation": "Partial cue C activation is permitted pattern completion. UnknownU has no learned edges and should remain inactive in this fixture."
+            },
+            {
+              "cue": "B",
+              "source_active_cells": 125,
+              "target_C_active_cells": 0,
+              "all_active_cells": 0,
+              "target_cell": 320,
+              "E": 0.06250000000000004,
+              "net_I": 0.9875,
+              "threshold": 2.9875,
+              "margin": -2.925,
+              "interpretation": "Partial cue C activation is permitted pattern completion. UnknownU has no learned edges and should remain inactive in this fixture."
+            },
+            {
+              "cue": "AB",
+              "source_active_cells": 250,
+              "target_C_active_cells": 0,
+              "all_active_cells": 0,
+              "target_cell": 320,
+              "E": 0.12500000000000008,
+              "net_I": 0.975,
+              "threshold": 2.975,
+              "margin": -2.85,
+              "interpretation": "Partial cue C activation is permitted pattern completion. UnknownU has no learned edges and should remain inactive in this fixture."
+            },
+            {
+              "cue": "U",
+              "source_active_cells": 125,
+              "target_C_active_cells": 0,
+              "all_active_cells": 0,
+              "target_cell": 320,
+              "E": 0.0,
+              "net_I": 1.0,
+              "threshold": 3.0,
+              "margin": -3.0,
+              "interpretation": "Partial cue C activation is permitted pattern completion. UnknownU has no learned edges and should remain inactive in this fixture."
+            }
+          ]
+        },
+        {
+          "exposures": 3,
+          "representative_edge_0_to_320": 0.0014221799999999999,
+          "E_edges": 6000,
+          "DI_edges": 250,
+          "probes": [
+            {
+              "cue": "A",
+              "source_active_cells": 125,
+              "target_C_active_cells": 0,
+              "all_active_cells": 0,
+              "target_cell": 320,
+              "E": 0.17777249999999964,
+              "net_I": 0.9644455000000001,
+              "threshold": 2.9644455,
+              "margin": -2.7866730000000004,
+              "interpretation": "Partial cue C activation is permitted pattern completion. UnknownU has no learned edges and should remain inactive in this fixture."
+            },
+            {
+              "cue": "B",
+              "source_active_cells": 125,
+              "target_C_active_cells": 0,
+              "all_active_cells": 0,
+              "target_cell": 320,
+              "E": 0.17777249999999964,
+              "net_I": 0.9644455000000001,
+              "threshold": 2.9644455,
+              "margin": -2.7866730000000004,
+              "interpretation": "Partial cue C activation is permitted pattern completion. UnknownU has no learned edges and should remain inactive in this fixture."
+            },
+            {
+              "cue": "AB",
+              "source_active_cells": 250,
+              "target_C_active_cells": 0,
+              "all_active_cells": 0,
+              "target_cell": 320,
+              "E": 0.35554499999999906,
+              "net_I": 0.9288910000000001,
+              "threshold": 2.928891,
+              "margin": -2.5733460000000012,
+              "interpretation": "Partial cue C activation is permitted pattern completion. UnknownU has no learned edges and should remain inactive in this fixture."
+            },
+            {
+              "cue": "U",
+              "source_active_cells": 125,
+              "target_C_active_cells": 0,
+              "all_active_cells": 0,
+              "target_cell": 320,
+              "E": 0.0,
+              "net_I": 1.0,
+              "threshold": 3.0,
+              "margin": -3.0,
+              "interpretation": "Partial cue C activation is permitted pattern completion. UnknownU has no learned edges and should remain inactive in this fixture."
+            }
+          ]
+        },
+        {
+          "exposures": 10,
+          "representative_edge_0_to_320": 0.00453149243970482,
+          "E_edges": 6000,
+          "DI_edges": 250,
+          "probes": [
+            {
+              "cue": "A",
+              "source_active_cells": 125,
+              "target_C_active_cells": 0,
+              "all_active_cells": 0,
+              "target_cell": 320,
+              "E": 0.5664365549631021,
+              "net_I": 0.8867126890073795,
+              "threshold": 2.8867126890073793,
+              "margin": -2.3202761340442772,
+              "interpretation": "Partial cue C activation is permitted pattern completion. UnknownU has no learned edges and should remain inactive in this fixture."
+            },
+            {
+              "cue": "B",
+              "source_active_cells": 125,
+              "target_C_active_cells": 0,
+              "all_active_cells": 0,
+              "target_cell": 320,
+              "E": 0.5664365549631021,
+              "net_I": 0.8867126890073795,
+              "threshold": 2.8867126890073793,
+              "margin": -2.3202761340442772,
+              "interpretation": "Partial cue C activation is permitted pattern completion. UnknownU has no learned edges and should remain inactive in this fixture."
+            },
+            {
+              "cue": "AB",
+              "source_active_cells": 250,
+              "target_C_active_cells": 0,
+              "all_active_cells": 0,
+              "target_cell": 320,
+              "E": 1.1328731099262088,
+              "net_I": 0.7734253780147582,
+              "threshold": 2.773425378014758,
+              "margin": -1.6405522680885494,
+              "interpretation": "Partial cue C activation is permitted pattern completion. UnknownU has no learned edges and should remain inactive in this fixture."
+            },
+            {
+              "cue": "U",
+              "source_active_cells": 125,
+              "target_C_active_cells": 0,
+              "all_active_cells": 0,
+              "target_cell": 320,
+              "E": 0.0,
+              "net_I": 1.0,
+              "threshold": 3.0,
+              "margin": -3.0,
+              "interpretation": "Partial cue C activation is permitted pattern completion. UnknownU has no learned edges and should remain inactive in this fixture."
+            }
+          ]
+        },
+        {
+          "exposures": 30,
+          "representative_edge_0_to_320": 0.010395634664535766,
+          "E_edges": 6000,
+          "DI_edges": 250,
+          "probes": [
+            {
+              "cue": "A",
+              "source_active_cells": 125,
+              "target_C_active_cells": 0,
+              "all_active_cells": 0,
+              "target_cell": 320,
+              "E": 1.299454333066969,
+              "net_I": 0.7401091333866061,
+              "threshold": 2.740109133386606,
+              "margin": -1.440654800319637,
+              "interpretation": "Partial cue C activation is permitted pattern completion. UnknownU has no learned edges and should remain inactive in this fixture."
+            },
+            {
+              "cue": "B",
+              "source_active_cells": 125,
+              "target_C_active_cells": 0,
+              "all_active_cells": 0,
+              "target_cell": 320,
+              "E": 1.299454333066969,
+              "net_I": 0.7401091333866061,
+              "threshold": 2.740109133386606,
+              "margin": -1.440654800319637,
+              "interpretation": "Partial cue C activation is permitted pattern completion. UnknownU has no learned edges and should remain inactive in this fixture."
+            },
+            {
+              "cue": "AB",
+              "source_active_cells": 250,
+              "target_C_active_cells": 24,
+              "all_active_cells": 24,
+              "target_cell": 320,
+              "E": 2.59890866613395,
+              "net_I": 0.48021826677321,
+              "threshold": 2.48021826677321,
+              "margin": 0.11869039936074,
+              "interpretation": "Partial cue C activation is permitted pattern completion. UnknownU has no learned edges and should remain inactive in this fixture."
+            },
+            {
+              "cue": "U",
+              "source_active_cells": 125,
+              "target_C_active_cells": 0,
+              "all_active_cells": 0,
+              "target_cell": 320,
+              "E": 0.0,
+              "net_I": 1.0,
+              "threshold": 3.0,
+              "margin": -3.0,
+              "interpretation": "Partial cue C activation is permitted pattern completion. UnknownU has no learned edges and should remain inactive in this fixture."
+            }
+          ]
+        },
+        {
+          "exposures": 100,
+          "representative_edge_0_to_320": 0.019748417990175085,
+          "E_edges": 6000,
+          "DI_edges": 250,
+          "probes": [
+            {
+              "cue": "A",
+              "source_active_cells": 125,
+              "target_C_active_cells": 0,
+              "all_active_cells": 0,
+              "target_cell": 320,
+              "E": 2.4685522487718865,
+              "net_I": 0.5062895502456226,
+              "threshold": 2.5062895502456226,
+              "margin": -0.03773730147373611,
+              "interpretation": "Partial cue C activation is permitted pattern completion. UnknownU has no learned edges and should remain inactive in this fixture."
+            },
+            {
+              "cue": "B",
+              "source_active_cells": 125,
+              "target_C_active_cells": 0,
+              "all_active_cells": 0,
+              "target_cell": 320,
+              "E": 2.4685522487718865,
+              "net_I": 0.5062895502456226,
+              "threshold": 2.5062895502456226,
+              "margin": -0.03773730147373611,
+              "interpretation": "Partial cue C activation is permitted pattern completion. UnknownU has no learned edges and should remain inactive in this fixture."
+            },
+            {
+              "cue": "AB",
+              "source_active_cells": 250,
+              "target_C_active_cells": 24,
+              "all_active_cells": 24,
+              "target_cell": 320,
+              "E": 4.93710449754377,
+              "net_I": 0.012579100491245887,
+              "threshold": 2.012579100491246,
+              "margin": 2.9245253970525242,
+              "interpretation": "Partial cue C activation is permitted pattern completion. UnknownU has no learned edges and should remain inactive in this fixture."
+            },
+            {
+              "cue": "U",
+              "source_active_cells": 125,
+              "target_C_active_cells": 0,
+              "all_active_cells": 0,
+              "target_cell": 320,
+              "E": 0.0,
+              "net_I": 1.0,
+              "threshold": 3.0,
+              "margin": -3.0,
+              "interpretation": "Partial cue C activation is permitted pattern completion. UnknownU has no learned edges and should remain inactive in this fixture."
+            }
+          ]
+        },
+        {
+          "exposures": 1000,
+          "representative_edge_0_to_320": 0.021630526685659155,
+          "E_edges": 6000,
+          "DI_edges": 250,
+          "probes": [
+            {
+              "cue": "A",
+              "source_active_cells": 125,
+              "target_C_active_cells": 24,
+              "all_active_cells": 24,
+              "target_cell": 320,
+              "E": 2.703815835707392,
+              "net_I": 0.45923683285852157,
+              "threshold": 2.4592368328585215,
+              "margin": 0.24457900284887035,
+              "interpretation": "Partial cue C activation is permitted pattern completion. UnknownU has no learned edges and should remain inactive in this fixture."
+            },
+            {
+              "cue": "B",
+              "source_active_cells": 125,
+              "target_C_active_cells": 24,
+              "all_active_cells": 24,
+              "target_cell": 320,
+              "E": 2.703815835707392,
+              "net_I": 0.45923683285852157,
+              "threshold": 2.4592368328585215,
+              "margin": 0.24457900284887035,
+              "interpretation": "Partial cue C activation is permitted pattern completion. UnknownU has no learned edges and should remain inactive in this fixture."
+            },
+            {
+              "cue": "AB",
+              "source_active_cells": 250,
+              "target_C_active_cells": 24,
+              "all_active_cells": 24,
+              "target_cell": 320,
+              "E": 5.407631671414811,
+              "net_I": 0.0,
+              "threshold": 2.0,
+              "margin": 3.407631671414811,
+              "interpretation": "Partial cue C activation is permitted pattern completion. UnknownU has no learned edges and should remain inactive in this fixture."
+            },
+            {
+              "cue": "U",
+              "source_active_cells": 125,
+              "target_C_active_cells": 0,
+              "all_active_cells": 0,
+              "target_cell": 320,
+              "E": 0.0,
+              "net_I": 1.0,
+              "threshold": 3.0,
+              "margin": -3.0,
+              "interpretation": "Partial cue C activation is permitted pattern completion. UnknownU has no learned edges and should remain inactive in this fixture."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "soft_weight_dependent",
+      "parameters": {
+        "width": 520,
+        "A_cells": 125,
+        "B_cells": 125,
+        "C_cells": 24,
+        "PFC_firing_threshold": 2.0,
+        "rest_I": 1.0,
+        "feedback_I": 0.12,
+        "DI_cancellation": 0.2,
+        "target_high": 350
+      },
+      "training": "Each exposure calls original PFC.学习(artificialA|B, artificialC). Only connection plasticity differs across the three arms. No sensory data or autonomous route learning is claimed.",
+      "milestones": [
+        {
+          "exposures": 1,
+          "representative_edge_0_to_320": 0.0005,
+          "E_edges": 6000,
+          "DI_edges": 250,
+          "probes": [
+            {
+              "cue": "A",
+              "source_active_cells": 125,
+              "target_C_active_cells": 0,
+              "all_active_cells": 0,
+              "target_cell": 320,
+              "E": 0.06250000000000004,
+              "net_I": 0.9875,
+              "threshold": 2.9875,
+              "margin": -2.925,
+              "interpretation": "Partial cue C activation is permitted pattern completion. UnknownU has no learned edges and should remain inactive in this fixture."
+            },
+            {
+              "cue": "B",
+              "source_active_cells": 125,
+              "target_C_active_cells": 0,
+              "all_active_cells": 0,
+              "target_cell": 320,
+              "E": 0.06250000000000004,
+              "net_I": 0.9875,
+              "threshold": 2.9875,
+              "margin": -2.925,
+              "interpretation": "Partial cue C activation is permitted pattern completion. UnknownU has no learned edges and should remain inactive in this fixture."
+            },
+            {
+              "cue": "AB",
+              "source_active_cells": 250,
+              "target_C_active_cells": 0,
+              "all_active_cells": 0,
+              "target_cell": 320,
+              "E": 0.12500000000000008,
+              "net_I": 0.975,
+              "threshold": 2.975,
+              "margin": -2.85,
+              "interpretation": "Partial cue C activation is permitted pattern completion. UnknownU has no learned edges and should remain inactive in this fixture."
+            },
+            {
+              "cue": "U",
+              "source_active_cells": 125,
+              "target_C_active_cells": 0,
+              "all_active_cells": 0,
+              "target_cell": 320,
+              "E": 0.0,
+              "net_I": 1.0,
+              "threshold": 3.0,
+              "margin": -3.0,
+              "interpretation": "Partial cue C activation is permitted pattern completion. UnknownU has no learned edges and should remain inactive in this fixture."
+            }
+          ]
+        },
+        {
+          "exposures": 3,
+          "representative_edge_0_to_320": 0.0014691352549889135,
+          "E_edges": 6000,
+          "DI_edges": 250,
+          "probes": [
+            {
+              "cue": "A",
+              "source_active_cells": 125,
+              "target_C_active_cells": 0,
+              "all_active_cells": 0,
+              "target_cell": 320,
+              "E": 0.18364190687361384,
+              "net_I": 0.9632716186252772,
+              "threshold": 2.963271618625277,
+              "margin": -2.7796297117516633,
+              "interpretation": "Partial cue C activation is permitted pattern completion. UnknownU has no learned edges and should remain inactive in this fixture."
+            },
+            {
+              "cue": "B",
+              "source_active_cells": 125,
+              "target_C_active_cells": 0,
+              "all_active_cells": 0,
+              "target_cell": 320,
+              "E": 0.18364190687361384,
+              "net_I": 0.9632716186252772,
+              "threshold": 2.963271618625277,
+              "margin": -2.7796297117516633,
+              "interpretation": "Partial cue C activation is permitted pattern completion. UnknownU has no learned edges and should remain inactive in this fixture."
+            },
+            {
+              "cue": "AB",
+              "source_active_cells": 250,
+              "target_C_active_cells": 0,
+              "all_active_cells": 0,
+              "target_cell": 320,
+              "E": 0.36728381374722874,
+              "net_I": 0.9265432372505542,
+              "threshold": 2.926543237250554,
+              "margin": -2.5592594235033252,
+              "interpretation": "Partial cue C activation is permitted pattern completion. UnknownU has no learned edges and should remain inactive in this fixture."
+            },
+            {
+              "cue": "U",
+              "source_active_cells": 125,
+              "target_C_active_cells": 0,
+              "all_active_cells": 0,
+              "target_cell": 320,
+              "E": 0.0,
+              "net_I": 1.0,
+              "threshold": 3.0,
+              "margin": -3.0,
+              "interpretation": "Partial cue C activation is permitted pattern completion. UnknownU has no learned edges and should remain inactive in this fixture."
+            }
+          ]
+        },
+        {
+          "exposures": 10,
+          "representative_edge_0_to_320": 0.004572255495480807,
+          "E_edges": 6000,
+          "DI_edges": 250,
+          "probes": [
+            {
+              "cue": "A",
+              "source_active_cells": 125,
+              "target_C_active_cells": 0,
+              "all_active_cells": 0,
+              "target_cell": 320,
+              "E": 0.5715319369351003,
+              "net_I": 0.88569361261298,
+              "threshold": 2.8856936126129797,
+              "margin": -2.3141616756778793,
+              "interpretation": "Partial cue C activation is permitted pattern completion. UnknownU has no learned edges and should remain inactive in this fixture."
+            },
+            {
+              "cue": "B",
+              "source_active_cells": 125,
+              "target_C_active_cells": 0,
+              "all_active_cells": 0,
+              "target_cell": 320,
+              "E": 0.5715319369351003,
+              "net_I": 0.88569361261298,
+              "threshold": 2.8856936126129797,
+              "margin": -2.3141616756778793,
+              "interpretation": "Partial cue C activation is permitted pattern completion. UnknownU has no learned edges and should remain inactive in this fixture."
+            },
+            {
+              "cue": "AB",
+              "source_active_cells": 250,
+              "target_C_active_cells": 0,
+              "all_active_cells": 0,
+              "target_cell": 320,
+              "E": 1.1430638738701995,
+              "net_I": 0.7713872252259601,
+              "threshold": 2.7713872252259604,
+              "margin": -1.628323351355761,
+              "interpretation": "Partial cue C activation is permitted pattern completion. UnknownU has no learned edges and should remain inactive in this fixture."
+            },
+            {
+              "cue": "U",
+              "source_active_cells": 125,
+              "target_C_active_cells": 0,
+              "all_active_cells": 0,
+              "target_cell": 320,
+              "E": 0.0,
+              "net_I": 1.0,
+              "threshold": 3.0,
+              "margin": -3.0,
+              "interpretation": "Partial cue C activation is permitted pattern completion. UnknownU has no learned edges and should remain inactive in this fixture."
+            }
+          ]
+        },
+        {
+          "exposures": 30,
+          "representative_edge_0_to_320": 0.010953136874891124,
+          "E_edges": 6000,
+          "DI_edges": 250,
+          "probes": [
+            {
+              "cue": "A",
+              "source_active_cells": 125,
+              "target_C_active_cells": 0,
+              "all_active_cells": 0,
+              "target_cell": 320,
+              "E": 1.369142109361391,
+              "net_I": 0.7261715781277218,
+              "threshold": 2.7261715781277216,
+              "margin": -1.3570294687663307,
+              "interpretation": "Partial cue C activation is permitted pattern completion. UnknownU has no learned edges and should remain inactive in this fixture."
+            },
+            {
+              "cue": "B",
+              "source_active_cells": 125,
+              "target_C_active_cells": 0,
+              "all_active_cells": 0,
+              "target_cell": 320,
+              "E": 1.369142109361391,
+              "net_I": 0.7261715781277218,
+              "threshold": 2.7261715781277216,
+              "margin": -1.3570294687663307,
+              "interpretation": "Partial cue C activation is permitted pattern completion. UnknownU has no learned edges and should remain inactive in this fixture."
+            },
+            {
+              "cue": "AB",
+              "source_active_cells": 250,
+              "target_C_active_cells": 24,
+              "all_active_cells": 24,
+              "target_cell": 320,
+              "E": 2.7382842187227894,
+              "net_I": 0.4523431562554421,
+              "threshold": 2.4523431562554423,
+              "margin": 0.2859410624673471,
+              "interpretation": "Partial cue C activation is permitted pattern completion. UnknownU has no learned edges and should remain inactive in this fixture."
+            },
+            {
+              "cue": "U",
+              "source_active_cells": 125,
+              "target_C_active_cells": 0,
+              "all_active_cells": 0,
+              "target_cell": 320,
+              "E": 0.0,
+              "net_I": 1.0,
+              "threshold": 3.0,
+              "margin": -3.0,
+              "interpretation": "Partial cue C activation is permitted pattern completion. UnknownU has no learned edges and should remain inactive in this fixture."
+            }
+          ]
+        },
+        {
+          "exposures": 100,
+          "representative_edge_0_to_320": 0.020303955732585404,
+          "E_edges": 6000,
+          "DI_edges": 250,
+          "probes": [
+            {
+              "cue": "A",
+              "source_active_cells": 125,
+              "target_C_active_cells": 24,
+              "all_active_cells": 24,
+              "target_cell": 320,
+              "E": 2.537994466573174,
+              "net_I": 0.4924011066853652,
+              "threshold": 2.492401106685365,
+              "margin": 0.045593359887809104,
+              "interpretation": "Partial cue C activation is permitted pattern completion. UnknownU has no learned edges and should remain inactive in this fixture."
+            },
+            {
+              "cue": "B",
+              "source_active_cells": 125,
+              "target_C_active_cells": 24,
+              "all_active_cells": 24,
+              "target_cell": 320,
+              "E": 2.537994466573174,
+              "net_I": 0.4924011066853652,
+              "threshold": 2.492401106685365,
+              "margin": 0.045593359887809104,
+              "interpretation": "Partial cue C activation is permitted pattern completion. UnknownU has no learned edges and should remain inactive in this fixture."
+            },
+            {
+              "cue": "AB",
+              "source_active_cells": 250,
+              "target_C_active_cells": 24,
+              "all_active_cells": 24,
+              "target_cell": 320,
+              "E": 5.075988933146355,
+              "net_I": 0.0,
+              "threshold": 2.0,
+              "margin": 3.0759889331463546,
+              "interpretation": "Partial cue C activation is permitted pattern completion. UnknownU has no learned edges and should remain inactive in this fixture."
+            },
+            {
+              "cue": "U",
+              "source_active_cells": 125,
+              "target_C_active_cells": 0,
+              "all_active_cells": 0,
+              "target_cell": 320,
+              "E": 0.0,
+              "net_I": 1.0,
+              "threshold": 3.0,
+              "margin": -3.0,
+              "interpretation": "Partial cue C activation is permitted pattern completion. UnknownU has no learned edges and should remain inactive in this fixture."
+            }
+          ]
+        },
+        {
+          "exposures": 1000,
+          "representative_edge_0_to_320": 0.021953302902351122,
+          "E_edges": 6000,
+          "DI_edges": 250,
+          "probes": [
+            {
+              "cue": "A",
+              "source_active_cells": 125,
+              "target_C_active_cells": 24,
+              "all_active_cells": 24,
+              "target_cell": 320,
+              "E": 2.7441628627938877,
+              "net_I": 0.4511674274412224,
+              "threshold": 2.4511674274412223,
+              "margin": 0.29299543535266537,
+              "interpretation": "Partial cue C activation is permitted pattern completion. UnknownU has no learned edges and should remain inactive in this fixture."
+            },
+            {
+              "cue": "B",
+              "source_active_cells": 125,
+              "target_C_active_cells": 24,
+              "all_active_cells": 24,
+              "target_cell": 320,
+              "E": 2.7441628627938877,
+              "net_I": 0.4511674274412224,
+              "threshold": 2.4511674274412223,
+              "margin": 0.29299543535266537,
+              "interpretation": "Partial cue C activation is permitted pattern completion. UnknownU has no learned edges and should remain inactive in this fixture."
+            },
+            {
+              "cue": "AB",
+              "source_active_cells": 250,
+              "target_C_active_cells": 24,
+              "all_active_cells": 24,
+              "target_cell": 320,
+              "E": 5.488325725587774,
+              "net_I": 0.0,
+              "threshold": 2.0,
+              "margin": 3.4883257255877744,
+              "interpretation": "Partial cue C activation is permitted pattern completion. UnknownU has no learned edges and should remain inactive in this fixture."
+            },
+            {
+              "cue": "U",
+              "source_active_cells": 125,
+              "target_C_active_cells": 0,
+              "all_active_cells": 0,
+              "target_cell": 320,
+              "E": 0.0,
+              "net_I": 1.0,
+              "threshold": 3.0,
+              "margin": -3.0,
+              "interpretation": "Partial cue C activation is permitted pattern completion. UnknownU has no learned edges and should remain inactive in this fixture."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "engineering_findings": [
+    "Weak positive updates are up to5x larger, while w=.0243 grows only.14x the old increment. This is not uniformly stronger learning.",
+    "The soft bound controls each newly learned edge, not incoming total current.250 simultaneous sources atW can supply6.25; disinhibition may additionally lower the local threshold.",
+    "Weight-dependent forgetting is algebraic for unused weak edges. It preserves rare traces and one-off noise alike; track edge count, memory use and p95 as well as old/new recall.",
+    "For equal learning/depression schedules, existing above-ceiling weights are preserved by potentiation; the ceiling is not a retroactive clamp. The supplied old max.0243 is below.025.",
+    "The birth/serialization guard eta<=W is necessary for the no-overshoot argument. Current chosen eta/W=.02 satisfies it.",
+    "Baseline-to-soft comparison changes both eta and growth shape; only soft_multiplicative versus soft_weight_dependent isolates the depression law."
+  ],
+  "parameter_recommendation": "Preserve the already-running three arms as diagnostics, but do not chooseW=.025 as a default for independent24/31/64-source PFC reasoning: its cap is below the absolute firing requirement. Only the additionalW=.1 candidate was analyzed; it also fails the24/31 rest-gate equilibrium with unchangedeta/decay, so no tested setting is endorsed as solving small-cluster shortcut learning.",
+  "boundary": "Scalar and artificially clamped original-PFC dynamics only. Partial-cue completion is an allowed positive result. Content retention, context conflict separation, responsive non-silent activity and performance require the independent real sensory trial.",
+  "production_files_changed": false,
+  "elapsed_seconds": 10.605881300001784,
+  "small_cluster_scale_review": {
+    "sizes": [
+      24,
+      31,
+      64,
+      120,
+      250
+    ],
+    "cap_maximum_bounds": [
+      {
+        "cap": 0.025,
+        "sources": 24,
+        "maximum_E": 0.6000000000000001,
+        "maximum_DI_cancellation": 0.12000000000000002,
+        "absolute_zero_inhibition_threshold": 2.0,
+        "can_cross_even_if_all_inhibition_cancelled": false,
+        "optimistic_rest_strength1_net_I": 0.88,
+        "optimistic_rest_strength1_threshold": 2.88,
+        "optimistic_rest_strength1_margin": -2.28,
+        "can_cross_rest_strength1_gate": false
+      },
+      {
+        "cap": 0.025,
+        "sources": 31,
+        "maximum_E": 0.775,
+        "maximum_DI_cancellation": 0.15500000000000003,
+        "absolute_zero_inhibition_threshold": 2.0,
+        "can_cross_even_if_all_inhibition_cancelled": false,
+        "optimistic_rest_strength1_net_I": 0.845,
+        "optimistic_rest_strength1_threshold": 2.8449999999999998,
+        "optimistic_rest_strength1_margin": -2.0700000000000003,
+        "can_cross_rest_strength1_gate": false
+      },
+      {
+        "cap": 0.025,
+        "sources": 64,
+        "maximum_E": 1.6,
+        "maximum_DI_cancellation": 0.32000000000000006,
+        "absolute_zero_inhibition_threshold": 2.0,
+        "can_cross_even_if_all_inhibition_cancelled": false,
+        "optimistic_rest_strength1_net_I": 0.6799999999999999,
+        "optimistic_rest_strength1_threshold": 2.6799999999999997,
+        "optimistic_rest_strength1_margin": -1.0799999999999998,
+        "can_cross_rest_strength1_gate": false
+      },
+      {
+        "cap": 0.025,
+        "sources": 120,
+        "maximum_E": 3.0,
+        "maximum_DI_cancellation": 0.6000000000000001,
+        "absolute_zero_inhibition_threshold": 2.0,
+        "can_cross_even_if_all_inhibition_cancelled": true,
+        "optimistic_rest_strength1_net_I": 0.3999999999999999,
+        "optimistic_rest_strength1_threshold": 2.4,
+        "optimistic_rest_strength1_margin": 0.6000000000000001,
+        "can_cross_rest_strength1_gate": true
+      },
+      {
+        "cap": 0.025,
+        "sources": 250,
+        "maximum_E": 6.25,
+        "maximum_DI_cancellation": 1.25,
+        "absolute_zero_inhibition_threshold": 2.0,
+        "can_cross_even_if_all_inhibition_cancelled": true,
+        "optimistic_rest_strength1_net_I": 0.0,
+        "optimistic_rest_strength1_threshold": 2.0,
+        "optimistic_rest_strength1_margin": 4.25,
+        "can_cross_rest_strength1_gate": true
+      },
+      {
+        "cap": 0.1,
+        "sources": 24,
+        "maximum_E": 2.4000000000000004,
+        "maximum_DI_cancellation": 0.4800000000000001,
+        "absolute_zero_inhibition_threshold": 2.0,
+        "can_cross_even_if_all_inhibition_cancelled": true,
+        "optimistic_rest_strength1_net_I": 0.5199999999999999,
+        "optimistic_rest_strength1_threshold": 2.52,
+        "optimistic_rest_strength1_margin": -0.11999999999999955,
+        "can_cross_rest_strength1_gate": false
+      },
+      {
+        "cap": 0.1,
+        "sources": 31,
+        "maximum_E": 3.1,
+        "maximum_DI_cancellation": 0.6200000000000001,
+        "absolute_zero_inhibition_threshold": 2.0,
+        "can_cross_even_if_all_inhibition_cancelled": true,
+        "optimistic_rest_strength1_net_I": 0.3799999999999999,
+        "optimistic_rest_strength1_threshold": 2.38,
+        "optimistic_rest_strength1_margin": 0.7200000000000002,
+        "can_cross_rest_strength1_gate": true
+      },
+      {
+        "cap": 0.1,
+        "sources": 64,
+        "maximum_E": 6.4,
+        "maximum_DI_cancellation": 1.2800000000000002,
+        "absolute_zero_inhibition_threshold": 2.0,
+        "can_cross_even_if_all_inhibition_cancelled": true,
+        "optimistic_rest_strength1_net_I": 0.0,
+        "optimistic_rest_strength1_threshold": 2.0,
+        "optimistic_rest_strength1_margin": 4.4,
+        "can_cross_rest_strength1_gate": true
+      },
+      {
+        "cap": 0.1,
+        "sources": 120,
+        "maximum_E": 12.0,
+        "maximum_DI_cancellation": 2.4000000000000004,
+        "absolute_zero_inhibition_threshold": 2.0,
+        "can_cross_even_if_all_inhibition_cancelled": true,
+        "optimistic_rest_strength1_net_I": 0.0,
+        "optimistic_rest_strength1_threshold": 2.0,
+        "optimistic_rest_strength1_margin": 10.0,
+        "can_cross_rest_strength1_gate": true
+      },
+      {
+        "cap": 0.1,
+        "sources": 250,
+        "maximum_E": 25.0,
+        "maximum_DI_cancellation": 5.0,
+        "absolute_zero_inhibition_threshold": 2.0,
+        "can_cross_even_if_all_inhibition_cancelled": true,
+        "optimistic_rest_strength1_net_I": 0.0,
+        "optimistic_rest_strength1_threshold": 2.0,
+        "optimistic_rest_strength1_margin": 23.0,
+        "can_cross_rest_strength1_gate": true
+      }
+    ],
+    "only_additional_cap_candidate": [
+      {
+        "mode": "soft_multiplicative",
+        "cap": 0.1,
+        "eta": 0.0005,
+        "decay_rate": 0.9,
+        "maintenance_interval": 25,
+        "exposures_per_interval": 25,
+        "cycle_peak_weight": 0.05717414494262608,
+        "sizes": [
+          {
+            "sources": 24,
+            "equilibrium_peak_E": 1.372179478623026,
+            "rest_strength1_net_I": 0.7255641042753949,
+            "rest_strength1_threshold": 2.725564104275395,
+            "margin": -1.353384625652369,
+            "can_cross_rest_strength1_gate": false,
+            "can_cross_if_inhibition_zero": false
+          },
+          {
+            "sources": 31,
+            "equilibrium_peak_E": 1.7723984932214083,
+            "rest_strength1_net_I": 0.6455203013557183,
+            "rest_strength1_threshold": 2.6455203013557185,
+            "margin": -0.87312180813431,
+            "can_cross_rest_strength1_gate": false,
+            "can_cross_if_inhibition_zero": false
+          },
+          {
+            "sources": 64,
+            "equilibrium_peak_E": 3.659145276328069,
+            "rest_strength1_net_I": 0.2681709447343862,
+            "rest_strength1_threshold": 2.2681709447343863,
+            "margin": 1.3909743315936827,
+            "can_cross_rest_strength1_gate": true,
+            "can_cross_if_inhibition_zero": true
+          },
+          {
+            "sources": 120,
+            "equilibrium_peak_E": 6.860897393115129,
+            "rest_strength1_net_I": 0.0,
+            "rest_strength1_threshold": 2.0,
+            "margin": 4.860897393115129,
+            "can_cross_rest_strength1_gate": true,
+            "can_cross_if_inhibition_zero": true
+          },
+          {
+            "sources": 250,
+            "equilibrium_peak_E": 14.29353623565652,
+            "rest_strength1_net_I": 0.0,
+            "rest_strength1_threshold": 2.0,
+            "margin": 12.29353623565652,
+            "can_cross_rest_strength1_gate": true,
+            "can_cross_if_inhibition_zero": true
+          }
+        ]
+      },
+      {
+        "mode": "soft_weight_dependent",
+        "cap": 0.1,
+        "eta": 0.0005,
+        "decay_rate": 0.9,
+        "maintenance_interval": 25,
+        "exposures_per_interval": 25,
+        "cycle_peak_weight": 0.06611225326811404,
+        "sizes": [
+          {
+            "sources": 24,
+            "equilibrium_peak_E": 1.586694078434737,
+            "rest_strength1_net_I": 0.6826611843130526,
+            "rest_strength1_threshold": 2.6826611843130523,
+            "margin": -1.0959671058783156,
+            "can_cross_rest_strength1_gate": false,
+            "can_cross_if_inhibition_zero": false
+          },
+          {
+            "sources": 31,
+            "equilibrium_peak_E": 2.0494798513115353,
+            "rest_strength1_net_I": 0.5901040297376929,
+            "rest_strength1_threshold": 2.590104029737693,
+            "margin": -0.5406241784261576,
+            "can_cross_rest_strength1_gate": false,
+            "can_cross_if_inhibition_zero": true
+          },
+          {
+            "sources": 64,
+            "equilibrium_peak_E": 4.231184209159299,
+            "rest_strength1_net_I": 0.15376315816814023,
+            "rest_strength1_threshold": 2.1537631581681405,
+            "margin": 2.077421050991158,
+            "can_cross_rest_strength1_gate": true,
+            "can_cross_if_inhibition_zero": true
+          },
+          {
+            "sources": 120,
+            "equilibrium_peak_E": 7.933470392173685,
+            "rest_strength1_net_I": 0.0,
+            "rest_strength1_threshold": 2.0,
+            "margin": 5.933470392173685,
+            "can_cross_rest_strength1_gate": true,
+            "can_cross_if_inhibition_zero": true
+          },
+          {
+            "sources": 250,
+            "equilibrium_peak_E": 16.52806331702851,
+            "rest_strength1_net_I": 0.0,
+            "rest_strength1_threshold": 2.0,
+            "margin": 14.528063317028511,
+            "can_cross_rest_strength1_gate": true,
+            "can_cross_if_inhibition_zero": true
+          }
+        ]
+      }
+    ],
+    "interpretation": "The cap limit applies to newly born weights that remain underW, not legacy weights already aboveW. No external or recalled current is included. Rest gate uses global strength1 and no prior target-site activity; local feedback or higher strength can only make that assumed gate harder.",
+    "decisive_small_cluster_limit": "W=.025 gives N24/31/64 Emax=.6/.775/1.6, all below the original absolute firing threshold2 even with zero inhibition. Independent small-cluster propagation is mathematically impossible under those assumptions.",
+    "rest_gate_source_requirement_at_W025": "With rest strength1 and DI coefficient.2, E must reach2.5, hence at least100 saturated sources atW=.025; the zero-inhibition absolute lower bound needs80.",
+    "W01_limit": "W=.1 raises theoretical31-source Emax to3.1, but24-source Emax2.4 remains below the2.52 rest-gate threshold. With the sameeta.0005 and.9/25 decay, even the dense-exposure equilibrium for31 sources stays below its rest-gate threshold in both depression modes.",
+    "large_cluster_tradeoff": "W=.1 permits250-source Emax25 rather than6.25. At an existingw=.0243, its next increment is.0003785, compared with.000014 atW=.025 and.0001 in the old additive scheme. EnlargingW can therefore strengthen already-common dense associations.",
+    "learning_rate_and_decay_implication": "IncreasingW alone does not guarantee small-cluster firing at the attained equilibrium. Tuning total input, gain, decay and actual temporal overlap requires explicit real measurements; recall-current help must not be counted as a pureA shortcut.",
+    "original_numeric_sections_sha256_unchanged": "aa8b3731e3134d7a0fd7476321742981bab287d793edd36eab8f7c8618ef96f4",
+    "method": "Analytical source-count upper bounds and exact dense-exposure cycle fixed points, numerically checked. No added PFC training or production change."
+  }
+}

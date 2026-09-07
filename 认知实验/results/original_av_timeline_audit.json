@@ -1,0 +1,929 @@
+{
+  "status": "completed_expected_alignment_findings",
+  "seed": 202609061,
+  "scope": "Discrete time-index mechanism unit fixture; not real PCM/RGB or fixed-PFC encoder learning.",
+  "source_sha256_before_and_after": {
+    "海马体时间区.py": "0750490f9487a6035c288b3f3076e81fb1b13d114f31f9c6fc2695f908008bd7",
+    "视觉记忆区.py": "1ddcd0182e6ae1ec8417ca6946ed00d78218885e63ac50bf63e9527187520818",
+    "听觉记忆区.py": "12842a94eec6522051bac336b6543de7facccd69b2cb215c62c22fb67e4bf888",
+    "前额叶区.py": "5087a9ce13ce6b727db27b8f6ae73f539f143115fdee0ae4b681acf7267a7b02",
+    "权重连接管理.py": "408076efa5e27ab60cfc0dd0680abbc84571155d261e339835914fd768512d9d"
+  },
+  "original_classes_extracted_without_changes": [
+    "时间环",
+    "连接表",
+    "视觉记忆区.记忆区",
+    "听觉记忆区.记忆区",
+    "海马索引"
+  ],
+  "shared_clock": {
+    "instances": 1,
+    "cells": 512,
+    "active_each_step": 1,
+    "seconds_per_internal_step": 0.05,
+    "internal_steps_per_frame": 2,
+    "one_frame_method_returns_final_internal_transition": [
+      1,
+      2
+    ]
+  },
+  "rapid_changes_1_frame_per_pair": [
+    {
+      "pair": 0,
+      "experience_onset": 0,
+      "expected_visual_features": [
+        5,
+        9
+      ],
+      "sound_features": [
+        7,
+        12
+      ],
+      "native_auditory_start_time": 2,
+      "native_offset_internal_steps": 2,
+      "native_start_visual": [
+        11,
+        14
+      ],
+      "native_same_pair_visual": false,
+      "native_crossmodal_playback": [
+        {
+          "time": 2,
+          "visual_features": [
+            11,
+            14
+          ]
+        },
+        {
+          "time": 3,
+          "visual_features": [
+            11,
+            14
+          ]
+        },
+        {
+          "time": 4,
+          "visual_features": [
+            10,
+            15
+          ]
+        },
+        {
+          "time": 5,
+          "visual_features": [
+            10,
+            15
+          ]
+        }
+      ],
+      "index_time_from_partial_pfc": 0,
+      "index_vote_ratio": 1.0,
+      "index_visual": [
+        5,
+        9
+      ],
+      "index_same_pair_visual": true
+    },
+    {
+      "pair": 1,
+      "experience_onset": 2,
+      "expected_visual_features": [
+        11,
+        14
+      ],
+      "sound_features": [
+        5,
+        6
+      ],
+      "native_auditory_start_time": 4,
+      "native_offset_internal_steps": 2,
+      "native_start_visual": [
+        10,
+        15
+      ],
+      "native_same_pair_visual": false,
+      "native_crossmodal_playback": [
+        {
+          "time": 4,
+          "visual_features": [
+            10,
+            15
+          ]
+        },
+        {
+          "time": 5,
+          "visual_features": [
+            10,
+            15
+          ]
+        },
+        {
+          "time": 6,
+          "visual_features": [
+            6,
+            8
+          ]
+        },
+        {
+          "time": 7,
+          "visual_features": [
+            6,
+            8
+          ]
+        }
+      ],
+      "index_time_from_partial_pfc": 2,
+      "index_vote_ratio": 1.0,
+      "index_visual": [
+        11,
+        14
+      ],
+      "index_same_pair_visual": true
+    },
+    {
+      "pair": 2,
+      "experience_onset": 4,
+      "expected_visual_features": [
+        10,
+        15
+      ],
+      "sound_features": [
+        9,
+        13
+      ],
+      "native_auditory_start_time": 6,
+      "native_offset_internal_steps": 2,
+      "native_start_visual": [
+        6,
+        8
+      ],
+      "native_same_pair_visual": false,
+      "native_crossmodal_playback": [
+        {
+          "time": 6,
+          "visual_features": [
+            6,
+            8
+          ]
+        },
+        {
+          "time": 7,
+          "visual_features": [
+            6,
+            8
+          ]
+        },
+        {
+          "time": 8,
+          "visual_features": [
+            1,
+            7
+          ]
+        },
+        {
+          "time": 9,
+          "visual_features": [
+            1,
+            7
+          ]
+        }
+      ],
+      "index_time_from_partial_pfc": 4,
+      "index_vote_ratio": 1.0,
+      "index_visual": [
+        10,
+        15
+      ],
+      "index_same_pair_visual": true
+    },
+    {
+      "pair": 3,
+      "experience_onset": 6,
+      "expected_visual_features": [
+        6,
+        8
+      ],
+      "sound_features": [
+        1,
+        15
+      ],
+      "native_auditory_start_time": 8,
+      "native_offset_internal_steps": 2,
+      "native_start_visual": [
+        1,
+        7
+      ],
+      "native_same_pair_visual": false,
+      "native_crossmodal_playback": [
+        {
+          "time": 8,
+          "visual_features": [
+            1,
+            7
+          ]
+        },
+        {
+          "time": 9,
+          "visual_features": [
+            1,
+            7
+          ]
+        },
+        {
+          "time": 10,
+          "visual_features": [
+            2,
+            12
+          ]
+        },
+        {
+          "time": 11,
+          "visual_features": [
+            2,
+            12
+          ]
+        }
+      ],
+      "index_time_from_partial_pfc": 6,
+      "index_vote_ratio": 1.0,
+      "index_visual": [
+        6,
+        8
+      ],
+      "index_same_pair_visual": true
+    },
+    {
+      "pair": 4,
+      "experience_onset": 8,
+      "expected_visual_features": [
+        1,
+        7
+      ],
+      "sound_features": [
+        4,
+        8
+      ],
+      "native_auditory_start_time": 10,
+      "native_offset_internal_steps": 2,
+      "native_start_visual": [
+        2,
+        12
+      ],
+      "native_same_pair_visual": false,
+      "native_crossmodal_playback": [
+        {
+          "time": 10,
+          "visual_features": [
+            2,
+            12
+          ]
+        },
+        {
+          "time": 11,
+          "visual_features": [
+            2,
+            12
+          ]
+        },
+        {
+          "time": 12,
+          "visual_features": []
+        },
+        {
+          "time": 13,
+          "visual_features": []
+        }
+      ],
+      "index_time_from_partial_pfc": 8,
+      "index_vote_ratio": 1.0,
+      "index_visual": [
+        1,
+        7
+      ],
+      "index_same_pair_visual": true
+    },
+    {
+      "pair": 5,
+      "experience_onset": 10,
+      "expected_visual_features": [
+        2,
+        12
+      ],
+      "sound_features": [
+        10,
+        14
+      ],
+      "native_auditory_start_time": 12,
+      "native_offset_internal_steps": 2,
+      "native_start_visual": [],
+      "native_same_pair_visual": false,
+      "native_crossmodal_playback": [
+        {
+          "time": 12,
+          "visual_features": []
+        },
+        {
+          "time": 13,
+          "visual_features": []
+        },
+        {
+          "time": 14,
+          "visual_features": []
+        },
+        {
+          "time": 15,
+          "visual_features": []
+        }
+      ],
+      "index_time_from_partial_pfc": 10,
+      "index_vote_ratio": 1.0,
+      "index_visual": [
+        2,
+        12
+      ],
+      "index_same_pair_visual": true
+    }
+  ],
+  "held_3_frames_per_pair": [
+    {
+      "pair": 0,
+      "experience_onset": 0,
+      "expected_visual_features": [
+        5,
+        9
+      ],
+      "sound_features": [
+        7,
+        12
+      ],
+      "native_auditory_start_time": 2,
+      "native_offset_internal_steps": 2,
+      "native_start_visual": [
+        5,
+        9
+      ],
+      "native_same_pair_visual": true,
+      "native_crossmodal_playback": [
+        {
+          "time": 2,
+          "visual_features": [
+            5,
+            9
+          ]
+        },
+        {
+          "time": 3,
+          "visual_features": [
+            5,
+            9
+          ]
+        },
+        {
+          "time": 4,
+          "visual_features": [
+            5,
+            9
+          ]
+        },
+        {
+          "time": 5,
+          "visual_features": [
+            5,
+            9
+          ]
+        }
+      ],
+      "index_time_from_partial_pfc": 0,
+      "index_vote_ratio": 1.0,
+      "index_visual": [
+        5,
+        9
+      ],
+      "index_same_pair_visual": true
+    },
+    {
+      "pair": 1,
+      "experience_onset": 6,
+      "expected_visual_features": [
+        11,
+        14
+      ],
+      "sound_features": [
+        5,
+        6
+      ],
+      "native_auditory_start_time": 8,
+      "native_offset_internal_steps": 2,
+      "native_start_visual": [
+        11,
+        14
+      ],
+      "native_same_pair_visual": true,
+      "native_crossmodal_playback": [
+        {
+          "time": 8,
+          "visual_features": [
+            11,
+            14
+          ]
+        },
+        {
+          "time": 9,
+          "visual_features": [
+            11,
+            14
+          ]
+        },
+        {
+          "time": 10,
+          "visual_features": [
+            11,
+            14
+          ]
+        },
+        {
+          "time": 11,
+          "visual_features": [
+            11,
+            14
+          ]
+        }
+      ],
+      "index_time_from_partial_pfc": 6,
+      "index_vote_ratio": 1.0,
+      "index_visual": [
+        11,
+        14
+      ],
+      "index_same_pair_visual": true
+    },
+    {
+      "pair": 2,
+      "experience_onset": 12,
+      "expected_visual_features": [
+        10,
+        15
+      ],
+      "sound_features": [
+        9,
+        13
+      ],
+      "native_auditory_start_time": 14,
+      "native_offset_internal_steps": 2,
+      "native_start_visual": [
+        10,
+        15
+      ],
+      "native_same_pair_visual": true,
+      "native_crossmodal_playback": [
+        {
+          "time": 14,
+          "visual_features": [
+            10,
+            15
+          ]
+        },
+        {
+          "time": 15,
+          "visual_features": [
+            10,
+            15
+          ]
+        },
+        {
+          "time": 16,
+          "visual_features": [
+            10,
+            15
+          ]
+        },
+        {
+          "time": 17,
+          "visual_features": [
+            10,
+            15
+          ]
+        }
+      ],
+      "index_time_from_partial_pfc": 12,
+      "index_vote_ratio": 1.0,
+      "index_visual": [
+        10,
+        15
+      ],
+      "index_same_pair_visual": true
+    },
+    {
+      "pair": 3,
+      "experience_onset": 18,
+      "expected_visual_features": [
+        6,
+        8
+      ],
+      "sound_features": [
+        1,
+        15
+      ],
+      "native_auditory_start_time": 20,
+      "native_offset_internal_steps": 2,
+      "native_start_visual": [
+        6,
+        8
+      ],
+      "native_same_pair_visual": true,
+      "native_crossmodal_playback": [
+        {
+          "time": 20,
+          "visual_features": [
+            6,
+            8
+          ]
+        },
+        {
+          "time": 21,
+          "visual_features": [
+            6,
+            8
+          ]
+        },
+        {
+          "time": 22,
+          "visual_features": [
+            6,
+            8
+          ]
+        },
+        {
+          "time": 23,
+          "visual_features": [
+            6,
+            8
+          ]
+        }
+      ],
+      "index_time_from_partial_pfc": 18,
+      "index_vote_ratio": 1.0,
+      "index_visual": [
+        6,
+        8
+      ],
+      "index_same_pair_visual": true
+    },
+    {
+      "pair": 4,
+      "experience_onset": 24,
+      "expected_visual_features": [
+        1,
+        7
+      ],
+      "sound_features": [
+        4,
+        8
+      ],
+      "native_auditory_start_time": 26,
+      "native_offset_internal_steps": 2,
+      "native_start_visual": [
+        1,
+        7
+      ],
+      "native_same_pair_visual": true,
+      "native_crossmodal_playback": [
+        {
+          "time": 26,
+          "visual_features": [
+            1,
+            7
+          ]
+        },
+        {
+          "time": 27,
+          "visual_features": [
+            1,
+            7
+          ]
+        },
+        {
+          "time": 28,
+          "visual_features": [
+            1,
+            7
+          ]
+        },
+        {
+          "time": 29,
+          "visual_features": [
+            1,
+            7
+          ]
+        }
+      ],
+      "index_time_from_partial_pfc": 24,
+      "index_vote_ratio": 1.0,
+      "index_visual": [
+        1,
+        7
+      ],
+      "index_same_pair_visual": true
+    },
+    {
+      "pair": 5,
+      "experience_onset": 30,
+      "expected_visual_features": [
+        2,
+        12
+      ],
+      "sound_features": [
+        10,
+        14
+      ],
+      "native_auditory_start_time": 32,
+      "native_offset_internal_steps": 2,
+      "native_start_visual": [
+        2,
+        12
+      ],
+      "native_same_pair_visual": true,
+      "native_crossmodal_playback": [
+        {
+          "time": 32,
+          "visual_features": [
+            2,
+            12
+          ]
+        },
+        {
+          "time": 33,
+          "visual_features": [
+            2,
+            12
+          ]
+        },
+        {
+          "time": 34,
+          "visual_features": [
+            2,
+            12
+          ]
+        },
+        {
+          "time": 35,
+          "visual_features": [
+            2,
+            12
+          ]
+        }
+      ],
+      "index_time_from_partial_pfc": 30,
+      "index_vote_ratio": 1.0,
+      "index_visual": [
+        2,
+        12
+      ],
+      "index_same_pair_visual": true
+    }
+  ],
+  "rapid_timeline": [
+    {
+      "old_time": 0,
+      "new_time": 1,
+      "pair": 0,
+      "frame_within_pair": 0,
+      "microstep": 0,
+      "visual_features": [
+        5,
+        9
+      ],
+      "auditory_features": [
+        7,
+        12
+      ],
+      "index_written": true
+    },
+    {
+      "old_time": 1,
+      "new_time": 2,
+      "pair": 0,
+      "frame_within_pair": 0,
+      "microstep": 1,
+      "visual_features": [
+        5,
+        9
+      ],
+      "auditory_features": [
+        7,
+        12
+      ],
+      "index_written": false
+    },
+    {
+      "old_time": 2,
+      "new_time": 3,
+      "pair": 1,
+      "frame_within_pair": 0,
+      "microstep": 0,
+      "visual_features": [
+        11,
+        14
+      ],
+      "auditory_features": [
+        5,
+        6
+      ],
+      "index_written": true
+    },
+    {
+      "old_time": 3,
+      "new_time": 4,
+      "pair": 1,
+      "frame_within_pair": 0,
+      "microstep": 1,
+      "visual_features": [
+        11,
+        14
+      ],
+      "auditory_features": [
+        5,
+        6
+      ],
+      "index_written": false
+    },
+    {
+      "old_time": 4,
+      "new_time": 5,
+      "pair": 2,
+      "frame_within_pair": 0,
+      "microstep": 0,
+      "visual_features": [
+        10,
+        15
+      ],
+      "auditory_features": [
+        9,
+        13
+      ],
+      "index_written": true
+    },
+    {
+      "old_time": 5,
+      "new_time": 6,
+      "pair": 2,
+      "frame_within_pair": 0,
+      "microstep": 1,
+      "visual_features": [
+        10,
+        15
+      ],
+      "auditory_features": [
+        9,
+        13
+      ],
+      "index_written": false
+    },
+    {
+      "old_time": 6,
+      "new_time": 7,
+      "pair": 3,
+      "frame_within_pair": 0,
+      "microstep": 0,
+      "visual_features": [
+        6,
+        8
+      ],
+      "auditory_features": [
+        1,
+        15
+      ],
+      "index_written": true
+    },
+    {
+      "old_time": 7,
+      "new_time": 8,
+      "pair": 3,
+      "frame_within_pair": 0,
+      "microstep": 1,
+      "visual_features": [
+        6,
+        8
+      ],
+      "auditory_features": [
+        1,
+        15
+      ],
+      "index_written": false
+    },
+    {
+      "old_time": 8,
+      "new_time": 9,
+      "pair": 4,
+      "frame_within_pair": 0,
+      "microstep": 0,
+      "visual_features": [
+        1,
+        7
+      ],
+      "auditory_features": [
+        4,
+        8
+      ],
+      "index_written": true
+    },
+    {
+      "old_time": 9,
+      "new_time": 10,
+      "pair": 4,
+      "frame_within_pair": 0,
+      "microstep": 1,
+      "visual_features": [
+        1,
+        7
+      ],
+      "auditory_features": [
+        4,
+        8
+      ],
+      "index_written": false
+    },
+    {
+      "old_time": 10,
+      "new_time": 11,
+      "pair": 5,
+      "frame_within_pair": 0,
+      "microstep": 0,
+      "visual_features": [
+        2,
+        12
+      ],
+      "auditory_features": [
+        10,
+        14
+      ],
+      "index_written": true
+    },
+    {
+      "old_time": 11,
+      "new_time": 12,
+      "pair": 5,
+      "frame_within_pair": 0,
+      "microstep": 1,
+      "visual_features": [
+        2,
+        12
+      ],
+      "auditory_features": [
+        10,
+        14
+      ],
+      "index_written": false
+    }
+  ],
+  "first_sound_feature_to_time_edges": {
+    "7": {
+      "2": 1.0,
+      "3": 1.0
+    },
+    "12": {
+      "2": 1.0,
+      "3": 1.0
+    }
+  },
+  "controls": {
+    "partial_one_feature_index_time": 0,
+    "partial_one_feature_vote_ratio": 1.0,
+    "two_disjoint_known_sounds_index_time": null,
+    "two_disjoint_known_sounds_vote_ratio": 0.5,
+    "unknown_sound_rejected": true,
+    "sound_without_visual_experience_does_not_recall_color": true,
+    "changed_cooccurrence_permutation": [
+      3,
+      5,
+      1,
+      4,
+      0,
+      2
+    ],
+    "changed_cooccurrence_recalled_actual_pairing": true,
+    "readout_does_not_change_weights_or_clock": true,
+    "single_exposure_time_visual_weight": 1.0,
+    "visual_threshold_1_active": 2,
+    "visual_threshold_above_1_active": 0,
+    "same_sound_multiple_colors_matching_times": [
+      0,
+      2,
+      4,
+      6,
+      8,
+      10
+    ],
+    "same_sound_multiple_colors_selected_time": 0,
+    "same_sound_multiple_colors_selected_ratio": 1.0
+  },
+  "interpretation": [
+    "Under the original two-internal-step experience loop, native sound-feature entry starts two internal steps later than the original same-frame color. Rapid pair changes therefore recall the following color or unwritten time.",
+    "Holding each pairing for three frames yields correct color through native sound entry but retains the two-step offset; long presentations can conceal the alignment issue.",
+    "An appropriate partial PFC cue locks the stored frame-onset time and completes the same-frame color through actual time-to-visual edges.",
+    "The fixture supplies the partial PFC cue by concatenating explicit feature lanes. It does not establish that real auditory input alone yields this cue through the original fixed PFC network.",
+    "Index vote ratio divides by query size: one matching cue cell can yield 1.0. Repeated identical sound paired with different colors remains ambiguous and the original tie rule chooses the earliest inserted match.",
+    "No connection was set by a sound-to-color rule; all learned edges arose through the original learning calls on the shared ordered experience."
+  ],
+  "elapsed_seconds": 0.061226199999509845
+}

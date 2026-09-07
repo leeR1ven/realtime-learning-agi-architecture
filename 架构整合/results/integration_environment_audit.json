@@ -1,0 +1,35 @@
+{
+  "scheduled_cues_exactly_match_external_fixed_time_cues_and_physics": [
+    {
+      "time": 1.0,
+      "route": "top",
+      "control_frame": 10,
+      "emitted_time": 1.0000000000000007
+    },
+    {
+      "time": 2.0,
+      "route": "bottom",
+      "control_frame": 20,
+      "emitted_time": 1.9999999999999793
+    }
+  ],
+  "same_seed_and_prefix_different_future_cues_do_not_leak": true,
+  "real_physics_terminal_reward_once_and_wrong_route_zero": [
+    {
+      "requested": "bottom",
+      "used_passage": "bottom",
+      "first_target_time": 9.66000000000011,
+      "reward_sum": 1.0,
+      "terminal_packet_returned": true
+    },
+    {
+      "requested": "top",
+      "used_passage": "bottom",
+      "first_target_time": 9.66000000000011,
+      "reward_sum": 0.0,
+      "terminal_packet_returned": true
+    }
+  ],
+  "off_grid_duplicate_or_unknown_cues_rejected": true,
+  "no_training_run": true
+}

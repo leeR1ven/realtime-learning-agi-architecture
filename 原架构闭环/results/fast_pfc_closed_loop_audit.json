@@ -1,0 +1,531 @@
+{
+  "passed": true,
+  "checkpoint": "F:\\一种AGI架构\\原架构闭环\\results\\active_body_additive_600.npz",
+  "isolated_change": "OriginalPFC vs FastPFC current/gate only",
+  "both_indices_fast": true,
+  "independent_full_lives": true,
+  "actual_control_steps_per_arm": 24,
+  "full_canonical_state_equal_after_every_step": true,
+  "full_state_equal_after_safe_save_restore_and_one_further_step": true,
+  "no_parameter_learning_or_physics_rule_difference": true,
+  "teacher_actions": 0,
+  "rewards": 0,
+  "initial_steps": 5448,
+  "initial_clock": 10904,
+  "complete_control_timing": {
+    "original_pfc": {
+      "median_ms": 175.37115,
+      "p95_ms": 215.89485999999994,
+      "max_ms": 525.7074,
+      "total_ms": 4422.3188,
+      "steps_at_or_above_100ms": 22
+    },
+    "fast_pfc": {
+      "median_ms": 102.83445,
+      "p95_ms": 130.44117999999997,
+      "max_ms": 448.3217,
+      "total_ms": 2708.8123,
+      "steps_at_or_above_100ms": 18
+    }
+  },
+  "total_control_speedup": 1.6325674540092718,
+  "fast_p95_below_100ms": false,
+  "fast_max_below_100ms": false,
+  "two_life_load_seconds": 3.3513786000003165,
+  "seconds": 67.95891950000077,
+  "records": [
+    {
+      "step": 1,
+      "clock": 10906,
+      "physical_time": 544.899999999577,
+      "muscles": [
+        0.3,
+        0.0,
+        0.0,
+        0.3
+      ],
+      "position": [
+        3.107089767363079,
+        6.095076047369341
+      ],
+      "pfc_active": 284,
+      "E_edges": 487060,
+      "I_strength": 1.0,
+      "source": "spontaneous_muscles",
+      "recalled_time": 10002
+    },
+    {
+      "step": 2,
+      "clock": 10908,
+      "physical_time": 544.9999999995769,
+      "muscles": [
+        0.3,
+        0.0,
+        0.0,
+        0.3
+      ],
+      "position": [
+        3.0945400250929573,
+        6.112122267261938
+      ],
+      "pfc_active": 271,
+      "E_edges": 487092,
+      "I_strength": 1.0,
+      "source": "spontaneous_muscles",
+      "recalled_time": 10550
+    },
+    {
+      "step": 3,
+      "clock": 10910,
+      "physical_time": 545.0999999995768,
+      "muscles": [
+        0.3,
+        0.0,
+        0.0,
+        0.3
+      ],
+      "position": [
+        3.0839308479376473,
+        6.126496299068562
+      ],
+      "pfc_active": 286,
+      "E_edges": 487165,
+      "I_strength": 1.0,
+      "source": "spontaneous_muscles",
+      "recalled_time": 10002
+    },
+    {
+      "step": 4,
+      "clock": 10912,
+      "physical_time": 545.1999999995767,
+      "muscles": [
+        0.3,
+        0.0,
+        0.0,
+        0.3
+      ],
+      "position": [
+        3.0750534027045586,
+        6.138523187774319
+      ],
+      "pfc_active": 287,
+      "E_edges": 487243,
+      "I_strength": 1.0,
+      "source": "spontaneous_muscles",
+      "recalled_time": 10002
+    },
+    {
+      "step": 5,
+      "clock": 10914,
+      "physical_time": 545.2999999995766,
+      "muscles": [
+        0.3,
+        0.0,
+        0.0,
+        0.3
+      ],
+      "position": [
+        3.067631741926065,
+        6.148577955700404
+      ],
+      "pfc_active": 287,
+      "E_edges": 487269,
+      "I_strength": 1.0,
+      "source": "spontaneous_muscles",
+      "recalled_time": 10002
+    },
+    {
+      "step": 6,
+      "clock": 10916,
+      "physical_time": 545.3999999995765,
+      "muscles": [
+        0.3,
+        0.0,
+        0.0,
+        0.3
+      ],
+      "position": [
+        3.0614276146125885,
+        6.156983253946723
+      ],
+      "pfc_active": 283,
+      "E_edges": 487497,
+      "I_strength": 1.0,
+      "source": "spontaneous_muscles",
+      "recalled_time": 10550
+    },
+    {
+      "step": 7,
+      "clock": 10918,
+      "physical_time": 545.4999999995764,
+      "muscles": [
+        0.3,
+        0.0,
+        0.0,
+        0.3
+      ],
+      "position": [
+        3.056241315100437,
+        6.164009611681137
+      ],
+      "pfc_active": 272,
+      "E_edges": 480504,
+      "I_strength": 1.0,
+      "source": "spontaneous_muscles",
+      "recalled_time": 10914
+    },
+    {
+      "step": 8,
+      "clock": 10920,
+      "physical_time": 545.5999999995763,
+      "muscles": [
+        0.3,
+        0.0,
+        0.0,
+        0.3
+      ],
+      "position": [
+        3.05190586408881,
+        6.1698832470012395
+      ],
+      "pfc_active": 282,
+      "E_edges": 480504,
+      "I_strength": 1.0,
+      "source": "spontaneous_muscles",
+      "recalled_time": 10914
+    },
+    {
+      "step": 9,
+      "clock": 10922,
+      "physical_time": 545.6999999995762,
+      "muscles": [
+        0.3,
+        0.0,
+        0.0,
+        0.3
+      ],
+      "position": [
+        3.048281674076486,
+        6.1747932714948535
+      ],
+      "pfc_active": 279,
+      "E_edges": 481080,
+      "I_strength": 1.0,
+      "source": "spontaneous_muscles",
+      "recalled_time": 10554
+    },
+    {
+      "step": 10,
+      "clock": 10924,
+      "physical_time": 545.7999999995761,
+      "muscles": [
+        0.3,
+        0.0,
+        0.0,
+        0.3
+      ],
+      "position": [
+        3.0452520577365862,
+        6.178897772197233
+      ],
+      "pfc_active": 283,
+      "E_edges": 481825,
+      "I_strength": 1.0,
+      "source": "spontaneous_muscles",
+      "recalled_time": 10554
+    },
+    {
+      "step": 11,
+      "clock": 10926,
+      "physical_time": 545.899999999576,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "position": [
+        3.04274962599241,
+        6.182457269684522
+      ],
+      "pfc_active": 284,
+      "E_edges": 482023,
+      "I_strength": 1.0,
+      "source": "pfc_time_motor_recall",
+      "recalled_time": 10554
+    },
+    {
+      "step": 12,
+      "clock": 10928,
+      "physical_time": 545.999999999576,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "position": [
+        3.04077715843532,
+        6.185817752394759
+      ],
+      "pfc_active": 284,
+      "E_edges": 482023,
+      "I_strength": 1.0,
+      "source": "pfc_time_motor_recall",
+      "recalled_time": 10554
+    },
+    {
+      "step": 13,
+      "clock": 10930,
+      "physical_time": 546.0999999995759,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "position": [
+        3.0393027119987206,
+        6.189042909332813
+      ],
+      "pfc_active": 284,
+      "E_edges": 482023,
+      "I_strength": 1.0,
+      "source": "pfc_time_motor_recall",
+      "recalled_time": 10554
+    },
+    {
+      "step": 14,
+      "clock": 10932,
+      "physical_time": 546.1999999995758,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "position": [
+        3.0382842397585588,
+        6.192140505513905
+      ],
+      "pfc_active": 284,
+      "E_edges": 482023,
+      "I_strength": 1.0,
+      "source": "pfc_time_motor_recall",
+      "recalled_time": 10554
+    },
+    {
+      "step": 15,
+      "clock": 10934,
+      "physical_time": 546.2999999995757,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "position": [
+        3.037681931178596,
+        6.195111160640059
+      ],
+      "pfc_active": 279,
+      "E_edges": 482023,
+      "I_strength": 1.0,
+      "source": "pfc_time_motor_recall",
+      "recalled_time": 10554
+    },
+    {
+      "step": 16,
+      "clock": 10936,
+      "physical_time": 546.3999999995756,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "position": [
+        3.0374596817929405,
+        6.197952672354095
+      ],
+      "pfc_active": 279,
+      "E_edges": 482023,
+      "I_strength": 1.0,
+      "source": "pfc_time_motor_recall",
+      "recalled_time": 10554
+    },
+    {
+      "step": 17,
+      "clock": 10938,
+      "physical_time": 546.4999999995755,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "position": [
+        3.037584846603505,
+        6.200660776332361
+      ],
+      "pfc_active": 287,
+      "E_edges": 482074,
+      "I_strength": 1.0,
+      "source": "pfc_time_motor_recall",
+      "recalled_time": 10554
+    },
+    {
+      "step": 18,
+      "clock": 10940,
+      "physical_time": 546.5999999995754,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "position": [
+        3.0380276951050327,
+        6.2032296098868605
+      ],
+      "pfc_active": 287,
+      "E_edges": 482137,
+      "I_strength": 1.0,
+      "source": "pfc_time_motor_recall",
+      "recalled_time": 10554
+    },
+    {
+      "step": 19,
+      "clock": 10942,
+      "physical_time": 546.6999999995753,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "position": [
+        3.038760842725143,
+        6.205652128950152
+      ],
+      "pfc_active": 286,
+      "E_edges": 482137,
+      "I_strength": 1.0,
+      "source": "pfc_time_motor_recall",
+      "recalled_time": 10554
+    },
+    {
+      "step": 20,
+      "clock": 10944,
+      "physical_time": 546.7999999995752,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "position": [
+        3.0397587362229888,
+        6.207920490767737
+      ],
+      "pfc_active": 286,
+      "E_edges": 482137,
+      "I_strength": 1.0,
+      "source": "pfc_time_motor_recall",
+      "recalled_time": 10554
+    },
+    {
+      "step": 21,
+      "clock": 10946,
+      "physical_time": 546.8999999995751,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "position": [
+        3.0409972162297927,
+        6.210026399837787
+      ],
+      "pfc_active": 286,
+      "E_edges": 482137,
+      "I_strength": 1.0,
+      "source": "pfc_time_motor_recall",
+      "recalled_time": 10554
+    },
+    {
+      "step": 22,
+      "clock": 10948,
+      "physical_time": 546.999999999575,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "position": [
+        3.0424531595438866,
+        6.211961416534162
+      ],
+      "pfc_active": 286,
+      "E_edges": 482137,
+      "I_strength": 1.0,
+      "source": "pfc_time_motor_recall",
+      "recalled_time": 10554
+    },
+    {
+      "step": 23,
+      "clock": 10950,
+      "physical_time": 547.099999999575,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "position": [
+        3.0441041956523622,
+        6.213717229783161
+      ],
+      "pfc_active": 286,
+      "E_edges": 482137,
+      "I_strength": 1.0,
+      "source": "pfc_time_motor_recall",
+      "recalled_time": 10554
+    },
+    {
+      "step": 24,
+      "clock": 10952,
+      "physical_time": 547.1999999995749,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "position": [
+        3.045928489180183,
+        6.215285896143482
+      ],
+      "pfc_active": 286,
+      "E_edges": 482137,
+      "I_strength": 1.0,
+      "source": "pfc_time_motor_recall",
+      "recalled_time": 10554
+    }
+  ],
+  "protected_hashes": {
+    "F:\\一种AGI架构\\原架构闭环\\results\\active_body_additive_600.npz": "30ed4050c59349fcb8a9d3f2551437839d3665ffc19db068f740a441d3ae64d7",
+    "F:\\一种AGI架构\\原架构闭环\\brain.py": "9440c41fd3aeaaa1573ceb829beeef0e350583e6b5edf89f8be054fd92ce832b",
+    "F:\\一种AGI架构\\原架构闭环\\original_runtime.py": "89468008148912f94c06409f8a6637fb067eb4216c55db58a87cc30c97008a01",
+    "F:\\一种AGI架构\\原架构闭环\\viewer.py": "5c3231310cbeacda9b47b45dde20a47659c070dbb52f46f6ba2825bfb214b2b4",
+    "F:\\一种AGI架构\\原架构闭环\\fast_pfc_currents.py": "3b152c93f0478a3540f0a0761258b584f22358a7e5773b7989bf9d5bb90c9a58",
+    "F:\\一种AGI架构\\原架构闭环\\contact_reflex.py": "fa6c82dae8270f2b991f321b114884a13db231bd9726c55a09887ed871e57094"
+  },
+  "limits": [
+    "Timing includes act, real physics, outcome, and online learning; excludes verification and checkpoint IO.",
+    "This is a fixed short continuation of the saved life, without rescheduling stimuli. It is evidence for this window, not a perpetual 10Hz guarantee."
+  ],
+  "script_sha256": "160df84212479df54ff7e74b3a98ed6d780a23e419d3f14ff10d0757d5f9521d"
+}

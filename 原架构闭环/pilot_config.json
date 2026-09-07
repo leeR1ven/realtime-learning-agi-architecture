@@ -1,0 +1,12 @@
+{
+  "sensory_threshold": 0.6,
+  "visual_threshold": 0.58,
+  "audio_threshold": 0.52,
+  "motor_threshold": 0.52,
+  "contrast_to_silence": true,
+  "pfc_spread": 2,
+  "pfc_hidden_threshold": 0.5,
+  "pfc_output_threshold": 0.6,
+  "pfc_hebb_increment": 0.005,
+  "index_threshold": 0.9
+}

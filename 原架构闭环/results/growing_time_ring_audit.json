@@ -1,0 +1,104 @@
+{
+  "kind": "optional_single_growing_time_ring_audit_v1",
+  "passed": true,
+  "growth_cases": [
+    {
+      "initial_capacity": 1,
+      "steps_per_frame": 1,
+      "capacities": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "final_time": 36,
+      "old_time_rows_unchanged": true,
+      "all_recorded_frames_distinct": true
+    },
+    {
+      "initial_capacity": 2,
+      "steps_per_frame": 2,
+      "capacities": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128
+      ],
+      "final_time": 72,
+      "old_time_rows_unchanged": true,
+      "all_recorded_frames_distinct": true
+    },
+    {
+      "initial_capacity": 3,
+      "steps_per_frame": 2,
+      "capacities": [
+        3,
+        6,
+        12,
+        24,
+        48,
+        96
+      ],
+      "final_time": 72,
+      "old_time_rows_unchanged": true,
+      "all_recorded_frames_distinct": true
+    },
+    {
+      "initial_capacity": 5,
+      "steps_per_frame": 3,
+      "capacities": [
+        5,
+        10,
+        20,
+        40,
+        80,
+        160
+      ],
+      "final_time": 108,
+      "old_time_rows_unchanged": true,
+      "all_recorded_frames_distinct": true
+    },
+    {
+      "initial_capacity": 8,
+      "steps_per_frame": 9,
+      "capacities": [
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        512
+      ],
+      "final_time": 324,
+      "old_time_rows_unchanged": true,
+      "all_recorded_frames_distinct": true
+    }
+  ],
+  "standalone_transitions": 24,
+  "allocation_failure_precedes_mutation": true,
+  "fixed_original_class_and_wrap_preserved": true,
+  "old_snapshot_without_policy_round_trip_exact": true,
+  "policy_switch_preserves_entire_existing_state": true,
+  "safe_npz_resume_learning_steps_exact": 39,
+  "post_growth_safe_npz_round_trip_exact": true,
+  "read_only_recall_has_no_frontier_wrap": true,
+  "frozen_clock_continues_without_new_connections": true,
+  "invalid_inputs_rejected": 5,
+  "protected_source_and_default_life_hashes_unchanged": {
+    "F:\\一种AGI架构\\海马体时间区.py": "0750490f9487a6035c288b3f3076e81fb1b13d114f31f9c6fc2695f908008bd7",
+    "F:\\一种AGI架构\\视觉记忆区.py": "1ddcd0182e6ae1ec8417ca6946ed00d78218885e63ac50bf63e9527187520818",
+    "F:\\一种AGI架构\\听觉记忆区.py": "12842a94eec6522051bac336b6543de7facccd69b2cb215c62c22fb67e4bf888",
+    "F:\\一种AGI架构\\运动记忆区.py": "61fe384657140946058f1bb74cf12e2f94e2d2e060676930a756499150c45c09",
+    "F:\\一种AGI架构\\前额叶区.py": "5087a9ce13ce6b727db27b8f6ae73f539f143115fdee0ae4b681acf7267a7b02",
+    "F:\\一种AGI架构\\权重连接管理.py": "408076efa5e27ab60cfc0dd0680abbc84571155d261e339835914fd768512d9d",
+    "F:\\一种AGI架构\\原架构闭环\\results\\living_original.npz": "30ed4050c59349fcb8a9d3f2551437839d3665ffc19db068f740a441d3ae64d7"
+  },
+  "limitation": "Optional engineering capacity policy. Finite machine memory still limits duration; existing fixed-ring collisions are not repaired. No navigation claim."
+}

@@ -1,0 +1,5759 @@
+{
+  "passed": true,
+  "checkpoint": "F:\\一种AGI架构\\原架构闭环\\results\\active_body_additive_600.npz",
+  "loaded_life_instances": 1,
+  "actual_learning_steps": 180,
+  "no_snapshots_clones_serialization_or_recall_assessment_during_measurement": true,
+  "no_parameter_or_gc_configuration_changes": true,
+  "no_warmup_or_slow_frames_removed": true,
+  "temporary_experience_not_saved": true,
+  "teacher_actions": 0,
+  "rewards": 0,
+  "load_seconds": 1.678395200000523,
+  "starts": {
+    "control_steps": 5448,
+    "clock": 10904,
+    "sensory_frames": 5452,
+    "internal_steps": 10904,
+    "physical_time": 544.799999999577,
+    "position": [
+      3.1202774399626567,
+      6.076396240386978
+    ],
+    "one_active_time_cell": 1,
+    "thought_count": 284,
+    "E_edges": 486657
+  },
+  "ends": {
+    "control_steps": 5628,
+    "clock": 11264,
+    "sensory_frames": 5632,
+    "internal_steps": 11264,
+    "physical_time": 562.7999999995607,
+    "position": [
+      2.31051675368581,
+      3.3676507902195563
+    ],
+    "one_active_time_cell": 1,
+    "thought_count": 298,
+    "E_edges": 450885
+  },
+  "all_180_steps": {
+    "steps": 180,
+    "median_ms": 79.3696,
+    "mean_ms": 87.9038777777778,
+    "p95_ms": 120.57552999999997,
+    "max_ms": 465.3865,
+    "total_control_ms": 15822.698000000004,
+    "steps_at_or_above_100ms": 84,
+    "steps_with_gc": 2,
+    "gc_ms_inside_steps": 0.7423
+  },
+  "first_30_steps": {
+    "steps": 30,
+    "median_ms": 58.8669,
+    "mean_ms": 65.49540333333333,
+    "p95_ms": 74.39279999999998,
+    "max_ms": 245.1638,
+    "total_control_ms": 1964.8620999999998,
+    "steps_at_or_above_100ms": 1,
+    "steps_with_gc": 0,
+    "gc_ms_inside_steps": 0
+  },
+  "last_150_steps": {
+    "steps": 150,
+    "median_ms": 106.03389999999999,
+    "mean_ms": 92.38557266666668,
+    "p95_ms": 121.24682999999997,
+    "max_ms": 465.3865,
+    "total_control_ms": 13857.835900000002,
+    "steps_at_or_above_100ms": 83,
+    "steps_with_gc": 2,
+    "gc_ms_inside_steps": 0.7423
+  },
+  "with_gc_steps": {
+    "steps": 2,
+    "median_ms": 84.34655000000001,
+    "mean_ms": 84.34655000000001,
+    "p95_ms": 106.007345,
+    "max_ms": 108.4141,
+    "total_control_ms": 168.69310000000002,
+    "steps_at_or_above_100ms": 1,
+    "steps_with_gc": 2,
+    "gc_ms_inside_steps": 0.7423
+  },
+  "without_gc_steps": {
+    "steps": 178,
+    "median_ms": 79.3696,
+    "mean_ms": 87.94384775280899,
+    "p95_ms": 120.70979,
+    "max_ms": 465.3865,
+    "total_control_ms": 15654.004900000002,
+    "steps_at_or_above_100ms": 83,
+    "steps_with_gc": 0,
+    "gc_ms_inside_steps": 0
+  },
+  "gc_configuration": {
+    "enabled": true,
+    "thresholds": [
+      2000,
+      10,
+      10
+    ],
+    "initial_counts": [
+      2,
+      2,
+      9
+    ],
+    "initial_stats": [
+      {
+        "collections": 101,
+        "collected": 41399,
+        "uncollectable": 0
+      },
+      {
+        "collections": 9,
+        "collected": 5045,
+        "uncollectable": 0
+      },
+      {
+        "collections": 0,
+        "collected": 0,
+        "uncollectable": 0
+      }
+    ]
+  },
+  "gc_events": [
+    {
+      "step_at_start": 71,
+      "step_at_end": 71,
+      "generation": 0,
+      "duration_ms": 0.41,
+      "collected": 0,
+      "uncollectable": 0
+    },
+    {
+      "step_at_start": 139,
+      "step_at_end": 139,
+      "generation": 0,
+      "duration_ms": 0.3323,
+      "collected": 0,
+      "uncollectable": 0
+    }
+  ],
+  "gc_ms_between_steps": 0,
+  "total_measured_loop_wall_ms": 15829.2549,
+  "loop_wall_control_hz": 11.371350144851101,
+  "physical_seconds": 18.0,
+  "physical_path_length": 3.2935408467444636,
+  "net_displacement": 2.8271919430491903,
+  "contact_steps": 0,
+  "p95_below_100ms": false,
+  "max_below_100ms": false,
+  "step_records": [
+    {
+      "step": 1,
+      "latency_ms": 54.0248,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 10906,
+      "physical_time": 544.899999999577,
+      "position": [
+        3.107089767363079,
+        6.095076047369341
+      ],
+      "heading": -0.7671514891581346,
+      "path_increment": 0.022865911254354124,
+      "muscles": [
+        0.3,
+        0.0,
+        0.0,
+        0.3
+      ],
+      "source": "spontaneous_muscles",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 284,
+      "E_edges": 487060
+    },
+    {
+      "step": 2,
+      "latency_ms": 52.0072,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 10908,
+      "physical_time": 544.9999999995769,
+      "position": [
+        3.0945400250929573,
+        6.112122267261938
+      ],
+      "heading": -0.8383029048104027,
+      "path_increment": 0.021167655601725347,
+      "muscles": [
+        0.3,
+        0.0,
+        0.0,
+        0.3
+      ],
+      "source": "spontaneous_muscles",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 271,
+      "E_edges": 487092
+    },
+    {
+      "step": 3,
+      "latency_ms": 59.9766,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 10910,
+      "physical_time": 545.0999999995768,
+      "position": [
+        3.0839308479376473,
+        6.126496299068562
+      ],
+      "heading": -0.9341754223553811,
+      "path_increment": 0.01786525763291967,
+      "muscles": [
+        0.3,
+        0.0,
+        0.0,
+        0.3
+      ],
+      "source": "spontaneous_muscles",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 286,
+      "E_edges": 487165
+    },
+    {
+      "step": 4,
+      "latency_ms": 54.4009,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 10912,
+      "physical_time": 545.1999999995767,
+      "position": [
+        3.0750534027045586,
+        6.138523187774319
+      ],
+      "heading": -1.042474297515703,
+      "path_increment": 0.01494841415693132,
+      "muscles": [
+        0.3,
+        0.0,
+        0.0,
+        0.3
+      ],
+      "source": "spontaneous_muscles",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 287,
+      "E_edges": 487243
+    },
+    {
+      "step": 5,
+      "latency_ms": 55.6385,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 10914,
+      "physical_time": 545.2999999995766,
+      "position": [
+        3.067631741926065,
+        6.148577955700404
+      ],
+      "heading": -1.1568169395789916,
+      "path_increment": 0.01249717595132806,
+      "muscles": [
+        0.3,
+        0.0,
+        0.0,
+        0.3
+      ],
+      "source": "spontaneous_muscles",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 287,
+      "E_edges": 487269
+    },
+    {
+      "step": 6,
+      "latency_ms": 53.8494,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 10916,
+      "physical_time": 545.3999999995765,
+      "position": [
+        3.0614276146125885,
+        6.156983253946723
+      ],
+      "heading": -1.2740830913508503,
+      "path_increment": 0.010447020356608779,
+      "muscles": [
+        0.3,
+        0.0,
+        0.0,
+        0.3
+      ],
+      "source": "spontaneous_muscles",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 283,
+      "E_edges": 487497
+    },
+    {
+      "step": 7,
+      "latency_ms": 77.9424,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 10918,
+      "physical_time": 545.4999999995764,
+      "position": [
+        3.056241315100437,
+        6.164009611681137
+      ],
+      "heading": -1.3927621093931342,
+      "path_increment": 0.008733121185561785,
+      "muscles": [
+        0.3,
+        0.0,
+        0.0,
+        0.3
+      ],
+      "source": "spontaneous_muscles",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 272,
+      "E_edges": 480504
+    },
+    {
+      "step": 8,
+      "latency_ms": 56.9776,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 10920,
+      "physical_time": 545.5999999995763,
+      "position": [
+        3.05190586408881,
+        6.1698832470012395
+      ],
+      "heading": -1.5121238269888382,
+      "path_increment": 0.007300392273554409,
+      "muscles": [
+        0.3,
+        0.0,
+        0.0,
+        0.3
+      ],
+      "source": "spontaneous_muscles",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 282,
+      "E_edges": 480504
+    },
+    {
+      "step": 9,
+      "latency_ms": 56.9307,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 10922,
+      "physical_time": 545.6999999995762,
+      "position": [
+        3.048281674076486,
+        6.1747932714948535
+      ],
+      "heading": -1.631815417483645,
+      "path_increment": 0.006102712001505398,
+      "muscles": [
+        0.3,
+        0.0,
+        0.0,
+        0.3
+      ],
+      "source": "spontaneous_muscles",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 279,
+      "E_edges": 481080
+    },
+    {
+      "step": 10,
+      "latency_ms": 70.0544,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 10924,
+      "physical_time": 545.7999999995761,
+      "position": [
+        3.0452520577365862,
+        6.178897772197233
+      ],
+      "heading": -1.7516663982075766,
+      "path_increment": 0.00510151949744627,
+      "muscles": [
+        0.3,
+        0.0,
+        0.0,
+        0.3
+      ],
+      "source": "spontaneous_muscles",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 283,
+      "E_edges": 481825
+    },
+    {
+      "step": 11,
+      "latency_ms": 58.4569,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 10926,
+      "physical_time": 545.899999999576,
+      "position": [
+        3.04274962599241,
+        6.182457269684522
+      ],
+      "heading": -1.8657749346668515,
+      "path_increment": 0.004351113305382416,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 284,
+      "E_edges": 482023
+    },
+    {
+      "step": 12,
+      "latency_ms": 59.1653,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 10928,
+      "physical_time": 545.999999999576,
+      "position": [
+        3.04077715843532,
+        6.185817752394759
+      ],
+      "heading": -1.966704528523379,
+      "path_increment": 0.003896597529842521,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 284,
+      "E_edges": 482023
+    },
+    {
+      "step": 13,
+      "latency_ms": 59.1499,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 10930,
+      "physical_time": 546.0999999995759,
+      "position": [
+        3.0393027119987206,
+        6.189042909332813
+      ],
+      "heading": -2.0595545585294754,
+      "path_increment": 0.0035462134128502335,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 284,
+      "E_edges": 482023
+    },
+    {
+      "step": 14,
+      "latency_ms": 245.1638,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 10932,
+      "physical_time": 546.1999999995758,
+      "position": [
+        3.0382842397585588,
+        6.192140505513905
+      ],
+      "heading": -2.148360150432235,
+      "path_increment": 0.0032607342432484383,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 284,
+      "E_edges": 482023
+    },
+    {
+      "step": 15,
+      "latency_ms": 58.0902,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 10934,
+      "physical_time": 546.2999999995757,
+      "position": [
+        3.037681931178596,
+        6.195111160640059
+      ],
+      "heading": -2.235199991852671,
+      "path_increment": 0.0030311000485046882,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 279,
+      "E_edges": 482023
+    },
+    {
+      "step": 16,
+      "latency_ms": 56.8813,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 10936,
+      "physical_time": 546.3999999995756,
+      "position": [
+        3.0374596817929405,
+        6.197952672354095
+      ],
+      "heading": -2.321089062771226,
+      "path_increment": 0.0028501901007522827,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 279,
+      "E_edges": 482023
+    },
+    {
+      "step": 17,
+      "latency_ms": 59.2177,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 10938,
+      "physical_time": 546.4999999995755,
+      "position": [
+        3.037584846603505,
+        6.200660776332361
+      ],
+      "heading": -2.406518656651879,
+      "path_increment": 0.002710994907207425,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 287,
+      "E_edges": 482074
+    },
+    {
+      "step": 18,
+      "latency_ms": 58.3346,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 10940,
+      "physical_time": 546.5999999995754,
+      "position": [
+        3.0380276951050327,
+        6.2032296098868605
+      ],
+      "heading": -2.491726231121176,
+      "path_increment": 0.002606726035859356,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 287,
+      "E_edges": 482137
+    },
+    {
+      "step": 19,
+      "latency_ms": 61.908,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 10942,
+      "physical_time": 546.6999999995753,
+      "position": [
+        3.038760842725143,
+        6.205652128950152
+      ],
+      "heading": -2.5768265283180245,
+      "path_increment": 0.002531028258412455,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 286,
+      "E_edges": 482137
+    },
+    {
+      "step": 20,
+      "latency_ms": 60.341,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 10944,
+      "physical_time": 546.7999999995752,
+      "position": [
+        3.0397587362229888,
+        6.207920490767737
+      ],
+      "heading": -2.661874990558257,
+      "path_increment": 0.0024781559209467226,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 286,
+      "E_edges": 482137
+    },
+    {
+      "step": 21,
+      "latency_ms": 58.4525,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 10946,
+      "physical_time": 546.8999999995751,
+      "position": [
+        3.0409972162297927,
+        6.210026399837787
+      ],
+      "heading": -2.7468984068515088,
+      "path_increment": 0.002443089384073101,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 286,
+      "E_edges": 482137
+    },
+    {
+      "step": 22,
+      "latency_ms": 60.2804,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 10948,
+      "physical_time": 546.999999999575,
+      "position": [
+        3.0424531595438866,
+        6.211961416534162
+      ],
+      "heading": -2.8319097212847844,
+      "path_increment": 0.0024215822408306603,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 286,
+      "E_edges": 482137
+    },
+    {
+      "step": 23,
+      "latency_ms": 60.8556,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 10950,
+      "physical_time": 547.099999999575,
+      "position": [
+        3.0441041956523622,
+        6.213717229783161
+      ],
+      "heading": -2.9169151882644946,
+      "path_increment": 0.0024101453061694555,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 286,
+      "E_edges": 482137
+    },
+    {
+      "step": 24,
+      "latency_ms": 61.2649,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 10952,
+      "physical_time": 547.1999999995749,
+      "position": [
+        3.045928489180183,
+        6.215285896143482
+      ],
+      "heading": -3.0019178298344626,
+      "path_increment": 0.002405984419245035,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 286,
+      "E_edges": 482137
+    },
+    {
+      "step": 25,
+      "latency_ms": 58.6929,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 10954,
+      "physical_time": 547.2999999995748,
+      "position": [
+        3.047904579530201,
+        6.216660047954151
+      ],
+      "heading": -3.086919106205013,
+      "path_increment": 0.002406912185809852,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 286,
+      "E_edges": 482137
+    },
+    {
+      "step": 26,
+      "latency_ms": 58.6965,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 10956,
+      "physical_time": 547.3999999995747,
+      "position": [
+        3.050011269489668,
+        6.217833073162822
+      ],
+      "heading": 3.1112655842497468,
+      "path_increment": 0.0024112508632443412,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 286,
+      "E_edges": 482137
+    },
+    {
+      "step": 27,
+      "latency_ms": 61.5542,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 10958,
+      "physical_time": 547.4999999995746,
+      "position": [
+        3.0522275554141114,
+        6.2187992692216865
+      ],
+      "heading": 3.026265286256729,
+      "path_increment": 0.0024177382246742558,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 286,
+      "E_edges": 482137
+    },
+    {
+      "step": 28,
+      "latency_ms": 59.0373,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 10960,
+      "physical_time": 547.5999999995745,
+      "position": [
+        3.054532592484856,
+        6.2195539731535066
+      ],
+      "heading": 2.941265142270569,
+      "path_increment": 0.0024254430362741926,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 286,
+      "E_edges": 482137
+    },
+    {
+      "step": 29,
+      "latency_ms": 59.098,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 10962,
+      "physical_time": 547.6999999995744,
+      "position": [
+        3.0569056893619773,
+        6.2200936696054345
+      ],
+      "heading": 2.856265072698423,
+      "path_increment": 0.00243369288293058,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 283,
+      "E_edges": 482137
+    },
+    {
+      "step": 30,
+      "latency_ms": 58.4186,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 10964,
+      "physical_time": 547.7999999995743,
+      "position": [
+        3.0593263272836912,
+        6.220416078451743
+      ],
+      "heading": 2.7712650390821096,
+      "path_increment": 0.0024420146216224416,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 279,
+      "E_edges": 482137
+    },
+    {
+      "step": 31,
+      "latency_ms": 56.8831,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 10966,
+      "physical_time": 547.8999999995742,
+      "position": [
+        3.061774199291371,
+        6.220520223289113
+      ],
+      "heading": 2.686265022839166,
+      "path_increment": 0.002450086429727284,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 280,
+      "E_edges": 482137
+    },
+    {
+      "step": 32,
+      "latency_ms": 80.7968,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 10968,
+      "physical_time": 547.9999999995741,
+      "position": [
+        3.064229265794577,
+        6.220406481991627
+      ],
+      "heading": 2.6012650149907977,
+      "path_increment": 0.002457699863270055,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 277,
+      "E_edges": 478804
+    },
+    {
+      "step": 33,
+      "latency_ms": 57.6523,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 10970,
+      "physical_time": 548.099999999574,
+      "position": [
+        3.0666718231446795,
+        6.220076620354403
+      ],
+      "heading": 2.5162650111985716,
+      "path_increment": 0.0024647302303195035,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 277,
+      "E_edges": 478804
+    },
+    {
+      "step": 34,
+      "latency_ms": 62.4679,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 10972,
+      "physical_time": 548.199999999574,
+      "position": [
+        3.0690825822715837,
+        6.219533809750701
+      ],
+      "heading": 2.4312650093662214,
+      "path_increment": 0.0024711137002257117,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 277,
+      "E_edges": 478804
+    },
+    {
+      "step": 35,
+      "latency_ms": 57.1136,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 10974,
+      "physical_time": 548.2999999995739,
+      "position": [
+        3.0714427547669727,
+        6.2187826296524085
+      ],
+      "heading": 2.346265008480854,
+      "path_increment": 0.0024768297777728013,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 277,
+      "E_edges": 478804
+    },
+    {
+      "step": 36,
+      "latency_ms": 57.4081,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 10976,
+      "physical_time": 548.3999999995738,
+      "position": [
+        3.0737341440797623,
+        6.217829055813355
+      ],
+      "heading": 2.261265008053055,
+      "path_increment": 0.002481888000956896,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 277,
+      "E_edges": 478804
+    },
+    {
+      "step": 37,
+      "latency_ms": 56.6244,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 10978,
+      "physical_time": 548.4999999995737,
+      "position": [
+        3.0759392397334744,
+        6.2166804348845845
+      ],
+      "heading": 2.1762650078463484,
+      "path_increment": 0.002486317936232028,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 277,
+      "E_edges": 478804
+    },
+    {
+      "step": 38,
+      "latency_ms": 57.6285,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 10980,
+      "physical_time": 548.5999999995736,
+      "position": [
+        3.078041312688336,
+        6.215345446216656
+      ],
+      "heading": 2.091265007746471,
+      "path_increment": 0.0024901617319079143,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 277,
+      "E_edges": 478804
+    },
+    {
+      "step": 39,
+      "latency_ms": 57.5487,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 10982,
+      "physical_time": 548.6999999995735,
+      "position": [
+        3.0800245101589714,
+        6.213834051602807
+      ],
+      "heading": 2.006265007698211,
+      "path_increment": 0.0024934686455431103,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 277,
+      "E_edges": 478804
+    },
+    {
+      "step": 40,
+      "latency_ms": 58.2616,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 10984,
+      "physical_time": 548.7999999995734,
+      "position": [
+        3.0818739483666704,
+        6.212157433725517
+      ],
+      "heading": 1.921265007674891,
+      "path_increment": 0.0024962910869015015,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 277,
+      "E_edges": 478804
+    },
+    {
+      "step": 41,
+      "latency_ms": 58.1672,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 10986,
+      "physical_time": 548.8999999995733,
+      "position": [
+        3.083575801857326,
+        6.210327924085008
+      ],
+      "heading": 1.8362650076636218,
+      "path_increment": 0.00249868181815392,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 279,
+      "E_edges": 478804
+    },
+    {
+      "step": 42,
+      "latency_ms": 60.3165,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 10988,
+      "physical_time": 548.9999999995732,
+      "position": [
+        3.0851173881556577,
+        6.208358921209396
+      ],
+      "heading": 1.7512650076581764,
+      "path_increment": 0.002500692032092487,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 277,
+      "E_edges": 478804
+    },
+    {
+      "step": 43,
+      "latency_ms": 58.9081,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 10990,
+      "physical_time": 549.0999999995731,
+      "position": [
+        3.086487246655867,
+        6.206264799970529
+      ],
+      "heading": 1.666265007655543,
+      "path_increment": 0.0025023700912676326,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 277,
+      "E_edges": 478804
+    },
+    {
+      "step": 44,
+      "latency_ms": 57.2275,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 10992,
+      "physical_time": 549.199999999573,
+      "position": [
+        3.0876752107706795,
+        6.204060812855474
+      ],
+      "heading": 1.581265007654273,
+      "path_increment": 0.002503760759619835,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 277,
+      "E_edges": 478804
+    },
+    {
+      "step": 45,
+      "latency_ms": 59.8821,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 10994,
+      "physical_time": 549.299999999573,
+      "position": [
+        3.088672472476397,
+        6.201762984069729
+      ],
+      "heading": 1.496265007653661,
+      "path_increment": 0.0025049047962520253,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 277,
+      "E_edges": 478804
+    },
+    {
+      "step": 46,
+      "latency_ms": 57.4626,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 10996,
+      "physical_time": 549.3999999995729,
+      "position": [
+        3.089471638502481,
+        6.19938799737314
+      ],
+      "heading": 1.4112650076533626,
+      "path_increment": 0.0025058388109018195,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 277,
+      "E_edges": 478804
+    },
+    {
+      "step": 47,
+      "latency_ms": 58.8012,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 10998,
+      "physical_time": 549.4999999995728,
+      "position": [
+        3.090066777521381,
+        6.196953078572477
+      ],
+      "heading": 1.326265007653217,
+      "path_increment": 0.002506595303921179,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 277,
+      "E_edges": 478804
+    },
+    {
+      "step": 48,
+      "latency_ms": 59.492,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11000,
+      "physical_time": 549.5999999995727,
+      "position": [
+        3.090453457798408,
+        6.194475873614441
+      ],
+      "heading": 1.2412650076531477,
+      "path_increment": 0.002507202831994433,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 277,
+      "E_edges": 478804
+    },
+    {
+      "step": 49,
+      "latency_ms": 57.9919,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11002,
+      "physical_time": 549.6999999995726,
+      "position": [
+        3.0906287748630996,
+        6.191974323239005
+      ],
+      "heading": 1.1562650076531131,
+      "path_increment": 0.0025076862550992467,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 277,
+      "E_edges": 478804
+    },
+    {
+      "step": 50,
+      "latency_ms": 58.6798,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11004,
+      "physical_time": 549.7999999995725,
+      "position": [
+        3.090591368862872,
+        6.189466535164813
+      ],
+      "heading": 1.071265007653098,
+      "path_increment": 0.002508067031383623,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 291,
+      "E_edges": 479210
+    },
+    {
+      "step": 51,
+      "latency_ms": 61.2076,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11006,
+      "physical_time": 549.8999999995724,
+      "position": [
+        3.0904087165047334,
+        6.18708408473744
+      ],
+      "heading": 0.9804455481934227,
+      "path_increment": 0.002389441759663927,
+      "muscles": [
+        0.3,
+        0.0,
+        0.0,
+        0.3
+      ],
+      "source": "spontaneous_muscles",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 291,
+      "E_edges": 479607
+    },
+    {
+      "step": 52,
+      "latency_ms": 60.0816,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11008,
+      "physical_time": 549.9999999995723,
+      "position": [
+        3.090228412012171,
+        6.185048081441848
+      ],
+      "heading": 0.8764099334390956,
+      "path_increment": 0.0020439714111744845,
+      "muscles": [
+        0.3,
+        0.0,
+        0.0,
+        0.3
+      ],
+      "source": "spontaneous_muscles",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 283,
+      "E_edges": 479607
+    },
+    {
+      "step": 53,
+      "latency_ms": 63.4453,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11010,
+      "physical_time": 550.0999999995722,
+      "position": [
+        3.090075070943007,
+        6.183342696484392
+      ],
+      "heading": 0.7642767741695056,
+      "path_increment": 0.0017122649726636645,
+      "muscles": [
+        0.3,
+        0.0,
+        0.0,
+        0.3
+      ],
+      "source": "spontaneous_muscles",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 280,
+      "E_edges": 479685
+    },
+    {
+      "step": 54,
+      "latency_ms": 60.057,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11012,
+      "physical_time": 550.1999999995721,
+      "position": [
+        3.089946642548096,
+        6.181916837725527
+      ],
+      "heading": 0.6480904887847743,
+      "path_increment": 0.0014316309066408764,
+      "muscles": [
+        0.3,
+        0.0,
+        0.0,
+        0.3
+      ],
+      "source": "spontaneous_muscles",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 289,
+      "E_edges": 479937
+    },
+    {
+      "step": 55,
+      "latency_ms": 60.217,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11014,
+      "physical_time": 550.299999999572,
+      "position": [
+        3.0898392614417642,
+        6.180724882625481
+      ],
+      "heading": 0.5299342549890169,
+      "path_increment": 0.0011967822118180045,
+      "muscles": [
+        0.3,
+        0.0,
+        0.0,
+        0.3
+      ],
+      "source": "spontaneous_muscles",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 289,
+      "E_edges": 479986
+    },
+    {
+      "step": 56,
+      "latency_ms": 59.5407,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11016,
+      "physical_time": 550.399999999572,
+      "position": [
+        3.0897494949615525,
+        6.179728474793312
+      ],
+      "heading": 0.410825222309529,
+      "path_increment": 0.0010004431962768972,
+      "muscles": [
+        0.3,
+        0.0,
+        0.0,
+        0.3
+      ],
+      "source": "spontaneous_muscles",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 286,
+      "E_edges": 479986
+    },
+    {
+      "step": 57,
+      "latency_ms": 83.8426,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11018,
+      "physical_time": 550.4999999995719,
+      "position": [
+        3.089674455124039,
+        6.178895534536499
+      ],
+      "heading": 0.291255732505721,
+      "path_increment": 0.0008363136066293733,
+      "muscles": [
+        0.3,
+        0.0,
+        0.0,
+        0.3
+      ],
+      "source": "spontaneous_muscles",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 279,
+      "E_edges": 469632
+    },
+    {
+      "step": 58,
+      "latency_ms": 57.7383,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11020,
+      "physical_time": 550.5999999995718,
+      "position": [
+        3.089611726080627,
+        6.178199243938396
+      ],
+      "heading": 0.17146374972617728,
+      "path_increment": 0.0006991105276668134,
+      "muscles": [
+        0.3,
+        0.0,
+        0.0,
+        0.3
+      ],
+      "source": "spontaneous_muscles",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 279,
+      "E_edges": 469632
+    },
+    {
+      "step": 59,
+      "latency_ms": 91.8731,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11022,
+      "physical_time": 550.6999999995717,
+      "position": [
+        3.0895592881734215,
+        6.177617184673504
+      ],
+      "heading": 0.051564260854341626,
+      "path_increment": 0.0005844165654384791,
+      "muscles": [
+        0.3,
+        0.0,
+        0.0,
+        0.3
+      ],
+      "source": "spontaneous_muscles",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 286,
+      "E_edges": 469666
+    },
+    {
+      "step": 60,
+      "latency_ms": 88.6381,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11024,
+      "physical_time": 550.7999999995716,
+      "position": [
+        3.089515453070861,
+        6.177130616294419
+      ],
+      "heading": -0.06838717353673385,
+      "path_increment": 0.0004885389480293162,
+      "muscles": [
+        0.3,
+        0.0,
+        0.0,
+        0.3
+      ],
+      "source": "spontaneous_muscles",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 279,
+      "E_edges": 469698
+    },
+    {
+      "step": 61,
+      "latency_ms": 57.8718,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11026,
+      "physical_time": 550.8999999995715,
+      "position": [
+        3.089478809422883,
+        6.176723872854708
+      ],
+      "heading": -0.1883637072971429,
+      "path_increment": 0.00040839072306486033,
+      "muscles": [
+        0.3,
+        0.0,
+        0.0,
+        0.3
+      ],
+      "source": "spontaneous_muscles",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 279,
+      "E_edges": 469698
+    },
+    {
+      "step": 62,
+      "latency_ms": 59.9949,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11028,
+      "physical_time": 550.9999999995714,
+      "position": [
+        3.089448177421169,
+        6.176383858515797
+      ],
+      "heading": -0.30835236873047744,
+      "path_increment": 0.0003413913739303857,
+      "muscles": [
+        0.3,
+        0.0,
+        0.0,
+        0.3
+      ],
+      "source": "spontaneous_muscles",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 283,
+      "E_edges": 469698
+    },
+    {
+      "step": 63,
+      "latency_ms": 59.6554,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11030,
+      "physical_time": 551.0999999995713,
+      "position": [
+        3.0894225708131806,
+        6.176099625902856
+      ],
+      "heading": -0.42834689008984217,
+      "path_increment": 0.000285383735751484,
+      "muscles": [
+        0.3,
+        0.0,
+        0.0,
+        0.3
+      ],
+      "source": "spontaneous_muscles",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 288,
+      "E_edges": 469698
+    },
+    {
+      "step": 64,
+      "latency_ms": 59.8808,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11032,
+      "physical_time": 551.1999999995712,
+      "position": [
+        3.089401165147996,
+        6.175862023634326
+      ],
+      "heading": -0.5483442428854755,
+      "path_increment": 0.00023856454160836303,
+      "muscles": [
+        0.3,
+        0.0,
+        0.0,
+        0.3
+      ],
+      "source": "spontaneous_muscles",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 288,
+      "E_edges": 469698
+    },
+    {
+      "step": 65,
+      "latency_ms": 59.5205,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11034,
+      "physical_time": 551.2999999995711,
+      "position": [
+        3.0893832712316196,
+        6.175663401676673
+      ],
+      "heading": -0.6683429637924609,
+      "path_increment": 0.0001994263631144154,
+      "muscles": [
+        0.3,
+        0.0,
+        0.0,
+        0.3
+      ],
+      "source": "spontaneous_muscles",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 295,
+      "E_edges": 469719
+    },
+    {
+      "step": 66,
+      "latency_ms": 62.7005,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11036,
+      "physical_time": 551.399999999571,
+      "position": [
+        3.0893683129371436,
+        6.175497365037773
+      ],
+      "heading": -0.7883423457521781,
+      "path_increment": 0.00016670907603021036,
+      "muscles": [
+        0.3,
+        0.0,
+        0.0,
+        0.3
+      ],
+      "source": "spontaneous_muscles",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 290,
+      "E_edges": 469842
+    },
+    {
+      "step": 67,
+      "latency_ms": 59.2854,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11038,
+      "physical_time": 551.499999999571,
+      "position": [
+        3.089355808655302,
+        6.175358567868604
+      ],
+      "heading": -0.9083420471235502,
+      "path_increment": 0.0001393592882941385,
+      "muscles": [
+        0.3,
+        0.0,
+        0.0,
+        0.3
+      ],
+      "source": "spontaneous_muscles",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 284,
+      "E_edges": 469842
+    },
+    {
+      "step": 68,
+      "latency_ms": 61.7966,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11040,
+      "physical_time": 551.5999999995709,
+      "position": [
+        3.0893453557881907,
+        6.175242541343993
+      ],
+      "heading": -1.028341902830273,
+      "path_increment": 0.00011649642416914701,
+      "muscles": [
+        0.3,
+        0.0,
+        0.0,
+        0.3
+      ],
+      "source": "spontaneous_muscles",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 286,
+      "E_edges": 469842
+    },
+    {
+      "step": 69,
+      "latency_ms": 59.3695,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11042,
+      "physical_time": 551.6999999995708,
+      "position": [
+        3.0893366177869,
+        6.1751455497807335
+      ],
+      "heading": -1.1483418331097324,
+      "path_increment": 9.738437251431803e-05,
+      "muscles": [
+        0.3,
+        0.0,
+        0.0,
+        0.3
+      ],
+      "source": "spontaneous_muscles",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 287,
+      "E_edges": 469842
+    },
+    {
+      "step": 70,
+      "latency_ms": 61.6072,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11044,
+      "physical_time": 551.7999999995707,
+      "position": [
+        3.089329313315723,
+        6.175064470360537
+      ],
+      "heading": -1.268341799421719,
+      "path_increment": 8.140778635097777e-05,
+      "muscles": [
+        0.3,
+        0.0,
+        0.0,
+        0.3
+      ],
+      "source": "spontaneous_muscles",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 293,
+      "E_edges": 469842
+    },
+    {
+      "step": 71,
+      "latency_ms": 60.279,
+      "gc_count": 1,
+      "gc_ms": 0.41,
+      "gc_generations": [
+        0
+      ],
+      "clock": 11046,
+      "physical_time": 551.8999999995706,
+      "position": [
+        3.0893232071940364,
+        6.174996692585247
+      ],
+      "heading": -1.3883417831441311,
+      "path_increment": 6.805227068445783e-05,
+      "muscles": [
+        0.3,
+        0.0,
+        0.0,
+        0.3
+      ],
+      "source": "spontaneous_muscles",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 293,
+      "E_edges": 469902
+    },
+    {
+      "step": 72,
+      "latency_ms": 60.1742,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11048,
+      "physical_time": 551.9999999995705,
+      "position": [
+        3.0893006736948716,
+        6.175070740270568
+      ],
+      "heading": -1.5025223158193548,
+      "path_increment": 7.740037652383433e-05,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 293,
+      "E_edges": 469902
+    },
+    {
+      "step": 73,
+      "latency_ms": 66.5667,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11050,
+      "physical_time": 552.0999999995704,
+      "position": [
+        3.0892566896439972,
+        6.175534898917528
+      ],
+      "heading": -1.603486697264718,
+      "path_increment": 0.00046623797172546413,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 299,
+      "E_edges": 469902
+    },
+    {
+      "step": 74,
+      "latency_ms": 62.1817,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11052,
+      "physical_time": 552.1999999995703,
+      "position": [
+        3.0892351726228457,
+        6.176373724371873
+      ],
+      "heading": -1.6963535361588704,
+      "path_increment": 0.0008391013794863802,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 303,
+      "E_edges": 469950
+    },
+    {
+      "step": 75,
+      "latency_ms": 63.6676,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11054,
+      "physical_time": 552.2999999995702,
+      "position": [
+        3.0882396447891622,
+        6.171147202010639
+      ],
+      "heading": -1.7710342769134069,
+      "path_increment": 0.005320489795133082,
+      "muscles": [
+        0.6,
+        0.0,
+        0.6,
+        0.0
+      ],
+      "source": "spontaneous_muscles",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 307,
+      "E_edges": 470052
+    },
+    {
+      "step": 76,
+      "latency_ms": 62.5002,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11056,
+      "physical_time": 552.3999999995701,
+      "position": [
+        3.0835486584628486,
+        6.1478618140438845
+      ],
+      "heading": -1.8116486925712951,
+      "path_increment": 0.0237532028466884,
+      "muscles": [
+        0.6,
+        0.0,
+        0.6,
+        0.0
+      ],
+      "source": "spontaneous_muscles",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 307,
+      "E_edges": 470087
+    },
+    {
+      "step": 77,
+      "latency_ms": 64.0102,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11058,
+      "physical_time": 552.49999999957,
+      "position": [
+        3.074484088006226,
+        6.107353684888314
+      ],
+      "heading": -1.8316448443156628,
+      "path_increment": 0.041509938150369165,
+      "muscles": [
+        0.6,
+        0.0,
+        0.6,
+        0.0
+      ],
+      "source": "spontaneous_muscles",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 311,
+      "E_edges": 470129
+    },
+    {
+      "step": 78,
+      "latency_ms": 71.8947,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11060,
+      "physical_time": 552.59999999957,
+      "position": [
+        3.0612829112303133,
+        6.052370454647163
+      ],
+      "heading": -1.8413372327631357,
+      "path_increment": 0.0565457927349177,
+      "muscles": [
+        0.6,
+        0.0,
+        0.6,
+        0.0
+      ],
+      "source": "spontaneous_muscles",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 305,
+      "E_edges": 470255
+    },
+    {
+      "step": 79,
+      "latency_ms": 69.832,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11062,
+      "physical_time": 552.6999999995699,
+      "position": [
+        3.0444083298908935,
+        5.985328661233454
+      ],
+      "heading": -1.8460229678598183,
+      "path_increment": 0.06913286887947874,
+      "muscles": [
+        0.6,
+        0.0,
+        0.6,
+        0.0
+      ],
+      "source": "spontaneous_muscles",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 305,
+      "E_edges": 470255
+    },
+    {
+      "step": 80,
+      "latency_ms": 64.1954,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11064,
+      "physical_time": 552.7999999995698,
+      "position": [
+        3.024360613088193,
+        5.908233803374343
+      ],
+      "heading": -1.8482872567430049,
+      "path_increment": 0.0796588228466738,
+      "muscles": [
+        0.6,
+        0.0,
+        0.6,
+        0.0
+      ],
+      "source": "spontaneous_muscles",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 305,
+      "E_edges": 470255
+    },
+    {
+      "step": 81,
+      "latency_ms": 62.6184,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11066,
+      "physical_time": 552.8999999995697,
+      "position": [
+        3.0016110521008392,
+        5.822749001264593
+      ],
+      "heading": -1.849381347102818,
+      "path_increment": 0.08846012614088049,
+      "muscles": [
+        0.6,
+        0.0,
+        0.6,
+        0.0
+      ],
+      "source": "spontaneous_muscles",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 305,
+      "E_edges": 470255
+    },
+    {
+      "step": 82,
+      "latency_ms": 87.5517,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11068,
+      "physical_time": 552.9999999995696,
+      "position": [
+        2.9765791138502475,
+        5.730257459874229
+      ],
+      "heading": -1.8499099980152072,
+      "path_increment": 0.0958190125254209,
+      "muscles": [
+        0.6,
+        0.0,
+        0.6,
+        0.0
+      ],
+      "source": "spontaneous_muscles",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 305,
+      "E_edges": 466135
+    },
+    {
+      "step": 83,
+      "latency_ms": 62.7863,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11070,
+      "physical_time": 553.0999999995695,
+      "position": [
+        2.949627747420444,
+        5.631911971688278
+      ],
+      "heading": -1.8501654350333503,
+      "path_increment": 0.10197161957606943,
+      "muscles": [
+        0.6,
+        0.0,
+        0.6,
+        0.0
+      ],
+      "source": "spontaneous_muscles",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 305,
+      "E_edges": 466135
+    },
+    {
+      "step": 84,
+      "latency_ms": 63.8608,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11072,
+      "physical_time": 553.1999999995694,
+      "position": [
+        2.9210662969645367,
+        5.528674508988031
+      ],
+      "heading": -1.8502888587229545,
+      "path_increment": 0.1071154991442889,
+      "muscles": [
+        0.6,
+        0.0,
+        0.6,
+        0.0
+      ],
+      "source": "spontaneous_muscles",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 298,
+      "E_edges": 466135
+    },
+    {
+      "step": 85,
+      "latency_ms": 62.9566,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11074,
+      "physical_time": 553.2999999995693,
+      "position": [
+        2.89115622579772,
+        5.421348403902298
+      ],
+      "heading": -1.850348495365716,
+      "path_increment": 0.11141591084794732,
+      "muscles": [
+        0.6,
+        0.0,
+        0.6,
+        0.0
+      ],
+      "source": "spontaneous_muscles",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 298,
+      "E_edges": 466135
+    },
+    {
+      "step": 86,
+      "latency_ms": 61.8732,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11076,
+      "physical_time": 553.3999999995692,
+      "position": [
+        2.8601174885943323,
+        5.310604798733215
+      ],
+      "heading": -1.8503773109774782,
+      "path_increment": 0.11501108334863532,
+      "muscles": [
+        0.6,
+        0.0,
+        0.6,
+        0.0
+      ],
+      "source": "spontaneous_muscles",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 298,
+      "E_edges": 466135
+    },
+    {
+      "step": 87,
+      "latency_ms": 61.3922,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11078,
+      "physical_time": 553.4999999995691,
+      "position": [
+        2.8281346247118777,
+        5.1970045379922185
+      ],
+      "heading": -1.850391234287733,
+      "path_increment": 0.11801662095885504,
+      "muscles": [
+        0.6,
+        0.0,
+        0.6,
+        0.0
+      ],
+      "source": "spontaneous_muscles",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 298,
+      "E_edges": 466135
+    },
+    {
+      "step": 88,
+      "latency_ms": 61.6234,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11080,
+      "physical_time": 553.599999999569,
+      "position": [
+        2.795362222161091,
+        5.081016362835696
+      ],
+      "heading": -1.8503979618411852,
+      "path_increment": 0.12052919623514884,
+      "muscles": [
+        0.6,
+        0.0,
+        0.6,
+        0.0
+      ],
+      "source": "spontaneous_muscles",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 298,
+      "E_edges": 466135
+    },
+    {
+      "step": 89,
+      "latency_ms": 63.3398,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11082,
+      "physical_time": 553.699999999569,
+      "position": [
+        2.7619296640790147,
+        4.9630320692685395
+      ],
+      "heading": -1.850401212503178,
+      "path_increment": 0.1226296435143327,
+      "muscles": [
+        0.6,
+        0.0,
+        0.6,
+        0.0
+      ],
+      "source": "spontaneous_muscles",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 298,
+      "E_edges": 466135
+    },
+    {
+      "step": 90,
+      "latency_ms": 62.5486,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11084,
+      "physical_time": 553.7999999995689,
+      "position": [
+        2.727945182950654,
+        4.843379154733139
+      ],
+      "heading": -1.8504027831786791,
+      "path_increment": 0.12438554945965308,
+      "muscles": [
+        0.6,
+        0.0,
+        0.6,
+        0.0
+      ],
+      "source": "spontaneous_muscles",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 298,
+      "E_edges": 466135
+    },
+    {
+      "step": 91,
+      "latency_ms": 62.5496,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11086,
+      "physical_time": 553.8999999995688,
+      "position": [
+        2.6934992914732403,
+        4.722331377948233
+      ],
+      "heading": -1.8504035421076404,
+      "path_increment": 0.125853421503915,
+      "muscles": [
+        0.6,
+        0.0,
+        0.6,
+        0.0
+      ],
+      "source": "spontaneous_muscles",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 298,
+      "E_edges": 466135
+    },
+    {
+      "step": 92,
+      "latency_ms": 61.8793,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11088,
+      "physical_time": 553.9999999995687,
+      "position": [
+        2.6586676707438017,
+        4.600117580538819
+      ],
+      "heading": -1.850403908811754,
+      "path_increment": 0.12708050235920867,
+      "muscles": [
+        0.6,
+        0.0,
+        0.6,
+        0.0
+      ],
+      "source": "spontaneous_muscles",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 298,
+      "E_edges": 466135
+    },
+    {
+      "step": 93,
+      "latency_ms": 62.183,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11090,
+      "physical_time": 554.0999999995686,
+      "position": [
+        2.6235135943702916,
+        4.476929058616483
+      ],
+      "heading": -1.8504040859981765,
+      "path_increment": 0.12810628797636867,
+      "muscles": [
+        0.6,
+        0.0,
+        0.6,
+        0.0
+      ],
+      "source": "spontaneous_muscles",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 298,
+      "E_edges": 466135
+    },
+    {
+      "step": 94,
+      "latency_ms": 62.9909,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11092,
+      "physical_time": 554.1999999995685,
+      "position": [
+        2.5880899596018714,
+        4.352925723647769
+      ],
+      "heading": -1.8504041716122375,
+      "path_increment": 0.1289637971818819,
+      "muscles": [
+        0.6,
+        0.0,
+        0.6,
+        0.0
+      ],
+      "source": "spontaneous_muscles",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 298,
+      "E_edges": 466135
+    },
+    {
+      "step": 95,
+      "latency_ms": 61.5528,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11094,
+      "physical_time": 554.2999999995684,
+      "position": [
+        2.552440987514605,
+        4.22824125193541
+      ],
+      "heading": -1.850404212979783,
+      "path_increment": 0.12968063346956937,
+      "muscles": [
+        0.6,
+        0.0,
+        0.6,
+        0.0
+      ],
+      "source": "spontaneous_muscles",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 298,
+      "E_edges": 466135
+    },
+    {
+      "step": 96,
+      "latency_ms": 61.3337,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11096,
+      "physical_time": 554.3999999995683,
+      "position": [
+        2.5166036453698153,
+        4.102987388975394
+      ],
+      "heading": -1.8504042329680168,
+      "path_increment": 0.1302798728829946,
+      "muscles": [
+        0.6,
+        0.0,
+        0.6,
+        0.0
+      ],
+      "source": "spontaneous_muscles",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 298,
+      "E_edges": 466135
+    },
+    {
+      "step": 97,
+      "latency_ms": 91.1112,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11098,
+      "physical_time": 554.4999999995682,
+      "position": [
+        2.4823885312636222,
+        3.983471330825929
+      ],
+      "heading": -1.8645372155995377,
+      "path_increment": 0.12431718380371255,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 298,
+      "E_edges": 466135
+    },
+    {
+      "step": 98,
+      "latency_ms": 109.6008,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11100,
+      "physical_time": 554.5999999995681,
+      "position": [
+        2.4531946871334016,
+        3.8815392447011723
+      ],
+      "heading": -1.9107665703838153,
+      "path_increment": 0.1060303292310481,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 298,
+      "E_edges": 466135
+    },
+    {
+      "step": 99,
+      "latency_ms": 109.0943,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11102,
+      "physical_time": 554.699999999568,
+      "position": [
+        2.4288767747677698,
+        3.7965593181662634
+      ],
+      "heading": -1.9766613880076684,
+      "path_increment": 0.08839088627059392,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 308,
+      "E_edges": 466159
+    },
+    {
+      "step": 100,
+      "latency_ms": 107.803,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11104,
+      "physical_time": 554.799999999568,
+      "position": [
+        2.4087225892339243,
+        3.725923086755637
+      ],
+      "heading": -2.0523995107458113,
+      "path_increment": 0.07345521344620945,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 304,
+      "E_edges": 466183
+    },
+    {
+      "step": 101,
+      "latency_ms": 110.3086,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11106,
+      "physical_time": 554.8999999995679,
+      "position": [
+        2.392085824111747,
+        3.66727729030895
+      ],
+      "heading": -2.1329217933476623,
+      "path_increment": 0.060959916294207224,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 296,
+      "E_edges": 466183
+    },
+    {
+      "step": 102,
+      "latency_ms": 112.8559,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11108,
+      "physical_time": 554.9999999995678,
+      "position": [
+        2.378421672773142,
+        3.6186376801223075
+      ],
+      "heading": -2.2157580158236403,
+      "path_increment": 0.05052247728400553,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 298,
+      "E_edges": 466183
+    },
+    {
+      "step": 103,
+      "latency_ms": 109.7854,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11110,
+      "physical_time": 555.0999999995677,
+      "position": [
+        2.3672735023403195,
+        3.5783413248583997
+      ],
+      "heading": -2.299712491184365,
+      "path_increment": 0.04181002214247586,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 299,
+      "E_edges": 466183
+    },
+    {
+      "step": 104,
+      "latency_ms": 108.1194,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11112,
+      "physical_time": 555.1999999995676,
+      "position": [
+        2.3582580619057296,
+        3.544995188259049
+      ],
+      "heading": -2.3842073065654987,
+      "path_increment": 0.03454334946602895,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 299,
+      "E_edges": 466183
+    },
+    {
+      "step": 105,
+      "latency_ms": 108.7248,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11114,
+      "physical_time": 555.2999999995675,
+      "position": [
+        2.3510530085772277,
+        3.5174321937979904
+      ],
+      "heading": -2.46896320814008,
+      "path_increment": 0.02848914630393297,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 298,
+      "E_edges": 466183
+    },
+    {
+      "step": 106,
+      "latency_ms": 109.3662,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11116,
+      "physical_time": 555.3999999995674,
+      "position": [
+        2.345386595586612,
+        3.4946744076824685
+      ],
+      "heading": -2.5538452631037023,
+      "path_increment": 0.02345261318190492,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 299,
+      "E_edges": 466183
+    },
+    {
+      "step": 107,
+      "latency_ms": 147.9413,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11118,
+      "physical_time": 555.4999999995673,
+      "position": [
+        2.34102913169004,
+        3.475902250438317
+      ],
+      "heading": -2.6387882736713926,
+      "path_increment": 0.01927125785228058,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 298,
+      "E_edges": 462604
+    },
+    {
+      "step": 108,
+      "latency_ms": 108.4787,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11120,
+      "physical_time": 555.5999999995672,
+      "position": [
+        2.3377858908948483,
+        3.4604287605957618
+      ],
+      "heading": -2.723760737155584,
+      "path_increment": 0.01580972797878728,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 298,
+      "E_edges": 462604
+    },
+    {
+      "step": 109,
+      "latency_ms": 105.6663,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11122,
+      "physical_time": 555.6999999995671,
+      "position": [
+        2.3354912195036377,
+        3.4476780860563463
+      ],
+      "heading": -2.808747431887034,
+      "path_increment": 0.012955509175780727,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 298,
+      "E_edges": 462604
+    },
+    {
+      "step": 110,
+      "latency_ms": 108.3599,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11124,
+      "physical_time": 555.799999999567,
+      "position": [
+        2.3340036373617115,
+        3.4371675112469746
+      ],
+      "heading": -2.893741002962897,
+      "path_increment": 0.01061532304983585,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 298,
+      "E_edges": 462604
+    },
+    {
+      "step": 111,
+      "latency_ms": 106.9618,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11126,
+      "physical_time": 555.899999999567,
+      "position": [
+        2.3332017674992622,
+        3.428492440127652
+      ],
+      "heading": -2.978737896594512,
+      "path_increment": 0.008712052238227807,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 298,
+      "E_edges": 462604
+    },
+    {
+      "step": 112,
+      "latency_ms": 106.5882,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11128,
+      "physical_time": 555.9999999995669,
+      "position": [
+        2.332980957348177,
+        3.421313849329261
+      ],
+      "heading": -3.0637363956397143,
+      "path_increment": 0.0071819860048292486,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 298,
+      "E_edges": 462604
+    },
+    {
+      "step": 113,
+      "latency_ms": 104.973,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11130,
+      "physical_time": 556.0999999995668,
+      "position": [
+        2.333250477899093,
+        3.415347804834261
+      ],
+      "heading": 3.134449636780742,
+      "path_increment": 0.005972129288929234,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 298,
+      "E_edges": 462604
+    },
+    {
+      "step": 114,
+      "latency_ms": 465.3865,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11132,
+      "physical_time": 556.1999999995667,
+      "position": [
+        2.333931206054633,
+        3.4103567020002
+      ],
+      "heading": 3.0494499872072307,
+      "path_increment": 0.005037310623926166,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 298,
+      "E_edges": 462604
+    },
+    {
+      "step": 115,
+      "latency_ms": 106.2883,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11134,
+      "physical_time": 556.2999999995666,
+      "position": [
+        2.3349537109970586,
+        3.4061419443613565
+      ],
+      "heading": 2.9644501565285255,
+      "path_increment": 0.004337014907914569,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 298,
+      "E_edges": 462604
+    },
+    {
+      "step": 116,
+      "latency_ms": 107.7638,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11136,
+      "physical_time": 556.3999999995665,
+      "position": [
+        2.3362566782923757,
+        3.4025378232360026
+      ],
+      "heading": 2.8794502383422653,
+      "path_increment": 0.0038324160602534103,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 300,
+      "E_edges": 462632
+    },
+    {
+      "step": 117,
+      "latency_ms": 107.5668,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11138,
+      "physical_time": 556.4999999995664,
+      "position": [
+        2.3377856161922677,
+        3.3994063991675127
+      ],
+      "heading": 2.7944502778735467,
+      "path_increment": 0.0034847478816183637,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 300,
+      "E_edges": 462632
+    },
+    {
+      "step": 118,
+      "latency_ms": 105.4658,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11140,
+      "physical_time": 556.5999999995663,
+      "position": [
+        2.3394917975522818,
+        3.3966332188646104
+      ],
+      "heading": 2.709450296974521,
+      "path_increment": 0.003256007344227723,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 298,
+      "E_edges": 462632
+    },
+    {
+      "step": 119,
+      "latency_ms": 106.0285,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11142,
+      "physical_time": 556.6999999995662,
+      "position": [
+        2.3413313982649537,
+        3.39412372861377
+      ],
+      "heading": 2.624450306203853,
+      "path_increment": 0.0031115385424457537,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 298,
+      "E_edges": 462632
+    },
+    {
+      "step": 120,
+      "latency_ms": 107.3515,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11144,
+      "physical_time": 556.7999999995661,
+      "position": [
+        2.343264799358766,
+        3.391800267984144
+      ],
+      "heading": 2.539450310663341,
+      "path_increment": 0.0030226658907289623,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 298,
+      "E_edges": 462632
+    },
+    {
+      "step": 121,
+      "latency_ms": 107.7762,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11146,
+      "physical_time": 556.899999999566,
+      "position": [
+        2.3452560251429335,
+        3.38959954676117
+      ],
+      "heading": 2.4544503128181017,
+      "path_increment": 0.0029678534372138804,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 298,
+      "E_edges": 462632
+    },
+    {
+      "step": 122,
+      "latency_ms": 105.36,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11148,
+      "physical_time": 556.999999999566,
+      "position": [
+        2.347272294154142,
+        3.3874705240396494
+      ],
+      "heading": 2.3694503138592555,
+      "path_increment": 0.002932248024010215,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 298,
+      "E_edges": 462632
+    },
+    {
+      "step": 123,
+      "latency_ms": 110.0383,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11150,
+      "physical_time": 557.0999999995659,
+      "position": [
+        2.3492836633258634,
+        3.3853726217912645
+      ],
+      "heading": 2.2844503143623243,
+      "path_increment": 0.0029063378655498386,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 298,
+      "E_edges": 462632
+    },
+    {
+      "step": 124,
+      "latency_ms": 106.2587,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11152,
+      "physical_time": 557.1999999995658,
+      "position": [
+        2.3512627488719224,
+        3.3832742164227168
+      ],
+      "heading": 2.199450314605402,
+      "path_increment": 0.002884455700712021,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 298,
+      "E_edges": 462632
+    },
+    {
+      "step": 125,
+      "latency_ms": 108.3306,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11154,
+      "physical_time": 557.2999999995657,
+      "position": [
+        2.353184509951848,
+        3.3811513612159425
+      ],
+      "heading": 2.1144503147228537,
+      "path_increment": 0.0028635083162521597,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 312,
+      "E_edges": 462816
+    },
+    {
+      "step": 126,
+      "latency_ms": 113.2718,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11156,
+      "physical_time": 557.3999999995656,
+      "position": [
+        2.355026083348602,
+        3.3789867003900826
+      ],
+      "heading": 2.029450314779602,
+      "path_increment": 0.002842032559040058,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 312,
+      "E_edges": 462994
+    },
+    {
+      "step": 127,
+      "latency_ms": 109.5928,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11158,
+      "physical_time": 557.4999999995655,
+      "position": [
+        2.356766659208042,
+        3.3767685420955207
+      ],
+      "heading": 1.9444503148070247,
+      "path_increment": 0.0028195443855699893,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 298,
+      "E_edges": 462994
+    },
+    {
+      "step": 128,
+      "latency_ms": 105.5988,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11160,
+      "physical_time": 557.5999999995654,
+      "position": [
+        2.358387389421295,
+        3.3744900631520576
+      ],
+      "heading": 1.8594503148202737,
+      "path_increment": 0.002796110283940373,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 298,
+      "E_edges": 462994
+    },
+    {
+      "step": 129,
+      "latency_ms": 106.5683,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11162,
+      "physical_time": 557.6999999995653,
+      "position": [
+        2.3598713215238685,
+        3.3721486229505224
+      ],
+      "heading": 1.7744503148266748,
+      "path_increment": 0.0027720744402725595,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 301,
+      "E_edges": 463054
+    },
+    {
+      "step": 130,
+      "latency_ms": 108.2589,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11164,
+      "physical_time": 557.7999999995652,
+      "position": [
+        2.36120335207873,
+        3.369745167795445
+      ],
+      "heading": 1.6894503148297702,
+      "path_increment": 0.002747890478449287,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 303,
+      "E_edges": 463111
+    },
+    {
+      "step": 131,
+      "latency_ms": 108.4462,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11166,
+      "physical_time": 557.8999999995651,
+      "position": [
+        2.362370194437885,
+        3.3672837101976865
+      ],
+      "heading": 1.604450314831265,
+      "path_increment": 0.002724021768760813,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 300,
+      "E_edges": 463111
+    },
+    {
+      "step": 132,
+      "latency_ms": 147.1134,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11168,
+      "physical_time": 557.999999999565,
+      "position": [
+        2.363360356566008,
+        3.364770870331739
+      ],
+      "heading": 1.5194503148319871,
+      "path_increment": 0.002700886008676159,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 300,
+      "E_edges": 454843
+    },
+    {
+      "step": 133,
+      "latency_ms": 106.5035,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11170,
+      "physical_time": 558.099999999565,
+      "position": [
+        2.364164125283317,
+        3.3622154691379325
+      ],
+      "heading": 1.434450314832338,
+      "path_increment": 0.002678827992282015,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 300,
+      "E_edges": 454843
+    },
+    {
+      "step": 134,
+      "latency_ms": 110.2707,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11172,
+      "physical_time": 558.1999999995649,
+      "position": [
+        2.3647735538624692,
+        3.359628164445839
+      ],
+      "heading": 1.3494503148325094,
+      "path_increment": 0.0026581099982536547,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 298,
+      "E_edges": 454843
+    },
+    {
+      "step": 135,
+      "latency_ms": 106.8911,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11174,
+      "physical_time": 558.2999999995648,
+      "position": [
+        2.365182450411554,
+        3.3570211230813807
+      ],
+      "heading": 1.264450314832592,
+      "path_increment": 0.002638912856433557,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 298,
+      "E_edges": 454843
+    },
+    {
+      "step": 136,
+      "latency_ms": 107.8852,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11176,
+      "physical_time": 558.3999999995647,
+      "position": [
+        2.3653863649055564,
+        3.3544077232458593
+      ],
+      "heading": 1.179450314832632,
+      "path_increment": 0.002621343133045946,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 304,
+      "E_edges": 454843
+    },
+    {
+      "step": 137,
+      "latency_ms": 108.4115,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11178,
+      "physical_time": 558.4999999995646,
+      "position": [
+        2.365382573102895,
+        3.3518022825620815
+      ],
+      "heading": 1.0944503148326525,
+      "path_increment": 0.002605443442957913,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 298,
+      "E_edges": 454843
+    },
+    {
+      "step": 138,
+      "latency_ms": 108.4622,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11180,
+      "physical_time": 558.5999999995645,
+      "position": [
+        2.36517005591077,
+        3.3492198081053695
+      ],
+      "heading": 1.0094503148326632,
+      "path_increment": 0.0025912039434437904,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 298,
+      "E_edges": 454843
+    },
+    {
+      "step": 139,
+      "latency_ms": 108.4141,
+      "gc_count": 1,
+      "gc_ms": 0.3323,
+      "gc_generations": [
+        0
+      ],
+      "clock": 11182,
+      "physical_time": 558.6999999995644,
+      "position": [
+        2.3647494730506247,
+        3.346675765504819
+      ],
+      "heading": 0.9244503148326659,
+      "path_increment": 0.0025785737716155646,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 298,
+      "E_edges": 454843
+    },
+    {
+      "step": 140,
+      "latency_ms": 105.2587,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11184,
+      "physical_time": 558.7999999995643,
+      "position": [
+        2.364123130129053,
+        3.344185864836688
+      ],
+      "heading": 0.8394503148326686,
+      "path_increment": 0.0025674716731761017,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 300,
+      "E_edges": 454843
+    },
+    {
+      "step": 141,
+      "latency_ms": 108.0875,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11186,
+      "physical_time": 558.8999999995642,
+      "position": [
+        2.3632949384450805,
+        3.341765861557846
+      ],
+      "heading": 0.7544503148326713,
+      "path_increment": 0.002557795405228309,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 304,
+      "E_edges": 454891
+    },
+    {
+      "step": 142,
+      "latency_ms": 108.5204,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11188,
+      "physical_time": 558.9999999995641,
+      "position": [
+        2.3622703670659924,
+        3.3394313711596815
+      ],
+      "heading": 0.669450314832674,
+      "path_increment": 0.0025494297264230035,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 307,
+      "E_edges": 455047
+    },
+    {
+      "step": 143,
+      "latency_ms": 110.2245,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11190,
+      "physical_time": 559.099999999564,
+      "position": [
+        2.361056386884027,
+        3.337197696576075
+      ],
+      "heading": 0.5844503148326767,
+      "path_increment": 0.002542252943287693,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 303,
+      "E_edges": 455047
+    },
+    {
+      "step": 144,
+      "latency_ms": 109.5908,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11192,
+      "physical_time": 559.1999999995639,
+      "position": [
+        2.359661406528164,
+        3.335079667665097
+      ],
+      "heading": 0.49945031483267943,
+      "path_increment": 0.002536142082175608,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 298,
+      "E_edges": 455047
+    },
+    {
+      "step": 145,
+      "latency_ms": 107.3892,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11194,
+      "physical_time": 559.2999999995639,
+      "position": [
+        2.358095200150925,
+        3.333091492312928
+      ],
+      "heading": 0.41445031483268213,
+      "path_increment": 0.0025309768167796945,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 306,
+      "E_edges": 455199
+    },
+    {
+      "step": 146,
+      "latency_ms": 110.1159,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11196,
+      "physical_time": 559.3999999995638,
+      "position": [
+        2.3563688272414423,
+        3.3312466188888505
+      ],
+      "heading": 0.32945031483268483,
+      "path_increment": 0.0025266423121334696,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 298,
+      "E_edges": 455199
+    },
+    {
+      "step": 147,
+      "latency_ms": 106.4489,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11198,
+      "physical_time": 559.4999999995637,
+      "position": [
+        2.3544945447343415,
+        3.3295576099190236
+      ],
+      "heading": 0.24445031483268753,
+      "path_increment": 0.0025230311564821647,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 298,
+      "E_edges": 455199
+    },
+    {
+      "step": 148,
+      "latency_ms": 111.8886,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11200,
+      "physical_time": 559.5999999995636,
+      "position": [
+        2.352485711790386,
+        3.3280360269504055
+      ],
+      "heading": 0.15945031483269023,
+      "path_increment": 0.0025200445486360224,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 298,
+      "E_edges": 455199
+    },
+    {
+      "step": 149,
+      "latency_ms": 105.2022,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11202,
+      "physical_time": 559.6999999995635,
+      "position": [
+        2.3503566877201894,
+        3.326692326649736
+      ],
+      "heading": 0.07445031483269293,
+      "path_increment": 0.0025175928959017824,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 298,
+      "E_edges": 455199
+    },
+    {
+      "step": 150,
+      "latency_ms": 106.0393,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11204,
+      "physical_time": 559.7999999995634,
+      "position": [
+        2.348122723607292,
+        3.325535768230364
+      ],
+      "heading": -0.010549685167304368,
+      "path_increment": 0.002515595960231682,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 298,
+      "E_edges": 455199
+    },
+    {
+      "step": 151,
+      "latency_ms": 109.0455,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11206,
+      "physical_time": 559.8999999995633,
+      "position": [
+        2.345799848262024,
+        3.324574332325801
+      ],
+      "heading": -0.09554968516730167,
+      "path_increment": 0.0025139826706316645,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 298,
+      "E_edges": 455199
+    },
+    {
+      "step": 152,
+      "latency_ms": 111.7354,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11208,
+      "physical_time": 559.9999999995632,
+      "position": [
+        2.3434047492033323,
+        3.32381465143636
+      ],
+      "heading": -0.18054968516729897,
+      "path_increment": 0.002512690700171448,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 298,
+      "E_edges": 455199
+    },
+    {
+      "step": 153,
+      "latency_ms": 122.221,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11210,
+      "physical_time": 560.0999999995631,
+      "position": [
+        2.340954649422374,
+        3.323261952067076
+      ],
+      "heading": -0.26554968516729627,
+      "path_increment": 0.0025116658873063995,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 304,
+      "E_edges": 455199
+    },
+    {
+      "step": 154,
+      "latency_ms": 108.8075,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11212,
+      "physical_time": 560.199999999563,
+      "position": [
+        2.338467180729437,
+        3.3229200086536386
+      ],
+      "heading": -0.35054968516729357,
+      "path_increment": 0.0025108615645503297,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 300,
+      "E_edges": 455199
+    },
+    {
+      "step": 155,
+      "latency_ms": 108.5912,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11214,
+      "physical_time": 560.2999999995629,
+      "position": [
+        2.3359602545249123,
+        3.3227911093406948
+      ],
+      "heading": -0.43554968516729087,
+      "path_increment": 0.002510237842876476,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 301,
+      "E_edges": 455199
+    },
+    {
+      "step": 156,
+      "latency_ms": 110.5618,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11216,
+      "physical_time": 560.3999999995629,
+      "position": [
+        2.33345193086576,
+        3.3228760336352425
+      ],
+      "heading": -0.5205496851672882,
+      "path_increment": 0.002509760887986467,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 304,
+      "E_edges": 455199
+    },
+    {
+      "step": 157,
+      "latency_ms": 150.6245,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11218,
+      "physical_time": 560.4999999995628,
+      "position": [
+        2.3309602867213317,
+        3.323174041908964
+      ],
+      "heading": -0.6055496851672855,
+      "path_increment": 0.002509402214407107,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 301,
+      "E_edges": 450268
+    },
+    {
+      "step": 158,
+      "latency_ms": 108.2232,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11220,
+      "physical_time": 560.5999999995627,
+      "position": [
+        2.3285032843267035,
+        3.323682876668522
+      ],
+      "heading": -0.6905496851672828,
+      "path_increment": 0.002509138015283945,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 298,
+      "E_edges": 450268
+    },
+    {
+      "step": 159,
+      "latency_ms": 161.9328,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11222,
+      "physical_time": 560.6999999995626,
+      "position": [
+        2.3260986405480857,
+        3.324398775453577
+      ],
+      "heading": -0.7755496851672801,
+      "path_increment": 0.0025089485392268207,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 301,
+      "E_edges": 450566
+    },
+    {
+      "step": 160,
+      "latency_ms": 164.4191,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11224,
+      "physical_time": 560.7999999995625,
+      "position": [
+        2.3237636981734333,
+        3.3253164951598713
+      ],
+      "heading": -0.8605496851672774,
+      "path_increment": 0.002508817520719338,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 305,
+      "E_edges": 450885
+    },
+    {
+      "step": 161,
+      "latency_ms": 112.5806,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11226,
+      "physical_time": 560.8999999995624,
+      "position": [
+        2.3215153000324555,
+        3.3264293475201523
+      ],
+      "heading": -0.9455496851672747,
+      "path_increment": 0.0025087316668259557,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 305,
+      "E_edges": 450885
+    },
+    {
+      "step": 162,
+      "latency_ms": 110.4874,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11228,
+      "physical_time": 560.9999999995623,
+      "position": [
+        2.3193696668339037,
+        3.3277292454101937
+      ],
+      "heading": -1.030549685167272,
+      "path_increment": 0.0025086802002770225,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 300,
+      "E_edges": 450885
+    },
+    {
+      "step": 163,
+      "latency_ms": 109.5389,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11230,
+      "physical_time": 561.0999999995622,
+      "position": [
+        2.3173422795846323,
+        3.3292067595815564
+      ],
+      "heading": -1.1155496851672693,
+      "path_increment": 0.0025086544570916366,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 298,
+      "E_edges": 450885
+    },
+    {
+      "step": 164,
+      "latency_ms": 107.6886,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11232,
+      "physical_time": 561.1999999995621,
+      "position": [
+        2.3154477674247516,
+        3.330851185357953
+      ],
+      "heading": -1.2005496851672697,
+      "path_increment": 0.0025086475356282346,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 298,
+      "E_edges": 450885
+    },
+    {
+      "step": 165,
+      "latency_ms": 106.449,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11234,
+      "physical_time": 561.299999999562,
+      "position": [
+        2.3136998016764556,
+        3.332650618768888
+      ],
+      "heading": -1.2855496851672714,
+      "path_increment": 0.0025086539932011862,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 298,
+      "E_edges": 450885
+    },
+    {
+      "step": 166,
+      "latency_ms": 107.8146,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11236,
+      "physical_time": 561.3999999995619,
+      "position": [
+        2.3121109968613003,
+        3.3345920415334778
+      ],
+      "heading": -1.3705496851672732,
+      "path_increment": 0.002508669585961639,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 298,
+      "E_edges": 450885
+    },
+    {
+      "step": 167,
+      "latency_ms": 107.4514,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11238,
+      "physical_time": 561.4999999995619,
+      "position": [
+        2.310692819392054,
+        3.3366614142495465
+      ],
+      "heading": -1.455549685167275,
+      "path_increment": 0.0025086910475957667,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 298,
+      "E_edges": 450885
+    },
+    {
+      "step": 168,
+      "latency_ms": 107.1955,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11240,
+      "physical_time": 561.5999999995618,
+      "position": [
+        2.309455504591238,
+        3.338843777088987
+      ],
+      "heading": -1.5405496851672766,
+      "path_increment": 0.002508715902466888,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 298,
+      "E_edges": 450885
+    },
+    {
+      "step": 169,
+      "latency_ms": 107.6478,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11242,
+      "physical_time": 561.6999999995617,
+      "position": [
+        2.3084079826295345,
+        3.341123357250486
+      ],
+      "heading": -1.6255496851672784,
+      "path_increment": 0.0025087423089968303,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 298,
+      "E_edges": 450885
+    },
+    {
+      "step": 170,
+      "latency_ms": 109.0522,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11244,
+      "physical_time": 561.7999999995616,
+      "position": [
+        2.3075578139138218,
+        3.3434836823754392
+      ],
+      "heading": -1.7105496851672801,
+      "path_increment": 0.002508768929308065,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 298,
+      "E_edges": 450885
+    },
+    {
+      "step": 171,
+      "latency_ms": 107.0803,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11246,
+      "physical_time": 561.8999999995615,
+      "position": [
+        2.3069111343871715,
+        3.3459076990929013
+      ],
+      "heading": -1.7955496851672819,
+      "path_increment": 0.002508794821567537,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 298,
+      "E_edges": 450885
+    },
+    {
+      "step": 172,
+      "latency_ms": 109.1593,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11248,
+      "physical_time": 561.9999999995614,
+      "position": [
+        2.306472611132277,
+        3.348377895824821
+      ],
+      "heading": -1.8805496851672836,
+      "path_increment": 0.0025088193517012504,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 308,
+      "E_edges": 450885
+    },
+    {
+      "step": 173,
+      "latency_ms": 115.5859,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11250,
+      "physical_time": 562.0999999995613,
+      "position": [
+        2.30624540859595,
+        3.3508764289541557
+      ],
+      "heading": -1.9655496851672853,
+      "path_increment": 0.0025088421215564405,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 304,
+      "E_edges": 450885
+    },
+    {
+      "step": 174,
+      "latency_ms": 107.8714,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11252,
+      "physical_time": 562.1999999995612,
+      "position": [
+        2.306231165676113,
+        3.3533852514359594
+      ],
+      "heading": -2.0505496851672844,
+      "path_increment": 0.002508862910955739,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 300,
+      "E_edges": 450885
+    },
+    {
+      "step": 175,
+      "latency_ms": 109.7641,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11254,
+      "physical_time": 562.2999999995611,
+      "position": [
+        2.3064299838346956,
+        3.355886242915318
+      ],
+      "heading": -2.1355496851672817,
+      "path_increment": 0.0025088816313262375,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 298,
+      "E_edges": 450885
+    },
+    {
+      "step": 176,
+      "latency_ms": 108.7707,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11256,
+      "physical_time": 562.399999999561,
+      "position": [
+        2.3068404263205355,
+        3.35836134040637
+      ],
+      "heading": -2.220549685167279,
+      "path_increment": 0.002508898288969689,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 298,
+      "E_edges": 450885
+    },
+    {
+      "step": 177,
+      "latency_ms": 107.8479,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11258,
+      "physical_time": 562.4999999995609,
+      "position": [
+        2.307459528506488,
+        3.360792668583623
+      ],
+      "heading": -2.3055496851672763,
+      "path_increment": 0.0025089129562732102,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 298,
+      "E_edges": 450885
+    },
+    {
+      "step": 178,
+      "latency_ms": 120.5084,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11260,
+      "physical_time": 562.5999999995609,
+      "position": [
+        2.308282819264884,
+        3.3631626687404172
+      ],
+      "heading": -2.3905496851672736,
+      "path_increment": 0.0025089257494123798,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 299,
+      "E_edges": 450885
+    },
+    {
+      "step": 179,
+      "latency_ms": 121.851,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11262,
+      "physical_time": 562.6999999995608,
+      "position": [
+        2.3093043532260054,
+        3.3654542254797413
+      ],
+      "heading": -2.475549685167271,
+      "path_increment": 0.00250893681133372,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 299,
+      "E_edges": 450885
+    },
+    {
+      "step": 180,
+      "latency_ms": 107.5408,
+      "gc_count": 0,
+      "gc_ms": 0,
+      "gc_generations": [],
+      "clock": 11264,
+      "physical_time": 562.7999999995607,
+      "position": [
+        2.31051675368581,
+        3.3676507902195563
+      ],
+      "heading": -2.560549685167268,
+      "path_increment": 0.002508946298973543,
+      "muscles": [
+        0.275,
+        0.075,
+        0.075,
+        0.3
+      ],
+      "source": "pfc_time_motor_recall",
+      "pain": 0.0,
+      "touch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "thought_count": 298,
+      "E_edges": 450885
+    }
+  ],
+  "protected_source_and_life_hashes": {
+    "F:\\一种AGI架构\\原架构闭环\\results\\active_body_additive_600.npz": "30ed4050c59349fcb8a9d3f2551437839d3665ffc19db068f740a441d3ae64d7",
+    "F:\\一种AGI架构\\原架构闭环\\results\\living_original.npz": "30ed4050c59349fcb8a9d3f2551437839d3665ffc19db068f740a441d3ae64d7",
+    "F:\\一种AGI架构\\原架构闭环\\brain.py": "9440c41fd3aeaaa1573ceb829beeef0e350583e6b5edf89f8be054fd92ce832b",
+    "F:\\一种AGI架构\\原架构闭环\\original_runtime.py": "89468008148912f94c06409f8a6637fb067eb4216c55db58a87cc30c97008a01",
+    "F:\\一种AGI架构\\原架构闭环\\viewer.py": "5c3231310cbeacda9b47b45dde20a47659c070dbb52f46f6ba2825bfb214b2b4",
+    "F:\\一种AGI架构\\原架构闭环\\sensory_adapter.py": "9a7cd6aaf2c923f95b428128812ff86e34231c0f63a49e771335f53ec22ac1dd",
+    "F:\\一种AGI架构\\原架构闭环\\experience_environment.py": "17badebfbf2443ea263b87782fabe034b85287e922b7569f5ec2f985593a3ea8",
+    "F:\\一种AGI架构\\原架构闭环\\contact_reflex.py": "fa6c82dae8270f2b991f321b114884a13db231bd9726c55a09887ed871e57094",
+    "F:\\一种AGI架构\\原架构闭环\\fast_pfc_currents.py": "3b152c93f0478a3540f0a0761258b584f22358a7e5773b7989bf9d5bb90c9a58",
+    "F:\\一种AGI架构\\原架构闭环\\fast_hippocampal_index.py": "d5a892b95eeadb07957ec001689f47b44fc24527f0b25238f0c6be4395eb4e28",
+    "F:\\一种AGI架构\\原架构闭环\\weight_dependent_plasticity.py": "26b828ede19666eaa23f26f7e3ead22e799de5c49cfa46e3945107462ef3aab2"
+  },
+  "limitations": [
+    "The overall180-step result is primary; first/last and GC groups are additional descriptions, not excluded frames.",
+    "The sample is one fixed continuation of this learned physical state, without a new stimulus curriculum.",
+    "GC callbacks and lightweight between-step recording add measurement overhead; no full-state checks or serialization occur in the measured loop.",
+    "A p95 below100ms would only describe this window; it would not guarantee a hard real-time deadline for every future step."
+  ],
+  "script_sha256": "cd5088f3693a3865694a14714f47f7209c0a6c1241ee99013105c32c87453789"
+}

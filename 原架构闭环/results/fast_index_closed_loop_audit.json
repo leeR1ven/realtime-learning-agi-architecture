@@ -1,0 +1,476 @@
+{
+  "passed": true,
+  "checkpoint": "F:\\一种AGI架构\\原架构闭环\\results\\continuous_balanced_1200.npz",
+  "independent_full_life_copies": true,
+  "original_vs_fast_real_steps": 24,
+  "full_canonical_life_comparison_after_every_step": true,
+  "continued_step_after_safe_save_load": true,
+  "cache_absent_from_saved_index": true,
+  "teacher_actions": 0,
+  "rewards": 0,
+  "initial_control_steps": 1248,
+  "initial_clock": 2500,
+  "initial_index_edges": 275730,
+  "final_index_edges": 280961,
+  "complete_step_timings": {
+    "original": {
+      "median_ms": 73.69749999999999,
+      "p95_ms": 85.54236999999999,
+      "total_ms": 1817.8233
+    },
+    "fast": {
+      "median_ms": 61.1462,
+      "p95_ms": 70.74134999999998,
+      "total_ms": 1540.0909
+    }
+  },
+  "complete_step_total_speedup": 1.1803350698325665,
+  "initial_two_life_load_seconds": 0.9764147000023513,
+  "seconds": 13.244359800002712,
+  "frame_trace": [
+    {
+      "step": 1,
+      "physical_time": 124.8999999999589,
+      "clock": 2502,
+      "muscles": [
+        0.0,
+        0.5,
+        0.0,
+        0.5
+      ],
+      "position": [
+        9.819999999990001,
+        3.2575824370767905
+      ],
+      "source": "body_reflex",
+      "recalled_time": 770,
+      "index_edges": 275963
+    },
+    {
+      "step": 2,
+      "physical_time": 124.9999999999588,
+      "clock": 2504,
+      "muscles": [
+        0.0,
+        0.5,
+        0.0,
+        0.5
+      ],
+      "position": [
+        9.819999999990001,
+        3.2575824370767905
+      ],
+      "source": "body_reflex",
+      "recalled_time": 770,
+      "index_edges": 276196
+    },
+    {
+      "step": 3,
+      "physical_time": 125.09999999995871,
+      "clock": 2506,
+      "muscles": [
+        0.0,
+        0.5,
+        0.0,
+        0.5
+      ],
+      "position": [
+        9.819999999990001,
+        3.2575824370767905
+      ],
+      "source": "body_reflex",
+      "recalled_time": 770,
+      "index_edges": 276429
+    },
+    {
+      "step": 4,
+      "physical_time": 125.19999999995862,
+      "clock": 2508,
+      "muscles": [
+        0.0,
+        0.5,
+        0.0,
+        0.5
+      ],
+      "position": [
+        9.819999999990001,
+        3.2575824370767905
+      ],
+      "source": "body_reflex",
+      "recalled_time": 770,
+      "index_edges": 276662
+    },
+    {
+      "step": 5,
+      "physical_time": 125.29999999995853,
+      "clock": 2510,
+      "muscles": [
+        0.0,
+        0.5,
+        0.0,
+        0.5
+      ],
+      "position": [
+        9.819999999990001,
+        3.2575824370767905
+      ],
+      "source": "body_reflex",
+      "recalled_time": 770,
+      "index_edges": 276895
+    },
+    {
+      "step": 6,
+      "physical_time": 125.39999999995844,
+      "clock": 2512,
+      "muscles": [
+        0.0,
+        0.5,
+        0.0,
+        0.5
+      ],
+      "position": [
+        9.819999999990001,
+        3.2575824370767905
+      ],
+      "source": "body_reflex",
+      "recalled_time": 770,
+      "index_edges": 277128
+    },
+    {
+      "step": 7,
+      "physical_time": 125.49999999995835,
+      "clock": 2514,
+      "muscles": [
+        0.0,
+        0.5,
+        0.0,
+        0.5
+      ],
+      "position": [
+        9.819999999990001,
+        3.2575824370767905
+      ],
+      "source": "body_reflex",
+      "recalled_time": 770,
+      "index_edges": 277361
+    },
+    {
+      "step": 8,
+      "physical_time": 125.59999999995826,
+      "clock": 2516,
+      "muscles": [
+        0.0,
+        0.5,
+        0.0,
+        0.5
+      ],
+      "position": [
+        9.819999999990001,
+        3.2575824370767905
+      ],
+      "source": "body_reflex",
+      "recalled_time": 770,
+      "index_edges": 277561
+    },
+    {
+      "step": 9,
+      "physical_time": 125.69999999995817,
+      "clock": 2518,
+      "muscles": [
+        0.0,
+        0.5,
+        0.0,
+        0.5
+      ],
+      "position": [
+        9.819999999990001,
+        3.2575824370767905
+      ],
+      "source": "body_reflex",
+      "recalled_time": 770,
+      "index_edges": 277761
+    },
+    {
+      "step": 10,
+      "physical_time": 125.79999999995808,
+      "clock": 2520,
+      "muscles": [
+        0.0,
+        0.5,
+        0.0,
+        0.5
+      ],
+      "position": [
+        9.819999999990001,
+        3.2575824370767905
+      ],
+      "source": "body_reflex",
+      "recalled_time": 770,
+      "index_edges": 277961
+    },
+    {
+      "step": 11,
+      "physical_time": 125.89999999995798,
+      "clock": 2522,
+      "muscles": [
+        0.0,
+        0.5,
+        0.0,
+        0.5
+      ],
+      "position": [
+        9.819999999990001,
+        3.2575824370767905
+      ],
+      "source": "body_reflex",
+      "recalled_time": 770,
+      "index_edges": 278161
+    },
+    {
+      "step": 12,
+      "physical_time": 125.9999999999579,
+      "clock": 2524,
+      "muscles": [
+        0.0,
+        0.5,
+        0.0,
+        0.5
+      ],
+      "position": [
+        9.819999999990001,
+        3.2575824370767905
+      ],
+      "source": "body_reflex",
+      "recalled_time": 770,
+      "index_edges": 278361
+    },
+    {
+      "step": 13,
+      "physical_time": 126.0999999999578,
+      "clock": 2526,
+      "muscles": [
+        0.0,
+        0.5,
+        0.0,
+        0.5
+      ],
+      "position": [
+        9.819999999990001,
+        3.2575824370767905
+      ],
+      "source": "body_reflex",
+      "recalled_time": 770,
+      "index_edges": 278561
+    },
+    {
+      "step": 14,
+      "physical_time": 126.19999999995771,
+      "clock": 2528,
+      "muscles": [
+        0.0,
+        0.5,
+        0.0,
+        0.5
+      ],
+      "position": [
+        9.819999999990001,
+        3.2575824370767905
+      ],
+      "source": "body_reflex",
+      "recalled_time": 770,
+      "index_edges": 278761
+    },
+    {
+      "step": 15,
+      "physical_time": 126.29999999995762,
+      "clock": 2530,
+      "muscles": [
+        0.0,
+        0.5,
+        0.0,
+        0.5
+      ],
+      "position": [
+        9.819999999990001,
+        3.2575824370767905
+      ],
+      "source": "body_reflex",
+      "recalled_time": 770,
+      "index_edges": 278961
+    },
+    {
+      "step": 16,
+      "physical_time": 126.39999999995753,
+      "clock": 2532,
+      "muscles": [
+        0.0,
+        0.5,
+        0.0,
+        0.5
+      ],
+      "position": [
+        9.819999999990001,
+        3.2575824370767905
+      ],
+      "source": "body_reflex",
+      "recalled_time": 770,
+      "index_edges": 279161
+    },
+    {
+      "step": 17,
+      "physical_time": 126.49999999995744,
+      "clock": 2534,
+      "muscles": [
+        0.0,
+        0.5,
+        0.0,
+        0.5
+      ],
+      "position": [
+        9.819999999990001,
+        3.2575824370767905
+      ],
+      "source": "body_reflex",
+      "recalled_time": 770,
+      "index_edges": 279361
+    },
+    {
+      "step": 18,
+      "physical_time": 126.59999999995735,
+      "clock": 2536,
+      "muscles": [
+        0.0,
+        0.5,
+        0.0,
+        0.5
+      ],
+      "position": [
+        9.819999999990001,
+        3.2575824370767905
+      ],
+      "source": "body_reflex",
+      "recalled_time": 770,
+      "index_edges": 279561
+    },
+    {
+      "step": 19,
+      "physical_time": 126.69999999995726,
+      "clock": 2538,
+      "muscles": [
+        0.0,
+        0.5,
+        0.0,
+        0.5
+      ],
+      "position": [
+        9.819999999990001,
+        3.2575824370767905
+      ],
+      "source": "body_reflex",
+      "recalled_time": 770,
+      "index_edges": 279761
+    },
+    {
+      "step": 20,
+      "physical_time": 126.79999999995717,
+      "clock": 2540,
+      "muscles": [
+        0.0,
+        0.5,
+        0.0,
+        0.5
+      ],
+      "position": [
+        9.819999999990001,
+        3.2575824370767905
+      ],
+      "source": "body_reflex",
+      "recalled_time": 770,
+      "index_edges": 279961
+    },
+    {
+      "step": 21,
+      "physical_time": 126.89999999995707,
+      "clock": 2542,
+      "muscles": [
+        0.0,
+        0.5,
+        0.0,
+        0.5
+      ],
+      "position": [
+        9.819999999990001,
+        3.2575824370767905
+      ],
+      "source": "body_reflex",
+      "recalled_time": 770,
+      "index_edges": 280161
+    },
+    {
+      "step": 22,
+      "physical_time": 126.99999999995698,
+      "clock": 2544,
+      "muscles": [
+        0.0,
+        0.5,
+        0.0,
+        0.5
+      ],
+      "position": [
+        9.819999999990001,
+        3.2575824370767905
+      ],
+      "source": "body_reflex",
+      "recalled_time": 770,
+      "index_edges": 280361
+    },
+    {
+      "step": 23,
+      "physical_time": 127.09999999995689,
+      "clock": 2546,
+      "muscles": [
+        0.0,
+        0.5,
+        0.0,
+        0.5
+      ],
+      "position": [
+        9.819999999990001,
+        3.2575824370767905
+      ],
+      "source": "body_reflex",
+      "recalled_time": 770,
+      "index_edges": 280561
+    },
+    {
+      "step": 24,
+      "physical_time": 127.1999999999568,
+      "clock": 2548,
+      "muscles": [
+        0.0,
+        0.5,
+        0.0,
+        0.5
+      ],
+      "position": [
+        9.819999999990001,
+        3.2575824370767905
+      ],
+      "source": "body_reflex",
+      "recalled_time": 770,
+      "index_edges": 280761
+    }
+  ],
+  "protected_hashes": {
+    "F:\\一种AGI架构\\原架构闭环\\results\\continuous_balanced_1200.npz": "896689fb7f04f971935aca61a1195c2b3cc286e358fb2e4a4b5ab319c2ab81a5",
+    "F:\\一种AGI架构\\原架构闭环\\brain.py": "933ba6362dee88c4d03b130cab783047e984e0e480a5a7bbc06780d1dc29fe6a",
+    "F:\\一种AGI架构\\原架构闭环\\original_runtime.py": "10338f0b7d7e7229834c69dfc819d8663bd298c50853a28373ae01d4d2bd0844",
+    "F:\\一种AGI架构\\原架构闭环\\viewer.py": "2c4b77f7f8d86d6ee954f33358dd4be0314dd656ebf0bc695c86928d3ecbba0a",
+    "F:\\一种AGI架构\\原架构闭环\\fast_hippocampal_index.py": "d5a892b95eeadb07957ec001689f47b44fc24527f0b25238f0c6be4395eb4e28"
+  },
+  "limits": [
+    "Timing includes real act, physics, outcome and online learning; excludes verification and archive IO.",
+    "One 1200-step life continued for a short fixed window, without stimulus rescheduling; not a long-run throughput guarantee."
+  ],
+  "script_sha256": "4a8fbbff9aa81b605531dc43b46fd047171a7affd724735462daa49bbfdcaa8d"
+}

@@ -1,0 +1,67 @@
+{
+  "passed": true,
+  "actual_initial_frames": 3,
+  "actual_continuation_frames_per_branch": 3,
+  "model_learning": false,
+  "gui_launched": false,
+  "formal_or_living_archives_written": false,
+  "complete_brain_world_and_session_restore_exact": true,
+  "new_unobserved_pcm_with_old_prepared_action_restored_exact": true,
+  "texture_rng_and_all_world_fields_restored_exact": true,
+  "display_executed_equals_actual_physical_action": true,
+  "warmup2_declares_48_actions": true,
+  "warmup_control_flow_ticks": 48,
+  "warmup_presentations": [
+    [
+      0,
+      [
+        "red",
+        220.0,
+        0.8
+      ]
+    ],
+    [
+      8,
+      [
+        "green",
+        440.0,
+        0.8
+      ]
+    ],
+    [
+      16,
+      [
+        "blue",
+        660.0,
+        0.8
+      ]
+    ],
+    [
+      24,
+      [
+        "green",
+        440.0,
+        0.8
+      ]
+    ],
+    [
+      32,
+      [
+        "blue",
+        660.0,
+        0.8
+      ]
+    ],
+    [
+      40,
+      [
+        "red",
+        220.0,
+        0.8
+      ]
+    ]
+  ],
+  "warmup_check_scope": "Independent helper/control-flow count. This audit did not run 48 learning frames; viewer author's separate smoke test compares them against run_closed_loop.train.",
+  "static_ui_review": "Muscle bars use session.executed and physical activations; executed source uses the preceding decision. Current neural counts use the observed outcome. Offline presentation/color catalog is not decoded as thought content or passed to the brain.",
+  "viewer_source_sha256": "d928322e697a5bacff002dee4a3018cb9c2b287db7c999eaaad74e3b10eb27d1"
+}

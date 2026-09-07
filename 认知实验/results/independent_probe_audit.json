@@ -1,0 +1,142 @@
+{
+  "pfc_probe_sha256": "451d3fd98ccfdf8e6103dcb9f1fcc028d93d08d8d1a9a2491e29c328bae44684",
+  "sensory_updates_do_not_change_readout": true,
+  "feedback_arrives_after_all_trial_frames": true,
+  "teacher_updates_leave_fixed_network_unchanged": true,
+  "actual_train_calls_present_before_feedback": true,
+  "normal_and_lesion_evaluation_supply_no_feedback_or_weight_updates": true,
+  "counterfactual_pair_has_identical_full_suffix_and_opposite_answer": true,
+  "cleared_state_pair_scores_are_identical": true,
+  "original_iid_episode_overlap": [
+    {
+      "seed": 3,
+      "train_unique": 797,
+      "iid_test_exact_seen": 131,
+      "iid_test_count": 240
+    },
+    {
+      "seed": 11,
+      "train_unique": 764,
+      "iid_test_exact_seen": 128,
+      "iid_test_count": 240
+    },
+    {
+      "seed": 29,
+      "train_unique": 775,
+      "iid_test_exact_seen": 134,
+      "iid_test_count": 240
+    }
+  ],
+  "cleared_state_current_cue_positive_control": {
+    "accuracy": 1.0,
+    "correct": 240,
+    "trials": 240,
+    "confusion_expected_by_predicted": [
+      [
+        120,
+        0
+      ],
+      [
+        0,
+        120
+      ]
+    ],
+    "per_context_cue_correct_total": {
+      "00": [
+        60,
+        60
+      ],
+      "01": [
+        60,
+        60
+      ],
+      "10": [
+        60,
+        60
+      ],
+      "11": [
+        60,
+        60
+      ]
+    },
+    "mean_true_margin": 1.0,
+    "matched_context_pairs": 20,
+    "both_contexts_correct_fraction": 1.0,
+    "wall_seconds": 0.024186000000554486,
+    "feedback_supplied": false
+  },
+  "independent_strict_unseen_paired_checkpoint_results": [
+    {
+      "seed": 3,
+      "width": 64,
+      "trials": 240,
+      "exact_train_overlap": 0,
+      "full_accuracy": 0.7458333333333333,
+      "clear_before_cue_accuracy": 0.5
+    },
+    {
+      "seed": 3,
+      "width": 256,
+      "trials": 240,
+      "exact_train_overlap": 0,
+      "full_accuracy": 1.0,
+      "clear_before_cue_accuracy": 0.5
+    },
+    {
+      "seed": 3,
+      "width": 1024,
+      "trials": 240,
+      "exact_train_overlap": 0,
+      "full_accuracy": 1.0,
+      "clear_before_cue_accuracy": 0.5
+    },
+    {
+      "seed": 11,
+      "width": 64,
+      "trials": 240,
+      "exact_train_overlap": 0,
+      "full_accuracy": 1.0,
+      "clear_before_cue_accuracy": 0.5
+    },
+    {
+      "seed": 11,
+      "width": 256,
+      "trials": 240,
+      "exact_train_overlap": 0,
+      "full_accuracy": 1.0,
+      "clear_before_cue_accuracy": 0.5
+    },
+    {
+      "seed": 11,
+      "width": 1024,
+      "trials": 240,
+      "exact_train_overlap": 0,
+      "full_accuracy": 1.0,
+      "clear_before_cue_accuracy": 0.5
+    },
+    {
+      "seed": 29,
+      "width": 64,
+      "trials": 240,
+      "exact_train_overlap": 0,
+      "full_accuracy": 0.7333333333333333,
+      "clear_before_cue_accuracy": 0.5
+    },
+    {
+      "seed": 29,
+      "width": 256,
+      "trials": 240,
+      "exact_train_overlap": 0,
+      "full_accuracy": 1.0,
+      "clear_before_cue_accuracy": 0.5
+    },
+    {
+      "seed": 29,
+      "width": 1024,
+      "trials": 240,
+      "exact_train_overlap": 0,
+      "full_accuracy": 1.0,
+      "clear_before_cue_accuracy": 0.5
+    }
+  ]
+}

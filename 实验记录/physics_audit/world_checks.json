@@ -1,0 +1,32 @@
+{
+  "force_acceleration": {
+    "vx": 0.8000000000000004,
+    "x": 20.081999999999997
+  },
+  "pure_force_couple": {
+    "omega": 2.962962962962962,
+    "expected": 2.9629629629629632
+  },
+  "antagonist_turn_symmetry": true,
+  "coactivation_cancels": true,
+  "passive_drag_dissipates": {
+    "before": 2.5729,
+    "after": 0.06941826154582244
+  },
+  "thin_wall_no_tunneling": {
+    "x": 2.81999999999,
+    "vx": 0.0,
+    "pain": 1.0
+  },
+  "sustained_wall_contact": {
+    "impulse": 0.07863571077389718,
+    "pain": 0.3145428430955887
+  },
+  "contact_energy_does_not_increase": {
+    "before": 2.6296,
+    "after": 0.5371094569095359
+  },
+  "actual_ray_geometry_and_occlusion": true,
+  "invalid_action_and_initial_overlap_rejected": true,
+  "ten_second_deterministic_finite_replay": true
+}
