@@ -123,6 +123,19 @@ class Brain:
         self.danger_weights = np.zeros(5)
         self.echo_cooldown = 0
         self.cry_cooldown = 0
+        # 先想后动：杏仁核样危险预测门 + 前额叶内部推演（推演时不动、不写经历）
+        self.proximity_wide_trace = np.zeros(5)
+        self.fear = 0.0          # 危险/恐惧强度（杏仁核样，动态涨落）
+        self.gate = 1.0          # 动作门开度：1 全开可动，0 完全压住
+        self.frozen = False      # 当前是否处于"推演冻结"（想的时候不动）
+        self.freeze = 0          # 连续冻结帧数
+        self.冲动 = 0            # 冲动放行后的动作宽限帧
+        self.think_steps = 0     # 累计内部推演步（统计用）
+        self.release_replay = np.zeros(5)  # 回放到"绕行"后继后待执行的运动意图
+        self.恐惧增益 = 2.2      # 学到的宽距危险画面 -> 恐惧目标
+        self.绕行抵消 = 1.15     # 念头到"绕行且无疼"后继 -> 恐惧回落量
+        self.冻结上限 = 6        # 一次推演最多冻结的帧数（超时冲动放行）
+        self.冲动宽限 = 3        # 冲动放行后最少可动的帧数
         self.last_info = {}
         # 五个运动簇接收的固定突触：[自发、左显著、右显著、前危险、右危险、左危险、疼痛]。
         self.reflex_weights = np.array([[.08, 0, 0, 0, 0, 0, 0],
@@ -173,12 +186,71 @@ class Brain:
         self.echo_cooldown = 0
         self.touch_trace[:] = 0
         self.cry_cooldown = 0
+        self.proximity_wide_trace[:] = 0
+        self.fear = 0.0
+        self.gate = 1.0
+        self.frozen = False
+        self.freeze = 0
+        self.冲动 = 0
+        self.think_steps = 0
+        self.release_replay[:] = 0.0
 
     def _motor_currents(self, activity):
         blocks = np.asarray(activity).reshape(33, 20)[28:33]
         # 肌肉意图1的特征兴奋，意图0的相反特征抑制；不是符号检索。
         currents = np.maximum(0, blocks[:, 18] - blocks[:, 1])
         return currents / max(1e-8, float(currents.max(initial=0)))
+
+    def _通道正激活(self, 模式, 通道):
+        """某感受通道在念头/感觉模式里是否亮着正特征（档位>=1）。"""
+        块 = np.asarray(模式, dtype=bool).reshape(33, 20)
+        return bool(块[通道, 0::2].any())
+
+    def _推演(self, thought, 近距, 距离, 痛觉):
+        """先想后动：危险预测(杏仁核样)->动作门 + 前额叶内部推演。
+
+        危险目标 = 学到的宽距危险画面 + 念头回放到\"疼\"的后继；
+        念头回放到\"左/右绕行且无疼\"的后继时危险抵消、抑制松开。
+        冻结帧的念头只沿前额叶联想链内部推进（外部信号在 step 开头被关掉），
+        每帧一步；回放到绕行或超过冻结上限(冲动放行)才结束推演。
+        """
+        宽距 = np.clip(1.0 - 距离 / 2.2, 0.0, 1.0)
+        self.proximity_wide_trace = np.maximum(宽距, self.proximity_wide_trace * 0.9)
+        risk_wide = self.proximity_wide_trace * self.danger_weights
+        front_wide = float(risk_wide[1:4].max())
+        念头疼 = self._通道正激活(thought, 23)
+        念头绕 = self._通道正激活(thought, 31) or self._通道正激活(thought, 32)
+        target = float(np.clip(front_wide * self.恐惧增益 + (0.35 if 念头疼 else 0.0), 0.0, 1.0))
+        if 念头绕 and not 念头疼:
+            target = max(0.0, target - self.绕行抵消)
+        self.fear += 0.25 * (target - self.fear)
+        self.gate = float(np.clip(1.0 - 1.9 * self.fear, 0.0, 1.0))
+        面前有物 = float(近距[1:4].max()) > 0.03
+        self.冲动 = max(0, self.冲动 - 1)
+        if self.frozen:
+            self.freeze += 1
+            if 念头绕 and not 念头疼:
+                # 回放到\"绕过墙\"：杏仁核不再收到危险，抑制松开，
+                # 念头里的运动记忆(绕行动作)转成待执行意图。
+                self.fear = 0.0
+                self.release_replay = self._motor_currents(thought)
+                self.frozen = False
+                self.freeze = 0
+                self.冲动 = 0
+                return
+            if self.freeze >= self.冻结上限:
+                # 一直想不出安全路也不能永远僵住：冲动放行，让本能/反射去试。
+                self.frozen = False
+                self.freeze = 0
+                self.release_replay = np.zeros(5)
+                self.冲动 = self.冲动宽限
+            return
+        # 已经在转向逃生时不反复冻结，让绕行动作一次做完；只有又正面顶住才再停下来想。
+        if front_wide > 0.05 and self.fear >= 0.30 and 面前有物 and 痛觉 <= 0.03 and self.冲动 == 0 \
+                and self.last_action not in (3, 4):
+            self.frozen = True
+            self.freeze = 0
+            self.think_steps = 0
 
     def step(self, observation, waveform=(), *, stimulation=None, pleasant=0.,
              mouth_stimulation=None, plasticity=True, memory_enabled=True, pfc_enabled=True):
@@ -212,9 +284,10 @@ class Brain:
         recall_input = cue if cue.any() else sensory
         recalled = self.memory.recall_signal(recall_input) if memory_enabled else np.zeros(self.n)
         previous = self.previous.copy()
-        thought = self.pfc.微步(previous, sensory.astype(float) * 3.5 + .12 * recalled)
+        # 冻结推演帧：念头只沿前额叶联想链内部推进，外界信号被关掉（想的时候不被外界打断）。
+        thought = self.pfc.微步(previous, None if self.frozen else sensory.astype(float) * 3.5 + .12 * recalled)
         # 抑制只限制活动。阈值平票由出生时固定的微小兴奋性差异打破。
-        if thought.sum() > 48:
+        if thought.sum() > 48 and not self.frozen:
             current = self.pfc.驱动(previous) + sensory * 3.5 + .12 * recalled
             current += np.arange(self.n) * 1e-10
             threshold = np.partition(current, -48)[-48]
@@ -225,6 +298,8 @@ class Brain:
         self.auditory_trace = np.maximum(audio, self.auditory_trace * .35)
         self.proximity_trace = np.maximum(proximity, self.proximity_trace * .88)
         self.pain_trace = max(pain, self.pain_trace * .7)
+        # 先想后动：更新危险/恐惧与动作门；冻结时本帧不再行动。
+        self._推演(thought, proximity, distances, float(pain))
         # 固定本能投影：自发前进、鲜艳刺激定向、触痛退缩。
         # 持续颜色刺激引起抑制性适应，避免围着同一色标永久犹豫。
         self.color_adaptation += .02 * (colors.max(axis=0) - self.color_adaptation)
@@ -256,6 +331,10 @@ class Brain:
             if stim.shape != (5,) or not np.isfinite(stim).all() or (stim < 0).any():
                 raise ValueError('运动神经刺激必须是5维非负向量')
             scores += 10 * stim
+        if not self.frozen and self.release_replay.any():
+            # 推演回放到绕行后继：念头里的运动记忆直接执行该动作意图
+            scores = scores + 2.0 * self.release_replay
+        self.release_replay[:] = 0.0
         # 运动竞争：一个动作簇胜出；内部记忆允许多个簇共存。
         action = int(np.argmax(scores))
         motor_code = np.eye(5)[action]
@@ -273,7 +352,17 @@ class Brain:
             emitted = emitted + tone(self.instinct.哭音调, self.instinct.哭响度)
             self.cry_cooldown = self.instinct.哭冷却
 
-        if plasticity:
+        if self.frozen:
+            # 推演冻结：想的时候不动、不出声、不写经历。
+            action = 0
+            muscles = self.motor.decode(0)
+            motor_code = np.eye(5)[0]
+            mouth_post = np.zeros(4, dtype=float)
+            emitted = np.zeros(800)
+            cry_now = False
+            self.think_steps += 1
+
+        if plasticity and not self.frozen:
             # 三因子局部塑性：先前感觉活动×当前运动活动×强化/疼痛。
             gain = np.clip(pleasant, 0, 1) * .14
             self.audio_weights += gain * self.auditory_trace[:, None] * motor_code * (1 - self.audio_weights)
@@ -283,8 +372,9 @@ class Brain:
             self.danger_weights *= .999995
             self.audio_weights *= .999999
             self.echo_weights *= .999999
-            # 固定1:1传入前额叶的感官/运动副本决定经验时序。
-            # 内部回声仍可驱动思考，但不充当外界已经发生的教学证据。
+            # 固定1:1传入前额叶的感官/运动副本决定经验时序；
+            # 真实经历链(上一帧感觉->当前感觉)先入为主，音调->动作的因果
+            # 最清晰；冻结推演时外部关掉，念头仍沿这条内部联想链一步步走。
             self.pfc.学习(self.memory.激活.copy(), sensory)
             for _ in range(self.clock.每帧步数):
                 old, new = self.clock.走一步()
@@ -300,6 +390,9 @@ class Brain:
             'instinct_gain': instinct_gain,
             'touch': self.touch_trace.tolist(),
             'cried': bool(cry_now),
+            'fear': float(self.fear), 'gate': float(self.gate),
+            'frozen': bool(self.frozen), 'freeze': int(self.freeze),
+            'think_steps': int(self.think_steps),
             'pain': pain, 'risk': float(front_risk), 'sensory_active': int(sensory.sum()),
             'thought_active': int(thought.sum()), 'recall_events': self.memory.last_active_events,
             'memory_edges': self.memory.特征到时间.条数() + self.memory.时间到特征.条数(),

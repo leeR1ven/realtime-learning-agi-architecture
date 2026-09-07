@@ -219,16 +219,60 @@ def main():
                   objects=[{'position':(6.5,2.5),'color':(1,0,0),'radius':.45}])
     times, trace, positions = [], [], []
     echo = np.zeros(800)
+    # 先想后动统计：冻结推演帧不动、不出声、不写经历；念头只沿前额叶
+    # 内部联想链前进，直到回放到“绕行/无疼”后继、或超过冻结上限被放行。
+    in_run = False
+    run_len = 0
+    last_think = 0
+    run_thinks = []
+    run_ends = []
+    max_run = 0
+    episodes = 0
+    frozen_contact = False
+    frozen_pain = False
     for i in range(args.soak_frames):
         t = time.perf_counter()
         muscles, echo, info = live.step(world.observe(), echo)
         obs = world.step(muscles, DT)
         positions.append(world.position.copy())
         times.append((time.perf_counter() - t) * 1000)
+        frozen = bool(info['frozen'])
+        if frozen:
+            if not in_run:
+                in_run = True
+                run_len = 0
+            run_len += 1
+            last_think = int(info['think_steps'])
+            if obs['contact']:
+                frozen_contact = True
+            if float(info['pain']) > 0.0:
+                frozen_pain = True
+        elif in_run:
+            # 一段推演结束：记下念头链走了几步、以及解冻后的帧号。
+            in_run = False
+            episodes += 1
+            max_run = max(max_run, run_len)
+            run_thinks.append(last_think)
+            run_ends.append(i)
         if i % 10 == 0:
             trace.append({'frame':i, 'position':world.position.tolist(), **info})
         if i and i % 1000 == 0:
             print('soak', i, 'p95ms', round(float(np.percentile(times[-1000:],95)),2), flush=True)
+    if in_run:
+        episodes += 1
+        max_run = max(max_run, run_len)
+        run_thinks.append(last_think)
+        run_ends.append(None)
+    def _resume_distance(end):
+        # 推演结束后是否真的恢复行动：后面 40 帧内离开原地。
+        if end is None or end >= len(positions) - 40:
+            return None
+        return float(np.linalg.norm(positions[min(end + 40, len(positions) - 1)] - positions[end]))
+    resume = [d for d in (_resume_distance(e) for e in run_ends) if d is not None]
+    report['think_before_act'] = {'episodes': episodes, 'max_frozen_run': max_run,
+        'run_think_steps': run_thinks, 'frozen_contact': bool(frozen_contact),
+        'frozen_pain': bool(frozen_pain),
+        'min_resumed_displacement': min(resume) if resume else None}
     report['performance'] = {'frames':args.soak_frames, 'simulated_seconds':args.soak_frames*DT,
         'compute_seconds':sum(times)/1000, 'p50_ms':float(np.percentile(times,50)),
         'p95_ms':float(np.percentile(times,95)), 'p99_ms':float(np.percentile(times,99)),
@@ -241,6 +285,13 @@ def main():
     report['checks']['real_time_p95_under_100ms'] = report['performance']['p95_ms'] < 100
     report['checks']['all_world_values_finite'] = bool(np.isfinite(world.position).all())
     report['checks']['continues_moving_without_turning_in_place_forever'] = report['performance']['last_1000_frames_distance_m'] > 2.
+    ta = report['think_before_act']
+    report['checks']['freeze_reasoning_before_action'] = bool(ta['episodes'] >= 1 and ta['max_frozen_run'] >= 2)
+    report['checks']['frozen_thinking_never_collides'] = bool(
+        ta['episodes'] >= 1 and not ta['frozen_contact'] and not ta['frozen_pain'])
+    report['checks']['freeze_bounded_then_acts_again'] = bool(
+        ta['max_frozen_run'] <= 8 and ta['min_resumed_displacement'] is not None
+        and ta['min_resumed_displacement'] > 0.05 and max(ta['run_think_steps']) >= 2)
     report['elapsed_seconds'] = time.perf_counter() - started
     report['passed'] = all(report['checks'].values())
     (RESULTS/'evaluation.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')

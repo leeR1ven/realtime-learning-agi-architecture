@@ -8,9 +8,9 @@
 
 本次 50 次干预的动作评分和肌肉输出全部一致。另测得 `pfc_enabled=False` 时持续状态仍然更新；这个开关还同时关闭直接听觉关联，因此不是选择性工作记忆消融。
 
-证据：[existing_pfc_audit.json](F:/一种AGI架构/认知实验_cognition_experiments/results/existing_pfc_audit.json)。报告包含受检代码和存档的 SHA-256。
+证据：[existing_pfc_audit.json](results/existing_pfc_audit.json)。报告包含受检代码和存档的 SHA-256。
 
-原因可从 [brain.py](F:/一种AGI架构/闭环仿真_closed_loop_sim/brain.py:202) 直接追踪：内部 `thought` 会更新，而动作中的前额投票来自 `pfc.驱动(cue)`。所以现有原型证明了学得的前额连接能做线索关联检索，尚未证明持续前额状态参与上下文决策。这不否定用户完整的架构设想，也不意味着所有前额叶连接均与行为无关。
+原因可从 [brain.py](../闭环仿真_closed_loop_sim/brain.py:202) 直接追踪：内部 `thought` 会更新，而动作中的前额投票来自 `pfc.驱动(cue)`。所以现有原型证明了学得的前额连接能做线索关联检索，尚未证明持续前额状态参与上下文决策。这不否定用户完整的架构设想，也不意味着所有前额叶连接均与行为无关。
 
 ## 新候选机制的边界
 
@@ -39,9 +39,9 @@
 
 扩大到 256 单元在这项短上下文诊断上有收益；扩大到 1024 单元的长延迟成绩没有继续上升。宽度改变时随机连接、特征多样性和读出参数量也一起改变，不能只归因于神经元数量。长延迟是离散实验步数，未接仿真时钟，不能直接换算成真实工作记忆秒数。
 
-独立审查发现首次 IID 测试中，每种子 240 条完整序列分别有 131、128、134 条曾在训练出现。首次结果保留在 [pfc_probe_quick.json](F:/一种AGI架构/认知实验_cognition_experiments/results/pfc_probe_quick.json)。上表的严格配对成绩来自新增的 [pfc_probe_quick_strict.json](F:/一种AGI架构/认知实验_cognition_experiments/results/pfc_probe_quick_strict.json)：直接加载原存档、不重训，每种子 120 对完整序列与训练零重合。同一对的查询和干扰序列完全一致，仅早期上下文不同。过滤重复会让测试偏向更长的序列，因而它与首次 IID 测试的分布不同。
+独立审查发现首次 IID 测试中，每种子 240 条完整序列分别有 131、128、134 条曾在训练出现。首次结果保留在 [pfc_probe_quick.json](results/pfc_probe_quick.json)。上表的严格配对成绩来自新增的 [pfc_probe_quick_strict.json](results/pfc_probe_quick_strict.json)：直接加载原存档、不重训，每种子 120 对完整序列与训练零重合。同一对的查询和干扰序列完全一致，仅早期上下文不同。过滤重复会让测试偏向更长的序列，因而它与首次 IID 测试的分布不同。
 
-[独立审计](F:/一种AGI架构/认知实验_cognition_experiments/results/independent_probe_audit.json) 使用另一组零重合配对，再次测得 256／1024 单元各三个种子均为 100%，清状态均为 50%；每帧清状态的模型也能学会即时任务，正确率 100%。审计核验了感官输入中没有标准答案、决策后才反馈、测试不更新权重，以及成对试次的完整后缀逐值相同。
+[独立审计](results/independent_probe_audit.json) 使用另一组零重合配对，再次测得 256／1024 单元各三个种子均为 100%，清状态均为 50%；每帧清状态的模型也能学会即时任务，正确率 100%。审计核验了感官输入中没有标准答案、决策后才反馈、测试不更新权重，以及成对试次的完整后缀逐值相同。
 
 12 套候选存档的固定连接、读出权重、膜状态及继续学习结果均逐值一致。存档支持本实验的状态恢复，尚未实现与原闭环存档的融合兼容。
 
@@ -57,7 +57,7 @@
 ## 复现
 
 ```powershell
-Set-Location -LiteralPath 'F:\一种AGI架构'
+Set-Location -LiteralPath '.'
 & '.\.venv\Scripts\python.exe' -X utf8 '认知实验_cognition_experiments\audit_existing_pfc.py'
 & '.\.venv\Scripts\python.exe' -X utf8 '认知实验_cognition_experiments\pfc_probe.py' --quick
 & '.\.venv\Scripts\python.exe' -X utf8 '认知实验_cognition_experiments\audit_probe.py'

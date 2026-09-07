@@ -47,6 +47,7 @@
 | `闭环仿真_closed_loop_sim/` | 可运行的 2D 物理身体闭环：感知-思考-运动-反馈在线学习（见其 `README.md`） |
 | `认知实验_cognition_experiments/` `色标导航_color_beacon_navigation/` `原架构闭环_legacy_closed_loop/` `虚拟身体_virtual_body/` `运动实验_motor_experiments/` | 各阶段实验与候选机制对照 |
 | `实验记录_experiment_logs/` | 过程记录与审计结果 |
+| `对外联络_outreach/` | 对外宣传工具包：一页简介、邮件/社区发布模板、发送前清单与目标渠道 |
 
 ## 运行环境
 
@@ -54,7 +55,7 @@
 - 主要依赖只有 NumPy；可视化闭环使用 Tkinter（Python 自带）。
 
 ```powershell
-# 核心文件自检（在 F:\一种AGI架构 下）
+# 核心文件自检（在仓库根目录下）
 .\.venv\Scripts\python.exe -X utf8 视觉前处理_visual_preprocess.py
 .\.venv\Scripts\python.exe -X utf8 前额叶区_prefrontal.py
 .\.venv\Scripts\python.exe -X utf8 运动输出区_motor_output.py
@@ -63,16 +64,17 @@
 Set-Location -LiteralPath '闭环仿真_closed_loop_sim'
 & '..\.venv\Scripts\python.exe' -X utf8 viewer.py
 
-# 无窗口冒烟/完整评估（19 项检查 + 10000 帧压测）
+# 无窗口冒烟/完整评估（22 项检查 + 10000 帧压测）
 & '..\.venv\Scripts\python.exe' -X utf8 viewer.py --smoke-test
 & '..\.venv\Scripts\python.exe' -X utf8 evaluate.py --soak-frames 10000
 ```
 
 ## 当前验证结果（节选）
 
-- 闭环仿真 `evaluate.py` 19/19 项检查通过：碰撞学习迁移、任意声音-动作配对、出生本能（接触退缩/疼痛哭喊）、分支记忆融合、存档恢复一致性、运动反向连接可致动。
+- 闭环仿真 `evaluate.py` 22/22 项检查通过：碰撞学习迁移、任意声音-动作配对、出生本能（接触退缩/疼痛哭喊）、分支记忆融合、存档恢复一致性、运动反向连接可致动，以及“先想后动”冻结推演（危险前先在脑内回放，推演时不行动、不撞墙，解冻后才绕行）。
 - 10000 帧（模拟 1000 秒）压测：平均约 16 ms/帧、95% 分位约 22 ms、最慢 54 ms，无超 100 ms 帧，可维持实时运行。
 - 前额叶：真实经历回放 100% 覆盖下一个念头；动态抑制把活动容量稳定在“典型念头”大小附近。
+- 先想后动：闭环压测里出现多段“冻结推演”——危险预测（杏仁核样）合上动作门，念头只在内部联想链上推进（冻结帧静息、不写经历），回放到绕行/无疼后继或超时后解冻并绕行；压测中 4 段推演全程零碰撞，单段最长 6 帧。
 
 ## 已验证与仍待解决的问题（诚实声明）
 

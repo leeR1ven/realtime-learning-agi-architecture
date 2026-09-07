@@ -85,6 +85,7 @@ Below are the eight mechanisms this architecture relies on, each written as **wh
 | `闭环流程_closed_loop.py` | integration harness running the whole chain as one closed loop |
 | `闭环仿真_closed_loop_sim/` | runnable 2D physics-body closed loop (its own README, evaluation suite) |
 | `认知实验_cognition_experiments/` `色标导航_color_beacon_navigation/` `原架构闭环_legacy_closed_loop/` `虚拟身体_virtual_body/` `运动实验_motor_experiments/` | earlier-phase experiments |
+| `对外联络_outreach/` | outreach kit: one-page brief, email/community templates, and pre-send checklists |
 | `架构说明.md` / `ARCHITECTURE.md` | full architecture notes (Chinese / English) |
 
 ## Get started
@@ -108,12 +109,15 @@ Set-Location -LiteralPath '闭环仿真_closed_loop_sim'
 & '..\.venv\Scripts\python.exe' -X utf8 evaluate.py --soak-frames 10000
 ```
 
-The evaluation suite runs **19 independent checks**: collision learning transfers to unseen
+The evaluation suite runs **22 independent checks**: collision learning transfers to unseen
 walls, arbitrary sound→action mappings are learned and causally depend on the PFC and the
 temporal memory, two independently-trained branches can be **fused** into one brain without
 losing either skill, checkpoints resume deterministically, an innate reflex area verifiably withdraws on touch and cries on pain with zero learned
-connections, and lesioning the motor reverse connections stops all movement. A 10,000-frame soak (~1,000 simulated seconds) runs at roughly
-16 ms/frame average and never exceeds 100 ms/frame on the development machine.
+connections, lesioning the motor reverse connections stops all movement, and **think-before-act**
+freeze rehearsal appears in the closed loop: facing learned danger the brain shuts the action gate
+while the PFC advances internally (no movement, no collision, no experience write), then resumes
+and turns around the obstacle once the rehearsal resolves. A 10,000-frame soak (~1,000 simulated
+seconds) runs at roughly 16 ms/frame average and never exceeds 100 ms/frame on the development machine.
 
 ## Where numbers live (edit once, everything follows)
 

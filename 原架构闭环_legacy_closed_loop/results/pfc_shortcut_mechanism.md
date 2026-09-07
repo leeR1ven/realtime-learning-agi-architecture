@@ -24,7 +24,7 @@
 
 重叠教学还会产生A→A或B→A等真实共现边。它们在部分参数/重复次数下让活动持续或循环；JSON保留了每个微步的完整活动和电流。这些是人工教学时序的后果，不能称为真实脑自动发现了持续状态，也不能仅因出现自关联就判断模型异常。
 
-当前闭环在[brain.py:184](F:/一种AGI架构/原架构闭环_legacy_closed_loop/brain.py:184)先做内部微步，把当前感觉与回忆电流共同送入原PFC；随后在[brain.py:217](F:/一种AGI架构/原架构闭环_legacy_closed_loop/brain.py:217)记录最终thought。[original_runtime.py:190](F:/一种AGI架构/原架构闭环_legacy_closed_loop/original_runtime.py:190)只学习上一次记录的实际thought→本次实际thought。
+当前闭环在[brain.py:184](../brain.py:184)先做内部微步，把当前感觉与回忆电流共同送入原PFC；随后在[brain.py:217](../brain.py:217)记录最终thought。[original_runtime.py:190](../original_runtime.py:190)只学习上一次记录的实际thought→本次实际thought。
 
 因此，如果A在一次记录的最终活动里仍存在，随后一次记录含C，现有实现就可能学出A→C；若这种A/C接续只发生在没有逐一记录的内部微步，当前写入方式不会直接学到该快捷边。这项条件来自源代码核查，尚未验证真实传感闭环会自然形成声音→路线快捷连接；目前真实环境没有已验证的路线记忆任务。
 

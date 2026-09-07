@@ -2,7 +2,7 @@
 
 2026-09-06。只读审计现有代码与已保存报告，另在临时初生 Runtime 和临时环境上执行两个小型机制检查；未训练或修改默认生活模型，未修改任何核心代码。项目树未发现 AGENTS.md。
 
-后续执行说明：完成本审计后，经主任务授权针对第 6 项另外实现了可选 `grow` 时间容量策略，接入 `original_runtime.py`，默认仍为原 `fixed` 行为。根目录六核心与默认生活存档未改；实现与复测见 [可选时间环扩容说明](F:/一种AGI架构/原架构闭环_legacy_closed_loop/可选时间环扩容说明.md)。以下关于原固定环的诊断仍然成立。
+后续执行说明：完成本审计后，经主任务授权针对第 6 项另外实现了可选 `grow` 时间容量策略，接入 `original_runtime.py`，默认仍为原 `fixed` 行为。根目录六核心与默认生活存档未改；实现与复测见 [可选时间环扩容说明](可选时间环扩容说明.md)。以下关于原固定环的诊断仍然成立。
 
 ## 结论与适用范围
 
@@ -14,61 +14,61 @@
 
 | 组件 | 已核实事实 | 用法或限制 |
 |---|---|---|
-| [environment.py:278](F:/一种AGI架构/色标导航_color_beacon_navigation/environment.py:278) | 只返回 31 条深度、31×3 RGB、身体速度/角速度/疼痛/触觉、800 点 8 kHz PCM | 可以接入原 `OriginalBrain`；地图、坐标、目标等只留给评分器 |
-| [textured_route_environment.py:83](F:/一种AGI架构/色标导航_color_beacon_navigation/textured_route_environment.py:83) | 仅替换真实命中墙面的 RGB，物理积分和接触继承原类 | 用固定空间纹理降低真实视觉同质化；纹理种子不要随路线要求改变 |
-| [route_switch_environment.py:174](F:/一种AGI架构/色标导航_color_beacon_navigation/route_switch_environment.py:174) | 途中请求只改下一段声音，身体/时间/随机状态不重置 | 可直接用于相同前缀的保持/改道反事实 |
-| [route_switch_environment.py:185](F:/一种AGI架构/色标导航_color_beacon_navigation/route_switch_environment.py:185) | 根据物理轨迹计算完整过墙通道与中线交点 | 评分可用私有坐标，脑不可读取这些记录 |
-| [route_switch_environment.py:214](F:/一种AGI架构/色标导航_color_beacon_navigation/route_switch_environment.py:214) | 首次抵达红色即结束，内置正确到达核对最后一次完整过墙通道 | 严格改道验收还必须核对提示后首次通道，不能只看 `success`；先走错再绕回不能算同一标准的成功 |
-| [route_switch_controller.py:107](F:/一种AGI架构/色标导航_color_beacon_navigation/route_switch_controller.py:107) | 三目标频段与两规则频段在代码中预分成独立保持群；换目标清奖励轨迹并断前后事件链 | 没有直接读取路线标签，但这种出生语义分组不是自然学会语言；不能直接沿用为用户共同时间原架构 |
-| [route_switch_controller.py:134](F:/一种AGI架构/色标导航_color_beacon_navigation/route_switch_controller.py:134) | 固定目标、规则与两个受体汇入混合细胞，没有可学习 PFC→PFC 矩阵 | 旧 8192 混合单元不是原 `前额叶联想区` 的替代验收 |
-| [associative_controller.py:263](F:/一种AGI架构/色标导航_color_beacon_navigation/associative_controller.py:263) | 只有当前感觉分数达到最高候选 80% 的事件得到回忆和后继支持；后继传播只走两跳 | 后续画面与当前画面不同时会被门直接过滤，无法以这个限制否定原架构的内部多步推演 |
-| [associative_controller.py:349](F:/一种AGI架构/色标导航_color_beacon_navigation/associative_controller.py:349) | 真实奖励最多回溯 4096 帧，按当前语境筛选；非受奖探索动作初始读出强度为零 | 不是教师路线，但也不是无条件保留完整共同时间的原机制 |
+| [environment.py:278](../色标导航_color_beacon_navigation/environment.py:278) | 只返回 31 条深度、31×3 RGB、身体速度/角速度/疼痛/触觉、800 点 8 kHz PCM | 可以接入原 `OriginalBrain`；地图、坐标、目标等只留给评分器 |
+| [textured_route_environment.py:83](../色标导航_color_beacon_navigation/textured_route_environment.py:83) | 仅替换真实命中墙面的 RGB，物理积分和接触继承原类 | 用固定空间纹理降低真实视觉同质化；纹理种子不要随路线要求改变 |
+| [route_switch_environment.py:174](../色标导航_color_beacon_navigation/route_switch_environment.py:174) | 途中请求只改下一段声音，身体/时间/随机状态不重置 | 可直接用于相同前缀的保持/改道反事实 |
+| [route_switch_environment.py:185](../色标导航_color_beacon_navigation/route_switch_environment.py:185) | 根据物理轨迹计算完整过墙通道与中线交点 | 评分可用私有坐标，脑不可读取这些记录 |
+| [route_switch_environment.py:214](../色标导航_color_beacon_navigation/route_switch_environment.py:214) | 首次抵达红色即结束，内置正确到达核对最后一次完整过墙通道 | 严格改道验收还必须核对提示后首次通道，不能只看 `success`；先走错再绕回不能算同一标准的成功 |
+| [route_switch_controller.py:107](../色标导航_color_beacon_navigation/route_switch_controller.py:107) | 三目标频段与两规则频段在代码中预分成独立保持群；换目标清奖励轨迹并断前后事件链 | 没有直接读取路线标签，但这种出生语义分组不是自然学会语言；不能直接沿用为用户共同时间原架构 |
+| [route_switch_controller.py:134](../色标导航_color_beacon_navigation/route_switch_controller.py:134) | 固定目标、规则与两个受体汇入混合细胞，没有可学习 PFC→PFC 矩阵 | 旧 8192 混合单元不是原 `前额叶联想区` 的替代验收 |
+| [associative_controller.py:263](../色标导航_color_beacon_navigation/associative_controller.py:263) | 只有当前感觉分数达到最高候选 80% 的事件得到回忆和后继支持；后继传播只走两跳 | 后续画面与当前画面不同时会被门直接过滤，无法以这个限制否定原架构的内部多步推演 |
+| [associative_controller.py:349](../色标导航_color_beacon_navigation/associative_controller.py:349) | 真实奖励最多回溯 4096 帧，按当前语境筛选；非受奖探索动作初始读出强度为零 | 不是教师路线，但也不是无条件保留完整共同时间的原机制 |
 
-旧正式自主脚本没有调用 `teacher.py`。准备阶段保留的教师工具会读地图，必须与自主成绩区分。旧灰墙 0/6、纹理 2/6 改道结果及失败方向详见 [纹理对照结果](F:/一种AGI架构/色标导航_color_beacon_navigation/纹理对照结果.md)；这些结果不能当成当前 `living_original.npz` 的导航成绩。
+旧正式自主脚本没有调用 `teacher.py`。准备阶段保留的教师工具会读地图，必须与自主成绩区分。旧灰墙 0/6、纹理 2/6 改道结果及失败方向详见 [纹理对照结果](../色标导航_color_beacon_navigation/纹理对照结果.md)；这些结果不能当成当前 `living_original.npz` 的导航成绩。
 
-本轮短检查使用临时 `TexturedRouteEnv`：上下两声音包都通过原 `packet_digest` 严格白名单；改变路线请求后六项观察量逐值不变，身体位置、朝向、时间不变，只有 PCM 改变，最大绝对幅度 0.89387。结果：[navigation_readiness_environment_boundary.json](F:/一种AGI架构/原架构闭环_legacy_closed_loop/results/navigation_readiness_environment_boundary.json)。
+本轮短检查使用临时 `TexturedRouteEnv`：上下两声音包都通过原 `packet_digest` 严格白名单；改变路线请求后六项观察量逐值不变，身体位置、朝向、时间不变，只有 PCM 改变，最大绝对幅度 0.89387。结果：[navigation_readiness_environment_boundary.json](results/navigation_readiness_environment_boundary.json)。
 
 ## 当前原架构的真实机制与缺口
 
 ### 1. 当前课程没有提供固定目的地的路线经验
 
-[viewer.py:171](F:/一种AGI架构/原架构闭环_legacy_closed_loop/viewer.py:171) 的 `LifeSession.pair` 把色标放在身体前方 1.4 米，外界在不同呈现阶段更换位置。[experience_environment.py:96](F:/一种AGI架构/原架构闭环_legacy_closed_loop/experience_environment.py:96) 负责发音，[experience_environment.py:138](F:/一种AGI架构/原架构闭环_legacy_closed_loop/experience_environment.py:138) 负责外部色标呈现。它验证音画同现与回忆，不要求记住固定地点，更没有成功到达奖励。
+[viewer.py:171](viewer.py:171) 的 `LifeSession.pair` 把色标放在身体前方 1.4 米，外界在不同呈现阶段更换位置。[experience_environment.py:96](experience_environment.py:96) 负责发音，[experience_environment.py:138](experience_environment.py:138) 负责外部色标呈现。它验证音画同现与回忆，不要求记住固定地点，更没有成功到达奖励。
 
 扩充同类随身音画呈现会增加样本，但不会自动补齐固定空间路线的经验。建议保留旧经历，在后续课程中让色标、墙面和通道保持固定；先在真实可见时发相应音，再在其他位置发短提示。不可让发音时色标总被移动到身体前方，同时把成绩称为找到了固定目标。
 
 ### 2. 声音先唤起一帧，同一声音不包含当前位置
 
-[brain.py:176](F:/一种AGI架构/原架构闭环_legacy_closed_loop/brain.py:176) 的有声初始查询只有音频投影；当前位置的感觉在后续微步通过外部电流共同参与。这个顺序符合“先想起相关色标”，但同一音调在不同地点出现多次时，初始查询必然需要后续阶段消歧，不能把初始色标正确当作路线已经正确。
+[brain.py:176](brain.py:176) 的有声初始查询只有音频投影；当前位置的感觉在后续微步通过外部电流共同参与。这个顺序符合“先想起相关色标”，但同一音调在不同地点出现多次时，初始查询必然需要后续阶段消歧，不能把初始色标正确当作路线已经正确。
 
-[前额叶区_prefrontal.py:149](F:/一种AGI架构/前额叶区_prefrontal.py:149) 的索引先比较共有细胞数，再比较集合大小，仍平票保留最早插入的时间。它不是沿时间向前的控制器，也没有将所有候选路径同时展开。
+[前额叶区_prefrontal.py:149](../前额叶区_prefrontal.py:149) 的索引先比较共有细胞数，再比较集合大小，仍平票保留最早插入的时间。它不是沿时间向前的控制器，也没有将所有候选路径同时展开。
 
 本轮用三个独立人工感觉事件检查原 Runtime：它们共享音频细胞，时间分别为 0、2、4。只用共享声音连续查询六次，结果均为时间 0；用第二个完整感觉码则选时间 2。这里只证明实际检索规则，不是导航训练结果。
 
 ### 3. 当前画面绑定的是刚刚执行的动作，需要验证后继读出
 
-[brain.py:171](F:/一种AGI架构/原架构闭环_legacy_closed_loop/brain.py:171) 编码 `last_executed`；[brain.py:265](F:/一种AGI架构/原架构闭环_legacy_closed_loop/brain.py:265) 在真实物理执行后设置它。[viewer.py:153](F:/一种AGI架构/原架构闭环_legacy_closed_loop/viewer.py:153) 的顺序是决策、物理执行、后果观察。因此同一时间的画面与肌肉是“当前画面，以及抵达当前画面时刚做过的动作”，并没有记录一个尚未执行的教师动作。这种真实后果对齐必须保留。
+[brain.py:171](brain.py:171) 编码 `last_executed`；[brain.py:265](brain.py:265) 在真实物理执行后设置它。[viewer.py:153](viewer.py:153) 的顺序是决策、物理执行、后果观察。因此同一时间的画面与肌肉是“当前画面，以及抵达当前画面时刚做过的动作”，并没有记录一个尚未执行的教师动作。这种真实后果对齐必须保留。
 
-但 [brain.py:194](F:/一种AGI架构/原架构闭环_legacy_closed_loop/brain.py:194) 直接解码最终选中时间的肌肉。如果 PFC 一直选当前匹配画面，肌肉读出会倾向重复上一动作；在连续直行时可能有用，在应当转向的节点则必须由内部连接推进到相关后继，或由真正学过的动作预测路径激活下一命令。
+但 [brain.py:194](brain.py:194) 直接解码最终选中时间的肌肉。如果 PFC 一直选当前匹配画面，肌肉读出会倾向重复上一动作；在连续直行时可能有用，在应当转向的节点则必须由内部连接推进到相关后继，或由真正学过的动作预测路径激活下一命令。
 
-三事件人工检查中，匹配第二画面返回时间 2 的肌肉 1；下一实际经历的肌肉 2 保存在时间 4。诊断人员显式查看时间 4 只是为了核对连续记忆，不作为模型的导航命令。检索没有改变唯一当前时钟，也不会自动把查询推进到下一帧。结果：[navigation_readiness_mechanism_probe.json](F:/一种AGI架构/原架构闭环_legacy_closed_loop/results/navigation_readiness_mechanism_probe.json)。这不是要求改写原记忆对齐，而是要求检查真实 PFC 是否能完成用户期待的后继激活。
+三事件人工检查中，匹配第二画面返回时间 2 的肌肉 1；下一实际经历的肌肉 2 保存在时间 4。诊断人员显式查看时间 4 只是为了核对连续记忆，不作为模型的导航命令。检索没有改变唯一当前时钟，也不会自动把查询推进到下一帧。结果：[navigation_readiness_mechanism_probe.json](results/navigation_readiness_mechanism_probe.json)。这不是要求改写原记忆对齐，而是要求检查真实 PFC 是否能完成用户期待的后继激活。
 
 ### 4. 递归确实存在，但学到的中间步骤与索引内容需逐路验证
 
-[brain.py:184](F:/一种AGI架构/原架构闭环_legacy_closed_loop/brain.py:184) 在每个内部微步把当前感觉与召回感觉加在一起，再经原 PFC 兴奋/抑制/去抑传播；不是关闭 PFC。[original_runtime.py:222](F:/一种AGI架构/原架构闭环_legacy_closed_loop/original_runtime.py:222) 的学习只看到相邻两次真实记录的最终 `thought`，当前两个内部微步各自的念头没有单独进行 Hebb 学习。
+[brain.py:184](brain.py:184) 在每个内部微步把当前感觉与召回感觉加在一起，再经原 PFC 兴奋/抑制/去抑传播；不是关闭 PFC。[original_runtime.py:222](original_runtime.py:222) 的学习只看到相邻两次真实记录的最终 `thought`，当前两个内部微步各自的念头没有单独进行 Hebb 学习。
 
-[brain.py:217](F:/一种AGI架构/原架构闭环_legacy_closed_loop/brain.py:217) 以固定前向 `external` 写入同一时间索引，以最终 `thought` 学 PFC 后继；这没有分割记忆，但意味着一个新产生的复杂内部组合未必是索引曾登记过的码。是否因此失去正确路线，需要比较每微步电流、正确事件票数、总查询细胞数和动作效果。此前较强候选最终索引低于 .8 的现象已经说明此接口值得优先检查。
+[brain.py:217](brain.py:217) 以固定前向 `external` 写入同一时间索引，以最终 `thought` 学 PFC 后继；这没有分割记忆，但意味着一个新产生的复杂内部组合未必是索引曾登记过的码。是否因此失去正确路线，需要比较每微步电流、正确事件票数、总查询细胞数和动作效果。此前较强候选最终索引低于 .8 的现象已经说明此接口值得优先检查。
 
 不能简单增加内部微步数然后把更多激活认作思考；若固定当前画面和回忆的增益一直强于已学后继，同一个事件可能被反复补全。相反，也不能把熟练后的直接音频→路线联想判作错误；验收应看新起点与改道的真实行为。
 
 ### 5. 原闭环尚无奖励信用分配输入
 
-[brain.py:65](F:/一种AGI架构/原架构闭环_legacy_closed_loop/brain.py:65) 严格只接感官和 PCM；实际学习函数只有相邻真实念头 Hebb，没有 `receive_reward`、标量强化反馈或把获奖前经验增强的路径。[experience_environment.py:7](F:/一种AGI架构/原架构闭环_legacy_closed_loop/experience_environment.py:7) 也明确没有自动奖励。
+[brain.py:65](brain.py:65) 严格只接感官和 PCM；实际学习函数只有相邻真实念头 Hebb，没有 `receive_reward`、标量强化反馈或把获奖前经验增强的路径。[experience_environment.py:7](experience_environment.py:7) 也明确没有自动奖励。
 
 用户此前允许“规定通道且到达才奖励”，所以未来加入真实结果对已经发生的连接的调制属于需明确披露的机制修改；它不是调小一个现有参数。不要只在评分器产生 `+1` 就宣称模型已经利用奖励，也不要把旧控制器按语境过滤的事件存储原样接回共同时间模型。可以先做无奖励冻结因果基线，再决定最小调制方案。
 
 ### 6. 连续数天生活的真实容量边界
 
-[海马体时间区_hippocampal_time.py:13](F:/一种AGI架构/海马体时间区_hippocampal_time.py:13) 默认 1,728,000 个时间位置、每位置 .05 秒，总环长 24 小时。绕回后 [前额叶区_prefrontal.py:134](F:/一种AGI架构/前额叶区_prefrontal.py:134) 仍向旧集合 `add`，各感觉/运动时间表仍按原 Hebb 累加。源码没有自动区分第几天或清除旧槽，因此旧新内容会叠加。这不影响现在约九分钟生活，但不能在未处理/声明此边界时把连续数天灌入数据称为无限新记忆。任何处理都应保留一个共同时间系统并说明内容保存策略。
+[海马体时间区_hippocampal_time.py:13](../海马体时间区_hippocampal_time.py:13) 默认 1,728,000 个时间位置、每位置 .05 秒，总环长 24 小时。绕回后 [前额叶区_prefrontal.py:134](../前额叶区_prefrontal.py:134) 仍向旧集合 `add`，各感觉/运动时间表仍按原 Hebb 累加。源码没有自动区分第几天或清除旧槽，因此旧新内容会叠加。这不影响现在约九分钟生活，但不能在未处理/声明此边界时把连续数天灌入数据称为无限新记忆。任何处理都应保留一个共同时间系统并说明内容保存策略。
 
 ## 可直接执行的最小因果验收
 

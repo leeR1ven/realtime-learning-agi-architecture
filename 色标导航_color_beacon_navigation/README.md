@@ -1,11 +1,11 @@
 这是一个**先听短音、随后保持上下文，自主寻找指定色标**的具身实验。当前重点是检验记忆的连续性与先后依赖：先前经历是否影响后来如何行动，回忆能否把相关经历接起来，并对真实动作产生作用。路线由模型在环境中探索；本轮不提供教师路线，只在第一次实际到达目标时给一次 `+1`。
 
-已完成的纯自主实验见 [验收结果.md](F:/一种AGI架构/色标导航_color_beacon_navigation/验收结果.md)：部分红色路线有学习收益，但同起点总体仍为1/3，关闭顺序通路反而为2/3，尚未通过稳定导航与先后依赖的能力验收。保存了连续经历、存在前后连接，也不自动等于理解“必须先完成某一步，后一步才能成功”。
+已完成的纯自主实验见 [验收结果.md](验收结果.md)：部分红色路线有学习收益，但同起点总体仍为1/3，关闭顺序通路反而为2/3，尚未通过稳定导航与先后依赖的能力验收。保存了连续经历、存在前后连接，也不自动等于理解“必须先完成某一步，后一步才能成功”。
 
-**本轮入口。** 双击 [启动导航.cmd](F:/一种AGI架构/色标导航_color_beacon_navigation/启动导航.cmd) 打开本地窗口；正式自主训练与评估由 [autonomous_experiment.py](F:/一种AGI架构/色标导航_color_beacon_navigation/autonomous_experiment.py) 执行。
+**本轮入口。** 双击 [启动导航.cmd](启动导航.cmd) 打开本地窗口；正式自主训练与评估由 [autonomous_experiment.py](autonomous_experiment.py) 执行。
 
 ```powershell
-Set-Location -LiteralPath 'F:\一种AGI架构\色标导航'
+Set-Location -LiteralPath '.\色标导航_color_beacon_navigation'
 & '..\.venv\Scripts\python.exe' -X utf8 viewer.py
 ```
 
@@ -19,12 +19,12 @@ W/A/S/D 与空格保留为可选的人类肌肉示范接口，只有按住时才
 
 | 文件 | 用途 |
 | --- | --- |
-| [environment.py](F:/一种AGI架构/色标导航_color_beacon_navigation/environment.py) | 物理、受体、短音和环境私有评分。它没有导航控制策略。 |
-| [associative_controller.py](F:/一种AGI架构/色标导航_color_beacon_navigation/associative_controller.py) | 当前基于固定受体、阈值混合、时间经历与局部联想思想的导航控制器。 |
-| [autonomous_experiment.py](F:/一种AGI架构/色标导航_color_beacon_navigation/autonomous_experiment.py) | 本轮正式入口；自主动作、真实肌肉执行、到达奖励、快照与对照评估。 |
-| [viewer.py](F:/一种AGI架构/色标导航_color_beacon_navigation/viewer.py) | 真实环境可视化和交互，默认自主运行，不自动调用教师。 |
-| [teacher.py](F:/一种AGI架构/色标导航_color_beacon_navigation/teacher.py) / [run_experiment.py](F:/一种AGI架构/色标导航_color_beacon_navigation/run_experiment.py) | 准备阶段保留的外部示范工具。教师能读地图并规划示范，因此不能把它的路线成绩算给脑；**这两个工具未用于本轮正式自主模型训练**。 |
-| [audit_navigation.py](F:/一种AGI架构/色标导航_color_beacon_navigation/audit_navigation.py) | 独立接口与因果小检查。里面人为指定的少量动作只是检查用例，不是正式导航模型的训练轨迹。 |
+| [environment.py](environment.py) | 物理、受体、短音和环境私有评分。它没有导航控制策略。 |
+| [associative_controller.py](associative_controller.py) | 当前基于固定受体、阈值混合、时间经历与局部联想思想的导航控制器。 |
+| [autonomous_experiment.py](autonomous_experiment.py) | 本轮正式入口；自主动作、真实肌肉执行、到达奖励、快照与对照评估。 |
+| [viewer.py](viewer.py) | 真实环境可视化和交互，默认自主运行，不自动调用教师。 |
+| [teacher.py](teacher.py) / [run_experiment.py](run_experiment.py) | 准备阶段保留的外部示范工具。教师能读地图并规划示范，因此不能把它的路线成绩算给脑；**这两个工具未用于本轮正式自主模型训练**。 |
+| [audit_navigation.py](audit_navigation.py) | 独立接口与因果小检查。里面人为指定的少量动作只是检查用例，不是正式导航模型的训练轨迹。 |
 
 当前控制器是对原固定受体、局部 Hebb、时间记忆与多簇联想思想的一次具体实验实现，没有直接用旧前额叶类取得这些导航成绩。旧“闭环仿真”中的物理身体被复用；原有 GUI 和项目根目录神经文件保持原样。
 
@@ -59,7 +59,7 @@ W/A/S/D 与空格保留为可选的人类肌肉示范接口，只有按住时才
 **自主实验与证据。** 一个完整自主实验示例：
 
 ```powershell
-Set-Location -LiteralPath 'F:\一种AGI架构\色标导航'
+Set-Location -LiteralPath '.\色标导航_color_beacon_navigation'
 & '..\.venv\Scripts\python.exe' -X utf8 autonomous_experiment.py --episodes 12 --steps 900 --seed 2026 --width 4096
 ```
 
@@ -81,7 +81,7 @@ Set-Location -LiteralPath 'F:\一种AGI架构\色标导航'
 & '..\.venv\Scripts\python.exe' -X utf8 autonomous_experiment.py --evaluation-only --resume results/autonomous_evaluation.npz --steps 900 --output results/autonomous_probe.json
 ```
 
-报告默认写到 `results\autonomous_evaluation.json`，同名 `.npz` 是该次实验检查点；每完成一个回合会更新报告，训练回合后会存档。**运行中已有 JSON 只代表已完成的那些回合，不代表验收已经结束。** 本轮正式汇总和精确复现命令见 [验收结果.md](F:/一种AGI架构/色标导航_color_beacon_navigation/验收结果.md)，其中保留失败与所有消融结果。
+报告默认写到 `results\autonomous_evaluation.json`，同名 `.npz` 是该次实验检查点；每完成一个回合会更新报告，训练回合后会存档。**运行中已有 JSON 只代表已完成的那些回合，不代表验收已经结束。** 本轮正式汇总和精确复现命令见 [验收结果.md](验收结果.md)，其中保留失败与所有消融结果。
 
 可单独检查接口与环境：
 
