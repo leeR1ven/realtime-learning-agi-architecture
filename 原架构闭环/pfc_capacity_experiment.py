@@ -21,8 +21,8 @@ ROOT = HERE.parent
 sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(HERE))
 from fast_pfc_currents import FastPFC
-from 前额叶区 import 前额叶联想区
-from 权重连接管理 import 连接表
+from 前额叶区_prefrontal import 前额叶联想区
+from 权重连接管理_weight_manager import 连接表
 
 
 def sha(path):
@@ -183,7 +183,7 @@ def retention_edges():
 
 def main():
     started = time.perf_counter()
-    protected = [ROOT/name for name in ('海马体时间区.py','视觉记忆区.py','听觉记忆区.py','运动记忆区.py','前额叶区.py','权重连接管理.py')]
+    protected = [ROOT/name for name in ('海马体时间区_hippocampal_time.py','视觉记忆区_visual_memory.py','听觉记忆区_auditory_memory.py','运动记忆区_motor_memory.py','前额叶区_prefrontal.py','权重连接管理_weight_manager.py')]
     protected += [HERE/name for name in ('brain.py','original_runtime.py','sensory_adapter.py','viewer.py','results/living_original.npz')]
     before = {str(path): sha(path) for path in protected}
     results = []

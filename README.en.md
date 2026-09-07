@@ -56,13 +56,13 @@ World ──▶ Auditory preprocess ─┤──▶ Prefrontal hub ──▶ Mot
 
 | Path | Purpose |
 | --- | --- |
-| `视觉前处理.py` / `听觉前处理.py` | visual / auditory preprocessing networks |
-| `运动输出区.py` | muscle thermometer coding, forward net, reverse-Hebbian net, mirror baseline |
-| `视觉记忆区.py` / `听觉记忆区.py` / `运动记忆区.py` | temporal-Hebbian memory per channel |
-| `海马体时间区.py` | the shared 24-hour time ring |
-| `前额叶区.py` | PFC: network, association, dynamic inhibition, focus gate, reciprocal lines |
-| `权重连接管理.py` | generic growth + periodic decay for plastic connections |
-| `闭环流程.py` | integration harness running the whole chain as one closed loop |
+| `视觉前处理_visual_preprocess.py` / `听觉前处理_auditory_preprocess.py` | visual / auditory preprocessing networks |
+| `运动输出区_motor_output.py` | muscle thermometer coding, forward net, reverse-Hebbian net, mirror baseline |
+| `视觉记忆区_visual_memory.py` / `听觉记忆区_auditory_memory.py` / `运动记忆区_motor_memory.py` | temporal-Hebbian memory per channel |
+| `海马体时间区_hippocampal_time.py` | the shared 24-hour time ring |
+| `前额叶区_prefrontal.py` | PFC: network, association, dynamic inhibition, focus gate, reciprocal lines |
+| `权重连接管理_weight_manager.py` | generic growth + periodic decay for plastic connections |
+| `闭环流程_closed_loop.py` | integration harness running the whole chain as one closed loop |
 | `闭环仿真/` | runnable 2D physics-body closed loop (its own README, evaluation suite) |
 | `认知实验/` `色标导航/` `原架构闭环/` `虚拟身体/` `运动实验/` | earlier-phase experiments |
 | `架构说明.md` / `ARCHITECTURE.md` | full architecture notes (Chinese / English) |
@@ -71,11 +71,11 @@ World ──▶ Auditory preprocess ─┤──▶ Prefrontal hub ──▶ Mot
 
 ```powershell
 # self-checks of the core modules (identifiers are Chinese on purpose)
-.\.venv\Scripts\python.exe -X utf8 视觉前处理.py
-.\.venv\Scripts\python.exe -X utf8 听觉前处理.py
-.\.venv\Scripts\python.exe -X utf8 运动输出区.py
-.\.venv\Scripts\python.exe -X utf8 前额叶区.py
-.\.venv\Scripts\python.exe -X utf8 闭环流程.py
+.\.venv\Scripts\python.exe -X utf8 视觉前处理_visual_preprocess.py
+.\.venv\Scripts\python.exe -X utf8 听觉前处理_auditory_preprocess.py
+.\.venv\Scripts\python.exe -X utf8 运动输出区_motor_output.py
+.\.venv\Scripts\python.exe -X utf8 前额叶区_prefrontal.py
+.\.venv\Scripts\python.exe -X utf8 闭环流程_closed_loop.py
 ```
 
 The **closed-loop simulation** is the most convincing demo: a small body in a 2D world sees,
@@ -99,11 +99,11 @@ connections stops all movement. A 10,000-frame soak (~1,000 simulated seconds) r
 
 Each module centralizes its size at the top:
 
-- `视觉前处理.py`: mosaic rows/cols, channels, levels per channel, layer count, ring radius
+- `视觉前处理_visual_preprocess.py`: mosaic rows/cols, channels, levels per channel, layer count, ring radius
   (defaults: 24×16 mosaic, RGB, 10 levels ⇒ 11,520 feature pairs / 23,040 neurons).
-- `听觉前处理.py`: frequency bands, levels (defaults: mono, 1,500 bands × 10 levels ⇒ 15,000
+- `听觉前处理_auditory_preprocess.py`: frequency bands, levels (defaults: mono, 1,500 bands × 10 levels ⇒ 15,000
   pairs / 30,000 neurons).
-- `运动输出区.py`: muscle count, levels (defaults: 200 muscles × 10 levels ⇒ 2,000 pairs /
+- `运动输出区_motor_output.py`: muscle count, levels (defaults: 200 muscles × 10 levels ⇒ 2,000 pairs /
   4,000 neurons).
 - Memory areas and the PFC read `网.输出层数量` from their sources, so they resize
   **automatically** — there is no second place to edit.
@@ -147,7 +147,7 @@ House rules observed so far (please keep them):
 
 1. Edit **one module at a time** so per-area ablations stay clean.
 2. Fixed signal-processing networks must stay fixed; Hebbian learning only touches the plastic
-   tables listed in `权重连接管理.py`.
+   tables listed in `权重连接管理_weight_manager.py`.
 3. Prefer pure neuron/connection mechanisms over lookup tables or code shortcuts — that is the
    whole point of the architecture.
 4. Keep dependencies minimal (NumPy only for the core; Tkinter for the sim window).

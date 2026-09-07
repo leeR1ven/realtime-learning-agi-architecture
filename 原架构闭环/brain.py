@@ -23,7 +23,7 @@ from contact_reflex import contact_reflex
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
-from 前额叶区 import 前额叶神经网络, 天生互惠返回线
+from 前额叶区_prefrontal import 前额叶神经网络, 天生互惠返回线
 
 
 @dataclass

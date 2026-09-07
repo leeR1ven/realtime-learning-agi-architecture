@@ -29,8 +29,8 @@ ROOT = Path(__file__).resolve().parent.parent
 SNAPSHOT_VERSION = 1
 TABLE_PARAMETERS = ('强化量', '衰减率', '消失下限', '警戒线', '衰减间隔')
 TABLE_COUNTERS = ('连接条数', '维护次数', '上次衰减维护')
-SOURCE_FILES = ('海马体时间区.py', '视觉记忆区.py', '听觉记忆区.py',
-                '运动记忆区.py', '前额叶区.py', '权重连接管理.py')
+SOURCE_FILES = ('海马体时间区_hippocampal_time.py', '视觉记忆区_visual_memory.py', '听觉记忆区_auditory_memory.py',
+                '运动记忆区_motor_memory.py', '前额叶区_prefrontal.py', '权重连接管理_weight_manager.py')
 
 
 def _original_modules():
@@ -116,7 +116,7 @@ class OriginalRuntime:
     record is for the current actual modality/PFC activations, including the
     executed motor command. It learns the original frame-to-frame PFC transition
     once, and writes all three sensory/motor memories on each internal step.
-    The index is written at frame-start old time, matching 前额叶区.py:408-414.
+    The index is written at frame-start old time, matching 前额叶区_prefrontal.py:408-414.
     index_pfc_bool can supply the actual same-frame fixed-network forward output
     for this index, independently of the recurrent thought being learned.
     Omitting it preserves the original wrapper's pfc_bool indexing behavior.
@@ -218,7 +218,7 @@ class OriginalRuntime:
         if specification is None:
             if 'pfc_plasticity' not in self.parameters:
                 return
-            from 权重连接管理 import 连接表
+            from 权重连接管理_weight_manager import 连接表
             for name in ('联想', '去抑'):
                 old = getattr(self.pfc, name)
                 table = 连接表(**{key: getattr(old, key) for key in TABLE_PARAMETERS})

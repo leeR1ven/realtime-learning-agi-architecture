@@ -47,7 +47,7 @@ def ranges(indices):
 
 
 def original_forward(width, seed, config):
-    path = ROOT / '前额叶区.py'
+    path = ROOT / '前额叶区_prefrontal.py'
     tree = ast.parse(path.read_text(encoding='utf-8-sig'), filename=str(path))
     wanted = {'扩散', '前额叶神经网络'}
     nodes = [node for node in tree.body if isinstance(node, (ast.FunctionDef, ast.ClassDef))
@@ -168,7 +168,7 @@ def possible_influence(network, visual, audio, motor):
 def run(config_path, seeds):
     started = time.perf_counter()
     config = json.loads(config_path.read_text(encoding='utf-8-sig'))
-    protected = [ROOT/'前额叶区.py', HERE/'sensory_adapter.py', HERE/'brain.py', HERE/'viewer.py',
+    protected = [ROOT/'前额叶区_prefrontal.py', HERE/'sensory_adapter.py', HERE/'brain.py', HERE/'viewer.py',
                  HERE/'results'/'living_original.npz']
     hashes_before = {str(p):file_hash(p) for p in protected}
     poses = list(itertools.product(((3.,3.),(5.,4.),(4.,5.)),(-.8,0.,.8),(-.3,0.,.3),(1.2,2.)))

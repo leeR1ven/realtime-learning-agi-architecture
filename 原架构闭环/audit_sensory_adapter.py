@@ -31,7 +31,7 @@ def tone(frequency):
 
 
 def original_pfc(total_width):
-    path = ROOT / "前额叶区.py"
+    path = ROOT / "前额叶区_prefrontal.py"
     tree = ast.parse(path.read_text(encoding="utf-8-sig"))
     nodes = [n for n in tree.body if isinstance(n, (ast.FunctionDef, ast.ClassDef))
              and n.name in ("扩散", "前额叶神经网络")]
@@ -86,7 +86,7 @@ def threshold_table(packet):
 
 def main():
     started = time.perf_counter()
-    original_names = ("视觉前处理.py", "听觉前处理.py", "运动输出区.py", "前额叶区.py")
+    original_names = ("视觉前处理_visual_preprocess.py", "听觉前处理_auditory_preprocess.py", "运动输出区_motor_output.py", "前额叶区_prefrontal.py")
     hashes_before = {name: hashlib.sha256((ROOT / name).read_bytes()).hexdigest() for name in original_names}
     checks = []
     global_rng = np.random.get_state()

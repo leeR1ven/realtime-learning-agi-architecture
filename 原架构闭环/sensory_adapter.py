@@ -46,7 +46,7 @@ def _original_definition(filename):
     source = path.read_bytes()
     tree = ast.parse(source.decode("utf-8-sig"), filename=str(path))
     wanted = {"特征神经元池", "神经网络"}
-    if filename == "运动输出区.py":
+    if filename == "运动输出区_motor_output.py":
         wanted.update(("反向赫布网络", "发力转信号", "解码发力"))
     nodes = [n for n in tree.body if isinstance(n, (ast.ClassDef, ast.FunctionDef))
              and n.name in wanted]
@@ -125,7 +125,7 @@ class SensoryAdapter:
         proxy = _LocalNumpy(seed)
         self.original_source_hashes = {}
         namespaces = {}
-        for name in ("视觉前处理.py", "听觉前处理.py", "运动输出区.py"):
+        for name in ("视觉前处理_visual_preprocess.py", "听觉前处理_auditory_preprocess.py", "运动输出区_motor_output.py"):
             compiled, sha = _original_definition(name)
             namespace = {"np": proxy}
             exec(compiled, namespace)
@@ -138,8 +138,8 @@ class SensoryAdapter:
                               self.motor_levels if name == "motor" else levels
                               for name in self.scalar_widths}
         for name, width in self.scalar_widths.items():
-            namespace = namespaces["运动输出区.py" if name == "motor" else
-                                   "听觉前处理.py" if name == "audio" else "视觉前处理.py"]
+            namespace = namespaces["运动输出区_motor_output.py" if name == "motor" else
+                                   "听觉前处理_auditory_preprocess.py" if name == "audio" else "视觉前处理_visual_preprocess.py"]
             pool = namespace["特征神经元池"](width * self.scalar_levels[name])
             local_threshold = (motor_threshold if name == "motor" else
                                audio_threshold if name == "audio" else visual_threshold)
@@ -147,7 +147,7 @@ class SensoryAdapter:
                 连接半径=connection_radius, 权重范围=weight_range,
                 阈值初值=threshold if local_threshold is None else local_threshold)
             self.pools[name], self.networks[name] = pool, network
-        self._motor_namespace = namespaces["运动输出区.py"]
+        self._motor_namespace = namespaces["运动输出区_motor_output.py"]
         self._motor_namespace.update(肌肉数=MUSCLE_COUNT, 每档对数=self.motor_levels,
                                      池=self.pools["motor"])
         self.motor_reverse_pool = self._motor_namespace["特征神经元池"](MUSCLE_COUNT * self.motor_levels)

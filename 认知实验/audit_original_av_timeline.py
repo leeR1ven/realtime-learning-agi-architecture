@@ -18,8 +18,8 @@ import numpy as np
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent
-SOURCE_FILES = ('海马体时间区.py', '视觉记忆区.py', '听觉记忆区.py',
-                '前额叶区.py', '权重连接管理.py')
+SOURCE_FILES = ('海马体时间区_hippocampal_time.py', '视觉记忆区_visual_memory.py', '听觉记忆区_auditory_memory.py',
+                '前额叶区_prefrontal.py', '权重连接管理_weight_manager.py')
 SEED = 202609061
 
 
@@ -49,13 +49,13 @@ def original_class(filename, name, namespace, include_literal_assignments=False)
 
 def build_original_system():
     namespace = {'np': np, '__name__': 'isolated_original_av_fixture'}
-    table = original_class('权重连接管理.py', '连接表', namespace, True)
-    clock_type = original_class('海马体时间区.py', '时间环', namespace)
+    table = original_class('权重连接管理_weight_manager.py', '连接表', namespace, True)
+    clock_type = original_class('海马体时间区_hippocampal_time.py', '时间环', namespace)
     clock = clock_type(时间神经元数量=512, 每步秒数=.05, 每帧步数=2)
     common = {'np': np, '连接表': table, '时钟': clock, '__name__': 'isolated_original_av_fixture'}
-    visual_type = original_class('视觉记忆区.py', '记忆区', dict(common))
-    auditory_type = original_class('听觉记忆区.py', '记忆区', dict(common))
-    index_type = original_class('前额叶区.py', '海马索引', dict(common))
+    visual_type = original_class('视觉记忆区_visual_memory.py', '记忆区', dict(common))
+    auditory_type = original_class('听觉记忆区_auditory_memory.py', '记忆区', dict(common))
+    index_type = original_class('前额叶区_prefrontal.py', '海马索引', dict(common))
     visual, auditory, index = visual_type(16), auditory_type(16), index_type()
     assert visual.回忆.__globals__['时钟'] is auditory.回忆.__globals__['时钟'] is clock
     return {'clock': clock, 'visual': visual, 'auditory': auditory, 'index': index}
@@ -106,7 +106,7 @@ def train_experience(hold_frames=1, permutation=None, visual_present=True, repea
 
 
 def content_at(memory, timestamp, threshold=1.):
-    """Read only actual time->feature edges, as 前额叶区.py:420-425 does."""
+    """Read only actual time->feature edges, as 前额叶区_prefrontal.py:420-425 does."""
     result = np.zeros(memory.总数, bool)
     if timestamp is not None:
         for feature, weight in memory.时间到特征.查(int(timestamp)).items():

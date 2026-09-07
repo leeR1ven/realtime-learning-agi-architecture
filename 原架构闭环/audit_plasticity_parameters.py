@@ -20,8 +20,8 @@ import numpy as np
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent
 sys.path.insert(0, str(ROOT))
-from 前额叶区 import 前额叶联想区
-from 权重连接管理 import 连接表
+from 前额叶区_prefrontal import 前额叶联想区
+from 权重连接管理_weight_manager import 连接表
 from weight_dependent_plasticity import SoftBoundConnectionTable
 
 
@@ -275,7 +275,7 @@ def append_small_cluster_bounds():
 
 def main():
     started = time.perf_counter()
-    protected = (ROOT/'前额叶区.py', ROOT/'权重连接管理.py', HERE/'weight_dependent_plasticity.py')
+    protected = (ROOT/'前额叶区_prefrontal.py', ROOT/'权重连接管理_weight_manager.py', HERE/'weight_dependent_plasticity.py')
     hashes = {str(p):hashlib.sha256(p.read_bytes()).hexdigest() for p in protected}
     scalar = [scalar_checks(mode) for mode in MODES]
     equilibria = [equilibrium(mode, count) for mode in MODES for count in (1,5,25)]

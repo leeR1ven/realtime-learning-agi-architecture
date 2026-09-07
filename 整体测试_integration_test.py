@@ -15,14 +15,14 @@
 import sys
 import time
 import numpy as np
-import 海马体时间区 as 时间区
-import 视觉前处理 as 视觉
-import 听觉前处理 as 听觉
-import 运动输出区 as 运动
-import 前额叶区 as 前额
-import 视觉记忆区
-import 听觉记忆区
-import 运动记忆区
+import 海马体时间区_hippocampal_time as 时间区
+import 视觉前处理_visual_preprocess as 视觉
+import 听觉前处理_auditory_preprocess as 听觉
+import 运动输出区_motor_output as 运动
+import 前额叶区_prefrontal as 前额
+import 视觉记忆区_visual_memory
+import 听觉记忆区_auditory_memory
+import 运动记忆区_motor_memory
 
 np.random.seed(2026)
 

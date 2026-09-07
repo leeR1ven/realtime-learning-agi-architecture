@@ -4,7 +4,7 @@ from pathlib import Path
 import numpy as np
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 np.random.seed(2026)
-import 运动输出区 as M
+import 运动输出区_motor_output as M
 muscles, levels = 4, 10
 pool=M.特征神经元池(muscles*levels)
 net=M.神经网络(pool,层数=2,连接半径=0,权重范围=0.1,阈值初值=1.1)

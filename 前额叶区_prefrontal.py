@@ -1,8 +1,8 @@
 import numpy as np
-import 视觉前处理 as 视觉
-import 听觉前处理 as 听觉
-import 运动输出区 as 运动
-from 权重连接管理 import 连接表
+import 视觉前处理_visual_preprocess as 视觉
+import 听觉前处理_auditory_preprocess as 听觉
+import 运动输出区_motor_output as 运动
+from 权重连接管理_weight_manager import 连接表
 
 
 def 扩散(模式, 段宽, 半宽):
@@ -493,8 +493,8 @@ if __name__ == "__main__":
 
     # ===== 3) 海马体：前额叶输出 → 锁定时间细胞 → 记忆区补全 =====
     print("\n== 3) 海马体：前额叶→时间锁定 → 记忆区补全 ==")
-    from 海马体时间区 import 时钟
-    import 视觉记忆区, 听觉记忆区, 运动记忆区
+    from 海马体时间区_hippocampal_time import 时钟
+    import 视觉记忆区_visual_memory, 听觉记忆区, 运动记忆区
     每帧步数 = 时钟.每帧步数
     视记 = 视觉记忆区.记忆区(视宽)
     听记 = 听觉记忆区.记忆区(听宽)

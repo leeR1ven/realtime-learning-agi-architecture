@@ -1,7 +1,7 @@
 import numpy as np
-from 海马体时间区 import 时钟
-from 权重连接管理 import 连接表
-from 听觉前处理 import 网
+from 海马体时间区_hippocampal_time import 时钟
+from 权重连接管理_weight_manager import 连接表
+from 听觉前处理_auditory_preprocess import 网
 
 
 class 记忆区:

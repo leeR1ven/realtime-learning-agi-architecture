@@ -85,8 +85,8 @@ def main():
         '1100_hz_pure_tone_max_receptor_response': float(np.max(receptors)),
         'classification': 'Deliberate five-band experimental adapter; not general audition or a learned language decoder'}
 
-    vision = load_source('_sensory_audit_original_vision', '视觉前处理.py')
-    audio = load_source('_sensory_audit_original_audio', '听觉前处理.py')
+    vision = load_source('_sensory_audit_original_vision', '视觉前处理_visual_preprocess.py')
+    audio = load_source('_sensory_audit_original_audio', '听觉前处理_auditory_preprocess.py')
     small_image_error = None
     try:
         with np.errstate(all='raise'):
@@ -104,10 +104,10 @@ def main():
         spectrum_error = str(exc)
     assert spectrum_error is not None and len(spectrum) == 401
     report['original_module_adapter_requirements'] = {
-        'vision_source': '视觉前处理.py:68,90',
+        'vision_source': '视觉前处理_visual_preprocess.py:68,90',
         'one_by_31_ray_image_causes_zero_area_downsampling': small_image_error,
         '24_by_16_image_is_finite': True,
-        'audio_source': '听觉前处理.py:69,97',
+        'audio_source': '听觉前处理_auditory_preprocess.py:69,97',
         'eight_khz_point_one_second_rfft_bins': len(spectrum),
         'original_minimum_spectrum_bins': audio.频带数,
         'direct_audio_adapter_error': spectrum_error,

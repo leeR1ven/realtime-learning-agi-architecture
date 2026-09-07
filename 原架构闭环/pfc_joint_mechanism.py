@@ -19,7 +19,7 @@ import numpy as np
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent
 sys.path.insert(0, str(ROOT))
-from 前额叶区 import 前额叶联想区
+from 前额叶区_prefrontal import 前额叶联想区
 
 
 WIDTH = 320
@@ -189,7 +189,7 @@ def learned_summary(pfc, patterns):
 def main():
     started = time.perf_counter()
     sources = {name: hashlib.sha256((ROOT/name).read_bytes()).hexdigest()
-               for name in ('前额叶区.py', '权重连接管理.py')}
+               for name in ('前额叶区_prefrontal.py', '权重连接管理_weight_manager.py')}
     archive = CellArchive()
     cases = []
     for preset in PRESETS:

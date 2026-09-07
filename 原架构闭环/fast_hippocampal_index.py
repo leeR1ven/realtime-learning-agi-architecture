@@ -27,7 +27,7 @@ HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
-from 前额叶区 import 海马索引 as OriginalHippocampalIndex, 前额叶神经网络
+from 前额叶区_prefrontal import 海马索引 as OriginalHippocampalIndex, 前额叶神经网络
 
 
 class FastHippocampalIndex(OriginalHippocampalIndex):
@@ -197,7 +197,7 @@ def _fixtures():
 def audit(checkpoint_path,sensors_path):
     from sensory_adapter import SensoryAdapter
     started=time.perf_counter()
-    protected=[checkpoint_path,sensors_path,ROOT/'前额叶区.py',HERE/'brain.py',HERE/'original_runtime.py']
+    protected=[checkpoint_path,sensors_path,ROOT/'前额叶区_prefrontal.py',HERE/'brain.py',HERE/'original_runtime.py']
     before={str(p):hashlib.sha256(p.read_bytes()).hexdigest() for p in protected}
     with np.load(checkpoint_path,allow_pickle=False) as archive:
         manifest=json.loads(archive['manifest'].tobytes().decode('utf8'))

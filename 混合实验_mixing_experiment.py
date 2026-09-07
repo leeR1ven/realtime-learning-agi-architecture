@@ -1,5 +1,5 @@
 import numpy as np
-import 听觉前处理 as 听
+import 听觉前处理_auditory_preprocess as 听
 
 池 = 听.池
 网 = 听.网

@@ -89,7 +89,7 @@ def normalization_check():
 
 def main():
     started = time.perf_counter()
-    protected = [ROOT/name for name in ('海马体时间区.py','视觉记忆区.py','听觉记忆区.py','运动记忆区.py','前额叶区.py','权重连接管理.py')]
+    protected = [ROOT/name for name in ('海马体时间区_hippocampal_time.py','视觉记忆区_visual_memory.py','听觉记忆区_auditory_memory.py','运动记忆区_motor_memory.py','前额叶区_prefrontal.py','权重连接管理_weight_manager.py')]
     protected += [HERE/name for name in ('brain.py','original_runtime.py','sensory_adapter.py','viewer.py','results/living_original.npz','results/pfc_capacity_experiment.json','results/pfc_capacity_experiment.md')]
     before = {str(p): sha(p) for p in protected}
     results = []

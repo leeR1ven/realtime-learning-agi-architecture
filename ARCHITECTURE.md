@@ -41,7 +41,7 @@ travelling along existing connections.
 - These networks *process signals*; they do **not** use Hebbian learning. Predictable and fast.
 - Each file's header centralizes `层数 / 连接半径 / 权重范围 / 阈值初值`.
 
-### 1.3 Connection tables (`权重连接管理.py`, `class 连接表`)
+### 1.3 Connection tables (`权重连接管理_weight_manager.py`, `class 连接表`)
 - Used by the **plastic** connections only (three memory areas, PFC association).
 - Rules: each co-activation adds `强化量`; once the table reaches `警戒线` (default 100k)
   entries it periodically multiplies all weights by `衰减率` (0.9) every `衰减间隔` frames;
@@ -53,7 +53,7 @@ travelling along existing connections.
 
 ## 2. Areas
 
-### 2.1 Visual preprocessing (`视觉前处理.py`)
+### 2.1 Visual preprocessing (`视觉前处理_visual_preprocess.py`)
 - The image is downsampled to a 24×16 mosaic; each "big pixel" has R/G/B channels, and each
   channel uses `每档对数=10` pairs as a 0-10 brightness thermometer.
 - Feature pairs = 24×16×3×10 = 11,520 (23,040 neurons); 3 layers, ring radius 10.
@@ -61,13 +61,13 @@ travelling along existing connections.
   keeps firing counts stable regardless of input strength (no silence, no seizure).
   `解码亮度()` reads the picture back for verification.
 
-### 2.2 Auditory preprocessing (`听觉前处理.py`)
+### 2.2 Auditory preprocessing (`听觉前处理_auditory_preprocess.py`)
 - Mono input; the spectrum is compressed to 1,500 bands, each with `每档对数=10` pairs
   as a 0-10 loudness thermometer.
 - Feature pairs = 1,500×10 = 15,000 (30,000 neurons); 3 layers.
 - `压缩频谱()` maps arbitrary-length spectra onto the fixed 1,500 bands.
 
-### 2.3 Motor output area (`运动输出区.py`)
+### 2.3 Motor output area (`运动输出区_motor_output.py`)
 - Muscles use force thermometers: `肌肉数=200`, each with `每档对数=10` pairs,
   0-10 levels (11 force levels), 2,000 pairs total (4,000 neurons).
 - The forward network is like the sensory areas: sparse command codes fire on the last layer;
@@ -84,7 +84,7 @@ travelling along existing connections.
   network width equals the module-wide motor net (miniature simulators use their own small
   reverse net and skip it automatically).
 
-### 2.4 Three memory areas (`视觉记忆区.py` / `听觉记忆区.py` / `运动记忆区.py`)
+### 2.4 Three memory areas (`视觉记忆区_visual_memory.py` / `听觉记忆区_auditory_memory.py` / `运动记忆区_motor_memory.py`)
 - Identical structure; each plugs into its own output layer. Each memory area's width
   **automatically equals** `网.输出层数量` of its source, so resizing a preprocessing network
   resizes memory areas without manual synchronization.
@@ -95,7 +95,7 @@ travelling along existing connections.
 - `学习(旧时间, 新时间, 新特征)` stores a frame given the previous/next time index;
   `回忆(特征模式, 步数, 阈值)` replays a chain step by step from a cue.
 
-### 2.5 Hippocampal time ring (`海马体时间区.py`)
+### 2.5 Hippocampal time ring (`海马体时间区_hippocampal_time.py`)
 - One **shared** timeline: 1,728,000 time neurons connected head-to-tail in a ring; each neuron
   covers 0.05 s; one external frame = 0.1 s = two consecutive neurons; one full lap =
   1,728,000 × 0.05 s = 24 hours.
@@ -103,7 +103,7 @@ travelling along existing connections.
   (no skipped or crossed frames).
 - Memory areas use it to order events; replay re-lights features in time order.
 
-### 2.6 Prefrontal area (`前额叶区.py`)
+### 2.6 Prefrontal area (`前额叶区_prefrontal.py`)
 The PFC is the thinking hub, built in four layers:
 
 1. **PFC network** (`class 前额叶神经网络`): input = visual output layer + auditory output
@@ -137,10 +137,10 @@ A **hippocampal index** (`class 海马索引`) locks PFC thought patterns onto t
 `锁定胜出()` decides "this frame corresponds to a real time event" by requiring the winner's
 vote to clearly beat the runner-up (base votes 80, margin 40), so noise is not stored as events.
 
-### 2.7 Closed-loop flow (`闭环流程.py`)
+### 2.7 Closed-loop flow (`闭环流程_closed_loop.py`)
 A "parts checklist + integration run" that plugs everything (hippocampal index, memory recall,
 association area, focus gate, reciprocal return lines) into one closed loop. It reads but never
-edits the other files. Run `python 闭环流程.py [frames]`.
+edits the other files. Run `python 闭环流程_closed_loop.py [frames]`.
 
 ---
 
@@ -159,14 +159,14 @@ edits the other files. Run `python 闭环流程.py [frames]`.
 ## 4. Where to change numbers (linkage)
 
 - Every file centralizes sizes in a "global creation" block at the top.
-- `视觉前处理.py`: `大像素行数/列数`, `通道数`, `每档对数`, `层数`, `连接半径`.
-- `听觉前处理.py`: `频带数`, `每档对数`, `层数`, `连接半径`.
-- `运动输出区.py`: `肌肉数`, `每档对数`, `层数`, `连接半径`.
+- `视觉前处理_visual_preprocess.py`: `大像素行数/列数`, `通道数`, `每档对数`, `层数`, `连接半径`.
+- `听觉前处理_auditory_preprocess.py`: `频带数`, `每档对数`, `层数`, `连接半径`.
+- `运动输出区_motor_output.py`: `肌肉数`, `每档对数`, `层数`, `连接半径`.
 - Memory areas and the PFC read `网.输出层数量` of their sources, so they follow
   automatically; there is no second place to edit.
 - PFC tuning (layers/radius/diffusion width/convergence ratio/thresholds) is also centralized
-  at the top of `前额叶区.py`.
-- Decay parameters live at the top of `权重连接管理.py`.
+  at the top of `前额叶区_prefrontal.py`.
+- Decay parameters live at the top of `权重连接管理_weight_manager.py`.
 
 ---
 
@@ -174,11 +174,11 @@ edits the other files. Run `python 闭环流程.py [frames]`.
 
 ```powershell
 # inside the repository, using the bundled virtual environment
-.\.venv\Scripts\python.exe -X utf8 视觉前处理.py
-.\.venv\Scripts\python.exe -X utf8 听觉前处理.py
-.\.venv\Scripts\python.exe -X utf8 运动输出区.py
-.\.venv\Scripts\python.exe -X utf8 前额叶区.py
-.\.venv\Scripts\python.exe -X utf8 闭环流程.py
+.\.venv\Scripts\python.exe -X utf8 视觉前处理_visual_preprocess.py
+.\.venv\Scripts\python.exe -X utf8 听觉前处理_auditory_preprocess.py
+.\.venv\Scripts\python.exe -X utf8 运动输出区_motor_output.py
+.\.venv\Scripts\python.exe -X utf8 前额叶区_prefrontal.py
+.\.venv\Scripts\python.exe -X utf8 闭环流程_closed_loop.py
 ```
 
 The visual closed-loop simulation (2D physics body) is documented in `闭环仿真/README.md`:

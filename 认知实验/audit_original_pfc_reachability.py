@@ -67,14 +67,14 @@ def summarize(mask):
 
 def audit():
     paths = {name: ROOT / name for name in
-             ("视觉前处理.py", "听觉前处理.py", "运动输出区.py", "前额叶区.py")}
+             ("视觉前处理_visual_preprocess.py", "听觉前处理_auditory_preprocess.py", "运动输出区_motor_output.py", "前额叶区_prefrontal.py")}
     originals = {name: path.read_bytes() for name, path in paths.items()}
     trees = {name: ast.parse(data.decode("utf-8-sig"), filename=str(paths[name]))
              for name, data in originals.items()}
     settings = {name: scalar_assignments(tree) for name, tree in trees.items()}
     widths = [int(settings[name]["对数"] * 2) for name in
-              ("视觉前处理.py", "听觉前处理.py", "运动输出区.py")]
-    for name in ("视觉前处理.py", "听觉前处理.py", "运动输出区.py"):
+              ("视觉前处理_visual_preprocess.py", "听觉前处理_auditory_preprocess.py", "运动输出区_motor_output.py")]
+    for name in ("视觉前处理_visual_preprocess.py", "听觉前处理_auditory_preprocess.py", "运动输出区_motor_output.py"):
         assignments = [n for n in ast.walk(trees[name]) if isinstance(n, ast.Assign)]
         # Fail visibly if the original width relationship stops being true.
         expected = {"self.总数": "对数 * 2", "self.每层数": "输入层.总数",
@@ -83,7 +83,7 @@ def audit():
             assert any(any(ast.unparse(t) == target for t in n.targets)
                        and ast.unparse(n.value) == expression for n in assignments)
 
-    pfc_tree = trees["前额叶区.py"]
+    pfc_tree = trees["前额叶区_prefrontal.py"]
     pfc_class = next(n for n in pfc_tree.body
                      if isinstance(n, ast.ClassDef) and n.name == "前额叶神经网络")
     forward = next(n for n in pfc_class.body
@@ -94,8 +94,8 @@ def audit():
         "视觉输出", "听觉输出", "运动输入"]
     namespace = {"np": np}
     extracted = ast.fix_missing_locations(ast.Module(body=[pfc_class], type_ignores=[]))
-    exec(compile(extracted, str(paths["前额叶区.py"]), "exec"), namespace)
-    config = settings["前额叶区.py"]
+    exec(compile(extracted, str(paths["前额叶区_prefrontal.py"]), "exec"), namespace)
+    config = settings["前额叶区_prefrontal.py"]
     total = sum(widths)
     # This is a disposable instance of the original class, not a new controller.
     state = np.random.get_state()
@@ -196,10 +196,10 @@ def audit():
             "本次未运行任何训练、导航、声音识别或目标图像保持实验。",
         ],
         "line_references": {
-            "vision_layout": "视觉前处理.py:68-81", "audio_layout": "听觉前处理.py:68-79",
-            "motor_layout": "运动输出区.py:94-103", "ring_sources": "前额叶区.py:39-50",
-            "diffusion_and_concat": "前额叶区.py:8-15,54-67",
-            "global_pfc_config": "前额叶区.py:308-319",
+            "vision_layout": "视觉前处理_visual_preprocess.py:68-81", "audio_layout": "听觉前处理_auditory_preprocess.py:68-79",
+            "motor_layout": "运动输出区_motor_output.py:94-103", "ring_sources": "前额叶区_prefrontal.py:39-50",
+            "diffusion_and_concat": "前额叶区_prefrontal.py:8-15,54-67",
+            "global_pfc_config": "前额叶区_prefrontal.py:308-319",
         },
     }
 

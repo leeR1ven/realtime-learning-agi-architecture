@@ -34,7 +34,7 @@ MOTOR_PATTERNS = np.array([[0, 0, 0, 0], [.6, 0, .6, 0], [0, .6, 0, .6],
 
 
 def pfc_class():
-    path = ROOT / "前额叶区.py"
+    path = ROOT / "前额叶区_prefrontal.py"
     tree = ast.parse(path.read_text(encoding="utf-8-sig"))
     nodes = [n for n in tree.body if isinstance(n, (ast.ClassDef, ast.FunctionDef))
              and n.name in ("扩散", "前额叶神经网络")]
@@ -148,7 +148,7 @@ def diffuse_segments(rows, widths, spread):
 def run():
     begin = time.perf_counter()
     base, views, actions, physical_packets = stimuli()
-    source_files = [ROOT / name for name in ("视觉前处理.py", "听觉前处理.py", "运动输出区.py", "前额叶区.py")]
+    source_files = [ROOT / name for name in ("视觉前处理_visual_preprocess.py", "听觉前处理_auditory_preprocess.py", "运动输出区_motor_output.py", "前额叶区_prefrontal.py")]
     hashes = {str(path): hashlib.sha256(path.read_bytes()).hexdigest() for path in source_files}
     rows = []
     sensory = []

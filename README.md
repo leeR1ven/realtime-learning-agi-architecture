@@ -28,13 +28,13 @@
 
 | 路径 | 说明 |
 | --- | --- |
-| `视觉前处理.py` `听觉前处理.py` | 外界信号 → 稀疏激活的感觉处理网络 |
-| `运动输出区.py` | 肌肉发力编码、正向网络与反向赫布网络、天生镜像线 |
-| `视觉记忆区.py` `听觉记忆区.py` `运动记忆区.py` | 各感觉/运动通道的时序赫布记忆 |
-| `海马体时间区.py` | 时间环（0.1 秒/帧，24 小时一圈） |
-| `前额叶区.py` | 联想区：汇总各脑区输入、动态抑制收敛、时序联想链与镜像返回 |
-| `权重连接管理.py` | 连接衰减与维持的通用规则 |
-| `闭环流程.py` | 把全部脑区串成一条完整处理链 |
+| `视觉前处理_visual_preprocess.py` `听觉前处理_auditory_preprocess.py` | 外界信号 → 稀疏激活的感觉处理网络 |
+| `运动输出区_motor_output.py` | 肌肉发力编码、正向网络与反向赫布网络、天生镜像线 |
+| `视觉记忆区_visual_memory.py` `听觉记忆区_auditory_memory.py` `运动记忆区_motor_memory.py` | 各感觉/运动通道的时序赫布记忆 |
+| `海马体时间区_hippocampal_time.py` | 时间环（0.1 秒/帧，24 小时一圈） |
+| `前额叶区_prefrontal.py` | 联想区：汇总各脑区输入、动态抑制收敛、时序联想链与镜像返回 |
+| `权重连接管理_weight_manager.py` | 连接衰减与维持的通用规则 |
+| `闭环流程_closed_loop.py` | 把全部脑区串成一条完整处理链 |
 | `闭环仿真/` | 可运行的 2D 物理身体闭环：感知-思考-运动-反馈在线学习（见其 `README.md`） |
 | `认知实验/` `色标导航/` `原架构闭环/` `虚拟身体/` `运动实验/` | 各阶段实验与候选机制对照 |
 | `实验记录/` | 过程记录与审计结果 |
@@ -46,9 +46,9 @@
 
 ```powershell
 # 核心文件自检（在 F:\一种AGI架构 下）
-.\.venv\Scripts\python.exe -X utf8 视觉前处理.py
-.\.venv\Scripts\python.exe -X utf8 前额叶区.py
-.\.venv\Scripts\python.exe -X utf8 运动输出区.py
+.\.venv\Scripts\python.exe -X utf8 视觉前处理_visual_preprocess.py
+.\.venv\Scripts\python.exe -X utf8 前额叶区_prefrontal.py
+.\.venv\Scripts\python.exe -X utf8 运动输出区_motor_output.py
 
 # 可视化闭环仿真（会弹出窗口，身体自动活动并学习）
 Set-Location -LiteralPath '闭环仿真'
@@ -89,7 +89,7 @@ Set-Location -LiteralPath '闭环仿真'
 请保留至今形成的协作习惯：
 
 1. **一次只改一个模块**，方便逐区消融对照。
-2. 固定信号处理网络必须保持固定；赫布学习只动 `权重连接管理.py` 列出的可塑连接。
+2. 固定信号处理网络必须保持固定；赫布学习只动 `权重连接管理_weight_manager.py` 列出的可塑连接。
 3. 优先用纯神经元/连接机制，不要用查表或代码捷径——这正是本架构的意义。
 4. 依赖保持最少（核心只用 NumPy；仿真窗口用 Tkinter）。
 5. 改哪个文件就补哪个文件的自检；动了闭环就在 `闭环仿真/evaluate.py` 里加或扩展对应检查。

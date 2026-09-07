@@ -22,7 +22,7 @@ import numpy as np
 HERE=Path(__file__).resolve().parent
 ROOT=HERE.parent
 if str(ROOT) not in sys.path:sys.path.insert(0,str(ROOT))
-from 前额叶区 import 前额叶联想区 as OriginalPFC, 前额叶神经网络
+from 前额叶区_prefrontal import 前额叶联想区 as OriginalPFC, 前额叶神经网络
 
 
 def _ordered_current(table,active,width):
@@ -143,7 +143,7 @@ def _ordering_fixture():
 def audit(checkpoint,sensors):
     from sensory_adapter import SensoryAdapter
     started=time.perf_counter()
-    protected=[checkpoint,sensors,ROOT/'前额叶区.py',HERE/'brain.py',HERE/'original_runtime.py',
+    protected=[checkpoint,sensors,ROOT/'前额叶区_prefrontal.py',HERE/'brain.py',HERE/'original_runtime.py',
                HERE/'weight_dependent_plasticity.py']
     hashes={str(p):hashlib.sha256(p.read_bytes()).hexdigest() for p in protected}
     with np.load(checkpoint,allow_pickle=False) as archive:

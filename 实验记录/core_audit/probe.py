@@ -3,10 +3,10 @@ from pathlib import Path
 import numpy as np
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 np.random.seed(2026)
-import 视觉前处理 as V
-import 听觉前处理 as A
-import 运动输出区 as M
-import 前额叶区 as P
+import 视觉前处理_visual_preprocess as V
+import 听觉前处理_auditory_preprocess as A
+import 运动输出区_motor_output as M
+import 前额叶区_prefrontal as P
 
 def code(m, x): return m.网.前向传播(x).astype(bool).copy()
 def stats(codes):

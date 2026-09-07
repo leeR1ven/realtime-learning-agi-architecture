@@ -12,7 +12,7 @@ from pfc_capacity_experiment import HERE, ROOT, sha, fixture, learn_sequence
 
 def main():
     started = time.perf_counter()
-    protected = [ROOT/'前额叶区.py', ROOT/'权重连接管理.py', HERE/'brain.py', HERE/'original_runtime.py',
+    protected = [ROOT/'前额叶区_prefrontal.py', ROOT/'权重连接管理_weight_manager.py', HERE/'brain.py', HERE/'original_runtime.py',
         HERE/'results/living_original.npz', HERE/'results/pfc_capacity_experiment.json',
         HERE/'results/pfc_retention_candidate.json', HERE/'results/pfc_retention_candidate.md']
     before = {str(p):sha(p) for p in protected}

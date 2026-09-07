@@ -18,7 +18,7 @@ import numpy as np
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent
 sys.path.insert(0, str(ROOT))
-from 前额叶区 import 前额叶联想区
+from 前额叶区_prefrontal import 前额叶联想区
 
 
 WIDTH, SIZE, INCREMENT = 160, 24, .12
@@ -109,7 +109,7 @@ def append_gradual_shortcut():
     path = HERE/'results'/'pfc_shortcut_mechanism.json'
     report = json.loads(path.read_text(encoding='utf8'))
     old_cases_hash = hashlib.sha256(json.dumps(report['cases'], sort_keys=True).encode()).hexdigest()
-    production_paths = (ROOT/'前额叶区.py', ROOT/'权重连接管理.py', HERE/'brain.py', HERE/'original_runtime.py')
+    production_paths = (ROOT/'前额叶区_prefrontal.py', ROOT/'权重连接管理_weight_manager.py', HERE/'brain.py', HERE/'original_runtime.py')
     source_hashes = {str(p): hashlib.sha256(p.read_bytes()).hexdigest() for p in production_paths}
     features = patterns()
     gamma = .02
@@ -203,7 +203,7 @@ def append_gradual_shortcut():
 
 def main():
     started = time.perf_counter()
-    files = (ROOT/'前额叶区.py', ROOT/'权重连接管理.py', HERE/'brain.py', HERE/'original_runtime.py')
+    files = (ROOT/'前额叶区_prefrontal.py', ROOT/'权重连接管理_weight_manager.py', HERE/'brain.py', HERE/'original_runtime.py')
     inspected_hashes = {str(path): hashlib.sha256(path.read_bytes()).hexdigest() for path in files}
     features = patterns()
     cases = []
@@ -246,7 +246,7 @@ def main():
         'script_sha256': hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
         'learning_rule_conclusion': 'A->C grows exactly when a cell inA is in the previous learned activity and a cell inC is in the following learned activity. Repeating disjoint A,B,C does not perform a transitive closure of A->B->C. Same-time A+C withoutA in the preceding frame does not by itself growA->C.',
         'current_production_review': {
-            'original_rule': {'file': str(ROOT/'前额叶区.py'), 'learning_line': 203, 'E_write_line': 215, 'DI_write_line': 222},
+            'original_rule': {'file': str(ROOT/'前额叶区_prefrontal.py'), 'learning_line': 203, 'E_write_line': 215, 'DI_write_line': 222},
             'actual_runtime_transition': {'file': str(HERE/'original_runtime.py'), 'record_line': 180,
                 'learning_line': 190, 'copy_previous_line': 191,
                 'meaning': 'Whenlearning=True, original PFC learns previous_actual_pfc->the current supplied final thought; then replaces previous_actual_pfc with a copy. No separate facts/rules/shortcut store.'},

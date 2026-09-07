@@ -12,9 +12,9 @@ from pathlib import Path
 import numpy as np
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from 前额叶区 import 前额叶联想区
-from 视觉记忆区 import 记忆区
-from 海马体时间区 import 时间环
+from 前额叶区_prefrontal import 前额叶联想区
+from 视觉记忆区_visual_memory import 记忆区
+from 海马体时间区_hippocampal_time import 时间环
 from neural import PairedEncoder, MotorBank
 from checkpoint import save_checkpoint, load_checkpoint
 

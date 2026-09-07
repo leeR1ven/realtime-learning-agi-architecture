@@ -22,7 +22,7 @@ HERE=Path(__file__).resolve().parent
 ROOT=HERE.parent
 if str(ROOT) not in sys.path:
     sys.path.insert(0,str(ROOT))
-from 权重连接管理 import 连接表 as OriginalConnectionTable
+from 权重连接管理_weight_manager import 连接表 as OriginalConnectionTable
 
 
 ORIGINAL_PARAMETERS=('强化量','衰减率','消失下限','警戒线','衰减间隔')
@@ -145,7 +145,7 @@ def _edge(table,value,source=0,target=0):
 
 def audit(checkpoint):
     started=time.perf_counter()
-    protected=[checkpoint,ROOT/'权重连接管理.py',HERE/'brain.py',HERE/'original_runtime.py']
+    protected=[checkpoint,ROOT/'权重连接管理_weight_manager.py',HERE/'brain.py',HERE/'original_runtime.py']
     hashes={str(p):hashlib.sha256(p.read_bytes()).hexdigest() for p in protected}
     failures_rejected=0
     for kwargs in (dict(ceiling=0),dict(ceiling=float('inf')),dict(ceiling=float('nan')),

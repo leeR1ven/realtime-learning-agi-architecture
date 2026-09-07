@@ -7,7 +7,7 @@
 from __future__ import annotations
 
 import numpy as np
-import 运动输出区 as legacy_motor
+import 运动输出区_motor_output as legacy_motor
 
 
 def _count(value: int, name: str) -> int:

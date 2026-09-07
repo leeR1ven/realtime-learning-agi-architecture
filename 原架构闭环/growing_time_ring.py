@@ -14,7 +14,7 @@ import numpy as np
 ROOT = Path(__file__).resolve().parent.parent
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
-from 海马体时间区 import 时间环
+from 海马体时间区_hippocampal_time import 时间环
 
 
 class GrowingTimeRing(时间环):

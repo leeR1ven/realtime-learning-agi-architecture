@@ -1,27 +1,27 @@
-"""闭环流程.py —— 全部件"接入清单 + 闭环联测"
+"""闭环流程_closed_loop.py —— 全部件"接入清单 + 闭环联测"
 
 之前分文件自检都能跑，但有几个部件只在前额叶区的 __main__ 自检里跑过，
-没有接进"整体测试.py"那条全流程，等于"做了但没接上"：
+没有接进"整体测试_integration_test.py"那条全流程，等于"做了但没接上"：
     海马索引.锁定时间 / 记忆区.回忆 / 前额叶联想区(抑制·去抑制·动态稳态)
     / 专注闸门(抑制池 vs 去抑制池) / 天生互惠返回线
 
 本文件把它们全部接到同一条闭环里再跑一遍，每段打印实测数字，
 本身也就是一张"部件使用清单"。只读使用已有文件，不改任何一行。
 
-用法：python 闭环流程.py [经历帧数，默认 40]
+用法：python 闭环流程_closed_loop.py [经历帧数，默认 40]
 """
 import sys
 import time
 import numpy as np
 
-import 海马体时间区 as 时间区
-import 视觉前处理 as 视觉
-import 听觉前处理 as 听觉
-import 运动输出区 as 运动
-import 前额叶区 as 前额
-import 视觉记忆区
-import 听觉记忆区
-import 运动记忆区
+import 海马体时间区_hippocampal_time as 时间区
+import 视觉前处理_visual_preprocess as 视觉
+import 听觉前处理_auditory_preprocess as 听觉
+import 运动输出区_motor_output as 运动
+import 前额叶区_prefrontal as 前额
+import 视觉记忆区_visual_memory
+import 听觉记忆区_auditory_memory
+import 运动记忆区_motor_memory
 
 np.random.seed(2026)
 
