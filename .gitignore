@@ -21,3 +21,5 @@ Desktop.ini
 # 运行时生成文件（可重新生成）
 *.log
 *.pid
+# 本地工具（gh 命令行等）
+.tools/
